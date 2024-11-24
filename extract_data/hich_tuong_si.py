@@ -14,7 +14,7 @@ for page_num in range(6, 21):
 lines = data.split('\n')
 lines = lines[9:]
 
-remove_chars = [';', '"', '-', '‘', '.', '’', '“', '”', '…', '•', '–', '—', '!', ':', '_', ',', '?']
+remove_chars = [';', '"', '-', '‘', '.', '“', '”', '…', '•', '–', '—', '!', ':', '_', ',', '?']
 
 def clean_text(text):
     for char in remove_chars:
