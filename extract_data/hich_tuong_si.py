@@ -22,12 +22,25 @@ def clean_text(text):
     text = re.sub(r'\s+', ' ', text)
     return text.strip()
 
+remove_patterns = [
+    r"original written in \d{4} by Trần Quốc Tuấn",
+    r"hánviệt pronounciation of original",
+    r"Vietnamese translation by Author Ngô Tất Tố",
+    r"English translation by Vuong Thanh \d{4} \d{4}"
+]
+
 csv_file = '../raw_dataset/hich_tuong_si.csv'
 with open(csv_file, mode='w', newline='', encoding='utf-8') as file:
     writer = csv.writer(file)
-    for line in lines:
+    for index, line in enumerate(lines):
         if line.strip():
             cleaned_line = clean_text(line.strip())
+            
+            if index < 5:
+                for pattern in remove_patterns:
+                    cleaned_line = re.sub(pattern, '', cleaned_line)
+                cleaned_line = re.sub(r'\s+', ' ', cleaned_line).strip()
+            
             if cleaned_line:
                 writer.writerow([cleaned_line])
 
