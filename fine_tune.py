@@ -9,7 +9,7 @@ import torch
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 logger = logging.getLogger()
 
-DATA_FOLDER = 'data'  # Folder containing all the .json files
+DATA_FOLDER = 'data1'  # Folder containing all the .json files
 
 def load_data_from_files(data_folder):
     inputs = []  # To store all input texts
