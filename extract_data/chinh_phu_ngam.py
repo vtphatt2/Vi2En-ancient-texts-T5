@@ -75,5 +75,22 @@ if (len(english_lines) == len(vietnamese_lines)):
         
 # Save to json, including the index (save as "id"), the Vietnamese sentence, and the English sentence
 
+# Export with this template 
+# {
+#     "file_name": "kieu1.pdf",
+#     "data": [
+#         {
+#             "id": 1,
+#             "vi": "Trăm năm trong cõi người ta",
+#             "en": "Through hundred years in life"
+#         },
+#         {
+#             "id": 2,
+#             "vi": "Chữ tài, chữ mệnh, khéo là ghét nhau",
+#             "en": "Talent and Fate are twined in hate."
+#         }
+#     ]
+# }
+
 with open('../data/cpn_1.json', 'w', encoding='utf-8') as f:
-    json.dump(aligned_pairs, f, ensure_ascii=False, indent=4)
+    json.dump({"file_name": "chinh_phu_ngam.pdf", "data": aligned_pairs}, f, ensure_ascii=False, indent=4)
