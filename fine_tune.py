@@ -1,36 +1,62 @@
 import json
+import glob
+import logging
 from datasets import Dataset
 from transformers import T5Tokenizer, T5ForConditionalGeneration, Trainer, TrainingArguments
 
-DATA_PATH = 'data/kieu1.json'
+# Set up logging
+logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
+logger = logging.getLogger()
 
-def load_data(file_path):
-    with open(file_path, 'r', encoding='utf-8') as f:
-        data_json = json.load(f)
-    
-    data = data_json['data']
-    inputs = [
-        f"translate Vietnamese to English: {item['vi'].replace('.', '').replace(',', '')}"
-        for item in data
-    ]
-    targets = [
-        item['en'].replace('.', '').replace(',', '')
-        for item in data
-    ]
-    
-    return {'input_text': inputs, 'target_text': targets}
+DATA_FOLDER = 'data'  # Folder containing all the .json files
 
-data_dict = load_data(DATA_PATH)
+def load_data_from_files(data_folder):
+    all_data = []  # To store the merged data
+    
+    # Get all .json files in the data folder using glob
+    json_files = glob.glob(f"{data_folder}/*.json")
+    logger.info(f"Found {len(json_files)} JSON files in {data_folder}.")
+    
+    for file_path in json_files:
+        logger.info(f"Loading file: {file_path}")
+        
+        # Open and load each JSON file
+        with open(file_path, 'r', encoding='utf-8') as f:
+            data_json = json.load(f)
+        
+        # Extract the relevant data
+        data = data_json['data']
+        
+        # Prepare the inputs and targets (translations)
+        inputs = [
+            f"translate Vietnamese to English: {item['vi'].replace('.', '').replace(',', '')}"
+            for item in data
+        ]
+        targets = [
+            item['en'].replace('.', '').replace(',', '')
+            for item in data
+        ]
+        
+        # Add the data from this file to the list
+        all_data.extend({'input_text': inputs, 'target_text': targets})
+        
+    return all_data
+
+# Load and merge all JSON files
+data_dict = load_data_from_files(DATA_FOLDER)
 dataset = Dataset.from_dict(data_dict)
 
+# Split the dataset into training and evaluation sets
 split_dataset = dataset.train_test_split(test_size=0.1)
 train_dataset = split_dataset['train']
 eval_dataset = split_dataset['test']
 
-model_name = 't5-small' 
-tokenizer = T5Tokenizer.from_pretrained(model_name)
-model = T5ForConditionalGeneration.from_pretrained(model_name)
+# Use VietAI/vit5-base model and tokenizer
+model_name = 'VietAI/vit5-base'  # Change model to VietAI/vit5-base
+tokenizer = T5Tokenizer.from_pretrained(model_name)  # Use tokenizer for VietAI/vit5-base
+model = T5ForConditionalGeneration.from_pretrained(model_name)  # Load the model
 
+# Preprocessing function for tokenization
 def preprocess_function(examples):
     inputs = examples['input_text']
     targets = examples['target_text']
@@ -42,9 +68,11 @@ def preprocess_function(examples):
     model_inputs['labels'] = labels['input_ids']
     return model_inputs
 
+# Tokenize the train and eval datasets
 tokenized_train = train_dataset.map(preprocess_function, batched=True)
 tokenized_eval = eval_dataset.map(preprocess_function, batched=True)
 
+# Training arguments
 training_args = TrainingArguments(
     output_dir='./t5_vi_en_translation',          
     evaluation_strategy='epoch',
@@ -59,6 +87,7 @@ training_args = TrainingArguments(
     save_strategy='epoch',
 )
 
+# Initialize Trainer
 trainer = Trainer(
     model=model,
     args=training_args,
@@ -67,8 +96,10 @@ trainer = Trainer(
     tokenizer=tokenizer,
 )
 
+# Start training
 trainer.train()
 
+# Save the model and tokenizer
 model_save_path = './t5_vi_en_translation'
 model.save_pretrained(model_save_path)
 tokenizer.save_pretrained(model_save_path)
