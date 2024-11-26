@@ -49,6 +49,13 @@ model_name = 'VietAI/vit5-base'  # Change model to VietAI/vit5-base
 tokenizer = T5Tokenizer.from_pretrained(model_name)  # Use tokenizer for VietAI/vit5-base
 model = T5ForConditionalGeneration.from_pretrained(model_name)  # Load the model
 
+# Move model to GPU if available
+if torch.cuda.is_available():
+    model = model.to('cuda')
+    logger.info("GPU is available. Using GPU for training.")
+else:
+    logger.info("No GPU found. Using CPU for training.")
+
 # Preprocessing function for tokenization
 def preprocess_function(examples):
     inputs = examples['input_text']
@@ -78,6 +85,8 @@ training_args = TrainingArguments(
     logging_dir='./logs',
     logging_steps=10,
     save_strategy='epoch',
+    # Enable FP16 mixed precision for better performance on supported GPUs
+    fp16=True,  # You can also set fp16=True if your GPU supports mixed precision
 )
 
 # Initialize Trainer
