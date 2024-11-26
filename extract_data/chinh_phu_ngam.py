@@ -68,8 +68,8 @@ if (len(english_lines) == len(vietnamese_lines)):
     for i in range(len(vietnamese_lines)):
         pair = {
             "id": i,
-            "vietnamese": vietnamese_lines[i],
-            "english": english_lines[i]
+            "vi": vietnamese_lines[i],
+            "en": english_lines[i]
         }
         aligned_pairs.append(pair)
         
