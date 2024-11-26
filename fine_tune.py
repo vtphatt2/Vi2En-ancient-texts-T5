@@ -1,12 +1,22 @@
 import os
 import json
 import torch
+from glob import glob
+from transformers import T5ForConditionalGeneration, T5Tokenizer, AdamW
+from torch.utils.data import DataLoader, TensorDataset
+from tqdm import tqdm
 
-# Set up logging
-logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
-logger = logging.getLogger()
+# Check if CUDA (GPU) is available
+if torch.cuda.is_available():
+    device = torch.device("cuda")
+    print('There are %d GPU(s) available.' % torch.cuda.device_count())
+    print('We will use the GPU:', torch.cuda.get_device_name(0))
+else:
+    print('No GPU available, using the CPU instead.')
+    device = torch.device("cpu")
 
-DATA_FOLDER = 'data'  # Folder containing all the .json files
+# Define the folder where your .json files are stored
+DATA_FOLDER = 'data'    # Folder containing all the .json files
 
 # Load and tokenize the data from JSON files
 def load_data_from_files(data_folder):
@@ -97,5 +107,5 @@ def fine_tune_model(dataloader, model, optimizer, num_epochs=3):
 fine_tune_model(dataloader, model, optimizer, num_epochs=3)
 
 # Save the fine-tuned model
-model.save_pretrained("t5_vi_en_translation")
-T5Tokenizer.from_pretrained("NlpHUST/t5-vi-en-base").save_pretrained("t5_vi_en_translation")
+model.save_pretrained("fine_tuned_t5_vi_en")
+T5Tokenizer.from_pretrained("NlpHUST/t5-vi-en-base").save_pretrained("fine_tuned_t5_vi_en")
