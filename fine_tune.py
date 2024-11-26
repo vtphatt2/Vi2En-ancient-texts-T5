@@ -11,7 +11,8 @@ logger = logging.getLogger()
 DATA_FOLDER = 'data'  # Folder containing all the .json files
 
 def load_data_from_files(data_folder):
-    all_data = []  # To store the merged data
+    inputs = []  # To store all input texts
+    targets = []  # To store all target texts
     
     # Get all .json files in the data folder using glob
     json_files = glob.glob(f"{data_folder}/*.json")
@@ -28,19 +29,11 @@ def load_data_from_files(data_folder):
         data = data_json['data']
         
         # Prepare the inputs and targets (translations)
-        inputs = [
-            f"translate Vietnamese to English: {item['vi'].replace('.', '').replace(',', '')}"
-            for item in data
-        ]
-        targets = [
-            item['en'].replace('.', '').replace(',', '')
-            for item in data
-        ]
+        for item in data:
+            inputs.append(f"translate Vietnamese to English: {item['vi'].replace('.', '').replace(',', '')}")
+            targets.append(item['en'].replace('.', '').replace(',', ''))
         
-        # Add the data from this file to the list
-        all_data.extend({'input_text': inputs, 'target_text': targets})
-        
-    return all_data
+    return {'input_text': inputs, 'target_text': targets}
 
 # Load and merge all JSON files
 data_dict = load_data_from_files(DATA_FOLDER)
@@ -74,7 +67,7 @@ tokenized_eval = eval_dataset.map(preprocess_function, batched=True)
 
 # Training arguments
 training_args = TrainingArguments(
-    output_dir='./t5_vi_en_translation',          
+    output_dir='./vit5_vi_en_translation',          
     evaluation_strategy='epoch',
     learning_rate=5e-5,
     per_device_train_batch_size=4,      
@@ -100,6 +93,6 @@ trainer = Trainer(
 trainer.train()
 
 # Save the model and tokenizer
-model_save_path = './t5_vi_en_translation'
+model_save_path = './vit5_vi_en_translation'
 model.save_pretrained(model_save_path)
 tokenizer.save_pretrained(model_save_path)
