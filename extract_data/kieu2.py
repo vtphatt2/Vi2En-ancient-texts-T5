@@ -40,13 +40,12 @@ def clean_text(text):
     text = text.replace("\t", " ")
     text = text.replace("’", "'")
     cleaned_text = SPECIAL_CHARS_PATTERN.sub("", text)
+    cleaned_text = LEADING_ARABIC_NUMBERS_PATTERN.sub("", cleaned_text)
+    cleaned_text = LEADING_ROMAN_NUMERALS_PATTERN.sub("", cleaned_text)
     lines = cleaned_text.splitlines()
 
     cleaned_lines = []
     for line in lines:
-        # Remove leading numbers and Roman numerals
-        line = LEADING_ARABIC_NUMBERS_PATTERN.sub("", line)
-        line = LEADING_ROMAN_NUMERALS_PATTERN.sub("", line)
         line = line.strip()
 
         if not line or any(pattern in line for pattern in REMOVE_PATTERNS):
@@ -92,6 +91,8 @@ def separate_languages(all_texts):
                 eng_texts.append(line)
             elif lang == "vi":
                 vie_texts.append(line)
+            else:
+                eng_texts.append(line)
         except Exception:
             print(f"Skipping undetectable line: {line}")
 
