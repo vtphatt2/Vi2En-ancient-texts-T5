@@ -8,15 +8,15 @@ import json
 SPECIAL_CHARS_PATTERN = re.compile(r"[^a-zA-ZÀ-ỹ\s\'\"-]")
 PAGE_NUMBER_PATTERN = re.compile(r"\n\s*(\d+)\s*\n")
 # PAGE_NUMBER_LINE_PATTERN = re.compile(r'^\s*\d+\s*$')
-FOOTNOTE_DESCRIPTION_PATTERN = re.compile(
-    r"\n\d+\..*?(?=\n\d+\.|$)", re.DOTALL
-)
+FOOTNOTE_DESCRIPTION_PATTERN = re.compile(r"\n\d+\..*?(?=\n\d+\.|$)", re.DOTALL)
 FOOTNOTE_MARKER_PATTERN = re.compile(r'\s*\(\d+\)')
 # FOOTNOTE_NUMBER_AFTER_TEXT_PATTERN = re.compile(r'([^\s\d:,])(\d+)\b')
 FOOTNOTE_NUMBER_AFTER_TEXT_PATTERN = re.compile(r'(?<![,])([a-zA-Z])\d+\b')
 FOOTNOTE_NUMBER_AFTER_PUNCTUATION_PATTERN = re.compile(r'(?<![,])([!?"\.\'])\s*\d+\b')
 FOOTNOTE_NUMBER_AFTER_COMMA_PATTERN = re.compile(r'(?<!\d)(,)(?:\s*)(\d+)\b')
 HYPHENATED_WORD_PATTERN = re.compile(r"(\w+)-\s*(\w+)")
+PUNCTUATION_PATTERN = re.compile(r'\s*([!\'?.,;])(\s*)')
+ELLIPSIS_PATTERN = re.compile(r'\s*\.\s*\.\s*\.(\s*)(\.*)')
 REMOVE_TEXTS = {
     "https://thuviensach.vn",
     "-e-",
@@ -54,6 +54,8 @@ def clean_text(text):
     cleaned_text = FOOTNOTE_NUMBER_AFTER_COMMA_PATTERN.sub(r'\1', cleaned_text)
     cleaned_text = PAGE_NUMBER_PATTERN.sub("", cleaned_text)
     cleaned_text = HYPHENATED_WORD_PATTERN.sub(r"\1-\2", cleaned_text)
+    cleaned_text = PUNCTUATION_PATTERN.sub(r"\1\2", cleaned_text)
+    cleaned_text = ELLIPSIS_PATTERN.sub(r"...\1", cleaned_text)
     lines = cleaned_text.splitlines()
 
     cleaned_lines = []
