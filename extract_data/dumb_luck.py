@@ -5,18 +5,33 @@ import json
 
 
 # Precompiled patterns for efficiency
-SPECIAL_CHARS_PATTERN = re.compile(r"[^a-zA-ZÀ-ỹ\s\'\’\"-]")
-LEADING_ARABIC_NUMBERS_PATTERN = re.compile(r"^\s*(\d+)\n")
-LEADING_ROMAN_NUMERALS_PATTERN = re.compile(r"^\s*[IVXLCDM]+\n")
-CHARACTER_NAMES_PATTERN = re.compile(
-    r"(Kiều|Thúy Kiều|Thúy Vân|Kim Trọng|Thúc Sinh|Tú Bà|Mã Giám Sinh|Từ Hải|Vương|Mã Kiều|Thúc|Bạc Hạnh|Trạc Tuyền|Hồ Tôn Hiến|Giác Duyên|Đạm Tiên|Kỳ Tâm|Tích Việt|Kiều's|Tú|Mã|Bạc|Bạc Tú)"
+SPECIAL_CHARS_PATTERN = re.compile(r"[^a-zA-ZÀ-ỹ\s\'\"-]")
+PAGE_NUMBER_PATTERN = re.compile(r"\n\s*(\d+)\s*\n")
+# PAGE_NUMBER_LINE_PATTERN = re.compile(r'^\s*\d+\s*$')
+FOOTNOTE_DESCRIPTION_PATTERN = re.compile(
+    r"\n\d+\..*?(?=\n\d+\.|$)", re.DOTALL
 )
-REMOVE_PATTERNS = {
+FOOTNOTE_MARKER_PATTERN = re.compile(r'\s*\(\d+\)')
+# FOOTNOTE_NUMBER_AFTER_TEXT_PATTERN = re.compile(r'([^\s\d:,])(\d+)\b')
+FOOTNOTE_NUMBER_AFTER_TEXT_PATTERN = re.compile(r'(?<![,])([a-zA-Z])\d+\b')
+FOOTNOTE_NUMBER_AFTER_PUNCTUATION_PATTERN = re.compile(r'(?<![,])([!?"\.\'])\s*\d+\b')
+FOOTNOTE_NUMBER_AFTER_COMMA_PATTERN = re.compile(r'(?<!\d)(,)(?:\s*)(\d+)\b')
+HYPHENATED_WORD_PATTERN = re.compile(r"(\w+)-\s*(\w+)")
+REMOVE_TEXTS = {
     "https://thuviensach.vn",
-    "VU TRQNG PHl,JN",
     "-e-",
     "Mr. and Mrs. Civilization",
-    "MINH+VĂN=VĂN MINH"
+    "MINH+VĂN=VĂN MINH",
+    "Ebook miễn phí tại : www.SachMoi.net",
+    "Dumb Luck",
+    "Dumb luck",
+}
+IGNORE_PATTERNS = {
+    "Chương",
+    "Chapter",
+    "Dumb Luck",
+    "Dumb luck",
+    "VU",
 }
 
 
@@ -24,16 +39,31 @@ def clean_text(text):
     """Clean text by removing unwanted characters and patterns."""
     text = text.replace("\t", " ")
     text = text.replace("’", "'")
-    # cleaned_text = SPECIAL_CHARS_PATTERN.sub("", text)
-    cleaned_text = LEADING_ARABIC_NUMBERS_PATTERN.sub("", cleaned_text)
-    cleaned_text = LEADING_ROMAN_NUMERALS_PATTERN.sub("", text)
+    text = text.replace("‘", "'")
+    text = text.replace("·", '.')
+    text = text.replace("dod6i", 'đôi')
+    text = text.replace("dod65", 'độ')
+    text = text.replace("dodòi", 'đời')
+    for txt in REMOVE_TEXTS:
+        text = text.replace(txt, "")
+
+    cleaned_text = FOOTNOTE_DESCRIPTION_PATTERN.sub("", text)
+    cleaned_text = FOOTNOTE_MARKER_PATTERN.sub("", cleaned_text)
+    cleaned_text = FOOTNOTE_NUMBER_AFTER_TEXT_PATTERN.sub(r'\1', cleaned_text)
+    cleaned_text = FOOTNOTE_NUMBER_AFTER_PUNCTUATION_PATTERN.sub(r'\1', cleaned_text)
+    cleaned_text = FOOTNOTE_NUMBER_AFTER_COMMA_PATTERN.sub(r'\1', cleaned_text)
+    cleaned_text = PAGE_NUMBER_PATTERN.sub("", cleaned_text)
+    cleaned_text = HYPHENATED_WORD_PATTERN.sub(r"\1-\2", cleaned_text)
     lines = cleaned_text.splitlines()
 
     cleaned_lines = []
     for line in lines:
         line = line.strip()
 
-        if not line or any(pattern in line for pattern in REMOVE_PATTERNS):
+        if not line:
+            continue
+
+        if any(pattern in line for pattern in IGNORE_PATTERNS):
             continue
 
         cleaned_lines.append(line)
@@ -49,7 +79,6 @@ def extract_text_from_pdf(pdf_file, start_page=10, end_offset=4):
         page = pdf_file.load_page(page_index)
         text = page.get_text("text")
         cleaned_lines = clean_text(text)
-        # cleaned_lines = text.splitlines()
         all_texts.extend(cleaned_lines)
 
     return all_texts
