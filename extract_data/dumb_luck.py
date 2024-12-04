@@ -92,115 +92,6 @@ def save_text_to_file(file_path, texts):
         file.write("\n".join(texts))
 
 
-# def split_into_sentences(text):
-#     """Split text into sentences while preserving honorifics and titles."""
-#     honorifics = {'Mr.', 'Mrs.', 'Ms.', 'Dr.', 'Prof.', 'Sr.', 'Jr.', 'St.', 'Rev.'}
-#     sentences = []
-#     current = []
-#     quote_stack = []
-
-#     def is_honorific(index):
-#         """Check if a period at the current index is part of an honorific."""
-#         if index == 0 or text[index - 1] == ' ':
-#             return False
-#         word_start = index
-#         while word_start > 0 and text[word_start - 1].isalpha():
-#             word_start -= 1
-#         return text[word_start:index + 1] in honorifics
-
-#     i = 0
-#     while i < len(text):
-#         char = text[i]
-#         current.append(char)
-
-#         # Handle honorific cases
-#         if char == '.' and is_honorific(i):
-#             i += 1
-#             continue
-
-#         # Manage quote stack for proper sentence boundary detection
-#         if char == '"':
-#             if quote_stack and quote_stack[-1] == '"':
-#                 quote_stack.pop()
-#             else:
-#                 quote_stack.append(char)
-
-#         # Handle ellipses
-#         if char == '.' and text[i:i+3] == '...':
-#             current.extend(text[i+1:i+3])
-#             i += 2
-#             continue
-
-#         # Sentence boundaries outside of quotes
-#         if char in '.!?:' and not quote_stack:
-#             if i + 1 == len(text) or text[i + 1] in ' \n"':
-#                 sentences.append(''.join(current).strip())
-#                 current = []
-
-#         i += 1
-
-#     # Add remaining text as a sentence
-#     if current:
-#         sentences.append(''.join(current).strip())
-
-#     return [sentence for sentence in sentences if sentence]
-
-
-# def split_into_sentences(text):
-#     """Split text into sentences, efficiently handling quotes and preserving honorifics."""
-#     text = ' '.join(text)  # Normalize whitespace
-#     # Define a set of honorifics that should not be split
-#     honorifics = {'Mr.', 'Mrs.', 'Ms.', 'Dr.', 'Prof.', 'Sr.', 'Jr.', 'St.', 'Rev.'}
-#     sentences = []      # List to hold the final sentences
-#     current = []        # List to accumulate characters for the current sentence
-#     quote_stack = []    # Stack to keep track of quotes
-
-#     def is_honorific(index):
-#         """Check if a period at the current index is part of an honorific."""
-#         if index == 0 or text[index - 1] == ' ':
-#             return False
-#         word_start = index
-#         while word_start > 0 and text[word_start - 1].isalpha():
-#             word_start -= 1
-#         return text[word_start:index + 1] in honorifics
-
-#     i = 0
-#     while i < len(text):
-#         char = text[i]
-#         if quote_stack:
-#             quote_stack.append(char)
-#         else:
-#             current.append(char)
-
-#         # Detect quotes and manage the quote stack
-#         if char == '"':
-#             if quote_stack:
-#                 quote_stack.append(char)
-#                 sentences.append(quote_stack.pop().strip())
-#                 current = []
-#             else:
-#                 quote_stack.append(char)
-
-#         # Handle honorifics
-#         elif char == '.' and is_honorific(i):
-#             i += 1
-#             continue
-
-#         # Handle sentence boundaries outside quotes
-#         elif char in '.!?:' and not quote_stack:
-#             if i + 1 == len(text) or text[i + 1] in '\n"':
-#                 sentences.append(''.join(current).strip())
-#                 current = []
-
-#         i += 1
-
-#     # Add any remaining text
-#     if current:
-#         sentences.append(''.join(current).strip())
-
-#     return [sentence for sentence in sentences if sentence]
-
-
 def split_into_sentences(text):
     """Split text into sentences, efficiently handling quotes and preserving honorifics."""
     text = ' '.join(text)  # Normalize whitespace
@@ -214,6 +105,7 @@ def split_into_sentences(text):
         if index == 0 or text[index - 1] == ' ':
             return False
         word_start = index
+        # Look backwards to find word start
         while word_start > 0 and text[word_start - 1].isalpha():
             word_start -= 1
         return text[word_start:index + 1] in honorifics
@@ -223,22 +115,21 @@ def split_into_sentences(text):
         char = text[i]
         current.append(char)
 
-        # Detect quotes and manage stack
+        # Quote handling: stack tracks quotes
         if char == '"':
-            if quote_stack and quote_stack[-1] == '"':
-                quote_stack.pop()
+            if quote_stack and quote_stack[-1] == '"':  # Closing quote
                 sentences.append(''.join(current).strip())
                 current = []
-            else:
+            else:                                       # Starting quote
                 quote_stack.append(char)
 
-        # Handle honorifics
+        # Skip periods in honorifics (e.g., "Mr.")
         elif char == '.' and is_honorific(i):
             i += 1
             continue
 
-        # Handle sentence boundaries outside quotes
-        elif char in '.!?' and not quote_stack:
+        # End sentence on .!? if not in quotes and followed by space/newline/quote
+        elif char in ':.!?' and not quote_stack:
             if i + 1 == len(text) or text[i + 1] in ' \n"':
                 sentences.append(''.join(current).strip())
                 current = []
@@ -251,6 +142,50 @@ def split_into_sentences(text):
 
     return [sentence for sentence in sentences if sentence]
 
+
+def split_into_sentences_2(text):
+    text = ' '.join(text)
+    text = re.sub(r'\s*\.\s*\.\s*\.\s*', '…', text)
+    
+    # Preprocess honorifics to avoid lookbehind
+    honorifics = ['Mr.', 'Mrs.', 'Ms.', 'Dr.', 'Prof.', 'Sr.', 'Jr.', 'St.', 'Rev.']
+    for h in honorifics:
+        text = text.replace(h, h.replace('.', '@'))
+    
+    sentence_endings = re.compile(
+        r'([^"]+?(?:[.!?…:](?=\s)|$))'
+    )
+
+    sentences = []
+    buffer = ''
+    in_quotes = False
+
+    for match in sentence_endings.finditer(text):
+        sentence = match.group(1).strip()
+        
+        # Restore honorifics
+        for h in honorifics:
+            sentence = sentence.replace(h.replace('.', '@'), h)
+
+        if sentence.startswith('"'):
+            in_quotes = True
+            buffer = sentence
+            continue
+
+        if in_quotes:
+            buffer += ' ' + sentence
+            if sentence.endswith(('"', '"')):
+                sentences.append(buffer.strip())
+                buffer = ''
+                in_quotes = False
+            continue
+
+        sentences.append(sentence)
+
+    if buffer:
+        sentences.append(buffer.strip())
+
+    return [s for s in sentences if s]
 
 
 if __name__ == "__main__":
@@ -271,9 +206,10 @@ if __name__ == "__main__":
     save_text_to_file("vietnamese.txt", vie_texts)
 
     # Append all english texts to a single string
-    save_text_to_file("english_sentences.txt", split_into_sentences(eng_texts))
-    save_text_to_file("vietnamese_sentences.txt", split_into_sentences(vie_texts))
+    save_text_to_file("english_sentences.txt", split_into_sentences_2(eng_texts))
+    save_text_to_file("vietnamese_sentences.txt", split_into_sentences_2(vie_texts))
 
     # Close the PDF file
     vie_pdf_file.close()
     eng_pdf_file.close()
+
