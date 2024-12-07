@@ -25,8 +25,6 @@ REMOVE_TEXTS = {
     "Ebook miễn phí tại : www.SachMoi.net",
     "Dumb Luck",
     "Dumb luck",
-    "\"All alone on an autumn night, my tender heart is sinking.\"",
-    "Xuan was suspicious.",
 }
 IGNORE_PATTERNS = {
     "Chương",
@@ -35,70 +33,28 @@ IGNORE_PATTERNS = {
     "Dumb luck",
     "VU",
 }
-ENG_WRONG_NEWLINE_PATTERN = re.compile(r'([^":\'])[\s*\n\s*]([^"\'])')
-VIE_WRONG_NEWLINE_PATTERN = re.compile(r'([^-?!.":\'])[\s*\n\s*]([^-?!.":\'])')
+WRONG_NEWLINE_PATTERN = re.compile(r'([^-":\'])[\s*\n\s*]([^-"\'])')
 
 
-def process_wrong_newline_char_eng(text):
+def process_wrong_newline_char(text):
     """Process wrong newline characters in the text."""
     text = '\n'.join(text)
-    text = ENG_WRONG_NEWLINE_PATTERN.sub(r'\1 \2', text)
+
+    text = WRONG_NEWLINE_PATTERN.sub(r'\1 \2', text)
     return text.splitlines()
 
 
-def process_wrong_newline_char_vie(text):
-    """Process wrong newline characters in the text."""
-    text = '\n'.join(text)
-    text = VIE_WRONG_NEWLINE_PATTERN.sub(r'\1 \2', text)
-    return text.splitlines()
-
-
-def process_wrong_newline_char_vie(text):
-    """Process wrong newline characters in the text."""
-    text = '\n'.join(text)
-    text = VIE_WRONG_NEWLINE_PATTERN.sub(r'\1 \2', text)
-    return text.splitlines()
-
-
-def map_wrong_text_to_correct_text(text):
-    """Map wrong text to correct text."""
+def clean_text(text):
+    """Clean text by removing unwanted characters and patterns."""
     text = text.replace("\t", " ")
     text = text.replace("’", "'")
     text = text.replace("‘", "'")
     text = text.replace("·", '.')
     text = text.replace("–", '-')
-    text = text.replace("…", '...')
-    text = text.replace("'Tm", "\"I'm")
-    text = text.replace("asmall", "a small")
-    text = text.replace("stalk. He", "stalk, he")
-    text = text.replace("to the pavement.", "to the pavement,")
-    text = text.replace("God damn my mother's milk!", "God damn my mother's milk. All alone on an autumn night, my tender heart is sinking.")
-    text = text.replace("song:", "song,")
-    text = text.replace("term,\" he blurted out.", "term.\"")
-    text = text.replace("first time.", "first time and blurted out.")
-    # text = text.replace("personal fate.", "personal fate,")
-    text = text.replace("earthly state.", "earthly state,")
-    text = text.replace("the nether-world.", "the nether-world,")
-    text = text.replace("He continued to chant:", "He continued to chant,")
-    text = text.replace("at hand.", "at hand,")
-    text = text.replace("n.ame", "name")
-
     text = text.replace("dod6i", 'đôi')
     text = text.replace("dod65", 'độ')
     text = text.replace("dodòi", 'đời')
     text = text.replace("mẫu, thỉnh", 'mẫu. Thỉnh')
-    text = text.replace("lợn,", "lợn.")
-    text = text.replace("thinh,", "thinh.")
-    text = text.replace("bồ côi", "mồ côi")
-    text = text.replace("miếng hay.", "miếng hay,")
-
-    return text
-
-
-def clean_text(text):
-    """Clean text by removing unwanted characters and patterns."""
-    text = map_wrong_text_to_correct_text(text)
-
     for txt in REMOVE_TEXTS:
         text = text.replace(txt, "")
 
@@ -271,7 +227,7 @@ def split_into_sentences_quotes_eng(text):
             current.append(char)
 
             # Quote
-            if (char == '"' or char == "'") and len(current) == 1:
+            if char == '"':
                 sentences.append(line) # Combine each character to form a sentence
                 current = []
                 break
@@ -346,32 +302,34 @@ def split_into_sentences_quotes_vie(text):
 if __name__ == "__main__":
     # File path
     # vie_pdf_path = os.path.join("..", "raw_dataset", "dumb-luck-vie.pdf")
-    eng_pdf_path = os.path.join("..", "raw_dataset", "dumb-luck-eng.pdf")
+    # eng_pdf_path = os.path.join("..", "raw_dataset", "dumb-luck-eng.pdf")
 
     # Process PDF file
     # vie_pdf_file = fitz.open(vie_pdf_path)
-    eng_pdf_file = fitz.open(eng_pdf_path)
+    # eng_pdf_file = fitz.open(eng_pdf_path)
 
     # Extract text from PDF
     vie_texts = read_text_from_file("vietnamese.txt")
     vie_texts = clean_text(vie_texts)
-    eng_texts = extract_text_from_pdf(eng_pdf_file, start_page=36, end_offset=0)
+    # eng_texts = extract_text_from_pdf(eng_pdf_file, start_page=36, end_offset=0)
 
     # Save the extracted texts 
-    # save_text_to_file("vietnamese.txt", vie_texts)
-    save_text_to_file("english.txt", eng_texts)
+    save_text_to_file("vietnamese.txt", vie_texts)
+    # save_text_to_file("english.txt", eng_texts)
 
 
     # Split the extracted texts into sentences
-    eng_texts = process_wrong_newline_char_eng(eng_texts)
-    eng_texts = split_into_sentences_quotes_eng(eng_texts)
-
-    vie_texts = process_wrong_newline_char_vie(vie_texts)
+    # eng_texts = process_wrong_newline_char(eng_texts)
+    # eng_texts = split_into_sentences_quotes_eng(eng_texts)
+    print(vie_texts)
+    vie_texts = process_wrong_newline_char(vie_texts)
+    print(vie_texts)
     vie_texts = split_into_sentences_quotes_vie(vie_texts)
+    print(vie_texts)
 
-    save_text_to_file("english_sentences.txt", eng_texts)
+    # save_text_to_file("english_sentences.txt", eng_texts)
     save_text_to_file("vietnamese_sentences.txt", vie_texts)
 
     # Close the PDF file
     # vie_pdf_file.close()
-    eng_pdf_file.close()
+    # eng_pdf_file.close()
