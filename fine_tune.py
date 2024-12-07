@@ -1,111 +1,65 @@
-import os
-import json
-import torch
-from glob import glob
-from transformers import T5ForConditionalGeneration, T5Tokenizer, AdamW
-from torch.utils.data import DataLoader, TensorDataset
-from tqdm import tqdm
+# Import necessary libraries
+from transformers import AutoTokenizer, AutoModelForSeq2SeqLM
+from datasets import Dataset
+from transformers import DataCollatorForSeq2Seq
+from transformers import Seq2SeqTrainingArguments, Seq2SeqTrainer
 
-# Check if CUDA (GPU) is available
-if torch.cuda.is_available():
-    device = torch.device("cuda")
-    print('There are %d GPU(s) available.' % torch.cuda.device_count())
-    print('We will use the GPU:', torch.cuda.get_device_name(0))
-else:
-    print('No GPU available, using the CPU instead.')
-    device = torch.device("cpu")
 
-# Define the folder where your .json files are stored
-DATA_FOLDER = 'data'    # Folder containing all the .json files
+# Load the model and tokenizer
+model_name = "VietAI/envit5-translation"
+tokenizer = AutoTokenizer.from_pretrained(model_name)
+model = AutoModelForSeq2SeqLM.from_pretrained(model_name)
 
-# Load and tokenize the data from JSON files
-def load_data_from_files(data_folder):
-    inputs = []         # To store all input texts (Vietnamese)
-    targets = []        # To store all target texts (English)
+
+# Prepare data
+data_dict = {
+    "vi": ["Trăm năm trong cõi người ta"],
+    "en": ["Through hundred years in life"]
+}
+
+train_dataset = Dataset.from_dict(data_dict)
+
+prefix = "translate Vietnamese to English: "
+
+def preprocess_function(examples):
+    inputs = [prefix + example for example in examples["vi"]]
+    targets = [example for example in examples["en"]]
+    model_inputs = tokenizer(inputs, max_length=128, truncation=True)
+
+    with tokenizer.as_target_tokenizer():
+        labels = tokenizer(targets, max_length=128, truncation=True)
+
+    model_inputs["labels"] = labels["input_ids"]
     
-    # Initialize tokenizer
-    tokenizer = T5Tokenizer.from_pretrained("NlpHUST/t5-vi-en-base")
-    
-    # Get all .json files in the data folder using glob
-    json_files = glob(os.path.join(f"{data_folder}", "*.json"))
-    
-    for file_path in json_files:
-        # Open and load each JSON file
-        with open(file_path, 'r', encoding='utf-8') as f:
-            data_json = json.load(f)
-        
-        # Extract the relevant data
-        data = data_json['data']
-        
-        # Prepare the inputs and targets (translations)
-        for item in data:
-            # Format the input as "translate Vietnamese to English: <text>"
-            inputs.append(f"translate Vietnamese to English: {item['vi'].replace('.', '').replace(',', '')}")
-            targets.append(item['en'].replace('.', '').replace(',', ''))
-        
-    # Tokenize the inputs and targets
-    tokenized_inputs = tokenizer(inputs, padding=True, truncation=True, return_tensors="pt")
-    tokenized_targets = tokenizer(targets, padding=True, truncation=True, return_tensors="pt")
+    return model_inputs
 
-    return tokenized_inputs, tokenized_targets
+train_dataset = train_dataset.map(preprocess_function, batched=True)
 
-# Load the data and tokenize it
-tokenized_inputs, tokenized_targets = load_data_from_files(DATA_FOLDER)
 
-# Prepare the DataLoader for batching
-def create_dataloader(tokenized_inputs, tokenized_targets, batch_size=8):
-    input_ids = tokenized_inputs['input_ids']
-    attention_mask = tokenized_inputs['attention_mask']
-    labels = tokenized_targets['input_ids']
-    
-    # Create the TensorDataset
-    dataset = TensorDataset(input_ids, attention_mask, labels)
-    
-    # Create DataLoader
-    dataloader = DataLoader(dataset, batch_size=batch_size, shuffle=True)
-    
-    return dataloader
+# Data collator
+data_collator = DataCollatorForSeq2Seq(tokenizer=tokenizer, model=model)
 
-# Create the DataLoader
-dataloader = create_dataloader(tokenized_inputs, tokenized_targets)
 
-# Load the pre-trained model
-model = T5ForConditionalGeneration.from_pretrained("NlpHUST/t5-vi-en-base")
-model.to(device)
+# Fine-tuning
+training_args = Seq2SeqTrainingArguments(
+    output_dir="./results",
+    evaluation_strategy="epoch",
+    learning_rate=2e-5,
+    per_device_train_batch_size=16,
+    per_device_eval_batch_size=16,
+    weight_decay=0.01,
+    save_total_limit=3,
+    num_train_epochs=1,
+    fp16=True,
+)
 
-# Define the optimizer
-optimizer = AdamW(model.parameters(), lr=5e-5)
+trainer = Seq2SeqTrainer(
+    model=model,
+    args=training_args,
+    train_dataset=train_dataset,
+    eval_dataset=train_dataset,
+    tokenizer=tokenizer,
+    data_collator=data_collator,
+)
 
-# Define the training loop
-def fine_tune_model(dataloader, model, optimizer, num_epochs=3):
-    model.train()
-    
-    for epoch in range(num_epochs):
-        total_loss = 0
-        for batch in tqdm(dataloader, desc=f"Epoch {epoch+1}/{num_epochs}"):
-            # Move the batch to the appropriate device
-            input_ids, attention_mask, labels = [x.to(device) for x in batch]
-
-            # Forward pass
-            outputs = model(input_ids=input_ids, attention_mask=attention_mask, labels=labels)
-            loss = outputs.loss
-
-            # Backward pass
-            loss.backward()
-            
-            # Update parameters
-            optimizer.step()
-            optimizer.zero_grad()
-
-            # Track the loss
-            total_loss += loss.item()
-
-        avg_loss = total_loss / len(dataloader)
-        print(f"Epoch {epoch+1} - Average Loss: {avg_loss:.4f}")
-
-# Start fine-tuning
-fine_tune_model(dataloader, model, optimizer, num_epochs=3)
-
-# Save the fine-tuned model
-model.save_pretrained("fine_tuned_t5_vi_en")
-T5Tokenizer.from_pretrained("NlpHUST/t5-vi-en-base").save_pretrained("fine_tuned_t5_vi_en")
+trainer.train()
