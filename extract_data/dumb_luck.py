@@ -27,6 +27,7 @@ REMOVE_TEXTS = {
     "Dumb luck",
     "\"All alone on an autumn night, my tender heart is sinking.\"",
     "Xuan was suspicious.",
+    "sternly to Xuan."
 }
 IGNORE_PATTERNS = {
     "Chương",
@@ -37,6 +38,7 @@ IGNORE_PATTERNS = {
 }
 ENG_WRONG_NEWLINE_PATTERN = re.compile(r'([^":\'])[\s*\n\s*]([^"\'])')
 VIE_WRONG_NEWLINE_PATTERN = re.compile(r'([^-?!.":\'])[\s*\n\s*]([^-?!.":\'])')
+QUOTE_START_PATTERN = re.compile(r'(:)\s*([\"])')
 
 
 def process_wrong_newline_char_eng(text):
@@ -76,7 +78,6 @@ def pre_map_wrong_text_to_correct_text(text):
     text = text.replace("song:", "song,")
     text = text.replace("term,\" he blurted out.", "term.\"")
     text = text.replace("first time.", "first time and blurted out.")
-    # text = text.replace("personal fate.", "personal fate,")
     text = text.replace("earthly state.", "earthly state,")
     text = text.replace("the nether-world.", "the nether-world,")
     text = text.replace("He continued to chant:", "He continued to chant,")
@@ -87,7 +88,8 @@ def pre_map_wrong_text_to_correct_text(text):
     text = text.replace("tourist.", "tourist,")
     text = text.replace("still inside.", "still inside,")
     text = text.replace("her hair up in a bun.", "her hair up in a bun,")
-    text = text.replace("\"She's here?\" Red-Haired Xuan repeated quizzically.", "Red-Haired Xuan repeated quizzically:\n \"She's here?\"") 
+    text = text.replace("\"She's here?\" Red-Haired Xuan repeated quizzically.", "Red-Haired Xuan repeated quizzically: \"She's here?\"")
+    text = text.replace("\"My aunt does not approve of such formal language,\" he said", "He said sternly to Xuan: \"My aunt does not approve of such formal language.\"")
 
     text = text.replace("dod6i", 'đôi')
     text = text.replace("dod65", 'độ')
@@ -103,7 +105,6 @@ def pre_map_wrong_text_to_correct_text(text):
     text = text.replace("du lịch,", "du lịch.")
     text = text.replace("côi.", "côi,")
 
-
     return text
 
 
@@ -111,6 +112,7 @@ def post_map_wrong_text_to_correct_text(text):
     """Map wrong text to correct text."""
     text = text.replace("Move-ment...", "Movement and")
     text = text.replace("Movement...", "Movement") 
+    text = text.replace("chimed in bit-terly.", "chimed in bit-terly.\n")
 
     return text
 
@@ -131,6 +133,7 @@ def clean_text(text):
     cleaned_text = HYPHENATED_WORD_PATTERN.sub(r"\1-\2", cleaned_text)
     cleaned_text = PUNCTUATION_PATTERN.sub(r"\1\2", cleaned_text)
     cleaned_text = ELLIPSIS_PATTERN.sub(r"...\1", cleaned_text)
+    cleaned_text = QUOTE_START_PATTERN.sub(r'\1\n\2', cleaned_text)
 
     cleaned_text = post_map_wrong_text_to_correct_text(cleaned_text)
     lines = cleaned_text.splitlines()
@@ -390,7 +393,6 @@ if __name__ == "__main__":
     eng_texts = extract_text_from_pdf(eng_pdf_file, start_page=36, end_offset=0)
 
     # Save the extracted texts 
-    save_text_to_file("vietnamese.txt", vie_texts)
     save_text_to_file("english.txt", eng_texts)
 
 
