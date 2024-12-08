@@ -64,55 +64,66 @@ def process_wrong_newline_char_vie(text):
 
 def pre_map_wrong_text_to_correct_text(text):
     """Map wrong text to correct text."""
-    text = text.replace("\t", " ")
-    text = text.replace("’", "'")
-    text = text.replace("‘", "'")
-    text = text.replace("·", '.')
-    text = text.replace("–", '-')
-    text = text.replace("…", '...')
-    text = text.replace("'Tm", "\"I'm")
-    text = text.replace("asmall", "a small")
-    text = text.replace("stalk. He", "stalk, he")
-    text = text.replace("to the pavement.", "to the pavement,")
-    text = text.replace("God damn my mother's milk!", "God damn my mother's milk. All alone on an autumn night, my tender heart is sinking.")
-    text = text.replace("song:", "song,")
-    text = text.replace("term,\" he blurted out.", "term.\"")
-    text = text.replace("first time.", "first time and blurted out.")
-    text = text.replace("earthly state.", "earthly state,")
-    text = text.replace("the nether-world.", "the nether-world,")
-    text = text.replace("He continued to chant:", "He continued to chant,")
-    text = text.replace("at hand.", "at hand,")
-    text = text.replace("n.ame", "name")
-    text = text.replace("seventy kilogram!", "seventy kilogram,")
-    text = text.replace("scarf.", "scarf,")
-    text = text.replace("tourist.", "tourist,")
-    text = text.replace("still inside.", "still inside,")
-    text = text.replace("her hair up in a bun.", "her hair up in a bun,")
-    text = text.replace("\"She's here?\" Red-Haired Xuan repeated quizzically.", "Red-Haired Xuan repeated quizzically: \"She's here?\"")
-    text = text.replace("\"My aunt does not approve of such formal language,\" he said", "He said sternly to Xuan: \"My aunt does not approve of such formal language.\"")
+    replacement_pairs = [
+        ("\t", " "),
+        ("–", '-'),
+        ("‘", "'"),
+        ("’", "'"),
+        ("·", '.'),
+        ("…", '...'),
+        ("'Tm", "\"I'm"),
+        ("asmall", "a small"),
+        ("stalk. He", "stalk, he"),
+        ("to the pavement.", "to the pavement,"),
+        ("God damn my mother's milk!", "God damn my mother's milk. All alone on an autumn night, my tender heart is sinking."),
+        ("song:", "song,"),
+        ("term,\" he blurted out.", "term.\""),
+        ("first time.", "first time and blurted out."),
+        ("earthly state.", "earthly state,"),
+        ("the nether-world.", "the nether-world,"),
+        ("He continued to chant:", "He continued to chant,"),
+        ("at hand.", "at hand,"),
+        ("n.ame", "name"),
+        ("seventy kilogram!", "seventy kilogram,"),
+        ("scarf.", "scarf,"),
+        ("tourist.", "tourist,"),
+        ("still inside.", "still inside,"),
+        ("her hair up in a bun.", "her hair up in a bun,"),
+        ("\"She's here?\" Red-Haired Xuan repeated quizzically.", "Red-Haired Xuan repeated quizzically: \"She's here?\""),
+        ("\"My aunt does not approve of such formal language,\" he said", "He said sternly to Xuan: \"My aunt does not approve of such formal language.\""),
 
-    text = text.replace("dod6i", 'đôi')
-    text = text.replace("dod65", 'độ')
-    text = text.replace("dodòi", 'đời')
-    text = text.replace("mẫu, thỉnh", 'mẫu. Thỉnh')
-    text = text.replace("lợn,", "lợn.")
-    text = text.replace("thinh,", "thinh.")
-    text = text.replace("bồ côi", "mồ côi")
-    text = text.replace("miếng hay.", "miếng hay,")
-    text = text.replace("thiếu nữ,", "thiếu nữ.")
-    text = text.replace("mẩu,", "mẩu.")
-    text = text.replace("quăn.", "quăn,")
-    text = text.replace("du lịch,", "du lịch.")
-    text = text.replace("côi.", "côi,")
+        ("dod6i", 'đôi'),
+        ("dod65", 'độ'),
+        ("dodòi", 'đời'),
+        ("mẫu, thỉnh", 'mẫu. Thỉnh'),
+        ("lợn,", "lợn."),
+        ("thinh,", "thinh."),
+        ("bồ côi", "mồ côi"),
+        ("miếng hay.", "miếng hay,"),
+        ("thiếu nữ,", "thiếu nữ."),
+        ("mẩu,", "mẩu."),
+        ("quăn.", "quăn,"),
+        ("du lịch,", "du lịch."),
+        ("côi.", "côi,")
+
+    ]
+
+    for old_text, new_text in replacement_pairs:
+        text = text.replace(old_text, new_text)
 
     return text
 
 
 def post_map_wrong_text_to_correct_text(text):
     """Map wrong text to correct text."""
-    text = text.replace("Move-ment...", "Movement and")
-    text = text.replace("Movement...", "Movement") 
-    text = text.replace("chimed in bit-terly.", "chimed in bit-terly.\n")
+    replacement_pairs = [
+        ("Move-ment...", "Movement and"),
+        ("Popular Movement...", "Popular Movement"),
+        ("chimed in bit-terly.", "chimed in bitterly.\n"),
+    ]
+
+    for old_text, new_text in replacement_pairs:
+        text = text.replace(old_text, new_text)
 
     return text
 
@@ -176,101 +187,6 @@ def read_text_from_file(file_path):
     """Read text from a file."""
     with open(file_path, "r", encoding="utf-8") as file:
         return file.read()
-
-
-def split_into_sentences(text):
-    """Split text into sentences, efficiently handling quotes and preserving honorifics."""
-    text = ' '.join(text)  # Normalize whitespace
-    honorifics = {'Mr.', 'Mrs.', 'Ms.', 'Dr.', 'Prof.', 'Sr.', 'Jr.', 'St.', 'Rev.'}
-    sentences = []
-    current = []
-    quote_stack = []
-
-    def is_honorific(index):
-        """Check if a period at the current index is part of an honorific."""
-        if index == 0 or text[index - 1] == ' ':
-            return False
-        word_start = index
-        # Look backwards to find word start
-        while word_start > 0 and text[word_start - 1].isalpha():
-            word_start -= 1
-        return text[word_start:index + 1] in honorifics
-
-    i = 0
-    while i < len(text):
-        char = text[i]
-        current.append(char)
-
-        # Quote handling: stack tracks quotes
-        if char == '"':
-            if quote_stack and quote_stack[-1] == '"':  # Closing quote
-                sentences.append(''.join(current).strip())
-                current = []
-            else:                                       # Starting quote
-                quote_stack.append(char)
-
-        # Skip periods in honorifics (e.g., "Mr.")
-        elif char == '.' and is_honorific(i):
-            i += 1
-            continue
-
-        # End sentence on .!? if not in quotes and followed by space/newline/quote
-        elif char in ':.!?' and not quote_stack:
-            if i + 1 == len(text) or text[i + 1] in ' \n"':
-                sentences.append(''.join(current).strip())
-                current = []
-
-        i += 1
-
-    # Add any remaining text
-    if current:
-        sentences.append(''.join(current).strip())
-
-    return [sentence for sentence in sentences if sentence]
-
-
-def split_into_sentences_2(text):
-    text = ' '.join(text)
-    
-    # Preprocess honorifics to avoid lookbehind
-    honorifics = ['Mr.', 'Mrs.', 'Ms.', 'Dr.', 'Prof.', 'Sr.', 'Jr.', 'St.', 'Rev.']
-    for h in honorifics:
-        text = text.replace(h, h.replace('.', '@'))
-    
-    sentence_quote_endings = re.compile(
-        r'([^"]+?(?:[.!?…:](?=\s)|$))'
-    )
-
-    sentences = []
-    buffer = ''
-    in_quotes = False
-
-    for match in sentence_quote_endings.finditer(text):
-        sentence = match.group(1).strip()
-        
-        # Restore honorifics
-        for h in honorifics:
-            sentence = sentence.replace(h.replace('.', '@'), h)
-
-        if sentence.startswith('"'):
-            in_quotes = True
-            buffer = sentence
-            continue
-
-        if in_quotes:
-            buffer += ' ' + sentence
-            if sentence.endswith(('"', '"')):
-                sentences.append(buffer.strip())
-                buffer = ''
-                in_quotes = False
-            continue
-
-        sentences.append(sentence)
-
-    if buffer:
-        sentences.append(buffer.strip())
-
-    return [s for s in sentences if s]
 
 
 def split_into_sentences_quotes_eng(text):
