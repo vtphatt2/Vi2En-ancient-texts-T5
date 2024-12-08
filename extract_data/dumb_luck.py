@@ -60,7 +60,7 @@ def process_wrong_newline_char_vie(text):
     return text.splitlines()
 
 
-def map_wrong_text_to_correct_text(text):
+def pre_map_wrong_text_to_correct_text(text):
     """Map wrong text to correct text."""
     text = text.replace("\t", " ")
     text = text.replace("’", "'")
@@ -82,6 +82,12 @@ def map_wrong_text_to_correct_text(text):
     text = text.replace("He continued to chant:", "He continued to chant,")
     text = text.replace("at hand.", "at hand,")
     text = text.replace("n.ame", "name")
+    text = text.replace("seventy kilogram!", "seventy kilogram,")
+    text = text.replace("scarf.", "scarf,")
+    text = text.replace("tourist.", "tourist,")
+    text = text.replace("still inside.", "still inside,")
+    text = text.replace("her hair up in a bun.", "her hair up in a bun,")
+    text = text.replace("\"She's here?\" Red-Haired Xuan repeated quizzically.", "Red-Haired Xuan repeated quizzically:\n \"She's here?\"") 
 
     text = text.replace("dod6i", 'đôi')
     text = text.replace("dod65", 'độ')
@@ -91,13 +97,27 @@ def map_wrong_text_to_correct_text(text):
     text = text.replace("thinh,", "thinh.")
     text = text.replace("bồ côi", "mồ côi")
     text = text.replace("miếng hay.", "miếng hay,")
+    text = text.replace("thiếu nữ,", "thiếu nữ.")
+    text = text.replace("mẩu,", "mẩu.")
+    text = text.replace("quăn.", "quăn,")
+    text = text.replace("du lịch,", "du lịch.")
+    text = text.replace("côi.", "côi,")
+
+
+    return text
+
+
+def post_map_wrong_text_to_correct_text(text):
+    """Map wrong text to correct text."""
+    text = text.replace("Move-ment...", "Movement and")
+    text = text.replace("Movement...", "Movement") 
 
     return text
 
 
 def clean_text(text):
     """Clean text by removing unwanted characters and patterns."""
-    text = map_wrong_text_to_correct_text(text)
+    text = pre_map_wrong_text_to_correct_text(text)
 
     for txt in REMOVE_TEXTS:
         text = text.replace(txt, "")
@@ -111,6 +131,8 @@ def clean_text(text):
     cleaned_text = HYPHENATED_WORD_PATTERN.sub(r"\1-\2", cleaned_text)
     cleaned_text = PUNCTUATION_PATTERN.sub(r"\1\2", cleaned_text)
     cleaned_text = ELLIPSIS_PATTERN.sub(r"...\1", cleaned_text)
+
+    cleaned_text = post_map_wrong_text_to_correct_text(cleaned_text)
     lines = cleaned_text.splitlines()
 
     cleaned_lines = []
@@ -253,6 +275,7 @@ def split_into_sentences_quotes_eng(text):
     honorifics = {'Mr.', 'Mrs.', 'Ms.', 'Dr.', 'Prof.', 'Sr.', 'Jr.', 'St.', 'Rev.'}
     sentences = []
     current = []
+    quote_stack = []
 
     def is_honorific(index):
         """Check if a period at the current index is part of an honorific."""
@@ -270,11 +293,20 @@ def split_into_sentences_quotes_eng(text):
             char = line[i]
             current.append(char)
 
-            # Quote
-            if (char == '"' or char == "'") and len(current) == 1:
-                sentences.append(line) # Combine each character to form a sentence
+            if quote_stack and char == '"':
+                sentence = ''.join(current).strip()
+                sentence += line[i+1:]
+                sentences.append(sentence.strip())
+                quote_stack.pop()
                 current = []
                 break
+            elif quote_stack:
+                i += 1
+                continue
+
+            # Quote
+            if (char == '"'):
+                quote_stack.append(char)
 
             # Skip periods in honorifics (e.g., "Mr.")
             elif char == '.' and is_honorific(i):
@@ -358,7 +390,7 @@ if __name__ == "__main__":
     eng_texts = extract_text_from_pdf(eng_pdf_file, start_page=36, end_offset=0)
 
     # Save the extracted texts 
-    # save_text_to_file("vietnamese.txt", vie_texts)
+    save_text_to_file("vietnamese.txt", vie_texts)
     save_text_to_file("english.txt", eng_texts)
 
 

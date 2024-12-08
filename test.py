@@ -33,14 +33,21 @@ IGNORE_PATTERNS = {
     "Dumb luck",
     "VU",
 }
-WRONG_NEWLINE_PATTERN = re.compile(r'([^-":\'])[\s*\n\s*]([^-"\'])')
+ENG_WRONG_NEWLINE_PATTERN = re.compile(r'([^":\'])[\s*\n\s*]([^"\'])')
+VIE_WRONG_NEWLINE_PATTERN = re.compile(r'([^-?!.":\'])[\s*\n\s*]([^-?!.":\'])')
 
 
-def process_wrong_newline_char(text):
+def process_wrong_newline_char_eng(text):
     """Process wrong newline characters in the text."""
     text = '\n'.join(text)
+    text = ENG_WRONG_NEWLINE_PATTERN.sub(r'\1 \2', text)
+    return text.splitlines()
 
-    text = WRONG_NEWLINE_PATTERN.sub(r'\1 \2', text)
+
+def process_wrong_newline_char_vie(text):
+    """Process wrong newline characters in the text."""
+    text = '\n'.join(text)
+    text = VIE_WRONG_NEWLINE_PATTERN.sub(r'\1 \2', text)
     return text.splitlines()
 
 
@@ -109,106 +116,12 @@ def read_text_from_file(file_path):
         return file.read()
 
 
-def split_into_sentences(text):
-    """Split text into sentences, efficiently handling quotes and preserving honorifics."""
-    text = ' '.join(text)  # Normalize whitespace
-    honorifics = {'Mr.', 'Mrs.', 'Ms.', 'Dr.', 'Prof.', 'Sr.', 'Jr.', 'St.', 'Rev.'}
-    sentences = []
-    current = []
-    quote_stack = []
-
-    def is_honorific(index):
-        """Check if a period at the current index is part of an honorific."""
-        if index == 0 or text[index - 1] == ' ':
-            return False
-        word_start = index
-        # Look backwards to find word start
-        while word_start > 0 and text[word_start - 1].isalpha():
-            word_start -= 1
-        return text[word_start:index + 1] in honorifics
-
-    i = 0
-    while i < len(text):
-        char = text[i]
-        current.append(char)
-
-        # Quote handling: stack tracks quotes
-        if char == '"':
-            if quote_stack and quote_stack[-1] == '"':  # Closing quote
-                sentences.append(''.join(current).strip())
-                current = []
-            else:                                       # Starting quote
-                quote_stack.append(char)
-
-        # Skip periods in honorifics (e.g., "Mr.")
-        elif char == '.' and is_honorific(i):
-            i += 1
-            continue
-
-        # End sentence on .!? if not in quotes and followed by space/newline/quote
-        elif char in ':.!?' and not quote_stack:
-            if i + 1 == len(text) or text[i + 1] in ' \n"':
-                sentences.append(''.join(current).strip())
-                current = []
-
-        i += 1
-
-    # Add any remaining text
-    if current:
-        sentences.append(''.join(current).strip())
-
-    return [sentence for sentence in sentences if sentence]
-
-
-def split_into_sentences_2(text):
-    text = ' '.join(text)
-    
-    # Preprocess honorifics to avoid lookbehind
-    honorifics = ['Mr.', 'Mrs.', 'Ms.', 'Dr.', 'Prof.', 'Sr.', 'Jr.', 'St.', 'Rev.']
-    for h in honorifics:
-        text = text.replace(h, h.replace('.', '@'))
-    
-    sentence_quote_endings = re.compile(
-        r'([^"]+?(?:[.!?…:](?=\s)|$))'
-    )
-
-    sentences = []
-    buffer = ''
-    in_quotes = False
-
-    for match in sentence_quote_endings.finditer(text):
-        sentence = match.group(1).strip()
-        
-        # Restore honorifics
-        for h in honorifics:
-            sentence = sentence.replace(h.replace('.', '@'), h)
-
-        if sentence.startswith('"'):
-            in_quotes = True
-            buffer = sentence
-            continue
-
-        if in_quotes:
-            buffer += ' ' + sentence
-            if sentence.endswith(('"', '"')):
-                sentences.append(buffer.strip())
-                buffer = ''
-                in_quotes = False
-            continue
-
-        sentences.append(sentence)
-
-    if buffer:
-        sentences.append(buffer.strip())
-
-    return [s for s in sentences if s]
-
-
 def split_into_sentences_quotes_eng(text):
     """Split text into sentences, efficiently handling quotes and preserving honorifics."""
     honorifics = {'Mr.', 'Mrs.', 'Ms.', 'Dr.', 'Prof.', 'Sr.', 'Jr.', 'St.', 'Rev.'}
     sentences = []
     current = []
+    quote_stack = []
 
     def is_honorific(index):
         """Check if a period at the current index is part of an honorific."""
@@ -226,11 +139,20 @@ def split_into_sentences_quotes_eng(text):
             char = line[i]
             current.append(char)
 
-            # Quote
-            if char == '"':
-                sentences.append(line) # Combine each character to form a sentence
+            if quote_stack and char == '"':
+                sentence = ''.join(current).strip()
+                sentence += line[i+1:]
+                sentences.append(sentence.strip())
+                quote_stack.pop()
                 current = []
                 break
+            elif quote_stack:
+                i += 1
+                continue
+
+            # Quote
+            if (char == '"'):
+                quote_stack.append(char)
 
             # Skip periods in honorifics (e.g., "Mr.")
             elif char == '.' and is_honorific(i):
@@ -311,23 +233,24 @@ if __name__ == "__main__":
     # Extract text from PDF
     vie_texts = read_text_from_file("vietnamese.txt")
     vie_texts = clean_text(vie_texts)
+    eng_texts = read_text_from_file("english.txt")
+    eng_texts = clean_text(eng_texts)
     # eng_texts = extract_text_from_pdf(eng_pdf_file, start_page=36, end_offset=0)
 
     # Save the extracted texts 
     save_text_to_file("vietnamese.txt", vie_texts)
-    # save_text_to_file("english.txt", eng_texts)
+    save_text_to_file("english.txt", eng_texts)
 
 
     # Split the extracted texts into sentences
-    # eng_texts = process_wrong_newline_char(eng_texts)
-    # eng_texts = split_into_sentences_quotes_eng(eng_texts)
-    print(vie_texts)
-    vie_texts = process_wrong_newline_char(vie_texts)
-    print(vie_texts)
-    vie_texts = split_into_sentences_quotes_vie(vie_texts)
-    print(vie_texts)
+    eng_texts = process_wrong_newline_char_eng(eng_texts)
+    eng_texts = split_into_sentences_quotes_eng(eng_texts)
 
-    # save_text_to_file("english_sentences.txt", eng_texts)
+    vie_texts = process_wrong_newline_char_vie(vie_texts)
+    vie_texts = split_into_sentences_quotes_vie(vie_texts)
+
+
+    save_text_to_file("english_sentences.txt", eng_texts)
     save_text_to_file("vietnamese_sentences.txt", vie_texts)
 
     # Close the PDF file
