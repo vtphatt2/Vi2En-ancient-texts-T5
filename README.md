@@ -3,10 +3,12 @@ This project leverages the T5 Transformer model to build a machine translation s
 
 # Quick run
 1. First, navigate to the `web_ui` directory:
-> cd web_ui
+        
+        cd web_ui
 
 2. Then, run the application using the command:
-> python app.py
+        
+        python app.py
 
 # Members
 | **Name**| **Major**| **University**|
