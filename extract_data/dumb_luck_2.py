@@ -167,6 +167,29 @@ def pre_map_wrong_text_to_correct_text(text):
         ("full of hope.", "full of hope,"),
         ("of Europeanization", "of Europeanization."),
         ("plate-glass window. Although", "plate-glass window, although"),
+        ("He smiled to himself.", "He smiled to himself then"),
+        ("workers.", "workers:"),
+        ("scolded him again.", "scolded him again:"),
+        ("letter U.", "letter U"),
+        ("she asked the journalist.", ""),
+        ("briskly and turned to Xuan.", "briskly and turned to Xuan:"),
+        ("blushed and rubbed his hands together.", "blushed and rubbed his hands together:"),
+        ("interrupted him.", "interrupted him:"),
+        ("glass window. She", "glass window, she"),
+        ("a long while.", "a long while:"),
+        ("eyes wide in agreement.", "eyes wide in agreement:"),
+        ("pitch.", "pitch,"),
+        ("calm her down.", "calm her down:"),
+        ("Civilization shrugged her shoulders.", "Civilization shrugged her shoulders:"),
+        ("utter satisfaction.", "utter satisfaction,"),
+        ("appeared unconvinced.", "appeared unconvinced:"),
+        ("artist retorted,", "artist retorted."),
+        ("face of her customer.", "face of her customer:"),
+        ("a glass case.", "a glass case,"),
+        ("head vigorously.", "head vigorously:"),
+        ("to the artist.", "to the artist:"),
+        ("his head very low.", "his head very low:"),
+        ("his chair.", "his chair and"),
 
 
         ("dod6i", 'đôi'),
@@ -236,6 +259,16 @@ def pre_map_wrong_text_to_correct_text(text):
         ("Rồi bà, than ôi! trái ngược - bà", "Rồi bà"),
         ("CUỘC ÂU HOÁ", "CUỘC ÂU HÓA."),
         ("hôm ấy, Xuân", "hôm ấy. Xuân"),
+        ("nghĩa!”", "nghĩa!”."),
+        ("gì thế? Dạo", "gì thế!\n- Dạo"),
+        ("lụa. Nào là", "lụa, nào là"),
+        ("chính thế, bây", "chính thế.\n- Bây"),
+        ("bà! Nếu", "bà!\n- Nếu"),
+        ("Chinh phục! Tôi", "Chinh phục!\n- Tôi"),
+        ("Thưa bà, những", "Thưa bà.\n- Những"),
+        ("đấy! Dễ", "đấy!\n- Dễ"),
+        # ("cho bà, tôi", "cho bà.\n- Tôi"),
+
     ]
 
     for old_text, new_text in replacement_pairs:
@@ -256,6 +289,8 @@ def post_map_wrong_text_to_correct_text(text):
         ("Bop!","Bop,"),
         ("name.", "name:"),
         ("his new name:", "his new name."),
+        ("hik-ing outfit.", "hiking outfit,"),
+        ("gingerly en-tered the shop.", "gingerly entered the shop,")
     ]
 
     for old_text, new_text in replacement_pairs:
