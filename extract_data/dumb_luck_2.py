@@ -15,6 +15,7 @@ FOOTNOTE_NUMBER_AFTER_TEXT_PATTERN = re.compile(r'(?<![,])([a-zA-Z])\d+\b')
 FOOTNOTE_NUMBER_AFTER_PUNCTUATION_PATTERN = re.compile(r'(?<![,])([!?"\.\'])\s*\d+\b')
 FOOTNOTE_NUMBER_AFTER_COMMA_PATTERN = re.compile(r'(?<!\d)(,)(?:\s*)(\d+)\b')
 FOOTNOTE_NUMBER_AFTER_COLON_PATTERN = re.compile(r'(?<!\d)(:)(?:\s*)(\d+)\b')
+FOOTNOTE_NUMBER_AFTER_QUOTATION_PATTERN = re.compile(r'(?<!\d)(\")\s*(\d+)\b')
 HYPHENATED_WORD_PATTERN = re.compile(r"(\w+)-\s*(\w+)")
 PUNCTUATION_PATTERN = re.compile(r'\s*([!\'?.,;])(\s*)')
 ELLIPSIS_PATTERN = re.compile(r'\s*\.\s*\.\s*\.(\s*)(\.*)')
@@ -90,8 +91,6 @@ def pre_map_wrong_text_to_correct_text(text):
         ("tourist.", "tourist,"),
         ("still inside.", "still inside,"),
         ("her hair up in a bun.", "her hair up in a bun,"),
-        ("\"She's here?\" Red-Haired Xuan repeated quizzically.", "Red-Haired Xuan repeated quizzically: \"She's here?\""),
-        ("\"My aunt does not approve of such formal language,\" he said", "He said sternly to Xuan: \"My aunt does not approve of such formal language.\""),
         ("heroic.", "heroic:"),
         ("scowl.","scowl:"),
         ("muttering under his breath.", "muttering under his breath:"),
@@ -102,6 +101,41 @@ def pre_map_wrong_text_to_correct_text(text):
         ("cross-examine the old man.","cross-examine the old man:"),
         ("thick ears.","thick ears:"),
         ("her teeth.","her teeth:"),
+        ("rich wife.","rich wife."),
+        ("\"civilization\"-", "civilization.\n"),   
+        ("noth-ing at all.","nothing at all,"),
+        ("reform movement.", "reform movement,"),
+        ("body-and thus", "body. Thus"),
+        ("for Europeanization.","for Europeanization,"),
+        (", targeting",". He targeted"),
+        ("deputy customs officer and died ten years later.", "deputy customs officer. He died ten years later,"),
+        ("side, and Xuan","side. Xuan"),
+        ("fire him like that!\".", "fire him like that!\".\n"),
+        ("small ward.", "small ward,"),
+        ("for them to enter.", "for them to enter:"),
+        ("piasters in fines;", "piasters in fines."),
+        ("Over the next several weeks", "Then... Over the next several weeks"),
+        ("the captain.", "the captain,"),
+        ("Confucian scholar.", "Confucian scholar:"),
+        ("traditional Confucian scholar:", "traditional Confucian scholar."),
+        ("dO'.", "do:"),
+        ("nerve and tried", "nerve. He tried"),
+        ("change the subject.", "change the subject"),
+        ("He ordered Min dO'", "by ordering Min dO'"),
+        ("Ra cả! Ra lấy", "Ra cả!\n- Ra lấy"),
+        ("gave him a kick.", "gave him a kick:"),
+        ("turned to him first.", "turned to him first:"),    
+        ("fist on the table.", "fist on the table:"),
+        ("turned to the fortune-teller.", "turned to the fortune-teller:"),
+        ("at the fortune-teller.", "at the fortune-teller:"),
+        ("frowned at Red-Haired Xuan.", "frowned at Red-Haired Xuan:"),
+        ("one more time.", "one more time:"),
+        ("officers, who", "officers. They"),
+        ("called out after the car, \"Thank you so much! Please come again!\"", "called out after the car."),
+        ("them off at the gate.", "them off at the gate: \"Thank you so much! Please come again!\"\n"),
+        ("wife, he", "wife when he"),
+
+
 
         ("dod6i", 'đôi'),
         ("dod65", 'độ'),
@@ -115,8 +149,35 @@ def pre_map_wrong_text_to_correct_text(text):
         ("mẩu,", "mẩu."),
         ("quăn.", "quăn,"),
         ("du lịch,", "du lịch."),
-        ("côi.", "côi,")
-
+        ("côi.", "côi,"),
+        ("ông là:", "ông là"),
+        ("nịnh đầm.", "nịnh đầm,"),
+        ("vợ giàu.", "vợ giàu,"),
+        ("thì giờ!", "thì giờ,"),
+        ("tư lự, trong", "tư lự. Trong"),
+        ("gỗ, và ba", "gỗ. Ba"),
+        ("đứng lại, hai", "đứng lại. Hai"),
+        ("chả bóp!", "chả bóp!\n"),
+        ("Phòng giam thì", "- Phòng giam thì"),
+        ("nào! Người", "nào!\n- Người"),
+        ("thái bình.", "thái bình,"),
+        ("Hà Nội - Sơn Tây, Hà Nội - Bắc Ninh", "Hà Nội-Sơn Tây, Hà Nội-Bắc Ninh"),
+        ("đâu cả!", "đâu cả;"),
+        ("ngoài đường.", "ngoài đường;"),
+        ("cả, làm", "cả. Làm"), 
+        ("nhiệm mầu.", "nhiệm mầu;"),
+        ("đường, hay", "đường. Hay"),
+        ("toà, còn", "toà\n- Còn"),
+        ("đơ thầy", "đơ.\n- Thầy"),
+        ("đánh, tôi", "đánh\n- Tôi"),
+        ("biết! Cung", "biết!\n- Cung"),
+        ("nhà. Nó", "nhà.\n- Nó"),
+        ("không hiểu...","không hiểu,"),
+        ("lớn, sao", "lớn\n- Sao"),
+        ("nhé? Bảo", "nhé?\n- Bảo"),
+        ("thật! Cụ", "thật!\n- Cụ"),
+        ("đã xong.", "đã xong,"),
+        ("quảnh ở nhà", "quảnh ở nhà."),
     ]
 
     for old_text, new_text in replacement_pairs:
@@ -135,7 +196,8 @@ def post_map_wrong_text_to_correct_text(text):
         ("\"You stupid ass!\" Mrs. Deputy Customs Officer chimed in bitterly.","Mrs. Deputy Customs Officer chimed in bitterly:\n \"You stupid ass!"),
         ("\"Who are you calling","Who are you calling"),
         ("Bop!","Bop,"),
-        ("name.", "name:")
+        ("name.", "name:"),
+        ("his new name:", "his new name."),
     ]
 
     for old_text, new_text in replacement_pairs:
@@ -157,11 +219,12 @@ def clean_text(text):
     cleaned_text = FOOTNOTE_NUMBER_AFTER_PUNCTUATION_PATTERN.sub(r'\1', cleaned_text)
     cleaned_text = FOOTNOTE_NUMBER_AFTER_COMMA_PATTERN.sub(r'\1', cleaned_text)
     cleaned_text = FOOTNOTE_NUMBER_AFTER_COLON_PATTERN.sub(r'\1', cleaned_text)
+    # FOOTNOTE_NUMBER_AFTER_QUOTATION_PATTERN.sub(r'\1', cleaned_text)
     cleaned_text = PAGE_NUMBER_PATTERN.sub("", cleaned_text)
     cleaned_text = HYPHENATED_WORD_PATTERN.sub(r"\1-\2", cleaned_text)
     cleaned_text = PUNCTUATION_PATTERN.sub(r"\1\2", cleaned_text)
     cleaned_text = ELLIPSIS_PATTERN.sub(r"...\1", cleaned_text)
-    # cleaned_text = QUOTE_START_PATTERN.sub(r'\1\n\2', cleaned_text)
+
 
     lines = cleaned_text.splitlines()
 
@@ -230,17 +293,23 @@ def split_into_sentences_quotes_eng(text):
             char = line[i]
             current.append(char)
 
-            if char == ":":
-                print(line)
-                pass
-
             if quote_stack and char == '"':
+                # sentence += line[i+1:]
+                i += 1
+                while i < len(line):
+                    char = line[i]
+                    current.append(char)
+                    i += 1
+                    if char in "!?":
+                        break
+                    if (char == '.' and not is_honorific(i-1)):
+                        break
+
                 sentence = ''.join(current).strip()
-                sentence += line[i+1:]
                 sentences.append(sentence.strip())
                 quote_stack.pop()
                 current = []
-                break
+                continue
             elif quote_stack:
                 i += 1
                 continue
@@ -324,21 +393,18 @@ def split_into_sentences_quotes_vie(text):
 if __name__ == "__main__":
     # File path
     # vie_pdf_path = os.path.join("..", "raw_dataset", "dumb-luck-vie.pdf")
-    # eng_pdf_path = os.path.join("..", "raw_dataset", "dumb-luck-eng.pdf")
+    eng_pdf_path = os.path.join("..", "raw_dataset", "dumb-luck-eng.pdf")
 
     # Process PDF file
     # vie_pdf_file = fitz.open(vie_pdf_path)
-    # eng_pdf_file = fitz.open(eng_pdf_path)
+    eng_pdf_file = fitz.open(eng_pdf_path)
 
     # Extract text from PDF
     vie_texts = read_text_from_file("vietnamese.txt")
     vie_texts = clean_text(vie_texts)
-    eng_texts = read_text_from_file("english.txt")
-    eng_texts = clean_text(eng_texts)
-    # eng_texts = extract_text_from_pdf(eng_pdf_file, start_page=36, end_offset=0)
+    eng_texts = extract_text_from_pdf(eng_pdf_file, start_page=36, end_offset=0)
 
     # Save the extracted texts 
-    save_text_to_file("vietnamese.txt", vie_texts)
     save_text_to_file("english.txt", eng_texts)
 
 
@@ -349,10 +415,9 @@ if __name__ == "__main__":
     vie_texts = process_wrong_newline_char_vie(vie_texts)
     vie_texts = split_into_sentences_quotes_vie(vie_texts)
 
-
     save_text_to_file("english_sentences.txt", eng_texts)
     save_text_to_file("vietnamese_sentences.txt", vie_texts)
 
     # Close the PDF file
     # vie_pdf_file.close()
-    # eng_pdf_file.close()
+    eng_pdf_file.close()

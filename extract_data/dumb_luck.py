@@ -92,6 +92,7 @@ def pre_map_wrong_text_to_correct_text(text):
         ("\"She's here?\" Red-Haired Xuan repeated quizzically.", "Red-Haired Xuan repeated quizzically: \"She's here?\""),
         ("\"My aunt does not approve of such formal language,\" he said", "He said sternly to Xuan: \"My aunt does not approve of such formal language.\""),
 
+
         ("dod6i", 'đôi'),
         ("dod65", 'độ'),
         ("dodòi", 'đời'),
@@ -120,6 +121,9 @@ def post_map_wrong_text_to_correct_text(text):
         ("Move-ment...", "Movement and"),
         ("Popular Movement...", "Popular Movement"),
         ("chimed in bit-terly.", "chimed in bitterly.\n"),
+        ("\"You stupid ass!\" Mrs. Deputy Customs Officer chimed in bitterly.","Mrs. Deputy Customs Officer chimed in bitterly:\n \"You stupid ass!"),
+        ("\"Who are you calling","Who are you calling"),
+        ("Bop!","Bop,")
     ]
 
     for old_text, new_text in replacement_pairs:
@@ -239,7 +243,8 @@ def split_into_sentences_quotes_eng(text):
                     current = []
 
             elif char == ':':
-                if i + 1 == len(line) or line[i + 1] in '\n':
+                # ":" at the end of a line
+                if i + 1 == len(line) or line[i + 1] in '\n': 
                     sentences.append(''.join(current).strip())
                     current = []
             
