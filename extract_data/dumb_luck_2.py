@@ -22,8 +22,6 @@ ELLIPSIS_PATTERN = re.compile(r'\s*\.\s*\.\s*\.(\s*)(\.*)')
 REMOVE_TEXTS = {
     "https://thuviensach.vn",
     "-e-",
-    "Mr. and Mrs. Civilization",
-    "MINH+VĂN=VĂN MINH",
     "Ebook miễn phí tại : www.SachMoi.net",
     "Dumb Luck",
     "Dumb luck",
@@ -40,7 +38,6 @@ IGNORE_PATTERNS = {
 }
 ENG_WRONG_NEWLINE_PATTERN = re.compile(r'([^":\'])[\s*\n\s*]([^"\'])')
 VIE_WRONG_NEWLINE_PATTERN = re.compile(r'([^-?!.":\'])[\s*\n\s*]([^-?!.":\'])')
-# QUOTE_START_PATTERN = re.compile(r'(:)\s*([\"])')
 
 
 def process_wrong_newline_char_eng(text):
@@ -66,7 +63,7 @@ def process_wrong_newline_char_vie(text):
 
 def pre_map_wrong_text_to_correct_text(text):
     """Map wrong text to correct text."""
-    replacement_pairs = [
+    replacement_pairs_1 = [
         ("\t", " "),
         ("–", '-'),
         ("‘", "'"),
@@ -75,6 +72,7 @@ def pre_map_wrong_text_to_correct_text(text):
         ("…", '...'),
         ("'Tm", "\"I'm"),
         ("asmall", "a small"),
+        ("modem", "modern"),
         ("stalk. He", "stalk, he"),
         ("to the pavement.", "to the pavement,"),
         ("God damn my mother's milk!", "God damn my mother's milk. All alone on an autumn night, my tender heart is sinking."),
@@ -190,8 +188,43 @@ def pre_map_wrong_text_to_correct_text(text):
         ("to the artist.", "to the artist:"),
         ("his head very low.", "his head very low:"),
         ("his chair.", "his chair and"),
-
-
+        ("A Horned Husband", "A Horned Husband."),
+        ("The clock struck twelve.", ""),
+        ("Out on the street cicadas", "The clock struck twelve. Out on the street cicadas"),
+        ("right words.", "right words:"),
+        ("vang dcr", "vendour"),
+        ("tay 0'", "taylor"),
+        ("for an exam.", "for an exam:"),
+        ("to another mannequin.", "to another mannequin:"),
+        ("again and again.", "again and again:"),
+        ("With that,", "With that..."),
+        ("god-daIIU1ed", "god-damned"),
+        ("God-daIIU", "God-damn"),
+        ("in surprise.", "in surprise:"),
+        ("behind his back. \"", "behind his back: \""),
+        ("do dili", "áo dài"),
+        ("nodded insistently.", "nodded insistently:"),
+        ("teeth together.", "teeth together:"),
+        ("Xuan bowed low.", "Xuan bowed low:"),
+        ("woman smiled.", "woman smiled:"),
+        ("open and the", "open. The"),
+        ("head. \"Oh!", "head: \"Oh!"),
+        ("speaking to Red-Haired Xuan.", "speaking to Red-Haired Xuan"),
+        ("to interrupt.", "to interrupt:"),
+        ("grow angry.", "grow angry:"),
+        ("\nsaid the designer.", "said the designer."),
+        ("be quiet.", "be quiet:"),
+        ("for help.", "for help:"),
+        ("inspired the designer.", "inspired the designer:"),
+        ("into Xuan's face.", "into Xuan's face:"),
+        ("Iwarn", "I warn"),
+        ("to the door.", "to the door:"),
+        ("entered the shop. He", "entered the shop, he"),
+        ("low whisper.", "low whisper:"),
+        ("to him again.", "to him again:"),
+        ("man's head.", "man's head:"),
+        ("hand and moving", "hand. He moved"),
+    
         ("dod6i", 'đôi'),
         ("dod65", 'độ'),
         ("dodòi", 'đời'),
@@ -267,11 +300,31 @@ def pre_map_wrong_text_to_correct_text(text):
         ("Chinh phục! Tôi", "Chinh phục!\n- Tôi"),
         ("Thưa bà, những", "Thưa bà.\n- Những"),
         ("đấy! Dễ", "đấy!\n- Dễ"),
-        # ("cho bà, tôi", "cho bà.\n- Tôi"),
+        ("mẹ gì?”", "mẹ gì?”."),
+        ("chỉ bảo Xuân:", "chỉ bảo Xuân."),
+        ("thế. Giản", "thế, giản"),
+        ("thích, cái...", "thích.\n- Cái..."),
+        ("trỏ mặt Xuân:", "trỏ mặt Xuân."),
+        ("kính rồi", "kính.\n- Rồi"),
+        ("bao giờ... rồi.", "bao giờ rồi..."),
+        ("“Chả nước mẹ gì cả!”", "“Chả nước mẹ gì cả!”."),
+        ("vậy. Có điều", "vậy, có điều"),
+        ("mới hỏi lại:", "mới hỏi lại."),
+        ("dị, cổ", "dị. Cổ"),
+        ("rather old-fashioned.", "rather old-fashioned:"),
+        ("bẻ, cái", "bẻ. Cái"),
+        ("đáo, đôi", "đáo. Đôi"),
+        ("viết báo. Ông", "viết báo, ông"),
+        ("tuông. Ông", "tuông, ông"),
+        ("- Thật không thể tha thứ được", "- Thật không thể tha thứ được!"),
+        ("bở! Đòi", "bở!\n- Đòi"),
+        ("ngay! Về", "ngay!\n- Về"),
+        ("suỵt. Rồi", "suỵt, rồi"),
+        ("xem! Ba công", "xem!\n- Ba công"),
 
     ]
 
-    for old_text, new_text in replacement_pairs:
+    for old_text, new_text in replacement_pairs_1:
         text = text.replace(old_text, new_text)
 
     return text
@@ -290,7 +343,10 @@ def post_map_wrong_text_to_correct_text(text):
         ("name.", "name:"),
         ("his new name:", "his new name."),
         ("hik-ing outfit.", "hiking outfit,"),
-        ("gingerly en-tered the shop.", "gingerly entered the shop,")
+        ("gingerly en-tered the shop.", "gingerly entered the shop,"),
+        ("mur-muring to himself.", "murmuring to himself:"),
+        ("\"Mr. ILL...", "\"Mr. ILL...\""),
+        ("just stepped out.", "just stepped out\""),
     ]
 
     for old_text, new_text in replacement_pairs:
@@ -298,6 +354,17 @@ def post_map_wrong_text_to_correct_text(text):
 
     return text_block.splitlines()
 
+
+def post_fix(text):
+    text_block = '\n'.join(text)
+    replacement_pairs = [
+        ("Nhưng nhà mỹ thuật lại hiểu câu ấy theo ý riêng chứ không phải do lòng ghen tuông, ông vồ lấy câu ấy mà nói: - Thật không thể tha thứ được!\n", ""),
+        ("confu-sion.\nHe", "confusion, he"),
+    ]
+
+    for old_text, new_text in replacement_pairs:
+        text_block = text_block.replace(old_text, new_text)
+    return text_block.splitlines()
 
 def clean_text(text):
     """Clean text by removing unwanted characters and patterns."""
@@ -312,7 +379,6 @@ def clean_text(text):
     cleaned_text = FOOTNOTE_NUMBER_AFTER_PUNCTUATION_PATTERN.sub(r'\1', cleaned_text)
     cleaned_text = FOOTNOTE_NUMBER_AFTER_COMMA_PATTERN.sub(r'\1', cleaned_text)
     cleaned_text = FOOTNOTE_NUMBER_AFTER_COLON_PATTERN.sub(r'\1', cleaned_text)
-    # FOOTNOTE_NUMBER_AFTER_QUOTATION_PATTERN.sub(r'\1', cleaned_text)
     cleaned_text = PAGE_NUMBER_PATTERN.sub("", cleaned_text)
     cleaned_text = HYPHENATED_WORD_PATTERN.sub(r"\1-\2", cleaned_text)
     cleaned_text = PUNCTUATION_PATTERN.sub(r"\1\2", cleaned_text)
@@ -504,9 +570,11 @@ if __name__ == "__main__":
     # Split the extracted texts into sentences
     eng_texts = process_wrong_newline_char_eng(eng_texts)
     eng_texts = split_into_sentences_quotes_eng(eng_texts)
+    eng_texts = post_fix(eng_texts)
 
     vie_texts = process_wrong_newline_char_vie(vie_texts)
     vie_texts = split_into_sentences_quotes_vie(vie_texts)
+    vie_texts = post_fix(vie_texts)
 
     save_text_to_file("english_sentences.txt", eng_texts)
     save_text_to_file("vietnamese_sentences.txt", vie_texts)
