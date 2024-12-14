@@ -295,9 +295,25 @@ def pre_map_wrong_text_to_correct_text(text):
         ("his strength. He", "his strength, he"),
         (" quietly. He", " quietly, he"),
         ("boldly broke the silence.", "boldly broke the silence:"),
+        ("waiting game;", "waiting game..."),
+        ("pointed out repeatedly Xuan's youthful promise", "pointed out repeatedly"),
+        ("Shut up, already).", "Shut up, already) that Xuan's youthful promise."),
+        ("consumed Mrs. Civilization.", "consumed Mrs. Civilization,"),
+        ("continued to rise.", "continued to rise,"),
+        ("kept silent.", "kept silent,"),
+        ("H6ng (I know! What a pain!) was", "Hong was"),
+        ("daughter, Miss Snow.", "daughter, Miss Snow;"),
+        ("Joseph Thie\"t", "Joseph Thiet"),
+        ("at the tailor shop.", "at the tailor shop,"),
+        ("at West Lake.", "at West Lake,"),
+        ("shop by himself.", "shop by himself:"),
+        ("was silent for a moment.", "was silent for a moment:"),
+        ("fully grasped.", "fully grasped:"),
+        ("day's plans.", "day's plans:"),
+        ("dirty item.", "dirty item;"),
+        ("\"No ways!\"", "\"No ways!\"."),
 
 
-    
         ("dod6i", 'đôi'),
         ("dod65", 'độ'),
         ("dodòi", 'đời'),
@@ -446,8 +462,22 @@ def pre_map_wrong_text_to_correct_text(text):
         ("Thưa cụ con", "Thưa cụ,\n- Con"),
         ("ngồi câm làm", "ngồi câm. Làm"),
         ("thuốc”.", "thuốc”"),
-
-
+        ("ra. Ảnh hưỏong", "ra, ảnh hưởng"),
+        ("ấy lắm. Nó", "ấy lắm, nó"),
+        ("Chao ôi! Thế", "Chao ôi, thế"),
+        ("Thánh đền Bia - một", "Thánh đền Bia, một"),
+        ("thú được - ông", "thứ được, ông"),
+        ("con rể cụ - ông phán mọc sừng - vẫn", "con rể cụ, ông phán mọc sừng, vẫn"),
+        ("thói quaen...", "thói quen"),
+        ("cái đặc ân.", "cái đặc ân,"),
+        ("một cái đặc ân. Bọn", "một cái đặc ân, bọn"),
+        ("được cụ bà...", "được cụ bà"),
+        ("(Biết rồi! Khổ lắm!) đưong", "đương"),
+        ("nhỉ? Sao", "nhỉ!\n- Sao"),
+        ("hẳn? Họ", "hẳn!\n- Họ"),
+        ("thế, tay", "thế. Tay"),
+        ("rộng - sự ấy thật hãn hữu - nên", "rộng, sự ấy thật hãn hữu, nên"),
+        ("mình, bà", "mình. Bà"),
     ]
 
     for old_text, new_text in replacement_pairs_1:
@@ -481,9 +511,6 @@ def post_map_wrong_text_to_correct_text(text):
         ("she an-nounced, ", "she announced.\n"),
         ("it is,\"\nXuan", "it is,\" Xuan"),
         ("is well under way...", "is well under way...\""),
-
-
-
     ]
 
     for old_text, new_text in replacement_pairs:
