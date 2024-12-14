@@ -224,6 +224,28 @@ def pre_map_wrong_text_to_correct_text(text):
         ("to him again.", "to him again:"),
         ("man's head.", "man's head:"),
         ("hand and moving", "hand. He moved"),
+        ("blossom wherever he goes.", "blossom wherever he goes"),
+        ("passionate embrace.", " passionate embrace:"),
+        ("ceiling. He", "ceiling, he"),
+        ("coffee table.", "coffee table:"),
+        ("entered the room. The", "entered the room, which made The"),
+        ("warm greeting.", "warm greeting:"),
+        ("coughing. It", "coughing, which"),
+        ("ate. He", "ate, he"),
+        ("from a diploma", "from a diploma\""),
+        ("If it did", "\"If it did"),
+        ("uneducated\" He", "uneducated.\"\nHe"),
+        ("legal framework. This", "legal framework, which"),
+        ("executed. He", "executed and he"),
+        ("several moments.", "several moments:"),
+        ("explained apologetically.", "explained apologetically:"),
+        ("high-tech assassination.", "high-tech assassination:"),
+        ("the question.", "the question:"),
+        ("She paused for a moment.", "She paused for a moment:"),
+        ("turned to Grandpa H6ng.", "turned to Grandpa Hong:"),
+        ("\"W\"hines", "Whines"),
+        ("entered the conversation.", "entered the conversation:"),
+        ("diagnostic machine.", "diagnostic machine,"),
     
         ("dod6i", 'đôi'),
         ("dod65", 'độ'),
@@ -321,6 +343,33 @@ def pre_map_wrong_text_to_correct_text(text):
         ("ngay! Về", "ngay!\n- Về"),
         ("suỵt. Rồi", "suỵt, rồi"),
         ("xem! Ba công", "xem!\n- Ba công"),
+        ("ruột, vì", "ruột.\n- Vì"),
+        ("gì đâu! Bao", "gì đâu!\n- Bao"),
+        ("ạ. Dì", "ạ.\n- Dì"),
+        ("cả, đến", "cả. Đến"),
+        ("lắm! Mới", "lắm!\n- Mới"),
+        ("sao? Việc", "sao!\n- Việc"),
+        ("bàn - cái bàn lùn tìn tịt - đài các", "bàn, cái bàn lùn tìn tịt, đài các"),
+        ("nước! Mở", "nước!\n- Mở"),
+        ("Cụ đã là một người dân bảo hộ trung thành, một viên chức gương mẫu, một người cha nhân từ vì sợ sệt con cái như một người nô lệ.", ""),
+        ("phòng. Trên ngực", "phòng, trên ngực"),
+        ("Xưa kia, cụ là một ông phán.", "Xưa kia, cụ là một ông phán, cụ đã là một người dân bảo hộ trung thành, một viên chức gương mẫu, một người cha nhân từ vì sợ sệt con cái như một người nô lệ."),
+        ("chết: ra", "chết. Ra"),
+        ("sù; trước", "sù. Trước"),
+        ("lộn; nằm", "lộn. Nằm"),
+        ("về đi, là vì", "về đi.\n- Là vì"),
+        ("thôi. Toa", "thôi.\n- Toa"),
+        ("- Phải đấy", "- Phải đấy!"),
+        ("tuổi, bây", "tuổi.\n- Bây"),
+        ("ba, nếu", "ba.\n- Nếu"),
+        ("mọc sừng!” Lúc", "mọc sừng!”.\n Lúc"),
+        ("lắm! Ho", "lắm!\n- Ho"),
+        ("thở, có", "thở.\n- Có"),
+        ("bệnh, chắc", "bệnh.\n- Chắc"),
+        ("kỳ quái, không", "kỳ quái!\n Không"),
+        ("cut him off.", "cut him off:"),
+        ("How unexpected, indeed!", "How unexpected, indeed,"),
+
 
     ]
 
@@ -347,6 +396,10 @@ def post_map_wrong_text_to_correct_text(text):
         ("mur-muring to himself.", "murmuring to himself:"),
         ("\"Mr. ILL...", "\"Mr. ILL...\""),
         ("just stepped out.", "just stepped out\""),
+        ("Offi-cer.", "Officer:"),
+        ("H6ng Lo T,t Thie'u Khanh medaJ", "Hồng Lô Tự Thiếu Khanh medal"),
+        ("hiệu - có", "hiệu, có"),
+        ("pains.\"At that", "pains.\"\nAt that")
     ]
 
     for old_text, new_text in replacement_pairs:
@@ -360,6 +413,12 @@ def post_fix(text):
     replacement_pairs = [
         ("Nhưng nhà mỹ thuật lại hiểu câu ấy theo ý riêng chứ không phải do lòng ghen tuông, ông vồ lấy câu ấy mà nói: - Thật không thể tha thứ được!\n", ""),
         ("confu-sion.\nHe", "confusion, he"),
+        ("son and offered up", "son.\nHe offered up"),
+        ("Ph<;i.m Quynh and Nguy~n Viin VInh", "Phạm Quỳnh and Nguyễn Văn Vĩnh"),
+        ("uneducated.\" He", "uneducated.\"\nHe"),
+        ("suit.\nHe had bought it", "suit that he had bought"),
+        ("Venereal Disease Treatment.\nIt was", "Venereal Disease Treatment, it was")
+
     ]
 
     for old_text, new_text in replacement_pairs:
