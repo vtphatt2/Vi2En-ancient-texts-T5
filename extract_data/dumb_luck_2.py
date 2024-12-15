@@ -635,7 +635,6 @@ def pre_map_wrong_text_to_correct_text(text):
         ("control herself.", "control herself:"),
         ("powder his face.", "powder his face:"),
         ("Grandma asked.", ""),
-        ("\"Is that true?\"", ""),
         ("surprised him.", "surprised him:"),
         ("Civilization shook his head.", "Civilization shook his head:"),
         ("in his face.", "in his face:"),
@@ -719,7 +718,6 @@ def pre_map_wrong_text_to_correct_text(text):
         ("ấy. sở", "ấy, sở"),
         ("Xuân, và tuy", "Xuân. Tuy"),
         ("“Mẹ kiếp! Chẳng nước mẹ gì cả!”", "“Mẹ kiếp, Chẳng nước mẹ gì cả”"),
-        ("vân vân...", "vân vân,"),
         ("khác! Ðộng", "khác!\n- Ðộng"),
         ("biết! Những", "biết!\n- Những"),
         ("chán, vì", "chán.\n- Vì"),
@@ -739,8 +737,6 @@ def pre_map_wrong_text_to_correct_text(text):
         ("nhân, Xuân", "nhân. Xuân"),
         ("lự thì có", "lự. Có"),
         ("ông sư.", "ông sư,"),
-        # ("nâu, đi", "nâu. Đi"),
-        # ("hàm hỏi:", "hàm hỏi."), 
         ("minh vì", "minh. Vì"),
         ("gì? Mời", "gì!\n- Mời"),
         ("mõ à? Sao", "mõ à!\n- Sao"),
@@ -752,6 +748,7 @@ def pre_map_wrong_text_to_correct_text(text):
         ("cách... Nếu", "cách.\n- Nếu"),
         ("bàn tay:", "bàn tay."),
         ("NỔI GIẬN", "NỔI GIẬN."),
+        ("nữ: trên", "nữ. Trên"),
 
 
 
@@ -791,6 +788,101 @@ def pre_map_wrong_text_to_correct_text(text):
         ("Officer entered the room.", "Officer entered the room:"),
         ("the room. She", "the room, she"),
         ("Gets Angry", "Gets Angry."),
+
+        ("rệt. Những", "rệt, những"),
+        ("thôi. Ở", "thôi; Ở"),
+        ("Ðoan, như", "Ðoan. Như"),
+        ("không, nhưng", "không. Nhưng"),
+        ("Người chê Xuân vô học, người lại quả quyết rằng về học thức của Xuân thì mấy ai đã bằng!", ""),
+        ("lắm, vẫn", "lắm.\n- Vẫn"),
+        (": “Biết rồi! Khổ lắm! Nói mãi?...”", ":\n- Biết rồi! Khổ lắm! Nói mãi?..."),
+        (": “Ôi,", ":\n- Ôi"),
+        ("minh cũng", "minh...\n- Cũng"),
+        ("thay!”", "thay!"),
+        ("mười phút.", "mười phút;"),
+        ("mà!”", "mà!"),
+        ("vân, Trò", "vân. Trò"),
+        ("nữa. Người", "nữa, người"),
+        ("nữa, người chệ", "nữa. Người chê"),
+        ("báoGõ", "báo Gõ"),
+        ("khác, mồm", "khác. Mồm"),
+        ("chân kia. Xuân", "chân kia, Xuân"),
+        ("kìa!Ami", "kìa!\n- Ami"),
+        ("quá, đương", "quá!\n- Đương"),
+        ("hay sao? Nào là dạy", "hay sao?\n- Nào là dạy"),
+        ("thao, lại thêm", "thao.\n- Lại thêm"),
+        ("Phó, lại", "Phó.\n- Lại"),
+        ("mõ, vậy", "mõ.\n- Vậy"),
+        ("rồi! Cho", "rồi!\n- Cho"),
+        ("được? Xưa", "được?\n- Xưa"),
+        ("xong. Bạn", "xong.\n- Bạn"),
+        ("không. Với", "không.\n- Với"),
+        ("thế? Tôi", "thế!\n- Tôi"),
+        ("sức. Ðó", "sức, đó"),
+        ("à? Tôi tưởng", "à!\n- Tôi tưởng"),
+        ("ăn vận tân thời:", "ăn vận tân thời."),
+        ("thế, và bà", "thế. Và bà"),
+        ("nhỉ! Ấy", "nhỉ!\n- Ấy"),
+        ("đấy! Mà", "đấy!\n- Mà"),
+        ("của Xuân:", "của Xuân."),
+        ("bạn ạ, tôi", "bạn ạ.\n- Tôi"),
+        ("H6ng", "Hong"),
+        ("hết! Xin", "hết!\n- Xin"),
+        ("ấy để bà", "ấy.\n- Để bà"),
+        ("hẳn mình.", "hẳn mình,"),
+        ("thật, vì bà", "thật.\n- Vì bà"),
+        ("cái xe:", "cái xe."),
+        ("vớit ôi xem sao. Tôi", "với tôi xem sao.\n- Tôi"),
+        ("khác, Xuân", "khác. Xuân"),
+        ("khoẻ? Bẩm", "khoẻ?\n- Bẩm"),
+        ("lắm. Từ", "lắm.\n- Từ"),
+        ("làm gì? Tôi", "làm gì?\n- Tôi"), 
+        ("chết! Ai", "chết!\n- Ai"), 
+        ("vu oan. Cô", "vu oan, cô"),
+        ("phu, ngần", "phu. Ngần"),
+        ("đâm hoảng.", "đâm hoảng:"),
+        ("chơi. Nào", "chơi.\n- Nào"),
+        ("trái. Không", "trái, không"),
+        ("im lặng. Ai", "im lặng, ai"),
+        ("cả. Xuân", "cả, Xuân"),
+        ("nữa; chỉ", "nữa. Chỉ"),
+        ("chay...", "chay"),
+        ("tốp, một", "tốp. Một"),
+        ("tắt nghĩ:", "tắt nghĩ."),
+        ("hận. Những", "hận, những"),
+        ("nghề, thế", "nghề. Thế"),
+
+
+        ("outfits. To", "outfits; To"),
+        ("ask a question.", "ask a question:"),
+        ("formal.", "formal,"),
+        ("the world.", "the world;"),
+        ("popular fashion.", "popular fashion,"),
+        ("deserted.", "deserted,"),
+        (",;So", "So"),
+        ("my friend?\"", "my friend?"),
+        ("of dispassion.", "of dispassion:"),
+        ("decline, my friend?", "decline, my friend?\""),
+        ("shocked Mrs. ILL.", "shocked Mrs. ILL:"),
+        ("sighed to himself.", "sighed to himself:"),
+        ("and shadows.", "and shadows,"),
+        ("modern way.", "modern way;"),
+        ("paused for a moment.", "paused for a moment:"),
+        ("Xuan was shocked.", "Xuan was shocked:"),
+        ("haughtily,", "haughtily."),
+        ("was home.", "was home,"),
+        ("Grandpa. \"How", "Grandpa: \"How"),
+        ("eating.", "eating:"),
+        ("tion. \"Since", "tion: \"Since"),
+        ("eyes down.", "eyes down:"),
+        ("angrily back and forth.", "angrily back and forth:"),
+        ("bad. \"Please", "bad: \"Please"),    
+        ("Doctor,\" s ", "Doctor,\"\n"),
+        ("pace back and forth.", "pace back and forth:"), 
+        ("silent. Xuan", "silent; Xuan"),
+        ("floor, moaning.", "floor, moaning:"),
+        ("Grandma's eyes.", "Grandma's eyes,"),
+
 
 
     ]
@@ -845,6 +937,11 @@ def post_map_wrong_text_to_correct_text(text):
         ("xem...", "xem,"),
         ("đúng! Tôi", "đúng!\n- Tôi"),
         ("peculiar conditions...", "peculiar conditions...\""),
+        ("fright-ened. He", "frightened, he"),
+        ("in hand.", "in hand,"),
+        ("\"vegetarian meal\"", "'vegetarian meal'"),
+        ("loudly,", "loudly."),
+        ("help... The whole house turned to Xuan...", "help; The whole house turned to Xuan..."), 
 
     ]
 
@@ -857,6 +954,7 @@ def post_map_wrong_text_to_correct_text(text):
 def post_fix(text):
     text_block = '\n'.join(text)
     replacement_pairs = [
+        ("etc...\nThey", "etc... They"),
         ("Nhưng nhà mỹ thuật lại hiểu câu ấy theo ý riêng chứ không phải do lòng ghen tuông, ông vồ lấy câu ấy mà nói: - Thật không thể tha thứ được!\n", ""),
         ("confu-sion.\nHe", "confusion, he"),
         ("son and offered up", "son.\nHe offered up"),
@@ -872,8 +970,18 @@ def post_fix(text):
         ("Civilization.\n\"Maybe", "Civilization \"Maybe"),
         ("responded.\n\"No", "responded. \"No"),
         ("immediately!\"\nsaid", "immediately!\" said"),
-
-
+        ("vagabond,\"\nhis", "vagabond,\"his"),
+        ("cautioned.\n\"We", "cautioned, \"We"),
+        ("pronoun.\n\"I", "pronoun, \"I"),
+        ("re-plied.\n\"Of", "replied. \"Of"),
+        ("fearfully.\n\"Please", "fearfully, \"Please"),
+        ("behalf.\n\"And", "behalf. \"And"),
+        ("vân vân...\nThành", "vân vân... Thành"),
+        ("true?\"\nThe", "true?\" The"),
+        ("vân vân...\nđã", "vân vân... đã"),
+        ("loudly.\n\"you", "loudly. \"You"),
+        ("Xuan.\n\"Please,", "Xuan. \"Please,"),
+        ("honest voice.\n\"I", "honest voice. \"I"),
     ]
 
     for old_text, new_text in replacement_pairs:
@@ -1062,6 +1170,26 @@ def split_into_sentences_quotes_vie(text):
 
     return [sentence for sentence in sentences if sentence]
 
+def create_json_file(file_name, vietnamese_lines, english_lines, output_file):
+    max_length = max(len(vietnamese_lines), len(english_lines))
+
+    data = []
+    for idx in range(max_length):
+        vi = vietnamese_lines[idx].rstrip(',').strip() if idx < len(vietnamese_lines) else ""
+        en = english_lines[idx].rstrip(',').strip() if idx < len(english_lines) else ""
+        data.append({
+            "id": idx + 1,
+            "vi": vi,
+            "en": en
+        })
+
+    output = {
+        "file_name": file_name,
+        "data": data
+    }
+
+    with open(output_file, "w", encoding="utf-8") as json_file:
+        json.dump(output, json_file, ensure_ascii=False, indent=4)
 
 if __name__ == "__main__":
     # File path
@@ -1092,6 +1220,8 @@ if __name__ == "__main__":
 
     save_text_to_file("english_sentences.txt", eng_texts)
     save_text_to_file("vietnamese_sentences.txt", vie_texts)
+
+    create_json_file("dumb_luck_vie_eng", vie_texts, eng_texts, os.path.join("..", "data", "dumb_luck.json"))
 
     # Close the PDF file
     # vie_pdf_file.close()
