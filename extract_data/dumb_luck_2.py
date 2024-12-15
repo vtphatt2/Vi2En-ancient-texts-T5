@@ -605,6 +605,31 @@ def pre_map_wrong_text_to_correct_text(text):
         ("rickshaw. She", "rickshaw, she"),
         ("like a mussel.", "like a mussel:"),
         ("Officer smiled.", "Officer smiled:"),
+        ("face of M.", "face of Mr."),
+        ("lower and lower.", "lower and lower;"),
+        ("glass. \"Ladies", "glass: \"Ladies"),
+        ("hour. He spoke", "hour"),
+        ("tend to do.", "tend to do;"),
+        ("court. She", "court, she"),
+        ("him on as well.", "him on as well:"),
+        ("well. \"That", "well: \"That"),
+        ("deeply for several minutes.", "deeply for several minutes;"),
+        ("and Mr. ILL.", "and Mr. ILL that"),
+        ("in the country.", "in the country,"),
+        ("eyes tightly.", "eyes tightly:"),
+        ("hotel room.", "hotel room,"),
+        ("eyes. \"What", "eyes: \"What"),
+        ("louder.", "louder:"),
+        ("dismissal of the opium servant.", "dismissal of the opium servant,"),
+        ("Grandma's face.", "Grandma's face:"),
+        ("the servant.", "the servant,"),
+        ("her fist down on the table.", "her fist down on the table:"),
+        ("Grandpa sat up.", "Grandpa sat up:"),
+        ("of Fate", "of Fate."),
+
+
+
+
 
         ("hủ, muốn", "hủ.\n- Muốn"),
         ("anh? Ấy", "anh?\n- Ấy"),
@@ -628,6 +653,26 @@ def pre_map_wrong_text_to_correct_text(text):
         ("chồng, Xuân", "chồng. Xuân"),
         ("cho, nếu", "cho.\n- Nếu"),
         ("nước đại.", "nước đại,"),
+        ("sừng - nguyên là cô Hoàng Hôn - và", "sừng, nguyên là cô Hoàng Hôn, và"),
+        ("trị và một", "trị. Với một"),
+        ("đứng lên...", "đứng lên"),
+        ("thao, bà", "thao.\n Về bà"),
+        ("đình, trào", "đình.\nVề trào"),
+        ("ten - nít", "ten-nít"),
+        ("đời, không", "đời. Nó không"),
+        ("chòng chọc.", "chòng chọc;"),
+        ("mấy câu:]", "mấy câu:"),
+        ("đốc! Nói", "đốc!\n- Nói"),
+        ("trách nhiệm.", "trách nhiệm"),
+        ("vừa nghĩ:", "vừa nghĩ."),
+        ("tế, chẳng", "tế. Chẳng"),
+        ("tốt chua", "tốt. Chưa"),
+        ("đấy! Gọi", "đấy!\n- Gọi"),
+        ("ố mà rằng:", "ố."),
+        ("KỲ... NGÔN", "KỲ NGÔN"),
+        ("SỐ PHẬN", "SỐ PHẬN."),
+
+
     ]
 
     for old_text, new_text in replacement_pairs_1:
@@ -668,6 +713,14 @@ def post_map_wrong_text_to_correct_text(text):
         ("Mong pe' y ~ Pa ri! .", "\"Mông Pế y ề Pa rí! ...\""),
         ("adjacent room.", "adjacent room:"),
         ("cửa, phút,", "cửa. Sau 15 phút,"),
+        ("say... ?", "say..."),
+        ("\"My dear girlfriends and boyfriends... \"", "\"My dear girlfriends\"\n\"My dear boyfriends...\""),
+        ("Lip, lip, lc:J... Hua rra!\"", "\"Lip, lip, lo... Hua rra!\""),
+        ("concluded his speech.", "concluded his speech:"),
+        ("socialist Leon Blum.", "socialist Leon Blum;"),
+        ("a summit.", "a summit,"), 
+        ("from lace.", "from lace,"),
+        ("laun-dry woman.", "laundry woman:"),
 
     ]
 
@@ -690,7 +743,8 @@ def post_fix(text):
         ("Th~p h,r L{:ral", "Thập Tự Lửa"),
         ("Conservatism of Mrs. Deputy Customs Officer After", "Conservatism of Mrs. Deputy Customs Officer.\nAfter"),
         ("immediately,\"\nhe", "immediately,\" he"),
-
+        ("ngài, Ấy", "ngài.\nẤy"),
+        ("l.\nHip, hip, hip...\nHoura 1", ""),
 
 
 
