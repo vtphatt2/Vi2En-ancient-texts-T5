@@ -2223,11 +2223,11 @@ house?"
 "I was orphaned as a small child," Xuan answered sadly.
 "Did you lose both of your parents, or is one still alive?"
 "They both died."
-Miss Snow's eyes lit up.
+Miss Snow's eyes lit up:
 "That makes you an even better catch! If I marry you, I won't have
 a mother-in-law! What happiness! What a stroke of luck that you
 were orphaned early."
-Xuan did not know how to respond.
+Xuan did not know how to respond,
 "No need to worry, Doctor," she continued. "I'm not as reek.Jess
 as other girls. I know how to protect myself."
 "You will have to do it eventually... "Xuan replied impishly.
@@ -2242,9 +2242,9 @@ was as lush and colorful as a real fairyland. Lilies and snapdragons
 bloomed in the flower beds, and withered petals lay helter-skelter
 along the pebbled path. After several minutes they noticed that they
 were being followed by a short young man with glassy eyes, an
-emaciated body, and the gaunt face of a poet. He wore a European-style suit, and his pants were cuffed in the so-called elephant style.
+emaciated body, and the gaunt face of a poet; He wore a European-style suit, and his pants were cuffed in the so-called elephant style and
 He stared anxiously at Miss Snow.
-''Here! I'll show you someone who is desperate to win my
+"Here! I'll show you someone who is desperate to win my
 heart... "she whispered to Xuan.
 Xuan's face reddened with jealousy, and he turned around to
 look. Focusing intently on the object of his desire, the young man
@@ -2256,22 +2256,22 @@ Miss Snow grinned merrily as young girls often do when they are
 being pursued. She began hopping and skipping between the with-ered flowers along the pebbled path. The poet followed her. Just as
 Xuan was about to scold him for being impolite and presumptuous,
 the young man stopped and recited a poem aloud.
-The fairy's feet were light as air.
+The fairy's feet were light as air,
 Ashamed, young buds fell everywhere.
-Beauty envies rival beauty.
+Beauty envies rival beauty,
 She tramples flowers underfoot-alas.
 Miss Snow giggled appreciatively, and Xuan's hatred gave way to
 a begrudging respect. Like poets everywhere, the young man did
-not flinch in the face of life's bitterness. Instead, he put on a brave
+not flinch in the face of life's bitterness; Instead, he put on a brave
 face and recited another poem.
 If not a bud beneath her feet,
 My heart is sad, my gloom complete.
 I pick a wilted flower up
 To press against my throbbing heart!...
-The poet stopped and bent down. He picked up a flower and
+The poet stopped and bent down, He picked up a flower and
 pressed it tightly against his heart as if embracing an imaginary
 lover. No longer hearing the patter of footsteps behind her, Miss
-Snow glanced back over her shoulder. There she saw the poet hug-ging the flower with both arms.
+Snow glanced back over her shoulder. There she saw the poet hug-ging the flower with both arms,
 "How moving!" she said. "That man has been following me for
 months. He loves me deeply, but I feel nothing for him!"
 "Is he really in love with you?" asked Xuan between clenched
@@ -2283,7 +2283,7 @@ rival. How hard could it be? He recalled numerous jingles that he
 had recited flawlessly by heart in the past, back when he chanted
 advertisements over a loudspeaker for Victor Ban. "Would you like
 me to improvise a poem for that guy?"
-Miss Snow clapped her hands with joy. "I would like nothing
+Miss Snow clapped her hands with joy: "I would like nothing
 more," she squealed.
 Placing his hands behind his back, Red-Haired Xuan approached
 the poet and began to versify in a loud and dignified voice:
@@ -2300,38 +2300,38 @@ his hands to signal surrender.
 "Forgive me, Sir!" he stammered. "Your humble student has
 learned his lesson... Your talent is truly great! I clearly must study
 the satirical poetic genres before I even dare attempt a response!"
-Shamefaced, the poet bowed low to Xuan. Then he turned and
+Shamefaced, the poet bowed low to Xuan, Then he turned and
 scurried off.
 "My goodness! What a talented man you are! Your poem was as
 scathingly satirical as Tu M&'s. But why is your verse so full of
 medical terms?"
 Stumped by the question, Xuan responded cleverly with one of
-his own. "Why do you think it is?"
+his own: "Why do you think it is?"
 Miss Snow then answered for herself: "Of course! You were a
 student at the medical college! That's why your poetry is so scien-tific. Right? Yours is the poetry of a man of medicine."
 Xuan and Miss Snow strolled merrily over to the swimming pool.
-Suddenly, Miss Snow blanched. "Damn! It's the senior clerk! I've got
+Suddenly, Miss Snow blanched: "Damn! It's the senior clerk! I've got
 to get out of here!"
 She ducked behind a tree and disappeared.
 Red-Haired Xuan spied the horned senior clerk walking together
 with a young woman. His beard was neatly trimmed, and he was
-dressed in an unusually elegant way. In spite of his horns, he looked
+dressed in an unusually elegant way; In spite of his horns, he looked
 uncharacteristically content, almost happy. His companion dressed
 in a style that was partially modern and partially old-fashioned. She
 looked like someone who embraced both the bad manners of a liber-ated woman and the old virtues of a traditional one. It was difficult
 to tell, in fact, which kind of woman she was!
 Red-Haired Xuan was unsure if the woman was the senior clerk's
-wife. If not, then life was even more complicated than he had imag-ined. In any case Xuan quickly recalled his obligation to the senior
+wife, if not, then life was even more complicated than he had imag-ined. In any case Xuan quickly recalled his obligation to the senior
 clerk. After gesturing for the couple's attention, he bowed low,
-straightened himself up, and stuck out his chest.
+straightened himself up, and stuck out his chest:
 "You, Sir, are a homed husband!" he announced in the booming
 voice of a human loudspeaker.
-The senior clerk turned pale. "This, this is... my girlfriend,
+The senior clerk turned pale: "This, this is... my girlfriend,
 only!" he stammered.
 "No kidding!" Xuan replied stupidly. "What a lucky coincidence!
 At this minute your wife is here in the hotel with her boyfriend.
 They are tending to your horns as we speak."
-The senior clerk turned even paler. "What!?" he screamed
+The senior clerk turned even paler: "What!?" he screamed
 hoarsely. "Right here in the Fairyland?"
 "Where else could such a thing happen?" Xuan replied.
 "Damn it! Take me to her now! Please! Let's go!"
@@ -2345,11 +2345,11 @@ cracked open. A high-pitched scream echoed from within the room.
 Red-Haired Xuan and the other woman stood by apprehensively.
 The hotel guests were busy swimming, diving, and bathing in the
 lake, oblivious to the tragic predicament of the senior clerk.
-His wife's lover came to the door, fully dressed. "Greetings, Sir!"
-he said gently. "So, you are the husband?"
+His wife's lover came to the door, fully dressed: "Greetings, Sir!"
+"So, you are the husband?"
 "Who the hell else would I be?" replied the senior clerk, fuming
 with anger.
-His wife's lover bowed his head respectfully. His plan was to
+His wife's lover bowed his head respectfully, His plan was to
 outmaneuver the senior clerk by demonstrating superior social
 skills.
 "I am honored to make your acquaintance, Sir. Please try to keep
@@ -2364,23 +2364,23 @@ first pair of horns. There is no reason to get angry. It will only make
 people laugh at us both. Indeed, I must tell you that, in spite of all
 that has happened, I still respect your wife deeply."
 Ever conscious of their social reputations, the two men continued
-to address each other in extremely respectful tones. Eventually, how-ever, the senior clerk began to break down.
+to address each other in extremely respectful tones. Eventually, how-ever, the senior clerk began to break down:
 "Sir, although my wife has put her clothes back on, I remain some-what concerned. You must know the old saying:'When a man visits a
 woman's room, he is absent-minded, but when a woman visits a
 man's room, she is a slut."'
 His wife's lover was impressed by the intellectual power of the
-senior clerk's reasoning. Sensing the impossibility of denying his
-adulterous crime, he tried a different approach.
+senior clerk's reasoning, Sensing the impossibility of denying his
+adulterous crime, he tried a different approach:
 "Sir, sprouting horns is not so bad. It is merely a question of bad
 luck, like an unintended accident. Take Napoleon, for example. Not
 only did he win great victories in the North and the East, but he was
 extremely handsome. And yet he too sprouted horns."
 The comparison to Napoleon eased the mind of the horned senior
-clerk. But he continued to protest. "Whether it's my fault or not,
+clerk. But he continued to protest: "Whether it's my fault or not,
 there is no profit in sprouting horns. How do you plan to compen-sate me for the damage that you have inflicted? Perhaps I ought to
 seek recourse from the law?"
-The idea of police or media involvement frightened the lover. He
-racked his brain for another solution. "Sir, it is I, in fact, who have
+The idea of police or media involvement frightened the lover, He
+racked his brain for another solution: "Sir, it is I, in fact, who have
 sprouted horns!"
 "Oh! Oh! Is that possible?" asked the senior clerk in disbelief.
 "It is, indeed! Your wife told me that she was unmarried and
@@ -2391,38 +2391,38 @@ husbands simultaneously. Hence, I am also a horned husband. I too
 have been damaged. I also demand compensation!"
 "I don't know what you are talking about! Mr. Xuan, will you
 please confirm to this man that I am the horned husband?"
-Xuan bowed his head. "We are honored to serve you," he replied
+Xuan bowed his head: "We are honored to serve you," he replied
 courteously.
 "It is unclear who has damaged whom," the lover added threaten-ingly. "Perhaps I should consult my lawyer about this matter. As an
 office clerk, you are no doubt familiar with the law. And the law
 must be respected!"
 Upon hearing the word lawyer, the senior clerk began worrying
-about the legality of his own presence in the Fairyland Hotel. He
-feared that his reputation as a model official might be tarnished.
+about the legality of his own presence in the Fairyland Hotel; He
+feared that his reputation as a model official might be tarnished;
 Perhaps it was he who would be caught red-handed during his
-attempt to catch his wife and her lover red-handed. With these
+attempt to catch his wife and her lover red-handed; With these
 thoughts in mind, he winked at his own lover and extended his
-hand to his wife's.
+hand to his wife's:
 "Farewell, Sir! I hope to see you again... "
-Like an escaped convict, he dashed out the front gate of the Fairy-land Hotel, followed by his lover. Xuan was also struck by the refer-ence to lawyers. Fearing dire repercussions, he walked swiftly away
+Like an escaped convict, he dashed out the front gate of the Fairy-land Hotel, followed by his lover. Xuan was also struck by the refer-ence to lawyers, Fearing dire repercussions, he walked swiftly away
 without looking back.
-He quickly came upon Miss Snow. "We must leave immediately,"
+He quickly came upon Miss Snow: "We must leave immediately,"
 he said to her. "Otherwise, there will be trouble!"
 Frightened and flustered, Miss Snow followed Xuan to the Japa-nese gate. As they passed through it, the car of Mrs. Deputy Cus-toms Officer pulled up in front of the hotel.
 Mrs. Deputy Customs Officer jumped out of the car and called
-out the name of Miss Snow. "You are engaged already, my dear. Your
+out the name of Miss Snow: "You are engaged already, my dear. Your
 presence here calls into question the high moral standards of your
 family!"
-Miss Snow pointed at Xuan. "We're just friends! No more, no
+Miss Snow pointed at Xuan: "We're just friends! No more, no
 less."
-Miss Snow flagged a rickshaw. She got in and took off down the
+Miss Snow flagged a rickshaw, she got in and took off down the
 street, leaving Xuan and Mrs. Deputy Customs Officer behind.
 "Young girls today are so ill bred. They do nothing but eat and
 go out on the town. A woman's duty is to follow and remain
 faithful to her husband. Whatever happened to the three obliga-
 tions and the four virtues? Whatever happened to chastity, morality,
 and decorum?"
-Xuan stood there, his mouth shut tightly like a mussel.
+Xuan stood there, his mouth shut tightly like a mussel:
 "And you, Mr. Xuan. You must behave yourself. Don't ruin other
 people's lives. She is engaged, meaning she is taken already. Remem-ber the saying:'Chase only unmarried men or widows; do not pur-sue the husbands and wives of other people!"'
 This brief lecture in morality reminded Xuan of his earlier prob-lems. It also reminded him that Mrs. Deputy Customs Officer was,
@@ -2430,7 +2430,7 @@ in fact, a widow.
 "Madame, please forgive me," he stammered. "If you were not so
 famously faithful to your two ex-husbands... I would certainly
 have pursued you, instead!"
-Mrs. Deputy Customs Officer smiled. "Oh, how naughty of you
+Mrs. Deputy Customs Officer smiled: "Oh, how naughty of you
 to say so!"
 She hopped back into her car and sped off, a fugitive from love.
 Red-Haired Xuan bade farewell to the Fairyland Hotel and re-turned to the Europeanization Tailor Shop on foot.
@@ -3337,7 +3337,7 @@ all the conflicting developments: Xuan's anger, the fact that he had
 saved Great-Grandpa's life, the fact that her daughter, Miss Snow,
 was now in love with him, the letter from Snow's fiance. All of these
 things confused her; she no longer knew right from wrong, good
-from bad. "Please take a seat, Doctor," she said gently. "Who in this
+from bad. "Please take a seat, Doctor," s "Who in this
 family has said something against you?"
 Xuan continued to pace back and forth. "If I get angry, it will
 mean trouble for everyone! If I am wronged, everybody will suffer!"
@@ -3742,7 +3742,7 @@ Sir," he retorted sternly, "isn't our language good enough for you?"
 acknowledging his disrespect to the mother tongue. "Sir, I have long
 heard your name and am pleased to have the honor of meeting you
 at last."
-Xuan bowed his head. "I am honored!"
+Xuan bowed his head: "I am honored!"
 "Thank you very much, Sir! I have seen you play many times, and
 I admire you. You have a bright future. We have been worried that
 Tonkin has no one who can compete against Annam and Cochin-china, but now we are fortunate to have you. Our Majesty will be so
@@ -3895,7 +3895,7 @@ evolved at all! Sports! Social reform!"
 The young man was both frightened and angry. "Sir... , he
 stammered, "Permit me to introduce myself... I am the fiance of
 Miss Snow, the one who just ran away!"
-Red-Haired Xuan bowed his head. "I am honored," he said, puff-ing out his chest. "I am Me sit Xuan, tennis professor, the hope of
+Red-Haired Xuan bowed his head: "I am honored," he said, puff-ing out his chest. "I am Me sit Xuan, tennis professor, the hope of
 Tonkin!"
 The young man recognized that Xuan had seized the upper hand.
 "It is I who am honored! Forgive me for disturbing you, Sir. Even

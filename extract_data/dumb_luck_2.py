@@ -356,6 +356,16 @@ def pre_map_wrong_text_to_correct_text(text):
         ("stopped him.", "stopped him:"),
         ("on her fingers.", "on her fingers:"),
         ("people! There", "people!\"\n\"There"),
+        ("lit up.", "lit up:"),
+        ("how to respond.", "how to respond,"),
+        ("face of a poet.", "face of a poet;"),
+        ("elephant style.", "elephant style and"),
+        ("''Here!", "\"Here!"),
+        ("as air.", "as air,"),
+        ("rival beauty.", "rival beauty,"),
+        ("life's bitterness.", "life's bitterness;"),
+        ("hands with joy.", "hands with joy:"),
+
 
         
 
@@ -552,6 +562,72 @@ def pre_map_wrong_text_to_correct_text(text):
         ("nhỉ! Khi", "nhỉ!\n- Khi"),
         ("khổ mà", "khổ.\n- Mà"),
         ("lắm! Thật", "lắm!\n- Thật"),
+        ("đốc ạ. Nếu", "đốc ạ!\n- Nếu"),
+        ("đi! Ðể", "đi!\n- Ðể"),
+        ("thật sự. Thỉnh", "thật sự, thỉnh"),
+        ("cả mặt.", "cả mặt,"),
+        ("anh! Một", "anh!\n- Một"),
+        ("chim, Tuyết", "chim. Tuyết"),
+        ("nga rất to:", "nga rất to."),
+        ("hoa - Hoài", "hoa Hoài."),
+        ("lại ngâm:", "lại ngâm."),
+        ("tơi thay,", "tơi thay."),
+
+        ("bent down.", "bent down,"),
+        ("with both arms.", "with both arms,"),
+        ("low to Xuan.", "low to Xuan,"),
+        ("his own.", "his own:"),
+        ("Snow blanched.", "Snow blanched:"),
+        ("elegant way.", "elegant way;"),
+        ("senior clerk's wife.", "senior clerk's wife:"),
+        ("wife. If not,", "wife, if not,"),
+        ("stuck out his chest.", "stuck out his chest:"),
+        ("clerk turned pale.", "clerk turned pale:"),
+        ("even paler.", "even paler:"),
+        ("fully dressed.", "fully dressed:"),
+        ("he said gently.", ""),
+        ("head respectfully.", "head respectfully,"),
+        (" to break down.", " to break down:"),
+        ("clerk's reasoning.", "clerk's reasoning,"),
+        ("different approach.", "different approach:"),
+        ("protest.", "protest:"),
+        ("the lover.", "the lover,"),
+        ("another solution.", "another solution:"),
+        ("Xuan bowed his head.", "Xuan bowed his head:"),
+        ("presence in the Fairyland Hotel.", "presence in the Fairyland Hotel;"),
+        ("tarnished.", "tarnished;"),
+        ("lover red-handed.", "lover red-handed;"),
+        ("to his wife's.", "to his wife's:"),
+        ("to lawyers.", "to lawyers,"),
+        ("upon Miss Snow.", "upon Miss Snow:"),
+        ("the name of Miss Snow.", "the name of Miss Snow:"),
+        ("pointed at Xuan.", "pointed at Xuan:"),
+        ("rickshaw. She", "rickshaw, she"),
+        ("like a mussel.", "like a mussel:"),
+        ("Officer smiled.", "Officer smiled:"),
+
+        ("hủ, muốn", "hủ.\n- Muốn"),
+        ("anh? Ấy", "anh?\n- Ấy"),
+        ("chịu hàng:", "chịu hàng."),
+        ("ngài! Thế", "ngài!\n- Thế"),
+        ("cựu, trông", "cựu.\n- Trông"),
+        ("nói, nó", "nói. Nó"),
+        ("kia mà rằng!", "kia mà rằng:"),
+        ("à! Nếu", "à!\n- Nếu"),
+        (" Sao? Ngay", " Sao?\n- Ngay"),
+        ("cẳng đi ngay.", "cẳng đi ngay;"),
+        ("lên: “Giời ơi! chồng tôi!”.", "lên.\n- Giời ơi! chồng tôi!\n"),
+        ("ở hồ cả.", "ở hồ cả;"),
+        ("ngài! Bẩm", "ngài!\n- Bẩm"),
+        ("mục xã giao:", "mục xã giao."),
+        ("hổ thẹn cãi:", "hổ thẹn cãi."),
+        ("hại... Vậy", "hại...\n- Vậy"),
+        ("ngay không", "ngay.\n- Không"),
+        ("giờ! Tuy", "giờ!\nTuy"),
+        ("nẫy, lại", "nẫy. Lại"),
+        ("chồng, Xuân", "chồng. Xuân"),
+        ("cho, nếu", "cho.\n- Nếu"),
+        ("nước đại.", "nước đại,"),
     ]
 
     for old_text, new_text in replacement_pairs_1:
@@ -591,6 +667,8 @@ def post_map_wrong_text_to_correct_text(text):
         ("Ze... da... da... mua.", "\"Ze... da... da... mua.\""),
         ("Mong pe' y ~ Pa ri! .", "\"Mông Pế y ề Pa rí! ...\""),
         ("adjacent room.", "adjacent room:"),
+        ("cửa, phút,", "cửa. Sau 15 phút,"),
+
     ]
 
     for old_text, new_text in replacement_pairs:
@@ -611,6 +689,8 @@ def post_fix(text):
         ("Venereal Disease Treatment.\nIt was", "Venereal Disease Treatment, it was"),
         ("Th~p h,r L{:ral", "Thập Tự Lửa"),
         ("Conservatism of Mrs. Deputy Customs Officer After", "Conservatism of Mrs. Deputy Customs Officer.\nAfter"),
+        ("immediately,\"\nhe", "immediately,\" he"),
+
 
 
 
