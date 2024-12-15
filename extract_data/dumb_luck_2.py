@@ -626,9 +626,26 @@ def pre_map_wrong_text_to_correct_text(text):
         ("her fist down on the table.", "her fist down on the table:"),
         ("Grandpa sat up.", "Grandpa sat up:"),
         ("of Fate", "of Fate."),
-
-
-
+        ("in the morning.", "in the morning,"),
+        ("seen. Glancing", "seen, glancing"),
+        ("intellectuals. He", "intellectuals, he"),
+        ("layer of powder.", "layer of powder,"),
+        ("fashionable face.", "fashionable face:"),
+        ("on the bed.", "on the bed:"),
+        ("control herself.", "control herself:"),
+        ("powder his face.", "powder his face:"),
+        ("Grandma asked.", ""),
+        ("\"Is that true?\"", ""),
+        ("surprised him.", "surprised him:"),
+        ("Civilization shook his head.", "Civilization shook his head:"),
+        ("in his face.", "in his face:"),
+        ("face. \"There", "face: \"There"),
+        ("thunderbolt.", "thunderbolt,"),
+        ("/1 Are you", "\"Are you"),
+        ("thought for a while.", "thought for a while:"),
+        ("of evil spirits.", "of evil spirits;"),
+        ("to Heaven.", "to Heaven;"),
+        ("characters.", "characters;"),
 
 
         ("hủ, muốn", "hủ.\n- Muốn"),
@@ -671,6 +688,37 @@ def pre_map_wrong_text_to_correct_text(text):
         ("ố mà rằng:", "ố."),
         ("KỲ... NGÔN", "KỲ NGÔN"),
         ("SỐ PHẬN", "SỐ PHẬN."),
+        ("tiếng chuông.", "tiếng chuông;"),
+        ("cửa phòng.", "cửa phòng,"),
+        ("ra, làm", "ra. Điều này làm"),
+        ("gõ của.", "gõ cửa,"),
+        ("đáp, điếu", "đáp. Điếu"),
+        ("cốt yếu. Ðiều", "cốt yếu, điều"),
+        ("Ôi! Thật", "Thật"),
+        ("đành! Ðâý", "đành!\n- Ðấy"),
+        ("sức. Nhưng", "sức, nhưng"),
+        ("nỗi! Sao", "nỗi!\n- Sao"),
+        ("của mẹ.", "của mẹ,"),
+        ("đối! Mà", "đối!\n- Mà"),
+        ("ghế, hai", "ghế. Hai"),
+        ("gối, chốc", "gối. Chốc"),
+        ("gở, bà", "gở! Bà"),
+        ("ra miệng.", "ra miệng,"),
+        ("con - mà", "con, mà"),
+        ("lắm, hay", "lắm. Hay"),
+        ("mẹ. Nhất", "mẹ, nhất"),
+        ("đã là cùng.", "đã là cùng,"),
+        ("tấu: thôi", "tấu. Thôi"),
+        ("Phú chăng? Hay", "Phú hay"),
+        ("bọn đánh quần. Bà", "bọn đánh quần, bà"),
+        ("biết, vì bà", "biết. Vì bà"),
+        ("nõn thì ông", "nõn. Thì ông"),
+        ("nữa, và muốn", "nữa. Và muốn"),
+        ("vơ, ông", "vơ. Ông"),
+        
+        ("white legs.", "white legs;"),
+        ("eyes wide.", "eyes wide:"),
+        ("head. \"We", "head: \"We")
 
 
     ]
@@ -721,6 +769,7 @@ def post_map_wrong_text_to_correct_text(text):
         ("a summit.", "a summit,"), 
         ("from lace.", "from lace,"),
         ("laun-dry woman.", "laundry woman:"),
+        ("ai biết...", "ai biết,"),
 
     ]
 
