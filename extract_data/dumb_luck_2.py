@@ -1266,6 +1266,8 @@ def post_map_wrong_text_to_correct_text(text):
         ("được, tôi", "được.\n- Tôi"),
         ("Nhưng cụ cố Hồng còn cần gì cậy thầy xem số nữa?", ""),
         ("Cũng như người đời, cụ thấy sung sướng đầy đủ thì thôi chú?", ""),
+        ("mình, cụ", "mình. Cụ"),
+        ("Văn Minh cũng đứng lên, chết điếng người.", ""),
 
 
 
@@ -1282,7 +1284,7 @@ def post_map_wrong_text_to_correct_text(text):
         ("man continued,", "man continued."),
         ("unimpressed.", "unimpressed:"),
         ("fortune-teller continued,", "fortune-teller continued."),
-        ("mình, cụ", "mình. Cụ"),
+
 
 
     ]
@@ -1474,6 +1476,11 @@ def post_fix(text):
         ("Hong.\n\"You only", "Hong. \"You only"),
         ("Xuan.\n\"His predictions", "Xuan. \"His predictions"),
         ("continued.\n\"the fate", "continued. \"the fate"),
+        ("ông.\n- Đó là sự", "ông. Đó là sự"),
+        ("dizziness.\nShe", "dizziness. She"),
+        ("ghế.\nHai tay", "ghế. Hai tay"),
+        ("moaned.\n\"You let", "moaned. \"You let"),
+        ("sighed.\nHe was", "sighed. He was"),
     ]
 
     for old_text, new_text in replacement_pairs:
