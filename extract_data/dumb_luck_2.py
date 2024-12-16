@@ -566,7 +566,7 @@ def pre_map_wrong_text_to_correct_text(text):
         ("đốc ạ. Nếu", "đốc ạ!\n- Nếu"),
         ("đi! Ðể", "đi!\n- Ðể"),
         ("thật sự. Thỉnh", "thật sự, thỉnh"),
-        ("cả mặt.", "cả mặt,"),
+        ("đỏ cả mặt.", "đỏ cả mặt,"),
         ("anh! Một", "anh!\n- Một"),
         ("chim, Tuyết", "chim. Tuyết"),
         ("nga rất to:", "nga rất to."),
@@ -890,8 +890,6 @@ def pre_map_wrong_text_to_correct_text(text):
         ("đâý! Ăn", "đấy!\n- Ăn"),
 
 
-
-
     ]
 
     for old_text, new_text in replacement_pairs_1:
@@ -1097,6 +1095,8 @@ def post_map_wrong_text_to_correct_text(text):
         ("leash.\"", " leash."),
         ("her assent.", "her assent:"),
         ("prison sentence.", "prison sentence,"),("Doctor's Promise", "Doctor's Promise."),
+        ("heart-rending voice,", "heart-rending voice."),
+        ("hand merrily.", "hand merrily:"),
 
         ("sướng lắm, những", "sướng lắm. Những"),
         ("dâm! Chúng", "dâm!\n- Chúng"),
@@ -1104,7 +1104,34 @@ def post_map_wrong_text_to_correct_text(text):
         ("được. Vậy", "được.\n- Vậy"),
         ("LỜI HỨA", "LỜI HỨA."),
         ("giờ, Xuân", "giờ. Xuân"),
+        (": “Anh ơi, anh có biết là anh đã làm hại cả một đời danh tiết của em rồi đó không?”", ":\n-Anh ơi,\n- anh có biết là anh đã làm hại cả một đời danh tiết của em rồi đó không?\n"),
+        ("thời, thì", "thời. Thì"),
 
+        ("colU'\\ter", "counter"),
+        ("Tri~u", "Trieu"),
+        ("Lào.", "Lào,"),
+        ("C6c", "Coc"),
+        ("a\nheart-rending", "a heart-rending"),
+        ("teller agreed.", "teller agreed,"),
+        ("were speaking.", "were speaking:"),
+        ("silent for a moment.", "silent for a moment,"),
+        ("bowed low.", "bowed low:"),
+        ("salute.", "salute:"),
+        ("unison,", "unison."),
+        ("whispered, \"you","whispered. \"you"),
+        ("request, and he", "request. He"),
+        ("what he could.", "what he could:"),
+
+        ("lên đâý", "lên đâý."),
+        ("Hai ngài này tình cờ lại cùng ngồi ngay vào trong một quầy bên cạnh cái của Xuân.", ""),
+        ("thế. Ở", "thế; Ở"),
+        ("niên. Âu", "niên Âu"),
+        ("ngộ, vì", "ngộ.\n- Vì"),
+        ("mặt, Lúc", "mặt. Lúc"),
+        ("sĩ, ngài", "sĩ.\n- Ngài"),
+        ("thôi. Còn đau", "thôi.\n- Còn đau")
+
+        
 
     ]
 
@@ -1210,7 +1237,16 @@ def post_fix(text):
         ("Officer.\n\"Permit", "Officer. \"Permit"),
         ("here.\nWe need", "here. We need"),
         ("ticket.\nIt", "ticket. It"),
-
+        ("bầu\n- phải, ông bầu\n- Văn", "bầu - phải, ông bầu - Văn"),
+        ("ấy\n- nếu ta có thể nói thế\n- không", "ấy - nếu ta có thể nói thế - không"),
+        ("crowded.\nIt", "crowded. It"),
+        ("years.\nAs", "years. As"),
+        ("necessary.\nTo", "necessary. To"),
+        ("có...\nlàm bộ.", "có... làm bộ."),
+        ("lắm!\n- Nhưngtôi", "lắm! Nhưng tôi"),
+        ("mật thám hẳn hoi.", "mật thám hẳn hoi. Hai ngài này tình cờ lại cùng ngồi ngay vào trong một quầy bên cạnh cái của Xuân."),
+        ("unison.\n\"the", "unison. \"the"),
+        ("check.\nThe", "check. The")
     ]
 
     for old_text, new_text in replacement_pairs:
