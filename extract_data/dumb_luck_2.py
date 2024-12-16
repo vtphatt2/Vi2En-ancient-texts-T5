@@ -884,7 +884,11 @@ def pre_map_wrong_text_to_correct_text(text):
         ("floor, moaning.", "floor, moaning:"),
         ("Grandma's eyes.", "Grandma's eyes,"),
 
-        ("to “Hứt!... Hứt!... Hứt!...”", "to:\n\"Hứt...Hứt!...Hứt!...\""),  
+        ("to “Hứt!... Hứt!... Hứt!...”", "to:\n\"Hứt...Hứt!...Hứt!...\""), 
+        ("GIỚI", "GIỚI."), 
+        (": “Ừ, cái mặt thằng này thế mà cũng đỡ ma cà bông rồi đâý! Ăn sung mặc sướng cũng có khác! Bây giờ ta nói thế nào? Cắt nghĩa thế nào cho trôi việc đem nó đến khai tên ở Tổng cục? Chả lẽ nói nay là định gả em gái cho nó nên phải nhắc nó lên từ một thằng nhặc banh lên địa vị nhà tài tử? Có nên nói ngay hay không?”", ":\n- Ừ, cái mặt thằng này thế mà cũng đỡ ma cà bông rồi đâý! Ăn sung mặc sướng cũng có khác! Bây giờ ta nói thế nào? Cắt nghĩa thế nào cho trôi việc đem nó đến khai tên ở Tổng cục? Chả lẽ nói nay là định gả em gái cho nó nên phải nhắc nó lên từ một thằng nhặc banh lên địa vị nhà tài tử? Có nên nói ngay hay không?\n"),
+        ("đâý! Ăn", "đấy!\n- Ăn"),
+
 
 
 
@@ -959,8 +963,16 @@ def post_map_wrong_text_to_correct_text(text):
         ("easy?\"", "easy?\"\n"),
         ("Otherwise, our", "\"Otherwise, our"),
         ("certain poses", "certain poses..."),
-
-
+        ("compliment.", "compliment:"),
+        ("unconvinced.", "unconvinced:"),
+        ("in anger,", "in anger."),
+        ("scared Xuan.", "scared Xuan:"),
+        ("meekly,", "meekly."),
+        ("arrived.", "arrived:"),
+        ("Xuan immediately.", "Xuan immediately:"),
+        ("lips in disgust.", "lips in disgust:"),
+        ("sternly,", "sternly."),
+        ("to Mr. Civilization.", "to Mr. Civilization:"),
 
         ("GƯƠNG MẪU", "GƯƠNG MẪU."),
         ("“nhiêù thầy thối ma”.", "\"nhiêù thầy thối ma\"."),
@@ -987,8 +999,47 @@ def post_map_wrong_text_to_correct_text(text):
         (": “Ấy giá không có món ấy thì là thiếu chưa được to, may mà ông Xuân đã nghĩ hộ tôi!”", ":\n- Ấy giá không có món ấy thì là thiếu chưa được to.\n- May mà ông Xuân đã nghĩ hộ tôi!\n"),
         ("to, đúng", "to. Đúng"),
         ("sau này:", "sau này."),
-        ("thấy, rồi", "thấy. Rồi")
+        ("thấy, rồi", "thấy. Rồi"),
+        ("lắm, nghĩ", "lắm. Nghĩ"),
+        ("thôi?” Ông", "thôi?”. Ông"),
+        ("ông. Tuyết", "ông.\n- Tuyết"),
+        ("rồi, điều", "rồi! Điều"),
+        ("gì! Tôi", "gì!\n- Tôi"),
+        ("gì! Nghĩa", "gì!\n- Nghĩa"),
+        ("ơn1lòng", "ơn một lòng"),
+        ("quá! Nhưng", "quá!\n- Nhưng"),
+        (": “Quái cho cái thằng này! Cần gì phải xoay ngay mình như thế. Phần gia tài của em mình như thế thì nó chẳng phải vội cũng đã đủ là đào được mõ chứ sao? Nó lại muốn bắt mình phải cam đoan điều ấy nữa thì đểu cán thật!”", ":\n- Quái cho cái thằng này! Cần gì phải xoay ngay mình như thế. Phần gia tài của em mình như thế thì nó chẳng phải vội cũng đã đủ là đào được mõ chứ sao? Nó lại muốn bắt mình phải cam đoan điều ấy nữa thì đểu cán thật!\n"),
+        ("này! Cần", "này!\n- Cần"),
+        ("ông, đó", "ông.\n- Đó"),
+        ("Vâng, thì ông", "Vâng,\n- thì ông"),
+        ("đẽ, những", "đẽ. Những"),
+        ("thời, ai", "thời. Ai"),
+        ("sở, có", "sở. Có"),
+        ("lỗi! Thưa", "lỗi!\n- Thưa"),
+        ("đốc, những", "đốc. Những"),
+        ("nó, một", "nó. Một"),
+        ("lây, vì", "lây. Vì"),
+        ("thầyMin", "thầy Min"),
+        ("dO'", "đơ"),
+        ("khác. Chúng", "khác.\n- Chúng"),
+        ("thường, mà", "thường,\n- mà"),
+        ("lắm! Nhưng cũng", "lắm!\n- Nhưng cũng"),
+        ("Thôi đi, rồi", "Thôi đi,\n- rồi"),
+        ("thôi! Biên", "thôi!\n- Biên"),
+        ("ThầyMin", "Thầy Min"),
+        ("nữa, và, do", "nữa. Và, do"),
+        ("CHUYÊN TRÁCH", "CHUYÊN TRÁCH."),
+        ("Anh ơi! Thế", "Anh ơi!\n- Thế"),
         
+        ("chest forward.", "chest forward:"),
+        ("friend's example.", "friend's example:"),
+        ("waved his hand.", "waved his hand:"),
+        ("lắm! Nhưng", "lắm!\n- Nhưng"),
+        ("hope of Indochina... \"", "hope of Indochina...\"\n"),
+        ("And what about us", "\"And what about us"),
+        ("Official Investigation", "Official Investigation."),
+        ("My darling!\"", "\"My darling!\""),
+
 
     ]
 
@@ -1068,6 +1119,23 @@ def post_fix(text):
         ("Fish Drum.\nIt", "Fish Drum. It"),
         ("carts.\nHe", "carts. He"),
         ("him.\nSuddenly,", "him. Suddenly,"),
+        ("lại.\nÔng", "lại. Ông"),
+        ("abruptly.\n\"We've", "abruptly. \"We've"),
+        ("him.\nXuan had", "him. Xuan had"),
+        ("going.\n\"Hey", "going. \"Hey"),
+        ("thế\n- sở", "thế - sở"),
+        ("mình.\nNó tự", "mình. Nó tự"),
+        ("husband.\nHe", "husband. He"),
+        ("lắm.\nÔng thật", "lắm. Ông thật"),
+        ("face.\nHis expression", "face. His expression"),
+        ("French.\nXuan", "French. Xuan"),
+        ("sternly.\n\"isn't", "sternly. \"isn't"),
+        ("compliments.\nThose", "compliments. Those"),
+        ("policemen.\nIt", "policemen. It"),
+        ("please?!\"\n\"That's", "please?!\", \"That's"),
+        ("protested.\n\"There", "protested, \"There"),
+        ("hesitated.\nThey", " hesitated. They"),
+
 
     ]
 
