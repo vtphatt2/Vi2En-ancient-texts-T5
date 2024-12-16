@@ -1030,6 +1030,34 @@ def post_map_wrong_text_to_correct_text(text):
         ("nữa, và, do", "nữa. Và, do"),
         ("CHUYÊN TRÁCH", "CHUYÊN TRÁCH."),
         ("Anh ơi! Thế", "Anh ơi!\n- Thế"),
+        ("lắm, còn", "lắm.\n- Còn"),
+        ("sáng. Mặt", "sáng, Mặt"),
+        ("bạc, hình", "bạc. Hình"),
+        ("ơi! Em", "ơi!\n- Em"),
+        ("Bẩm... tôi", "Bẩm...\n- Tôi"),
+        ("một kẽ chiến bại:", "một kẽ chiến bại."),
+        ("xưa tới nay:", "xưa tới nay."),
+        ("tế... Về", "tế...\n- Về"),
+        ("không? Ừ, tôi", "không?\n- Ừ, tôi"),
+        ("học. Còn", "học.\nCòn"),
+        ("sách ảnh. Lúc", "sách ảnh, lúc"),
+        ("ngủ, Xuân", "ngủ. Xuân"),
+        ("địchv ới", "địch với"),
+        ("khinghe", "khi nghe"),
+        ("người yêu:", "người yêu."),
+        ("bây giờ... chỉ", "bây giờ...\n- Chỉ"),
+        ("được nữa:", "được nữa."),
+        ("cuộc...", "cuộc"),
+        ("mặc thích...", "mặc thích,"),
+        ("người vợ ghen:", "người vợ ghen."),
+        ("quay lại Xuân:", "quay lại Xuân."),
+        ("bực mình:", "bực mình."),
+        ("gợi ấy, Xuân", "gợi ấy. Xuân"),
+        ("xúc phạm:", "xúc phạm."),
+        (": “Em chã! Em chã!”", ":\n- Em chã! Em chã!\n"),
+        ("gián đoạn:", "gián đoạn."),
+        ("Thưa bà, chúng tôi được", "Thưa bà.\n- Chúng tôi được"),
+        ("mất danh giá:", "mất danh giá."),
         
         ("chest forward.", "chest forward:"),
         ("friend's example.", "friend's example:"),
@@ -1039,6 +1067,43 @@ def post_map_wrong_text_to_correct_text(text):
         ("And what about us", "\"And what about us"),
         ("Official Investigation", "Official Investigation."),
         ("My darling!\"", "\"My darling!\""),
+        ("frowned deeply.", "frowned deeply:"),
+        ("to the White Bamboo Lake.", "to the White Bamboo Lake:"),
+        ("dreamily,", "dreamily."),
+        ("her shoulders.", "her shoulders:"),
+        ("/1", "\""),
+        ("shrieked with joy.", "shrieked with joy:"),
+        ("in annoyance.", "in annoyance:"),
+        ("to her. Then", "to her, then"),
+        ("the gesture.", "the gesture:"),
+        ("and angry.", "and angry:"),
+        ("\"Sir... ,", "\"Sir...\","),
+        ("stammered,", "stammered."),
+        ("under a boot.", "under a boot:"),
+        ("A. M.", "A.M,"),
+        ("around the neck.", "around the neck:"),
+        ("pushed Xuan aside.", "pushed Xuan aside:"),
+        ("she whispered,", "she whispered."),
+        ("Xuan shook his head.", "Xuan shook his head:"),
+        ("gown.", "gown,"),
+        ("the couch.", "the couch:"),
+        ("stopped moaning.", "stopped moaning:"),
+        ("echoed out.", "echoed out:"),
+        ("comers of the room.", "comers of the room:"),
+        ("officers, \"we", "officers.\n\"We"),
+        ("blanched.", "blanched:"),
+        ("laughed heartily.", "laughed heartily:"),
+        ("her servant.", "her servant:"),
+        ("leash.\"", " leash."),
+        ("her assent.", "her assent:"),
+        ("prison sentence.", "prison sentence,"),("Doctor's Promise", "Doctor's Promise."),
+
+        ("sướng lắm, những", "sướng lắm. Những"),
+        ("dâm! Chúng", "dâm!\n- Chúng"),
+        ("tôi. Chúng", "tôi.\n- Chúng"),
+        ("được. Vậy", "được.\n- Vậy"),
+        ("LỜI HỨA", "LỜI HỨA."),
+        ("giờ, Xuân", "giờ. Xuân"),
 
 
     ]
@@ -1135,7 +1200,16 @@ def post_fix(text):
         ("please?!\"\n\"That's", "please?!\", \"That's"),
         ("protested.\n\"There", "protested, \"There"),
         ("hesitated.\nThey", " hesitated. They"),
-
+        ("Ban.\nIn fact", "Ban. In fact"),
+        ("whispered.\n\"or", "whispered, \"or"),
+        ("l.\nDivan (sofa).\n", ""),
+        ("eyes.\nHer expression", "eyes. Her expression"),
+        ("room.\n\"Come", "room. \"Come"),
+        ("stammered.\n\"when", "stammered, \"when"),
+        ("Officer.\n\"This", "Officer. \"This"),
+        ("Officer.\n\"Permit", "Officer. \"Permit"),
+        ("here.\nWe need", "here. We need"),
+        ("ticket.\nIt", "ticket. It"),
 
     ]
 
@@ -1213,6 +1287,12 @@ def split_into_sentences_quotes_eng(text):
     current = []
     quote_stack = []
 
+    def is_time_abbreviation(index):
+        """Check if a period at the current index is part of a time abbreviation."""
+        if index < 2:
+            return False
+        return line[index - 1:index + 2] in ('a.m', 'p.m', 'A.M', 'P.M')
+
     def is_honorific(index):
         """Check if a period at the current index is part of an honorific."""
         if index == 0 or line[index - 1] == ' ':
@@ -1255,7 +1335,7 @@ def split_into_sentences_quotes_eng(text):
                 quote_stack.append(char)
 
             # Skip periods in honorifics (e.g., "Mr.")
-            elif char == '.' and is_honorific(i):
+            elif char == '.' and (is_honorific(i) or is_time_abbreviation(i)):
                 i += 1
                 continue
 
