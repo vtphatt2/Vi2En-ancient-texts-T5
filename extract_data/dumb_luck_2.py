@@ -372,6 +372,7 @@ def pre_map_wrong_text_to_correct_text(text):
         ("dod6i", 'đôi'),
         ("dod65", 'độ'),
         ("dodòi", 'đời'),
+        ("mayÂu", 'may Âu'),
         ("mẫu, thỉnh", 'mẫu. Thỉnh'),
         ("lợn,", "lợn."),
         ("thinh,", "thinh."),
@@ -883,6 +884,8 @@ def pre_map_wrong_text_to_correct_text(text):
         ("floor, moaning.", "floor, moaning:"),
         ("Grandma's eyes.", "Grandma's eyes,"),
 
+        ("to “Hứt!... Hứt!... Hứt!...”", "to:\n\"Hứt...Hứt!...Hứt!...\""),  
+
 
 
     ]
@@ -943,6 +946,50 @@ def post_map_wrong_text_to_correct_text(text):
         ("loudly,", "loudly."),
         ("help... The whole house turned to Xuan...", "help; The whole house turned to Xuan..."), 
 
+        ("Exemplary Funeral", "Exemplary Funeral."),
+        ("budget.", "budget;"),
+        ("best. It should be sold overseas!", "best\", it should be sold overseas\"\n"),
+        ("\" He planned", "He planned"),
+        ("him. One", "him; One"),
+        ("time. Everyone", "time; Everyone"),
+        ("clothes. This", "clothes; This"),
+        ("sat up.", "sat up:"),
+        ("\"How come you're asking those of us who stayed home?\"", ""),
+        ("\"You're the one who went to their house,\" Grandpa snapped.", ""),
+        ("easy?\"", "easy?\"\n"),
+        ("Otherwise, our", "\"Otherwise, our"),
+        ("certain poses", "certain poses..."),
+
+
+
+        ("GƯƠNG MẪU", "GƯƠNG MẪU."),
+        ("“nhiêù thầy thối ma”.", "\"nhiêù thầy thối ma\"."),
+        ("biết, đến", "biết. Đến"),
+        ("đền Bia vừa", "đền Bia. Vừa"),
+        ("mạng, và", "mạng. Và"),
+        ("đ1ng", "đáng"),
+        ("chiêu, thành", "chiêu. Thành"),
+        ("rồi, vậy", "rồi. Vậy"),
+        ("tiệmÂu", "tiệm Âu"),
+        ("c ái", " cái"),
+        ("đãlăng", "đã lăng"),
+        ("hoãn, cụ", "hoãn. Cụ"),
+        ("quá. Người", "quá.\n- Người"),
+        ("kia à? Sao", "kia à!\n- Sao"),
+        ("vậy, mặc", "vậy. Mặc"),
+        ("thôi. Bây", "thôi.\n- Bây"),
+        ("làMin Ðơ", "là Min Ðơ"),
+        ("vàMin Toa", "và Min Toa"),
+        ("phụcNgây", "phục Ngây"),
+        ("nhẹn, trên", "nhẹn. Trên"),   
+        ("cửu, khi", "cửu. Khi"),
+        ("ma, Cụ", "ma. Cụ"),
+        (": “Ấy giá không có món ấy thì là thiếu chưa được to, may mà ông Xuân đã nghĩ hộ tôi!”", ":\n- Ấy giá không có món ấy thì là thiếu chưa được to.\n- May mà ông Xuân đã nghĩ hộ tôi!\n"),
+        ("to, đúng", "to. Đúng"),
+        ("sau này:", "sau này."),
+        ("thấy, rồi", "thấy. Rồi")
+        
+
     ]
 
     for old_text, new_text in replacement_pairs:
@@ -982,6 +1029,46 @@ def post_fix(text):
         ("loudly.\n\"you", "loudly. \"You"),
         ("Xuan.\n\"Please,", "Xuan. \"Please,"),
         ("honest voice.\n\"I", "honest voice. \"I"),
+        ("best.\nIt should", "best. It should"),
+        ("is!\"\nGrandpa", "is!\". Grandpa"),
+        ("créations!\n- những", "créations!- những"),
+        ("trouble.\nThe real", "trouble. The real"),
+        ("house.\nIn", "house. In"),
+        ("day.\nThe opium", "day. The opium"),
+
+        ("Grandpa and Grandma continued to quarrel in a way common among old, traditional couples from respectable families-families in which husbands and wives never calmly discuss anything for more than fifteen minutes.\n", ""),
+        ("\"In my opinion, I don't think that they are convinced that Snow has been ruined.\"\n", ""),
+        ("\"No way! I think that they have always wanted to break up the marriage. Don't side with your child!\"\n", ""),
+        ("\"Why do you think they still want to express their condolences? Don't be stupid!\"\n", ""),
+        ("\"Perhaps it is some sort of trick! They do not cancel the marriage now, but they do not plan to go through with it either. That way n o one else will dare to ask Snow's hand in marriage. She will die an old maid!\"\n", ""),
+        ("\"I'm not so sure! Maybe they are just as confused as we are. Even we do not know for sure whether our daughter has been ruined or not! When I told them that we should move the wedding date up before the funeral to save money rather than wait for three more years, they replied that their son is still young and only a student. They see no need to rush the wedding. They said that they could wait three or even five more years.\"\n", ""),
+        ("\"So, what should we do now? I think we should ask Dr. Xuan to marry her before the funeral. If he agrees, then everything will be settled down.\"\n", ""),
+        ("Grandma bit her lip.\n", ""),
+        ("She still remembered that Xuan had said, \"If I am wronged, everybody will suffer!\" He had also called attention to the horns of her son-in-law, the senior clerk, directly to his face, an announcement that brought shame to her other daughter.\n", ""),
+        ("Xuan's hot temper was scary.\n", ""),
+        ("She felt that she would be overcome with shame in his presence.\n", ""),
+        ("It would be an honor to have such a noble son-in-law but also very frightening.\n", ""),
+        ("\"There is an old saying,\" Grandma said, gesturing to her son,\n", ""),
+        ("'\"Children are spoiled by their mothers; grandchildren are spoiled by their grandmothers.' You have contributed to the ruin of Snow. You have made us all look bad. Now I ask for your advice.\"\n", ""),
+        ("\"Yes!\" Grandpa nodded.\n", ""),
+
+        ("past.\nIt", "past. It"),
+        ("thơ\n- cái", "thơ - cái"),
+        ("vú\n- nhưng", "vú - nhưng"),
+        ("breasts.\nShe", "breasts. She"),
+        ("v.v...\ntrên", "v.v... trên"),
+        ("coffin.\nTheir", "coffin. Their"),
+        ("some curly.\nTheir", "some curly. Their"),
+        ("ears.\nOn", "ears. On"),
+        ("festival.\nThere", "festival. There"),
+        ("trumpet.\nThere", "trumpet. There"),
+        ("couplets.\nLed", "couplets. Led"),
+        ("pic-tures.\nThere", "pictures. There"),
+        ("appearance.\nAs", "appearance. As"),
+        ("Fish Drum.\nIt", "Fish Drum. It"),
+        ("carts.\nHe", "carts. He"),
+        ("him.\nSuddenly,", "him. Suddenly,"),
+
     ]
 
     for old_text, new_text in replacement_pairs:
