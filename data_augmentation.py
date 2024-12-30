@@ -3,9 +3,11 @@ import nltk
 import ssl
 import json
 import os
+import time
 from nltk.translate.bleu_score import sentence_bleu, SmoothingFunction
 from transformers import pipeline
 from tqdm import tqdm
+from tenacity import retry, stop_after_attempt, wait_exponential
 nltk.download('punkt_tab')
 
 # 2. Use Vietnamese spelling correction model
@@ -34,17 +36,65 @@ def setup_gemini(api_key):
 
 API_KEY = "AIzaSyAISyP5zG-7NIV5F6xesUveTRDmtQ_6eyU"
 
+@retry(
+    stop=stop_after_attempt(3),
+    wait=wait_exponential(multiplier=1, min=4, max=10)
+)
 def translate_with_gemini(model, text, source_lang='Vietnamese', target_lang='English'):
     """Translate text using Gemini model."""
     try:
-        prompt = f"Translate the following {source_lang} text to {target_lang}:\n{text}\n\nTranslation:"
-        response = model.generate_content(prompt)
+        # prompt = f"Translate the following {source_lang} text to {target_lang}:\n{text}\n\nTranslation:"
+
+        prompt = f"""Translate this classical Vietnamese literature to formal {target_lang}. Maintain the literary style and poetic elements while ensuring accuracy:
+
+        Original {source_lang} text:
+        {text}
+
+        Translation:"""
+
+        # Format prompt to avoid triggering content filters
+        # prompt = f"Professionally translate this {source_lang} text to {target_lang}, maintaining formal language:\n{text}"
+
+        # Add delay between requests
+        time.sleep(2)
+        
+        # Generate with safety settings
+        safety_settings = {
+            "HARM_CATEGORY_HARASSMENT": "BLOCK_NONE",
+            "HARM_CATEGORY_HATE_SPEECH": "BLOCK_NONE",
+            "HARM_CATEGORY_SEXUALLY_EXPLICIT": "BLOCK_NONE",
+            "HARM_CATEGORY_DANGEROUS_CONTENT": "BLOCK_NONE"
+        }
+
+        # response = model.generate_content(prompt)
+
+        generation_config = {
+            "temperature": 0.3,      # Lower for more reliable/consistent output
+            "top_p": 0.85,          # Slightly higher for literary creativity
+            "top_k": 40,            # Balanced for vocabulary diversity
+            "max_output_tokens": 1024,
+            "stop_sequences": ["\n\n"]  # Clean separation between outputs
+        }
+
+        # generation_config={
+        #         "temperature": 0.3,
+        #         "top_p": 0.8,
+        #         "top_k": 40,
+        #     }
+
+        response = model.generate_content(
+            prompt,
+            generation_config=generation_config,
+            safety_settings=safety_settings
+        )
+
         if response and response.text:
             return response.text.strip()
         return None
+    
     except Exception as e:
         print(f"Translation error: {str(e)}")
-        return None
+        raise  # Allow retry mechanism to handle it
 
 # 4. Use BLEU score to evaluate translation quality and as the threshold to keep the augmented dataset
 def setup_nltk():
@@ -137,11 +187,9 @@ def augment_data(input_file: str, output_file: str, api_key: str, threshold: flo
     
     # Process each sentence pair
     for item in tqdm(data["data"]):
-        # Original pair
-        # augmented_data["data"].append(item)
-        
         # Grammar correction
-        corrected_vi = correct_vie_grammar(item["vi"]) if "vi" in item else None
+        # corrected_vi = correct_vie_grammar(item["vi"]) if "vi" in item else None
+        corrected_vi = item["vi"]
         
         if not corrected_vi:
             print("Failed to correct Vietnamese grammar.")
@@ -155,27 +203,56 @@ def augment_data(input_file: str, output_file: str, api_key: str, threshold: flo
             return
 
         # Evaluate translation quality
-        acceptable, score = evaluate_translation(item["en"], translated_en)
+        acceptable, score = evaluate_translation(item["en"], translated_en, threshold)
 
-        print("Translation: ", translated_en)
-        print("Reference: ", item["en"])
-        print(f"BLEU Score: {score:.4f}")
-        print(f"Quality Check: {'PASS' if acceptable else 'FAIL'}")
+        # print("Translation: ", translated_en)
+        # print("Reference: ", item["en"])
+        # print(f"BLEU Score: {score:.4f}")
+        # print(f"Quality Check: {'PASS' if acceptable else 'FAIL'}")
+
+        print(threshold, score, acceptable)
         
-        # if acceptable:
+        if acceptable:
             # Add augmented pair
-        augmented_data["data"].append({
-            "vi": corrected_vi,
-            "en": translated_en
-        })
+            augmented_data["data"].append({
+                "vi": corrected_vi,
+                "en": translated_en
+            })
     
     # Save augmented data
     with open(output_file, 'w', encoding='utf-8') as f:
         json.dump(augmented_data, f, ensure_ascii=False, indent=4)
+    
+def process_all_json_files(folder_dir: str, threshold: float = 0.05):
+    """Process all JSON files in data directory."""
+    excluded_patterns = ['_augmented']
+
+    json_files = [
+        f for f in os.listdir(folder_dir) 
+        if f.endswith('.json') and 
+        not any(pattern in f for pattern in excluded_patterns)
+    ]
+    
+    if not json_files:
+        print(f"No non-augmented JSON files found in {folder_dir}")
+        return
+    
+    for input_file in json_files:
+        try:
+            input_path = os.path.join(folder_dir, input_file)
+            output_file = input_file.replace('.json', '_augmented_1.json')
+            output_path = os.path.join(folder_dir, output_file)
+            
+            print(f"\nProcessing: {input_file}")
+            augment_data(input_path, output_path, API_KEY, threshold)
+            
+        except Exception as e:
+            print(f"Error processing {input_file}: {str(e)}")
 
 if __name__ == "__main__":
-    input_file_path = os.path.join("data", "nam_quoc_son_ha_1.json")
-    print("Input file:", input_file_path)
-    output_file_path = os.path.join("data", "nam_quoc_son_ha_1_augmented.json")
-    print("Output file:", output_file_path)
-    augment_data(input_file_path, output_file_path, API_KEY, 0)
+    # input_file_path = os.path.join("data", "nam_quoc_son_ha_1.json")
+    # print("Input file:", input_file_path)
+    # output_file_path = os.path.join("data", "nam_quoc_son_ha_1_augmented_1.json")
+    # print("Output file:", output_file_path)
+    # augment_data(input_file_path, output_file_path, API_KEY, 0.2)
+    process_all_json_files("data", 0.1)
