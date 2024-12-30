@@ -12,12 +12,12 @@ import shutil
 
 if os.path.exists('./results'):
     shutil.rmtree('./results')
-    
+
 os.environ["CUDA_VISIBLE_DEVICES"] = "2"
 
 
 # Define the data folder
-DATA_FOLDER = "data_demo"
+DATA_FOLDER = "data"
 
 
 # Load the model and tokenizer
@@ -75,10 +75,9 @@ train_dataset, eval_dataset = train_dataset.train_test_split(test_size=0.1).valu
 # Fine-tuning
 training_args = Seq2SeqTrainingArguments(
     output_dir="./results",
-    run_name="experiment_name",
     evaluation_strategy="epoch",
     learning_rate=3e-4,
-    num_train_epochs=10,
+    num_train_epochs=20,
     weight_decay=0.01,
     per_device_train_batch_size=32,
     per_device_eval_batch_size=4,
@@ -115,7 +114,7 @@ trainer = Seq2SeqTrainer(
     args=training_args,
     train_dataset=train_dataset,
     eval_dataset=eval_dataset,
-    # tokenizer=tokenizer,
+    tokenizer=tokenizer,
     data_collator=data_collator,
     compute_metrics=compute_metrics
 )
