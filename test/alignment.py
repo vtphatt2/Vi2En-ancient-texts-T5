@@ -1,6 +1,6 @@
 import json
-vi_file = open("vietnamese_poem_yearning2.txt", "r", encoding="utf-8")
-en_file = open("english_poem_yearning2.txt", "r", encoding="utf-8")
+vi_file = open("Bình ngô đại cáo.txt", "r", encoding="utf-8")
+en_file = open("Proclamation of Victory_cleaned.txt", "r", encoding="utf-8")
 vi_lines = vi_file.readlines()
 en_lines = en_file.readlines()
 
@@ -14,7 +14,7 @@ else:
             "vi": vi.strip(),
             "en": en.strip()
         })
-    with open("poem25.json", "w", encoding="utf-8") as f:
+    with open("Proclamation_of_Victory.json", "w", encoding="utf-8") as f:
         json.dump(data, f, ensure_ascii=False, indent=4)
 
 vi_file.close()
