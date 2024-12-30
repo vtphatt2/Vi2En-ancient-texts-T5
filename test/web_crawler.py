@@ -4,8 +4,6 @@ import json
 
 
 def english_crawler(url):
-    url = "https://www.cn-poetry.com/libai-poetry/hard-way-world-3.html?fbclid=IwZXh0bgNhZW0CMTEAAR0Q1nYyyaX1wPiaQzH0RPzD3A6_2g05G7MahDPhz9_Optzo1XmLbnRDrGs_aem_UcTz1TnOQngOxEZcezAW2w"
-
     try:
         response = requests.get(url)
         response.raise_for_status()
@@ -28,7 +26,6 @@ def english_crawler(url):
         return None
         
 def vietnamese_crawler(url):
-    url = "https://www.thivien.net/L%C3%BD-B%E1%BA%A1ch/H%C3%A0nh-l%E1%BB%99-nan-k%E1%BB%B3-3/poem-5gNBLkPFb3yViyYfwhcsUg"
     headers = {
         'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36'
     }
@@ -69,12 +66,19 @@ def vietnamese_crawler(url):
         return None
     
     
-vietnamese_url = "https://www.thivien.net/L%C3%BD-B%E1%BA%A1ch/H%C3%A0nh-l%E1%BB%99-nan-k%E1%BB%B3-3/poem-5gNBLkPFb3yViyYfwhcsUg"
-english_url = "https://www.cn-poetry.com/libai-poetry/hard-way-world-3.html?fbclid=IwZXh0bgNhZW0CMTEAAR0Q1nYyyaX1wPiaQzH0RPzD3A6_2g05G7MahDPhz9_Optzo1XmLbnRDrGs_aem_UcTz1TnOQngOxEZcezAW2w"
-
+vietnamese_url = "https://www.thivien.net/%C4%90%E1%BB%97-Ph%E1%BB%A7/Xu%C3%A2n-t%C3%BAc-t%E1%BA%A3-t%E1%BB%89nh/poem-rrgfnxw48dEBDL0tvhjeWg"
+english_url = "https://www.cn-poetry.com/dufu-poetry/office-spring-night.html"
+file_name = "poem19.json"
 vietnamese_poem = vietnamese_crawler(vietnamese_url)
 english_poem = english_crawler(english_url)
 
+with open("vietnamese_poem.txt", "w", encoding="utf-8") as f:
+    for line in vietnamese_poem:
+        f.write(line + "\n")
+with open("english_poem.txt", "w", encoding="utf-8") as f:
+    for line in english_poem:
+        f.write(line + "\n")
+        
 if len(vietnamese_poem) != len(english_poem):
     print("The number of lines in the two poems don't match.")
 else:
@@ -85,7 +89,7 @@ else:
             "vi": vi,
             "en": en
         })
-    with open("poem.json", "w", encoding="utf-8") as f:
+    with open(file_name, "w", encoding="utf-8") as f:
         json.dump(data, f, ensure_ascii=False, indent=4)
     print("Exported to poem.json")
 
