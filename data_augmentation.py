@@ -4,6 +4,7 @@ import ssl
 import json
 import os
 import time
+import torch
 from nltk.translate.bleu_score import sentence_bleu, SmoothingFunction
 from transformers import pipeline
 from tqdm import tqdm
@@ -12,21 +13,45 @@ nltk.download('punkt_tab')
 
 # 2. Use Vietnamese spelling correction model
 corrector = pipeline("text2text-generation", 
-                    model="bmd1905/vietnamese-correction-v2", 
-                    device=-1)
+                    model="bmd1905/vietnamese-correction-v2",
+                    device=0 if torch.cuda.is_available() else -1,
+                    batch_size=8)  # Adjust based on GPU memory
 
+# def correct_vie_grammar(sentence):
+#     """Correct Vietnamese grammar and spelling."""
+#     # Generate correction with max length of 512
+#     correction = corrector(sentence, max_length=512)
+#     # Extract corrected text from pipeline output
+#     corrected_text = correction[0]['generated_text']
+#     # Remove trailing period if present
+#     corrected_text = corrected_text.rstrip('.')
+#     # Add period if no punctuation at end
+#     if corrected_text[-1] not in ['.', '!', '?', ';', ':', ',']:
+#         corrected_text += '.'
+#     return corrected_text
 def correct_vie_grammar(sentence):
-    """Correct Vietnamese grammar and spelling."""
-    # Generate correction with max length of 512
-    correction = corrector(sentence, max_length=512)
-    # Extract corrected text from pipeline output
-    corrected_text = correction[0]['generated_text']
-    # Remove trailing period if present
-    corrected_text = corrected_text.rstrip('.')
-    # Add period if no punctuation at end
-    if corrected_text[-1] not in ['.', '!', '?', ';', ':', ',']:
-        corrected_text += '.'
-    return corrected_text
+    """Correct Vietnamese grammar and spelling using GPU."""
+    try:
+        # Generate correction with max length of 512
+        with torch.amp.autocast(device_type='cuda'):  # Updated autocast syntax
+            correction = corrector(sentence, max_length=512)
+            
+        # Extract corrected text from pipeline output
+        corrected_text = correction[0]['generated_text']
+        # Remove trailing period if present
+        corrected_text = corrected_text.rstrip('.')
+        # Add period if no punctuation at end
+        if corrected_text[-1] not in ['.', '!', '?', ';', ':', ',']:
+            corrected_text += '.'
+            
+        return corrected_text
+        
+    except RuntimeError as e:
+        if "out of memory" in str(e):
+            if torch.cuda.is_available():
+                torch.cuda.empty_cache()
+            return correct_vie_grammar(sentence)  # Retry after clearing cache
+        raise e
 
 # 3. Use Google Gemini to translate Vietnamese to English
 def setup_gemini(api_key):
@@ -255,4 +280,8 @@ if __name__ == "__main__":
     # output_file_path = os.path.join("data", "nam_quoc_son_ha_1_augmented_1.json")
     # print("Output file:", output_file_path)
     # augment_data(input_file_path, output_file_path, API_KEY, 0.2)
+
+    device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
+    print(torch.cuda.is_available())
+    print(f"Using device: {device}")
     process_all_json_files("data", 0.1)
