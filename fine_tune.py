@@ -8,8 +8,11 @@ import os
 import json
 import evaluate
 import numpy as np
+import shutil
 
-os.remove('./results')
+if os.path.exists('./results'):
+    shutil.rmtree('./results')
+    
 os.environ["CUDA_VISIBLE_DEVICES"] = "2"
 
 
@@ -112,7 +115,7 @@ trainer = Seq2SeqTrainer(
     args=training_args,
     train_dataset=train_dataset,
     eval_dataset=eval_dataset,
-    tokenizer=tokenizer,
+    # tokenizer=tokenizer,
     data_collator=data_collator,
     compute_metrics=compute_metrics
 )
