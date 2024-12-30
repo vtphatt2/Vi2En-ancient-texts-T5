@@ -6,10 +6,15 @@ from transformers import Seq2SeqTrainingArguments, Seq2SeqTrainer
 from glob import glob
 import os
 import json
+import evaluate
+import numpy as np
+
+os.remove('./results')
+os.environ["CUDA_VISIBLE_DEVICES"] = "2"
 
 
 # Define the data folder
-DATA_FOLDER = "data"
+DATA_FOLDER = "data_demo"
 
 
 # Load the model and tokenizer
@@ -42,8 +47,8 @@ train_dataset = Dataset.from_dict(data_dict)
 
 # Preprocess the data
 def preprocess_function(examples):
-    inputs = ["vi: " + example.lower() for example in examples["vi"]]
-    targets = ["en: " + example.lower() for example in examples["en"]]
+    inputs = ["vi: " + example.strip() for example in examples["vi"]]
+    targets = ["en: " + example.strip() for example in examples["en"]]
     model_inputs = tokenizer(inputs, max_length=128, truncation=True)
 
     with tokenizer.as_target_tokenizer():
@@ -67,23 +72,49 @@ train_dataset, eval_dataset = train_dataset.train_test_split(test_size=0.1).valu
 # Fine-tuning
 training_args = Seq2SeqTrainingArguments(
     output_dir="./results",
+    run_name="experiment_name",
     evaluation_strategy="epoch",
     learning_rate=3e-4,
-    per_device_train_batch_size=16,
-    per_device_eval_batch_size=16,
-    weight_decay=0.01,
-    save_total_limit=3,
     num_train_epochs=10,
-    fp16=True,
+    weight_decay=0.01,
+    per_device_train_batch_size=32,
+    per_device_eval_batch_size=4,
+    predict_with_generate=True,
+    save_strategy="epoch",
+    save_total_limit=1
 )
+
+def postprocess_text(preds, labels):
+    preds = [pred.strip() for pred in preds]
+    labels = [[label.strip()] for label in labels]
+    return preds, labels
+
+metric = evaluate.load("sacrebleu")
+
+def compute_metrics(eval_preds):
+    preds, labels = eval_preds
+
+    if isinstance(preds, tuple):
+        preds = preds[0]
+    labels = np.where(labels != -100, labels, tokenizer.pad_token_id)
+
+    decoded_preds = tokenizer.batch_decode(preds, skip_special_tokens=True)
+    decoded_labels = tokenizer.batch_decode(labels, skip_special_tokens=True)
+    decoded_preds, decoded_labels = postprocess_text(decoded_preds, decoded_labels)
+
+    result = metric.compute(predictions=decoded_preds, references=decoded_labels)
+    result = {"bleu": round(result["score"], 4)}
+
+    return result
 
 trainer = Seq2SeqTrainer(
     model=model,
     args=training_args,
     train_dataset=train_dataset,
-    eval_dataset=train_dataset,
+    eval_dataset=eval_dataset,
     tokenizer=tokenizer,
     data_collator=data_collator,
+    compute_metrics=compute_metrics
 )
 
 trainer.train()
