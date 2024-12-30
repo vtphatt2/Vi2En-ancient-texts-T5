@@ -15,10 +15,10 @@ else:
             "en": en.strip()
         })
     format = {
-        "file_name": "Vietnamese_Anthology_P1",
+        "file_name": "A song of sorrow inside royal harem",
         "data": data
     }
-    with open("Vietnamese_Anthology_P1.json", "w", encoding="utf-8") as f:
+    with open("Cung oán ngâm khúc.json", "w", encoding="utf-8") as f:
         json.dump(format, f, ensure_ascii=False, indent=4)
 
 vi_file.close()
