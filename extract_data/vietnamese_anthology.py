@@ -22,7 +22,8 @@ remove_patterns = [
     r"Anonymous",
     r"Phing Khac Khoan",
     r"Nguyén Cong Trt",
-    r"Cao Ba Quat"
+    r"Cao Ba Quat",
+    r"the buddhist ethos"
 ]
 
 def clean_text(text):
@@ -33,7 +34,7 @@ def clean_text(text):
 
 with open(csv_file, mode='w', newline='', encoding='utf-8') as file:
     writer = csv.writer(file)
-    for page_num in range(20):
+    for page_num in range(55, 58):
         page = doc.load_page(page_num)
         lines = page.get_text().split('\n')
         
