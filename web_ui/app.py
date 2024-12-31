@@ -12,6 +12,7 @@ else:
 
 # Load the fine-tuned model and tokenizer
 model_name = "../results"  
+# model_name = "VietAI/envit5-translation"
 tokenizer = AutoTokenizer.from_pretrained(model_name)
 model = AutoModelForSeq2SeqLM.from_pretrained(model_name).to(device)
 
@@ -47,6 +48,8 @@ def translate_text():
             print(e)
             return jsonify({'translation': 'Error occurs during translating the text'}), 500
     return jsonify({'translation': ''})
+
+
 
 if __name__ == '__main__':
     app.run(debug=True)
