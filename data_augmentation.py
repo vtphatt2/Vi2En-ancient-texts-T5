@@ -29,6 +29,7 @@ corrector = pipeline("text2text-generation",
 #     if corrected_text[-1] not in ['.', '!', '?', ';', ':', ',']:
 #         corrected_text += '.'
 #     return corrected_text
+
 def correct_vie_grammar(sentence):
     """Correct Vietnamese grammar and spelling using GPU."""
     try:
@@ -159,7 +160,7 @@ def evaluate_translation(reference, candidate, threshold=0.4):
         print(f"Error calculating BLEU score: {e}")
         return False, 0.0
 
-# example function to demonstrate the data augmentation pipeline
+# Example function to demonstrate the data augmentation pipeline
 def example_augmentation_pipeline(vi_sentence, reference_en_sentence):
     # # Example usage
     # reference_en_sentence = "The representative in Vietnam has the authority to sign contracts."
@@ -275,13 +276,7 @@ def process_all_json_files(folder_dir: str, threshold: float = 0.05):
             print(f"Error processing {input_file}: {str(e)}")
 
 if __name__ == "__main__":
-    # input_file_path = os.path.join("data", "nam_quoc_son_ha_1.json")
-    # print("Input file:", input_file_path)
-    # output_file_path = os.path.join("data", "nam_quoc_son_ha_1_augmented_1.json")
-    # print("Output file:", output_file_path)
-    # augment_data(input_file_path, output_file_path, API_KEY, 0.2)
-
-    device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
+    device = torch.device('cuda:2' if torch.cuda.is_available() else 'cpu')
     print(torch.cuda.is_available())
     print(f"Using device: {device}")
-    process_all_json_files("data", 0.1)
+    process_all_json_files("remaining_data", 0.1)
