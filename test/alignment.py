@@ -1,6 +1,6 @@
 import json
-vi_file = open("../raw_dataset/Vietnamese_dataset.txt", "r", encoding="utf-8")
-en_file = open("../raw_dataset/Vietnamese_Anthology_p1.txt", "r", encoding="utf-8")
+vi_file = open("vi.txt", "r", encoding="utf-8")
+en_file = open("en.txt", "r", encoding="utf-8")
 vi_lines = vi_file.readlines()
 en_lines = en_file.readlines()
 
@@ -15,10 +15,10 @@ else:
             "en": en.strip()
         })
     format = {
-        "file_name": "A song of sorrow inside royal harem",
+        "file_name": "HXH_Compilation",
         "data": data
     }
-    with open("Cung oán ngâm khúc.json", "w", encoding="utf-8") as f:
+    with open("HXH_Compilation.json", "w", encoding="utf-8") as f:
         json.dump(format, f, ensure_ascii=False, indent=4)
 
 vi_file.close()
