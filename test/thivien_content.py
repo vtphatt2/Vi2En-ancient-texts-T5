@@ -1,5 +1,7 @@
 import requests
 from bs4 import BeautifulSoup
+import os
+from glob import glob
 
 def vietnamese_crawler(url):
     headers = {
@@ -50,28 +52,24 @@ def export_poem(poem_lines, file_name):
     with open(file_name, 'w', encoding='utf-8') as f:
         for line in poem_lines:
             f.write(line + '\n')
+def file_concatenate(file_name, output_file):
+    files = glob(file_name)
+    files.sort()
+    with open(output_file, 'w', encoding='utf-8') as f:
+        for file in files:
+            with open(file, 'r', encoding='utf-8') as poem_file:
+                f.write(poem_file.read())
+                f.write('\n')    
+def main(file_name):
+    with open(file_name, 'r', encoding='utf-8') as f:
+        links = f.readlines()
+        for id, link in enumerate(links):
+            poem_lines = vietnamese_crawler(link.strip())
+            if poem_lines:
+                export_poem(poem_lines, file_name + str(id) + '.txt')
+if __name__ == "__main__":
+    file_name = "The constant mouse" # Specify the file name
+    glob_output = file_name + "*.txt"
+    # main(file_name + ".txt")
+    file_concatenate(glob_output, file_name + ".txt")     
             
-# with open('The marvelous neuter.txt', 'r', encoding='utf-8') as f:
-#     links = f.readlines()
-#     for id, link in enumerate(links):
-#         # if (id < 14):
-#         #     continue
-#         print(id)
-#         poem_lines = vietnamese_crawler(link.strip())
-#         if poem_lines:
-#             export_poem(poem_lines, 'The marvelous neuter ' + str(id) + '.txt')
-            
-# Print all files with the name 'The marvelous neuter' and concatenate them
-import os
-from glob import glob
-
-# Get all files with the name 'The marvelous neuter'
-files = glob('The marvelous neuter*.txt')
-files.sort()
-
-# Concatenate all files
-with open('The marvelous neuter.txt', 'w', encoding='utf-8') as f:
-    for file in files:
-        with open(file, 'r', encoding='utf-8') as poem_file:
-            f.write(poem_file.read())
-            f.write('\n')

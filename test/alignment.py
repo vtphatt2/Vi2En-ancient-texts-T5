@@ -3,7 +3,7 @@ vi_file = open("vi.txt", "r", encoding="utf-8")
 en_file = open("en.txt", "r", encoding="utf-8")
 vi_lines = vi_file.readlines()
 en_lines = en_file.readlines()
-
+file_name = "The quarrel of the six beasts"
 if len(vi_lines) != len(en_lines):
     print("The number of lines in the two poems don't match.")
 else:
@@ -15,10 +15,10 @@ else:
             "en": en.strip()
         })
     format = {
-        "file_name": "The marvelous neuter at Blue Creek",
+        "file_name": file_name,
         "data": data
     }
-    with open("The marvelous neuter.json", "w", encoding="utf-8") as f:
+    with open(file_name + ".json", "w", encoding="utf-8") as f:
         json.dump(format, f, ensure_ascii=False, indent=4)
 
 vi_file.close()
