@@ -9,6 +9,7 @@ import json
 import evaluate
 import numpy as np
 import shutil
+import torch
 
 if os.path.exists('./results'):
     shutil.rmtree('./results')
@@ -24,6 +25,7 @@ DATA_FOLDER = "data"
 model_name = "VietAI/envit5-translation"
 tokenizer = AutoTokenizer.from_pretrained(model_name)
 model = AutoModelForSeq2SeqLM.from_pretrained(model_name)
+model.to('cuda') if torch.cuda.is_available() else model.to('cpu')
 
 
 # Prepare data
@@ -69,21 +71,22 @@ data_collator = DataCollatorForSeq2Seq(tokenizer=tokenizer, model=model)
 
 
 # Split the train dataset into train and eval datasets (90% train, 10% eval)
-train_dataset, eval_dataset = train_dataset.train_test_split(test_size=0.1).values()
+train_dataset, eval_dataset = train_dataset.train_test_split(test_size=0.01).values()
 
 
 # Fine-tuning
 training_args = Seq2SeqTrainingArguments(
     output_dir="./results",
     evaluation_strategy="epoch",
-    learning_rate=3e-4,
-    num_train_epochs=20,
+    learning_rate=1e-4,
+    num_train_epochs=30,
     weight_decay=0.01,
     per_device_train_batch_size=32,
-    per_device_eval_batch_size=4,
+    per_device_eval_batch_size=16,
     predict_with_generate=True,
     save_strategy="epoch",
-    save_total_limit=1
+    save_total_limit=1,
+    fp16=True,
 )
 
 def postprocess_text(preds, labels):
@@ -114,7 +117,7 @@ trainer = Seq2SeqTrainer(
     args=training_args,
     train_dataset=train_dataset,
     eval_dataset=eval_dataset,
-    tokenizer=tokenizer,
+    # tokenizer=tokenizer,
     data_collator=data_collator,
     compute_metrics=compute_metrics
 )
