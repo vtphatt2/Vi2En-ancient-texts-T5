@@ -15,10 +15,10 @@ else:
             "en": en.strip()
         })
     format = {
-        "file_name": "HXH_Compilation",
+        "file_name": "The marvelous neuter at Blue Creek",
         "data": data
     }
-    with open("HXH_Compilation.json", "w", encoding="utf-8") as f:
+    with open("The marvelous neuter.json", "w", encoding="utf-8") as f:
         json.dump(format, f, ensure_ascii=False, indent=4)
 
 vi_file.close()
