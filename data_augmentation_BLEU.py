@@ -29,12 +29,13 @@ logger = logging.getLogger(__name__)
 # API_KEY = "AIzaSyAISyP5zG-7NIV5F6xesUveTRDmtQ_6eyU"
 API_KEY = "AIzaSyAlgAWun2JG6ws1ThKqUwYzX8I4aBCmNbk"
 
+THRESHOLD = 0.1
+
 MODEL = "gemini-1.5-flash-latest"
 FOLDER_DIR = "remaining_data"
 RPM_LIMIT = 15
 RPD_LIMIT = 1_500
 TPM_LIMIT = 1_000_000
-THRESHOLD = 0.55
 
 # MODEL = "gemini-1.5-pro-latest"
 # FOLDER_DIR = "remaining_data"
@@ -317,7 +318,7 @@ def process_all_json_files(folder_dir: str, api_key: str, threshold: float = 0.6
 def main():
     folder_dir = FOLDER_DIR
     api_key = API_KEY
-    threshold = 0.1
+    threshold = THRESHOLD
     process_all_json_files(folder_dir, api_key, threshold)
 
 if __name__ == "__main__":
