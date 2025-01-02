@@ -36,7 +36,7 @@ def clean_text(text):
 
 with open(csv_file, mode='w', newline='', encoding='utf-8') as file:
     writer = csv.writer(file)
-    for page_num in range(57, 78):
+    for page_num in range(101, 115):
         page = doc.load_page(page_num)
         lines = page.get_text().split('\n')
         
