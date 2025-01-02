@@ -19,27 +19,92 @@ import os
 from nltk.translate.bleu_score import sentence_bleu, SmoothingFunction
 from transformers import pipeline
 from tqdm import tqdm
+import torch
+from bleurt_pytorch import BleurtConfig, BleurtForSequenceClassification, BleurtTokenizer
+# from bleurt_pytorch.tokenization import BleurtSPTokenizer
+from typing import Tuple
 nltk.download('punkt_tab')
 
 
 # Configure logging
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
-API_KEY = "AIzaSyAISyP5zG-7NIV5F6xesUveTRDmtQ_6eyU"
+
+# API_KEY = "AIzaSyAISyP5zG-7NIV5F6xesUveTRDmtQ_6eyU"
+API_KEY = "AIzaSyAlgAWun2JG6ws1ThKqUwYzX8I4aBCmNbk"
+
+MODEL = "gemini-1.5-flash-latest"
+FOLDER_DIR = "remaining_data"
+RPM_LIMIT = 15
+RPD_LIMIT = 1_500
+TPM_LIMIT = 1_000_000
+THRESHOLD = 0.55
+
+# MODEL = "gemini-1.5-pro-latest"
+# FOLDER_DIR = "remaining_data"
+# RPM_LIMIT = 2
+# RPD_LIMIT = 50
+# TPM_LIMIT = 32_000
+
+# MODEL = "gemini-2.0-flash-exp"
+# FOLDER_DIR = "remaining_data"
+# RPM_LIMIT = 10
+# RPD_LIMIT = 1_500
+# TPM_LIMIT = 1_000_000
+
+
+class BleurtScorer:
+    def __init__(self, model_name: str = 'lucadiliello/BLEURT-20', device: str = None):
+        """Initialize BLEURT components."""
+        self.device = device or ('cuda' if torch.cuda.is_available() else 'cpu')
+        self.config = BleurtConfig.from_pretrained(model_name)
+        self.model = BleurtForSequenceClassification.from_pretrained(model_name).to(self.device)
+        self.tokenizer = BleurtTokenizer.from_pretrained(
+            model_name,
+            truncation=True,
+            max_length=512,
+            padding=True
+        )
+        self.model.eval()
+
+    @torch.no_grad()
+    def score(self, references: list, candidates: list) -> list:
+        """Calculate BLEURT scores for pairs of references and candidates."""
+        # Ensure inputs are properly formatted
+        if not isinstance(references, list) or not isinstance(candidates, list):
+            references = [references]
+            candidates = [candidates]
+            
+        try:
+            inputs = self.tokenizer(
+                references, 
+                candidates,
+                padding='longest',
+                truncation=True,
+                max_length=512,
+                return_tensors='pt'
+            ).to(self.device)
+            
+            scores = self.model(**inputs).logits.flatten().cpu().tolist()
+            return scores
+            
+        except Exception as e:
+            print(f"Error during tokenization or scoring: {e}")
+            return [0.0] * len(references)  # Return default scores on error
 
 class GeminiRateLimiter:
     def __init__(self):
         # Track requests per minute (15 RPM limit)
         self.minute_requests = deque()
-        self.RPM_LIMIT = 15
+        self.RPM_LIMIT = RPM_LIMIT
         
         # Track daily requests (1,500 RPD limit)
         self.daily_requests = deque()
-        self.RPD_LIMIT = 1500
+        self.RPD_LIMIT = RPD_LIMIT
         
         # Track token usage per minute (1M TPM limit)
         self.minute_tokens = deque()
-        self.TPM_LIMIT = 1_000_000
+        self.TPM_LIMIT = TPM_LIMIT 
         
     def _clean_old_requests(self):
         """Remove expired entries from tracking deques"""
@@ -96,7 +161,7 @@ class GeminiRateLimiter:
 
 def setup_gemini(api_key):
     genai.configure(api_key=api_key)
-    model = genai.GenerativeModel('gemini-pro')
+    model = genai.GenerativeModel(MODEL)
     return model
 
 @retry(
@@ -156,23 +221,24 @@ def translate_with_gemini(model, text, rate_limiter, source_lang='Vietnamese', t
         logger.error(f"Translation error: {str(e)}")
         raise
 
-def evaluate_translation(reference, candidate, threshold=0.4):
-    """Evaluate translation using smoothed BLEU score."""
+def evaluate_translation(reference: str, candidate: str, threshold: float = 0.4) -> Tuple[bool, float]:
+    """Evaluate translation quality using BLEURT score."""
     try:
-        # Initialize smoothing
-        smoothie = SmoothingFunction().method1
+        # Initialize scorer (singleton pattern)
+        if not hasattr(evaluate_translation, 'scorer'):
+            evaluate_translation.scorer = BleurtScorer()
         
-        # Tokenize
-        ref_tokens = nltk.word_tokenize(reference.lower())
-        cand_tokens = nltk.word_tokenize(candidate.lower())
+        # Calculate BLEURT score
+        score = evaluate_translation.scorer.score([reference], [candidate])[0]
         
-        # Calculate BLEU with smoothing
-        score = sentence_bleu([ref_tokens], cand_tokens, 
-                            weights=(0.25, 0.25, 0.25, 0.25),
-                            smoothing_function=smoothie)
-        return score >= threshold, score
+        # Normalize score to [0,1] range (BLEURT scores typically range from -1 to 1)
+        # normalized_score = (score + 1) / 2
+        normalized_score = score
+        
+        return normalized_score >= threshold, normalized_score
+        
     except Exception as e:
-        print(f"Error calculating BLEU score: {e}")
+        print(f"Error calculating BLEURT score: {e}")
         return False, 0.0
 
 def augment_data(input_file: str, output_file: str, api_key: str, threshold: float = 0.6):
@@ -293,9 +359,9 @@ def process_all_json_files(folder_dir: str, api_key: str, threshold: float = 0.6
             logger.error(f"Error processing {input_file}: {str(e)}")
 
 def main():
-    folder_dir = "remaining_data"
+    folder_dir = FOLDER_DIR
     api_key = API_KEY
-    threshold = 0.1
+    threshold = THRESHOLD
     process_all_json_files(folder_dir, api_key, threshold)
 
 if __name__ == "__main__":
