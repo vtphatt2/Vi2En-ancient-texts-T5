@@ -36,34 +36,33 @@ logger = logging.getLogger(__name__)
 API_KEY = "AIzaSyClasB_b7S4LbjrcqZvQc74RAdPIazcCM0"
 
 THRESHOLD = 0.55
+INPUT_FOLDER_DIR = "remaining_data"
+OUTPUT_FOLDER_DIR = "augmented_data"
+LOAD_FOLDER_DIR = "augmented_progress_data"
 
 # MODEL = "gemini-pro"
-# FOLDER_DIR = "remaining_data"
 # RPM_LIMIT = 15
 # RPD_LIMIT = 1_500
 # TPM_LIMIT = 1_000_000
 
 MODEL = "gemini-1.5-flash-latest"
-FOLDER_DIR = "remaining_data"
+
 RPM_LIMIT = 15
 RPD_LIMIT = 1_500
 TPM_LIMIT = 1_000_000
 
 # MODEL = "gemini-1.5-pro-latest"
-# FOLDER_DIR = "remaining_data"
 # RPM_LIMIT = 2
 # RPD_LIMIT = 50
 # TPM_LIMIT = 32_000
 
 # MODEL = "gemini-2.0-flash-exp"
-# FOLDER_DIR = "remaining_data"
 # RPM_LIMIT = 10
 # RPD_LIMIT = 1_500
 # TPM_LIMIT = 1_000_000
 
 # ## Experimental Models
 # MODEL = "gemini-1.5-pro-002"
-# FOLDER_DIR = "remaining_data"
 # RPM_LIMIT = 6
 # RPD_LIMIT = 1_500
 # TPM_LIMIT = 1_000_000
@@ -261,7 +260,7 @@ def evaluate_translation(reference: str, candidate: str, threshold: float = 0.4)
         print(f"Error calculating BLEURT score: {e}")
         return False, 0.0
 
-def augment_data(input_file: str, output_file: str, api_key: str, threshold: float = 0.6):
+def augment_data(input_file: str, output_file: str, load_file: str, api_key: str, threshold: float = 0.6):
     """Augment data with proper rate limiting"""
     model = setup_gemini(api_key)
     rate_limiter = GeminiRateLimiter()
@@ -279,7 +278,7 @@ def augment_data(input_file: str, output_file: str, api_key: str, threshold: flo
         "processed_indices": []  # Track all processed indices
     }
     
-    progress_file = output_file.replace('.json', '_progress.json')
+    progress_file = load_file
     
     # Try to load progress if exists
     try:
@@ -354,35 +353,34 @@ def augment_data(input_file: str, output_file: str, api_key: str, threshold: flo
     logger.info(f"Completed processing with {len(augmented_data['data'])} augmented items "
                f"out of {len(augmented_data['processed_indices'])} processed items")
 
-def process_all_json_files(folder_dir: str, api_key: str, threshold: float = 0.6):
+def process_all_json_files(input_folder_dir: str, output_folder_dir: str, load_folder_dir: str, api_key: str, threshold: float = 0.6):
     excluded_patterns = ['_augmented', '_progress']
     json_files = [
-        f for f in os.listdir(folder_dir) 
+        f for f in os.listdir(input_folder_dir) 
         if f.endswith('.json') and 
         not any(pattern in f for pattern in excluded_patterns)
     ]
     
     if not json_files:
-        logger.info(f"No non-augmented JSON files found in {folder_dir}")
+        logger.info(f"No non-augmented JSON files found in {input_folder_dir}")
         return
     
     for input_file in json_files:
         try:
-            input_path = os.path.join(folder_dir, input_file)
+            input_path = os.path.join(input_folder_dir, input_file)
             output_file = input_file.replace('.json', '_augmented_1.json')
-            output_path = os.path.join(folder_dir, output_file)
+            output_path = os.path.join(output_folder_dir, output_file)
+            load_file = output_file.replace('.json', '_progress.json')
+            load_path = os.path.join(load_folder_dir, load_file)
             
             logger.info(f"\nProcessing: {input_file}")
-            augment_data(input_path, output_path, api_key, threshold)
+            augment_data(input_path, output_path, load_path, api_key, threshold)
             
         except Exception as e:
             logger.error(f"Error processing {input_file}: {str(e)}")
 
 def main():
-    folder_dir = FOLDER_DIR
-    api_key = API_KEY
-    threshold = THRESHOLD
-    process_all_json_files(folder_dir, api_key, threshold)
+    process_all_json_files(INPUT_FOLDER_DIR, OUTPUT_FOLDER_DIR, LOAD_FOLDER_DIR, API_KEY, THRESHOLD)
 
 if __name__ == "__main__":
     main()
