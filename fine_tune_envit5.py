@@ -11,11 +11,11 @@ import numpy as np
 import shutil
 import torch
 
-if os.path.exists('./results'):
-    shutil.rmtree('./results')
+if os.path.exists('./results_envit5'):
+    shutil.rmtree('./results_envit5')
 
-os.environ["CUDA_VISIBLE_DEVICES"] = "2"
-
+os.environ["CUDA_VISIBLE_DEVICES"] = "1"
+device = 'cuda'
 
 # Define the data folder
 DATA_FOLDER = "data"
@@ -25,7 +25,7 @@ DATA_FOLDER = "data"
 model_name = "VietAI/envit5-translation"
 tokenizer = AutoTokenizer.from_pretrained(model_name)
 model = AutoModelForSeq2SeqLM.from_pretrained(model_name)
-model.to('cuda') if torch.cuda.is_available() else model.to('cpu')
+model.to(device) if torch.cuda.is_available() else model.to('cpu')
 
 
 # Prepare data
@@ -48,7 +48,7 @@ data_dict = {
 }
 
 train_dataset = Dataset.from_dict(data_dict)
-
+train_dataset = train_dataset.shuffle(seed=54)
 
 # Preprocess the data
 def preprocess_function(examples):
@@ -76,12 +76,12 @@ train_dataset, eval_dataset = train_dataset.train_test_split(test_size=0.01).val
 
 # Fine-tuning
 training_args = Seq2SeqTrainingArguments(
-    output_dir="./results",
+    output_dir="./results_envit5",
     evaluation_strategy="epoch",
     learning_rate=1e-4,
-    num_train_epochs=30,
+    num_train_epochs=100,
     weight_decay=0.01,
-    per_device_train_batch_size=32,
+    per_device_train_batch_size=64,
     per_device_eval_batch_size=16,
     predict_with_generate=True,
     save_strategy="epoch",
@@ -125,5 +125,5 @@ trainer.train()
 
 
 # Save the fine-tuned model
-model.save_pretrained("./results")
-tokenizer.save_pretrained("./results")
+model.save_pretrained("./results_envit5")
+tokenizer.save_pretrained("./results_envit5")

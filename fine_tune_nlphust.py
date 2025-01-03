@@ -42,7 +42,7 @@ data_dict = {
 }
 
 train_dataset = Dataset.from_dict(data_dict)
-
+train_dataset = train_dataset.shuffle(seed=54)
 
 def preprocess_function(examples):
     inputs = [vi for vi in examples['vi']]
@@ -68,10 +68,10 @@ training_args = Seq2SeqTrainingArguments(
     output_dir="results_nlphust/",
     evaluation_strategy="epoch",
     learning_rate=1e-4,
-    num_train_epochs=20,
+    num_train_epochs=100,
     weight_decay=0.01,
-    per_device_train_batch_size=32,
-    per_device_eval_batch_size=16,
+    per_device_train_batch_size=64,
+    per_device_eval_batch_size=2,
     predict_with_generate=True,
     save_strategy="epoch",
     save_total_limit=1,

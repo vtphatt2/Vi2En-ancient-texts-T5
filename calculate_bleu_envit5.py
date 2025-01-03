@@ -6,12 +6,12 @@ from bleurt import score
 
 # Device
 if torch.cuda.is_available():
-    device = 'cuda:3'
+    device = 'cuda:1'
 else:
     device = 'cpu'
 
-# model_name = "./results"  
-model_name = "VietAI/envit5-translation"
+model_name = "./results_envit5"  
+# model_name = "VietAI/envit5-translation"
 tokenizer = AutoTokenizer.from_pretrained(model_name)
 model = AutoModelForSeq2SeqLM.from_pretrained(model_name).to(device)
 model.eval()
