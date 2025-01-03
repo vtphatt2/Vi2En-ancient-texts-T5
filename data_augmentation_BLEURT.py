@@ -32,10 +32,16 @@ logger = logging.getLogger(__name__)
 
 # API_KEY = "AIzaSyAISyP5zG-7NIV5F6xesUveTRDmtQ_6eyU"
 # API_KEY = "AIzaSyAlgAWun2JG6ws1ThKqUwYzX8I4aBCmNbk"
-API_KEY = "AIzaSyCdH1RVi5Rki_cm_ypw3RX8Bgy4YsIBHtI"
-# API_KEY = "AIzaSyClasB_b7S4LbjrcqZvQc74RAdPIazcCM0"
+# API_KEY = "AIzaSyCdH1RVi5Rki_cm_ypw3RX8Bgy4YsIBHtI"
+API_KEY = "AIzaSyClasB_b7S4LbjrcqZvQc74RAdPIazcCM0"
 
 THRESHOLD = 0.55
+
+# MODEL = "gemini-pro"
+# FOLDER_DIR = "remaining_data"
+# RPM_LIMIT = 15
+# RPD_LIMIT = 1_500
+# TPM_LIMIT = 1_000_000
 
 MODEL = "gemini-1.5-flash-latest"
 FOLDER_DIR = "remaining_data"
@@ -54,6 +60,17 @@ TPM_LIMIT = 1_000_000
 # RPM_LIMIT = 10
 # RPD_LIMIT = 1_500
 # TPM_LIMIT = 1_000_000
+
+# ## Experimental Models
+# MODEL = "gemini-1.5-pro-002"
+# FOLDER_DIR = "remaining_data"
+# RPM_LIMIT = 6
+# RPD_LIMIT = 1_500
+# TPM_LIMIT = 1_000_000
+
+# gemini-1.5-pro-002: strong
+# gemini-1.5-pro-exp-0827
+# gemini-exp-1206
 
 
 class BleurtScorer:
