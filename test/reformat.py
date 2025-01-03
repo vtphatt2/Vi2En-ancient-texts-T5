@@ -11,32 +11,26 @@ Reformat the json file to this format:
     },
 """
 
-file_name = "chinese_poem"
+file_name = "CPN2_auto"
+with open(file_name + ".json", 'r', encoding='utf-8') as f:
+    original_data = json.load(f)
 
-def reformat_json(input_file, output_file, base_filename):
-    # Read input JSON
-    with open(input_file, "r", encoding="utf-8") as f:
-        data = json.load(f)
-    
-    # Create new format
-    reformatted = {
-        "file_name": f"{base_filename}.pdf",
-        "data": []
+# Create new structure
+new_format = {
+    "file_name": "",
+    "data": []
+}
+
+# Transform each entry
+for idx, item in enumerate(original_data):
+    new_entry = {
+        "id": idx,
+        "vi": item["vie_sentence"],
+        "en": item["eng_sentence"]
     }
-    
-    # Add data entries with IDs
-    for idx, item in enumerate(data):
-        reformatted["data"].append({
-            "id": idx,
-            "vi": item["vi"],
-            "en": item["en"]
-        })
-    
-    # Write reformatted JSON
-    with open(output_file, "w", encoding="utf-8") as f:
-        json.dump(reformatted, f, ensure_ascii=False, indent=2)
+    new_format["data"].append(new_entry)
 
-input_file = "chinese_translate.json"
-output_file = f"{file_name}.json"
-reformat_json(input_file, output_file, file_name) 
+# Write to new file
+with open(file_name + ".json", 'w', encoding='utf-8') as f:
+    json.dump(new_format, f, ensure_ascii=False, indent=2)
 
