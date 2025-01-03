@@ -30,10 +30,10 @@ nltk.download('punkt_tab')
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
-# API_KEY = "AIzaSyAISyP5zG-7NIV5F6xesUveTRDmtQ_6eyU"
+API_KEY = "AIzaSyAISyP5zG-7NIV5F6xesUveTRDmtQ_6eyU"
 # API_KEY = "AIzaSyAlgAWun2JG6ws1ThKqUwYzX8I4aBCmNbk"
 # API_KEY = "AIzaSyCdH1RVi5Rki_cm_ypw3RX8Bgy4YsIBHtI"
-API_KEY = "AIzaSyClasB_b7S4LbjrcqZvQc74RAdPIazcCM0"
+# API_KEY = "AIzaSyClasB_b7S4LbjrcqZvQc74RAdPIazcCM0"
 
 THRESHOLD = 0.55
 INPUT_FOLDER_DIR = "remaining_data"

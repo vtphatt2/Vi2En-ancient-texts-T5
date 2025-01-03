@@ -16,11 +16,13 @@ from typing import Dict, List
 import google.generativeai as genai
 import nltk
 import os
+import sacrebleu
+import torch
 from nltk.translate.bleu_score import sentence_bleu, SmoothingFunction
 from transformers import pipeline
 from tqdm import tqdm
-import torch
 from bleurt_pytorch import BleurtConfig, BleurtForSequenceClassification, BleurtTokenizer
+# from bleurt_pytorch.tokenization import BleurtSPTokenizer
 from typing import Tuple
 nltk.download('punkt_tab')
 
@@ -29,10 +31,10 @@ nltk.download('punkt_tab')
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
-API_KEY = "AIzaSyAISyP5zG-7NIV5F6xesUveTRDmtQ_6eyU"
+# API_KEY = "AIzaSyAISyP5zG-7NIV5F6xesUveTRDmtQ_6eyU"
 # API_KEY = "AIzaSyAlgAWun2JG6ws1ThKqUwYzX8I4aBCmNbk"
 # API_KEY = "AIzaSyCdH1RVi5Rki_cm_ypw3RX8Bgy4YsIBHtI"
-# API_KEY = "AIzaSyClasB_b7S4LbjrcqZvQc74RAdPIazcCM0"
+API_KEY = "AIzaSyClasB_b7S4LbjrcqZvQc74RAdPIazcCM0"
 
 THRESHOLD = 0.55
 INPUT_FOLDER_DIR = "remaining_data"
@@ -239,23 +241,33 @@ def translate_with_gemini(model, text, rate_limiter, source_lang='Vietnamese', t
         logger.error(f"Translation error: {str(e)}")
         raise
 
-def evaluate_translation(reference, candidate, threshold=0.4):
-    """Evaluate translation using smoothed BLEU score."""
+def evaluate_translation(reference: str, candidate: str, threshold: float = 0.4) -> Tuple[bool, float]:
+    """
+    Evaluate translation quality using sacreBLEU score.
+    Args:
+        reference: Reference translation
+        candidate: Generated translation to evaluate
+        threshold: Minimum acceptable score (normalized)
+    Returns:
+        Tuple of (bool acceptable, float score)
+    """
     try:
-        # Initialize smoothing
-        smoothie = SmoothingFunction().method1
+        # Calculate sacreBLEU score
+        bleu = sacrebleu.sentence_bleu(
+            candidate,
+            [reference],
+            smooth_method='exp',  # Exponential smoothing for sentence-level
+            smooth_value=0.0,
+            tokenize='13a'  # Standard tokenization
+        )
         
-        # Tokenize
-        ref_tokens = nltk.word_tokenize(reference.lower())
-        cand_tokens = nltk.word_tokenize(candidate.lower())
+        # Normalize score to [0,1] range
+        normalized_score = bleu.score / 100.0
         
-        # Calculate BLEU with smoothing
-        score = sentence_bleu([ref_tokens], cand_tokens, 
-                            weights=(0.25, 0.25, 0.25, 0.25),
-                            smoothing_function=smoothie)
-        return score >= threshold, score
+        return normalized_score >= threshold, normalized_score
+        
     except Exception as e:
-        print(f"Error calculating BLEU score: {e}")
+        print(f"Error calculating sacreBLEU score: {e}")
         return False, 0.0
 
 def augment_data(input_file: str, output_file: str, load_file: str, api_key: str, threshold: float = 0.6):
