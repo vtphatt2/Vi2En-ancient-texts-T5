@@ -45,7 +45,6 @@ LOAD_FOLDER_DIR = "augmented_progress_data"
 # TPM_LIMIT = 1_000_000
 
 MODEL = "gemini-1.5-flash-latest"
-
 RPM_LIMIT = 15
 RPD_LIMIT = 1_500
 TPM_LIMIT = 1_000_000
@@ -202,13 +201,27 @@ def translate_with_gemini(model, text, rate_limiter, source_lang='Vietnamese', t
         # Wait if we're approaching rate limits
         rate_limiter.wait_if_needed(estimated_tokens)
         
-        prompt = f"""Translate this classical Vietnamese literature to formal {target_lang}. 
-        Maintain the literary style and poetic elements while ensuring accuracy:
+        # prompt = f"""Translate this classical Vietnamese literature to formal {target_lang}. 
+        # Maintain the literary style and poetic elements while ensuring accuracy:
+
+        # Original {source_lang} text:
+        # {text}
+
+        # Translation:"""
+
+        prompt = f"""Translate this classical {source_lang} literature to formal {target_lang}.
+        Instructions:
+        - Provide exactly ONE translation
+        - Maintain literary style and poetic elements
+        - Keep the original meaning and cultural context
+        - Use formal, elegant English
+        - Do not provide multiple versions or alternatives
+        - Do not include explanatory text
 
         Original {source_lang} text:
         {text}
 
-        Translation:"""
+        Translate to {target_lang}:"""
         
         generation_config = {
             "temperature": 0.3,

@@ -36,7 +36,7 @@ API_KEY = "AIzaSyAISyP5zG-7NIV5F6xesUveTRDmtQ_6eyU"
 # API_KEY = "AIzaSyCdH1RVi5Rki_cm_ypw3RX8Bgy4YsIBHtI"
 # API_KEY = "AIzaSyClasB_b7S4LbjrcqZvQc74RAdPIazcCM0"
 
-THRESHOLD = 0
+THRESHOLD = 0.55
 INPUT_FOLDER_DIR = "remaining_data"
 OUTPUT_FOLDER_DIR = "test_sacred_bleu_data"
 LOAD_FOLDER_DIR = "test_progress_data"
@@ -257,32 +257,23 @@ def translate_with_gemini(model, text, rate_limiter, source_lang='Vietnamese', t
         raise
 
 def evaluate_translation(reference: str, candidate: str, threshold: float = 0.4) -> Tuple[bool, float]:
-    """
-    Evaluate translation quality using sacreBLEU score.
-    Args:
-        reference: Reference translation
-        candidate: Generated translation to evaluate
-        threshold: Minimum acceptable score (normalized)
-    Returns:
-        Tuple of (bool acceptable, float score)
-    """
+    """Evaluate translation quality using BLEURT score."""
     try:
-        # Calculate sacreBLEU score
-        bleu = sacrebleu.sentence_bleu(
-            candidate,
-            [reference],
-            smooth_method='exp',  # Exponential smoothing for sentence-level
-            smooth_value=0.0,
-            tokenize='13a'  # Standard tokenization
-        )
+        # Initialize scorer (singleton pattern)
+        if not hasattr(evaluate_translation, 'scorer'):
+            evaluate_translation.scorer = BleurtScorer()
         
-        # Normalize score to [0,1] range
-        normalized_score = bleu.score / 100.0
+        # Calculate BLEURT score
+        score = evaluate_translation.scorer.score([reference], [candidate])[0]
+        
+        # Normalize score to [0,1] range (BLEURT scores typically range from -1 to 1)
+        # normalized_score = (score + 1) / 2
+        normalized_score = score
         
         return normalized_score >= threshold, normalized_score
         
     except Exception as e:
-        print(f"Error calculating sacreBLEU score: {e}")
+        print(f"Error calculating BLEURT score: {e}")
         return False, 0.0
 
 def augment_data(input_file: str, output_file: str, load_file: str, api_key: str, threshold: float = 0.6):
@@ -316,8 +307,6 @@ def augment_data(input_file: str, output_file: str, load_file: str, api_key: str
     except FileNotFoundError:
         pass
     
-    processed_count = len(augmented_data['data'])
-
     # Create a set of processed indices for faster lookup
     processed_indices = set(augmented_data["processed_indices"])
     
