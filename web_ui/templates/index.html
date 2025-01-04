@@ -12,10 +12,14 @@
 
     <div class="translator_container">
         <div class="translator_box">
-            <textarea id="sourceText" placeholder="Trăm năm trong cõi người ta"></textarea>
+            <textarea id="sourceText" placeholder="Trăm năm trong cõi người ta" spellcheck="false"></textarea>
         </div>
         <div class="translator_box">
-            <textarea id="translatedText" placeholder="One hundred years in the human life" readonly></textarea>
+            <textarea id="translatedText" placeholder="One hundred years in the human life" readonly spellcheck="false"></textarea>
+
+            <button id="copyButton" class="copy-button" title="Copy to clipboard" >
+                <img src="{{ url_for('static', filename='copy.svg') }}" alt="Copy">
+            </button>
         </div>
     </div>
 
