@@ -18,9 +18,6 @@ os.environ["CUDA_VISIBLE_DEVICES"] = "1"
 device = 'cuda' if torch.cuda.is_available() else 'cpu'
 
 
-# Define the data folder
-DATA_FOLDER = "data"
-AUGMENTED_DATA_FOLDER = "augmented_data"
 
 # Load the model and tokenizer
 model_name = "VietAI/envit5-translation"
@@ -29,25 +26,61 @@ model = AutoModelForSeq2SeqLM.from_pretrained(model_name)
 model.to(device) 
 
 
-# Prepare data
-json_files = glob(os.path.join(DATA_FOLDER, '*.json'))
-json_files.sort()
 
+# Define the data folder
+DATA_FOLDER = "data"
+AUGMENTED_DATA_FOLDER = "augmented_data"
+
+# Prepare data
 vi_texts = []
 en_texts = []
 
-for json_file in json_files:
+data_json_files = glob(os.path.join(DATA_FOLDER, '*.json'))
+data_json_files.sort()
+
+for json_file in data_json_files:
     with open(json_file, 'r', encoding='utf-8') as f:
         json_data = json.load(f)
         for item in json_data['data']:
             vi_texts.append(item['vi'])
             en_texts.append(item['en'])
 
-# Load augmented data
-json_files = glob(os.path.join(AUGMENTED_DATA_FOLDER, '*.json'))
-json_files.sort()
+data_dict = {
+    "vi": vi_texts,
+    "en": en_texts
+}
 
-for json_file in json_files:
+dataset = Dataset.from_dict(data_dict)
+dataset = dataset.shuffle(seed=54)
+
+# Split the train dataset into train and eval datasets (90% train, 10% testing)
+train_dataset, test_dataset = dataset.train_test_split(test_size=0.1, seed=54).values()
+
+# Loop through test_dataset
+testing_data = []
+for idx, item in enumerate(test_dataset):
+    testing_data.append({
+        "id": idx,
+        "vi": item["vi"],
+        "en": item["en"]
+    })
+
+# Save testing data to json file
+with open('test.json', 'w', encoding='utf-8') as f:
+    json.dump({"data": testing_data}, f, ensure_ascii=False, indent=4)
+
+# Load augmented data
+vi_texts = []
+en_texts = []
+
+for idx, item in enumerate(train_dataset):
+    vi_texts.append(item["vi"])
+    en_texts.append(item["en"])
+
+augmented_data_json_files = glob(os.path.join(AUGMENTED_DATA_FOLDER, '*.json'))
+augmented_data_json_files.sort()
+
+for json_file in augmented_data_json_files:
     with open(json_file, 'r', encoding='utf-8') as f:
         json_data = json.load(f)
         for item in json_data['data']:
@@ -61,6 +94,8 @@ data_dict = {
 
 train_dataset = Dataset.from_dict(data_dict)
 train_dataset = train_dataset.shuffle(seed=54)
+
+
 
 # Preprocess the data
 def preprocess_function(examples):
@@ -83,7 +118,7 @@ data_collator = DataCollatorForSeq2Seq(tokenizer=tokenizer, model=model)
 
 
 # Split the train dataset into train and eval datasets (90% train, 10% eval)
-train_dataset, eval_dataset = train_dataset.train_test_split(test_size=0.01).values()
+train_dataset, eval_dataset = train_dataset.train_test_split(test_size=0.005).values()
 
 
 # Fine-tuning

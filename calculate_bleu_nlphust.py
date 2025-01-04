@@ -5,15 +5,16 @@ import sacrebleu
 from bleurt import score
 import os
 
-os.environ["CUDA_VISIBLE_DEVICES"] = "1"
+os.environ["CUDA_VISIBLE_DEVICES"] = "3"
 
 if torch.cuda.is_available():
     device = "cuda"
 else:
     device = "cpu"
 
-model = T5ForConditionalGeneration.from_pretrained("NlpHUST/t5-vi-en-base")
-tokenizer = T5Tokenizer.from_pretrained("NlpHUST/t5-vi-en-base")
+model_name = './results_nlphust'
+model = T5ForConditionalGeneration.from_pretrained(model_name)
+tokenizer = T5Tokenizer.from_pretrained(model_name)
 model.to(device)
 model.eval()  
 
