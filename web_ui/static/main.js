@@ -73,3 +73,28 @@ sourceText.addEventListener('input', () => {
 
     }, 500);
 });
+
+
+const copyButton = document.getElementById('copyButton');
+
+copyButton.addEventListener('click', () => {
+    const textToCopy = translatedText.value;
+
+    if (textToCopy) {
+        navigator.clipboard.writeText(textToCopy)
+            .then(() => {
+                const originalSrc = copyButton.querySelector('img').src;
+                copyButton.querySelector('img').src = "/static/check.svg";
+
+                setTimeout(() => {
+                    copyButton.querySelector('img').src = originalSrc;
+                }, 1500);
+
+                const toast = document.getElementById('toast');
+                toast.className = 'toast show';
+                setTimeout(() => { toast.className = toast.className.replace('show', ''); }, 3000);
+            })
+    } else {
+        alert('There is no text to copy.');
+    }
+});
