@@ -2,6 +2,8 @@
 t5_vi_en_translation/
 vit5_vi_en_translation/
 results/
+results_envit5/
+BLEURT-20/
 
 # MACOS system files
 .DS_Store

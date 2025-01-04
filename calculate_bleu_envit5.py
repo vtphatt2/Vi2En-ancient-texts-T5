@@ -3,10 +3,13 @@ import torch
 import json
 import sacrebleu
 from bleurt import score
+import os
+
+os.environ["CUDA_VISIBLE_DEVICES"] = "1"
 
 # Device
 if torch.cuda.is_available():
-    device = 'cuda:1'
+    device = 'cuda'
 else:
     device = 'cpu'
 
@@ -33,6 +36,9 @@ with open("test.json", "r", encoding="utf-8") as f:
 source_texts = [item["vi"] for item in test_data["data"]]
 reference_texts = [item["en"] for item in test_data["data"]]
 
+# clear txt file
+open('save.txt', 'w').close()
+
 # Generate predictions
 predictions = []
 for idx, text in enumerate(source_texts):
@@ -40,6 +46,9 @@ for idx, text in enumerate(source_texts):
     prediction = translate(text, model, tokenizer)
     predictions.append(prediction)
     print(f"Translated: {text} -> {prediction}")
+
+    with open('save.txt', 'a', encoding='utf-8') as f:
+        f.write(f"Translated: {text} -> {prediction}\n")
 
 # Calculate BLEU score
 print("Calculating BLEU score...")

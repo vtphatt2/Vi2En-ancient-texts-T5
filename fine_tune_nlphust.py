@@ -10,10 +10,12 @@ from transformers import (
     Seq2SeqTrainingArguments,
     DataCollatorForSeq2Seq
 )
-import numpy as np
-import evaluate
+import shutil
 
-os.environ["CUDA_VISIBLE_DEVICES"] = "3"
+os.environ["CUDA_VISIBLE_DEVICES"] = "1"
+
+if os.path.exists('./results_nlphust'):
+    shutil.rmtree('./results_nlphust')
 
 
 model_name = "NlpHUST/t5-vi-en-base"
@@ -23,11 +25,24 @@ model.to('cuda') if torch.cuda.is_available() else model.to('cpu')
 
 
 DATA_FOLDER = "data"  
+AUGMENTED_DATA_FOLDER = "augmented_data"
+
 json_files = glob(os.path.join(DATA_FOLDER, '*.json'))
 json_files.sort()
 
 vi_texts = []
 en_texts = []
+
+for json_file in json_files:
+    with open(json_file, 'r', encoding='utf-8') as f:
+        json_data = json.load(f)
+        for item in json_data['data']:
+            vi_texts.append(item['vi'])
+            en_texts.append(item['en'])
+
+# Load augmented data
+json_files = glob(os.path.join(AUGMENTED_DATA_FOLDER, '*.json'))
+json_files.sort()
 
 for json_file in json_files:
     with open(json_file, 'r', encoding='utf-8') as f:
@@ -43,6 +58,7 @@ data_dict = {
 
 train_dataset = Dataset.from_dict(data_dict)
 train_dataset = train_dataset.shuffle(seed=54)
+
 
 def preprocess_function(examples):
     inputs = [vi for vi in examples['vi']]
@@ -66,40 +82,15 @@ train_dataset, eval_dataset = train_dataset.train_test_split(test_size=0.01).val
 
 training_args = Seq2SeqTrainingArguments(
     output_dir="results_nlphust/",
-    evaluation_strategy="epoch",
     learning_rate=1e-4,
     num_train_epochs=100,
     weight_decay=0.01,
     per_device_train_batch_size=64,
-    per_device_eval_batch_size=2,
     predict_with_generate=True,
     save_strategy="epoch",
     save_total_limit=1,
     fp16=True,
 )
-
-def postprocess_text(preds, labels):
-    preds = [pred.strip() for pred in preds]
-    labels = [[label.strip()] for label in labels]
-    return preds, labels
-
-metric = evaluate.load("sacrebleu")
-
-def compute_metrics(eval_preds):
-    # preds, labels = eval_preds
-
-    # if isinstance(preds, tuple):
-    #     preds = preds[0]
-    # labels = np.where(labels != -100, labels, tokenizer.pad_token_id)
-
-    # decoded_preds = tokenizer.batch_decode(preds, skip_special_tokens=True)
-    # decoded_labels = tokenizer.batch_decode(labels, skip_special_tokens=True)
-    # decoded_preds, decoded_labels = postprocess_text(decoded_preds, decoded_labels)
-
-    # result = metric.compute(predictions=decoded_preds, references=decoded_labels)
-    result = {"bleu": 1}
-
-    return result
 
 data_collator = DataCollatorForSeq2Seq(tokenizer=tokenizer, model=model)
 
@@ -107,9 +98,7 @@ trainer = Seq2SeqTrainer(
     model=model,
     args=training_args,
     train_dataset=train_dataset,
-    eval_dataset=eval_dataset,
     data_collator=data_collator,
-    compute_metrics=compute_metrics
 )
 
 trainer.train()

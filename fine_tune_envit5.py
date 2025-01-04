@@ -15,17 +15,18 @@ if os.path.exists('./results_envit5'):
     shutil.rmtree('./results_envit5')
 
 os.environ["CUDA_VISIBLE_DEVICES"] = "1"
-device = 'cuda'
+device = 'cuda' if torch.cuda.is_available() else 'cpu'
+
 
 # Define the data folder
 DATA_FOLDER = "data"
-
+AUGMENTED_DATA_FOLDER = "augmented_data"
 
 # Load the model and tokenizer
 model_name = "VietAI/envit5-translation"
 tokenizer = AutoTokenizer.from_pretrained(model_name)
 model = AutoModelForSeq2SeqLM.from_pretrained(model_name)
-model.to(device) if torch.cuda.is_available() else model.to('cpu')
+model.to(device) 
 
 
 # Prepare data
@@ -34,6 +35,17 @@ json_files.sort()
 
 vi_texts = []
 en_texts = []
+
+for json_file in json_files:
+    with open(json_file, 'r', encoding='utf-8') as f:
+        json_data = json.load(f)
+        for item in json_data['data']:
+            vi_texts.append(item['vi'])
+            en_texts.append(item['en'])
+
+# Load augmented data
+json_files = glob(os.path.join(AUGMENTED_DATA_FOLDER, '*.json'))
+json_files.sort()
 
 for json_file in json_files:
     with open(json_file, 'r', encoding='utf-8') as f:
@@ -81,7 +93,7 @@ training_args = Seq2SeqTrainingArguments(
     learning_rate=1e-4,
     num_train_epochs=100,
     weight_decay=0.01,
-    per_device_train_batch_size=64,
+    per_device_train_batch_size=128,
     per_device_eval_batch_size=16,
     predict_with_generate=True,
     save_strategy="epoch",

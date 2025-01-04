@@ -11,7 +11,7 @@ else:
     device = 'cpu'
 
 # Load the fine-tuned model and tokenizer
-model_name = "../results"  
+model_name = "../results_envit5"  
 # model_name = "VietAI/envit5-translation"
 tokenizer = AutoTokenizer.from_pretrained(model_name)
 model = AutoModelForSeq2SeqLM.from_pretrained(model_name).to(device)
@@ -35,7 +35,7 @@ def translate_text():
     text = data.get('text', '')
     if text:
         try:
-            translation = translate(text, model, tokenizer)  # Giả sử trả về list
+            translation = translate(text, model, tokenizer) 
 
             if isinstance(translation, list):
                 translation = translation[0]
