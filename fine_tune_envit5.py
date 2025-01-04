@@ -10,6 +10,7 @@ import evaluate
 import numpy as np
 import shutil
 import torch
+import random
 
 if os.path.exists('./results_envit5'):
     shutil.rmtree('./results_envit5')
@@ -45,38 +46,6 @@ for json_file in data_json_files:
             vi_texts.append(item['vi'])
             en_texts.append(item['en'])
 
-data_dict = {
-    "vi": vi_texts,
-    "en": en_texts
-}
-
-dataset = Dataset.from_dict(data_dict)
-dataset = dataset.shuffle(seed=54)
-
-# Split the train dataset into train and eval datasets (90% train, 10% testing)
-train_dataset, test_dataset = dataset.train_test_split(test_size=0.1, seed=54).values()
-
-# Loop through test_dataset
-testing_data = []
-for idx, item in enumerate(test_dataset):
-    testing_data.append({
-        "id": idx,
-        "vi": item["vi"],
-        "en": item["en"]
-    })
-
-# Save testing data to json file
-with open('test.json', 'w', encoding='utf-8') as f:
-    json.dump({"data": testing_data}, f, ensure_ascii=False, indent=4)
-
-# Load augmented data
-vi_texts = []
-en_texts = []
-
-for idx, item in enumerate(train_dataset):
-    vi_texts.append(item["vi"])
-    en_texts.append(item["en"])
-
 augmented_data_json_files = glob(os.path.join(AUGMENTED_DATA_FOLDER, '*.json'))
 augmented_data_json_files.sort()
 
@@ -86,6 +55,29 @@ for json_file in augmented_data_json_files:
         for item in json_data['data']:
             vi_texts.append(item['vi'])
             en_texts.append(item['en'])
+
+random.seed(42)
+test_data = []
+
+cnt = 1
+test_data_indicies = set()
+
+while len(test_data) < 1524:
+    idx = random.randint(0, len(vi_texts) - 1)
+
+    if idx not in test_data_indicies and vi_texts.count(vi_texts[idx]) == 1:
+        test_data_indicies.add(idx)
+
+        test_data.append({
+            "id": cnt,
+            "vi": vi_texts.pop(idx),
+            "en": en_texts.pop(idx)
+        })
+
+        cnt += 1
+
+with open('test.json', 'w', encoding='utf-8') as f:
+    json.dump({"data": test_data}, f, ensure_ascii=False, indent=4)
 
 data_dict = {
     "vi": vi_texts,
