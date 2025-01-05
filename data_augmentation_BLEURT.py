@@ -36,7 +36,7 @@ API_KEY = "AIzaSyAISyP5zG-7NIV5F6xesUveTRDmtQ_6eyU"
 # API_KEY = "AIzaSyClasB_b7S4LbjrcqZvQc74RAdPIazcCM0"
 
 THRESHOLD = 0.55
-INPUT_FOLDER_DIR = "remaining_data"
+INPUT_FOLDER_DIR = "data"
 OUTPUT_FOLDER_DIR = "augmented_data"
 LOAD_FOLDER_DIR = "augmented_progress_data"
 
