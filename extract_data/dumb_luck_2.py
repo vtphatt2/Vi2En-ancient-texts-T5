@@ -367,8 +367,6 @@ def pre_map_wrong_text_to_correct_text(text):
         ("hands with joy.", "hands with joy:"),
 
 
-        
-
         ("dod6i", 'đôi'),
         ("dod65", 'độ'),
         ("dodòi", 'đời'),
@@ -574,6 +572,7 @@ def pre_map_wrong_text_to_correct_text(text):
         ("lại ngâm:", "lại ngâm."),
         ("tơi thay,", "tơi thay."),
 
+
         ("bent down.", "bent down,"),
         ("with both arms.", "with both arms,"),
         ("low to Xuan.", "low to Xuan,"),
@@ -752,7 +751,6 @@ def pre_map_wrong_text_to_correct_text(text):
         ("nữ: trên", "nữ. Trên"),
 
 
-
         ("white legs.", "white legs;"),
         ("eyes wide.", "eyes wide:"),
         ("head. \"We", "head: \"We"),
@@ -789,6 +787,7 @@ def pre_map_wrong_text_to_correct_text(text):
         ("Officer entered the room.", "Officer entered the room:"),
         ("the room. She", "the room, she"),
         ("Gets Angry", "Gets Angry."),
+
 
         ("rệt. Những", "rệt, những"),
         ("thôi. Ở", "thôi; Ở"),
@@ -884,12 +883,11 @@ def pre_map_wrong_text_to_correct_text(text):
         ("floor, moaning.", "floor, moaning:"),
         ("Grandma's eyes.", "Grandma's eyes,"),
 
+
         ("to “Hứt!... Hứt!... Hứt!...”", "to:\n\"Hứt...Hứt!...Hứt!...\""), 
         ("GIỚI", "GIỚI."), 
         (": “Ừ, cái mặt thằng này thế mà cũng đỡ ma cà bông rồi đâý! Ăn sung mặc sướng cũng có khác! Bây giờ ta nói thế nào? Cắt nghĩa thế nào cho trôi việc đem nó đến khai tên ở Tổng cục? Chả lẽ nói nay là định gả em gái cho nó nên phải nhắc nó lên từ một thằng nhặc banh lên địa vị nhà tài tử? Có nên nói ngay hay không?”", ":\n- Ừ, cái mặt thằng này thế mà cũng đỡ ma cà bông rồi đâý! Ăn sung mặc sướng cũng có khác! Bây giờ ta nói thế nào? Cắt nghĩa thế nào cho trôi việc đem nó đến khai tên ở Tổng cục? Chả lẽ nói nay là định gả em gái cho nó nên phải nhắc nó lên từ một thằng nhặc banh lên địa vị nhà tài tử? Có nên nói ngay hay không?\n"),
         ("đâý! Ăn", "đấy!\n- Ăn"),
-
-
     ]
 
     for old_text, new_text in replacement_pairs_1:
@@ -948,6 +946,7 @@ def post_map_wrong_text_to_correct_text(text):
         ("loudly,", "loudly."),
         ("help... The whole house turned to Xuan...", "help; The whole house turned to Xuan..."), 
 
+
         ("Exemplary Funeral", "Exemplary Funeral."),
         ("budget.", "budget;"),
         ("best. It should be sold overseas!", "best\", it should be sold overseas\"\n"),
@@ -971,6 +970,7 @@ def post_map_wrong_text_to_correct_text(text):
         ("lips in disgust.", "lips in disgust:"),
         ("sternly,", "sternly."),
         ("to Mr. Civilization.", "to Mr. Civilization:"),
+
 
         ("GƯƠNG MẪU", "GƯƠNG MẪU."),
         ("“nhiêù thầy thối ma”.", "\"nhiêù thầy thối ma\"."),
@@ -1057,6 +1057,7 @@ def post_map_wrong_text_to_correct_text(text):
         ("Thưa bà, chúng tôi được", "Thưa bà.\n- Chúng tôi được"),
         ("mất danh giá:", "mất danh giá."),
         
+
         ("chest forward.", "chest forward:"),
         ("friend's example.", "friend's example:"),
         ("waved his hand.", "waved his hand:"),
@@ -1098,6 +1099,7 @@ def post_map_wrong_text_to_correct_text(text):
         ("heart-rending voice,", "heart-rending voice."),
         ("hand merrily.", "hand merrily:"),
 
+
         ("sướng lắm, những", "sướng lắm. Những"),
         ("dâm! Chúng", "dâm!\n- Chúng"),
         ("tôi. Chúng", "tôi.\n- Chúng"),
@@ -1106,6 +1108,7 @@ def post_map_wrong_text_to_correct_text(text):
         ("giờ, Xuân", "giờ. Xuân"),
         (": “Anh ơi, anh có biết là anh đã làm hại cả một đời danh tiết của em rồi đó không?”", ":\n-Anh ơi,\n- anh có biết là anh đã làm hại cả một đời danh tiết của em rồi đó không?\n"),
         ("thời, thì", "thời. Thì"),
+
 
         ("colU'\\ter", "counter"),
         ("Tri~u", "Trieu"),
@@ -1186,6 +1189,7 @@ def post_map_wrong_text_to_correct_text(text):
         ("S. M. Prajadhipok", "SM Prajadhipok"),
         ("was stunned.", "was stunned:"),
 
+
         ("được 6 - 1", "được 6-1"),
         ("rồi! Bụng", "rồi!\n- Bụng"),
         ("hẳn? Tôi", "hẳn?\n- Tôi"),
@@ -1228,7 +1232,6 @@ def post_map_wrong_text_to_correct_text(text):
         ("thua? Thằng", "thua?\n- Thằng"),
         ("Thua! Nhưng", "Thua!\n- Nhưng"),
         ("thêm gì nữa.", "thêm gì nữa,"),
-        # ("quyết được.", "quyết được,"),
 
 
         ("of the stadium.", "of the stadium:"),
@@ -1270,7 +1273,6 @@ def post_map_wrong_text_to_correct_text(text):
         ("Văn Minh cũng đứng lên, chết điếng người.", ""),
 
 
-
         ("with his father.", "with his father:"),
         ("raised his hand.", "raised his hand:"),
         ("bowed his head low.", "bowed his head low:"),
@@ -1284,9 +1286,6 @@ def post_map_wrong_text_to_correct_text(text):
         ("man continued,", "man continued."),
         ("unimpressed.", "unimpressed:"),
         ("fortune-teller continued,", "fortune-teller continued."),
-
-
-
     ]
 
     for old_text, new_text in replacement_pairs:
@@ -1333,6 +1332,7 @@ def post_fix(text):
         ("house.\nIn", "house. In"),
         ("day.\nThe opium", "day. The opium"),
 
+
         ("Grandpa and Grandma continued to quarrel in a way common among old, traditional couples from respectable families-families in which husbands and wives never calmly discuss anything for more than fifteen minutes.\n", ""),
         ("\"In my opinion, I don't think that they are convinced that Snow has been ruined.\"\n", ""),
         ("\"No way! I think that they have always wanted to break up the marriage. Don't side with your child!\"\n", ""),
@@ -1348,6 +1348,7 @@ def post_fix(text):
         ("\"There is an old saying,\" Grandma said, gesturing to her son,\n", ""),
         ("'\"Children are spoiled by their mothers; grandchildren are spoiled by their grandmothers.' You have contributed to the ruin of Snow. You have made us all look bad. Now I ask for your advice.\"\n", ""),
         ("\"Yes!\" Grandpa nodded.\n", ""),
+
 
         ("past.\nIt", "past. It"),
         ("thơ\n- cái", "thơ - cái"),
@@ -1445,7 +1446,6 @@ def post_fix(text):
         ("champion-ship.\nIt was", "championship. It was"),
         ("private.\nThey huddled", "private. They huddled"),
         ("ta!\nTa vẫn", "ta! Ta vẫn"),
-        # ("you!\nGo", "you! Go"),
         ("work!\nGo", "work! Go"),
         ("lives!\nEnjoy", "lives! Enjoy"),
 
@@ -1706,13 +1706,11 @@ if __name__ == "__main__":
     eng_pdf_file = fitz.open(eng_pdf_path)
 
     # Extract text from PDF
-    vie_texts = read_text_from_file("vietnamese.txt")
+    vie_texts = read_text_from_file("dumb_luck_vie_crawl.txt")
     vie_texts = clean_text(vie_texts)
     eng_texts = extract_text_from_pdf(eng_pdf_file, start_page=36, end_offset=0)
 
-    # Save the extracted texts 
-    save_text_to_file("english.txt", eng_texts)
-
+    # save_text_to_file("english.txt", eng_texts)
 
     # Split the extracted texts into sentences
     eng_texts = process_wrong_newline_char_eng(eng_texts)
@@ -1723,8 +1721,8 @@ if __name__ == "__main__":
     vie_texts = split_into_sentences_quotes_vie(vie_texts)
     vie_texts = post_fix(vie_texts)
 
-    save_text_to_file("english_sentences.txt", eng_texts)
-    save_text_to_file("vietnamese_sentences.txt", vie_texts)
+    # save_text_to_file("english_sentences.txt", eng_texts)
+    # save_text_to_file("vietnamese_sentences.txt", vie_texts)
 
     create_json_file("dumb_luck_vie_eng", vie_texts, eng_texts, os.path.join("..", "data", "dumb_luck.json"))
 

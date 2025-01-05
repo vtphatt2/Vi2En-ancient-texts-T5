@@ -41,6 +41,6 @@ for link in list_link:
     for s in sentence:
         list_sentence.append(s)
 
-with open("vietnamese.txt", "w", encoding="utf-8") as f:
+with open("dumb_luck_vie_crawl.txt", "w", encoding="utf-8") as f:
     for s in list_sentence:
         f.write(s + "\n")

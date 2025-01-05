@@ -71,6 +71,16 @@ TPM_LIMIT = 1_000_000
 # gemini-exp-1206
 
 
+def ensure_directory_exists(directory_path: str):
+    """Create directory if it doesn't exist."""
+    try:
+        if not os.path.exists(directory_path):
+            os.makedirs(directory_path)
+            logging.info(f"Created directory: {directory_path}")
+    except Exception as e:
+        logging.error(f"Error creating directory {directory_path}: {e}")
+        raise
+
 class BleurtScorer:
     def __init__(self, model_name: str = 'lucadiliello/BLEURT-20', device: str = None):
         """Initialize BLEURT components."""
@@ -393,6 +403,9 @@ def process_all_json_files(input_folder_dir: str, output_folder_dir: str, load_f
             logger.error(f"Error processing {input_file}: {str(e)}")
 
 def main():
+    ensure_directory_exists(INPUT_FOLDER_DIR)
+    ensure_directory_exists(OUTPUT_FOLDER_DIR)
+    ensure_directory_exists(LOAD_FOLDER_DIR)
     process_all_json_files(INPUT_FOLDER_DIR, OUTPUT_FOLDER_DIR, LOAD_FOLDER_DIR, API_KEY, THRESHOLD)
 
 if __name__ == "__main__":
