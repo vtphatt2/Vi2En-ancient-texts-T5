@@ -13,6 +13,7 @@ else:
     device = "cpu"
 
 model_name = './results_nlphust'
+# model_name = "NlpHUST/t5-vi-en-base"
 model = T5ForConditionalGeneration.from_pretrained(model_name)
 tokenizer = T5Tokenizer.from_pretrained(model_name)
 model.to(device)

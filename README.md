@@ -10,6 +10,9 @@ This project leverages the T5 Transformer model to build a machine translation s
         
         python app.py
 
+# Report 
+Read our report: [report.pdf](report.pdf)
+
 # Members
 | **Name**| **Major**| **University**|
 |-|-|-|

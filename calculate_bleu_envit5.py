@@ -13,7 +13,7 @@ if torch.cuda.is_available():
 else:
     device = 'cpu'
 
-model_name = "./results_envit5"  
+model_name = "./results_envit5_aug"  
 # model_name = "VietAI/envit5-translation"
 tokenizer = AutoTokenizer.from_pretrained(model_name)
 model = AutoModelForSeq2SeqLM.from_pretrained(model_name).to(device)
