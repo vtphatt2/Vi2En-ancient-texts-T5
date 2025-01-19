@@ -1,0 +1,126 @@
+{
+    "file_name": "hich_tuong_si.pdf",
+    "data": [
+        {
+            "vi": "Kỷ Tín dĩ thân đại tử nhi thoát Cao Đế",
+            "en": "Kỷ Tín, through his great sacrifice, escaped the wrath of the Cao Emperor.",
+            "augmented_index": 0,
+            "original_index": 1,
+            "scores": {
+                "bleurt": 0.6846,
+                "sacrebleu": 0.0615,
+                "bleu": 0.133
+            }
+        },
+        {
+            "vi": "Tự cổ trung thần nghĩa sĩ dĩ thân tử quốc hà đại vô chi",
+            "en": "Since ancient times, loyal ministers and righteous men have given their lives for their country; how could there be a lack of such individuals?",
+            "augmented_index": 1,
+            "original_index": 7,
+            "scores": {
+                "bleurt": 0.5971,
+                "sacrebleu": 0.1505,
+                "bleu": 0.2316
+            }
+        },
+        {
+            "vi": "Vương Công Kiên hà nhân dã",
+            "en": "Who, pray tell, was Vương Công Kiên?",
+            "augmented_index": 2,
+            "original_index": 15,
+            "scores": {
+                "bleurt": 0.6395,
+                "sacrebleu": 0.2778,
+                "bleu": 0.3446
+            }
+        },
+        {
+            "vi": "Kỳ tỳ tướng Nguyễn Văn Lập hựu hà nhân dã",
+            "en": "General Nguyễn Văn Lập, who else could it be?",
+            "augmented_index": 3,
+            "original_index": 16,
+            "scores": {
+                "bleurt": 0.4495,
+                "sacrebleu": 0.1395,
+                "bleu": 0.1964
+            }
+        },
+        {
+            "vi": "Hùng kê chi cự bất túc dĩ xuyên lỗ giáp",
+            "en": "The heroic rooster's might proved insufficient to pierce the armor's aperture.",
+            "augmented_index": 4,
+            "original_index": 62,
+            "scores": {
+                "bleurt": 0.5775,
+                "sacrebleu": 0.116,
+                "bleu": 0.1506
+            }
+        },
+        {
+            "vi": "Nhi nhữ đẳng chi phụ mẫu phần mộ diệc vi tha nhân chi sở phát quật",
+            "en": "Even the graves of your parents are subject to the depredations of others.",
+            "augmented_index": 5,
+            "original_index": 76,
+            "scores": {
+                "bleurt": 0.6373,
+                "sacrebleu": 0.1778,
+                "bleu": 0.2478
+            }
+        },
+        {
+            "vi": "Kim dư minh cáo nhữ đẳng",
+            "en": "I hereby make known to you all.",
+            "augmented_index": 6,
+            "original_index": 81,
+            "scores": {
+                "bleurt": 0.6331,
+                "sacrebleu": 0.0727,
+                "bleu": 0.1325
+            }
+        },
+        {
+            "vi": "Nhi nhữ đẳng chi bổng lộc diệc chung thân chi thụ tứ",
+            "en": "May your shared bounty and blessings endure throughout your lives.",
+            "augmented_index": 7,
+            "original_index": 89,
+            "scores": {
+                "bleurt": 0.6237,
+                "sacrebleu": 0.0446,
+                "bleu": 0.1029
+            }
+        },
+        {
+            "vi": "Bất duy dư chi gia tiểu an sàng nhục",
+            "en": "Not merely my family's humble abode, but also its tranquil repose.",
+            "augmented_index": 8,
+            "original_index": 90,
+            "scores": {
+                "bleurt": 0.5572,
+                "sacrebleu": 0.0367,
+                "bleu": 0.1239
+            }
+        },
+        {
+            "vi": "Bất duy dư chi kim sinh đắc chí",
+            "en": "Not only in this life have I achieved my aspirations.",
+            "augmented_index": 9,
+            "original_index": 94,
+            "scores": {
+                "bleurt": 0.7584,
+                "sacrebleu": 0.212,
+                "bleu": 0.2968
+            }
+        },
+        {
+            "vi": "Nhi nhữ đẳng chi tính danh diệc di phương ư thanh sử hĩ",
+            "en": "Do your names and deeds merit inscription in the annals of history?",
+            "augmented_index": 10,
+            "original_index": 97,
+            "scores": {
+                "bleurt": 0.6151,
+                "sacrebleu": 0.0924,
+                "bleu": 0.1649
+            }
+        }
+    ]
+}

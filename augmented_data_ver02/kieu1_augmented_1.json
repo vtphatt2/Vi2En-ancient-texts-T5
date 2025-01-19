@@ -1,0 +1,115 @@
+{
+    "file_name": "kieu1.pdf",
+    "data": [
+        {
+            "vi": "Chữ tài chữ mệnh khéo là ghét nhau.",
+            "en": "Talent and fate, alas, are oft at odds.",
+            "augmented_index": 0,
+            "original_index": 1,
+            "scores": {
+                "bleurt": 0.7048,
+                "sacrebleu": 0.083,
+                "bleu": 0.1396
+            }
+        },
+        {
+            "vi": "Thúy Kiều là chị, em là Thúy Vân.",
+            "en": "Thúy Kiều is the elder sister; Thúy Vân, the younger.",
+            "augmented_index": 1,
+            "original_index": 15,
+            "scores": {
+                "bleurt": 0.6557,
+                "sacrebleu": 0.0777,
+                "bleu": 0.1483
+            }
+        },
+        {
+            "vi": "Một người một vẻ, mười phân vẹn mười.",
+            "en": "Each individual possesses unique beauty, all equally perfect.",
+            "augmented_index": 2,
+            "original_index": 17,
+            "scores": {
+                "bleurt": 0.5897,
+                "sacrebleu": 0.0499,
+                "bleu": 0.1065
+            }
+        },
+        {
+            "vi": "So bề tài, sắc, lại là phần hơn.",
+            "en": "Surpassing in talent and beauty, she was truly exceptional.",
+            "augmented_index": 3,
+            "original_index": 23,
+            "scores": {
+                "bleurt": 0.5789,
+                "sacrebleu": 0.0446,
+                "bleu": 0.1029
+            }
+        },
+        {
+            "vi": "Dập dìu tài tử, giai nhân",
+            "en": "A gathering of elegant men and beautiful women.",
+            "augmented_index": 4,
+            "original_index": 46,
+            "scores": {
+                "bleurt": 0.6524,
+                "sacrebleu": 0.1055,
+                "bleu": 0.1562
+            }
+        },
+        {
+            "vi": "Chị em thơ thẩn dan tay ra về.",
+            "en": "Sisters, hand in hand, strolled homeward in pensive mood.",
+            "augmented_index": 5,
+            "original_index": 51,
+            "scores": {
+                "bleurt": 0.4452,
+                "sacrebleu": 0.2242,
+                "bleu": 0.2934
+            }
+        },
+        {
+            "vi": "Nổi danh tài sắc một thì",
+            "en": "Renowned for beauty and talent alike.",
+            "augmented_index": 6,
+            "original_index": 62,
+            "scores": {
+                "bleurt": 0.6399,
+                "sacrebleu": 0.126,
+                "bleu": 0.1587
+            }
+        },
+        {
+            "vi": "Thì đà trâm gẫy bình rơi bao giờ.",
+            "en": "Thus, the hairpin is broken, the vase is shattered—forevermore.",
+            "augmented_index": 7,
+            "original_index": 69,
+            "scores": {
+                "bleurt": 0.5095,
+                "sacrebleu": 0.1355,
+                "bleu": 0.1964
+            }
+        },
+        {
+            "vi": "Lời rằng bạc mệnh cũng là lời chung.",
+            "en": "Thus it is said, a life of hardship is a common fate.",
+            "augmented_index": 8,
+            "original_index": 83,
+            "scores": {
+                "bleurt": 0.562,
+                "sacrebleu": 0.0675,
+                "bleu": 0.1332
+            }
+        },
+        {
+            "vi": "Gọi là gặp gỡ giữa đường",
+            "en": "A Chance Encounter on the Path",
+            "augmented_index": 9,
+            "original_index": 92,
+            "scores": {
+                "bleurt": 0.5059,
+                "sacrebleu": 0.1163,
+                "bleu": 0.1304
+            }
+        }
+    ]
+}

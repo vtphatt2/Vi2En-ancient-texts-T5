@@ -34,7 +34,8 @@ logger = logging.getLogger(__name__)
 # API_KEY = "AIzaSyAISyP5zG-7NIV5F6xesUveTRDmtQ_6eyU"
 # API_KEY = "AIzaSyAlgAWun2JG6ws1ThKqUwYzX8I4aBCmNbk"
 # API_KEY = "AIzaSyCdH1RVi5Rki_cm_ypw3RX8Bgy4YsIBHtI"
-API_KEY = "AIzaSyClasB_b7S4LbjrcqZvQc74RAdPIazcCM0"
+# API_KEY = "AIzaSyClasB_b7S4LbjrcqZvQc74RAdPIazcCM0"
+API_KEY = "AIzaSyAVYRXQUEZTfaqAPsvwARhZC6vCmjEyQGk"
 
 BLEURT_THRESHOLD = 0.55
 SACREBLEU_THRESHOLD = 0.1
@@ -43,7 +44,7 @@ BLEU_THRESHOLD = 0.1
 SCRIPT_PATH = os.path.abspath(__file__)
 SCRIPT_DIR = os.path.dirname(SCRIPT_PATH)
 PROJECT_ROOT = os.path.dirname(SCRIPT_DIR)
-INPUT_FOLDER_DIR = os.path.join(PROJECT_ROOT, "remaining_data")
+INPUT_FOLDER_DIR = os.path.join(PROJECT_ROOT, "data")
 OUTPUT_FOLDER_DIR = os.path.join(PROJECT_ROOT, "augmented_data_ver02")
 LOAD_FOLDER_DIR = os.path.join(PROJECT_ROOT, "augmented_progress_data_ver02")
 
@@ -180,31 +181,50 @@ class BleurtScorer:
 
 class GeminiRateLimiter:
     def __init__(self):
-        # Track requests per minute (15 RPM limit)
-        self.minute_requests = deque()
-        self.RPM_LIMIT = RPM_LIMIT
-        
-        # Track daily requests (1,500 RPD limit)
-        self.daily_requests = deque()
-        self.RPD_LIMIT = RPD_LIMIT
-        
-        # Track token usage per minute (1M TPM limit)
-        self.minute_tokens = deque()
-        self.TPM_LIMIT = TPM_LIMIT 
+        # Queue length matches time window
+        self.minute_requests = deque(maxlen=RPM_LIMIT)
+        self.daily_requests = deque(maxlen=RPD_LIMIT)
+        self.minute_tokens = deque(maxlen=TPM_LIMIT)
+
+        # Track current window start times
+        self.last_cleanup = datetime.now()
         
     def _clean_old_requests(self):
-        """Remove expired entries from tracking deques"""
+        """Remove outdated entries to maintain sliding window limits."""
         now = datetime.now()
+        minute_ago = now - timedelta(minutes=1)
+        day_ago = now - timedelta(days = 1)
         
-        # Clean minute-based trackers
-        while self.minute_requests and (now - self.minute_requests[0]) > timedelta(minutes=1):
+        # Remove requests older than 1 minute
+        while self.minute_requests and self.minute_requests[0] <= minute_ago:
             self.minute_requests.popleft()
-        while self.minute_tokens and (now - self.minute_tokens[0][0]) > timedelta(minutes=1):
+        
+        # Remove tokens older than 1 minute
+        while self.minute_tokens and self.minute_tokens[0][0] <= minute_ago:
             self.minute_tokens.popleft()
             
-        # Clean daily tracker
-        while self.daily_requests and (now - self.daily_requests[0]) > timedelta(days=1):
+        # Remove requests older than 1 day
+        while self.daily_requests and self.daily_requests[0] <= day_ago:
             self.daily_requests.popleft()
+
+        self.last_cleanup = now
+    
+    def _calculate_sleep_time(self, deque_list, time_delta) -> float:
+        """Calculate the sleep time to respect rate limits."""
+        if not deque_list:
+            return 0
+
+        now = datetime.now()
+        if len(deque_list) >= deque_list.maxlen:
+            sleep_time = (deque_list[0] + time_delta - now).total_seconds()
+            return max(0, sleep_time)
+        return 0
+
+    def _wait_if_exceeded(self, condition, sleep_time, limit_type):
+        """Pause execution if a rate limit is exceeded."""
+        if condition and sleep_time > 0:
+            logger.warning(f"{limit_type} limit reached. Sleeping for {sleep_time:.2f} seconds")
+            time.sleep(sleep_time)
     
     def wait_if_needed(self, estimated_tokens=1000):
         """
@@ -212,38 +232,36 @@ class GeminiRateLimiter:
         Args:
             estimated_tokens: Estimated token count for this request
         """
-        self._clean_old_requests()
+        # Only clean if significant time has passed (e.g., every 5 seconds)
         now = datetime.now()
+        if (now - self.last_cleanup).total_seconds() > 5:
+            self._clean_old_requests()
         
         # Check RPM limit
-        if len(self.minute_requests) >= self.RPM_LIMIT:
-            sleep_time = (self.minute_requests[0] + timedelta(minutes=1) - now).total_seconds()
-            if sleep_time > 0:
-                logger.info(f"RPM limit reached. Sleeping for {sleep_time:.2f} seconds")
-                time.sleep(sleep_time)
-                self._clean_old_requests()  # Clean again after sleeping
+        rpm_sleep_time = self._calculate_sleep_time(self.minute_requests, timedelta(minutes=1))
+        self._wait_if_exceeded(len(self.minute_requests) >= RPM_LIMIT, rpm_sleep_time, "RPM")
         
         # Check RPD limit
-        if len(self.daily_requests) >= self.RPD_LIMIT:
-            sleep_time = (self.daily_requests[0] + timedelta(days=1) - now).total_seconds()
-            if sleep_time > 0:
-                logger.warning(f"Daily request limit reached. Sleeping for {sleep_time:.2f} seconds")
-                time.sleep(sleep_time)
-                self._clean_old_requests()
+        rpd_sleep_time = self._calculate_sleep_time(self.daily_requests, timedelta(days=1))
+        self._wait_if_exceeded(len(self.daily_requests) >= RPD_LIMIT, rpd_sleep_time, "RPD")
         
         # Check TPM limit
         current_tokens = sum(tokens for _, tokens in self.minute_tokens)
-        if current_tokens + estimated_tokens > self.TPM_LIMIT:
-            sleep_time = (self.minute_tokens[0][0] + timedelta(minutes=1) - now).total_seconds()
-            if sleep_time > 0:
-                logger.info(f"TPM limit reached. Sleeping for {sleep_time:.2f} seconds")
-                time.sleep(sleep_time)
-                self._clean_old_requests()
+        tpm_sleep_time = self._calculate_sleep_time(self.minute_tokens, timedelta(minutes=1))
+        self._wait_if_exceeded(
+            current_tokens + estimated_tokens > TPM_LIMIT, tpm_sleep_time, "TPM"
+        )
         
-        # Record this request
+        # Record new request and tokens
+        now = datetime.now()
         self.minute_requests.append(now)
         self.daily_requests.append(now)
         self.minute_tokens.append((now, estimated_tokens))
+        
+        # Debugging logs
+        logger.info(
+            f"Current: {len(self.minute_requests)} RPM, {len(self.daily_requests)} RPD, {current_tokens} Tokens/Min"
+        )
 
 def setup_gemini(api_key):
     genai.configure(api_key=api_key)
