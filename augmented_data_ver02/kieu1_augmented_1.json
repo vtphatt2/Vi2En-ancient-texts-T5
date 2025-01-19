@@ -110,6 +110,655 @@
                 "sacrebleu": 0.1163,
                 "bleu": 0.1304
             }
+        },
+        {
+            "vi": "Trơ như đá vững như đồng",
+            "en": "Immovable as stone, steadfast as bronze.",
+            "augmented_index": 10,
+            "original_index": 2523,
+            "scores": {
+                "bleurt": 0.4739,
+                "sacrebleu": 0.1023,
+                "bleu": 0.1435
+            }
+        },
+        {
+            "vi": "Thấy Từ còn đứng giữa trời trơ trơ.",
+            "en": "There stood Từ, alone and desolate beneath the vast expanse of heaven.",
+            "augmented_index": 11,
+            "original_index": 2530,
+            "scores": {
+                "bleurt": 0.6604,
+                "sacrebleu": 0.0714,
+                "bleu": 0.1425
+            }
+        },
+        {
+            "vi": "Bởi nghe lời thiếp nên cơ hội này!",
+            "en": "Thus, by heeding my words, this opportunity arises!",
+            "augmented_index": 12,
+            "original_index": 2532,
+            "scores": {
+                "bleurt": 0.5635,
+                "sacrebleu": 0.0493,
+                "bleu": 0.1147
+            }
+        },
+        {
+            "vi": "Lạ thay oan khí tương triền!",
+            "en": "Strange, how the threads of injustice intertwine!",
+            "augmented_index": 13,
+            "original_index": 2537,
+            "scores": {
+                "bleurt": 0.5546,
+                "sacrebleu": 0.0627,
+                "bleu": 0.1252
+            }
+        },
+        {
+            "vi": "Nàng vừa phục xuống Từ liền ngã ra.",
+            "en": "As she prostrated herself, he instantly collapsed.",
+            "augmented_index": 14,
+            "original_index": 2538,
+            "scores": {
+                "bleurt": 0.5812,
+                "sacrebleu": 0.1276,
+                "bleu": 0.1878
+            }
+        },
+        {
+            "vi": "Bây giờ sự đã vẹn tuyền",
+            "en": "Now, all is complete and perfect.",
+            "augmented_index": 15,
+            "original_index": 2547,
+            "scores": {
+                "bleurt": 0.6201,
+                "sacrebleu": 0.0952,
+                "bleu": 0.1307
+            }
+        },
+        {
+            "vi": "Năm năm trời bể ngang tàng",
+            "en": "Five years adrift on a tempestuous sea.",
+            "augmented_index": 16,
+            "original_index": 2557,
+            "scores": {
+                "bleurt": 0.5398,
+                "sacrebleu": 0.1079,
+                "bleu": 0.1481
+            }
+        },
+        {
+            "vi": "Xin cho tiện thổ một doi",
+            "en": "Grant me, I pray, a humble plot of earth.",
+            "augmented_index": 17,
+            "original_index": 2563,
+            "scores": {
+                "bleurt": 0.7399,
+                "sacrebleu": 0.0805,
+                "bleu": 0.1443
+            }
+        },
+        {
+            "vi": "Sự này biết tính thế nào được đây ?",
+            "en": "How, then, may this matter be resolved?",
+            "augmented_index": 18,
+            "original_index": 2596,
+            "scores": {
+                "bleurt": 0.593,
+                "sacrebleu": 0.0552,
+                "bleu": 0.1194
+            }
+        },
+        {
+            "vi": "Mảnh trăng đã gác non đoài",
+            "en": "The sliver of moon has climbed the western hills.",
+            "augmented_index": 19,
+            "original_index": 2619,
+            "scores": {
+                "bleurt": 0.5061,
+                "sacrebleu": 0.1775,
+                "bleu": 0.238
+            }
+        },
+        {
+            "vi": "Tấm lòng phó mặc trên trời dưới sông !",
+            "en": "My heart, I entrust to heaven and river!",
+            "augmented_index": 20,
+            "original_index": 2636,
+            "scores": {
+                "bleurt": 0.5697,
+                "sacrebleu": 0.0552,
+                "bleu": 0.1194
+            }
+        },
+        {
+            "vi": "Trông vời con nước mênh mông",
+            "en": "I gaze upon the boundless expanse of water.",
+            "augmented_index": 21,
+            "original_index": 2637,
+            "scores": {
+                "bleurt": 0.5806,
+                "sacrebleu": 0.0954,
+                "bleu": 0.1415
+            }
+        },
+        {
+            "vi": "Sư rằng: Phúc họa đạo trời",
+            "en": "The Master said: Fortune and misfortune are the ways of Heaven.",
+            "augmented_index": 22,
+            "original_index": 2657,
+            "scores": {
+                "bleurt": 0.611,
+                "sacrebleu": 0.0407,
+                "bleu": 0.1074
+            }
+        },
+        {
+            "vi": "Cỗi nguồn cũng ở lòng người mà ra.",
+            "en": "Its essence, too, springs from the human heart.",
+            "augmented_index": 23,
+            "original_index": 2658,
+            "scores": {
+                "bleurt": 0.615,
+                "sacrebleu": 0.2481,
+                "bleu": 0.3164
+            }
+        },
+        {
+            "vi": "Giác Duyên nghe nói rụng rời:",
+            "en": "Gia Duyên heard the news and was utterly distraught.",
+            "augmented_index": 24,
+            "original_index": 2679,
+            "scores": {
+                "bleurt": 0.6361,
+                "sacrebleu": 0.0759,
+                "bleu": 0.1211
+            }
+        },
+        {
+            "vi": "Giác Duyên nghe nói mừng lòng",
+            "en": "Giác Duyên heard the news with a heart filled with joy.",
+            "augmented_index": 25,
+            "original_index": 2697,
+            "scores": {
+                "bleurt": 0.7407,
+                "sacrebleu": 0.075,
+                "bleu": 0.1335
+            }
+        },
+        {
+            "vi": "Giật mình thoắt tỉnh giấc mai",
+            "en": "I awoke with a start, the dawn breaking.",
+            "augmented_index": 26,
+            "original_index": 2729,
+            "scores": {
+                "bleurt": 0.4137,
+                "sacrebleu": 0.1562,
+                "bleu": 0.2104
+            }
+        },
+        {
+            "vi": "Nỗi niềm tâm sự bây giờ hỏi ai?",
+            "en": "To whom may I now confide the burden of my heart?",
+            "augmented_index": 27,
+            "original_index": 2756,
+            "scores": {
+                "bleurt": 0.6802,
+                "sacrebleu": 0.0805,
+                "bleu": 0.1443
+            }
+        },
+        {
+            "vi": "Láng giềng có kẻ sang chơi",
+            "en": "A neighbor has come to call.",
+            "augmented_index": 28,
+            "original_index": 2757,
+            "scores": {
+                "bleurt": 0.5325,
+                "sacrebleu": 0.1313,
+                "bleu": 0.1641
+            }
+        },
+        {
+            "vi": "Chàng Vương nghe tiếng vội vàng chạy ra.",
+            "en": "Prince Vương, hearing the sound, hastened forth.",
+            "augmented_index": 29,
+            "original_index": 2774,
+            "scores": {
+                "bleurt": 0.6141,
+                "sacrebleu": 0.0903,
+                "bleu": 0.1449
+            }
+        },
+        {
+            "vi": "Chàng ôi biết nỗi nước này cho chưa?",
+            "en": "My beloved, do you yet comprehend the sorrows of this land?",
+            "augmented_index": 30,
+            "original_index": 2778,
+            "scores": {
+                "bleurt": 0.5821,
+                "sacrebleu": 0.0407,
+                "bleu": 0.1074
+            }
+        },
+        {
+            "vi": "Bán mình nó phải tìm đường cứu cha.",
+            "en": "To redeem his father, he must sell himself.",
+            "augmented_index": 31,
+            "original_index": 2782,
+            "scores": {
+                "bleurt": 0.5701,
+                "sacrebleu": 0.0499,
+                "bleu": 0.1065
+            }
+        },
+        {
+            "vi": "Phận sao bạc bấy Kiều nhi!",
+            "en": "Alas, such is the cruel fate of Kiều!",
+            "augmented_index": 32,
+            "original_index": 2793,
+            "scores": {
+                "bleurt": 0.5962,
+                "sacrebleu": 0.05,
+                "bleu": 0.108
+            }
+        },
+        {
+            "vi": "Nghìn vàng thân ấy dễ hòng bỏ sao?",
+            "en": "Can one so readily forsake a life worth a thousand gold?",
+            "augmented_index": 33,
+            "original_index": 2806,
+            "scores": {
+                "bleurt": 0.5777,
+                "sacrebleu": 0.0958,
+                "bleu": 0.1623
+            }
+        },
+        {
+            "vi": "Chưa chăn gối cũng vợ chồng",
+            "en": "Though yet unwed, they are as husband and wife.",
+            "augmented_index": 34,
+            "original_index": 2817,
+            "scores": {
+                "bleurt": 0.5562,
+                "sacrebleu": 0.0814,
+                "bleu": 0.1263
+            }
+        },
+        {
+            "vi": "Ruột tằm ngày một héo don",
+            "en": "The silkworm's heart, day by day, withers and shrinks.",
+            "augmented_index": 35,
+            "original_index": 2835,
+            "scores": {
+                "bleurt": 0.5098,
+                "sacrebleu": 0.1499,
+                "bleu": 0.2332
+            }
+        },
+        {
+            "vi": "Máu theo nước mắt hồn lìa chiêm bao.",
+            "en": "Blood mingled with tears, the soul departed from dreams.",
+            "augmented_index": 36,
+            "original_index": 2838,
+            "scores": {
+                "bleurt": 0.556,
+                "sacrebleu": 0.053,
+                "bleu": 0.1264
+            }
+        },
+        {
+            "vi": "Có khi vắng vẻ thư phòng",
+            "en": "At times, the study lies deserted.",
+            "augmented_index": 37,
+            "original_index": 2851,
+            "scores": {
+                "bleurt": 0.4054,
+                "sacrebleu": 0.1518,
+                "bleu": 0.1843
+            }
+        },
+        {
+            "vi": "Thăng đường chàng mới hỏi tra",
+            "en": "Upon ascending the hall, he then inquired.",
+            "augmented_index": 38,
+            "original_index": 2887,
+            "scores": {
+                "bleurt": 0.4733,
+                "sacrebleu": 0.1055,
+                "bleu": 0.1562
+            }
+        },
+        {
+            "vi": "Làm nên động địa kinh thiên đùng đùng.",
+            "en": "Earth and heaven trembled in tumultuous upheaval.",
+            "augmented_index": 39,
+            "original_index": 2926,
+            "scores": {
+                "bleurt": 0.5866,
+                "sacrebleu": 0.0975,
+                "bleu": 0.1335
+            }
+        },
+        {
+            "vi": "Đại quân đồn đóng cõi đông",
+            "en": "The imperial army encamped in the eastern realm.",
+            "augmented_index": 40,
+            "original_index": 2927,
+            "scores": {
+                "bleurt": 0.4875,
+                "sacrebleu": 0.1055,
+                "bleu": 0.1562
+            }
+        },
+        {
+            "vi": "Nắng mưa biết đã mấy phen đổi dờỉ",
+            "en": "How many times have sun and rain shifted and changed?",
+            "augmented_index": 41,
+            "original_index": 2948,
+            "scores": {
+                "bleurt": 0.4909,
+                "sacrebleu": 0.1499,
+                "bleu": 0.2089
+            }
+        },
+        {
+            "vi": "Xảy nghe thế giặc đã tan",
+            "en": "News arrived that the enemy had been vanquished.",
+            "augmented_index": 42,
+            "original_index": 2955,
+            "scores": {
+                "bleurt": 0.685,
+                "sacrebleu": 0.0853,
+                "bleu": 0.1267
+            }
+        },
+        {
+            "vi": "Rằng: Ngày hôm nọ giao binh",
+            "en": "Thus, on that day, the armies clashed.",
+            "augmented_index": 43,
+            "original_index": 2961,
+            "scores": {
+                "bleurt": 0.4686,
+                "sacrebleu": 0.1279,
+                "bleu": 0.1722
+            }
+        },
+        {
+            "vi": "Tình thâm bể thảm lạ điều",
+            "en": "A profound affection, a sea of sorrow, a strange and wondrous tale.",
+            "augmented_index": 44,
+            "original_index": 2973,
+            "scores": {
+                "bleurt": 0.6492,
+                "sacrebleu": 0.1821,
+                "bleu": 0.2545
+            }
+        },
+        {
+            "vi": "Này chồng này mẹ này cha",
+            "en": "My husband, my mother, my father.",
+            "augmented_index": 45,
+            "original_index": 2983,
+            "scores": {
+                "bleurt": 0.5813,
+                "sacrebleu": 0.0567,
+                "bleu": 0.1108
+            }
+        },
+        {
+            "vi": "Mừng nào lại quá mừng này nữa chăng?",
+            "en": "Is this further joy beyond all measure?",
+            "augmented_index": 46,
+            "original_index": 2996,
+            "scores": {
+                "bleurt": 0.6109,
+                "sacrebleu": 0.0641,
+                "bleu": 0.1169
+            }
+        },
+        {
+            "vi": "Khóc than mình kể sự tình đầu đuôi:",
+            "en": "A lament unfolds, recounting the full and sorrowful tale:",
+            "augmented_index": 47,
+            "original_index": 3020,
+            "scores": {
+                "bleurt": 0.5732,
+                "sacrebleu": 0.0493,
+                "bleu": 0.1147
+            }
+        },
+        {
+            "vi": "Nỗi mừng biết lấy chi cân?",
+            "en": "What measure can contain such boundless joy?",
+            "augmented_index": 48,
+            "original_index": 3029,
+            "scores": {
+                "bleurt": 0.5995,
+                "sacrebleu": 0.0657,
+                "bleu": 0.1163
+            }
+        },
+        {
+            "vi": "Quây nhau lạy trước Phật đài",
+            "en": "They gathered, prostrating themselves before the Buddha's altar.",
+            "augmented_index": 49,
+            "original_index": 3033,
+            "scores": {
+                "bleurt": 0.5599,
+                "sacrebleu": 0.0499,
+                "bleu": 0.1396
+            }
+        },
+        {
+            "vi": "Sự đời đã tắt lửa lòng",
+            "en": "The world's flame has been extinguished within my heart.",
+            "augmented_index": 50,
+            "original_index": 3047,
+            "scores": {
+                "bleurt": 0.6133,
+                "sacrebleu": 0.0839,
+                "bleu": 0.1277
+            }
+        },
+        {
+            "vi": "Bây giờ gương vỡ lại lành",
+            "en": "The shattered mirror is now whole again.",
+            "augmented_index": 51,
+            "original_index": 3073,
+            "scores": {
+                "bleurt": 0.6931,
+                "sacrebleu": 0.1226,
+                "bleu": 0.177
+            }
+        },
+        {
+            "vi": "Sự muôn năm cũ kể chi bây giờ?",
+            "en": "What matter now the chronicles of ages past?",
+            "augmented_index": 52,
+            "original_index": 3080,
+            "scores": {
+                "bleurt": 0.5772,
+                "sacrebleu": 0.0627,
+                "bleu": 0.1252
+            }
+        },
+        {
+            "vi": "Xét mình dãi gió dầu mưa đã nhiều .",
+            "en": "I have endured the relentless wind and rain for many a year.",
+            "augmented_index": 53,
+            "original_index": 3082,
+            "scores": {
+                "bleurt": 0.6452,
+                "sacrebleu": 0.115,
+                "bleu": 0.1754
+            }
+        },
+        {
+            "vi": "Dưới dày có đất trên cao có trời !",
+            "en": "Below lies earth, above stretches heaven!",
+            "augmented_index": 54,
+            "original_index": 3088,
+            "scores": {
+                "bleurt": 0.558,
+                "sacrebleu": 0.0727,
+                "bleu": 0.1325
+            }
+        },
+        {
+            "vi": "Dẫu rằng vật đổi sao dời",
+            "en": "Though all things change, and the stars shift their course,",
+            "augmented_index": 55,
+            "original_index": 3089,
+            "scores": {
+                "bleurt": 0.7946,
+                "sacrebleu": 0.1611,
+                "bleu": 0.2413
+            }
+        },
+        {
+            "vi": "Tử sinh phải giữ lấy lời tử sinh !",
+            "en": "The covenant of life and death must be upheld!",
+            "augmented_index": 56,
+            "original_index": 3090,
+            "scores": {
+                "bleurt": 0.5556,
+                "sacrebleu": 0.0998,
+                "bleu": 0.1601
+            }
+        },
+        {
+            "vi": "Đã buồn cả ruột mà dơ cả đời !",
+            "en": "My very soul is grieved, and my life is stained with shame.",
+            "augmented_index": 57,
+            "original_index": 3114,
+            "scores": {
+                "bleurt": 0.6722,
+                "sacrebleu": 0.0629,
+                "bleu": 0.1239
+            }
+        },
+        {
+            "vi": "Hoa tàn mà lại thêm tươi",
+            "en": "The blossom fades, yet blooms anew.",
+            "augmented_index": 58,
+            "original_index": 3125,
+            "scores": {
+                "bleurt": 0.5725,
+                "sacrebleu": 0.0552,
+                "bleu": 0.1001
+            }
+        },
+        {
+            "vi": "Có điều chi nữa mà ngờ",
+            "en": "What further cause is there for doubt?",
+            "augmented_index": 59,
+            "original_index": 3127,
+            "scores": {
+                "bleurt": 0.4654,
+                "sacrebleu": 0.1135,
+                "bleu": 0.1572
+            }
+        },
+        {
+            "vi": "Chừng xuân tơ liễu còn xanh",
+            "en": "While spring's willow boughs remain verdant,",
+            "augmented_index": 60,
+            "original_index": 3173,
+            "scores": {
+                "bleurt": 0.5513,
+                "sacrebleu": 0.0494,
+                "bleu": 0.1026
+            }
+        },
+        {
+            "vi": "Lọt tai nghe suốt năm cung",
+            "en": "The melody penetrates the five palaces of the ear.",
+            "augmented_index": 61,
+            "original_index": 3207,
+            "scores": {
+                "bleurt": 0.5594,
+                "sacrebleu": 0.0929,
+                "bleu": 0.147
+            }
+        },
+        {
+            "vi": "Tẻ vui bởi tại lòng này",
+            "en": "Joy and sorrow reside within the heart.",
+            "augmented_index": 62,
+            "original_index": 3211,
+            "scores": {
+                "bleurt": 0.5953,
+                "sacrebleu": 0.0657,
+                "bleu": 0.1163
+            }
+        },
+        {
+            "vi": "Khi chén rượu khi cuộc cờ",
+            "en": "A cup of wine, a game of chess.",
+            "augmented_index": 63,
+            "original_index": 3225,
+            "scores": {
+                "bleurt": 0.5876,
+                "sacrebleu": 0.2827,
+                "bleu": 0.3453
+            }
+        },
+        {
+            "vi": "Khi xem hoa nở khi chờ trăng lên .",
+            "en": "In the blossoming of flowers, in the awaiting of the moon's ascent.",
+            "augmented_index": 64,
+            "original_index": 3226,
+            "scores": {
+                "bleurt": 0.5667,
+                "sacrebleu": 0.0629,
+                "bleu": 0.1429
+            }
+        },
+        {
+            "vi": "Trên am cứ giữ hương dầu hôm mai .",
+            "en": "Upon the altar, let the fragrant oil endure through night and day.",
+            "augmented_index": 65,
+            "original_index": 3236,
+            "scores": {
+                "bleurt": 0.5115,
+                "sacrebleu": 0.1057,
+                "bleu": 0.1673
+            }
+        },
+        {
+            "vi": "Phong lưu phú quý ai bì",
+            "en": "Wealth and nobility, who can compare?",
+            "augmented_index": 66,
+            "original_index": 3241,
+            "scores": {
+                "bleurt": 0.5514,
+                "sacrebleu": 0.058,
+                "bleu": 0.1026
+            }
+        },
+        {
+            "vi": "Trời kia đã bắt làm người có thân.",
+            "en": "Heaven itself has ordained this mortal form.",
+            "augmented_index": 67,
+            "original_index": 3244,
+            "scores": {
+                "bleurt": 0.5526,
+                "sacrebleu": 0.0552,
+                "bleu": 0.1001
+            }
+        },
+        {
+            "vi": "Chữ tài chữ mệnh dồi dào cả hai",
+            "en": "Both talent and destiny are richly bestowed.",
+            "augmented_index": 68,
+            "original_index": 3248,
+            "scores": {
+                "bleurt": 0.5504,
+                "sacrebleu": 0.1104,
+                "bleu": 0.1513
+            }
         }
     ]
 }

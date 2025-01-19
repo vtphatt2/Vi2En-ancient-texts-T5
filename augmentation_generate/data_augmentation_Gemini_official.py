@@ -35,7 +35,9 @@ logger = logging.getLogger(__name__)
 # API_KEY = "AIzaSyAlgAWun2JG6ws1ThKqUwYzX8I4aBCmNbk"
 # API_KEY = "AIzaSyCdH1RVi5Rki_cm_ypw3RX8Bgy4YsIBHtI"
 # API_KEY = "AIzaSyClasB_b7S4LbjrcqZvQc74RAdPIazcCM0"
-API_KEY = "AIzaSyAVYRXQUEZTfaqAPsvwARhZC6vCmjEyQGk"
+# API_KEY = "AIzaSyAVYRXQUEZTfaqAPsvwARhZC6vCmjEyQGk"
+# API_KEY = "AIzaSyDEhc7c7LgEppWsV2T7AJgjA1jmAsrXV9o"
+API_KEY = "AIzaSyCOW66EPJkO5Ot-LY9G-7CmDxlMtfQpuPg"
 
 BLEURT_THRESHOLD = 0.55
 SACREBLEU_THRESHOLD = 0.1
