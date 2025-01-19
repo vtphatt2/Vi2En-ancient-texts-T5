@@ -1,6 +1,8 @@
 import time
-from datetime import datetime, timedelta
 import logging
+from dataclasses import dataclass
+from enum import Enum
+from datetime import datetime, timedelta
 from collections import deque
 from tenacity import (
     retry,
@@ -16,59 +18,34 @@ from typing import Dict, List
 import google.generativeai as genai
 import nltk
 import os
-from nltk.translate.bleu_score import sentence_bleu, SmoothingFunction
 from transformers import pipeline
 from tqdm import tqdm
 import torch
 from bleurt_pytorch import BleurtConfig, BleurtForSequenceClassification, BleurtTokenizer
-# from bleurt_pytorch.tokenization import BleurtSPTokenizer
+from nltk.translate.bleu_score import sentence_bleu, SmoothingFunction
+import sacrebleu
 from typing import Tuple
 nltk.download('punkt_tab')
 
 
-# Configure logging
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
-API_KEY = "AIzaSyAISyP5zG-7NIV5F6xesUveTRDmtQ_6eyU"
+# API_KEY = "AIzaSyAISyP5zG-7NIV5F6xesUveTRDmtQ_6eyU"
 # API_KEY = "AIzaSyAlgAWun2JG6ws1ThKqUwYzX8I4aBCmNbk"
 # API_KEY = "AIzaSyCdH1RVi5Rki_cm_ypw3RX8Bgy4YsIBHtI"
-# API_KEY = "AIzaSyClasB_b7S4LbjrcqZvQc74RAdPIazcCM0"
+API_KEY = "AIzaSyClasB_b7S4LbjrcqZvQc74RAdPIazcCM0"
 
-THRESHOLD = 0.55
-INPUT_FOLDER_DIR = "data"
-OUTPUT_FOLDER_DIR = "augmented_data"
-LOAD_FOLDER_DIR = "augmented_progress_data"
+BLEURT_THRESHOLD = 0.55
+SACREBLEU_THRESHOLD = 0.1
+BLEU_THRESHOLD = 0.1
 
-# MODEL = "gemini-pro"
-# RPM_LIMIT = 15
-# RPD_LIMIT = 1_500
-# TPM_LIMIT = 1_000_000
-
-MODEL = "gemini-1.5-flash-latest"
-RPM_LIMIT = 15
-RPD_LIMIT = 1_500
-TPM_LIMIT = 1_000_000
-
-# MODEL = "gemini-1.5-pro-latest"
-# RPM_LIMIT = 2
-# RPD_LIMIT = 50
-# TPM_LIMIT = 32_000
-
-# MODEL = "gemini-2.0-flash-exp"
-# RPM_LIMIT = 10
-# RPD_LIMIT = 1_500
-# TPM_LIMIT = 1_000_000
-
-# ## Experimental Models
-# MODEL = "gemini-1.5-pro-002"
-# RPM_LIMIT = 6
-# RPD_LIMIT = 1_500
-# TPM_LIMIT = 1_000_000
-
-# gemini-1.5-pro-002: strong
-# gemini-1.5-pro-exp-0827
-# gemini-exp-1206
+SCRIPT_PATH = os.path.abspath(__file__)
+SCRIPT_DIR = os.path.dirname(SCRIPT_PATH)
+PROJECT_ROOT = os.path.dirname(SCRIPT_DIR)
+INPUT_FOLDER_DIR = os.path.join(PROJECT_ROOT, "remaining_data")
+OUTPUT_FOLDER_DIR = os.path.join(PROJECT_ROOT, "augmented_data_ver02")
+LOAD_FOLDER_DIR = os.path.join(PROJECT_ROOT, "augmented_progress_data_ver02")
 
 
 def ensure_directory_exists(directory_path: str):
@@ -80,6 +57,87 @@ def ensure_directory_exists(directory_path: str):
     except Exception as e:
         logging.error(f"Error creating directory {directory_path}: {e}")
         raise
+
+class GeminiModel(Enum):
+    GEMINI_PRO = "gemini-pro"
+    GEMINI_1_5_FLASH = "gemini-1.5-flash-latest"
+    GEMINI_1_5_PRO = "gemini-1.5-pro-latest"
+    GEMINI_2_FLASH = "gemini-2.0-flash-exp"
+    GEMINI_1_5_PRO_002 = "gemini-1.5-pro-002"\
+    
+@dataclass
+class ModelConfig:
+    model: GeminiModel
+    rpm_limit: int
+    rpd_limit: int
+    tpm_limit: int
+
+    @classmethod
+    def get_config(cls, model: GeminiModel):
+        if model == GeminiModel.GEMINI_PRO:
+            return cls(model, 15, 1_500, 1_000_000)
+        elif model == GeminiModel.GEMINI_1_5_FLASH:
+            return cls(model, 15, 1_500, 1_000_000)
+        elif model == GeminiModel.GEMINI_1_5_PRO:
+            return cls(model, 2, 50, 32_000)
+        elif model == GeminiModel.GEMINI_2_FLASH:
+            return cls(model, 10, 1_500, 1_000_000)
+        elif model == GeminiModel.GEMINI_1_5_PRO_002:
+            return cls(model, 6, 1_500, 1_000_000)
+        else:
+            raise ValueError(f"Unsupported model: {model}")
+
+CURRENT_CONFIG = ModelConfig.get_config(GeminiModel.GEMINI_1_5_FLASH)
+MODEL = CURRENT_CONFIG.model.value
+RPM_LIMIT = CURRENT_CONFIG.rpm_limit
+RPD_LIMIT = CURRENT_CONFIG.rpd_limit
+TPM_LIMIT = CURRENT_CONFIG.tpm_limit
+
+class TranslationEvaluator:
+    def __init__(self):
+        self.bleu = pipeline("translation", model="Helsinki-NLP/opus-mt-vi-en")
+        self.smoothing = SmoothingFunction().method7
+        self.sacrebleu = sacrebleu.corpus_bleu
+        self.bleurt = BleurtScorer()
+    def evaluate(self, reference: str, candidate: str) -> tuple:
+        """
+        Evaluate translation using multiple metrics
+        Returns: (is_acceptable, scores_dict)
+        """
+
+        try:
+            # BLEURT score
+            bleurt_scores = self.bleurt.score([reference], [candidate])
+
+            # SacreBLEU score
+            sacrebleu_score = self.sacrebleu([candidate], [[reference]]).score/100;
+
+            # BLEU score (using tokenized reference)
+            reference_tokens = nltk.word_tokenize(reference)
+            candidate_tokens = nltk.word_tokenize(candidate)
+            bleu_score = sentence_bleu([reference_tokens], candidate_tokens, smoothing_function=self.smoothing)
+
+            scores = {
+                'bleurt': bleurt_scores[0],
+                'sacrebleu': sacrebleu_score,
+                'bleu': bleu_score
+            }
+
+            # Check if at least two conditions are satisfied
+            conditions = [
+                bleurt_scores[0] >= BLEURT_THRESHOLD,  # BLEURT score
+                sacrebleu_score >= SACREBLEU_THRESHOLD,  # SacreBLEU score
+                bleu_score >= BLEU_THRESHOLD  # BLEU score
+            ]
+
+            is_acceptable = (sum(conditions) >= 2) and (bleurt_scores[0] >= 0.4)
+
+            return is_acceptable, scores;
+
+        except Exception as e:
+            logging.error(f"Error evaluating translation: {e}")
+            return False, {'bleurt': 0, 'sacrebleu': 0, 'bleu': 0}
+
 
 class BleurtScorer:
     def __init__(self, model_name: str = 'lucadiliello/BLEURT-20', device: str = None):
@@ -211,14 +269,6 @@ def translate_with_gemini(model, text, rate_limiter, source_lang='Vietnamese', t
         
         # Wait if we're approaching rate limits
         rate_limiter.wait_if_needed(estimated_tokens)
-        
-        # prompt = f"""Translate this classical Vietnamese literature to formal {target_lang}. 
-        # Maintain the literary style and poetic elements while ensuring accuracy:
-
-        # Original {source_lang} text:
-        # {text}
-
-        # Translation:"""
 
         prompt = f"""Translate this classical {source_lang} literature to formal {target_lang}.
         Instructions:
@@ -272,9 +322,7 @@ def evaluate_translation(reference: str, candidate: str, threshold: float = 0.4)
         
         # Calculate BLEURT score
         score = evaluate_translation.scorer.score([reference], [candidate])[0]
-        
-        # Normalize score to [0,1] range (BLEURT scores typically range from -1 to 1)
-        # normalized_score = (score + 1) / 2
+
         normalized_score = score
         
         return normalized_score >= threshold, normalized_score
@@ -283,10 +331,11 @@ def evaluate_translation(reference: str, candidate: str, threshold: float = 0.4)
         print(f"Error calculating BLEURT score: {e}")
         return False, 0.0
 
-def augment_data(input_file: str, output_file: str, load_file: str, api_key: str, threshold: float = 0.6):
+def augment_data(input_file: str, output_file: str, load_file: str, api_key: str):
     """Augment data with proper rate limiting"""
     model = setup_gemini(api_key)
     rate_limiter = GeminiRateLimiter()
+    evaluator = TranslationEvaluator()
     
     if not model:
         logger.error("Failed to initialize Gemini model.")
@@ -314,7 +363,6 @@ def augment_data(input_file: str, output_file: str, load_file: str, api_key: str
     except FileNotFoundError:
         pass
     
-    processed_count = len(augmented_data['data'])
 
     # Create a set of processed indices for faster lookup
     processed_indices = set(augmented_data["processed_indices"])
@@ -322,6 +370,8 @@ def augment_data(input_file: str, output_file: str, load_file: str, api_key: str
     # Create progress bar for remaining items
     remaining_items = [i for i in range(len(data["data"])) if i not in processed_indices]
     pbar = tqdm(remaining_items, initial=len(processed_indices), total=len(data["data"]))
+
+    current_augmented_index = len(augmented_data.get("data", []))
     
     for idx in remaining_items:
         try:
@@ -330,14 +380,27 @@ def augment_data(input_file: str, output_file: str, load_file: str, api_key: str
             translated_en = translate_with_gemini(model, corrected_vi, rate_limiter)
             
             if translated_en:
-                acceptable, score = evaluate_translation(item["en"], translated_en, threshold)
-                logger.info(f"Item {idx}: Translation score: {score:.4f} (threshold: {threshold})")
+                acceptable, scores = evaluator.evaluate(item["en"], translated_en)
+
+                logger.info(f"Item {idx} scores:")
+                logger.info(f"BLEURT: {scores.get('bleurt', 0):.4f}")
+                logger.info(f"SacreBLEU: {scores.get('sacrebleu', 0):.4f}")
+                logger.info(f"BLEU: {scores.get('bleu', 0):.4f}")
                 
                 if acceptable:
                     augmented_data["data"].append({
                         "vi": corrected_vi,
-                        "en": translated_en
+                        "en": translated_en,
+                        "augmented_index": current_augmented_index,  # Position in augmented dataset
+                        "original_index": idx,  # Add index for alignment
+                        "scores": {  # Add evaluation scores
+                            "bleurt": float(f"{scores.get('bleurt', 0):.4f}"),
+                            "sacrebleu": float(f"{scores.get('sacrebleu', 0):.4f}"),
+                            "bleu": float(f"{scores.get('bleu', 0):.4f}")
+                        }
                     })
+
+                    current_augmented_index += 1
             
             # Track this index as processed regardless of success
             augmented_data["processed_indices"].append(idx)
@@ -376,7 +439,7 @@ def augment_data(input_file: str, output_file: str, load_file: str, api_key: str
     logger.info(f"Completed processing with {len(augmented_data['data'])} augmented items "
                f"out of {len(augmented_data['processed_indices'])} processed items")
 
-def process_all_json_files(input_folder_dir: str, output_folder_dir: str, load_folder_dir: str, api_key: str, threshold: float = 0.6):
+def process_all_json_files(input_folder_dir: str, output_folder_dir: str, load_folder_dir: str, api_key: str):
     excluded_patterns = ['_augmented', '_progress']
     json_files = [
         f for f in os.listdir(input_folder_dir) 
@@ -397,7 +460,7 @@ def process_all_json_files(input_folder_dir: str, output_folder_dir: str, load_f
             load_path = os.path.join(load_folder_dir, load_file)
             
             logger.info(f"\nProcessing: {input_file}")
-            augment_data(input_path, output_path, load_path, api_key, threshold)
+            augment_data(input_path, output_path, load_path, api_key)
             
         except Exception as e:
             logger.error(f"Error processing {input_file}: {str(e)}")
@@ -406,7 +469,7 @@ def main():
     ensure_directory_exists(INPUT_FOLDER_DIR)
     ensure_directory_exists(OUTPUT_FOLDER_DIR)
     ensure_directory_exists(LOAD_FOLDER_DIR)
-    process_all_json_files(INPUT_FOLDER_DIR, OUTPUT_FOLDER_DIR, LOAD_FOLDER_DIR, API_KEY, THRESHOLD)
+    process_all_json_files(INPUT_FOLDER_DIR, OUTPUT_FOLDER_DIR, LOAD_FOLDER_DIR, API_KEY)
 
 if __name__ == "__main__":
     main()

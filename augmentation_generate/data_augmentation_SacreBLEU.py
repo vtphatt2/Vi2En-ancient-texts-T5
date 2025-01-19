@@ -16,11 +16,13 @@ from typing import Dict, List
 import google.generativeai as genai
 import nltk
 import os
+import sacrebleu
+import torch
 from nltk.translate.bleu_score import sentence_bleu, SmoothingFunction
 from transformers import pipeline
 from tqdm import tqdm
-import torch
 from bleurt_pytorch import BleurtConfig, BleurtForSequenceClassification, BleurtTokenizer
+# from bleurt_pytorch.tokenization import BleurtSPTokenizer
 from typing import Tuple
 nltk.download('punkt_tab')
 
@@ -34,10 +36,13 @@ API_KEY = "AIzaSyAISyP5zG-7NIV5F6xesUveTRDmtQ_6eyU"
 # API_KEY = "AIzaSyCdH1RVi5Rki_cm_ypw3RX8Bgy4YsIBHtI"
 # API_KEY = "AIzaSyClasB_b7S4LbjrcqZvQc74RAdPIazcCM0"
 
-THRESHOLD = 0.55
-INPUT_FOLDER_DIR = "remaining_data"
-OUTPUT_FOLDER_DIR = "augmented_data"
-LOAD_FOLDER_DIR = "augmented_progress_data"
+THRESHOLD = 0.1
+SCRIPT_PATH = os.path.abspath(__file__)
+SCRIPT_DIR = os.path.dirname(SCRIPT_PATH)
+PROJECT_ROOT = os.path.dirname(SCRIPT_DIR)
+INPUT_FOLDER_DIR = os.path.join(PROJECT_ROOT, "data")
+OUTPUT_FOLDER_DIR = os.path.join(PROJECT_ROOT, "augmented_data_ver01")
+LOAD_FOLDER_DIR = os.path.join(PROJECT_ROOT, "augmented_progress_data_ver01")
 
 # MODEL = "gemini-pro"
 # RPM_LIMIT = 15
@@ -60,7 +65,7 @@ TPM_LIMIT = 1_000_000
 # TPM_LIMIT = 1_000_000
 
 # ## Experimental Models
-# MODEL = "gemini-1.5-pro-002"
+# MODEL = "gemini-exp-1206"
 # RPM_LIMIT = 6
 # RPD_LIMIT = 1_500
 # TPM_LIMIT = 1_000_000
@@ -69,6 +74,16 @@ TPM_LIMIT = 1_000_000
 # gemini-1.5-pro-exp-0827
 # gemini-exp-1206
 
+
+def ensure_directory_exists(directory_path: str):
+    """Create directory if it doesn't exist."""
+    try:
+        if not os.path.exists(directory_path):
+            os.makedirs(directory_path)
+            logging.info(f"Created directory: {directory_path}")
+    except Exception as e:
+        logging.error(f"Error creating directory {directory_path}: {e}")
+        raise
 
 class BleurtScorer:
     def __init__(self, model_name: str = 'lucadiliello/BLEURT-20', device: str = None):
@@ -201,14 +216,6 @@ def translate_with_gemini(model, text, rate_limiter, source_lang='Vietnamese', t
         # Wait if we're approaching rate limits
         rate_limiter.wait_if_needed(estimated_tokens)
         
-        # prompt = f"""Translate this classical Vietnamese literature to formal {target_lang}. 
-        # Maintain the literary style and poetic elements while ensuring accuracy:
-
-        # Original {source_lang} text:
-        # {text}
-
-        # Translation:"""
-
         prompt = f"""Translate this classical {source_lang} literature to formal {target_lang}.
         Instructions:
         - Provide exactly ONE translation
@@ -252,23 +259,33 @@ def translate_with_gemini(model, text, rate_limiter, source_lang='Vietnamese', t
         logger.error(f"Translation error: {str(e)}")
         raise
 
-def evaluate_translation(reference, candidate, threshold=0.4):
-    """Evaluate translation using smoothed BLEU score."""
+def evaluate_translation(reference: str, candidate: str, threshold: float = 0.4) -> Tuple[bool, float]:
+    """
+    Evaluate translation quality using sacreBLEU score.
+    Args:
+        reference: Reference translation
+        candidate: Generated translation to evaluate
+        threshold: Minimum acceptable score (normalized)
+    Returns:
+        Tuple of (bool acceptable, float score)
+    """
     try:
-        # Initialize smoothing
-        smoothie = SmoothingFunction().method1
+        # Calculate sacreBLEU score
+        bleu = sacrebleu.sentence_bleu(
+            candidate,
+            [reference],
+            smooth_method='exp',  # Exponential smoothing for sentence-level
+            smooth_value=0.0,
+            tokenize='13a'  # Standard tokenization
+        )
         
-        # Tokenize
-        ref_tokens = nltk.word_tokenize(reference.lower())
-        cand_tokens = nltk.word_tokenize(candidate.lower())
+        # Normalize score to [0,1] range
+        normalized_score = bleu.score / 100.0
         
-        # Calculate BLEU with smoothing
-        score = sentence_bleu([ref_tokens], cand_tokens, 
-                            weights=(0.25, 0.25, 0.25, 0.25),
-                            smoothing_function=smoothie)
-        return score >= threshold, score
+        return normalized_score >= threshold, normalized_score
+        
     except Exception as e:
-        print(f"Error calculating BLEU score: {e}")
+        print(f"Error calculating sacreBLEU score: {e}")
         return False, 0.0
 
 def augment_data(input_file: str, output_file: str, load_file: str, api_key: str, threshold: float = 0.6):
@@ -391,6 +408,9 @@ def process_all_json_files(input_folder_dir: str, output_folder_dir: str, load_f
             logger.error(f"Error processing {input_file}: {str(e)}")
 
 def main():
+    ensure_directory_exists(INPUT_FOLDER_DIR)
+    ensure_directory_exists(OUTPUT_FOLDER_DIR)
+    ensure_directory_exists(LOAD_FOLDER_DIR)
     process_all_json_files(INPUT_FOLDER_DIR, OUTPUT_FOLDER_DIR, LOAD_FOLDER_DIR, API_KEY, THRESHOLD)
 
 if __name__ == "__main__":

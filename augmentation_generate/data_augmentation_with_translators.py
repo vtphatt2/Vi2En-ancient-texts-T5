@@ -12,7 +12,10 @@ from transformers import MBartForConditionalGeneration, MBart50TokenizerFast
 
 os.environ["CUDA_VISIBLE_DEVICES"] = "4"
 
-DATA_FOLDER = "data"
+SCRIPT_PATH = os.path.abspath(__file__)
+SCRIPT_DIR = os.path.dirname(SCRIPT_PATH)
+PROJECT_ROOT = os.path.dirname(os.path.dirname(SCRIPT_DIR))
+DATA_FOLDER = os.path.join(PROJECT_ROOT, "data")
 
 device = 'cuda' if torch.cuda.is_available() else 'cpu'  
 

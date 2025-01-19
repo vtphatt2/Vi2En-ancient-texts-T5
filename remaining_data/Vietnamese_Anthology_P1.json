@@ -1,0 +1,2225 @@
+{
+    "file_name": "Vietnamese_Anthology_P1",
+    "data": [
+        {
+            "id": 0,
+            "vi": "Núi sông nước Nam thì vua Nam ở,",
+            "en": "The Southern emperor rules the Southern land"
+        },
+        {
+            "id": 1,
+            "vi": "Cương giới đã ghi rành rành ở trong sách trời.",
+            "en": "Our destiny is writ in Heaven’s Book"
+        },
+        {
+            "id": 2,
+            "vi": "Cớ sao lũ giặc bạo ngược kia dám tới xâm phạm?",
+            "en": "How dare ye bandits trespass on our soil"
+        },
+        {
+            "id": 3,
+            "vi": "Chúng bay hãy chờ xem, thế nào cũng chuốc lấy bại vong.",
+            "en": "Ye shall meet your undoing at our hands"
+        },
+        {
+            "id": 4,
+            "vi": "Bạch Đằng giang",
+            "en": "The Bachdang River"
+        },
+        {
+            "id": 5,
+            "vi": "Núi biếc cao vút, tua tủa như gươm giáo kéo lấy tầng mây,",
+            "en": "Blue peaks are swords and lances thrust at clouds"
+        },
+        {
+            "id": 6,
+            "vi": "Hải thẩn nuốt thuỷ triều cuộn làn sóng bạc.",
+            "en": "The dragon swallows waves and spews white spray"
+        },
+        {
+            "id": 7,
+            "vi": "Hoa vàng điểm tô mặt đất lúc mưa xuân vừa tạnh,",
+            "en": "After spring rain flowers deck the earth like gems"
+        },
+        {
+            "id": 8,
+            "vi": "Tiếng sáo thông rung chuyển trời khi sương chiều lạnh lẽo.",
+            "en": "in chilly winds pines hum and stir the sky"
+        },
+        {
+            "id": 9,
+            "vi": "non sông này xưa nay đã hai lần mở mắt,",
+            "en": "Open your eyes admire your timeless land"
+        },
+        {
+            "id": 10,
+            "vi": "Cuộc hơn thua giữa Hồ và Việt thoáng qua như một lúc dựa vào lan can.",
+            "en": "bow and recall the strife of Viéts and Huns"
+        },
+        {
+            "id": 11,
+            "vi": "Nước sông chan chứa rọi bóng mặt trời buổi chiều đỏ ối,",
+            "en": "Down goes the sunthe river’s flowing red"
+        },
+        {
+            "id": 12,
+            "vi": "Còn ngỡ là máu chiến trường thuở trước chưa từng khô.",
+            "en": "is that the blood undried of those war killed"
+        },
+        {
+            "id": 13,
+            "vi": "Lẻo lẻo doành xanh nước tựa dầu,",
+            "en": "Posthorses galloped through miasmal wilds"
+        },
+        {
+            "id": 14,
+            "vi": "Trăm ngòi, ngàn lạch chảy về chầu.",
+            "en": "You brought your star to light this seaside realm"
+        },
+        {
+            "id": 15,
+            "vi": "Rửa không thay thảy thằng Ngô dại,",
+            "en": "A hero’s will can face the world at large"
+        },
+        {
+            "id": 16,
+            "vi": "Dịu một lâng lâng khách Việt hầu.",
+            "en": "a sovereign’s heart should treat all men alike"
+        },
+        {
+            "id": 17,
+            "vi": "Nọ đỉnh Thái Sơn rành rạnh đó,",
+            "en": "Yiich hills and streams give poets peerless lines"
+        },
+        {
+            "id": 18,
+            "vi": "Nào hôn Ô Mã lạc loài đâu ?",
+            "en": "Chou rain and dew pour from the emperor’s writ"
+        },
+        {
+            "id": 19,
+            "vi": "Bốn phương phẳng lặng kình bằng thóc.",
+            "en": "Tomorrow we shall sunder South and North"
+        },
+        {
+            "id": 20,
+            "vi": "Thong thả dầu ta bủa lưới câu...",
+            "en": "today do not turn down this cup of wine"
+        },
+        {
+            "id": 21,
+            "vi": "Ngựa trạm rong ruổi trong sương mù lam chướng dày đặc,",
+            "en": "Blue limpid water smoothly flows like oil"
+        },
+        {
+            "id": 22,
+            "vi": "Ánh sao sứ thần chiếu sáng đến tận miền ven biển.",
+            "en": "A thousand tributaries feed this stream"
+        },
+        {
+            "id": 23,
+            "vi": "Chuyên ứng đối ở bốn phương là chí nam nhi,",
+            "en": "Those fools from Wu have all been washed away"
+        },
+        {
+            "id": 24,
+            "vi": "Coi tất cả như nhau là tấm lòng thiên tử.",
+            "en": "vassals of Viét have all been cleansed of dirt"
+        },
+        {
+            "id": 25,
+            "vi": "Non sông nước Việt cung cấp những câu thơ tuyệt hay,",
+            "en": "The throne stands strong highsoaring like Mount T’ai"
+        },
+        {
+            "id": 26,
+            "vi": "Mưa móc nhà Chu truyền bá tiếng nói đẹp như lụa.",
+            "en": "Where has it wandered off Omar’s lost soul"
+        },
+        {
+            "id": 27,
+            "vi": "Sáng mai xa nhau, mây chia đôi ngả bắc nam,",
+            "en": "The world’s at peaceall sharks lie still as rice"
+        },
+        {
+            "id": 28,
+            "vi": "Hôm nay xin đừng từ chối chén rượu rót đầy.",
+            "en": "Let’s take our ease and cast our nets or lines"
+        },
+        {
+            "id": 29,
+            "vi": "Trưng Vương",
+            "en": "6 Homage to the Trung queens"
+        },
+        {
+            "id": 30,
+            "vi": "Giúp dân dẹp loạn trả thù mình,",
+            "en": "To slay the people’s foe and wreak revenge"
+        },
+        {
+            "id": 31,
+            "vi": "Chị rủ cùng em kết nghĩa binh.",
+            "en": "two sisters took up arms for their just cause"
+        },
+        {
+            "id": 32,
+            "vi": "Tô Định bay hồn vang một trận,",
+            "en": "One battle put Su Ting’s scared wits to rout"
+        },
+        {
+            "id": 33,
+            "vi": "Lĩnh Nam mở cõi vững trăm thành.",
+            "en": "a hundred tribes rose up to guard Lingnan'"
+        },
+        {
+            "id": 34,
+            "vi": "Mới đầy bảo vị gia ơn rộng,",
+            "en": "They climbed the thronelarge bounties they bestowed"
+        },
+        {
+            "id": 35,
+            "vi": "Đã đội hoa quan xuống phúc lành.",
+            "en": "They donned their crownssweet blessings they conferred"
+        },
+        {
+            "id": 36,
+            "vi": "Còn nước còn non còn miếu mạo,",
+            "en": "While streams and hills endure their shrine shall stand"
+        },
+        {
+            "id": 37,
+            "vi": "Nữ trung đệ nhất đứng tài danh.",
+            "en": "a monument to peerless womanhood"
+        },
+        {
+            "id": 38,
+            "vi": "Cây đa già",
+            "en": "The old banyan tree"
+        },
+        {
+            "id": 39,
+            "vi": "Tìm được lâm tuyền chốn dưỡng thân,",
+            "en": "It finds a home amid the woods and brooks"
+        },
+        {
+            "id": 40,
+            "vi": "Một phen xuân tởi một phen xuân.",
+            "en": "When springtime comes it dons the green of spring"
+        },
+        {
+            "id": 41,
+            "vi": "Tuy đà chửa có tài lương đống,",
+            "en": "Not good enough for pillars and for beams"
+        },
+        {
+            "id": 42,
+            "vi": "Bóng cả nhờ còn rợp đến dân.",
+            "en": "it shelters common folk beneath its shade"
+        },
+        {
+            "id": 43,
+            "vi": "Người ba đấng, của ba loài",
+            "en": "Three ranks of men three grades of things"
+        },
+        {
+            "id": 44,
+            "vi": "Người ba đấng, của ba loài,",
+            "en": "There are three ranks of men three grades of things"
+        },
+        {
+            "id": 45,
+            "vi": "Khôn biết chiều hoa nỗi đỏ phai.",
+            "en": "It’s wise to know that flowers now bloom now fade"
+        },
+        {
+            "id": 46,
+            "vi": "Tiệc ngọc còn chờ người quý khách,",
+            "en": "A feast is spread awaiting worthy guests"
+        },
+        {
+            "id": 47,
+            "vi": "Mâm son đành đợi kẻ cao tài.",
+            "en": "the seats of state wait ready for high skills"
+        },
+        {
+            "id": 48,
+            "vi": "Gươm trời nỡ để tay phàm tuốt,",
+            "en": "Must we let vulgar hands draw Heaven’s sword"
+        },
+        {
+            "id": 49,
+            "vi": "Búa nguyệt chi cho đứa độc mài.",
+            "en": "Should wicked scoundrels hone the crescent ax"
+        },
+        {
+            "id": 50,
+            "vi": "Mặc nghiêm, từ soi thẳm thẳm,",
+            "en": "Allseeing majesty shines there on high"
+        },
+        {
+            "id": 51,
+            "vi": "Vàng mười, đúng giá lọ nài ai.",
+            "en": "need any person cry and hawk pure gold"
+        },
+        {
+            "id": 52,
+            "vi": "Trê Cóc",
+            "en": "37 Catfish and Toad"
+        },
+        {
+            "id": 53,
+            "vi": "Truyện đời có cổ có kim,",
+            "en": "Of old and now the world has tales to tell"
+        },
+        {
+            "id": 54,
+            "vi": "Ngẫm trong vật lý mà xem cũng kỳ.",
+            "en": "strange stories making plain the universe"
+        },
+        {
+            "id": 55,
+            "vi": "Những tuồng loài vật biết gì,",
+            "en": "And animals who hardly know one whit"
+        },
+        {
+            "id": 56,
+            "vi": "Cũng còn sự lý tranh thi khéo là.",
+            "en": "will argufy the cause and end of things"
+        },
+        {
+            "id": 57,
+            "vi": "Nhớ xưa Trê, Cóc đôi nhà,",
+            "en": "Long long ago HeCatfish and HeToad"
+        },
+        {
+            "id": 58,
+            "vi": "Vì tình nên phải sinh ra oán thù.",
+            "en": "once quarreled and provoked a bitter feud"
+        },
+        {
+            "id": 59,
+            "vi": "Cóc quen vui thú bờ hồ,",
+            "en": "HeToad had his own burrow by a lake"
+        },
+        {
+            "id": 60,
+            "vi": "Khi ra đài các, khi vô cung đình.",
+            "en": "but proudly haunted halls and seats of power"
+        },
+        {
+            "id": 61,
+            "vi": "Tới khi thai sản thành hình,",
+            "en": "Now when his pregnant wife had reached her term"
+        },
+        {
+            "id": 62,
+            "vi": "Xuống ao Trê, mới đem mình thoát xong.",
+            "en": "she hopped into a pond where fish did live"
+        },
+        {
+            "id": 63,
+            "vi": "Nhìn xem lòng những mừng lòng,",
+            "en": "and there she spawned. She feasted her fond eyes"
+        },
+        {
+            "id": 64,
+            "vi": "Trở về ngồi chốn nghiêm phòng nghỉ ngơi.",
+            "en": "upon her brood, then to her den retired."
+        },
+        {
+            "id": 65,
+            "vi": "Chàng Trê đâu mới nơi,",
+            "en": "He-Catfish chanced to come along and found"
+        },
+        {
+            "id": 66,
+            "vi": "Thấy đàn nòng nọc nhảy, ngoi đá rầm.",
+            "en": "the school of tadpoles in a noisy romp."
+        },
+        {
+            "id": 67,
+            "vi": "Nhìn xem dạ đã mừng thầm,",
+            "en": "When he caught sight of them, his heart rejoiced:"
+        },
+        {
+            "id": 68,
+            "vi": "Giống Trê như lột chẳng nhầm vẻ chi.",
+            "en": "there was no doubt—they looked like catfish babes!"
+        },
+        {
+            "id": 69,
+            "vi": "Bắt về nuôi nấng phù trì,",
+            "en": "He took them home—he loved and cherished them,"
+        },
+        {
+            "id": 70,
+            "vi": "Con nuôi cũng chẳng khác gì con sinh.",
+            "en": "adopting them as his own flesh and blood."
+        },
+        {
+            "id": 71,
+            "vi": "Hay đâu Cóc cũng vô tình,",
+            "en": "But next, to view his offspring came He-Toad"
+        },
+        {
+            "id": 72,
+            "vi": "Nhớ ngày đầy cữ ra rình thăm con,",
+            "en": "when taboo-observation time was past.!"
+        },
+        {
+            "id": 73,
+            "vi": "Tới nơi, chờ đợi nỉ non,",
+            "en": "With bated breath, he looked and looked about:"
+        },
+        {
+            "id": 74,
+            "vi": "Vắng tanh dấu cũ, nước còn, tăm không.",
+            "en": "the pond was hushed and bare—no sign of life!"
+        },
+        {
+            "id": 75,
+            "vi": "Lâu lâu nghĩ cũng giận lòng,",
+            "en": "He bottled up his anger and hopped in"
+        },
+        {
+            "id": 76,
+            "vi": "Vội vàng nhảy xuống bên trong dạo tìm,",
+            "en": "to paddle round and search for his lost tribe."
+        },
+        {
+            "id": 77,
+            "vi": "Bọt bèo lầm nước tối tăm,",
+            "en": "By midnight he was still there churning mud."
+        },
+        {
+            "id": 78,
+            "vi": "Động tin, Trê mới hăm hăm hỏi dò.",
+            "en": "Disturbed, He-Catfish surfaced and inquired."
+        },
+        {
+            "id": 79,
+            "vi": "Lảng ra, thấy Cóc bên bờ,",
+            "en": "He saw He-Toad in ambush on the bank,"
+        },
+        {
+            "id": 80,
+            "vi": "Trê liền quát mắng tri hô vang rầm:",
+            "en": "and straightaway he raised a hue and cry:"
+        },
+        {
+            "id": 81,
+            "vi": "“Cóc kia đâu đó tối tăm?",
+            "en": "“Hey, Toad, it’s night! Why are you prowling here?"
+        },
+        {
+            "id": 82,
+            "vi": "“Dạ gian, phi đạo, tắc dâm chẳng lành”.",
+            "en": "To plan a theft or work some lewd design?”?"
+        },
+        {
+            "id": 83,
+            "vi": "Cóc rằng: “Ai kẻ gian manh,",
+            "en": "“Look who’s the mischief-monger!” croaked He-Toad."
+        },
+        {
+            "id": 84,
+            "vi": "Gây ra những sự sinh tình gớm ghê.",
+            "en": "“You’re guilty of a horrid crime yourself."
+        },
+        {
+            "id": 85,
+            "vi": "“Vì con nên phải sớm khuya,",
+            "en": "I’ve braved the dark for my dear brood you stole."
+        },
+        {
+            "id": 86,
+            "vi": "“Không dưng, ai có đến chi chốn này?”",
+            "en": "If not, would I have stooped to visit you?”"
+        },
+        {
+            "id": 87,
+            "vi": "Nghe lời Trê tức giận thay!",
+            "en": "He-Catfish, smarting from the taunt he heard,"
+        },
+        {
+            "id": 88,
+            "vi": "Vểnh râu, mắng Cóc: “Tỉnh say lắm điều!",
+            "en": "pricked up his whiskers and reviled He-Toad:"
+        },
+        {
+            "id": 89,
+            "vi": "“Cóc kia cả quyết gan liều,",
+            "en": "“Why, Toad! How bold and impudent you are!#"
+        },
+        {
+            "id": 90,
+            "vi": "“Bọn người coi đã mỹ miều lắm thay!",
+            "en": "And what a handsome figure you all cut!"
+        },
+        {
+            "id": 91,
+            "vi": "“Một ngày lạ giống chúng bay!",
+            "en": "Your kind will never mend—once smeared with lime,"
+        },
+        {
+            "id": 92,
+            "vi": "“Nghề bôi vôi vẫn nồng thay chẳng chừa.",
+            "en": "you'll take your acrid temper to the grave!*"
+        },
+        {
+            "id": 93,
+            "vi": "Một tội mất, mười tội ngờ.",
+            "en": "To one theft victim, ten will look like thieves.*"
+        },
+        {
+            "id": 94,
+            "vi": "“Biết đâu mà khéo tri hô hỏi dồn.",
+            "en": "How do you know who did it? Why blame me?"
+        },
+        {
+            "id": 95,
+            "vi": "“Thôi đừng đua dại, tranh khôn,",
+            "en": "Stop trying to match wits with me, my friend."
+        },
+        {
+            "id": 96,
+            "vi": "“Trở về ngồi tối gầm giường cho xong”.",
+            "en": "Go back and squat yourself beneath some bed!”"
+        },
+        {
+            "id": 97,
+            "vi": "Cóc liền dương mắt trừng trừng,",
+            "en": "Angry He-Toad bugged out his eyes and growled:"
+        },
+        {
+            "id": 98,
+            "vi": "Rằng: “Khôn, ngươi cũng ở trong ao tù.",
+            "en": "“Though smart, you’re stuck inside a stagnant pond!"
+        },
+        {
+            "id": 99,
+            "vi": "“Ta đây dẫu có hèn ngu,",
+            "en": "I may be short on brains, but I frequent"
+        },
+        {
+            "id": 100,
+            "vi": "Nhà ta cũng có cơ đồ đỉnh đang.",
+            "en": "those stately mansions where the mighty live."
+        },
+        {
+            "id": 101,
+            "vi": "“Ra vào gác tía nhà vàng,",
+            "en": "I move amid the purple and the gold"
+        },
+        {
+            "id": 102,
+            "vi": "“Cõi bờ mặc sức nghêng ngang chơi bời.",
+            "en": "or roam the kingdom at my own sweet will."
+        },
+        {
+            "id": 103,
+            "vi": "“Nghiến răng chuyển chín phương trời,",
+            "en": "Each time I grind my teeth, I shake the skies®"
+        },
+        {
+            "id": 104,
+            "vi": "“Ai ai là chẳng rụng rời sợ kinh.",
+            "en": "and strike the souls of men with darkest fears."
+        },
+        {
+            "id": 105,
+            "vi": "“Tuồng gì giống cá hôi tanh,",
+            "en": "But what are you good for, you smelly fish?"
+        },
+        {
+            "id": 106,
+            "vi": "May chăng được một môi canh ra gì”.",
+            "en": "Once boiled, you'll yield a ladleful of broth!”"
+        },
+        {
+            "id": 107,
+            "vi": "Cầm lòng, Cóc trở ra về,",
+            "en": "And choked with helpless rage, He-Toad went home."
+        },
+        {
+            "id": 108,
+            "vi": "Vợ chồng bàn định sớm khuya ngại ngùng,",
+            "en": "Husband and wife took counsel night and day."
+        },
+        {
+            "id": 109,
+            "vi": "Rằng: “Con đương độ ấu trùng,",
+            "en": "She said, “The children are quite small and young."
+        },
+        {
+            "id": 110,
+            "vi": "Xa xôi non nước lạnh lùng biết sao.",
+            "en": "Away from us, how can they bear the cold?"
+        },
+        {
+            "id": 111,
+            "vi": "“Khuyên chàng chớ nghĩ thấp cao,",
+            "en": "Forget about the means to win a feud—"
+        },
+        {
+            "id": 112,
+            "vi": "“Công bao cũng chịu, của bao cũng đành”.",
+            "en": "let’s pay whatever price and buy them back.”"
+        },
+        {
+            "id": 113,
+            "vi": "Cóc rằng: “Nàng khéo lo quanh,",
+            "en": "“Your head spins such bright notions!” he replied."
+        },
+        {
+            "id": 114,
+            "vi": "“Can chi chịu phí xem tình ra sao.",
+            "en": "“Why should we put ourselves to such expense?"
+        },
+        {
+            "id": 115,
+            "vi": "“Đàn bà nông nổi khác nào,",
+            "en": "What does a shallow woman really know’"
+        },
+        {
+            "id": 116,
+            "vi": "“Biết đâu những chuyện mưu cao mà bàn.",
+            "en": "to meddle and suggest this scheme or that?"
+        },
+        {
+            "id": 117,
+            "vi": "“Trê kia đã có lòng tham,",
+            "en": "He-Catfish covets our own flesh and blood:"
+        },
+        {
+            "id": 118,
+            "vi": "“Được thua quyết kiện một phen xem mà”.",
+            "en": "I’ll sue him, then—let’s do or die in court!"
+        },
+        {
+            "id": 119,
+            "vi": "Tức thì đến cửa quan nha,",
+            "en": "I'll carry to the yamen my complaint,"
+        },
+        {
+            "id": 120,
+            "vi": "Làm đơn khất lĩnh minh tra cho tường.",
+            "en": "and when the case is tried, the truth will out!”"
+        },
+        {
+            "id": 121,
+            "vi": "Phủ quan nghe tỏ lòng đơn,",
+            "en": "The prefect-judge perused the plaintiffs bill,"
+        },
+        {
+            "id": 122,
+            "vi": "Truyền đòi nha lại các phiên vô hầu.",
+            "en": "then summoned all his staff of clerks and scribes:"
+        },
+        {
+            "id": 123,
+            "vi": "Xem đơn danh Cóc gót đầu,",
+            "en": "“I’ve read He-Toad’s complaint from first to last:"
+        },
+        {
+            "id": 124,
+            "vi": "Đoạt nhân thủ tử nhẽ đâu làm vầy.",
+            "en": "to steal somebody’s children is no joke!"
+        },
+        {
+            "id": 125,
+            "vi": "Thực hư tình ý chưa hay,",
+            "en": "I’ve yet to ascertain the hidden facts,"
+        },
+        {
+            "id": 126,
+            "vi": "Cứ trong đơn khất cũng ngầy lắm thôi.",
+            "en": "but it looks like a pickle as of now!"
+        },
+        {
+            "id": 127,
+            "vi": "Truyền cho thảo trát vô đòi,",
+            "en": "Go draft a warrant and arrest the knave,"
+        },
+        {
+            "id": 128,
+            "vi": "Mấy danh chứng tá giải hồi nghiêm tra.",
+            "en": "and haul all witnesses before the court.”"
+        },
+        {
+            "id": 129,
+            "vi": "Các thầy vâng lệnh trở ra,",
+            "en": "With due instructions scribes and clerks went out"
+        },
+        {
+            "id": 130,
+            "vi": "Đòi tiền thông lệ bản nha tức thì.",
+            "en": "and made He-Toad cough up the usual fees."
+        },
+        {
+            "id": 131,
+            "vi": "Trát thảo cho dấu chữ y,",
+            "en": "The drafted summons was approved and signed—"
+        },
+        {
+            "id": 132,
+            "vi": "Truyền cho lệ dịch tức thì phát sai.",
+            "en": "a bailiff was dispatched to serve it soon."
+        },
+        {
+            "id": 133,
+            "vi": "Lệ binh vâng trát thôi đòi,",
+            "en": "Now brandishing his warrant of arrest,"
+        },
+        {
+            "id": 134,
+            "vi": "Bộ hành mới kéo về nơi Thanh trì.",
+            "en": "the bailiff swaggered off, bound for Clear Pond."
+        },
+        {
+            "id": 135,
+            "vi": "Truyền đòi lý dịch tức thì,",
+            "en": "Once there, he ordered village chiefs to catch"
+        },
+        {
+            "id": 136,
+            "vi": "Dẫn thôi thủ phạm danh Trê ra hầu.",
+            "en": "and fetch the suspect—Catfish was his name."
+        },
+        {
+            "id": 137,
+            "vi": "Nghe tin chứng tá đâu đâu,",
+            "en": "Greeting the man who came to question them,"
+        },
+        {
+            "id": 138,
+            "vi": "Sửa sang chè rượu cùng nhau khuyên mời.",
+            "en": "all gathered, spread the table, poured much wine."
+        },
+        {
+            "id": 139,
+            "vi": "Lệ rằng: “Quan pháp như lôi,",
+            "en": "The bailiff said: “Like thunder is the law,"
+        },
+        {
+            "id": 140,
+            "vi": "Chỉ đâu đánh đấy chẳng đâu là lành.",
+            "en": "so where it’s told to strike, right there it strikes!®"
+        },
+        {
+            "id": 141,
+            "vi": "Trê kia là đứa gian manh,",
+            "en": "He-Catfish perpetrated his foul deed,"
+        },
+        {
+            "id": 142,
+            "vi": "Chúng ngươi họp đảng đồng tình nhất môn.",
+            "en": "and all of you have lent him help and aid!"
+        },
+        {
+            "id": 143,
+            "vi": "Đây mà cứ phép việc quan,",
+            "en": "If I obey my orders to the full,"
+        },
+        {
+            "id": 144,
+            "vi": "Thời bay thịt nát xương tan chẳng lành.",
+            "en": "your flesh and bones will fall to bits and shreds!"
+        },
+        {
+            "id": 145,
+            "vi": "Song bên lý có bên tình,",
+            "en": "But mercy is the other arm of law—"
+        },
+        {
+            "id": 146,
+            "vi": "Liệu sao các việc thoả tình người ta.",
+            "en": "take care to gratify my softer side."
+        },
+        {
+            "id": 147,
+            "vi": "Kẻo khi quan lại còn xa,",
+            "en": "As long as judge and clerks are still far off,"
+        },
+        {
+            "id": 148,
+            "vi": "Đây mà nổi giận lôi ra kéo vào.”",
+            "en": "don’t anger me, or strokes shall rain on you!”"
+        },
+        {
+            "id": 149,
+            "vi": "Chàng Trê ngóc cổ liền kêu,",
+            "en": "He-Catfish reared his head and pleaded hard:"
+        },
+        {
+            "id": 150,
+            "vi": "“Dân đen có biết chi điều gian ngoan.",
+            "en": "“Why would this churl have dared to flout the law?"
+        },
+        {
+            "id": 151,
+            "vi": "Vì ai nên phải tiếng ai,",
+            "en": "Some liar’s pinned a bogus charge on me!"
+        },
+        {
+            "id": 152,
+            "vi": "Dám xin mấy cậu liệu đường giúp cho.",
+            "en": "Please help me, uncle. As the proverb says,"
+        },
+        {
+            "id": 153,
+            "vi": "Chữ rằng: “Nhất nhật tại tù,”",
+            "en": "‘One day in jail, a thousand years at large!’?"
+        },
+        {
+            "id": 154,
+            "vi": "Hết bao nhiêu cũng xin lo dám nề.",
+            "en": "I beg to pay, no matter what the sum."
+        },
+        {
+            "id": 155,
+            "vi": "Còn như danh Chép, danh Mè,",
+            "en": "I have two friends and neighbors, Carp and Tench—"
+        },
+        {
+            "id": 156,
+            "vi": "Cũng trong luân lý một bề với tôi.",
+            "en": "both can be counted on to back me up."
+        },
+        {
+            "id": 157,
+            "vi": "Sửa sang lễ vật lên hầu,",
+            "en": "For our good magistrate, I’ll purchase gifts:"
+        },
+        {
+            "id": 158,
+            "vi": "Có tôi đã đứng là đầu thời xong.”",
+            "en": "what need be done, I promise, shall be done!”"
+        },
+        {
+            "id": 159,
+            "vi": "Lệ nghe lời nói êm lòng,",
+            "en": "Those words were music to the bailiff’s ear."
+        },
+        {
+            "id": 160,
+            "vi": "Bèn đưa nhau đến cửa công tạ trình.",
+            "en": "He led them all to the abode of law."
+        },
+        {
+            "id": 161,
+            "vi": "Lệ vào lạy trước công đình,",
+            "en": "Before the judge he dropped a bow, then said:"
+        },
+        {
+            "id": 162,
+            "vi": "Trát sai đã bắt đẳng danh hồi trình.",
+            "en": "“At your behest, I’ve bid them all appear!”"
+        },
+        {
+            "id": 163,
+            "vi": "Quan liền chỉ phán phân minh:",
+            "en": "The judge held court and tried the case forthwith:"
+        },
+        {
+            "id": 164,
+            "vi": "“Trê kia sao dám gian manh làm vầy?",
+            "en": "“You, Catfish, dared commit the vilest crime!"
+        },
+        {
+            "id": 165,
+            "vi": "Nguyên đơn danh Cóc ngồi đây,",
+            "en": "The plaintiff, Toad, who’s kneeling there, asserts"
+        },
+        {
+            "id": 166,
+            "vi": "Đoạt nhân thủ tử việc này có không?”",
+            "en": "you kidnapped all his children: yes or.no?”"
+        },
+        {
+            "id": 167,
+            "vi": "Trê vào lạy trước vừa xong,",
+            "en": "He-Catfish first kowtowed before the judge,"
+        },
+        {
+            "id": 168,
+            "vi": "Cất đầu kể hết sự lòng xa xôi:",
+            "en": "then, perking up, he told his tale at length:"
+        },
+        {
+            "id": 169,
+            "vi": "“Sự này tại chú Cóc tôi,",
+            "en": "“He-Toad must bear full blame for this affair."
+        },
+        {
+            "id": 170,
+            "vi": "Dạ gian vô cớ xuống ngồi bên ao.",
+            "en": "At night he came and squatted by my pond."
+        },
+        {
+            "id": 171,
+            "vi": "Bấy giờ tôi có kêu rao,",
+            "en": "So, raising the alarm, I gave a shout"
+        },
+        {
+            "id": 172,
+            "vi": "Hoả quang kiến diện qua rào nhảy ra.",
+            "en": "and plainly saw him scamper through my hedge."
+        },
+        {
+            "id": 173,
+            "vi": "Sợ rằng: ngỏ tiếng tăm ra,",
+            "en": "Afraid I would expose his foul offense,"
+        },
+        {
+            "id": 174,
+            "vi": "Vậy nên trước phải quỳ thưa đỡ đòn.",
+            "en": "he covered it all up with his false charge."
+        },
+        {
+            "id": 175,
+            "vi": "Ví dù Cóc lại có con,",
+            "en": "For if indeed they were his flesh and blood,"
+        },
+        {
+            "id": 176,
+            "vi": "Lẽ đâu để cách nước non sao đành.",
+            "en": "would he have dumped them there, in my cold pond?"
+        },
+        {
+            "id": 177,
+            "vi": "Đầu đen là giống phù sinh,",
+            "en": "We little folk live lives as cheap as dirt!"
+        },
+        {
+            "id": 178,
+            "vi": "Dám xin soi xét ra tình kẻo oan.”",
+            "en": "Please spare me gross injustice—weigh the facts!”"
+        },
+        {
+            "id": 179,
+            "vi": "Quan rằng: “Bây khéo gian ngoan.",
+            "en": "“No more of your pert talk!” the prefect snapped,"
+        },
+        {
+            "id": 180,
+            "vi": "Truyền đòi chứng tá tiếp bàng hỏi qua.",
+            "en": "then summoned fish to take the witness stand."
+        },
+        {
+            "id": 181,
+            "vi": "Mèo, Nheo, Trắm, Chép nhảy ra,",
+            "en": "Tench, Bass, and Carp—all three came forth at once"
+        },
+        {
+            "id": 182,
+            "vi": "Khấu đầu lạy trước quan nha diện trình:",
+            "en": "and prostrated themselves before the judge:"
+        },
+        {
+            "id": 183,
+            "vi": "“Chúng tôi thật kẻ vô tình,",
+            "en": "“We all are simple folk—we mean no harm."
+        },
+        {
+            "id": 184,
+            "vi": "Xưa nay vẫn thực hiền lành biết chi.",
+            "en": "A poor, clean living’s all we have eked out."
+        },
+        {
+            "id": 185,
+            "vi": "Mặc ai vùng vẫy giang khê,",
+            "en": "Others may want to venture down the stream—"
+        },
+        {
+            "id": 186,
+            "vi": "Biết thân tránh khỏi lưới nghề là xong.",
+            "en": "we are content to dodge those nets and traps."
+        },
+        {
+            "id": 187,
+            "vi": "Biết đâu Trê, Cóc sự lòng,",
+            "en": "Who knows what Toad or Catfish brewed and hatched,"
+        },
+        {
+            "id": 188,
+            "vi": "Buộc cho đôi chữ phù đồng khổ thay!",
+            "en": "yet with complicity we now stand charged!"
+        },
+        {
+            "id": 189,
+            "vi": "Đèn trời soi xét gian ngay,",
+            "en": "May Heaven’s lamp cast light on right and wrong!"
+        },
+        {
+            "id": 190,
+            "vi": "Lẽ đâu ao cá vạ lây cháy thành.”",
+            "en": "The wall’s caught fire—should fish die in the moat?”!°"
+        },
+        {
+            "id": 191,
+            "vi": "Cóc vào bẩm trước công đình:",
+            "en": "Before the court He-Toad now put his case:"
+        },
+        {
+            "id": 192,
+            "vi": "“Chẳng qua các chúng đồng tình mưu gian.",
+            "en": "“They all are kith and kin, as thick as thieves!"
+        },
+        {
+            "id": 193,
+            "vi": "Người thân thích kẻ lân bang,",
+            "en": "Their water and our land are worlds apart—"
+        },
+        {
+            "id": 194,
+            "vi": "Cóc khô ở chốn quê người biết sao.",
+            "en": "how are dry toads to fare among wet fish?"
+        },
+        {
+            "id": 195,
+            "vi": "Ngửa trông lạy đứa quan cao,",
+            "en": "Before Your Highness, may I bow and pray?"
+        },
+        {
+            "id": 196,
+            "vi": "Cứu đàn con nhỏ phiêu lưu kẻo mà.”",
+            "en": "From hapless exile save our children, please!”"
+        },
+        {
+            "id": 197,
+            "vi": "Quan truyền: “Cho Cóc lui ra,",
+            "en": "“Well, let He-Toad go home,” the prefect said."
+        },
+        {
+            "id": 198,
+            "vi": "Đem trê giam đó hậu tra vội gì.”",
+            "en": "“For further hearings bolt He-Catfish in!”"
+        },
+        {
+            "id": 199,
+            "vi": "Lệ binh vâng lệnh tức thì,",
+            "en": "The zealous bailiffs did as they were told"
+        },
+        {
+            "id": 200,
+            "vi": "Đem Trê vào trại liền mi chẳng chầy.",
+            "en": "and promptly clapped He-Catfish into jail."
+        },
+        {
+            "id": 201,
+            "vi": "Canh giờ nghiêm cấm khổ thay!",
+            "en": "Alas, they kept him under lock and key:"
+        },
+        {
+            "id": 202,
+            "vi": "Mười người nhắm một, đều tay lấy tiền.",
+            "en": "ten men closed in—on one—and bled him white."
+        },
+        {
+            "id": 203,
+            "vi": "Quan cứ lệnh, lính cứ truyền,",
+            "en": "From mandarin to bailiffs orders flowed:"
+        },
+        {
+            "id": 204,
+            "vi": "Đã ngày cổ buộc, lại đêm chân cùm.",
+            "en": "they cangued his neck by day and chained his legs by night;"
+        },
+        {
+            "id": 205,
+            "vi": "Giam tra thịt nát xương tan,",
+            "en": "they cut his hide to rags and shreds,"
+        },
+        {
+            "id": 206,
+            "vi": "Vợ chồng Trê những ngậm ngùi,",
+            "en": "His wife watched his ordeal and sorely grieved."
+        },
+        {
+            "id": 207,
+            "vi": "Ra vào phí tổn hết bao cũng đành.",
+            "en": "To save him she would spare no costs or pains."
+        },
+        {
+            "id": 208,
+            "vi": "Có công lặn suối trèo ghềnh,",
+            "en": "She wandered over hill and dale to find"
+        },
+        {
+            "id": 209,
+            "vi": "Tìm người lý sự hỏi tình sâu nông.",
+            "en": "somebody with the answer to her prayer."
+        },
+        {
+            "id": 210,
+            "vi": "Xa nghe Triều Đẩu anh hùng,",
+            "en": "She heard a bravo’s name—through go-betweens,"
+        },
+        {
+            "id": 211,
+            "vi": "Đưa tin hoàng tước hỏi cùng phải chăng.",
+            "en": "she reached Stargazer’s lair for his advice.'"
+        },
+        {
+            "id": 212,
+            "vi": "Đầu đuôi mấy khúc thưa rằng:",
+            "en": "In detail she told him what troubled her:"
+        },
+        {
+            "id": 213,
+            "vi": "“Thực tôi là phận tảo tần chàng Trê.",
+            "en": "“I’m married to He-Catfish—his chief wife."
+        },
+        {
+            "id": 214,
+            "vi": "Nay đơn chàng Cóc tâu quì,",
+            "en": "Because He-Toad has lodged a false complaint,"
+        },
+        {
+            "id": 215,
+            "vi": "Vậy nên Trê phải giam mi tại tù.",
+            "en": "my husband’s landed in a prison cell."
+        },
+        {
+            "id": 216,
+            "vi": "Đàn bà ngu dại vụng lo,",
+            "en": "A foolish woman only bungles things—"
+        },
+        {
+            "id": 217,
+            "vi": "Đội ơn quan bác liệu cho phận nhờ.”",
+            "en": "please figure out some way to set him free.”"
+        },
+        {
+            "id": 218,
+            "vi": "Kình rằng: “Chẳng ngại việc chi,",
+            "en": "“I’m willing to oblige,” Stargazer said."
+        },
+        {
+            "id": 219,
+            "vi": "Đây ta nào phải luỵ gì đến ai.",
+            "en": "“But I need not go plead with anyone."
+        },
+        {
+            "id": 220,
+            "vi": "Có tên Lý Ngạnh thôn ngoài,",
+            "en": "For I’ve got Pike, a village mayor back there—"
+        },
+        {
+            "id": 221,
+            "vi": "Cũng trong thủ hạ tôi đòi ta đây.",
+            "en": "he’s my own man: my wish is his command."
+        },
+        {
+            "id": 222,
+            "vi": "Vốn người độc ác xưa nay,",
+            "en": "A holy terror for all his born days!"
+        },
+        {
+            "id": 223,
+            "vi": "Cho đi giúp chúng việc này hẳn xong.”",
+            "en": "You’re in a fix—I’ll have him succor you.”"
+        },
+        {
+            "id": 224,
+            "vi": "Trê nghe thấy nói mừng lòng,",
+            "en": "The bravo’s word transported her with joy—"
+        },
+        {
+            "id": 225,
+            "vi": "Liền quỳ lạy Ngạnh kể thông mọi lời.",
+            "en": "she hurried to find Pike and woo his aid."
+        },
+        {
+            "id": 226,
+            "vi": "Sửa sang đồ vật thảnh thơi,",
+            "en": "She came before him bearing lavish gifts:"
+        },
+        {
+            "id": 227,
+            "vi": "Tôm he, cá mực đủ mùi trân cam.",
+            "en": "prawns, squids, and dainty bits, the tongue’s delights."
+        },
+        {
+            "id": 228,
+            "vi": "Ngạnh rằng: “Quan sự dã am,",
+            "en": "“I know what makes them tick, those yamen chaps,” said Pike,"
+        },
+        {
+            "id": 229,
+            "vi": "Những phường cáo giả oai hầm ghê thay.",
+            "en": "“those foxes clad in tigers’ coats!”"
+        },
+        {
+            "id": 230,
+            "vi": "Việc quan muốn xử cho xong,",
+            "en": "You wish to win your lawsuit with all speed?"
+        },
+        {
+            "id": 231,
+            "vi": "Thời trong lại bộ có thầy thông Chiên.",
+            "en": "I’ll have you talk to Shiner, their head clerk."
+        },
+        {
+            "id": 232,
+            "vi": "Muốn cho trong ấm ngoài êm,",
+            "en": "If things are to come off without a hitch,"
+        },
+        {
+            "id": 233,
+            "vi": "Phải đưa lễ tốt các phiên mới dành.”",
+            "en": "you also must grease well all yamen palms!”"
+        },
+        {
+            "id": 234,
+            "vi": "Ngạnh vào tư thất bẩm trình,",
+            "en": "Once Pike had seen the judge behind closed doors,"
+        },
+        {
+            "id": 235,
+            "vi": "Trê ra lạy trước công đình tâu thân:",
+            "en": "the female catfish went to his court hall."
+        },
+        {
+            "id": 236,
+            "vi": "“Gọi là lễ mọn kính dâng,",
+            "en": "Down on her knees, she pled: “With our respects,"
+        },
+        {
+            "id": 237,
+            "vi": "Dám xin soi xét phận dân ngu hèn.",
+            "en": "accept these gifts and pity my poor clod!"
+        },
+        {
+            "id": 238,
+            "vi": "Chàng Trê giam chấp mấy phen,",
+            "en": "He-Catfish twice was nabbed and thrown in jail"
+        },
+        {
+            "id": 239,
+            "vi": "Cũng vì điên đảo làm thiên án từ.",
+            "en": "because the facts were twisted out of shape."
+        },
+        {
+            "id": 240,
+            "vi": "Lòng ngay chẳng dám mưu mô,",
+            "en": "He thinks straight thoughts, he dared no crooked schemes."
+        },
+        {
+            "id": 241,
+            "vi": "Lưới Thang rộng mở ơn nhờ xiết bao.”",
+            "en": "Please open wide the merciful T’ang net!”"
+        },
+        {
+            "id": 242,
+            "vi": "Quan rằng: “Kêu vậy biết sao,",
+            "en": "“Since you’re beseeching me,” the judge declared,"
+        },
+        {
+            "id": 243,
+            "vi": "Đây ta cũng chẳng xuy mao cầu tì.",
+            "en": "“T shall not poke beneath the hair for scars!"
+        },
+        {
+            "id": 244,
+            "vi": "Cứ trong tình lý mà suy,",
+            "en": "As far as I can see from all the facts,"
+        },
+        {
+            "id": 245,
+            "vi": "Thời như đơn Cóc có khi cũng huyền.",
+            "en": "He-Toad may lack firm grounds for his complaint."
+        },
+        {
+            "id": 246,
+            "vi": "Cho đồng đối tụng hai bên,",
+            "en": "Let the accuser face him he’s accused,"
+        },
+        {
+            "id": 247,
+            "vi": "Có bên bị, có bên nguyên mới tường.”",
+            "en": "for I must hear both sides to know the truth.”"
+        },
+        {
+            "id": 248,
+            "vi": "Cóc ngồi chực sẵn bên tường,",
+            "en": "He-Toad, who was then crouching by a wall,"
+        },
+        {
+            "id": 249,
+            "vi": "Nghe lời quan phán vội vàng nhảy ra:",
+            "en": "dashed out at that pronouncement and burst forth:"
+        },
+        {
+            "id": 250,
+            "vi": "“Trê kia chớ có huyên hoa,",
+            "en": "“Dame Catfish, no fast talk! I would not fear"
+        },
+        {
+            "id": 251,
+            "vi": "Hùm dầu có cánh ta đà chẳng ghê.",
+            "en": "winged tigers, let alone the finny tribe!"
+        },
+        {
+            "id": 252,
+            "vi": "Quả tình nào có hồ nghi,",
+            "en": "Your husband stole our children in broad day,"
+        },
+        {
+            "id": 253,
+            "vi": "Ra điều bán dạ lâm trì khó coi.",
+            "en": "and he’s charged me with trespassing at night!"
+        },
+        {
+            "id": 254,
+            "vi": "Phù sinh mấy kiếp ở đời,",
+            "en": "Does he expect to live forevermore"
+        },
+        {
+            "id": 255,
+            "vi": "Làm cho rắn cắn được voi còn chầy.",
+            "en": "and see his serpents swallow up a whale?!"
+        },
+        {
+            "id": 256,
+            "vi": "Chỉ nghề dạy khỉ leo cây,",
+            "en": "They can teach monkeys how to climb a tree,!"
+        },
+        {
+            "id": 257,
+            "vi": "Xui nguyên dục bị, chỉ hay bày trò.",
+            "en": "they goad one side, they egg the other on.!”"
+        },
+        {
+            "id": 258,
+            "vi": "Ai ngờ xã thử thành hồ,",
+            "en": "Those altar rats or rampart foxes strut"
+        },
+        {
+            "id": 259,
+            "vi": "Chỉ điều cậy thế làm cho hại người.",
+            "en": "and flaunt their borrowed power to hurt the weak.!"
+        },
+        {
+            "id": 260,
+            "vi": "Biết rằng hươu chết tay ai,",
+            "en": "Whose hand will kill the deer and win the day?!9"
+        },
+        {
+            "id": 261,
+            "vi": "Mỏ chim, nanh chuột tranh hơi còn nhiều.”",
+            "en": "The fight is on: birds’ beaks against rats’ fangs!"
+        },
+        {
+            "id": 262,
+            "vi": "Quan rằng: “Bây chớ rối điều,",
+            "en": "“None of your lip, Sir Toad!” the prefect roared."
+        },
+        {
+            "id": 263,
+            "vi": "Việc quan chẳng lọ nhiều kêu mới là.",
+            "en": "“You need not mouth it so to state your case."
+        },
+        {
+            "id": 264,
+            "vi": "Lệ đâu đòi mấy thầy nha,",
+            "en": "Here, bailiff! Tell the clerks to go and make"
+        },
+        {
+            "id": 265,
+            "vi": "Cho đi nghiệm thực hậu tra mới tường.",
+            "en": "a thorough inquest—gather all the facts."
+        },
+        {
+            "id": 266,
+            "vi": "Trê kia quả có tính gian,",
+            "en": "If they establish guilt and foul intent,"
+        },
+        {
+            "id": 267,
+            "vi": "Cứ trong luật lệ y đơn mà làm.”",
+            "en": "He-Catfish shall be punished by the book.”"
+        },
+        {
+            "id": 268,
+            "vi": "Các thầy vâng lệnh lên đường,",
+            "en": "The clerks obeyed their order, hit the road—"
+        },
+        {
+            "id": 269,
+            "vi": "Theo chân thầy tớ một đoàn thong dong.",
+            "en": "all in a body hastened toward Clear Pond."
+        },
+        {
+            "id": 270,
+            "vi": "Kéo về đến chốn ao trong,",
+            "en": "Arriving there, they summoned village chiefs"
+        },
+        {
+            "id": 271,
+            "vi": "Cho đòi tổng tiếp điều cùng khám thăm.",
+            "en": "to show them round and help them learn the truth."
+        },
+        {
+            "id": 272,
+            "vi": "Thấy đàn nòng nọc lăm xăm,",
+            "en": "They found those tadpoles in a frisk and romp"
+        },
+        {
+            "id": 273,
+            "vi": "Vẫy vùng mặt nước đen rầm như Trê.",
+            "en": "quite near the surface—little swarthy ones."
+        },
+        {
+            "id": 274,
+            "vi": "Nha rằng: “Sự chẳng hồ nghi,",
+            "en": "“No shadow of a doubt!” the clerks agreed."
+        },
+        {
+            "id": 275,
+            "vi": "Đầu đuôi hình tượng giống Trê đó rồi.”",
+            "en": "“From head to tail they look like catfish, yes!”"
+        },
+        {
+            "id": 276,
+            "vi": "Khám tường biên thực chẳng sai,",
+            "en": "After recording what they had observed,"
+        },
+        {
+            "id": 277,
+            "vi": "Sự tình nha lại tức hồi trình qua:",
+            "en": "they hurried back, submitted their report:"
+        },
+        {
+            "id": 278,
+            "vi": "“Ngửa trông đôi đức cao xa,",
+            "en": "“Before your lofty virtue we bow low!"
+        },
+        {
+            "id": 279,
+            "vi": "Vâng sai án nghiệm minh tra tỏ tường.",
+            "en": "We made a careful inquest in your name."
+        },
+        {
+            "id": 280,
+            "vi": "Trê kia quả có tình oan,",
+            "en": "He-Catfish was accused on no good ground,"
+        },
+        {
+            "id": 281,
+            "vi": "Hiện có tổng tiếp ký đơn về trình.”",
+            "en": "a fact the village chiefs themselves confirm.”"
+        },
+        {
+            "id": 282,
+            "vi": "Quan truyền bắt Cóc ra tra:",
+            "en": "The prefect had He-Toad hauled in and said:"
+        },
+        {
+            "id": 283,
+            "vi": "“Sao bây kiện sai ngoa làm vầy?",
+            "en": "“You, brazen rascal, filed a perjured charge!"
+        },
+        {
+            "id": 284,
+            "vi": "Nay đơn nha khám về đây,",
+            "en": "Now my inquirers have come back and cleared"
+        },
+        {
+            "id": 285,
+            "vi": "Trê kia là đứa tình ngay có gì!”",
+            "en": "He-Catfish of the crime you laid to him.”"
+        },
+        {
+            "id": 286,
+            "vi": "Cóc ra lạy trước sân quỳ,",
+            "en": "He-Toad kowtowed and told the magistrate:"
+        },
+        {
+            "id": 287,
+            "vi": "Bẩm rằng: “Lại dấu cho Trê lắm điều.",
+            "en": "“To shield He-Catfish, clerks and scribes have lied!"
+        },
+        {
+            "id": 288,
+            "vi": "Chẳng qua hối lộ đã nhiều,",
+            "en": "He’s crammed so many goodies down their throats—"
+        },
+        {
+            "id": 289,
+            "vi": "Vậy nên mới nói mè nheo những lời.”",
+            "en": "no wonder what they say does stink of fish!”"
+        },
+        {
+            "id": 290,
+            "vi": "Bản nha tức giận mọi người,",
+            "en": "The charge incensed those yamen hands—they begged"
+        },
+        {
+            "id": 291,
+            "vi": "Bẩm xin tội Cóc ra ngoài trại canh.",
+            "en": "to clap He-Toad in jail and serve him right."
+        },
+        {
+            "id": 292,
+            "vi": "Truyền cho thẩm xét phân minh,",
+            "en": "“The case must be retried,” the prefect said."
+        },
+        {
+            "id": 293,
+            "vi": "Ký giam ở đó kẻo tình còn oan.",
+            "en": "“Pending a verdict, lock in this He-Toad!”"
+        },
+        {
+            "id": 294,
+            "vi": "Cóc ngồi dài thở ngắn than,",
+            "en": "Now huddled up, He-Toad just sighed and groaned,"
+        },
+        {
+            "id": 295,
+            "vi": "Những là đứt ruột, căm gan cho đời.",
+            "en": "seething with righteous wrath against the world:"
+        },
+        {
+            "id": 296,
+            "vi": "Biết chăng có một ông trời,",
+            "en": "“Heaven above, would that you knew my plight!"
+        },
+        {
+            "id": 297,
+            "vi": "Nghiến răng có thấu xin soi đến cùng.",
+            "en": "I'll gnash my teeth, then you'll hear me, perhaps."
+        },
+        {
+            "id": 298,
+            "vi": "Ai làm oan thác sự lòng,",
+            "en": "If they malign me and will cause my death,"
+        },
+        {
+            "id": 299,
+            "vi": "Thì xin tiếng sấm cửu trùng nổi lên.",
+            "en": "may your celestial thunder strike them down!”"
+        },
+        {
+            "id": 300,
+            "vi": "Cóc ngồi trằn trọc thâu đêm,",
+            "en": "To her poor Toad, who tossed and turned all night,"
+        },
+        {
+            "id": 301,
+            "vi": "Vợ chồng bàn định nỗi niềm trước sau.",
+            "en": "the wife proposed a course she had thought out:"
+        },
+        {
+            "id": 302,
+            "vi": "“Phải tìm thầy thợ cho mau,",
+            "en": "“Let me consult a doctor of the laws"
+        },
+        {
+            "id": 303,
+            "vi": "Để cho thiếp được trước sau rõ mười.",
+            "en": "and quickly learn how to proceed in court."
+        },
+        {
+            "id": 304,
+            "vi": "Đua nhau cái trí mà thôi,",
+            "en": "If we just try to measure wits with them,"
+        },
+        {
+            "id": 305,
+            "vi": "Chẳng mừng chi được, chẳng ngùi chi thua.",
+            "en": "it will not work and we may come to grief."
+        },
+        {
+            "id": 306,
+            "vi": "Thiếp xin đi lại toan lo,",
+            "en": "Please let me go and do what need be done."
+        },
+        {
+            "id": 307,
+            "vi": "Làm cho trả được oán thù mới thôi.”",
+            "en": "I shall not quit until revenge is ours!”"
+        },
+        {
+            "id": 308,
+            "vi": "Cóc về dạo khắp các nơi,",
+            "en": "She-Toad set forth to roam and rove afield,"
+        },
+        {
+            "id": 309,
+            "vi": "Qua miền Chẫu chuộc, tới miền Ễnh ương.",
+            "en": "crossing from Bufoland to Ranaburg."
+        },
+        {
+            "id": 310,
+            "vi": "Thôi lặn suối lại trèo nương,",
+            "en": "She’d wade this stream and climb that hill; she’d search"
+        },
+        {
+            "id": 311,
+            "vi": "Giếng sâu bụi bặm lòng càng ngẩn ngơ.",
+            "en": "deep wells and thickets, anguish in her heart."
+        },
+        {
+            "id": 312,
+            "vi": "Vô tình đương lúc mây mưa,",
+            "en": "One day, as she trudged on through wind and rain,"
+        },
+        {
+            "id": 313,
+            "vi": "May sao thấy Ếch ngẩn ngơ cõi ngoài.",
+            "en": "she spotted someone in a field: He-Frog."
+        },
+        {
+            "id": 314,
+            "vi": "Ếch đương quen thú ngồi chơi,",
+            "en": "He had been squatting there, at pleasant ease,"
+        },
+        {
+            "id": 315,
+            "vi": "Nhác trông thấy Cóc sắp rời chân ra.",
+            "en": "when he laid eyes on her, so up he hopped."
+        },
+        {
+            "id": 316,
+            "vi": "Rằng: “Đâu mà đến đây ta?",
+            "en": "He asked her, “Where did you come from, my dear?"
+        },
+        {
+            "id": 317,
+            "vi": "Cớ sao thân thể coi mà kém xuân.",
+            "en": "But you don’t seem to wear your freshest looks!"
+        },
+        {
+            "id": 318,
+            "vi": "Hay là có việc chi chăng?",
+            "en": "Is something ailing you? What is amiss?"
+        },
+        {
+            "id": 319,
+            "vi": "Đầu đuôi ngỏ thực xin đừng giấu nhau.",
+            "en": "All frogs and toads are kin—you can speak out!”"
+        },
+        {
+            "id": 320,
+            "vi": "Cóc rằng: “Có việc chi đâu,",
+            "en": "“There’s nothing wrong with me,” She-Toad replied."
+        },
+        {
+            "id": 321,
+            "vi": "Vì chồng con phải lo âu chưa đành.",
+            "en": "“But I must save my husband and my home!"
+        },
+        {
+            "id": 322,
+            "vi": "Trê kia là đứa gian manh,",
+            "en": "He-Catfish is an arrant thief and rogue!"
+        },
+        {
+            "id": 323,
+            "vi": "Bắt con mà lại sinh tình sai ngoa.",
+            "en": "He stole our brood, then slandered my poor Toad."
+        },
+        {
+            "id": 324,
+            "vi": "Làm đơn đút lót quan nha,",
+            "en": "He oiled the palms of mandarin and clerks—"
+        },
+        {
+            "id": 325,
+            "vi": "Vậy nên Cóc phải giam tra thế này.",
+            "en": "it followed that my Toad was sent to jail."
+        },
+        {
+            "id": 326,
+            "vi": "Cố công lặn suối tới đây,",
+            "en": "I’ve traveled hills and streams to come this far."
+        },
+        {
+            "id": 327,
+            "vi": "Nhờ chàng liệu giúp việc này hoạ xong.”",
+            "en": "I pray you—rescue us from our dire pass!”"
+        },
+        {
+            "id": 328,
+            "vi": "Ếch rằng: “Đồng trắng, nước trong,",
+            "en": "“Bare field, plain water—here’s my home,” he said."
+        },
+        {
+            "id": 329,
+            "vi": "Tôi đây tiếng cả nhà không có gì.",
+            "en": "“Loud though I croak, my voice is empty air."
+        },
+        {
+            "id": 330,
+            "vi": "Nghề tay thầy kiện trứ danh,",
+            "en": "Among famed doctors of the laws there’s one"
+        },
+        {
+            "id": 331,
+            "vi": "Có chàng Nhái bén thực anh bợm già.",
+            "en": "who doctors them expertly: our Tree Frog!"
+        },
+        {
+            "id": 332,
+            "vi": "Đơn từ, mẹo mực vào ra,",
+            "en": "He knows the yamen well—the ins and outs."
+        },
+        {
+            "id": 333,
+            "vi": "Bàn tay tráo trở coi đà ngon không.",
+            "en": "He breaks its statutes, juggles with its rules."
+        },
+        {
+            "id": 334,
+            "vi": "Muốn cho các việc được xong,",
+            "en": "You want to see your troubles all resolved?"
+        },
+        {
+            "id": 335,
+            "vi": "Phải tìm cho đến hỏi cùng sự duyên.",
+            "en": "Go track him down and ask for his advice!”"
+        },
+        {
+            "id": 336,
+            "vi": "Cóc nghe lời nói tự nhiên,",
+            "en": "After she heard the Frog explain all things,"
+        },
+        {
+            "id": 337,
+            "vi": "Trở về dạo khắp các miền hỏi thăm,",
+            "en": "She-Toad then rushed back home to start again."
+        },
+        {
+            "id": 338,
+            "vi": "Nước non cây cối âm thầm,",
+            "en": "Across the realm, through silent groves and woods,"
+        },
+        {
+            "id": 339,
+            "vi": "Một mình Cóc lại băn khoăn một mình.",
+            "en": "she tramped the lonesome trail on tireless feet."
+        },
+        {
+            "id": 340,
+            "vi": "Hay đâu cảnh thú hữu tình,",
+            "en": "Then, as a pretty scene came into view,"
+        },
+        {
+            "id": 341,
+            "vi": "Lui chân bóng mát, nương mình cõi râm,",
+            "en": "she stopped her quest and tarried in the shade."
+        },
+        {
+            "id": 342,
+            "vi": "Gió đưa ngọn cỏ lầm rầm,",
+            "en": "A gentle rain was falling on the grass—"
+        },
+        {
+            "id": 343,
+            "vi": "Nhác trông thấy Bén đang nằm nghỉ ngơi.",
+            "en": "she glimpsed a little sprawler: that Tree Frog!"
+        },
+        {
+            "id": 344,
+            "vi": "Chào rằng: “Chị Cóc lại chơi,",
+            "en": "“I welcome you, my sister,” greeted he."
+        },
+        {
+            "id": 345,
+            "vi": "“Việc gì mà phải tìm tôi những là?",
+            "en": "“What prompted you to come and seek me out?"
+        },
+        {
+            "id": 346,
+            "vi": "“Dặm ngàn non nước thẳm xa,",
+            "en": "Your distant home’s a thousand miles from here—"
+        },
+        {
+            "id": 347,
+            "vi": "“Cớ sao mà khéo lân la biết đường?”",
+            "en": "how did you know your way to make the trip?”"
+        },
+        {
+            "id": 348,
+            "vi": "Cóc rằng: Muôn đội ơn chàng,",
+            "en": "“I thank you for your kindly words,” she said."
+        },
+        {
+            "id": 349,
+            "vi": "“Vì tình, nên phải đa mang với tình.",
+            "en": "“What would I not go through for my loved ones!"
+        },
+        {
+            "id": 350,
+            "vi": "“Nói ra lắm sự bất bình,",
+            "en": "It so enrages me to talk of him—"
+        },
+        {
+            "id": 351,
+            "vi": "“Vì Trê nên phải đem mình đến anh.",
+            "en": "He-Catfish caused us all our griefs and woes."
+        },
+        {
+            "id": 352,
+            "vi": "“Xiết bao kể nỗi ức tình,",
+            "en": "We’ve suffered countless wrongs without redress"
+        },
+        {
+            "id": 353,
+            "vi": "“Nhịn đi chẳng được, tức mình lắm thôi.",
+            "en": "and held our anger till we’re fit to burst."
+        },
+        {
+            "id": 354,
+            "vi": "“Cố lòng lấy của, cướp người,",
+            "en": "They throw their weight around and crush the weak;"
+        },
+        {
+            "id": 355,
+            "vi": "“Đơn từ điên đảo mấy hồi khổ thay!",
+            "en": "they tamper with the laws and wreak such harm!"
+        },
+        {
+            "id": 356,
+            "vi": "“Quan tham, lại cũng chẳng ngay,",
+            "en": "From mandarin to clerks, they all are crooks."
+        },
+        {
+            "id": 357,
+            "vi": "“Vậy nên bắt Cóc tội rầy bấy lâu.",
+            "en": "For long they have tormented my poor Toad—"
+        },
+        {
+            "id": 358,
+            "vi": "“Nghĩ tình càng thảm, càng rầu,",
+            "en": "mere thought of it just rankles in my soul!"
+        },
+        {
+            "id": 359,
+            "vi": "“Biết ai là kẻ nông sâu mà bàn?",
+            "en": "I knew of no one who could counsel me."
+        },
+        {
+            "id": 360,
+            "vi": "“Vậy nên bao quản đường trường,",
+            "en": "I took He-Frog’s advice—I did not dread"
+        },
+        {
+            "id": 361,
+            "vi": "“Trước vì biết Ếch, sau tường tôn nhan.",
+            "en": "the far, rough trek and found my way to you."
+        },
+        {
+            "id": 362,
+            "vi": "“Dù trong lẽ dại, đường khôn,",
+            "en": "Whatever action wisdom might suggest"
+        },
+        {
+            "id": 363,
+            "vi": "“Dám xin chỉ giáo, tôi con được nhờ”.",
+            "en": "to save my Toad and toadlings, tell me, please!”"
+        },
+        {
+            "id": 364,
+            "vi": "Bén rằng: “Ngán chuyện đàn bà,",
+            "en": "The Tree Frog laughed: “A woman’s rigmarole!"
+        },
+        {
+            "id": 365,
+            "vi": "“Làm gì việc ấy, khéo mà nói quanh.",
+            "en": "But you don’t know a thing about the world."
+        },
+        {
+            "id": 366,
+            "vi": "“Tuy cùng một kiếp phù sinh,",
+            "en": ""
+        },
+        {
+            "id": 367,
+            "vi": "“Giống nào giống ấy, tranh giành làm chi?",
+            "en": "We share a common fate—we all shall die."
+        },
+        {
+            "id": 368,
+            "vi": "“Trê kia là đứa ngu si,",
+            "en": "Why fight and war with our own kind? What for?"
+        },
+        {
+            "id": 369,
+            "vi": "“Chẳng qua tham dại nghĩ gì nông sâu.",
+            "en": "He-Catfish is an utter, hopeless fool—"
+        },
+        {
+            "id": 370,
+            "vi": "“Thôi đừng kiện cáo chi nhau,",
+            "en": "he’s gone clean daft with greed, can’t think too deep."
+        },
+        {
+            "id": 371,
+            "vi": "“Con đương dưới nước, dễ hầu làm chi.",
+            "en": "Well, cease your squabbles and disputes at law."
+        },
+        {
+            "id": 372,
+            "vi": "“Để cho Trê nó phù trì,",
+            "en": "Your brood is in their pond—what can you do?"
+        },
+        {
+            "id": 373,
+            "vi": "“Đứt đuôi, nó lại tìm về là hơn.",
+            "en": "Just let that dumb He-Catfish nurture them."
+        },
+        {
+            "id": 374,
+            "vi": "“Muốn cho êm ái đôi bên,",
+            "en": "It’s best to wait till they’ve all shed their tails—"
+        },
+        {
+            "id": 375,
+            "vi": "“Thời đem trình Phủ mà xin Cóc về.",
+            "en": "then by themselves they’ll find their way back home!"
+        },
+        {
+            "id": 376,
+            "vi": "“Nhược bằng có dạ tranh thi,",
+            "en": "The case can then be settled with no fuss:"
+        },
+        {
+            "id": 377,
+            "vi": "“Lại làm đơn phục cho Trê khó gì”.",
+            "en": "petition for full custody—a cinch!"
+        },
+        {
+            "id": 378,
+            "vi": "Nghe lời Cóc cũng nằn nì:",
+            "en": "If you still wish to pick a bone with him,"
+        },
+        {
+            "id": 379,
+            "vi": "“Làm cho bõ ghét cho Trê mới đành.",
+            "en": "against He-Catfish file a countersuit!”"
+        },
+        {
+            "id": 380,
+            "vi": "Kẻo Trê nó cũng cậy mình.”",
+            "en": "With eagerness She-Toad concurred and said:"
+        },
+        {
+            "id": 381,
+            "vi": "Nghe thôi, vợ Cóc tạ trình ra đi.",
+            "en": "“T’ll make him feel the sting of all my spite"
+        },
+        {
+            "id": 382,
+            "vi": "Trở về cửa phủ tức thì,",
+            "en": "and teach him not to bluster any more!”"
+        },
+        {
+            "id": 383,
+            "vi": "Dặn chồng sau trước mọi bề đinh ninh.",
+            "en": "She-Toad now bowed her thanks and took her leave."
+        },
+        {
+            "id": 384,
+            "vi": "Lại về chốn cũ thăm tình,",
+            "en": "Back to the yamen she was quick to trot."
+        },
+        {
+            "id": 385,
+            "vi": "Quả như Bén nói rành rành chẳng sai.",
+            "en": "She told He-Toad, then at the pond she peeked,"
+        },
+        {
+            "id": 386,
+            "vi": "Cười cười nói nói tả tơi,",
+            "en": "and what Tree Frog had said was plain to see."
+        },
+        {
+            "id": 387,
+            "vi": "Sửa sang lễ vật tới nơi công đường.",
+            "en": "she came before the judge with many gifts."
+        },
+        {
+            "id": 388,
+            "vi": "Cóc vào lễ tước, quỳ đơn,",
+            "en": "A written plea in hand, she entered first—"
+        },
+        {
+            "id": 389,
+            "vi": "Theo sau một lũ Cóc con sang trình.",
+            "en": "a covey of her toadlings hopped behind."
+        },
+        {
+            "id": 390,
+            "vi": "Trình đơn trước mặt công đình,",
+            "en": "In open court the prefect read her piece"
+        },
+        {
+            "id": 391,
+            "vi": "Phủ quan nổi giận lôi đình thét vang.",
+            "en": "and almost threw a fit. He thundered out:"
+        },
+        {
+            "id": 392,
+            "vi": "“Sự đâu có sự dị thường,",
+            "en": "“But how could this have happened, such a freak?"
+        },
+        {
+            "id": 393,
+            "vi": "Nha môn sao dám tự đương làm vầy.”",
+            "en": "My orders went unheeded by those clerks!"
+        },
+        {
+            "id": 394,
+            "vi": "Truyền đòi nha khám ra đây,",
+            "en": "All ye who made the inquest, come in here!"
+        },
+        {
+            "id": 395,
+            "vi": "Giao cho Bang biện việc này mới xong.",
+            "en": "I should let my assistant handle this!”"
+        },
+        {
+            "id": 396,
+            "vi": "Bản nha hiệp nghị một lòng,",
+            "en": "The yamen scribes craved mercy on their knees:"
+        },
+        {
+            "id": 397,
+            "vi": "Khấu đầu lại trước cửa công tạ tình.",
+            "en": "“At your command we went and we inquired."
+        },
+        {
+            "id": 398,
+            "vi": "Rằng: “Đem dấu trát tra minh, Bắt Trê nhận thực tượng hình mới biên.",
+            "en": "With our own eyes we saw their catfish shape, and only then did we draft our report."
+        },
+        {
+            "id": 399,
+            "vi": "Chẳng qua con tạo đảo điên,",
+            "en": "But nature’s played an impish prank on us"
+        },
+        {
+            "id": 400,
+            "vi": "Sinh sinh hoá hoá, hiện truyền chi đây.",
+            "en": "and, out of nowhere, darkly conjured change!"
+        },
+        {
+            "id": 401,
+            "vi": "Chúng tôi giữ việc lòng ngay,",
+            "en": "Deep in our hearts we hold to Right and Law:"
+        },
+        {
+            "id": 402,
+            "vi": "Dám đâu gian dối chuyện này cho đang.”",
+            "en": "how could we have presumed to tell a lie?”"
+        },
+        {
+            "id": 403,
+            "vi": "Quan rằng việc ấy dở dang,",
+            "en": "“The case remains unsettled,” sighed the judge."
+        },
+        {
+            "id": 404,
+            "vi": "Truyền Trê ra trước công đương hỏi qua,",
+            "en": "“Arraign He-Catfish, put the scamp on trial!"
+        },
+        {
+            "id": 405,
+            "vi": "Roi đâu mấy chập đòn tra,",
+            "en": "A twin-lash whip! A cudgel! Flog the knave,"
+        },
+        {
+            "id": 406,
+            "vi": "Gian ngay thú thực thưa qua cho tường.",
+            "en": "make him own up, and straighten it all out!"
+        },
+        {
+            "id": 407,
+            "vi": "Dám đâu nhận mệnh làm thường,",
+            "en": "He dared to toy with lives—in Heaven’s sight"
+        },
+        {
+            "id": 408,
+            "vi": "Cố nhiên kiếp đoạt đường đường như chơi.",
+            "en": "he robbed a couple of their flesh and blood!"
+        },
+        {
+            "id": 409,
+            "vi": "Cứ trong lý luật mà coi,",
+            "en": "I shall enforce the laws and banish him"
+        },
+        {
+            "id": 410,
+            "vi": "Lưu tam thiên lý tôi ngươi đã đành.",
+            "en": "to the full distance of three thousand miles."
+        },
+        {
+            "id": 411,
+            "vi": "Bao nhiêu đồ vật sắm sanh,",
+            "en": "Seize all his riches, all his worldly goods,"
+        },
+        {
+            "id": 412,
+            "vi": "Truyền Trê phải chịu cho thanh mọi bề.",
+            "en": "and go bestow them all as alms or doles."
+        },
+        {
+            "id": 413,
+            "vi": "Cóc kia thôi chớ nằn nì,",
+            "en": "But as for you, Dame Toad, stop squawking, pray!"
+        },
+        {
+            "id": 414,
+            "vi": "Được con là trọng, kêu chi thêm càng.",
+            "en": "You’ve got your toadlings back—complain no more."
+        },
+        {
+            "id": 415,
+            "vi": "Trê kia thực có lòng tham,",
+            "en": "He-Catfish did brew mischief in his breast:"
+        },
+        {
+            "id": 416,
+            "vi": "Đã đem đày chốn xa đường thì thôi.”",
+            "en": "I’ve doomed the rogue to exile—that’s the end!”"
+        },
+        {
+            "id": 417,
+            "vi": "Quan trên chỉ phán mấy hồi,",
+            "en": "The haughty lord passed sentence with those words,"
+        },
+        {
+            "id": 418,
+            "vi": "Cóc vào trình lạy mấy lời bẩm qua:",
+            "en": "and now He-Toad hopped in, knelt down, and said:"
+        },
+        {
+            "id": 419,
+            "vi": "“Ngửa trông đức cả cao xa,",
+            "en": "“As I look up to you, Your Eminence,"
+        },
+        {
+            "id": 420,
+            "vi": "Non công, bể đức kể đà xiết bao.",
+            "en": "your kindness stands sea-deep and mountain-high—"
+        },
+        {
+            "id": 421,
+            "vi": "Đoái thương đến phận nhi tào",
+            "en": "you shone your pity on our little toads!"
+        },
+        {
+            "id": 422,
+            "vi": "Gọi là lễ mọn đem vào tạ ân.”",
+            "en": "We’ve brought some trifles, tokens of our thanks.”"
+        },
+        {
+            "id": 423,
+            "vi": "Quan rằng: “Thôi chớ ân cần,",
+            "en": "“Hey, there, shut off that gush!” the prefect cried."
+        },
+        {
+            "id": 424,
+            "vi": "Thế thời cũng đã có phần hậu thay.",
+            "en": "“So I’ve deserved a bit of gratitude!"
+        },
+        {
+            "id": 425,
+            "vi": "Khéo đâu lễ vật đặt bày,",
+            "en": "But need you come here bearing gifts and such?"
+        },
+        {
+            "id": 426,
+            "vi": "Biết thôi trả lại cho bay đem về.”",
+            "en": "Though I esteem the thought, please take them back!”"
+        },
+        {
+            "id": 427,
+            "vi": "Tạ từ Cóc trở ra về,",
+            "en": "After more bows, He-Toad and wife withdrew,"
+        },
+        {
+            "id": 428,
+            "vi": "Vợ chồng mừng rỡ đề huề ngổn ngang.",
+            "en": "and arm in arm, bliss-drunk, they hopped away."
+        },
+        {
+            "id": 429,
+            "vi": "Bước ra khỏi chốn công đường,",
+            "en": "They had no sooner left the yamen gate"
+        },
+        {
+            "id": 430,
+            "vi": "Thông Chiên dật lễ, Đề Tôm cướp tiền.",
+            "en": "than clerks and scribes snatched presents from their hands."
+        },
+        {
+            "id": 431,
+            "vi": "Ôm đầu vỗ vế ngả nghiêng,",
+            "en": "They set upon both toads—they groped and pawed,"
+        },
+        {
+            "id": 432,
+            "vi": "Kẻ đòi bầu rượu, người xin bao chè.",
+            "en": "claiming his flask of wine, her box of tea ..."
+        },
+        {
+            "id": 433,
+            "vi": "Được kiện Cóc trở ra về,",
+            "en": "Thus, having won his suit, He-Toad came home."
+        },
+        {
+            "id": 434,
+            "vi": "Chè sen rượu cúc thảnh thơi,",
+            "en": "Over mum wine or lotus tea"
+        },
+        {
+            "id": 435,
+            "vi": "Cóc ngồi chịu chuyện, Bén ngồi ngâm thơ.",
+            "en": "he told his triumph to his kin, while our Tree Frog was softly chanting verse, asprawl close by."
+        },
+        {
+            "id": 436,
+            "vi": "Vang lừng trong hội mây mưa,",
+            "en": "Then both joined in the raucous merriment"
+        },
+        {
+            "id": 437,
+            "vi": "Say sưa mặc sức, xướng ca thoả lòng.",
+            "en": "to drink their fill and sing themselves quite hoarse."
+        },
+        {
+            "id": 438,
+            "vi": "Mới hay duyên ngộ kỳ phùng,",
+            "en": "By lucky chance their paths had somehow crossed."
+        },
+        {
+            "id": 439,
+            "vi": "Anh hùng tỏ mặt anh hùng hẳn hoi.",
+            "en": "Like will to like—and thus two heroes met!"
+        },
+        {
+            "id": 440,
+            "vi": "Ngẫm xem thế sự nực cười,",
+            "en": "You watch the world go round and want to laugh."
+        },
+        {
+            "id": 441,
+            "vi": "Cũng là dở cái trò chơi đấy mà.",
+            "en": "It’s just a comedy played out for fun."
+        },
+        {
+            "id": 442,
+            "vi": "Vẽ vời mấy tiếng ngâm nga,",
+            "en": "Let these few words, embroidered into verse,"
+        },
+        {
+            "id": 443,
+            "vi": "Tỏ tường sự lý để ra với đời.",
+            "en": "set forth some truths that one and all may see."
+        }
+    ]
+}

@@ -101,4 +101,5 @@ def process_all_json_files(folder_dir: str):
             print(f"Error processing {input_file}: {str(e)}")
 
 if __name__ == "__main__":
-    process_all_json_files("data")
+    augment_data("data/nam_quoc_son_ha_1.json", "test.json")
+    # process_all_json_files("data")

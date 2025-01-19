@@ -1,0 +1,1001 @@
+{
+    "file_name": "chinh_phu_ngam.pdf",
+    "data": [
+        {
+            "vi": "khói cam tuyền mờ mịt thức mây",
+            "en": "The mists of Cam Tuyền, obscure and vast, awaken the clouds.",
+            "augmented_index": 0,
+            "original_index": 5,
+            "scores": {
+                "bleurt": 0.4899,
+                "sacrebleu": 0.1201,
+                "bleu": 0.1738
+            }
+        },
+        {
+            "vi": "giã nhà đeo bức chiến bào",
+            "en": "Departing home, clad in battle armor.",
+            "augmented_index": 1,
+            "original_index": 21,
+            "scores": {
+                "bleurt": 0.6515,
+                "sacrebleu": 0.0727,
+                "bleu": 0.1325
+            }
+        },
+        {
+            "vi": "đường bên cầu cỏ mọc còn non",
+            "en": "The path beside the bridge, the grass still tender.",
+            "augmented_index": 2,
+            "original_index": 24,
+            "scores": {
+                "bleurt": 0.4577,
+                "sacrebleu": 0.1836,
+                "bleu": 0.253
+            }
+        },
+        {
+            "vi": "đưa chàng lòng dằng dặc buồn",
+            "en": "My heart, for you, is a boundless ocean of sorrow.",
+            "augmented_index": 3,
+            "original_index": 25,
+            "scores": {
+                "bleurt": 0.5613,
+                "sacrebleu": 0.0462,
+                "bleu": 0.1272
+            }
+        },
+        {
+            "vi": "nước trong chảy lòng phiền chẳng rửa",
+            "en": "The limpid stream cannot cleanse a troubled heart.",
+            "augmented_index": 4,
+            "original_index": 27,
+            "scores": {
+                "bleurt": 0.6684,
+                "sacrebleu": 0.0944,
+                "bleu": 0.1601
+            }
+        },
+        {
+            "vi": "cỏ xanh thơm dạ nhớ không quên",
+            "en": "The fragrant green grass, a memory ever cherished.",
+            "augmented_index": 5,
+            "original_index": 28,
+            "scores": {
+                "bleurt": 0.5894,
+                "sacrebleu": 0.0998,
+                "bleu": 0.1601
+            }
+        },
+        {
+            "vi": "bước đi một bước lại vin áo chàng",
+            "en": "With each step, I grasp the hem of your garment.",
+            "augmented_index": 6,
+            "original_index": 30,
+            "scores": {
+                "bleurt": 0.5709,
+                "sacrebleu": 0.0852,
+                "bleu": 0.1552
+            }
+        },
+        {
+            "vi": "giáp mặt rồi phút bỗng chia tay",
+            "en": "We met, and in a fleeting moment, parted.",
+            "augmented_index": 7,
+            "original_index": 40,
+            "scores": {
+                "bleurt": 0.5761,
+                "sacrebleu": 0.053,
+                "bleu": 0.1264
+            }
+        },
+        {
+            "vi": "bên đường trông bóng cờ bay ngùi ngùi",
+            "en": "By the roadside, I watched the banners flutter, my heart heavy with sorrow.",
+            "augmented_index": 8,
+            "original_index": 42,
+            "scores": {
+                "bleurt": 0.6597,
+                "sacrebleu": 0.249,
+                "bleu": 0.3305
+            }
+        },
+        {
+            "vi": "thiếp nhìn rặng núi ngẩn ngơ nỗi nhà",
+            "en": "I gaze upon the mountain range, my heart heavy with longing for home.",
+            "augmented_index": 9,
+            "original_index": 50,
+            "scores": {
+                "bleurt": 0.6704,
+                "sacrebleu": 0.0346,
+                "bleu": 0.102
+            }
+        },
+        {
+            "vi": "chàng thì chạy cõi xa mưa gió",
+            "en": "He fled, a distant exile in wind and rain.",
+            "augmented_index": 10,
+            "original_index": 51,
+            "scores": {
+                "bleurt": 0.4164,
+                "sacrebleu": 0.1499,
+                "bleu": 0.2089
+            }
+        },
+        {
+            "vi": "cùng trông lại mà cùng chẳng thấy",
+            "en": "Together we look back, yet together see nothing.",
+            "augmented_index": 11,
+            "original_index": 59,
+            "scores": {
+                "bleurt": 0.7159,
+                "sacrebleu": 0.1255,
+                "bleu": 0.1951
+            }
+        },
+        {
+            "vi": "đêm trăng này nghỉ mát phương đâủ",
+            "en": "Upon this moonlit night, I find respite in distant lands.",
+            "augmented_index": 12,
+            "original_index": 64,
+            "scores": {
+                "bleurt": 0.594,
+                "sacrebleu": 0.1261,
+                "bleu": 0.1849
+            }
+        },
+        {
+            "vi": "nằm vùng cát trắng ngủ cồn rêu xanh",
+            "en": "Reclining upon the white sands, slumbering amidst the verdant moss.",
+            "augmented_index": 13,
+            "original_index": 70,
+            "scores": {
+                "bleurt": 0.6296,
+                "sacrebleu": 0.0805,
+                "bleu": 0.1443
+            }
+        },
+        {
+            "vi": "lòng nào là chẳng động lòng bi thương",
+            "en": "Whose heart remains untouched by sorrow?",
+            "augmented_index": 14,
+            "original_index": 86,
+            "scores": {
+                "bleurt": 0.4715,
+                "sacrebleu": 0.1018,
+                "bleu": 0.1315
+            }
+        },
+        {
+            "vi": "trong cửa này đã đành phận thiếp",
+            "en": "Within these doors, my fate is sealed.",
+            "augmented_index": 15,
+            "original_index": 111,
+            "scores": {
+                "bleurt": 0.5433,
+                "sacrebleu": 0.1015,
+                "bleu": 0.1528
+            }
+        },
+        {
+            "vi": "những mong cá nước cùng nhau",
+            "en": "That fish and water might be as one.",
+            "augmented_index": 16,
+            "original_index": 113,
+            "scores": {
+                "bleurt": 0.6185,
+                "sacrebleu": 0.1907,
+                "bleu": 0.2434
+            }
+        },
+        {
+            "vi": "suốt ngày trông nào thấy hơi tăm",
+            "en": "All day I watch, yet see no sign of him.",
+            "augmented_index": 17,
+            "original_index": 132,
+            "scores": {
+                "bleurt": 0.5821,
+                "sacrebleu": 0.0446,
+                "bleu": 0.1107
+            }
+        },
+        {
+            "vi": "hẹn nơi nao hán dương cầu nọ",
+            "en": "We shall meet again, by the Han River's ancient bridge.",
+            "augmented_index": 18,
+            "original_index": 135,
+            "scores": {
+                "bleurt": 0.5506,
+                "sacrebleu": 0.0479,
+                "bleu": 0.1173
+            }
+        },
+        {
+            "vi": "bức rèm thưa lần chuyển bóng dương",
+            "en": "The sheer curtain shifts, revealing the sun's gentle light.",
+            "augmented_index": 19,
+            "original_index": 144,
+            "scores": {
+                "bleurt": 0.5579,
+                "sacrebleu": 0.053,
+                "bleu": 0.1552
+            }
+        },
+        {
+            "vi": "lời sao mười hẹn chín thường đơn sai",
+            "en": "Promises whispered, nine times out of ten, prove false.",
+            "augmented_index": 20,
+            "original_index": 146,
+            "scores": {
+                "bleurt": 0.4661,
+                "sacrebleu": 0.1499,
+                "bleu": 0.219
+            }
+        },
+        {
+            "vi": "xót người lần lữa ải xa",
+            "en": "My heart aches for those who linger on distant passes.",
+            "augmented_index": 21,
+            "original_index": 149,
+            "scores": {
+                "bleurt": 0.6024,
+                "sacrebleu": 0.075,
+                "bleu": 0.1277
+            }
+        },
+        {
+            "vi": "nay một thân nuôi già dạy trẻ",
+            "en": "Now, I alone sustain the aged and nurture the young.",
+            "augmented_index": 22,
+            "original_index": 159,
+            "scores": {
+                "bleurt": 0.642,
+                "sacrebleu": 0.1102,
+                "bleu": 0.195
+            }
+        },
+        {
+            "vi": "nỗi quan hoài mang mẽ biết bao",
+            "en": "A burden of longing, immeasurable in its weight.",
+            "augmented_index": 23,
+            "original_index": 160,
+            "scores": {
+                "bleurt": 0.5924,
+                "sacrebleu": 0.0552,
+                "bleu": 0.1194
+            }
+        },
+        {
+            "vi": "mối lòng thêm nghìn vạn ngổn ngang",
+            "en": "My heart is burdened with myriad anxieties.",
+            "augmented_index": 24,
+            "original_index": 164,
+            "scores": {
+                "bleurt": 0.5799,
+                "sacrebleu": 0.0727,
+                "bleu": 0.1325
+            }
+        },
+        {
+            "vi": "xin chàng thấu hết tấm lòng tương tư",
+            "en": "May my ardent longing reach your heart.",
+            "augmented_index": 25,
+            "original_index": 170,
+            "scores": {
+                "bleurt": 0.6222,
+                "sacrebleu": 0.0566,
+                "bleu": 0.1032
+            }
+        },
+        {
+            "vi": "mối sầu dằng dặc bằng miền bể xa",
+            "en": "A boundless sorrow, vast as the distant ocean.",
+            "augmented_index": 26,
+            "original_index": 202,
+            "scores": {
+                "bleurt": 0.633,
+                "sacrebleu": 0.0929,
+                "bleu": 0.147
+            }
+        },
+        {
+            "vi": "lòng này gửi gió đông có tiện",
+            "en": "This heart I entrust to the east wind's conveyance.",
+            "augmented_index": 27,
+            "original_index": 207,
+            "scores": {
+                "bleurt": 0.5742,
+                "sacrebleu": 0.0739,
+                "bleu": 0.1845
+            }
+        },
+        {
+            "vi": "nhớ chàng thăm thẳm đường lên bằng trời",
+            "en": "I recall my beloved, the path to heaven stretching endlessly before me.",
+            "augmented_index": 28,
+            "original_index": 210,
+            "scores": {
+                "bleurt": 0.5796,
+                "sacrebleu": 0.0675,
+                "bleu": 0.1332
+            }
+        },
+        {
+            "vi": "trời thăm thẳm xa vời khôn thấu",
+            "en": "The heavens, fathomless and distant, transcend all comprehension.",
+            "augmented_index": 29,
+            "original_index": 211,
+            "scores": {
+                "bleurt": 0.5741,
+                "sacrebleu": 0.0493,
+                "bleu": 0.1147
+            }
+        },
+        {
+            "vi": "nỗi nhớ chàng đau đáu nào xong",
+            "en": "The ache of longing for my beloved, unending.",
+            "augmented_index": 30,
+            "original_index": 212,
+            "scores": {
+                "bleurt": 0.5612,
+                "sacrebleu": 0.0929,
+                "bleu": 0.147
+            }
+        },
+        {
+            "vi": "sương như búa bổ mòn gốc liễu",
+            "en": "The mist, like an axe, relentlessly wears away the willow's roots.",
+            "augmented_index": 31,
+            "original_index": 215,
+            "scores": {
+                "bleurt": 0.5752,
+                "sacrebleu": 0.0374,
+                "bleu": 0.102
+            }
+        },
+        {
+            "vi": "nguyệt lồng hoa hoa thắm từng bông",
+            "en": "The moon embraces blossoms, each bloom a vibrant hue.",
+            "augmented_index": 32,
+            "original_index": 224,
+            "scores": {
+                "bleurt": 0.5736,
+                "sacrebleu": 0.083,
+                "bleu": 0.1396
+            }
+        },
+        {
+            "vi": "trước hoa dưới nguyệt trong lòng xiết đâu",
+            "en": "Before blossoms, beneath the moon, my heart is constricted with longing.",
+            "augmented_index": 33,
+            "original_index": 226,
+            "scores": {
+                "bleurt": 0.5646,
+                "sacrebleu": 0.0675,
+                "bleu": 0.1332
+            }
+        },
+        {
+            "vi": "biếng cầm kim biếng đưa thoi",
+            "en": "Too weary to hold the needle, too languid to ply the shuttle.",
+            "augmented_index": 34,
+            "original_index": 229,
+            "scores": {
+                "bleurt": 0.4534,
+                "sacrebleu": 0.188,
+                "bleu": 0.2584
+            }
+        },
+        {
+            "vi": "sớm lại chiều dòi dõi nương song",
+            "en": "From dawn till dusk, I longingly gaze through the window pane.",
+            "augmented_index": 35,
+            "original_index": 232,
+            "scores": {
+                "bleurt": 0.5138,
+                "sacrebleu": 0.1573,
+                "bleu": 0.2332
+            }
+        },
+        {
+            "vi": "mượn hoa mượn rượu giải buồn",
+            "en": "Borrowing flowers, borrowing wine to dispel sorrow.",
+            "augmented_index": 36,
+            "original_index": 241,
+            "scores": {
+                "bleurt": 0.4261,
+                "sacrebleu": 0.1055,
+                "bleu": 0.1562
+            }
+        },
+        {
+            "vi": "vì chàng lệ thiếp nhỏ đôi",
+            "en": "For my beloved, my tears fall like a gentle rain.",
+            "augmented_index": 37,
+            "original_index": 253,
+            "scores": {
+                "bleurt": 0.5971,
+                "sacrebleu": 0.069,
+                "bleu": 0.1228
+            }
+        },
+        {
+            "vi": "vì chàng thân thiếp lẻ loi một bề",
+            "en": "For my beloved, I am utterly alone.",
+            "augmented_index": 38,
+            "original_index": 254,
+            "scores": {
+                "bleurt": 0.5658,
+                "sacrebleu": 0.0845,
+                "bleu": 0.1251
+            }
+        },
+        {
+            "vi": "lên cao mấy lúc trông vời bánh xe",
+            "en": "How many times, from heights, have I gazed upon the turning wheel?",
+            "augmented_index": 39,
+            "original_index": 270,
+            "scores": {
+                "bleurt": 0.553,
+                "sacrebleu": 0.0346,
+                "bleu": 0.102
+            }
+        },
+        {
+            "vi": "ngàn thông chen chúc cỏ lau",
+            "en": "A thousand pines jostle the reeds.",
+            "augmented_index": 40,
+            "original_index": 285,
+            "scores": {
+                "bleurt": 0.4854,
+                "sacrebleu": 0.1092,
+                "bleu": 0.1376
+            }
+        },
+        {
+            "vi": "lúc ngoảnh lại ngắm màu dương liễu",
+            "en": "As I turned, I beheld the willow's amber hue.",
+            "augmented_index": 41,
+            "original_index": 295,
+            "scores": {
+                "bleurt": 0.643,
+                "sacrebleu": 0.0446,
+                "bleu": 0.1335
+            }
+        },
+        {
+            "vi": "lòng chàng có cũng như lòng thiếp chăng",
+            "en": "Does your heart mirror mine, my beloved?",
+            "augmented_index": 42,
+            "original_index": 298,
+            "scores": {
+                "bleurt": 0.6195,
+                "sacrebleu": 0.0944,
+                "bleu": 0.1398
+            }
+        },
+        {
+            "vi": "lòng thiếp đâu dám nghĩ gần xa",
+            "en": "My heart, I dare not entertain thoughts of near or far.",
+            "augmented_index": 43,
+            "original_index": 300,
+            "scores": {
+                "bleurt": 0.5829,
+                "sacrebleu": 0.0777,
+                "bleu": 0.1483
+            }
+        },
+        {
+            "vi": "hướng dương lòng thiếp dường hoa",
+            "en": "My heart, like a sunflower, turns towards you.",
+            "augmented_index": 44,
+            "original_index": 301,
+            "scores": {
+                "bleurt": 0.6037,
+                "sacrebleu": 0.1659,
+                "bleu": 0.2337
+            }
+        },
+        {
+            "vi": "hoa vàng hoa rụng quanh tường",
+            "en": "Golden blossoms fall around the wall.",
+            "augmented_index": 45,
+            "original_index": 305,
+            "scores": {
+                "bleurt": 0.582,
+                "sacrebleu": 0.1837,
+                "bleu": 0.2111
+            }
+        },
+        {
+            "vi": "chồi lan nở trước sân đã hái",
+            "en": "The budding orchids in the courtyard have been plucked.",
+            "augmented_index": 46,
+            "original_index": 307,
+            "scores": {
+                "bleurt": 0.5941,
+                "sacrebleu": 0.0929,
+                "bleu": 0.1204
+            }
+        },
+        {
+            "vi": "mặt trăng tỏ thường soi bên gối",
+            "en": "The moon, ever bright, shines beside my pillow.",
+            "augmented_index": 47,
+            "original_index": 315,
+            "scores": {
+                "bleurt": 0.6862,
+                "sacrebleu": 0.1121,
+                "bleu": 0.1831
+            }
+        },
+        {
+            "vi": "thoi đưa ngày tháng ruổi mau",
+            "en": "Time's swift current sweeps the days and months away.",
+            "augmented_index": 48,
+            "original_index": 333,
+            "scores": {
+                "bleurt": 0.5382,
+                "sacrebleu": 0.1678,
+                "bleu": 0.2089
+            }
+        },
+        {
+            "vi": "nghĩ mệnh bạc tiếc niên hoa",
+            "en": "Reflecting on a cruel fate, I lament the fleeting years of youth.",
+            "augmented_index": 49,
+            "original_index": 345,
+            "scores": {
+                "bleurt": 0.5665,
+                "sacrebleu": 0.0374,
+                "bleu": 0.1045
+            }
+        },
+        {
+            "vi": "nọ loài chim chắp cánh cùng bay",
+            "en": "Then, the birds took flight together.",
+            "augmented_index": 50,
+            "original_index": 356,
+            "scores": {
+                "bleurt": 0.5693,
+                "sacrebleu": 0.0903,
+                "bleu": 0.1266
+            }
+        },
+        {
+            "vi": "chàng đi đâu cũng thấy thiếp bên",
+            "en": "Wherever you go, my presence attends you.",
+            "augmented_index": 51,
+            "original_index": 368,
+            "scores": {
+                "bleurt": 0.7301,
+                "sacrebleu": 0.1707,
+                "bleu": 0.2178
+            }
+        },
+        {
+            "vi": "thiếp chẳng dại như người tô phụ",
+            "en": "I am not so foolish as you presume.",
+            "augmented_index": 52,
+            "original_index": 391,
+            "scores": {
+                "bleurt": 0.4718,
+                "sacrebleu": 0.1787,
+                "bleu": 0.2264
+            }
+        }
+    ],
+    "processed_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        51,
+        52,
+        53,
+        54,
+        55,
+        56,
+        57,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63,
+        64,
+        65,
+        66,
+        67,
+        68,
+        69,
+        70,
+        71,
+        72,
+        73,
+        74,
+        75,
+        76,
+        77,
+        78,
+        79,
+        80,
+        81,
+        82,
+        83,
+        84,
+        85,
+        86,
+        87,
+        88,
+        89,
+        90,
+        91,
+        92,
+        93,
+        94,
+        95,
+        96,
+        97,
+        98,
+        99,
+        100,
+        101,
+        102,
+        103,
+        104,
+        105,
+        106,
+        107,
+        108,
+        109,
+        110,
+        111,
+        112,
+        113,
+        114,
+        115,
+        116,
+        117,
+        118,
+        119,
+        120,
+        121,
+        122,
+        123,
+        124,
+        125,
+        126,
+        127,
+        128,
+        129,
+        130,
+        131,
+        132,
+        133,
+        134,
+        135,
+        136,
+        137,
+        138,
+        139,
+        140,
+        141,
+        142,
+        143,
+        144,
+        145,
+        146,
+        147,
+        148,
+        149,
+        150,
+        151,
+        152,
+        153,
+        154,
+        155,
+        156,
+        157,
+        158,
+        159,
+        160,
+        161,
+        162,
+        163,
+        164,
+        165,
+        166,
+        167,
+        168,
+        169,
+        170,
+        171,
+        172,
+        173,
+        174,
+        175,
+        176,
+        177,
+        178,
+        179,
+        180,
+        181,
+        182,
+        183,
+        184,
+        185,
+        186,
+        187,
+        188,
+        189,
+        190,
+        191,
+        192,
+        193,
+        194,
+        195,
+        196,
+        197,
+        198,
+        199,
+        200,
+        201,
+        202,
+        203,
+        204,
+        205,
+        206,
+        207,
+        208,
+        209,
+        210,
+        211,
+        212,
+        213,
+        214,
+        215,
+        216,
+        217,
+        218,
+        219,
+        220,
+        221,
+        222,
+        223,
+        224,
+        225,
+        226,
+        227,
+        228,
+        229,
+        230,
+        231,
+        232,
+        233,
+        234,
+        235,
+        236,
+        237,
+        238,
+        239,
+        240,
+        241,
+        242,
+        243,
+        244,
+        245,
+        246,
+        247,
+        248,
+        249,
+        250,
+        251,
+        252,
+        253,
+        254,
+        255,
+        256,
+        257,
+        258,
+        259,
+        260,
+        261,
+        262,
+        263,
+        264,
+        265,
+        266,
+        267,
+        268,
+        269,
+        270,
+        271,
+        272,
+        273,
+        274,
+        275,
+        276,
+        277,
+        278,
+        279,
+        280,
+        281,
+        282,
+        283,
+        284,
+        285,
+        286,
+        287,
+        288,
+        289,
+        290,
+        291,
+        292,
+        293,
+        294,
+        295,
+        296,
+        297,
+        298,
+        299,
+        300,
+        301,
+        302,
+        303,
+        304,
+        305,
+        306,
+        307,
+        308,
+        309,
+        310,
+        311,
+        312,
+        313,
+        314,
+        315,
+        316,
+        317,
+        318,
+        319,
+        320,
+        321,
+        322,
+        323,
+        324,
+        325,
+        326,
+        327,
+        328,
+        329,
+        330,
+        331,
+        332,
+        333,
+        334,
+        335,
+        336,
+        337,
+        338,
+        339,
+        340,
+        341,
+        342,
+        343,
+        344,
+        345,
+        346,
+        347,
+        348,
+        349,
+        350,
+        351,
+        352,
+        353,
+        354,
+        355,
+        356,
+        357,
+        358,
+        359,
+        360,
+        361,
+        362,
+        363,
+        364,
+        365,
+        366,
+        367,
+        368,
+        369,
+        370,
+        371,
+        372,
+        373,
+        374,
+        375,
+        376,
+        377,
+        378,
+        379,
+        380,
+        381,
+        382,
+        383,
+        384,
+        385,
+        386,
+        387,
+        388,
+        389,
+        390,
+        391,
+        392,
+        393,
+        394,
+        395,
+        396,
+        397,
+        398,
+        399,
+        400,
+        401,
+        402,
+        403,
+        404,
+        405,
+        406,
+        407,
+        408,
+        409,
+        410
+    ]
+}
