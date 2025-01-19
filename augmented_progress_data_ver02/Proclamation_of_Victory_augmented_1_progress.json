@@ -1,0 +1,482 @@
+{
+    "file_name": "proclamation_of_victory.pdf",
+    "data": [
+        {
+            "vi": "Như nước Đại Việt ta từ trước, Vốn xưng nền văn hiến đã lâu, Núi sông bờ cỏi đã chia,",
+            "en": "As the great Vietnamese nation of old, long renowned for its cultured heritage, with mountains and rivers defining its borders,",
+            "augmented_index": 0,
+            "original_index": 1,
+            "scores": {
+                "bleurt": 0.6493,
+                "sacrebleu": 0.0848,
+                "bleu": 0.173
+            }
+        },
+        {
+            "vi": "Từ Triệu, Đinh, Lý, Trần bao đời xây nền độc lập",
+            "en": "From the Trieu, Dinh, Ly, and Tran dynasties, through countless generations, a foundation of independence was built.",
+            "augmented_index": 1,
+            "original_index": 3,
+            "scores": {
+                "bleurt": 0.6471,
+                "sacrebleu": 0.0285,
+                "bleu": 0.1232
+            }
+        },
+        {
+            "vi": "Cùng Hán, Đường, Tống, Nguyên mỗi bên hùng cứ một phương;",
+            "en": "Han, Tang, Song, and Yuan, each held dominion over a realm.",
+            "augmented_index": 2,
+            "original_index": 4,
+            "scores": {
+                "bleurt": 0.6357,
+                "sacrebleu": 0.2558,
+                "bleu": 0.3324
+            }
+        },
+        {
+            "vi": "Cho nên: Lưu Cung tham công nên thất bại; Triệu Tiết thích lớn phải tiêu vong;",
+            "en": "Therefore, Liu Gong, in his avarice for power, met with defeat; while Zhao Jie, in his lust for aggrandizement, suffered utter ruin.",
+            "augmented_index": 3,
+            "original_index": 6,
+            "scores": {
+                "bleurt": 0.645,
+                "sacrebleu": 0.0698,
+                "bleu": 0.1487
+            }
+        },
+        {
+            "vi": "Vừa rồi: Nhân họ Hồ chính sự phiền hà, Để trong nước lòng dân oán hận",
+            "en": "Lately, the Hồ regime's governance has wrought grievous hardship, leaving the populace steeped in resentment and discontent.",
+            "augmented_index": 4,
+            "original_index": 9,
+            "scores": {
+                "bleurt": 0.5814,
+                "sacrebleu": 0.1008,
+                "bleu": 0.1744
+            }
+        },
+        {
+            "vi": "Nướng dân đen trên ngọn lửa hung tàn, Vùi con đỏ xuống dưới hầm tai vạ",
+            "en": "The common folk are roasted on a pyre of savage fire;  Innocent babes are buried in the abyss of calamity.",
+            "augmented_index": 5,
+            "original_index": 12,
+            "scores": {
+                "bleurt": 0.6174,
+                "sacrebleu": 0.027,
+                "bleu": 0.1083
+            }
+        },
+        {
+            "vi": "Dối trời lừa dân đủ muôn ngàn kế",
+            "en": "Heaven is deceived, the people are beguiled by myriad stratagems.",
+            "augmented_index": 6,
+            "original_index": 13,
+            "scores": {
+                "bleurt": 0.5668,
+                "sacrebleu": 0.0429,
+                "bleu": 0.1119
+            }
+        },
+        {
+            "vi": "Người bị ép xuống biển dòng lưng mò ngọc, ngán thay cá mập thuồng luồng.",
+            "en": "Compelled to the ocean depths, they sought pearls upon their backs, alas, encountering the dread of sharks and crocodiles.",
+            "augmented_index": 7,
+            "original_index": 17,
+            "scores": {
+                "bleurt": 0.5582,
+                "sacrebleu": 0.0433,
+                "bleu": 0.1184
+            }
+        },
+        {
+            "vi": "Độc ác thay, trúc Nam Sơn không ghi hết tội,",
+            "en": "Alas, the bamboo of Nam Sơn could not record all the crimes.",
+            "augmented_index": 8,
+            "original_index": 25,
+            "scores": {
+                "bleurt": 0.5846,
+                "sacrebleu": 0.0714,
+                "bleu": 0.1425
+            }
+        },
+        {
+            "vi": "Quên ăn vì giận, sách lược thao suy xét đã tinh,",
+            "en": "Consumed by anger, I forgot to eat; yet, my strategic considerations were already refined.",
+            "augmented_index": 9,
+            "original_index": 32,
+            "scores": {
+                "bleurt": 0.603,
+                "sacrebleu": 0.1488,
+                "bleu": 0.2215
+            }
+        },
+        {
+            "vi": "Ngẫm trước đến nay, lẽ hưng phế đắn đo càng kỹ.",
+            "en": "Contemplating the rise and fall of ages past, I ponder the intricacies of fortune's capricious hand.",
+            "augmented_index": 10,
+            "original_index": 33,
+            "scores": {
+                "bleurt": 0.5176,
+                "sacrebleu": 0.2843,
+                "bleu": 0.3509
+            }
+        },
+        {
+            "vi": "Vừa khi cờ nghĩa dấy lên, Chính lúc quân thù đang mạnh.",
+            "en": "As the righteous banner was raised, so too did the enemy's might surge forth.",
+            "augmented_index": 11,
+            "original_index": 35,
+            "scores": {
+                "bleurt": 0.594,
+                "sacrebleu": 0.0298,
+                "bleu": 0.1075
+            }
+        },
+        {
+            "vi": "Lại ngặt vì: Tuấn kiệt như sao buổi sớm, Nhân tài như lá mùa thu,",
+            "en": "Alas, for the gifted are like the morning stars, and the talented, like autumn leaves.",
+            "augmented_index": 12,
+            "original_index": 36,
+            "scores": {
+                "bleurt": 0.561,
+                "sacrebleu": 0.1162,
+                "bleu": 0.1768
+            }
+        },
+        {
+            "vi": "Ta gắng trí khắc phục gian nan.",
+            "en": "I strive with resolute spirit to overcome adversity.",
+            "augmented_index": 13,
+            "original_index": 48,
+            "scores": {
+                "bleurt": 0.6054,
+                "sacrebleu": 0.0908,
+                "bleu": 0.1367
+            }
+        },
+        {
+            "vi": "Nhân dân bốn cỏi một nhà, dựng cần trúc ngọn cờ phấp phới",
+            "en": "The people of the four corners of the land, one family, raise aloft the bamboo pole, a fluttering banner.",
+            "augmented_index": 14,
+            "original_index": 49,
+            "scores": {
+                "bleurt": 0.5419,
+                "sacrebleu": 0.1938,
+                "bleu": 0.2765
+            }
+        },
+        {
+            "vi": "Lý An, Phương Chính, nín thở cầu thoát thân.",
+            "en": "Li An and Fang Zheng, holding their breaths, prayed for deliverance.",
+            "augmented_index": 15,
+            "original_index": 59,
+            "scores": {
+                "bleurt": 0.6806,
+                "sacrebleu": 0.3032,
+                "bleu": 0.3813
+            }
+        },
+        {
+            "vi": "Thừa thắng đuổi dài, Tây Kinh quân ta chiếm lại,",
+            "en": "Having achieved victory, we pursued the enemy relentlessly, reclaiming the Western Capital.",
+            "augmented_index": 16,
+            "original_index": 60,
+            "scores": {
+                "bleurt": 0.7022,
+                "sacrebleu": 0.2379,
+                "bleu": 0.3153
+            }
+        },
+        {
+            "vi": "Ninh Kiều máu chảy thành sông, tanh trôi vạn dặm",
+            "en": "Ninh Kiều's blood flowed like a river, its crimson taint drifting ten thousand leagues.",
+            "augmented_index": 17,
+            "original_index": 62,
+            "scores": {
+                "bleurt": 0.5468,
+                "sacrebleu": 0.2857,
+                "bleu": 0.3893
+            }
+        },
+        {
+            "vi": "Đinh mùi tháng chín, Liễu Thăng đem binh từ Khâu Ôn kéo lại",
+            "en": "In the ninth month of the Đinh Mùi year, Liễu Thăng led his troops from Khâu Ôn, advancing southward.",
+            "augmented_index": 18,
+            "original_index": 76,
+            "scores": {
+                "bleurt": 0.4724,
+                "sacrebleu": 0.2227,
+                "bleu": 0.3093
+            }
+        },
+        {
+            "vi": "Năm ấy tháng mười, Mộc Thạnh chia đường từ Vân Nam tiến sang.",
+            "en": "In the tenth month of that year, Mộc Thạnh parted ways from Yunnan and proceeded onward.",
+            "augmented_index": 19,
+            "original_index": 77,
+            "scores": {
+                "bleurt": 0.6032,
+                "sacrebleu": 0.2503,
+                "bleu": 0.3303
+            }
+        },
+        {
+            "vi": "Ngày hai mươi, trận Mã Yên, Liễu Thăng cụt đầu",
+            "en": "On the twentieth day, at the battle of Mã Yên, Liễu Thăng met his end.",
+            "augmented_index": 20,
+            "original_index": 81,
+            "scores": {
+                "bleurt": 0.5442,
+                "sacrebleu": 0.1131,
+                "bleu": 0.1928
+            }
+        },
+        {
+            "vi": "Ngày hăm lăm, bá tước Lương Minh đại bại tử vong",
+            "en": "On the twenty-fifth day, Count Lương Minh met with utter defeat and perished.",
+            "augmented_index": 21,
+            "original_index": 82,
+            "scores": {
+                "bleurt": 0.6023,
+                "sacrebleu": 0.1111,
+                "bleu": 0.1783
+            }
+        },
+        {
+            "vi": "Ngày hăm tám, thượng thư Lý Khánh cùng kế tự vẫn.",
+            "en": "On the twenty-eighth day, Minister Lý Khánh and his heir apparent passed away.",
+            "augmented_index": 22,
+            "original_index": 83,
+            "scores": {
+                "bleurt": 0.4272,
+                "sacrebleu": 0.1054,
+                "bleu": 0.1647
+            }
+        },
+        {
+            "vi": "Lạng Giang, Lạng Sơn, thây chất đầy đường",
+            "en": "Lạng Giang, Lạng Sơn, the roads are choked with the fallen.",
+            "augmented_index": 23,
+            "original_index": 95,
+            "scores": {
+                "bleurt": 0.5518,
+                "sacrebleu": 0.1391,
+                "bleu": 0.2112
+            }
+        },
+        {
+            "vi": "Xương Giang, Bình Than, máu trôi đỏ nước",
+            "en": "At Xương Giang, at Bình Than, blood stained the waters crimson.",
+            "augmented_index": 24,
+            "original_index": 96,
+            "scores": {
+                "bleurt": 0.5534,
+                "sacrebleu": 0.191,
+                "bleu": 0.2736
+            }
+        },
+        {
+            "vi": "Thảm đạm thay! Ánh nhật nguyệt phải mờ",
+            "en": "Alas, how desolate!  Even sun and moon seem dimmed.",
+            "augmented_index": 25,
+            "original_index": 98,
+            "scores": {
+                "bleurt": 0.6549,
+                "sacrebleu": 0.0506,
+                "bleu": 0.1322
+            }
+        },
+        {
+            "vi": "Nghe Thăng thua ở Cần Trạm, quân Mộc Thạnh xéo lên nhau chạy để thoát thân.",
+            "en": "Upon hearing of Thăng's defeat at Cần Trạm, the Mộc Thạnh troops scattered in panicked flight for their lives.",
+            "augmented_index": 26,
+            "original_index": 100,
+            "scores": {
+                "bleurt": 0.4551,
+                "sacrebleu": 0.1258,
+                "bleu": 0.2024
+            }
+        },
+        {
+            "vi": "Thành Đan Xá, thây chất thành núi, cỏ nội đầm đìa máu đen.",
+            "en": "At Dan Xá Citadel, corpses piled high as mountains; the native grasses were sodden with dark blood.",
+            "augmented_index": 27,
+            "original_index": 102,
+            "scores": {
+                "bleurt": 0.6537,
+                "sacrebleu": 0.048,
+                "bleu": 0.1253
+            }
+        },
+        {
+            "vi": "Tướng giặc bị cầm tù, như hổ đói vẫy đuôi xin cứu mạng",
+            "en": "The enemy general, a captive, like a famished tiger, wagged his tail in supplication for his life.",
+            "augmented_index": 28,
+            "original_index": 105,
+            "scores": {
+                "bleurt": 0.5524,
+                "sacrebleu": 0.0272,
+                "bleu": 0.1041
+            }
+        },
+        {
+            "vi": "Vương Thông, Mã Anh, phát cho vài nghìn cỗ ngựa, về đến nước mà vẫn tim đập chân run.",
+            "en": "Vương Thông and Mã Anh, though granted several thousand steeds for their retreat, returned to their homeland with hearts still pounding and limbs still trembling.",
+            "augmented_index": 29,
+            "original_index": 108,
+            "scores": {
+                "bleurt": 0.5972,
+                "sacrebleu": 0.0664,
+                "bleu": 0.1483
+            }
+        },
+        {
+            "vi": "Họ đã tham sống sợ chết mà hoà hiếu thực lòng",
+            "en": "They, driven by a desire for life and an aversion to death, made peace with genuine sincerity.",
+            "augmented_index": 30,
+            "original_index": 109,
+            "scores": {
+                "bleurt": 0.6457,
+                "sacrebleu": 0.0644,
+                "bleu": 0.1497
+            }
+        },
+        {
+            "vi": "Âu cũng nhờ trời đất tổ tông linh thiêng đã lặng thầm phù trợ;",
+            "en": "Indeed, it was thanks to the celestial and terrestrial powers, and the sacred spirits of our ancestors, who silently offered their benevolent aid.",
+            "augmented_index": 31,
+            "original_index": 118,
+            "scores": {
+                "bleurt": 0.6227,
+                "sacrebleu": 0.038,
+                "bleu": 0.1154
+            }
+        }
+    ],
+    "processed_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        51,
+        52,
+        53,
+        54,
+        55,
+        56,
+        57,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63,
+        64,
+        65,
+        66,
+        67,
+        68,
+        69,
+        70,
+        71,
+        72,
+        73,
+        74,
+        75,
+        76,
+        77,
+        78,
+        79,
+        80,
+        81,
+        82,
+        83,
+        84,
+        85,
+        86,
+        87,
+        88,
+        89,
+        90,
+        91,
+        92,
+        93,
+        94,
+        95,
+        96,
+        97,
+        98,
+        99,
+        100,
+        101,
+        102,
+        103,
+        104,
+        105,
+        106,
+        107,
+        108,
+        109,
+        110,
+        111,
+        112,
+        113,
+        114,
+        115,
+        116,
+        117,
+        118,
+        119,
+        120,
+        121,
+        122
+    ]
+}

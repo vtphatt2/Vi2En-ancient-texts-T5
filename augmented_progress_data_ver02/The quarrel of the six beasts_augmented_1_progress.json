@@ -1,0 +1,38 @@
+{
+    "file_name": "The quarrel of the six beasts",
+    "data": [
+        {
+            "vi": "Trời hoá sanh muôn vật",
+            "en": "Heaven engendered all things.",
+            "augmented_index": 0,
+            "original_index": 1,
+            "scores": {
+                "bleurt": 0.6097,
+                "sacrebleu": 0.2364,
+                "bleu": 0.236
+            }
+        },
+        {
+            "vi": "Đất dong dưỡng mọi loài",
+            "en": "The earth nourishes all beings.",
+            "augmented_index": 1,
+            "original_index": 2,
+            "scores": {
+                "bleurt": 0.7566,
+                "sacrebleu": 0.0965,
+                "bleu": 0.1331
+            }
+        }
+    ],
+    "processed_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+    ]
+}
