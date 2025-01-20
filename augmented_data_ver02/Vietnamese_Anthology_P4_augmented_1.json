@@ -1,0 +1,126 @@
+{
+    "file_name": "Vietnamese_Anthology_P4",
+    "data": [
+        {
+            "vi": "Con đường làm quan",
+            "en": "The Path of Officialdom",
+            "augmented_index": 0,
+            "original_index": 9,
+            "scores": {
+                "bleurt": 0.5283,
+                "sacrebleu": 0.1597,
+                "bleu": 0.1395
+            }
+        },
+        {
+            "vi": "Chạy giặc",
+            "en": "Fleeing the Enemy",
+            "augmented_index": 1,
+            "original_index": 18,
+            "scores": {
+                "bleurt": 0.5677,
+                "sacrebleu": 0.0,
+                "bleu": 0.1559
+            }
+        },
+        {
+            "vi": "Nỡ để dân đen mắc nạn này?",
+            "en": "Can we bear to let the common people suffer this plight?",
+            "augmented_index": 2,
+            "original_index": 26,
+            "scores": {
+                "bleurt": 0.6008,
+                "sacrebleu": 0.0891,
+                "bleu": 0.166
+            }
+        },
+        {
+            "vi": "Điếu Trương Định",
+            "en": "Elegy for Trương Định",
+            "augmented_index": 3,
+            "original_index": 36,
+            "scores": {
+                "bleurt": 0.805,
+                "sacrebleu": 0.3195,
+                "bleu": 0.2585
+            }
+        },
+        {
+            "vi": "Ngàn bận chi sờn thân gió bụi,",
+            "en": "A thousand times worn by wind and dust,",
+            "augmented_index": 4,
+            "original_index": 48,
+            "scores": {
+                "bleurt": 0.4072,
+                "sacrebleu": 0.1527,
+                "bleu": 0.1949
+            }
+        },
+        {
+            "vi": "Con muỗi",
+            "en": "The Mosquito",
+            "augmented_index": 5,
+            "original_index": 54,
+            "scores": {
+                "bleurt": 0.8563,
+                "sacrebleu": 0.0,
+                "bleu": 0.1676
+            }
+        },
+        {
+            "vi": "Muỗi hỡi thân ngươi sướng mọi điều,",
+            "en": "O mosquito, fortunate in all things,",
+            "augmented_index": 6,
+            "original_index": 55,
+            "scores": {
+                "bleurt": 0.6045,
+                "sacrebleu": 0.0566,
+                "bleu": 0.1032
+            }
+        },
+        {
+            "vi": "Con tôm",
+            "en": "The Shrimp",
+            "augmented_index": 7,
+            "original_index": 81,
+            "scores": {
+                "bleurt": 0.7307,
+                "sacrebleu": 0.0,
+                "bleu": 0.1676
+            }
+        },
+        {
+            "vi": "Tan tành xương thịt biết bao nhiêu!",
+            "en": "My flesh and bones are utterly shattered.",
+            "augmented_index": 8,
+            "original_index": 94,
+            "scores": {
+                "bleurt": 0.7236,
+                "sacrebleu": 0.1949,
+                "bleu": 0.2366
+            }
+        },
+        {
+            "vi": "Hễ mai tớ hỏng",
+            "en": "Should I fail tomorrow.",
+            "augmented_index": 9,
+            "original_index": 95,
+            "scores": {
+                "bleurt": 0.8014,
+                "sacrebleu": 0.2136,
+                "bleu": 0.2092
+            }
+        },
+        {
+            "vi": "Mình không phú quí, mắt không vương hầu.",
+            "en": "I possess neither wealth nor power, nor do my eyes behold the grandeur of princes.",
+            "augmented_index": 10,
+            "original_index": 110,
+            "scores": {
+                "bleurt": 0.5742,
+                "sacrebleu": 0.0323,
+                "bleu": 0.1054
+            }
+        }
+    ]
+}

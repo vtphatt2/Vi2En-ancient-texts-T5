@@ -1,0 +1,115 @@
+{
+    "file_name": "Vietnamese_Anthology_P3",
+    "data": [
+        {
+            "vi": "Cho khuây khoả dạ kẻo mơ mẩn tình.",
+            "en": "To soothe the weary heart and quiet restless longing.",
+            "augmented_index": 0,
+            "original_index": 5,
+            "scores": {
+                "bleurt": 0.609,
+                "sacrebleu": 0.0552,
+                "bleu": 0.1194
+            }
+        },
+        {
+            "vi": "Lạ đường chuột cái sa ao,",
+            "en": "A field mouse, astray, fell into a pond.",
+            "augmented_index": 1,
+            "original_index": 80,
+            "scores": {
+                "bleurt": 0.4021,
+                "sacrebleu": 0.2346,
+                "bleu": 0.3025
+            }
+        },
+        {
+            "vi": "Trên bờ mèo chực, những mong ra chào.",
+            "en": "Upon the shore, the cat waits, yearning for a greeting.",
+            "augmented_index": 2,
+            "original_index": 87,
+            "scores": {
+                "bleurt": 0.6135,
+                "sacrebleu": 0.214,
+                "bleu": 0.2858
+            }
+        },
+        {
+            "vi": "Cúi đầu mà lạy khoan khoan trình bày:",
+            "en": "With bowed head, I humbly submit my plea:",
+            "augmented_index": 3,
+            "original_index": 91,
+            "scores": {
+                "bleurt": 0.6185,
+                "sacrebleu": 0.1519,
+                "bleu": 0.2029
+            }
+        },
+        {
+            "vi": "Hẳn cơ tạo hoá quên đâu kẻ hiền.”",
+            "en": "Surely Heaven forgets not the virtuous.",
+            "augmented_index": 4,
+            "original_index": 97,
+            "scores": {
+                "bleurt": 0.7041,
+                "sacrebleu": 0.0698,
+                "bleu": 0.1205
+            }
+        },
+        {
+            "vi": "Liệu về nói dỗ chồng nguôi thì là.",
+            "en": "Let us return and gently persuade him to calm his anger.",
+            "augmented_index": 5,
+            "original_index": 127,
+            "scores": {
+                "bleurt": 0.7231,
+                "sacrebleu": 0.2346,
+                "bleu": 0.3059
+            }
+        },
+        {
+            "vi": "Trót đà cùng chiếu cùng chăn,",
+            "en": "Having shared the same mat, the same bedding,",
+            "augmented_index": 6,
+            "original_index": 136,
+            "scores": {
+                "bleurt": 0.5659,
+                "sacrebleu": 0.0929,
+                "bleu": 0.147
+            }
+        },
+        {
+            "vi": "Hãy xem sứa vượt được nào qua đăng.",
+            "en": "Let us observe whether the jellyfish can surmount the barrier.",
+            "augmented_index": 7,
+            "original_index": 157,
+            "scores": {
+                "bleurt": 0.6432,
+                "sacrebleu": 0.083,
+                "bleu": 0.1396
+            }
+        },
+        {
+            "vi": "Tuy người chẳng biết nhưng trời đã hay.",
+            "en": "Though unknown to man, Heaven is aware.",
+            "augmented_index": 8,
+            "original_index": 175,
+            "scores": {
+                "bleurt": 0.8332,
+                "sacrebleu": 0.0627,
+                "bleu": 0.1252
+            }
+        },
+        {
+            "vi": "Dẫu rằng đá lở non mòn,",
+            "en": "Though mountains crumble and hills erode,",
+            "augmented_index": 9,
+            "original_index": 188,
+            "scores": {
+                "bleurt": 0.6657,
+                "sacrebleu": 0.0605,
+                "bleu": 0.1045
+            }
+        }
+    ]
+}

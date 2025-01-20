@@ -1,0 +1,82 @@
+{
+    "file_name": "Vietnamese_Anthology_P5",
+    "data": [
+        {
+            "vi": "Tài giỏi vì chưng tay có súng;",
+            "en": "Skill and prowess are born from the weapon held in hand.",
+            "augmented_index": 0,
+            "original_index": 12,
+            "scores": {
+                "bleurt": 0.4976,
+                "sacrebleu": 0.1261,
+                "bleu": 0.1849
+            }
+        },
+        {
+            "vi": "Trời đương xoay tít, người đương ngủ;",
+            "en": "The heavens whirl ceaselessly, while mortals slumber.",
+            "augmented_index": 1,
+            "original_index": 14,
+            "scores": {
+                "bleurt": 0.6406,
+                "sacrebleu": 0.0567,
+                "bleu": 0.1108
+            }
+        },
+        {
+            "vi": "Tù hai ba lượt còn ham sống;",
+            "en": "Twice or thrice imprisoned, yet still clinging to life.",
+            "augmented_index": 2,
+            "original_index": 18,
+            "scores": {
+                "bleurt": 0.5673,
+                "sacrebleu": 0.0891,
+                "bleu": 0.1515
+            }
+        },
+        {
+            "vi": "Cô khóc cậu",
+            "en": "She wept for him.",
+            "augmented_index": 3,
+            "original_index": 25,
+            "scores": {
+                "bleurt": 0.6067,
+                "sacrebleu": 0.127,
+                "bleu": 0.1473
+            }
+        },
+        {
+            "vi": "Mây mịt mờ xanh trời vẫn hắc,",
+            "en": "Clouds, dimly veiled in blue, yet darkly loom.",
+            "augmented_index": 4,
+            "original_index": 28,
+            "scores": {
+                "bleurt": 0.5571,
+                "sacrebleu": 0.0446,
+                "bleu": 0.1029
+            }
+        },
+        {
+            "vi": "Một tấm lòng son, sắt với đinh.",
+            "en": "A heart of unwavering loyalty, steadfast as iron and nail.",
+            "augmented_index": 5,
+            "original_index": 40,
+            "scores": {
+                "bleurt": 0.5875,
+                "sacrebleu": 0.0506,
+                "bleu": 0.1322
+            }
+        },
+        {
+            "vi": "Mình hỡi! Mình đừng buồn bã quá,",
+            "en": "My dearest, do not succumb to such profound sorrow.",
+            "augmented_index": 6,
+            "original_index": 49,
+            "scores": {
+                "bleurt": 0.6716,
+                "sacrebleu": 0.0446,
+                "bleu": 0.1029
+            }
+        }
+    ]
+}

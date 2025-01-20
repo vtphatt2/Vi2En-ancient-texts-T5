@@ -14,11 +14,11 @@
         },
         {
             "vi": "Bóng trăng hiện ra ở không trung,",
-            "en": "The moon's silhouette emerged in the heavens.",
+            "en": "The moon's shadow appeared in the heavens.",
             "augmented_index": 1,
             "original_index": 2,
             "scores": {
-                "bleurt": 0.6504,
+                "bleurt": 0.5804,
                 "sacrebleu": 0.1222,
                 "bleu": 0.1953
             }
@@ -47,13 +47,13 @@
         },
         {
             "vi": "Khi thanh nhàn, ta cũng vui với tính tự nhiên của ta.",
-            "en": "In moments of tranquility, I find contentment in my inherent nature.",
+            "en": "In moments of tranquility, I find contentment in my innate disposition.",
             "augmented_index": 4,
             "original_index": 5,
             "scores": {
-                "bleurt": 0.6551,
-                "sacrebleu": 0.0924,
-                "bleu": 0.1649
+                "bleurt": 0.5897,
+                "sacrebleu": 0.0735,
+                "bleu": 0.1383
             }
         },
         {
@@ -69,11 +69,11 @@
         },
         {
             "vi": "Ban đêm thả thuyền nơi ghềnh câu, trăng đầy thuyền",
-            "en": "At night, I cast my boat upon the rocky stream, the moon brimming within.",
+            "en": "At night, I cast my boat upon the rocky shore, the moon brimming within.",
             "augmented_index": 6,
             "original_index": 7,
             "scores": {
-                "bleurt": 0.6026,
+                "bleurt": 0.5929,
                 "sacrebleu": 0.1052,
                 "bleu": 0.1805
             }
@@ -113,11 +113,11 @@
         },
         {
             "vi": "Cái én trên lầu đã bay sang nhà ai bên cạnh.",
-            "en": "The swallow from the upper storey has flown to another dwelling nearby.",
+            "en": "The swallow from the upper storey has flown to another nearby dwelling.",
             "augmented_index": 10,
             "original_index": 15,
             "scores": {
-                "bleurt": 0.7261,
+                "bleurt": 0.7228,
                 "sacrebleu": 0.0462,
                 "bleu": 0.1272
             }
@@ -146,13 +146,13 @@
         },
         {
             "vi": "Mưa xuống hoa bên khe, màu hồng thành nhợt nhạt,",
-            "en": "Rain falls on the blossoms by the ravine, their crimson fading to pale.",
+            "en": "Rain falls on the blossoms by the ravine, their crimson fading to pale blush.",
             "augmented_index": 13,
             "original_index": 26,
             "scores": {
-                "bleurt": 0.5908,
-                "sacrebleu": 0.0978,
-                "bleu": 0.1918
+                "bleurt": 0.566,
+                "sacrebleu": 0.091,
+                "bleu": 0.1838
             }
         },
         {
@@ -167,9 +167,20 @@
             }
         },
         {
+            "vi": "Một dòng sông lặng gió, mặt nước sông gợn sóng.",
+            "en": "A river, stilled by a windless calm, its surface stirred by gentle ripples.",
+            "augmented_index": 15,
+            "original_index": 29,
+            "scores": {
+                "bleurt": 0.5755,
+                "sacrebleu": 0.0644,
+                "bleu": 0.1411
+            }
+        },
+        {
             "vi": "Ngồi trên ghế trước cửa sổ hướng nam nghe chim hót,",
             "en": "Seated upon a chair before the south-facing window, I listen to the birdsong.",
-            "augmented_index": 15,
+            "augmented_index": 16,
             "original_index": 30,
             "scores": {
                 "bleurt": 0.7176,
@@ -179,19 +190,19 @@
         },
         {
             "vi": "Xưa qua nay lại, cuộc sống tựa như sống gửi,",
-            "en": "From ages past to the present, life is but a transient sojourn.",
-            "augmented_index": 16,
+            "en": "From ages past to the present day, life is but a transient sojourn.",
+            "augmented_index": 17,
             "original_index": 32,
             "scores": {
-                "bleurt": 0.5679,
-                "sacrebleu": 0.0714,
-                "bleu": 0.1425
+                "bleurt": 0.581,
+                "sacrebleu": 0.0661,
+                "bleu": 0.1374
             }
         },
         {
             "vi": "Một đồng cũng xẻn tiếc không cho.",
             "en": "Not even a single coin would be spared.",
-            "augmented_index": 17,
+            "augmented_index": 18,
             "original_index": 46,
             "scores": {
                 "bleurt": 0.547,
@@ -202,7 +213,7 @@
         {
             "vi": "Một bát gạo cũng chẳng bố thí.",
             "en": "Not even a bowl of rice would be given in charity.",
-            "augmented_index": 18,
+            "augmented_index": 19,
             "original_index": 48,
             "scores": {
                 "bleurt": 0.6398,
@@ -211,9 +222,20 @@
             }
         },
         {
+            "vi": "Thấy người đi đường ngủ đêm ngoài sương móc",
+            "en": "Witnessing wayfarers slumbering beneath the night's chilling mist.",
+            "augmented_index": 20,
+            "original_index": 49,
+            "scores": {
+                "bleurt": 0.6,
+                "sacrebleu": 0.0427,
+                "bleu": 0.1339
+            }
+        },
+        {
             "vi": "Đầu mối đức thiện",
             "en": "The Wellspring of Virtue",
-            "augmented_index": 19,
+            "augmented_index": 21,
             "original_index": 53,
             "scores": {
                 "bleurt": 0.5235,
@@ -224,7 +246,7 @@
         {
             "vi": "Nghĩa ở chỗ này.",
             "en": "The import lies herein.",
-            "augmented_index": 20,
+            "augmented_index": 22,
             "original_index": 55,
             "scores": {
                 "bleurt": 0.5734,
@@ -235,7 +257,7 @@
         {
             "vi": "Biết dựng thì yên định",
             "en": "Knowing how to build ensures stability.",
-            "augmented_index": 21,
+            "augmented_index": 23,
             "original_index": 59,
             "scores": {
                 "bleurt": 0.4047,
@@ -244,9 +266,20 @@
             }
         },
         {
+            "vi": "Không nghỉ hoặc bởi ngã rẽ khác",
+            "en": "Without respite, or by another path.",
+            "augmented_index": 24,
+            "original_index": 61,
+            "scores": {
+                "bleurt": 0.5939,
+                "sacrebleu": 0.2056,
+                "bleu": 0.2505
+            }
+        },
+        {
             "vi": "Lẽ trời đất, hiểu được từ trong yên lặng,",
             "en": "The way of Heaven and Earth, understood in tranquil silence,",
-            "augmented_index": 22,
+            "augmented_index": 25,
             "original_index": 64,
             "scores": {
                 "bleurt": 0.6513,
@@ -257,7 +290,7 @@
         {
             "vi": "Từ xưa đến nay, cảnh nhàn là điều sở đắc.",
             "en": "Since time immemorial, tranquility has been the most cherished attainment.",
-            "augmented_index": 23,
+            "augmented_index": 26,
             "original_index": 65,
             "scores": {
                 "bleurt": 0.5881,
@@ -268,7 +301,7 @@
         {
             "vi": "Không gì hiểm hóc bằng đường đời,",
             "en": "No path is more treacherous than the path of life.",
-            "augmented_index": 24,
+            "augmented_index": 27,
             "original_index": 66,
             "scores": {
                 "bleurt": 0.69,
@@ -279,7 +312,7 @@
         {
             "vi": "Nếu không cắt dọn thì thành gai góc.",
             "en": "Untended, it will become overgrown and thorny.",
-            "augmented_index": 25,
+            "augmented_index": 28,
             "original_index": 67,
             "scores": {
                 "bleurt": 0.5129,
@@ -290,7 +323,7 @@
         {
             "vi": "Không gì chênh vênh bằng lòng người,",
             "en": "Nothing is more precarious than the human heart.",
-            "augmented_index": 26,
+            "augmented_index": 29,
             "original_index": 68,
             "scores": {
                 "bleurt": 0.8067,
@@ -301,7 +334,7 @@
         {
             "vi": "Được hay mất, xem ra đều có số mệnh cả",
             "en": "Gain or loss, it seems, are both preordained.",
-            "augmented_index": 27,
+            "augmented_index": 30,
             "original_index": 71,
             "scores": {
                 "bleurt": 0.5889,
@@ -312,7 +345,7 @@
         {
             "vi": "Các bậc thánh hiền theo phận mình, há lo nghèo khó",
             "en": "The sages and worthies, each in their appointed station, surely do not fret over poverty.",
-            "augmented_index": 28,
+            "augmented_index": 31,
             "original_index": 72,
             "scores": {
                 "bleurt": 0.5599,
@@ -321,20 +354,31 @@
             }
         },
         {
+            "vi": "Hãy sống an nhàn như ông tiên giữa cõi trần",
+            "en": "Let us dwell in tranquil ease, like immortals amidst the mortal realm.",
+            "augmented_index": 32,
+            "original_index": 74,
+            "scores": {
+                "bleurt": 0.6004,
+                "sacrebleu": 0.0374,
+                "bleu": 0.1045
+            }
+        },
+        {
             "vi": "Ai biết sau cảnh tiêu sơ như mùa thu mùa đông",
-            "en": "Who knows what lies beyond this fleeting scene, like autumn's and winter's transient grace?",
-            "augmented_index": 29,
+            "en": "Who knows what lies beyond this fleeting scene, ephemeral as autumn and winter?",
+            "augmented_index": 33,
             "original_index": 75,
             "scores": {
-                "bleurt": 0.5613,
-                "sacrebleu": 0.0582,
-                "bleu": 0.1328
+                "bleurt": 0.6034,
+                "sacrebleu": 0.0823,
+                "bleu": 0.1603
             }
         },
         {
             "vi": "Mọi người đều khéo, riêng ta thì vụng",
             "en": "All possess dexterity, I alone am inept.",
-            "augmented_index": 30,
+            "augmented_index": 34,
             "original_index": 82,
             "scores": {
                 "bleurt": 0.567,
@@ -345,7 +389,7 @@
         {
             "vi": "Trăng sáng ngời ngời, khiến lĩnh hội được đạo tâm",
             "en": "The radiant moon illuminates, fostering the attainment of spiritual enlightenment.",
-            "augmented_index": 31,
+            "augmented_index": 35,
             "original_index": 87,
             "scores": {
                 "bleurt": 0.6291,
