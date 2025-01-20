@@ -35,5 +35,7 @@ def count_augmented_lines(folder_dir: str):
     print(f"Total augmented lines: {sum(results.values())}")
 
 if __name__ == "__main__":
-    FOLDER_DIR = "augmented_progress_data"
-    count_augmented_lines(FOLDER_DIR)
+    # FOLDER_DIR = "augmented_data_ver01"
+    # count_augmented_lines(FOLDER_DIR)
+    count_augmented_lines("augmented_data_ver01")
+    count_augmented_lines("augmented_data_ver02")

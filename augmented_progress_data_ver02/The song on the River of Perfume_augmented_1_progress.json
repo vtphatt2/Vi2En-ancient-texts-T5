@@ -143,6 +143,17 @@
                 "sacrebleu": 0.0864,
                 "bleu": 0.1206
             }
+        },
+        {
+            "vi": "Cô thôi sống kiếp đày thân giang hồ",
+            "en": "She ceased her life of wandering hardship.",
+            "augmented_index": 13,
+            "original_index": 24,
+            "scores": {
+                "bleurt": 0.5485,
+                "sacrebleu": 0.1313,
+                "bleu": 0.1626
+            }
         }
     ],
     "processed_indices": [
@@ -174,6 +185,7 @@
         26,
         27,
         28,
-        29
+        29,
+        24
     ]
 }
