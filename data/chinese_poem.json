@@ -1,5 +1,5 @@
 {
-  "file_name": "chinese_poem.pdf",
+  "file_name": "chinese_poempdf",
   "data": [
     {
       "id": 0,
@@ -9,7 +9,7 @@
     {
       "id": 1,
       "vi": "Có miệng không ăn rau ở núi Thú Dương",
-      "en": "Nor die of hunger like famous hermits on the Pike!"
+      "en": "Nor die of hunger like famous hermits on the Pike"
     },
     {
       "id": 2,
@@ -29,7 +29,7 @@
     {
       "id": 5,
       "vi": "Thành công rồi mà không chịu thoái thân, đều bị tổn thân",
-      "en": "But came to tragic ending after glory's won."
+      "en": "But came to tragic ending after glory's won"
     },
     {
       "id": 6,
@@ -39,7 +39,7 @@
     {
       "id": 7,
       "vi": "Khuất Nguyên thì đâm đầu xuống bến sông Tương tự vẫn",
-      "en": "In the river was drowned the poet laureate."
+      "en": "In the river was drowned the poet laureate"
     },
     {
       "id": 8,
@@ -49,7 +49,7 @@
     {
       "id": 9,
       "vi": "Lý Tư hào phú một thời không chịu bỏ quan sớm",
-      "en": "To preserve his life to hear the cry of the crane."
+      "en": "To preserve his life to hear the cry of the crane"
     },
     {
       "id": 10,
@@ -59,7 +59,7 @@
     {
       "id": 11,
       "vi": "Chim ưng trên tay đi săn ở Thượng Thái còn gì để nói",
-      "en": "To hunt with falcon gray as he had long desired."
+      "en": "To hunt with falcon gray as he had long desired"
     },
     {
       "id": 12,
@@ -74,12 +74,12 @@
     {
       "id": 14,
       "vi": "Cứ vui ly rượu trước mắt lúc đang sống",
-      "en": "Enjoy a cup of wine while you're alive!"
+      "en": "Enjoy a cup of wine while you're alive"
     },
     {
       "id": 15,
       "vi": "Cần gì lo đến thanh danh ngàn năm sau",
-      "en": "Do not care if your fame will not survive!"
+      "en": "Do not care if your fame will not survive"
     },
     {
       "id": 16,
@@ -88,7 +88,7 @@
     },
     {
       "id": 17,
-      "vi": "Gió xuân thổi nhẹ qua hiên, hơi sương đẫm.",
+      "vi": "Gió xuân thổi nhẹ qua hiên, hơi sương đẫm",
       "en": "Her balcony, glimmering with the bright spring dew,"
     },
     {
@@ -98,8 +98,8 @@
     },
     {
       "id": 19,
-      "vi": "Thì cũng là thấy ở dưới trăng chốn Dao Đài.",
-      "en": "Or a moon- edged roof of paradise."
+      "vi": "Thì cũng là thấy ở dưới trăng chốn Dao Đài",
+      "en": "Or a moon- edged roof of paradise"
     },
     {
       "id": 20,
@@ -109,17 +109,17 @@
     {
       "id": 21,
       "vi": "Người khách ham chơi lâu ngày không thấy tới",
-      "en": "May, like a wanderer, never come back...."
+      "en": "May, like a wanderer, never come back"
     },
     {
       "id": 22,
       "vi": "Ba hôm nay nằm mộng thấy bạn",
-      "en": "Three nights now I have dreamed of you --"
+      "en": "Three nights now I have dreamed of you"
     },
     {
       "id": 23,
       "vi": "Thâm tình của bạn lộ rõ ta thấy",
-      "en": "As tender, intimate and real as though I were awake."
+      "en": "As tender, intimate and real as though I were awake"
     },
     {
       "id": 24,
@@ -149,17 +149,17 @@
     {
       "id": 29,
       "vi": "Có vẻ như nghịch ý mình sao đó",
-      "en": "As if there were something puzzling you."
+      "en": "As if there were something puzzling you"
     },
     {
       "id": 30,
       "vi": "Nào mũ, nào lọng đầy kinh đô",
-      "en": "...Our capital teems with officious people,"
+      "en": "Our capital teems with officious people,"
     },
     {
       "id": 31,
       "vi": "Chỉ có mình người này là tiều tuỵ",
-      "en": "While you are alone and helpless and poor."
+      "en": "While you are alone and helpless and poor"
     },
     {
       "id": 32,
@@ -169,17 +169,17 @@
     {
       "id": 33,
       "vi": "Về già rồi hoá ra thân lại bị luỵ",
-      "en": "It has brought you ill fortune, old as you are."
+      "en": "It has brought you ill fortune, old as you are"
     },
     {
       "id": 34,
       "vi": "Ngàn năm vạn năm sau danh tiếng",
-      "en": "...A thousand years' fame, ten thousand years' fame-"
+      "en": "A thousand years' fame, ten thousand years' fame-"
     },
     {
       "id": 35,
       "vi": "Nhưng chết đi rồi thì im lìm chẳng còn gì để nói",
-      "en": "What good, when you are dead and gone."
+      "en": "What good, when you are dead and gone"
     },
     {
       "id": 36,
@@ -188,7 +188,7 @@
     },
     {
       "id": 37,
-      "vi": "Phiêu dạt trong khoảng trời đất miền tây nam.",
+      "vi": "Phiêu dạt trong khoảng trời đất miền tây nam",
       "en": "Drifting in the southwest between heaven and earth,"
     },
     {
@@ -198,18 +198,18 @@
     },
     {
       "id": 39,
-      "vi": "Quần áo của người miền Ngũ Khê xen lẫn cùng mây, núi.",
-      "en": "Sharing clouds and mountains with the costumes of the Five Streams."
+      "vi": "Quần áo của người miền Ngũ Khê xen lẫn cùng mây, núi",
+      "en": "Sharing clouds and mountains with the costumes of the Five Streams"
     },
     {
       "id": 40,
       "vi": "Rợ Yết thờ chúa (phản phúc bất thường), cuối cùng không thể tin được,",
-      "en": "The barbarian serving the ruler in the end was unreliable."
+      "en": "The barbarian serving the ruler in the end was unreliable"
     },
     {
       "id": 41,
-      "vi": "Nhà thơ xót thương thời thế, hãy còn chưa trở về.",
-      "en": "The wandering poet lamenting the times had no chance to return."
+      "vi": "Nhà thơ xót thương thời thế, hãy còn chưa trở về",
+      "en": "The wandering poet lamenting the times had no chance to return"
     },
     {
       "id": 42,
@@ -218,18 +218,18 @@
     },
     {
       "id": 43,
-      "vi": "Lúc tuổi già, thơ phú cảm động miền sông, ải.",
-      "en": "In his waning years his poetry stirred the land of rivers and passes."
+      "vi": "Lúc tuổi già, thơ phú cảm động miền sông, ải",
+      "en": "In his waning years his poetry stirred the land of rivers and passes"
     },
     {
       "id": 44,
       "vi": "Thục chúa Lưu Bị chinh phạt nước Ngô từng qua Tam Giáp",
-      "en": "The ruler of Shu had his eyes on Wu and progressed as far as the Three Gorges."
+      "en": "The ruler of Shu had his eyes on Wu and progressed as far as the Three Gorges"
     },
     {
       "id": 45,
       "vi": "Lúc băng hà ở tại cung Vĩnh An",
-      "en": "In the year of his demise, too, he was in the Palace of Eternal Peace."
+      "en": "In the year of his demise, too, he was in the Palace of Eternal Peace"
     },
     {
       "id": 46,
@@ -239,7 +239,7 @@
     {
       "id": 47,
       "vi": "Cung điện ngọc đã không còn chỉ thấy có tự miếu hoang sơ",
-      "en": "The jade palace is a void in the deserted temple."
+      "en": "The jade palace is a void in the deserted temple"
     },
     {
       "id": 48,
@@ -249,7 +249,7 @@
     {
       "id": 49,
       "vi": "Mỗi năm thấy có những ông già lại đó tế tự",
-      "en": "At summer and winter festivals the comers are village elders."
+      "en": "At summer and winter festivals the comers are village elders"
     },
     {
       "id": 50,
@@ -259,7 +259,7 @@
     {
       "id": 51,
       "vi": "Quân thần một thể đều hưởng tế tự như nhau",
-      "en": "In union, sovereign and minister share the sacrifices together."
+      "en": "In union, sovereign and minister share the sacrifices together"
     },
     {
       "id": 52,
@@ -268,8 +268,8 @@
     },
     {
       "id": 53,
-      "vi": "Cây quyết minh dưới thềm có vẻ tốt tươi.",
-      "en": "Below the steps, the jueming's colour is fresh."
+      "vi": "Cây quyết minh dưới thềm có vẻ tốt tươi",
+      "en": "Below the steps, the jueming's colour is fresh"
     },
     {
       "id": 54,
@@ -278,8 +278,8 @@
     },
     {
       "id": 55,
-      "vi": "Hoa nở ra vô số đồng tiền vàng.",
-      "en": "And countless flowers bloom like golden coins."
+      "vi": "Hoa nở ra vô số đồng tiền vàng",
+      "en": "And countless flowers bloom like golden coins"
     },
     {
       "id": 56,
@@ -288,8 +288,8 @@
     },
     {
       "id": 57,
-      "vi": "E về sau mầy khó đứng một mình.",
-      "en": "I fear that soon you'll find it hard to stand."
+      "vi": "E về sau mầy khó đứng một mình",
+      "en": "I fear that soon you'll find it hard to stand"
     },
     {
       "id": 58,
@@ -298,8 +298,8 @@
     },
     {
       "id": 59,
-      "vi": "Đón gió, ba lần ngửi mùi thơm mà khóc.",
-      "en": "He faces the wind, breathes the fragrance, and weeps."
+      "vi": "Đón gió, ba lần ngửi mùi thơm mà khóc",
+      "en": "He faces the wind, breathes the fragrance, and weeps"
     },
     {
       "id": 60,
@@ -308,7 +308,7 @@
     },
     {
       "id": 61,
-      "vi": "Tứ thơ phơi phới, nhẹ nhàng không ai bằng được.",
+      "vi": "Tứ thơ phơi phới, nhẹ nhàng không ai bằng được",
       "en": "thought soaring airborne, never banal:"
     },
     {
@@ -318,8 +318,8 @@
     },
     {
       "id": 63,
-      "vi": "Hào hùng phiêu dật, giống như thơ của Bão tham quân.",
-      "en": "the rare excellence of Adjutant Bao."
+      "vi": "Hào hùng phiêu dật, giống như thơ của Bão tham quân",
+      "en": "the rare excellence of Adjutant Bao"
     },
     {
       "id": 64,
@@ -328,7 +328,7 @@
     },
     {
       "id": 65,
-      "vi": "Thì bạn đang ở trong bóng mây chiều ở Giang Đông.",
+      "vi": "Thì bạn đang ở trong bóng mây chiều ở Giang Đông",
       "en": "east of the Yangzi, clouds at the close of day—"
     },
     {
@@ -359,7 +359,7 @@
     {
       "id": 71,
       "vi": "Vạn thuở mây trời nhẹ tựa lông chim",
-      "en": "Was only as one feather against a flaming sky."
+      "en": "Was only as one feather against a flaming sky"
     },
     {
       "id": 72,
@@ -369,7 +369,7 @@
     {
       "id": 73,
       "vi": "Chỉ quy quyết sách hơn cả Tiêu Hà, Tào Tham",
-      "en": "And in time would have surpassed the greatest of all statesmen."
+      "en": "And in time would have surpassed the greatest of all statesmen"
     },
     {
       "id": 74,
@@ -379,7 +379,7 @@
     {
       "id": 75,
       "vi": "Nhưng vẫn một lòng lo việc quân cơ",
-      "en": "Yet he wielded his mind for it, yielded his life."
+      "en": "Yet he wielded his mind for it, yielded his life"
     },
     {
       "id": 76,
@@ -388,12 +388,12 @@
     },
     {
       "id": 77,
-      "vi": "Cuốn đi ba lớp cỏ tranh trên mái nhà ta.",
-      "en": "And sweep three layers of thatch from off my house."
+      "vi": "Cuốn đi ba lớp cỏ tranh trên mái nhà ta",
+      "en": "And sweep three layers of thatch from off my house"
     },
     {
       "id": 78,
-      "vi": "Cỏ tranh bay qua sông, rải xuống miền đất bên sông.",
+      "vi": "Cỏ tranh bay qua sông, rải xuống miền đất bên sông",
       "en": "The straw flies over the river, where it scatters,"
     },
     {
@@ -403,8 +403,8 @@
     },
     {
       "id": 80,
-      "vi": "Thấp thì tả tơi rơi chìm xuống ao nước.",
-      "en": "Some floats down and sinks into the ditch."
+      "vi": "Thấp thì tả tơi rơi chìm xuống ao nước",
+      "en": "Some floats down and sinks into the ditch"
     },
     {
       "id": 81,
@@ -413,33 +413,33 @@
     },
     {
       "id": 82,
-      "vi": "Nhẫn tâm làm giặc cướp ngay trước mặt ta.",
+      "vi": "Nhẫn tâm làm giặc cướp ngay trước mặt ta",
       "en": "They're cruel enough to rob me to my face,"
     },
     {
       "id": 83,
       "vi": "Chúng công khai ôm cỏ tranh đi vào trong xóm trúc;",
-      "en": "Openly, they carry the straw into the bamboo."
+      "en": "Openly, they carry the straw into the bamboo"
     },
     {
       "id": 84,
-      "vi": "Ta khô môi rát miệng, kêu thét mà không được.",
+      "vi": "Ta khô môi rát miệng, kêu thét mà không được",
       "en": "My mouth and lips are dry from pointless calling,"
     },
     {
       "id": 85,
-      "vi": "Trở về, chống gậy, thở than.",
-      "en": "I lean again on my cane and heave a sigh."
+      "vi": "Trở về, chống gậy, thở than",
+      "en": "I lean again on my cane and heave a sigh"
     },
     {
       "id": 86,
-      "vi": "Một lát sau, gió yên mây đen như mực.",
+      "vi": "Một lát sau, gió yên mây đen như mực",
       "en": "The wind soon calms, and the clouds turn the colour of ink;"
     },
     {
       "id": 87,
-      "vi": "Trời thu bát ngát đen tối lúc chiều tà.",
-      "en": "The autumn sky has turned completely black."
+      "vi": "Trời thu bát ngát đen tối lúc chiều tà",
+      "en": "The autumn sky has turned completely black"
     },
     {
       "id": 88,
@@ -448,8 +448,8 @@
     },
     {
       "id": 89,
-      "vi": "Bị đứa con thơ khó ngủ đạp rách toang.",
-      "en": "My darling children sleep badly, and kick it apart."
+      "vi": "Bị đứa con thơ khó ngủ đạp rách toang",
+      "en": "My darling children sleep badly, and kick it apart"
     },
     {
       "id": 90,
@@ -458,8 +458,8 @@
     },
     {
       "id": 91,
-      "vi": "Vết mưa nhiều như gai vẫn còn chưa hết.",
-      "en": "The rain falls thick as hemp, and without end."
+      "vi": "Vết mưa nhiều như gai vẫn còn chưa hết",
+      "en": "The rain falls thick as hemp, and without end"
     },
     {
       "id": 92,
@@ -468,8 +468,8 @@
     },
     {
       "id": 93,
-      "vi": "Suốt đêm dài ướt đẫm, biết làm sao hết được!",
-      "en": "Wet through, how can I last the long nights!"
+      "vi": "Suốt đêm dài ướt đẫm, biết làm sao hết được",
+      "en": "Wet through, how can I last the long nights"
     },
     {
       "id": 94,
@@ -483,18 +483,18 @@
     },
     {
       "id": 96,
-      "vi": "Không bị kinh động vì mưa gió, yên ổn như núi non!",
-      "en": "Solid as a mountain, the elements could not move it."
+      "vi": "Không bị kinh động vì mưa gió, yên ổn như núi non",
+      "en": "Solid as a mountain, the elements could not move it"
     },
     {
       "id": 97,
       "vi": "Hỡi ôi, biết bao giờ được trông thấy nhà này đứng cao sững trước mắt,",
-      "en": "Oh! If I could see this house before me,"
+      "en": "Oh If I could see this house before me,"
     },
     {
       "id": 98,
-      "vi": "Dù cho riêng nhà ta bị phá vỡ, mình có chịu rét đến chết, cũng thoả lòng!",
-      "en": "I'd happily freeze to death in my broken hut!"
+      "vi": "Dù cho riêng nhà ta bị phá vỡ, mình có chịu rét đến chết, cũng thoả lòng",
+      "en": "I'd happily freeze to death in my broken hut"
     },
     {
       "id": 99,
@@ -503,8 +503,8 @@
     },
     {
       "id": 100,
-      "vi": "Chợt nhớ đến hai kinh giờ này hoa mai nở.",
-      "en": "at once I recall the two capitals, the time when plums come out."
+      "vi": "Chợt nhớ đến hai kinh giờ này hoa mai nở",
+      "en": "at once I recall the two capitals, the time when plums come out"
     },
     {
       "id": 101,
@@ -513,8 +513,8 @@
     },
     {
       "id": 102,
-      "vi": "Rau truyền từ tay xinh xắn kéo dài những sợi tơ xanh.",
-      "en": "the foods were carried by dainty hands bringing threads of green."
+      "vi": "Rau truyền từ tay xinh xắn kéo dài những sợi tơ xanh",
+      "en": "the foods were carried by dainty hands bringing threads of green"
     },
     {
       "id": 103,
@@ -523,8 +523,8 @@
     },
     {
       "id": 104,
-      "vi": "Ngóng về Đỗ Lăng, người khách không kiềm được nỗi buồn.",
-      "en": "The far wayfarer from Duling feels unbearable sorrow."
+      "vi": "Ngóng về Đỗ Lăng, người khách không kiềm được nỗi buồn",
+      "en": "The far wayfarer from Duling feels unbearable sorrow"
     },
     {
       "id": 105,
@@ -533,18 +533,18 @@
     },
     {
       "id": 106,
-      "vi": "Gọi con kiếm giấy để chép bài thơ.",
-      "en": "I call to the lad to find paper and I write a poem."
+      "vi": "Gọi con kiếm giấy để chép bài thơ",
+      "en": "I call to the lad to find paper and I write a poem"
     },
     {
       "id": 107,
-      "vi": "Mây núi bay về từ điểm cùng cực của biên giới.",
+      "vi": "Mây núi bay về từ điểm cùng cực của biên giới",
       "en": "Mountain clouds move over this remote frontier,"
     },
     {
       "id": 108,
-      "vi": "Ngọn lửa lớn lại bốc lên từ phía tây.",
-      "en": "Antares once again flows to the west."
+      "vi": "Ngọn lửa lớn lại bốc lên từ phía tây",
+      "en": "Antares once again flows to the west"
     },
     {
       "id": 109,
@@ -553,8 +553,8 @@
     },
     {
       "id": 110,
-      "vi": "Ủ rũ trong cái khung cảnh vào mùa thu này.",
-      "en": "whistling in the wind, beams and rafters turn autumn."
+      "vi": "Ủ rũ trong cái khung cảnh vào mùa thu này",
+      "en": "whistling in the wind, beams and rafters turn autumn"
     },
     {
       "id": 111,
@@ -563,8 +563,8 @@
     },
     {
       "id": 112,
-      "vi": "Về già thì mượm tạm cái uy của người lớn tuổi.",
-      "en": "in twilight years I borrow the chopsticks before me."
+      "vi": "Về già thì mượm tạm cái uy của người lớn tuổi",
+      "en": "in twilight years I borrow the chopsticks before me"
     },
     {
       "id": 113,
@@ -573,7 +573,7 @@
     },
     {
       "id": 114,
-      "vi": "Mà không thành được cái kế sách cho vị chi huy.",
+      "vi": "Mà không thành được cái kế sách cho vị chi huy",
       "en": "how can I perfect plans for my superior?"
     },
     {
@@ -583,8 +583,8 @@
     },
     {
       "id": 116,
-      "vi": "Gối đầu cao nhìn cái lầu phía nam.",
-      "en": "my relaxed pillow faces the southern tower."
+      "vi": "Gối đầu cao nhìn cái lầu phía nam",
+      "en": "my relaxed pillow faces the southern tower"
     },
     {
       "id": 117,
@@ -593,8 +593,8 @@
     },
     {
       "id": 118,
-      "vi": "Sông gầm, dáng nước dâng cao.",
-      "en": "the river is noisy, vapors float on the water."
+      "vi": "Sông gầm, dáng nước dâng cao",
+      "en": "the river is noisy, vapors float on the water"
     },
     {
       "id": 119,
@@ -603,8 +603,8 @@
     },
     {
       "id": 120,
-      "vi": "Phép thoáng khiến bệnh giảm đôi chút.",
-      "en": "the season is brisk, my illness a little better."
+      "vi": "Phép thoáng khiến bệnh giảm đôi chút",
+      "en": "the season is brisk, my illness a little better"
     },
     {
       "id": 121,
@@ -613,8 +613,8 @@
     },
     {
       "id": 122,
-      "vi": "Còn tôi đây đành trở lại nơi gò xưa.",
-      "en": "I will again visit my former hills."
+      "vi": "Còn tôi đây đành trở lại nơi gò xưa",
+      "en": "I will again visit my former hills"
     },
     {
       "id": 123,
@@ -624,7 +624,7 @@
     {
       "id": 124,
       "vi": "Chim bay về cất tiếng kêu thu thu",
-      "en": "Chirping birds are flying back to roost."
+      "en": "Chirping birds are flying back to roost"
     },
     {
       "id": 125,
@@ -634,7 +634,7 @@
     {
       "id": 126,
       "vi": "Trăng dọi qua chín tầng mây vằng vặc",
-      "en": "The moon is big nearing the nine heavens."
+      "en": "The moon is big nearing the nine heavens"
     },
     {
       "id": 127,
@@ -644,7 +644,7 @@
     {
       "id": 128,
       "vi": "Gió thổi, tưởng tiếng nhạc ngựa",
-      "en": "In the wind, I think there are jade pendants."
+      "en": "In the wind, I think there are jade pendants"
     },
     {
       "id": 129,
@@ -654,7 +654,7 @@
     {
       "id": 130,
       "vi": "Vua hỏi: đêm nay như thế nào?",
-      "en": "Again and again, I ask about the night."
+      "en": "Again and again, I ask about the night"
     },
     {
       "id": 131,
@@ -664,7 +664,7 @@
     {
       "id": 132,
       "vi": "Chuyện mây mưa ở Vu Sơn chỉ luống đau lòng",
-      "en": "And a mist, through the heart, from the magical Hill of Wu- -"
+      "en": "And a mist, through the heart, from the magical Hill of Wu"
     },
     {
       "id": 133,
@@ -674,7 +674,7 @@
     {
       "id": 134,
       "vi": "Thương thay nàng Phi Yến phải tô điểm (mà không biết có đẹp bằng không)",
-      "en": "Not even Flying Swallow with all her glittering garments."
+      "en": "Not even Flying Swallow with all her glittering garments"
     },
     {
       "id": 135,
@@ -684,7 +684,7 @@
     {
       "id": 136,
       "vi": "Chim bay về cất tiếng kêu thu thu",
-      "en": "Chirping birds are flying back to roost."
+      "en": "Chirping birds are flying back to roost"
     },
     {
       "id": 137,
@@ -694,7 +694,7 @@
     {
       "id": 138,
       "vi": "Trăng dọi qua chín tầng mây vằng vặc",
-      "en": "The moon is big nearing the nine heavens."
+      "en": "The moon is big nearing the nine heavens"
     },
     {
       "id": 139,
@@ -704,7 +704,7 @@
     {
       "id": 140,
       "vi": "Gió thổi, tưởng tiếng nhạc ngựa",
-      "en": "In the wind, I think there are jade pendants."
+      "en": "In the wind, I think there are jade pendants"
     },
     {
       "id": 141,
@@ -714,17 +714,17 @@
     {
       "id": 142,
       "vi": "Vua hỏi: đêm nay như thế nào?",
-      "en": "Again and again, I ask about the night."
+      "en": "Again and again, I ask about the night"
     },
     {
       "id": 143,
       "vi": "Lá dao động rớt xuống, hiểu rõ nỗi bi thương của Tống Ngọc",
-      "en": "\"Decay and decline\": deep knowledge have I of Sung Yu's grief."
+      "en": "Decay and decline: deep knowledge have I of Sung Yu's grief"
     },
     {
       "id": 144,
       "vi": "Con người phong lưu nho nhã đáng bậc thầy của tôi",
-      "en": "Romantic and refined, he too is my teacher."
+      "en": "Romantic and refined, he too is my teacher"
     },
     {
       "id": 145,
@@ -734,17 +734,17 @@
     {
       "id": 146,
       "vi": "Hai bên tuy khác thời khác thế mà tiêu điều như nhau",
-      "en": "Melancholy in different epochs, not at the same time."
+      "en": "Melancholy in different epochs, not at the same time"
     },
     {
       "id": 147,
       "vi": "Giang sơn còn đó, nhà cũ đã tàn phá văn chương còn lưu lại",
-      "en": "Among rivers and mountains his old abode -- empty his writings;"
+      "en": "Among rivers and mountains his old abode empty his writings;"
     },
     {
       "id": 148,
       "vi": "Mây mưa trên đài hoang ấy há chỉ là giấc mộng",
-      "en": "Deserted terrace of cloud and rain -- surely not just imagined in a dream?"
+      "en": "Deserted terrace of cloud and rain surely not just imagined in a dream?"
     },
     {
       "id": 149,
@@ -754,7 +754,7 @@
     {
       "id": 150,
       "vi": "Đến nay người đi thuyền qua đó còn chỉ trỏ nghi nơi này nơi nọ",
-      "en": "The fishermen pointing them out today are unsure."
+      "en": "The fishermen pointing them out today are unsure"
     },
     {
       "id": 151,
@@ -764,7 +764,7 @@
     {
       "id": 152,
       "vi": "Chỉ có tôi là không đi được",
-      "en": "But no way out before my eye."
+      "en": "But no way out before my eye"
     },
     {
       "id": 153,
@@ -774,7 +774,7 @@
     {
       "id": 154,
       "vi": "Gà tía, chó trắng đem ra cá độ lấy lê lấy lúa",
-      "en": "Gambling on fighting cocks and dogs for pears and nuts."
+      "en": "Gambling on fighting cocks and dogs for pears and nuts"
     },
     {
       "id": 155,
@@ -784,7 +784,7 @@
     {
       "id": 156,
       "vi": "Xắn áo trước vương môn còn chưa thấy xứng tình",
-      "en": "Zhou did not think to bow to noblemen was meet."
+      "en": "Zhou did not think to bow to noblemen was meet"
     },
     {
       "id": 157,
@@ -794,7 +794,7 @@
     {
       "id": 158,
       "vi": "Công khanh triều Hán kỵ tài Giả Nghị",
-      "en": "The brilliant scholar Jia was banished in disgrace."
+      "en": "The brilliant scholar Jia was banished in disgrace"
     },
     {
       "id": 159,
@@ -814,7 +814,7 @@
     {
       "id": 162,
       "vi": "Lật gan, bổ mật báo đáp bằng tài ba của mình",
-      "en": "And served him heart and soul, both full of stratagem."
+      "en": "And served him heart and soul, both full of stratagem"
     },
     {
       "id": 163,
@@ -829,36 +829,36 @@
     {
       "id": 165,
       "vi": "Đi đường khó làm sao, thôi hãy về nhà thôi",
-      "en": "Hard is the way, go back without delay!"
+      "en": "Hard is the way, go back without delay"
     },
     {
       "id": 166,
-      "vi": "Vượt qua nhiều núi non, muôn dòng suối, đi đến núi Kinh Môn.",
+      "vi": "Vượt qua nhiều núi non, muôn dòng suối, đi đến núi Kinh Môn",
       "en": "Ten thousand ranges and valleys approach the Jing Gate"
     },
     {
       "id": 167,
-      "vi": "Tại đây vẫn còn có xóm làng, là chỗ Minh Phi sinh trưởng khi xưa.",
-      "en": "And the village in which the Lady of Light was born and bred."
+      "vi": "Tại đây vẫn còn có xóm làng, là chỗ Minh Phi sinh trưởng khi xưa",
+      "en": "And the village in which the Lady of Light was born and bred"
     },
     {
       "id": 168,
-      "vi": "Khi nàng ra đi, cung Tử Đài nối liền với sa mạc miền Bắc.",
+      "vi": "Khi nàng ra đi, cung Tử Đài nối liền với sa mạc miền Bắc",
       "en": "She went out from the purple palace into the desertland;"
     },
     {
       "id": 169,
-      "vi": "Bây giờ chỉ còn lại mả xanh dưới bóng hoàng hôn.",
-      "en": "She has now become a green grave in the yellow dusk."
+      "vi": "Bây giờ chỉ còn lại mả xanh dưới bóng hoàng hôn",
+      "en": "She has now become a green grave in the yellow dusk"
     },
     {
       "id": 170,
-      "vi": "Xem bức hoạ, vua Hán phảng phất nhận biết khuôn mặt nàng trong gió xuân.",
-      "en": "Her face ! Can you picture a wind of the spring?"
+      "vi": "Xem bức hoạ, vua Hán phảng phất nhận biết khuôn mặt nàng trong gió xuân",
+      "en": "Her face  Can you picture a wind of the spring?"
     },
     {
       "id": 171,
-      "vi": "Nhưng chỉ còn hồn nàng với hoàn bội trở về dưới trăng.",
+      "vi": "Nhưng chỉ còn hồn nàng với hoàn bội trở về dưới trăng",
       "en": "Her spirit by moonlight returns with a tinkling"
     },
     {
@@ -868,62 +868,62 @@
     },
     {
       "id": 173,
-      "vi": "Trong khúc ca, bày tỏ rõ ràng niềm oán hận.",
-      "en": "Telling her eternal sorrow."
+      "vi": "Trong khúc ca, bày tỏ rõ ràng niềm oán hận",
+      "en": "Telling her eternal sorrow"
     },
     {
       "id": 174,
       "vi": "Nhớ nhau hoài,",
-      "en": "\"I am endlessly yearning"
+      "en": "I am endlessly yearning"
     },
     {
       "id": 175,
-      "vi": "Ở Trường An.",
-      "en": "To be in Changan."
+      "vi": "Ở Trường An",
+      "en": "To be in Changan"
     },
     {
       "id": 176,
       "vi": "Sẹt sành kêu thu bên giếng vàng,",
-      "en": "...Insects hum of autumn by the gold brim of the well;"
+      "en": "Insects hum of autumn by the gold brim of the well;"
     },
     {
       "id": 177,
-      "vi": "Sương mỏng lạnh lẽo sắc chiếu lạnh.",
+      "vi": "Sương mỏng lạnh lẽo sắc chiếu lạnh",
       "en": "A thin frost glistens like little mirrors on my cold mat;"
     },
     {
       "id": 178,
       "vi": "Đèn lẻ loi không sáng nỗi nhớ càng nung nấu,",
-      "en": "The high lantern flickers; and. deeper grows my longing."
+      "en": "The high lantern flickers; and deeper grows my longing"
     },
     {
       "id": 179,
-      "vi": "Cuốn rèm ngắm trăng ngửa mặt lên trời than dài.",
+      "vi": "Cuốn rèm ngắm trăng ngửa mặt lên trời than dài",
       "en": "I lift the shade and, with many a sigh, gaze upon the moon,"
     },
     {
       "id": 180,
       "vi": "Người đẹp như hoa hiện lên sau sắc mây,",
-      "en": "Single as a flower, centred from the clouds."
+      "en": "Single as a flower, centred from the clouds"
     },
     {
       "id": 181,
       "vi": "Trên có giải xanh trời cao thăm thẳm,",
-      "en": "Above, I see the blueness and deepness of sky."
+      "en": "Above, I see the blueness and deepness of sky"
     },
     {
       "id": 182,
-      "vi": "Dước có nước xanh sóng nhẹ đưa.",
+      "vi": "Dước có nước xanh sóng nhẹ đưa",
       "en": "Below, I see the greenness and the restlessness of water"
     },
     {
       "id": 183,
       "vi": "Trời cao đất rộng hồn thêm khổ,",
-      "en": "Heaven is high, earth wide; bitter between them flies my sorrow."
+      "en": "Heaven is high, earth wide; bitter between them flies my sorrow"
     },
     {
       "id": 184,
-      "vi": "Mộng hồn bay đến nơi quan san kia cũng khó.",
+      "vi": "Mộng hồn bay đến nơi quan san kia cũng khó",
       "en": "Can I dream through the gateway, over the mountain?"
     },
     {
@@ -933,18 +933,18 @@
     },
     {
       "id": 186,
-      "vi": "Đứt ruột gan.",
-      "en": "Breaks my heart.\""
+      "vi": "Đứt ruột gan",
+      "en": "Breaks my heart"
     },
     {
       "id": 187,
       "vi": "Mặt trời sắp tắt, hoa ngậm khói sương,",
-      "en": "\"The sun has set, and a mist is in the flowers;"
+      "en": "The sun has set, and a mist is in the flowers;"
     },
     {
       "id": 188,
-      "vi": "Trắng sáng như lụa, nỗi sầu không sao ngủ được.",
-      "en": "And the moon grows very white and people sad and sleepless."
+      "vi": "Trắng sáng như lụa, nỗi sầu không sao ngủ được",
+      "en": "And the moon grows very white and people sad and sleepless"
     },
     {
       "id": 189,
@@ -953,8 +953,8 @@
     },
     {
       "id": 190,
-      "vi": "Đàn cầm Thục đã dục tấu khúc uyên ương.",
-      "en": "And a Shu lute begins to sound its mandarin-duck strings...."
+      "vi": "Đàn cầm Thục đã dục tấu khúc uyên ương",
+      "en": "And a Shu lute begins to sound its mandarin-duck strings"
     },
     {
       "id": 191,
@@ -963,8 +963,8 @@
     },
     {
       "id": 192,
-      "vi": "Mong theo ngọn gió xuân gửi đến Yên Nhiên.",
-      "en": "Would that it might follow the spring wind to Yanran Mountain."
+      "vi": "Mong theo ngọn gió xuân gửi đến Yên Nhiên",
+      "en": "Would that it might follow the spring wind to Yanran Mountain"
     },
     {
       "id": 193,
@@ -978,18 +978,18 @@
     },
     {
       "id": 195,
-      "vi": "Nay thành suối lệ tuôn rơi.",
-      "en": "Are now a well of tears."
+      "vi": "Nay thành suối lệ tuôn rơi",
+      "en": "Are now a well of tears"
     },
     {
       "id": 196,
       "vi": "Không tin thiếp buồn đứt ruột,",
-      "en": "...Oh, if ever you should doubt this aching of my heart,"
+      "en": "Oh, if ever you should doubt this aching of my heart,"
     },
     {
       "id": 197,
-      "vi": "Xin [chàng] hãy về mà ngắm trong tấm gương sáng.",
-      "en": "Here in my bright mirror come back and look at me!\""
+      "vi": "Xin [chàng] hãy về mà ngắm trong tấm gương sáng",
+      "en": "Here in my bright mirror come back and look at me"
     },
     {
       "id": 198,
@@ -1009,7 +1009,7 @@
     {
       "id": 201,
       "vi": "(Khi thấy nàng) dựa lan can đứng ở mé bắc đình Trầm Hương",
-      "en": "Where she leans on a railing in the Aloe Pavilion."
+      "en": "Where she leans on a railing in the Aloe Pavilion"
     },
     {
       "id": 202,
@@ -1018,8 +1018,8 @@
     },
     {
       "id": 203,
-      "vi": "Hái dâu bên dòng nước xanh.",
-      "en": "Plucks mulberry leaves by the waterside."
+      "vi": "Hái dâu bên dòng nước xanh",
+      "en": "Plucks mulberry leaves by the waterside"
     },
     {
       "id": 204,
@@ -1028,18 +1028,18 @@
     },
     {
       "id": 205,
-      "vi": "Ánh nắng mặt trời chiếu trên bộ đồ đỏ mới tinh.",
-      "en": "In golden sunshine her rosy robe is dyed."
+      "vi": "Ánh nắng mặt trời chiếu trên bộ đồ đỏ mới tinh",
+      "en": "In golden sunshine her rosy robe is dyed"
     },
     {
       "id": 206,
       "vi": "Tằm đói rồi thiếp phải chạy về nhà,",
-      "en": "\"my silkworms are hungry, I cannot stay."
+      "en": "my silkworms are hungry, I cannot stay"
     },
     {
       "id": 207,
-      "vi": "Xin ngài (người đi xe năm ngựa kéo) đừng ở lại lâu.",
-      "en": "Tarry not with your five-horse cab, I pray.\""
+      "vi": "Xin ngài (người đi xe năm ngựa kéo) đừng ở lại lâu",
+      "en": "Tarry not with your five-horse cab, I pray"
     },
     {
       "id": 208,
@@ -1048,8 +1048,8 @@
     },
     {
       "id": 209,
-      "vi": "Những cây sen nở hoa đầy.",
-      "en": "The lotus lilies in full blossom teem."
+      "vi": "Những cây sen nở hoa đầy",
+      "en": "The lotus lilies in full blossom teem"
     },
     {
       "id": 210,
@@ -1058,8 +1058,8 @@
     },
     {
       "id": 211,
-      "vi": "Người xem thấy ở trên con lạch hẹp Nhược Da.",
-      "en": "Watchers o'erwhelm the bank of Yuoye Stream."
+      "vi": "Người xem thấy ở trên con lạch hẹp Nhược Da",
+      "en": "Watchers o'erwhelm the bank of Yuoye Stream"
     },
     {
       "id": 212,
@@ -1068,23 +1068,23 @@
     },
     {
       "id": 213,
-      "vi": "Trở lại cung điện của vua Việt.",
-      "en": "To yoyal house amid amorous sighs."
+      "vi": "Trở lại cung điện của vua Việt",
+      "en": "To yoyal house amid amorous sighs"
     },
     {
       "id": 214,
       "vi": "Ngày mai sứ giả sẽ đi về miền chinh chiến",
-      "en": "The courier will depart next day, she's told."
+      "en": "The courier will depart next day, she's told"
     },
     {
       "id": 215,
       "vi": "Nguyên đêm ngồi may chiếc áo trận",
-      "en": "She sews a warrior's gown all night."
+      "en": "She sews a warrior's gown all night"
     },
     {
       "id": 216,
       "vi": "Bàn tay ngọc cầm kim khâu đã thấy lạnh",
-      "en": "Her fingers feel the needle cold."
+      "en": "Her fingers feel the needle cold"
     },
     {
       "id": 217,
@@ -1094,11 +1094,11 @@
     {
       "id": 218,
       "vi": "May cho xong để còn gởi ra miền xa xôi",
-      "en": "The work is done, she sends it far away."
+      "en": "The work is done, she sends it far away"
     },
     {
       "id": 219,
-      "vi": "Vài ngày nửa rồi sẽ có áo cho người Lâm Thao.",
+      "vi": "Vài ngày nửa rồi sẽ có áo cho người Lâm Thao",
       "en": "When will it reach the town where warriors stay?"
     },
     {
@@ -1119,7 +1119,7 @@
     {
       "id": 223,
       "vi": "Thổi đến cửa ải Ngọc Môn",
-      "en": "Beats at the Jade Pass battlements...."
+      "en": "Beats at the Jade Pass battlements"
     },
     {
       "id": 224,
@@ -1129,7 +1129,7 @@
     {
       "id": 225,
       "vi": "Rợ Hồ ngấp nghé ở vũng Thanh Hải",
-      "en": "While Tartar troops peer across blue waters of the bay...."
+      "en": "While Tartar troops peer across blue waters of the bay"
     },
     {
       "id": 226,
@@ -1159,7 +1159,7 @@
     {
       "id": 231,
       "vi": "Hẳn phải than thở mà không dám nhàn nhã",
-      "en": "Who toss and sigh and cannot rest."
+      "en": "Who toss and sigh and cannot rest"
     },
     {
       "id": 232,
@@ -1169,7 +1169,7 @@
     {
       "id": 233,
       "vi": "Uống một mình không có ai làm bạn",
-      "en": "I drank alone. There was no one with me --"
+      "en": "I drank alone There was no one with me  "
     },
     {
       "id": 234,
@@ -1179,7 +1179,7 @@
     {
       "id": 235,
       "vi": "Cùng với bóng nữa là thành ba người",
-      "en": "To bring me my shadow and make us three."
+      "en": "To bring me my shadow and make us three"
     },
     {
       "id": 236,
@@ -1199,37 +1199,37 @@
     {
       "id": 239,
       "vi": "Hưởng niềm vui cho kịp với ngày xuân",
-      "en": "To cheer me through the end of spring...."
+      "en": "To cheer me through the end of spring"
     },
     {
       "id": 240,
       "vi": "Ta hát trăng có vẻ bồi hồi không muốn đi",
-      "en": "I sang. The moon encouraged me."
+      "en": "I sang The moon encouraged me"
     },
     {
       "id": 241,
       "vi": "Ta múa bóng có vẻ quay cuồng mê loạn",
-      "en": "I danced. My shadow tumbled after."
+      "en": "I danced My shadow tumbled after"
     },
     {
       "id": 242,
       "vi": "Lúc tỉnh cùng nhau vui đùa",
-      "en": "As long as I knew, we were boon companions."
+      "en": "As long as I knew, we were boon companions"
     },
     {
       "id": 243,
       "vi": "Sau khi say thì phân tán mỗi một nơi",
-      "en": "And then I was drunk, and we lost one another."
+      "en": "And then I was drunk, and we lost one another"
     },
     {
       "id": 244,
       "vi": "Vĩnh viễn kết chặt mối giao du vô tình này",
-      "en": "...Shall goodwill ever be secure?"
+      "en": "Shall goodwill ever be secure?"
     },
     {
       "id": 245,
       "vi": "Cùng nhau ước hẹn lên trên Thiên hà gặp lại",
-      "en": "I watch the long road of the River of Stars."
+      "en": "I watch the long road of the River of Stars"
     },
     {
       "id": 246,
@@ -1239,17 +1239,17 @@
     {
       "id": 247,
       "vi": "Người còn sống thì lúc nào cũng thương xót",
-      "en": "But life has its partings again and again."
+      "en": "But life has its partings again and again"
     },
     {
       "id": 248,
       "vi": "Giang Nam là nơi chướng độc",
-      "en": "...From the poisonous damps of the southern river"
+      "en": "From the poisonous damps of the southern river"
     },
     {
       "id": 249,
       "vi": "Người bị đày không nghe tin tức",
-      "en": "You had sent me not one sign from your exile --"
+      "en": "You had sent me not one sign from your exile  "
     },
     {
       "id": 250,
@@ -1259,7 +1259,7 @@
     {
       "id": 251,
       "vi": "Biết là ta nhớ nhung đã lâu nay",
-      "en": "Because I am always thinking of you."
+      "en": "Because I am always thinking of you"
     },
     {
       "id": 252,
@@ -1269,7 +1269,7 @@
     {
       "id": 253,
       "vi": "Làm sao mà có lông cánh bay bổng khắp nơi",
-      "en": "Venturing so long a journey."
+      "en": "Venturing so long a journey"
     },
     {
       "id": 254,
@@ -1279,7 +1279,7 @@
     {
       "id": 255,
       "vi": "Nhưng lâu nay đường xá xa xôi không gặp không biết có phải vậy không",
-      "en": "You disappeared by a shadowy fortress...."
+      "en": "You disappeared by a shadowy fortress"
     },
     {
       "id": 256,
@@ -1294,22 +1294,22 @@
     {
       "id": 258,
       "vi": "Trăng xuống chiếu trên rường nhà",
-      "en": "...I woke, and the low moon's glimmer on a rafter"
+      "en": "I woke, and the low moon's glimmer on a rafter"
     },
     {
       "id": 259,
       "vi": "Còn ngờ như đang soi trên khuôn mặt ông",
-      "en": "Seemed to be your face, still floating in the air."
+      "en": "Seemed to be your face, still floating in the air"
     },
     {
       "id": 260,
       "vi": "Nước thì sâu sóng thì lớn",
-      "en": "...There were waters to cross, they were wild and tossing;"
+      "en": "There were waters to cross, they were wild and tossing;"
     },
     {
       "id": 261,
       "vi": "Mong ông coi chừng cẩn thận con thuồng luồng dưới nước",
-      "en": "If you fell, there were dragons and rivermonsters."
+      "en": "If you fell, there were dragons and rivermonsters"
     }
   ]
 }
