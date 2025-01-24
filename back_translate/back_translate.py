@@ -50,9 +50,9 @@ BLEU_THRESHOLD = 0.1
 SCRIPT_PATH = os.path.abspath(__file__)
 SCRIPT_DIR = os.path.dirname(SCRIPT_PATH)
 PROJECT_ROOT = SCRIPT_DIR
-INPUT_FOLDER_DIR = os.path.join(PROJECT_ROOT, "data")
-OUTPUT_FOLDER_DIR = os.path.join(PROJECT_ROOT, "augmented_data_ver02")
-LOAD_FOLDER_DIR = os.path.join(PROJECT_ROOT, "augmented_progress_data_ver02")
+INPUT_FOLDER_DIR = os.path.join(PROJECT_ROOT, "backtranslate_data")
+OUTPUT_FOLDER_DIR = os.path.join(PROJECT_ROOT, "augmented_data_ver03")
+LOAD_FOLDER_DIR = os.path.join(PROJECT_ROOT, "augmented_progress_data_ver03")
 
 
 def ensure_directory_exists(directory_path: str):
@@ -214,19 +214,30 @@ def translate_with_gemini(model, text, rate_limiter, source_lang='English', targ
         - Provide exactly ONE translation
         - Maintain literary style and poetic elements
         - Keep the original meaning and cultural context
-        - Translate in the Nom script style, but use Vietnamese words
-        - Do not provide multiple versions or alternatives
+        - Translate in two styles: the Nom script style and the Han script style but use Vietnamese words (do not use Nom and Han characters)
+        - Do not provide multiple versions or alternatives of one style
         - Do not include explanatory text
 
-        Here is an example: 
+        Here is an example of Nom script style: 
         en: By lamplight, I peruse the tales of Tây Minh.
         vi: Dạ quang, duyệt Tây Minh truyện. 
+        
+        Here is an example of Han script style:
+        en: At the age of twenty-eight, his vocation was the pursuit of learning.
+        vi: Vân lai nhị bát, chí tại kinh thư.
+        
         Original {source_lang} text:
         {text}
 
-        Translate to {target_lang}:"""
+        Return the classical {target_lang} translation in JSON format: 
+        {{
+            \"nom\": \"Your Nom script style translation here\",
+            \"han\": \"Your Han script style translation here\"
+        }}
+        """
         
         generation_config = {
+            "response_mime_type": "application/json",
             "temperature": 0.3,
             "top_p": 0.85,
             "top_k": 40,
@@ -302,17 +313,26 @@ def augment_data(input_file: str, output_file: str, load_file: str, api_key: str
             item = data["data"][idx]
             english_sentence = item["en"]
             vietnamese_sentence = item["vi"]
-            translated_vi = translate_with_gemini(model, english_sentence, rate_limiter)
-            
-            if translated_vi: 
+            translation_result = json.loads(translate_with_gemini(model, english_sentence, rate_limiter))
+
+            if translation_result: 
                 augmented_data["data"].append({
                     "original_vi": vietnamese_sentence,
-                    "augmented_vi": translated_vi,
+                    "style": "Nom",
+                    "augmented_vi": translation_result["nom"],
                     "en": english_sentence,
                     "augmented_index": current_augmented_index,  # Position in augmented dataset
                     "original_index": idx,  # Add index for alignment
                 })
-
+                current_augmented_index += 1
+                augmented_data["data"].append({
+                    "original_vi": vietnamese_sentence,
+                    "style": "Han",
+                    "augmented_vi": translation_result["han"],
+                    "en": english_sentence,
+                    "augmented_index": current_augmented_index,  # Position in augmented dataset
+                    "original_index": idx,  # Add index for alignment
+                })
                 current_augmented_index += 1
             
             # Track this index as processed regardless of success

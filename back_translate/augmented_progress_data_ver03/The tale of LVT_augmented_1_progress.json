@@ -1,0 +1,1027 @@
+{
+    "file_name": "The tale of Luc Van Tien",
+    "data": [
+        {
+            "original_vi": "Trước đèn xem truyện Tây Minh,",
+            "style": "Nom",
+            "augmented_vi": "Dạ quang, duyệt Tây Minh truyện.",
+            "en": "By lamplight, I peruse the tales of Tây Minh.",
+            "augmented_index": 0,
+            "original_index": 0
+        },
+        {
+            "original_vi": "Trước đèn xem truyện Tây Minh,",
+            "style": "Han",
+            "augmented_vi": "Dạ quang độc Tây Minh thư",
+            "en": "By lamplight, I peruse the tales of Tây Minh.",
+            "augmented_index": 1,
+            "original_index": 0
+        },
+        {
+            "original_vi": "Hỡi ai lẳng lặng mà nghe,",
+            "style": "Nom",
+            "augmented_vi": "Hỡi các người lắng nghe trong trầm tư tĩnh lặng,",
+            "en": "O ye who listen in silent contemplation,",
+            "augmented_index": 2,
+            "original_index": 1
+        },
+        {
+            "original_vi": "Hỡi ai lẳng lặng mà nghe,",
+            "style": "Han",
+            "augmented_vi": "Nhân vị thính giả tại yên lặng chi tư",
+            "en": "O ye who listen in silent contemplation,",
+            "augmented_index": 3,
+            "original_index": 1
+        },
+        {
+            "original_vi": "Trai thời trung hiếu làm đầu,",
+            "style": "Nom",
+            "augmented_vi": "Hiếu trung, đức chi tiên",
+            "en": "Filial piety and loyalty stand as paramount virtues.",
+            "augmented_index": 4,
+            "original_index": 2
+        },
+        {
+            "original_vi": "Trai thời trung hiếu làm đầu,",
+            "style": "Han",
+            "augmented_vi": "Hiếu trung, đức vị tiên",
+            "en": "Filial piety and loyalty stand as paramount virtues.",
+            "augmented_index": 5,
+            "original_index": 2
+        },
+        {
+            "original_vi": "Tu nhân tích đức sớm sanh con hiền.",
+            "style": "Nom",
+            "augmented_vi": "Tu đức tích công, diệc sanh hiếu tử",
+            "en": "Cultivating virtue and accumulating merit begets virtuous offspring.",
+            "augmented_index": 6,
+            "original_index": 3
+        },
+        {
+            "original_vi": "Tu nhân tích đức sớm sanh con hiền.",
+            "style": "Han",
+            "augmented_vi": "Tu đức tích công, sinh hiếu tử diệc",
+            "en": "Cultivating virtue and accumulating merit begets virtuous offspring.",
+            "augmented_index": 7,
+            "original_index": 3
+        },
+        {
+            "original_vi": "Đặt tên là Lục Vân Tiên,",
+            "style": "Nom",
+            "augmented_vi": "Hĩ danh Lục Vân Tiên",
+            "en": "He was named Lục Vân Tiên.",
+            "augmented_index": 8,
+            "original_index": 4
+        },
+        {
+            "original_vi": "Đặt tên là Lục Vân Tiên,",
+            "style": "Han",
+            "augmented_vi": "Danh hiệu Lục Vân Tiên",
+            "en": "He was named Lục Vân Tiên.",
+            "augmented_index": 9,
+            "original_index": 4
+        },
+        {
+            "original_vi": "Tuổi vừa hai tám nghề chuyên học hành.",
+            "style": "Nom",
+            "augmented_vi": "Vân lai nhị bát, chí tại kinh thư.",
+            "en": "At the age of twenty-eight, his vocation was the pursuit of learning.",
+            "augmented_index": 10,
+            "original_index": 5
+        },
+        {
+            "original_vi": "Tuổi vừa hai tám nghề chuyên học hành.",
+            "style": "Han",
+            "augmented_vi": "Vân lai nhị bát, chí tại kinh thư.",
+            "en": "At the age of twenty-eight, his vocation was the pursuit of learning.",
+            "augmented_index": 11,
+            "original_index": 5
+        },
+        {
+            "original_vi": "Vân Tiên vào tạ tôn sư xin về:",
+            "style": "Nom",
+            "augmented_vi": "Văn Tiện, bái kiến tôn sư, thỉnh lui.",
+            "en": "Van Tien, having paid his respects to his revered master, requested leave to depart.",
+            "augmented_index": 12,
+            "original_index": 6
+        },
+        {
+            "original_vi": "Vân Tiên vào tạ tôn sư xin về:",
+            "style": "Han",
+            "augmented_vi": "Văn Tiện, cúi đầu vái thầy, xin cáo từ.",
+            "en": "Van Tien, having paid his respects to his revered master, requested leave to depart.",
+            "augmented_index": 13,
+            "original_index": 6
+        },
+        {
+            "original_vi": "Bấy lâu cửa thánh dựa kề,",
+            "style": "Nom",
+            "augmented_vi": "Vạn kiếp, ngã dựa cửa thần.",
+            "en": "For eons, I have leaned upon the sacred gate.",
+            "augmented_index": 14,
+            "original_index": 7
+        },
+        {
+            "original_vi": "Bấy lâu cửa thánh dựa kề,",
+            "style": "Han",
+            "augmented_vi": "Vạn cổ, ngã dựa thần môn.",
+            "en": "For eons, I have leaned upon the sacred gate.",
+            "augmented_index": 15,
+            "original_index": 7
+        },
+        {
+            "original_vi": "Danh tôi đặng rạng tiếng thầy bay xa.",
+            "style": "Nom",
+            "augmented_vi": "Danh ta chiếu sáng, vọng hưởng sư danh hiển dương",
+            "en": "My name shall shine brightly, echoing the master's far-reaching renown.",
+            "augmented_index": 16,
+            "original_index": 8
+        },
+        {
+            "original_vi": "Danh tôi đặng rạng tiếng thầy bay xa.",
+            "style": "Han",
+            "augmented_vi": "Tên ta chiếu rạng, hưởng ứng sư danh hiển đạt",
+            "en": "My name shall shine brightly, echoing the master's far-reaching renown.",
+            "augmented_index": 17,
+            "original_index": 8
+        },
+        {
+            "original_vi": "Làm trai trong cõi người ta,",
+            "style": "Nom",
+            "augmented_vi": "Làm người thế giới này",
+            "en": "To be a man in this mortal realm,",
+            "augmented_index": 18,
+            "original_index": 9
+        },
+        {
+            "original_vi": "Làm trai trong cõi người ta,",
+            "style": "Han",
+            "augmented_vi": "Việc làm người tại cõi đời",
+            "en": "To be a man in this mortal realm,",
+            "augmented_index": 19,
+            "original_index": 9
+        },
+        {
+            "original_vi": "Trước là báo bổ sau là hiển vang.",
+            "style": "Nom",
+            "augmented_vi": "Đầu tiên, linh cảm dịu nhẹ; kế đó, vinh quang vang dội.",
+            "en": "First, a gentle premonition; then, resounding glory.",
+            "augmented_index": 20,
+            "original_index": 10
+        },
+        {
+            "original_vi": "Trước là báo bổ sau là hiển vang.",
+            "style": "Han",
+            "augmented_vi": "Thủy, linh cảm nhu hòa; kế, vinh quang rạng rỡ.",
+            "en": "First, a gentle premonition; then, resounding glory.",
+            "augmented_index": 21,
+            "original_index": 10
+        },
+        {
+            "original_vi": "Phải toan một phép để phòng hộ thân.",
+            "style": "Nom",
+            "augmented_vi": "Tự toàn mưu lược, bất khả bất cầu.",
+            "en": "A stratagem must be devised for self-preservation.",
+            "augmented_index": 22,
+            "original_index": 11
+        },
+        {
+            "original_vi": "Phải toan một phép để phòng hộ thân.",
+            "style": "Han",
+            "augmented_vi": "Tự thủ, mưu lược tất lập.",
+            "en": "A stratagem must be devised for self-preservation.",
+            "augmented_index": 23,
+            "original_index": 11
+        },
+        {
+            "original_vi": "Rày con xuống chốn phong trần,",
+            "style": "Nom",
+            "augmented_vi": "Kim nhật, ta giáng thế tục phong trần",
+            "en": "This day I descend into the world of dust and wind.",
+            "augmented_index": 24,
+            "original_index": 12
+        },
+        {
+            "original_vi": "Rày con xuống chốn phong trần,",
+            "style": "Han",
+            "augmented_vi": "Kim nhật, hạ phàm tục phong trần",
+            "en": "This day I descend into the world of dust and wind.",
+            "augmented_index": 25,
+            "original_index": 12
+        },
+        {
+            "original_vi": "Vân Tiên ngơ ngẩn lòng càng sanh nghi:",
+            "style": "Nom",
+            "augmented_vi": "Vân Tiên, tâm phiêu lãng, nghi can càng thêm.",
+            "en": "Vân Tiên, his heart adrift, grew ever more suspicious.",
+            "augmented_index": 26,
+            "original_index": 13
+        },
+        {
+            "original_vi": "Vân Tiên ngơ ngẩn lòng càng sanh nghi:",
+            "style": "Han",
+            "augmented_vi": "Vân Tiên, tâm bất định, nghi hoặc gia tăng.",
+            "en": "Vân Tiên, his heart adrift, grew ever more suspicious.",
+            "augmented_index": 27,
+            "original_index": 13
+        },
+        {
+            "original_vi": "Bấy lâu lòng những ước mơ,",
+            "style": "Nom",
+            "augmented_vi": "Từng ấy thời gian, tâm chỉ hữu mộng",
+            "en": "For so long, my heart held but dreams,",
+            "augmented_index": 28,
+            "original_index": 14
+        },
+        {
+            "original_vi": "Bấy lâu lòng những ước mơ,",
+            "style": "Han",
+            "augmented_vi": "Thập niên dư nhật, tâm duy mộng tưởng",
+            "en": "For so long, my heart held but dreams,",
+            "augmented_index": 29,
+            "original_index": 14
+        },
+        {
+            "original_vi": "Sao chưa cất gánh trở vô việc gì?",
+            "style": "Nom",
+            "augmented_vi": "Hỡi hà vị khước phụng gánh nặng, hồi quy vu sự nhi?",
+            "en": "Why have you not yet shouldered your burden and returned to your tasks?",
+            "augmented_index": 30,
+            "original_index": 15
+        },
+        {
+            "original_vi": "Sao chưa cất gánh trở vô việc gì?",
+            "style": "Han",
+            "augmented_vi": "Hà vị vong nhiệm kỳ hà, phản bổn chức nhi?",
+            "en": "Why have you not yet shouldered your burden and returned to your tasks?",
+            "augmented_index": 31,
+            "original_index": 15
+        },
+        {
+            "original_vi": "Hay là con hãy hồ nghi,",
+            "style": "Nom",
+            "augmented_vi": "Hay chăng, nhi tử, tâm hữu nghi?",
+            "en": "Or perhaps, my child, you harbor doubt?",
+            "augmented_index": 32,
+            "original_index": 16
+        },
+        {
+            "original_vi": "Hay là con hãy hồ nghi,",
+            "style": "Han",
+            "augmented_vi": "Hoặc khả, nhi tử, nghi hoặc tại tâm?",
+            "en": "Or perhaps, my child, you harbor doubt?",
+            "augmented_index": 33,
+            "original_index": 16
+        },
+        {
+            "original_vi": "Thầy bàn một việc khoa kì ban trưa?",
+            "style": "Nom",
+            "augmented_vi": "Đức thầy, ngọ trung hữu sự học vi diệu đề xuất?",
+            "en": "Master, do you propose some extraordinary scholarly matter this noontide?",
+            "augmented_index": 34,
+            "original_index": 17
+        },
+        {
+            "original_vi": "Thầy bàn một việc khoa kì ban trưa?",
+            "style": "Han",
+            "augmented_vi": "Sư, ngọ nhật hữu sự học diệu diệu vấn xuất?",
+            "en": "Master, do you propose some extraordinary scholarly matter this noontide?",
+            "augmented_index": 35,
+            "original_index": 17
+        },
+        {
+            "original_vi": "Vân Tiên nghe nói liền thưa:",
+            "style": "Nom",
+            "augmented_vi": "Nghe đàm, Vân Tiên ứng rằng:",
+            "en": "Upon hearing this, Vân Tiên responded:",
+            "augmented_index": 36,
+            "original_index": 18
+        },
+        {
+            "original_vi": "Vân Tiên nghe nói liền thưa:",
+            "style": "Han",
+            "augmented_vi": "Vân Tiên thính ngôn, ứng viết:",
+            "en": "Upon hearing this, Vân Tiên responded:",
+            "augmented_index": 37,
+            "original_index": 18
+        },
+        {
+            "original_vi": "Nhân cơ tàng sự dặn rằng:",
+            "style": "Nom",
+            "augmented_vi": "Danh sĩ truyền đạo, ngôn rằng:",
+            "en": "The esteemed personage, in imparting his wisdom, declared:",
+            "augmented_index": 38,
+            "original_index": 19
+        },
+        {
+            "original_vi": "Nhân cơ tàng sự dặn rằng:",
+            "style": "Han",
+            "augmented_vi": "Đức sĩ truyền kinh, phán rằng:",
+            "en": "The esteemed personage, in imparting his wisdom, declared:",
+            "augmented_index": 39,
+            "original_index": 19
+        },
+        {
+            "original_vi": "Việc người chẳng khác việc trăng trên trời.",
+            "style": "Nom",
+            "augmented_vi": "Thế sự phàm nhân, vô khác nguyệt tại thiên đình",
+            "en": "The affairs of mortals are no different from the moon in the heavens.",
+            "augmented_index": 40,
+            "original_index": 20
+        },
+        {
+            "original_vi": "Việc người chẳng khác việc trăng trên trời.",
+            "style": "Han",
+            "augmented_vi": "Nhân thế sự, vô dị nguyệt tại thượng",
+            "en": "The affairs of mortals are no different from the moon in the heavens.",
+            "augmented_index": 41,
+            "original_index": 20
+        },
+        {
+            "original_vi": "Tuy là soi khắp mọi nơi,",
+            "style": "Nom",
+            "augmented_vi": "Tuy nhiên chiếu sáng muôn nơi",
+            "en": "Though illuminating every place,",
+            "augmented_index": 42,
+            "original_index": 21
+        },
+        {
+            "original_vi": "Tuy là soi khắp mọi nơi,",
+            "style": "Han",
+            "augmented_vi": "Minh chiếu khắp chốn",
+            "en": "Though illuminating every place,",
+            "augmented_index": 43,
+            "original_index": 21
+        },
+        {
+            "original_vi": "Sau con cũng rõ lẽ này,",
+            "style": "Nom",
+            "augmented_vi": "Thì, nhi đồng diệc tri chơn lý.",
+            "en": "Then, even the child understands this truth.",
+            "augmented_index": 44,
+            "original_index": 22
+        },
+        {
+            "original_vi": "Sau con cũng rõ lẽ này,",
+            "style": "Han",
+            "augmented_vi": "Tử nhi, tiểu nhi diệc minh chi.",
+            "en": "Then, even the child understands this truth.",
+            "augmented_index": 45,
+            "original_index": 22
+        },
+        {
+            "original_vi": "Bao giờ cho tới bắc phang,",
+            "style": "Nom",
+            "augmented_vi": "Thôi bao giờ ta tới được biên ải phía bắc?",
+            "en": "When will I reach the northern frontier?",
+            "augmented_index": 46,
+            "original_index": 23
+        },
+        {
+            "original_vi": "Bao giờ cho tới bắc phang,",
+            "style": "Han",
+            "augmented_vi": "何時北塞到?",
+            "en": "When will I reach the northern frontier?",
+            "augmented_index": 47,
+            "original_index": 23
+        },
+        {
+            "original_vi": "Trong cơ bĩ cực thới lai,",
+            "style": "Nom",
+            "augmented_vi": "Trọn vực hoạn nạn, phước đáo",
+            "en": "Amidst the depths of adversity, fortune arrives.",
+            "augmented_index": 48,
+            "original_index": 24
+        },
+        {
+            "original_vi": "Trong cơ bĩ cực thới lai,",
+            "style": "Han",
+            "augmented_vi": "Vạn chung hoạn nạn, phước tự nhiên lai",
+            "en": "Amidst the depths of adversity, fortune arrives.",
+            "augmented_index": 49,
+            "original_index": 24
+        },
+        {
+            "original_vi": "Đoái nhìn phong cảnh thêm thương,",
+            "style": "Nom",
+            "augmented_vi": "Tĩnh vọng sơn hà, ưu sầu càng thảm.",
+            "en": "Gazing upon the landscape, my sorrow deepens.",
+            "augmented_index": 50,
+            "original_index": 25
+        },
+        {
+            "original_vi": "Đoái nhìn phong cảnh thêm thương,",
+            "style": "Han",
+            "augmented_vi": "Vọng cảnh sơn hà, ưu tư thêm trọng.",
+            "en": "Gazing upon the landscape, my sorrow deepens.",
+            "augmented_index": 51,
+            "original_index": 25
+        },
+        {
+            "original_vi": "Vơi vơi dặm cũ nẻo đường còn xa.",
+            "style": "Nom",
+            "augmented_vi": "Ðường cũ vô biên, trải dài bất tận trước ta.",
+            "en": "The boundless miles of the old road stretch endlessly before us.",
+            "augmented_index": 52,
+            "original_index": 26
+        },
+        {
+            "original_vi": "Vơi vơi dặm cũ nẻo đường còn xa.",
+            "style": "Han",
+            "augmented_vi": "Cố lộ vô biên, trường du tiền lộ.",
+            "en": "The boundless miles of the old road stretch endlessly before us.",
+            "augmented_index": 53,
+            "original_index": 26
+        },
+        {
+            "original_vi": "Trước là tìm bạn sau là nghỉ chơn.",
+            "style": "Nom",
+            "augmented_vi": "Đầu cầu bạn, kế tầm an",
+            "en": "First, to seek companionship; then, to find repose.",
+            "augmented_index": 54,
+            "original_index": 27
+        },
+        {
+            "original_vi": "Trước là tìm bạn sau là nghỉ chơn.",
+            "style": "Han",
+            "augmented_vi": "Thủ cầu hữu, kế tầm yên",
+            "en": "First, to seek companionship; then, to find repose.",
+            "augmented_index": 55,
+            "original_index": 27
+        },
+        {
+            "original_vi": "Đều đem nhau chạy vào rừng lên non?",
+            "style": "Nom",
+            "augmented_vi": "Cùng tẩu sơn lâm chăng?",
+            "en": "Did they all flee together, into the forests and mountains?",
+            "augmented_index": 56,
+            "original_index": 28
+        },
+        {
+            "original_vi": "Đều đem nhau chạy vào rừng lên non?",
+            "style": "Han",
+            "augmented_vi": "Tẩu lâm sơn cộng?",
+            "en": "Did they all flee together, into the forests and mountains?",
+            "augmented_index": 57,
+            "original_index": 28
+        },
+        {
+            "original_vi": "Tiên rằng: Cớ sự làm sao,",
+            "style": "Nom",
+            "augmented_vi": "Thiên nhân vấn: Sự cố hà như?",
+            "en": "The celestial beings inquired: What manner of event transpired?",
+            "augmented_index": 58,
+            "original_index": 29
+        },
+        {
+            "original_vi": "Tiên rằng: Cớ sự làm sao,",
+            "style": "Han",
+            "augmented_vi": "Thần nhân vấn: Sự biến hà như?",
+            "en": "The celestial beings inquired: What manner of event transpired?",
+            "augmented_index": 59,
+            "original_index": 29
+        },
+        {
+            "original_vi": "Dân nghe tiếng nói khoan thai,",
+            "style": "Nom",
+            "augmented_vi": "Bách tính văn tiếng dịu,",
+            "en": "The people heard the gentle voice,",
+            "augmented_index": 60,
+            "original_index": 30
+        },
+        {
+            "original_vi": "Dân nghe tiếng nói khoan thai,",
+            "style": "Han",
+            "augmented_vi": "Thần dân văn thanh âm ôn hòa,",
+            "en": "The people heard the gentle voice,",
+            "augmented_index": 61,
+            "original_index": 30
+        },
+        {
+            "original_vi": "Tên rằng Đỗ Dự hiệu là Phong Lai.",
+            "style": "Nom",
+            "augmented_vi": "Danh hiệu Đỗ Dự, tự Phong Lai.",
+            "en": "His name was Đỗ Dự, his style name, Phong Lai.",
+            "augmented_index": 62,
+            "original_index": 31
+        },
+        {
+            "original_vi": "Tên rằng Đỗ Dự hiệu là Phong Lai.",
+            "style": "Han",
+            "augmented_vi": "Họ Đỗ danh Dự, tự hiệu Phong Lai.",
+            "en": "His name was Đỗ Dự, his style name, Phong Lai.",
+            "augmented_index": 63,
+            "original_index": 31
+        },
+        {
+            "original_vi": "Xóm làng chẳng dám nói chi,",
+            "style": "Nom",
+            "augmented_vi": "Thôn trung bất cảm thốt ngôn",
+            "en": "The village dared not utter a word.",
+            "augmented_index": 64,
+            "original_index": 32
+        },
+        {
+            "original_vi": "Xóm làng chẳng dám nói chi,",
+            "style": "Han",
+            "augmented_vi": "Cố thôn mạc dám ngôn",
+            "en": "The village dared not utter a word.",
+            "augmented_index": 65,
+            "original_index": 32
+        },
+        {
+            "original_vi": "Má đào mày liễu dung nhan lạnh lùng.",
+            "style": "Nom",
+            "augmented_vi": "Hồng đào chi diện, liễu yểu chi nhường, dung nhan băng lãnh.",
+            "en": "Peach-bloom cheeks and willow-like brows, a countenance of chilling aloofness.",
+            "augmented_index": 66,
+            "original_index": 33
+        },
+        {
+            "original_vi": "Má đào mày liễu dung nhan lạnh lùng.",
+            "style": "Han",
+            "augmented_vi": "Đào chi diện, liễu yểu mi, dung mạo lãnh diễm.",
+            "en": "Peach-bloom cheeks and willow-like brows, a countenance of chilling aloofness.",
+            "augmented_index": 67,
+            "original_index": 33
+        },
+        {
+            "original_vi": "Vân Tiên ghé lại bên đàng,",
+            "style": "Nom",
+            "augmented_vi": "Vân Tiên lập bến đường",
+            "en": "Vân Tiên paused by the roadside.",
+            "augmented_index": 68,
+            "original_index": 34
+        },
+        {
+            "original_vi": "Vân Tiên ghé lại bên đàng,",
+            "style": "Han",
+            "augmented_vi": "Vân Tiên nghỉ bên lộ",
+            "en": "Vân Tiên paused by the roadside.",
+            "augmented_index": 69,
+            "original_index": 34
+        },
+        {
+            "original_vi": "Bẻ cây làm gậy nhắm làng xông vô.",
+            "style": "Nom",
+            "augmented_vi": "Trượng bất, can trường nhập ấp",
+            "en": "To break a branch for a staff, and thus boldly charge into the village.",
+            "augmented_index": 70,
+            "original_index": 35
+        },
+        {
+            "original_vi": "Bẻ cây làm gậy nhắm làng xông vô.",
+            "style": "Han",
+            "augmented_vi": "Bẻ nhành vi trượng, dũng nhập thôn trang",
+            "en": "To break a branch for a staff, and thus boldly charge into the village.",
+            "augmented_index": 71,
+            "original_index": 35
+        },
+        {
+            "original_vi": "Chớ quen làm thói hồ đồ hại dân.",
+            "style": "Nom",
+            "augmented_vi": "Chớ để thói hồ đồ, áp bức dân lành bén rễ",
+            "en": "Let not the habit of reckless folly and oppression of the people take root.",
+            "augmented_index": 72,
+            "original_index": 36
+        },
+        {
+            "original_vi": "Chớ quen làm thói hồ đồ hại dân.",
+            "style": "Han",
+            "augmented_vi": "Vô đồ áp bức, dân cơ mạc sinh căn",
+            "en": "Let not the habit of reckless folly and oppression of the people take root.",
+            "augmented_index": 73,
+            "original_index": 36
+        },
+        {
+            "original_vi": "Phong Lai mặt đỏ phừng phừng:",
+            "style": "Nom",
+            "augmented_vi": "Phong Lai diện phiếm hồng",
+            "en": "Phong Lai's face flushed crimson.",
+            "augmented_index": 74,
+            "original_index": 37
+        },
+        {
+            "original_vi": "Phong Lai mặt đỏ phừng phừng:",
+            "style": "Han",
+            "augmented_vi": "Phong Lai nhan nhuận hồng",
+            "en": "Phong Lai's face flushed crimson.",
+            "augmented_index": 75,
+            "original_index": 37
+        },
+        {
+            "original_vi": "Thằng nào dám tới lẫy lừng vào đây.",
+            "style": "Nom",
+            "augmented_vi": "Thử ai dại dột mà xâm phạm nơi này?",
+            "en": "Who dares to intrude so audaciously upon this place?",
+            "augmented_index": 76,
+            "original_index": 38
+        },
+        {
+            "original_vi": "Thằng nào dám tới lẫy lừng vào đây.",
+            "style": "Han",
+            "augmented_vi": "Dám ai cuồng vọng mà phạm xứ này?",
+            "en": "Who dares to intrude so audaciously upon this place?",
+            "augmented_index": 77,
+            "original_index": 38
+        },
+        {
+            "original_vi": "Vân Tiên tả đột hữu xông,",
+            "style": "Nom",
+            "augmented_vi": "Tiên Văn, phi bộ, tả xung hữu đột",
+            "en": "Van Tien, with sudden strides, charged left and right.",
+            "augmented_index": 78,
+            "original_index": 39
+        },
+        {
+            "original_vi": "Vân Tiên tả đột hữu xông,",
+            "style": "Han",
+            "augmented_vi": "Văn Tiên, thình lình, tả đột hữu xung",
+            "en": "Van Tien, with sudden strides, charged left and right.",
+            "augmented_index": 79,
+            "original_index": 39
+        },
+        {
+            "original_vi": "Khác nào Triệu tử phá vòng Đương-dang.",
+            "style": "Nom",
+            "augmented_vi": "Tựa Triệu Vũ phá Đăng Đăng quan",
+            "en": "Like Zhao the Conqueror breaking through the Dangdang Pass.",
+            "augmented_index": 80,
+            "original_index": 40
+        },
+        {
+            "original_vi": "Khác nào Triệu tử phá vòng Đương-dang.",
+            "style": "Han",
+            "augmented_vi": "Giống Triệu Vũ phá Đăng Đăng quan",
+            "en": "Like Zhao the Conqueror breaking through the Dangdang Pass.",
+            "augmented_index": 81,
+            "original_index": 40
+        },
+        {
+            "original_vi": "Đều quăng gươm giáo tìm đàng chạy ngay.",
+            "style": "Nom",
+            "augmented_vi": "Cả đều quăng gươm giáo, tẩu tán vội vàng",
+            "en": "All cast aside their swords and spears, fleeing in haste.",
+            "augmented_index": 82,
+            "original_index": 41
+        },
+        {
+            "original_vi": "Đều quăng gươm giáo tìm đàng chạy ngay.",
+            "style": "Han",
+            "augmented_vi": "Tất thảy giai khí đao thương, tẩu tán hốt hoàng",
+            "en": "All cast aside their swords and spears, fleeing in haste.",
+            "augmented_index": 83,
+            "original_index": 41
+        },
+        {
+            "original_vi": "Sa cơ nên mới lầm tay hung đồ.",
+            "style": "Nom",
+            "augmented_vi": "Hoạn nạn xô đẩy, bất giác lạc vào tay gian hùng",
+            "en": "Driven by misfortune, I have unwittingly fallen into the hands of villains.",
+            "augmented_index": 84,
+            "original_index": 42
+        },
+        {
+            "original_vi": "Sa cơ nên mới lầm tay hung đồ.",
+            "style": "Han",
+            "augmented_vi": "Hoạn nạn tòng lai, bất tri lạc hãm gian hùng chi thủ",
+            "en": "Driven by misfortune, I have unwittingly fallen into the hands of villains.",
+            "augmented_index": 85,
+            "original_index": 42
+        },
+        {
+            "original_vi": "Vân Tiên nghe nói động lòng,",
+            "style": "Nom",
+            "augmented_vi": "Nghe đàm, Vân Tiên tâm động",
+            "en": "Upon hearing this, Vân Tiên's heart was stirred.",
+            "augmented_index": 86,
+            "original_index": 43
+        },
+        {
+            "original_vi": "Vân Tiên nghe nói động lòng,",
+            "style": "Han",
+            "augmented_vi": "Vân Tiên văn ngôn, tâm phiền động",
+            "en": "Upon hearing this, Vân Tiên's heart was stirred.",
+            "augmented_index": 87,
+            "original_index": 43
+        },
+        {
+            "original_vi": "Nàng là phận gái ta là phận trai.",
+            "style": "Nom",
+            "augmented_vi": "Nàng hữu phận giai, ta hữu phận nam",
+            "en": "She is of the feminine lot, I of the masculine.",
+            "augmented_index": 88,
+            "original_index": 44
+        },
+        {
+            "original_vi": "Nàng là phận gái ta là phận trai.",
+            "style": "Han",
+            "augmented_vi": "Nàng giai phận, ta nam phận",
+            "en": "She is of the feminine lot, I of the masculine.",
+            "augmented_index": 89,
+            "original_index": 44
+        },
+        {
+            "original_vi": "Hai nàng ai tớ ai thầy nói ra?",
+            "style": "Nom",
+            "augmented_vi": "Hai người, đệ tử sư gia, thỉnh vấn?",
+            "en": "Which of you two is the pupil, and which the master, pray tell?",
+            "augmented_index": 90,
+            "original_index": 45
+        },
+        {
+            "original_vi": "Hai nàng ai tớ ai thầy nói ra?",
+            "style": "Han",
+            "augmented_vi": "Nhị tử, đồ sư hà vị, vấn chi?",
+            "en": "Which of you two is the pupil, and which the master, pray tell?",
+            "augmented_index": 91,
+            "original_index": 45
+        },
+        {
+            "original_vi": "Thưa rằng: Tôi Kiều Nguyệt Nga",
+            "style": "Nom",
+            "augmented_vi": "Cho phép tự giới thiệu: Nguyệt Nga là ta.",
+            "en": "Permit me to introduce myself: I am Kiều Nguyệt Nga.",
+            "augmented_index": 92,
+            "original_index": 46
+        },
+        {
+            "original_vi": "Thưa rằng: Tôi Kiều Nguyệt Nga",
+            "style": "Han",
+            "augmented_vi": "Vãn tự thiệu: Nga Nguyệt thị ta.",
+            "en": "Permit me to introduce myself: I am Kiều Nguyệt Nga.",
+            "augmented_index": 93,
+            "original_index": 46
+        },
+        {
+            "original_vi": "Con này tì tất tên là Kim Liên.",
+            "style": "Nom",
+            "augmented_vi": "Thiếu nhi vị, danh Kim Liên.",
+            "en": "This child, it must be said, was named Kim Liên.",
+            "augmented_index": 94,
+            "original_index": 47
+        },
+        {
+            "original_vi": "Con này tì tất tên là Kim Liên.",
+            "style": "Han",
+            "augmented_vi": "Ái nhi, danh Kim Liên.",
+            "en": "This child, it must be said, was named Kim Liên.",
+            "augmented_index": 95,
+            "original_index": 47
+        },
+        {
+            "original_vi": "Cha làm tri phủ ở miền Hà-khê.",
+            "style": "Nom",
+            "augmented_vi": "Phụ thân vi Hà Khê phủ quan",
+            "en": "My father served as the mandarin of Hà Khê prefecture.",
+            "augmented_index": 96,
+            "original_index": 48
+        },
+        {
+            "original_vi": "Cha làm tri phủ ở miền Hà-khê.",
+            "style": "Han",
+            "augmented_vi": "Phụ thân làm Hà Khê phủ lệnh",
+            "en": "My father served as the mandarin of Hà Khê prefecture.",
+            "augmented_index": 97,
+            "original_index": 48
+        },
+        {
+            "original_vi": "Làm con đâu dám cãi cha,",
+            "style": "Nom",
+            "augmented_vi": "Thiếu thời, bất cảm nghịch phụ",
+            "en": "As a child, I dare not oppose my father.",
+            "augmented_index": 98,
+            "original_index": 49
+        },
+        {
+            "original_vi": "Làm con đâu dám cãi cha,",
+            "style": "Han",
+            "augmented_vi": "Thiếu thời, bất dám nghịch phụ",
+            "en": "As a child, I dare not oppose my father.",
+            "augmented_index": 99,
+            "original_index": 49
+        },
+        {
+            "original_vi": "Lâm nguy chẳng gặp giải nguy,",
+            "style": "Nom",
+            "augmented_vi": "Nguy nan kẹp, vô cứu thủ hiện",
+            "en": "In peril's grasp, no rescuing hand appeared.",
+            "augmented_index": 100,
+            "original_index": 50
+        },
+        {
+            "original_vi": "Lâm nguy chẳng gặp giải nguy,",
+            "style": "Han",
+            "augmented_vi": "Vong hiểm cận, mạc thủ tương cứu",
+            "en": "In peril's grasp, no rescuing hand appeared.",
+            "augmented_index": 101,
+            "original_index": 50
+        },
+        {
+            "original_vi": "Xin theo cùng thiếp đền ân cho chàng.",
+            "style": "Nom",
+            "augmented_vi": "Cúc cung tạ hậu ân.",
+            "en": "Permit me to accompany you in repaying your kindness.",
+            "augmented_index": 102,
+            "original_index": 51
+        },
+        {
+            "original_vi": "Xin theo cùng thiếp đền ân cho chàng.",
+            "style": "Han",
+            "augmented_vi": "Đáp ân, thùy tòng.",
+            "en": "Permit me to accompany you in repaying your kindness.",
+            "augmented_index": 103,
+            "original_index": 51
+        },
+        {
+            "original_vi": "Của tiền chẳng có bạc vàng cũng không.",
+            "style": "Nom",
+            "augmented_vi": "Vô kim vô tiền",
+            "en": "Possessing neither coin nor gold.",
+            "augmented_index": 104,
+            "original_index": 52
+        },
+        {
+            "original_vi": "Của tiền chẳng có bạc vàng cũng không.",
+            "style": "Han",
+            "augmented_vi": "Không vàng không bạc",
+            "en": "Possessing neither coin nor gold.",
+            "augmented_index": 105,
+            "original_index": 52
+        },
+        {
+            "original_vi": "Gẫm câu báo đức thù công,",
+            "style": "Nom",
+            "augmented_vi": "Suy ân báo ứng",
+            "en": "Reflecting on the debt of gratitude and retribution.",
+            "augmented_index": 106,
+            "original_index": 53
+        },
+        {
+            "original_vi": "Gẫm câu báo đức thù công,",
+            "style": "Han",
+            "augmented_vi": "Tư ân báo ứng",
+            "en": "Reflecting on the debt of gratitude and retribution.",
+            "augmented_index": 107,
+            "original_index": 53
+        },
+        {
+            "original_vi": "Lấy chi cho phỉ tấm lòng cùng ngươi.",
+            "style": "Nom",
+            "augmented_vi": "An vị báo đáp ân sâu vô hạn nhơn nghĩa?",
+            "en": "By what means might I repay your boundless kindness?",
+            "augmented_index": 108,
+            "original_index": 54
+        },
+        {
+            "original_vi": "Lấy chi cho phỉ tấm lòng cùng ngươi.",
+            "style": "Han",
+            "augmented_vi": "Hà tất báo vô lượng hồng ân?",
+            "en": "By what means might I repay your boundless kindness?",
+            "augmented_index": 109,
+            "original_index": 54
+        },
+        {
+            "original_vi": "Vân Tiên nghe nói liền cười:",
+            "style": "Nom",
+            "augmented_vi": "Nghe vậy, Vân Tiên mỉm cười.",
+            "en": "Upon hearing this, Vân Tiên smiled.",
+            "augmented_index": 110,
+            "original_index": 55
+        },
+        {
+            "original_vi": "Vân Tiên nghe nói liền cười:",
+            "style": "Han",
+            "augmented_vi": "Vân Tiên, văn ngôn, tiếu.",
+            "en": "Upon hearing this, Vân Tiên smiled.",
+            "augmented_index": 111,
+            "original_index": 55
+        },
+        {
+            "original_vi": "Làm ơn há dễ trông người trả ơn?",
+            "style": "Nom",
+            "augmented_vi": "Thường nhân báo đáp, hà dĩ khinh?",
+            "en": "Is it easily to expect recompense from others?",
+            "augmented_index": 112,
+            "original_index": 56
+        },
+        {
+            "original_vi": "Làm ơn há dễ trông người trả ơn?",
+            "style": "Han",
+            "augmented_vi": "Báo ứng nhân tâm, hà dễ cầu?",
+            "en": "Is it easily to expect recompense from others?",
+            "augmented_index": 113,
+            "original_index": 56
+        },
+        {
+            "original_vi": "Nay đà rõ đặng nguồn cơn,",
+            "style": "Nom",
+            "augmented_vi": "Nguyên do, nguồn gốc, hiển nhiên minh bạch.",
+            "en": "The cause and source are now manifestly clear.",
+            "augmented_index": 114,
+            "original_index": 57
+        },
+        {
+            "original_vi": "Nay đà rõ đặng nguồn cơn,",
+            "style": "Han",
+            "augmented_vi": "Nghiệp duyên, lai lịch, hiển hiện rõ ràng.",
+            "en": "The cause and source are now manifestly clear.",
+            "augmented_index": 115,
+            "original_index": 57
+        },
+        {
+            "original_vi": "Làm người thế ấy cũng phi anh hùng.",
+            "style": "Nom",
+            "augmented_vi": "Như thế sống chẳng anh hùng nghiệp",
+            "en": "To live thus is not the life of a hero.",
+            "augmented_index": 116,
+            "original_index": 58
+        },
+        {
+            "original_vi": "Làm người thế ấy cũng phi anh hùng.",
+            "style": "Han",
+            "augmented_vi": "Sinh như đắc bất anh hùng sự",
+            "en": "To live thus is not the life of a hero.",
+            "augmented_index": 117,
+            "original_index": 58
+        },
+        {
+            "original_vi": "Nguyệt Nga biết ý chẳng đi,",
+            "style": "Nom",
+            "augmented_vi": "Nguyệt Nga, minh bạch, bất khứ.",
+            "en": "Nguyệt Nga, understanding, did not depart.",
+            "augmented_index": 118,
+            "original_index": 59
+        },
+        {
+            "original_vi": "Nguyệt Nga biết ý chẳng đi,",
+            "style": "Han",
+            "augmented_vi": "Nguyệt Nga, hiểu lý, bất ly.",
+            "en": "Nguyệt Nga, understanding, did not depart.",
+            "augmented_index": 119,
+            "original_index": 59
+        }
+    ],
+    "processed_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        51,
+        52,
+        53,
+        54,
+        55,
+        56,
+        57,
+        58,
+        59
+    ]
+}
