@@ -1,0 +1,32 @@
+{
+    "file_name": "The song on the River of Perfume",
+    "data": [
+        {
+            "original_vi": "Thuyền em rách nát",
+            "augmented_vi": "Thuyền ta bể nát",
+            "style": "Nom",
+            "en": "My boat is shattered.",
+            "score": 0.7271111607551575,
+            "augmented_index": 0,
+            "original_index": 0
+        },
+        {
+            "original_vi": "Thuyền em rách nát",
+            "style": "Han",
+            "augmented_vi": "Ta thuyền nát bể",
+            "en": "My boat is shattered.",
+            "score": 0.7518001198768616,
+            "augmented_index": 1,
+            "original_index": 0
+        },
+        {
+            "original_vi": "Thơm như hương nhuỵ hoa lài",
+            "augmented_vi": "Thơm như phấn hoa nhài",
+            "style": "Nom",
+            "en": "Fragrant as the pollen of the jasmine bloom.",
+            "score": 0.909092903137207,
+            "augmented_index": 2,
+            "original_index": 1
+        }
+    ]
+}

@@ -1,0 +1,106 @@
+{
+    "file_name": "The Poetry of Nguyen Khuyen and Do Fu",
+    "data": [
+        {
+            "original_vi": "Trời thu xanh ngắt mấy tầng cao",
+            "augmented_vi": "Trời thu thăm thẳm, xanh ngắt tầng mây",
+            "style": "Nom",
+            "en": "The autumn sky, a boundless azure, stretches in layers high.",
+            "score": 0.9165226817131042,
+            "augmented_index": 0,
+            "original_index": 2
+        },
+        {
+            "original_vi": "Trời thu xanh ngắt mấy tầng cao",
+            "style": "Han",
+            "augmented_vi": "Thu không thăm thẳm, thanh sắc tầng không",
+            "en": "The autumn sky, a boundless azure, stretches in layers high.",
+            "score": 0.7543458938598633,
+            "augmented_index": 1,
+            "original_index": 2
+        },
+        {
+            "original_vi": "Mấy chùm trước giậu hoa năm ngoái",
+            "style": "Han",
+            "augmented_vi": "Vãn niên cành hoa dư",
+            "en": "Several clusters from last year's hedge of blossoms.",
+            "score": 0.7470189332962036,
+            "augmented_index": 2,
+            "original_index": 3
+        },
+        {
+            "original_vi": "Nhân hứng cũng vừa toan cất bút",
+            "augmented_vi": "Văn chương cảm hứng, ta cầm bút",
+            "style": "Nom",
+            "en": "Inspired, I took up my pen.",
+            "score": 0.7618798017501831,
+            "augmented_index": 3,
+            "original_index": 4
+        },
+        {
+            "original_vi": "Nhân hứng cũng vừa toan cất bút",
+            "style": "Han",
+            "augmented_vi": "Văn chương cảm hứng, ngã cầm bút",
+            "en": "Inspired, I took up my pen.",
+            "score": 0.7436354160308838,
+            "augmented_index": 4,
+            "original_index": 4
+        },
+        {
+            "original_vi": "Nghĩ ra lại thẹn với ông Đào",
+            "augmented_vi": "Tưởng đến, má em ửng thẹn, hổ ngươi trước mặt Đào tiên sinh",
+            "style": "Nom",
+            "en": "The thought brings a blush to my cheeks, a shame before Master Đào.",
+            "score": 0.7194545865058899,
+            "augmented_index": 5,
+            "original_index": 5
+        },
+        {
+            "original_vi": "Sống cảnh nhàn, ta chiếm riêng một vùng nhỏ đất trời",
+            "augmented_vi": "Trong đời bình lặng này, một góc trời đất nhỏ riêng mình tôi",
+            "style": "Nom",
+            "en": "In the tranquil life I embrace, a small corner of heaven and earth is mine alone.",
+            "score": 0.8020642995834351,
+            "augmented_index": 6,
+            "original_index": 6
+        },
+        {
+            "original_vi": "Sống cảnh nhàn, ta chiếm riêng một vùng nhỏ đất trời",
+            "style": "Han",
+            "augmented_vi": "Thế gian an nhàn, nhất cõi thiên địa, do ta độc hữu",
+            "en": "In the tranquil life I embrace, a small corner of heaven and earth is mine alone.",
+            "score": 0.7340448498725891,
+            "augmented_index": 7,
+            "original_index": 6
+        },
+        {
+            "original_vi": "Mở cánh cửa chính, sau cơn mưa (thấy) thêm nhiều núi xanh",
+            "augmented_vi": "Mở cửa then, mưa tạnh, muôn trùng sơn thắm tươi",
+            "style": "Nom",
+            "en": "Opening the main gate, after the rain, (one beholds) a multitude of verdant mountains.",
+            "score": 0.7259656190872192,
+            "augmented_index": 8,
+            "original_index": 7
+        },
+        {
+            "original_vi": "Có ý chảy về đông, con nước tuôn dài",
+            "augmented_vi": "Dòng nước chảy về đông, một nguồn nước không ngừng",
+            "style": "Nom",
+            "en": "There is a current flowing eastward, a ceaseless stream of water.",
+            "score": 0.777465283870697,
+            "augmented_index": 9,
+            "original_index": 8
+        }
+    ],
+    "processed_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+    ]
+}

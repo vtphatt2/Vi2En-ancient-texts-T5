@@ -1,0 +1,29 @@
+{
+    "file_name": "Vietnamese_Anthology_P1",
+    "data": [
+        {
+            "original_vi": "Cây đa già",
+            "augmented_vi": "Cây đa cổ thụ",
+            "style": "Nom",
+            "en": "The Ancient Banyan Tree",
+            "score": 0.8944603204727173,
+            "augmented_index": 0,
+            "original_index": 1
+        },
+        {
+            "original_vi": "Lảng ra, thấy Cóc bên bờ,",
+            "augmented_vi": "Lang thang ra, thấy một con cóc bên bờ",
+            "style": "Nom",
+            "en": "Wandering out, I saw a Toad by the bank,",
+            "score": 0.8381958603858948,
+            "augmented_index": 1,
+            "original_index": 2
+        }
+    ],
+    "processed_indices": [
+        0,
+        1,
+        2,
+        3
+    ]
+}

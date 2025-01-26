@@ -1,0 +1,32 @@
+{
+    "file_name": "On Ponlo Condore",
+    "data": [
+        {
+            "original_vi": "Sóng vỗ như khuya giấc mộng hồn.",
+            "augmented_vi": "Sóng vỗ, như giấc mộng khuya lay động hồn",
+            "style": "Nom",
+            "en": "The waves beat, like a dream's nocturnal stirring of the soul.",
+            "score": 0.9500138163566589,
+            "augmented_index": 0,
+            "original_index": 0
+        },
+        {
+            "original_vi": "Sóng vỗ như khuya giấc mộng hồn.",
+            "style": "Han",
+            "augmented_vi": "Tử vỗ, như mộng dạ động hồn",
+            "en": "The waves beat, like a dream's nocturnal stirring of the soul.",
+            "score": 0.851632297039032,
+            "augmented_index": 1,
+            "original_index": 0
+        },
+        {
+            "original_vi": "Phương châm chưa định dạ chưa yên,",
+            "augmented_vi": "Chính đạo chưa yên, tâm chưa định",
+            "style": "Nom",
+            "en": "The guiding principle remains unsettled, the heart finds no peace.",
+            "score": 0.7656598091125488,
+            "augmented_index": 2,
+            "original_index": 1
+        }
+    ]
+}
