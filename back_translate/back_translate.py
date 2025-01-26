@@ -49,8 +49,8 @@ PHOBERT_THRESHOLD = 0.7
 
 SCRIPT_PATH = os.path.abspath(__file__)
 SCRIPT_DIR = os.path.dirname(SCRIPT_PATH)
-PROJECT_ROOT = SCRIPT_DIR
-INPUT_FOLDER_DIR = os.path.join(PROJECT_ROOT, "backtranslate_data")
+PROJECT_ROOT = os.path.dirname(SCRIPT_DIR)
+INPUT_FOLDER_DIR = os.path.join(PROJECT_ROOT, "augmented_data_ver02")
 OUTPUT_FOLDER_DIR = os.path.join(PROJECT_ROOT, "augmented_data_ver03")
 LOAD_FOLDER_DIR = os.path.join(PROJECT_ROOT, "augmented_progress_data_ver03")
 SAVE_MODEL_DIR = os.path.join(PROJECT_ROOT, "vncorenlp")
@@ -441,7 +441,7 @@ def augment_data(input_file: str, output_file: str, load_file: str, api_key: str
     
 def process_all_json_files(input_folder_dir: str, output_folder_dir: str, load_folder_dir: str, api_key: str,
                            instance: VietnameseSentenceSimilarity):
-    excluded_patterns = ['_augmented', '_progress']
+    excluded_patterns = ['_progress']
     json_files = [
         f for f in os.listdir(input_folder_dir) 
         if f.endswith('.json') and 
