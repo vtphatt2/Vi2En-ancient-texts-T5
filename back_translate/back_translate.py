@@ -255,13 +255,33 @@ def translate_with_gemini(model, text, rate_limiter, source_lang='English', targ
         - Do not include explanatory text
         - Keep the named entities in the original language
 
-        Here is an example of Nom script style: 
-        en: By lamplight, I peruse the tales of Tây Minh.
-        vi: Dạ quang, duyệt Tây Minh truyện. 
+        Here are some examples of Nom script style: 
+        Example 1:
+        en: My body is white; my fate, softly rounded
+        vi: Thân em thì trắng, phận em tròn
+        Example 2: 
+        en: rising and sinking like mountains in streams
+        vi: Bảy nổi ba chìm mấy nước non
+        Example 3: 
+        en: Whatever way hands may shape me
+        vi: Rắn nát mặc dầu tay kẻ nặn
+        Example 4: 
+        en: At center my heart is red and true
+        vi: Mà em vẫn giữ tấm lòng son
         
-        Here is an example of Han script style:
-        en: At the age of twenty-eight, his vocation was the pursuit of learning.
-        vi: Vân lai nhị bát, chí tại kinh thư.
+        Here are some examples of Han script style: 
+        Example 1:
+        en: Moonlight reflects off the front of my bed
+        vi: Sàng tiền minh nguyệt quang 
+        Example 2: 
+        en: Could it actually be the frost on the ground?
+        vi: Nghi thị địa thượng sương
+        Example 3:
+        en: I look up to view the bright moon
+        vi: Cử đầu vọng minh nguyệt 
+        Example 4: 
+        en: And look down to reminisce about my hometown
+        vi: Đê đầu tư cố hương     
         
         Original {source_lang} text:
         {text}
@@ -359,8 +379,9 @@ def augment_data(input_file: str, output_file: str, load_file: str, api_key: str
                     augmented_data["data"].append({
                         "original_vi": vietnamese_sentence,
                         "augmented_vi": translation_result["nom"],
+                        "style": "Nom",
                         "en": english_sentence,
-                        "score": nom_score,
+                        "score": float(nom_score),
                         "augmented_index": current_augmented_index,  # Position in augmented dataset
                         "original_index": idx,  # Add index for alignment
                     })
@@ -372,7 +393,7 @@ def augment_data(input_file: str, output_file: str, load_file: str, api_key: str
                         "style": "Han",
                         "augmented_vi": translation_result["han"],
                         "en": english_sentence,
-                        "score": han_score,
+                        "score": float(han_score),
                         "augmented_index": current_augmented_index,  # Position in augmented dataset
                         "original_index": idx,  # Add index for alignment
                     })
