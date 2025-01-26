@@ -20,11 +20,13 @@ import nltk
 import os
 from transformers import pipeline
 from tqdm import tqdm
+import requests
 import torch
-from bleurt_pytorch import BleurtConfig, BleurtForSequenceClassification, BleurtTokenizer
 from nltk.translate.bleu_score import sentence_bleu, SmoothingFunction
-import sacrebleu
 from typing import Tuple
+import numpy
+import py_vncorenlp
+from transformers import AutoModel, AutoTokenizer
 nltk.download('punkt_tab')
 
 
@@ -43,9 +45,7 @@ logger = logging.getLogger(__name__)
 API_KEY = "AIzaSyCn7PvfXQqLlMOq5_Pj3I-B85qsvHt--ZE"
 # API_KEY = "AIzaSyDMUd29MMduSTwhCWbBd8EzId-DmtVsdKo"
 
-BLEURT_THRESHOLD = 0.55
-SACREBLEU_THRESHOLD = 0.1
-BLEU_THRESHOLD = 0.1
+PHOBERT_THRESHOLD = 0.7
 
 SCRIPT_PATH = os.path.abspath(__file__)
 SCRIPT_DIR = os.path.dirname(SCRIPT_PATH)
@@ -53,6 +53,7 @@ PROJECT_ROOT = SCRIPT_DIR
 INPUT_FOLDER_DIR = os.path.join(PROJECT_ROOT, "backtranslate_data")
 OUTPUT_FOLDER_DIR = os.path.join(PROJECT_ROOT, "augmented_data_ver03")
 LOAD_FOLDER_DIR = os.path.join(PROJECT_ROOT, "augmented_progress_data_ver03")
+SAVE_MODEL_DIR = os.path.join(PROJECT_ROOT, "vncorenlp")
 
 
 def ensure_directory_exists(directory_path: str):
@@ -200,6 +201,41 @@ def setup_gemini(api_key):
     before_sleep=before_sleep_log(logger, logging.INFO),
     after=after_log(logger, logging.INFO)
 )
+
+class VietnameseSentenceSimilarity:
+  def __init__(self, path):
+    self.model = AutoModel.from_pretrained("vinai/phobert-base-v2")
+    self.tokenizer = AutoTokenizer.from_pretrained("vinai/phobert-base-v2")
+    self.rdrsegmenter = py_vncorenlp.VnCoreNLP(annotators=["wseg"], save_dir= path)
+  def segmentation(self, sentence1, sentence2):
+
+    segment1 = self.rdrsegmenter.word_segment(sentence1)
+    segment2 = self.rdrsegmenter.word_segment(sentence2)
+    return segment1, segment2
+  def get_sentence_embedding(self, segment, pooling="mean"):
+    inputs = self.tokenizer(segment, return_tensors="pt", padding=True, truncation=True)
+
+    with torch.no_grad():
+        outputs = self.model(**inputs)
+
+    if pooling == "cls":
+        # Use [CLS] token embedding
+        embeddings = outputs.last_hidden_state[:, 0, :]
+    else:
+        # Use mean pooling
+        embeddings = outputs.last_hidden_state.mean(dim=1)
+
+    return embeddings[0].numpy()
+  def cosine_similarity(self, sentence1, sentence2):
+    segment1, segment2 = self.segmentation(sentence1, sentence2)
+    embedding1 = self.get_sentence_embedding(segment1)
+    embedding2 = self.get_sentence_embedding(segment2)
+    dot_product = numpy.dot(embedding1, embedding2)
+    norm1 = numpy.linalg.norm(embedding1)
+    norm2 = numpy.linalg.norm(embedding2)
+    similarity = dot_product / (norm1 * norm2)
+    return similarity
+
 def translate_with_gemini(model, text, rate_limiter, source_lang='English', target_lang='Vietnamese'):
     """Translate text using Gemini model with comprehensive rate limiting"""
     try:
@@ -217,6 +253,7 @@ def translate_with_gemini(model, text, rate_limiter, source_lang='English', targ
         - Translate in two styles: the Nom script style and the Han script style but use Vietnamese words (do not use Nom and Han characters)
         - Do not provide multiple versions or alternatives of one style
         - Do not include explanatory text
+        - Keep the named entities in the original language
 
         Here is an example of Nom script style: 
         en: By lamplight, I peruse the tales of Tây Minh.
@@ -267,7 +304,8 @@ def translate_with_gemini(model, text, rate_limiter, source_lang='English', targ
         raise
 
 
-def augment_data(input_file: str, output_file: str, load_file: str, api_key: str):
+def augment_data(input_file: str, output_file: str, load_file: str, api_key: str, 
+                 instance: VietnameseSentenceSimilarity):
     """Augment data with proper rate limiting"""
     model = setup_gemini(api_key)
     rate_limiter = GeminiRateLimiter()
@@ -316,24 +354,32 @@ def augment_data(input_file: str, output_file: str, load_file: str, api_key: str
             translation_result = json.loads(translate_with_gemini(model, english_sentence, rate_limiter))
 
             if translation_result: 
-                augmented_data["data"].append({
-                    "original_vi": vietnamese_sentence,
-                    "style": "Nom",
-                    "augmented_vi": translation_result["nom"],
-                    "en": english_sentence,
-                    "augmented_index": current_augmented_index,  # Position in augmented dataset
-                    "original_index": idx,  # Add index for alignment
-                })
-                current_augmented_index += 1
-                augmented_data["data"].append({
-                    "original_vi": vietnamese_sentence,
-                    "style": "Han",
-                    "augmented_vi": translation_result["han"],
-                    "en": english_sentence,
-                    "augmented_index": current_augmented_index,  # Position in augmented dataset
-                    "original_index": idx,  # Add index for alignment
-                })
-                current_augmented_index += 1
+                nom_score = instance.cosine_similarity(vietnamese_sentence, translation_result["nom"])
+                if nom_score >= PHOBERT_THRESHOLD:
+                    augmented_data["data"].append({
+                        "original_vi": vietnamese_sentence,
+                        "augmented_vi": translation_result["nom"],
+                        "en": english_sentence,
+                        "score": nom_score,
+                        "augmented_index": current_augmented_index,  # Position in augmented dataset
+                        "original_index": idx,  # Add index for alignment
+                    })
+                    current_augmented_index += 1
+                han_score = instance.cosine_similarity(vietnamese_sentence, translation_result["han"])
+                if han_score >= PHOBERT_THRESHOLD:
+                    augmented_data["data"].append({
+                        "original_vi": vietnamese_sentence,
+                        "style": "Han",
+                        "augmented_vi": translation_result["han"],
+                        "en": english_sentence,
+                        "score": han_score,
+                        "augmented_index": current_augmented_index,  # Position in augmented dataset
+                        "original_index": idx,  # Add index for alignment
+                    })
+                    current_augmented_index += 1
+                logger.info(f"Item {idx} scores:")
+                logger.info(f"PhoBERT score on Nom text : {round(nom_score, 3)}")
+                logger.info(f"PhoBERT score on Han text : {round(han_score, 3)}")                
             
             # Track this index as processed regardless of success
             augmented_data["processed_indices"].append(idx)
@@ -371,8 +417,9 @@ def augment_data(input_file: str, output_file: str, load_file: str, api_key: str
     
     logger.info(f"Completed processing with {len(augmented_data['data'])} augmented items "
                f"out of {len(augmented_data['processed_indices'])} processed items")
-
-def process_all_json_files(input_folder_dir: str, output_folder_dir: str, load_folder_dir: str, api_key: str):
+    
+def process_all_json_files(input_folder_dir: str, output_folder_dir: str, load_folder_dir: str, api_key: str,
+                           instance: VietnameseSentenceSimilarity):
     excluded_patterns = ['_augmented', '_progress']
     json_files = [
         f for f in os.listdir(input_folder_dir) 
@@ -393,16 +440,35 @@ def process_all_json_files(input_folder_dir: str, output_folder_dir: str, load_f
             load_path = os.path.join(load_folder_dir, load_file)
             
             logger.info(f"\nProcessing: {input_file}")
-            augment_data(input_path, output_path, load_path, api_key)
+            augment_data(input_path, output_path, load_path, api_key, instance)
             
         except Exception as e:
             logger.error(f"Error processing {input_file}: {str(e)}")
 
+def check_model_exists(model_dir):
+    # VnCoreNLP model file pattern
+    model_file = os.path.join(model_dir, "VnCoreNLP-1.2.jar")
+    return os.path.exists(model_file)
+
+def ensure_vncorenlp_setup():
+    # Create vncorenlp directory inside the project
+    vncorenlp_dir = os.path.join(PROJECT_ROOT, "vncorenlp")
+    if not os.path.exists(vncorenlp_dir):
+        os.makedirs(vncorenlp_dir)
+    return vncorenlp_dir
+
 def main():
+    # Create required directories
     ensure_directory_exists(INPUT_FOLDER_DIR)
     ensure_directory_exists(OUTPUT_FOLDER_DIR)
     ensure_directory_exists(LOAD_FOLDER_DIR)
-    process_all_json_files(INPUT_FOLDER_DIR, OUTPUT_FOLDER_DIR, LOAD_FOLDER_DIR, API_KEY)
+    ensure_directory_exists(SAVE_MODEL_DIR)
+    # print("Path:", SAVE_MODEL_DIR)
+    # Check if VnCoreNLP model exists
+    if not check_model_exists(SAVE_MODEL_DIR):
+        py_vncorenlp.download_model(save_dir=SAVE_MODEL_DIR)
+    instance = VietnameseSentenceSimilarity(SAVE_MODEL_DIR)
+    process_all_json_files(INPUT_FOLDER_DIR, OUTPUT_FOLDER_DIR, LOAD_FOLDER_DIR, API_KEY, instance)
 
 if __name__ == "__main__":
     main()
