@@ -1,0 +1,939 @@
+{
+    "data": [
+        {
+            "id": 0,
+            "vi": "Một năm còn thấy mặt nhau một lần.",
+            "en": "We see each other once in a year."
+        },
+        {
+            "id": 1,
+            "vi": "Tội gì?",
+            "en": "What a crime?"
+        },
+        {
+            "id": 2,
+            "vi": "Hai mươi năm qua tôi vẫn nhớ",
+            "en": "Thirty years ago I still remember"
+        },
+        {
+            "id": 3,
+            "vi": "Ngày ấy tôi mới lên năm",
+            "en": "That day I was five"
+        },
+        {
+            "id": 4,
+            "vi": "Nhưng không, mẹ tôi chỉ buồn",
+            "en": "But no, my mother is sad."
+        },
+        {
+            "id": 5,
+            "vi": "Mẹ tôi hôn lên đôi mắt",
+            "en": "My mother kisses on the eyes"
+        },
+        {
+            "id": 6,
+            "vi": "Từ đấy người lớn hỏi tôi:",
+            "en": "Then the adult asked me:"
+        },
+        {
+            "id": 7,
+            "vi": "Nhớ lời mẹ tôi trả lời:",
+            "en": "Remember what my mother replied:"
+        },
+        {
+            "id": 8,
+            "vi": "Năm nay tôi hai mươi lăm tuổi",
+            "en": "This year I am twenty five years old"
+        },
+        {
+            "id": 9,
+            "vi": "Tôi sẽ dùng dao viết văn lên đá.",
+            "en": "I will use dao to write on the stone."
+        },
+        {
+            "id": 10,
+            "vi": "Tôi chỉ một giữa muôn người chiến đấu",
+            "en": "I am just one among many people fighting"
+        },
+        {
+            "id": 11,
+            "vi": "Dơ bẩn thay, nước Đông Hải không rửa sạch mùi!",
+            "en": "Dirty instead, the water of the East Sea does not clean the smell!"
+        },
+        {
+            "id": 12,
+            "vi": "Tôi đã là con của vạn nhà",
+            "en": "I was the son of a thousand houses."
+        },
+        {
+            "id": 13,
+            "vi": "Chẳng là chuột bạch bên tường,",
+            "en": "Not a white mouse on the wall."
+        },
+        {
+            "id": 14,
+            "vi": "Phỏng chừng cũng đến có đôi ba ngày.",
+            "en": "Chongqing also arrives for two or three days."
+        },
+        {
+            "id": 15,
+            "vi": "Xin chàng nghĩ lại chớ phiền,",
+            "en": "Please think again, don’t bother."
+        },
+        {
+            "id": 16,
+            "vi": "Kẻ thì rằng: tôi lãnh cái đầu",
+            "en": "He said: I take the head."
+        },
+        {
+            "id": 17,
+            "vi": "Nghĩ lại mà coi,",
+            "en": "Think again and see,"
+        },
+        {
+            "id": 18,
+            "vi": "Sẽ đưa cô tới một vườn đầy xuân",
+            "en": "It will take you to a garden full of spring."
+        },
+        {
+            "id": 19,
+            "vi": "Sẽ tan như đám mây mờ đêm nay",
+            "en": "It will be as dark clouds tonight."
+        },
+        {
+            "id": 20,
+            "vi": "Nụ cười dưới ấy và trên ấy",
+            "en": "Smile below and above."
+        },
+        {
+            "id": 21,
+            "vi": "Ta sống mãi trong tình thương nỗi nhớ,",
+            "en": "I live forever in love of memory,"
+        },
+        {
+            "id": 22,
+            "vi": "Tròn là để tượng trưng cho trời,",
+            "en": "Thrown is to symbolize the sky,"
+        },
+        {
+            "id": 23,
+            "vi": "Vuông là để tượng trưng cho đất.",
+            "en": "Vacuum is to symbolize the earth."
+        },
+        {
+            "id": 24,
+            "vi": "Bóng trăng hiện ra ở không trung,",
+            "en": "The moon appears in the air,"
+        },
+        {
+            "id": 25,
+            "vi": "Lòng trời tồn tại trong lúc tĩnh",
+            "en": "Heaven exists in the time of silence"
+        },
+        {
+            "id": 26,
+            "vi": "Tìm được một miếng đất ở cạnh con khe trong làng,",
+            "en": "Find a piece of land next to con khe in the village,"
+        },
+        {
+            "id": 27,
+            "vi": "Khi thanh nhàn, ta cũng vui với tính tự nhiên của ta.",
+            "en": "When it is clean, I am also pleased with my nature."
+        },
+        {
+            "id": 28,
+            "vi": "Buổi sáng đến vườn rau, sương dính vào dép,",
+            "en": "In the morning to the garden rau, snow lies in the dep,"
+        },
+        {
+            "id": 29,
+            "vi": "Sự việc ở đời và tình người cũng như thế,",
+            "en": "Life and love are the same."
+        },
+        {
+            "id": 30,
+            "vi": "Nhìn phong cảnh, nhân dân, một phần nửa đã khác trước.",
+            "en": "Look at the landscape, people, half was different before."
+        },
+        {
+            "id": 31,
+            "vi": "Từng lấy làm thẹn vì mình vụng về, chưa hiểu việc dụng binh,",
+            "en": "When I was ashamed because I was shy back, not understanding the use of binh,"
+        },
+        {
+            "id": 32,
+            "vi": "Trống, tù và truyền đi trong gió cùng tiếng thác nước đổ",
+            "en": "Empty, imprisoned and transmitted in the wind with the sound of water falling"
+        },
+        {
+            "id": 33,
+            "vi": "Đừng bàn đến chuyện quang cảnh cứ ruổi qua đi",
+            "en": "Don't talk about the quang scene just run through"
+        },
+        {
+            "id": 34,
+            "vi": "Đốt sáp thay củi, đồ ăn ngon ngậy.",
+            "en": "Burning soap instead of wood, good food."
+        },
+        {
+            "id": 35,
+            "vi": "Một bát gạo cũng chẳng bố thí.",
+            "en": "A bowl of rice does not."
+        },
+        {
+            "id": 36,
+            "vi": "Thấy người đi đường ngủ đêm ngoài sương móc",
+            "en": "I see people sleeping in the night outside the snow."
+        },
+        {
+            "id": 37,
+            "vi": "Duy lợi là thấy",
+            "en": "The benefit is to see"
+        },
+        {
+            "id": 38,
+            "vi": "Nghĩa ở chỗ này.",
+            "en": "It means here."
+        },
+        {
+            "id": 39,
+            "vi": "Thung dung bước trên đường chính",
+            "en": "A step on the main road"
+        },
+        {
+            "id": 40,
+            "vi": "Không gì hiểm hóc bằng đường đời,",
+            "en": "There is no danger on the way of life,"
+        },
+        {
+            "id": 41,
+            "vi": "Được hay mất, xem ra đều có số mệnh cả",
+            "en": "Go or lose, it seems that there is a number of fate."
+        },
+        {
+            "id": 42,
+            "vi": "Thôi đừng bàn chuyện được hay mất đối với những việc trước mắt",
+            "en": "Do not talk or lose for things before your eyes."
+        },
+        {
+            "id": 43,
+            "vi": "Tầng mây lơ lửng trời xanh ngắt",
+            "en": "The clouds of the sky are blue"
+        },
+        {
+            "id": 44,
+            "vi": "Sống cảnh nhàn, ta chiếm riêng một vùng nhỏ đất trời",
+            "en": "Living landscape, we occupy a small area of earth"
+        },
+        {
+            "id": 45,
+            "vi": "Ngày, chờ gió thổi tin hoa",
+            "en": "Day, waiting for the wind to blossom"
+        },
+        {
+            "id": 46,
+            "vi": "Trở về vườn cũ lối không xa",
+            "en": "Return to the Old Garden Not Far"
+        },
+        {
+            "id": 47,
+            "vi": "Mở cánh cửa chính, sau cơn mưa (thấy) thêm nhiều núi xanh",
+            "en": "Open the main door, after the rain (see) more blue mountains"
+        },
+        {
+            "id": 48,
+            "vi": "Thú sinh nhai, ngoài thứ đó ra không có gì khác",
+            "en": "Thú sinh nhai, besides that out there is nothing else"
+        },
+        {
+            "id": 49,
+            "vi": "Chiếc tầu An Nam",
+            "en": "The Ship of Nam"
+        },
+        {
+            "id": 50,
+            "vi": "Anh nghiêng mình trước xác những anh em,",
+            "en": "I tend myself before the bodies of the brothers,"
+        },
+        {
+            "id": 51,
+            "vi": "Người anh hùng nước Việt thôi còn đâu!",
+            "en": "The hero of Vietnam is no more!"
+        },
+        {
+            "id": 52,
+            "vi": "Mười lăm năm sau ngày sầu Yên Báy,",
+            "en": "Five-five years after the day of sunset,"
+        },
+        {
+            "id": 53,
+            "vi": "Một buổi sáng mười lăm năm về trước",
+            "en": "A morning fifteen years ago"
+        },
+        {
+            "id": 54,
+            "vi": "Let’s praise whoever planted those eight posts!",
+            "en": "Let’s praise anyone who planted those eight posts!"
+        },
+        {
+            "id": 55,
+            "vi": "Some climb up there and swing, some sit and watch.",
+            "en": "Some climb up there and swing, some sit and watch."
+        },
+        {
+            "id": 56,
+            "vi": "Boys jig with egret knees, their backs hunched down.",
+            "en": "Boys jig with egret knees, their back hunted down."
+        },
+        {
+            "id": 57,
+            "vi": "Girls sway and twist wasp waists, their laps shown off.",
+            "en": "Girls sway and twist wasp waists, their laps shown off."
+        },
+        {
+            "id": 58,
+            "vi": "Four legs of crimson trousers flap and fly.",
+            "en": "Four legs of crimson trousers flap and fly."
+        },
+        {
+            "id": 59,
+            "vi": "Two rows of limbs like jade stretch pair by pair.",
+            "en": "Two rows of limbs like jade stretch pair by pair."
+        },
+        {
+            "id": 60,
+            "vi": "You'll have spring fun and games—but what is spring?",
+            "en": "You’ll have spring fun and games – but what is spring?"
+        },
+        {
+            "id": 61,
+            "vi": "The post once pulled and gone, the hole just stays.",
+            "en": "The post once pulled and gone, the hole just remains."
+        },
+        {
+            "id": 62,
+            "vi": "Dấn thân mãi để kiếm trời dưới đất.",
+            "en": "Commit forever to seek heaven under earth."
+        },
+        {
+            "id": 63,
+            "vi": "Anh vẫn yêu màu áo ấy vô cùng",
+            "en": "I still love that color."
+        },
+        {
+            "id": 64,
+            "vi": "Anh vẫn nhớ em ngồi đây tóc ngắn",
+            "en": "I still remember you sitting here short hair"
+        },
+        {
+            "id": 65,
+            "vi": "Anh đã trông lên bằng đôi mắt chung tình",
+            "en": "I looked up with the eyes of love"
+        },
+        {
+            "id": 66,
+            "vi": "Anh vẫn yêu màu áo ấy vô cùng",
+            "en": "I still love that color."
+        },
+        {
+            "id": 67,
+            "vi": "Tặng Phạm Kim Thuần, người bạn đời của tôi",
+            "en": "Give Phang Kim Thuần, my life partner"
+        },
+        {
+            "id": 68,
+            "vi": "Mình rất thích trồng cây gây trái,",
+            "en": "I like to grow fruit trees,"
+        },
+        {
+            "id": 69,
+            "vi": "Tôi là người bộ hành phiêu lãng",
+            "en": "I am an adventurous person"
+        },
+        {
+            "id": 70,
+            "vi": "Gửi hương cho gió",
+            "en": "sending aroma to the wind"
+        },
+        {
+            "id": 71,
+            "vi": "Biết bao hoa đẹp trong rừng thẳm",
+            "en": "How beautiful flowers are in the forest"
+        },
+        {
+            "id": 72,
+            "vi": "Tên rừng hoa đẹp rơi trên đá,",
+            "en": "Beautiful forest flowers fall on the stone,"
+        },
+        {
+            "id": 73,
+            "vi": "Tôi là con chim đến từ núi lạ,",
+            "en": "I am a bird coming from a strange mountain,"
+        },
+        {
+            "id": 74,
+            "vi": "Và hãy yêu tôi, một giờ cũng đủ,",
+            "en": "And love me, one hour is enough."
+        },
+        {
+            "id": 75,
+            "vi": "Tôi là con chim đến từ núi lạ,",
+            "en": "I am a bird coming from a strange mountain,"
+        },
+        {
+            "id": 76,
+            "vi": "Chàng rằng: “Lời nói cũng kỳ,",
+            "en": "He said, “The words are also strange,"
+        },
+        {
+            "id": 77,
+            "vi": "Hoa nở ra vô số đồng tiền vàng.",
+            "en": "Flower raises countless gold coins."
+        },
+        {
+            "id": 78,
+            "vi": "Từ khi gặp cơn loạn lạc, mình ít ngủ,",
+            "en": "Since I had trouble, I slept little,"
+        },
+        {
+            "id": 79,
+            "vi": "Thân này chưa biết nơi ở nhất định,",
+            "en": "He does not know where he is,"
+        },
+        {
+            "id": 80,
+            "vi": "Cây ướt đẫm, gió mát thổi tới,",
+            "en": "The trees are wet, the wind blows,"
+        },
+        {
+            "id": 81,
+            "vi": "Xin [chàng] hãy về mà ngắm trong tấm gương sáng.",
+            "en": "Come back and look in the mirror."
+        },
+        {
+            "id": 82,
+            "vi": "thiếp nhìn rặng núi ngẩn ngơ nỗi nhà",
+            "en": "I look at the mountains and the houses."
+        },
+        {
+            "id": 83,
+            "vi": "nhẹ xem tính mệnh như màu cỏ cây",
+            "en": "Lightly see the fate like the color of the grass tree"
+        },
+        {
+            "id": 84,
+            "vi": "thân thiếp chẳng gần kề dưới trướng",
+            "en": "My body is not near under the trail"
+        },
+        {
+            "id": 85,
+            "vi": "hoa vàng hoa rụng quanh tường",
+            "en": "Flowers fall around the wall"
+        },
+        {
+            "id": 86,
+            "vi": "chàng đi đâu cũng thấy thiếp bên",
+            "en": "Wherever you go, you see me"
+        },
+        {
+            "id": 87,
+            "vi": "thiếp chẳng dại như người tô phụ",
+            "en": "I am not as stupid as the father"
+        },
+        {
+            "id": 88,
+            "vi": "- Thế à? Sao biết?",
+            "en": "How do you know?"
+        },
+        {
+            "id": 89,
+            "vi": "Lúc đó bà Phó Đoan mới nhận ra rằng dân Việt Nam không những ngu mà còn đáng thương.",
+            "en": "At that time Vice Đoan only realized that the people of Vietnam are not only stupid but also ugly."
+        },
+        {
+            "id": 90,
+            "vi": "Thế rồi thì...",
+            "en": "And then..."
+        },
+        {
+            "id": 91,
+            "vi": "- Thầy có tiếc cái thời buổi ngày xưa, cách đây mười năm không?",
+            "en": "Do you regret the time of the old day, ten years ago?"
+        },
+        {
+            "id": 92,
+            "vi": "- Tiếc lắm! Mười năm trước đây, dân ta còn ngu.",
+            "en": "10 years ago, my people were still stupid."
+        },
+        {
+            "id": 93,
+            "vi": "- Bao nhiêu thế ạ?",
+            "en": "How much is that?"
+        },
+        {
+            "id": 94,
+            "vi": "Lần đầu!",
+            "en": "for the first time!"
+        },
+        {
+            "id": 95,
+            "vi": "Người tài xế xuống mở cửa xe.",
+            "en": "The driver opened the door of the car."
+        },
+        {
+            "id": 96,
+            "vi": "Đến cửa phòng khách, bà Phó chỉ tay: - Các người ngồi đây chờ tôi.",
+            "en": "At the door of the living room, Mrs. Vice indicates: - You sitt here wait for me."
+        },
+        {
+            "id": 97,
+            "vi": "Chưa kịp đáp, Xuân đã nghe thấy giọng bà Phó.",
+            "en": "No time to answer, Spring heard the voice of the Vice."
+        },
+        {
+            "id": 98,
+            "vi": "- Cũng tốt lắm, nhưng mà hơi hiếm.",
+            "en": "It’s good, but it’s a little rare."
+        },
+        {
+            "id": 99,
+            "vi": "- Ừ, anh cũng biết ơn đấy.",
+            "en": "Yes, you are also grateful."
+        },
+        {
+            "id": 100,
+            "vi": "- Tội nghiệp! Thế anh đã có vợ con gì chưa?",
+            "en": "So you have a wife? have you a wife?"
+        },
+        {
+            "id": 101,
+            "vi": "Sau khi đọc bộ Kim Anh lệ sử thấy nói ở cái chùa tỉnh ấy, sư mô cứ vờ là Phật để xuống bán con cho những đàn bà cầu tự.",
+            "en": "After reading the story of Kim Anh lệ, he saw talking in that temple, he continued to pretend to be a Buddha to go down to sell his son to the women who were praying."
+        },
+        {
+            "id": 102,
+            "vi": "Đến lần này.",
+            "en": "Come this time."
+        },
+        {
+            "id": 103,
+            "vi": "- Anh lên gác này chờ tôi tắm một lát rồi tôi sẽ nói chuyện tại sao tôi bảo anh về đây.",
+            "en": "- You go up here and wait for me to take a little bath and then I’ll talk why I’m telling you to come here."
+        },
+        {
+            "id": 104,
+            "vi": "Bà Phó bảo: - Anh ngồi đây, xem quyển anbom này mà chờ tôi.",
+            "en": "Mrs. Vice said: - You sit here, see this book and wait for me."
+        },
+        {
+            "id": 105,
+            "vi": "Rồi bà bào buồng tắm, cách chỗ Xuân ngồi chờ có vài bước chân.",
+            "en": "Then she celled the bathroom, a few steps away from the Spring seat waiting."
+        },
+        {
+            "id": 106,
+            "vi": "Người này lại sốt sắng nói tiếp: - Chỉ vì trình độ thấp kém của xã hội mà anh em nghệ sĩ chúng tôi phải quay về làm cái việc cải cách y phục nữ là món mỹ thuật dễ hiểu nhất. Bao giờ cả xã hội này biết thưởng thức vẻ đẹp về... bộ đùi của người đàn bà thì mới hiểu giá trị của những bức vẽ khoả thân và do thế, mới hiểu nổi những món mỹ thuật tối cao.",
+            "en": "“Only because of the low level of society that you artists we have to return to do the work of reforming women’s clothes is the most understandable world of art. Now that whole society knows how to enjoy the beauty of the women’s clothes, only understands the value of the drawings and do so, only understands the highest world of art."
+        },
+        {
+            "id": 107,
+            "vi": "Bà khách nghĩ một lúc lâu, đoạn dè dặt nói: - Tôi muốn... may một bộ áo kiểu mới.",
+            "en": "The guest thought for a long time, and said: - I want... may a new type of dress."
+        },
+        {
+            "id": 108,
+            "vi": "Lúc ấy nhà mỹ thuật và nhà làm báo cũng đều nghe ngóng.",
+            "en": "At that time the artists and the journalist also listened."
+        },
+        {
+            "id": 109,
+            "vi": "- Nếu bà mặc bộ này thì không còn một người đàn ông nào lại không chạy theo bà như chạy theo những cô gái ngây thơ!",
+            "en": "If you wear this dress, no man will no longer follow you like the naïve girls!"
+        },
+        {
+            "id": 110,
+            "vi": "Văn Minh lại nói: Thưa bà, hạnh phúc của gia đình có gì khác, nếu nó không là hạnh phúc của vợ chồng? Nếu ái tình đến thời kỳ phai nhạt thì làm thế nào cho vợ chồng có hạnh phúc?",
+            "en": "Văn Minh again said: Mother, what else is the happiness of the family, if it is not the happiness of the spouse?"
+        },
+        {
+            "id": 111,
+            "vi": "Xuân Tóc Đỏ vủng đứng lên.",
+            "en": "The spring red hair stands up."
+        },
+        {
+            "id": 112,
+            "vi": "Đồng hồ đánh 12 tiếng.",
+            "en": "The clock strikes 12 hours."
+        },
+        {
+            "id": 113,
+            "vi": "- Bẩm, tôi vẫn chưa hiểu.",
+            "en": "– Bẩm, I still don’t understand."
+        },
+        {
+            "id": 114,
+            "vi": "Thế rồi...",
+            "en": "And then..."
+        },
+        {
+            "id": 115,
+            "vi": "- À, thế thì tốt lắm!",
+            "en": "Oh, that’s good!"
+        },
+        {
+            "id": 116,
+            "vi": "- Vậy bà muốn gì, thưa bà?",
+            "en": "What do you want, Mrs?"
+        },
+        {
+            "id": 117,
+            "vi": "- Phải! Chính thế. Ông ấy đâu?",
+            "en": "That’s exactly what. where is he?"
+        },
+        {
+            "id": 118,
+            "vi": "Cái quần trắng giản dị kín đáo.",
+            "en": "The white pants are simple and secret."
+        },
+        {
+            "id": 119,
+            "vi": "- Thưa bà, hạnh phúc có gì là khác, nếu nó không là hạnh phúc của vợ chồng? Nếu ái tình đến thời kỳ phai nhạt thì làm thế nào cho vợ chồng có hạnh phúc?",
+            "en": "- Mother, what is happiness different, if it is not the happiness of the spouse? if love comes to the phai time, how can the spouse have happiness?"
+        },
+        {
+            "id": 120,
+            "vi": "- Ấy chính thế đấy! Nếu ông TYPN cứ cấm đoán mãi tôi, thì chắc không thể yêu được mãi ông ấy như vào ngày mới cưới nữa.",
+            "en": "If Mr. TYPN continues to ban me forever, then I will not be able to love him forever as on the new marriage day."
+        },
+        {
+            "id": 121,
+            "vi": "- Thế sao bác cũng chủ trương cải cách trong báo của bác?",
+            "en": "So why do you also lead the reform in your newspaper?"
+        },
+        {
+            "id": 122,
+            "vi": "- Chắc lát nữa thể nào có vài người bạn tôi đến chơi đây.",
+            "en": "Maybe there are some of my friends here to play."
+        },
+        {
+            "id": 123,
+            "vi": "Tiếng quả lắc đồng hồ tăng thêm sự tĩnh mịch của gian phòng.",
+            "en": "The speaking clock increases the quietness of the room."
+        },
+        {
+            "id": 124,
+            "vi": "Với con chó Tây trong cánh tay, với hai con mắt mơ màng nhìn lên chiếc quạt, bà Phó Đoan có vẻ là linh hồn nước Việt Nam trên đường tiến hoá và giải phóng.",
+            "en": "With the dog West in his arms, with hai con eyes dream màng looking at the cave, Mrs. Vice Đoan seems to be the soul water of Vietnam on the way of evolution and liberation."
+        },
+        {
+            "id": 125,
+            "vi": "Thật là kỳ quái!",
+            "en": "What a strange thing!"
+        },
+        {
+            "id": 126,
+            "vi": "- Nhưng mà chửa khỏi, vì là thuốc Thánh. Tôi đã xin âm dương, tôi đã được Thánh bạn lộc cho, tôi đã thấy hàng nghìn người khỏi bằng những thứ này rồi.",
+            "en": "I have requested âm dương, I have been given by the Holy Friend lộc, I have seen thousands of people away with these things."
+        },
+        {
+            "id": 127,
+            "vi": "Thật là thuốc Thánh!",
+            "en": "What a sacred medicine!"
+        },
+        {
+            "id": 128,
+            "vi": "Mặt trăng soi qua cửa kính...",
+            "en": "The moon looks through the door glass."
+        },
+        {
+            "id": 129,
+            "vi": "- Hay lắm! Xin đa tạ... cảm ơn vạn bội.",
+            "en": "Thank you so much...thank you so much!"
+        },
+        {
+            "id": 130,
+            "vi": "- Nhưng sao quan bác lại cần tôi phải... công kích quan bác về tội mọc sừng?",
+            "en": "But why do you need me to... attack you about crimes growing corner?"
+        },
+        {
+            "id": 131,
+            "vi": "- Thế bây giờ phải làm thế nào?",
+            "en": "So now what to do?"
+        },
+        {
+            "id": 132,
+            "vi": "- Thế nghĩa là phải bảo bác mọc sừng trước mặt cả vợ bác lẫn cụ cố tổ?",
+            "en": "What does it mean to tell you to grow a corner in front of both your wife and dad cố tổ?"
+        },
+        {
+            "id": 133,
+            "vi": "- Nhưngmà đừng tưởng là tôi không biết khiêu vũ đấy nhé?",
+            "en": "Don’t think I don’t know how to dance."
+        },
+        {
+            "id": 134,
+            "vi": "- À... vâng.",
+            "en": "Oh... yes yes."
+        },
+        {
+            "id": 135,
+            "vi": "- Em rất cảm tạ.",
+            "en": "I am very grateful."
+        },
+        {
+            "id": 136,
+            "vi": "- Tôi phải làm gì?",
+            "en": "What should I do?"
+        },
+        {
+            "id": 137,
+            "vi": "Tuyết bảo Xuân: - Chúng ta sẽ thuê chung một gian phòng!",
+            "en": "Snow said Spring: - We will rent a room together!"
+        },
+        {
+            "id": 138,
+            "vi": "Thật vậy, chính sự nghiệp của ông, cũng là kỳ lạ, từ khi ông làm Vua Thuốc Lậu và chủ tiệmBồng Lai...",
+            "en": "In fact, his career itself, is also strange, since he has been the Vua Thuốc Lậu and the owner of the shopBồng Lai."
+        },
+        {
+            "id": 139,
+            "vi": "Và như thế thì ông Victor Ban càng giầu chứ sao?",
+            "en": "And that’s how Victor Ban becomes richer?"
+        },
+        {
+            "id": 140,
+            "vi": "- Nghĩa là tôi xin ly dị chồng tôi?",
+            "en": "Do I want to divorce my husband?"
+        },
+        {
+            "id": 141,
+            "vi": "Sau 15 phút, cánh cửa hé mở ra.",
+            "en": "After 15 minutes, the door opened."
+        },
+        {
+            "id": 142,
+            "vi": "Cả hai ra đến cái cổng Nhật Bản thì lại thấy ngay cái xe ô tô của bà phó Ðoan đứn sừng sững.",
+            "en": "Even those who came to the gate of Japan saw the car of Mrs. Phó Ðoan'n's corner staying."
+        },
+        {
+            "id": 143,
+            "vi": "Phải, đành là phải nói, nhưng phải biết nói gì mới được...",
+            "en": "Yes, I have to say, but I have to know what to say..."
+        },
+        {
+            "id": 144,
+            "vi": "bốn...",
+            "en": "The four..."
+        },
+        {
+            "id": 145,
+            "vi": "- Ai bảo ông thế?",
+            "en": "Who told you that?"
+        },
+        {
+            "id": 146,
+            "vi": "- Ông có biết chúng nó làm gì với nhau không? Nào tắm, nào bơi, nào nhẩy đầm! Lại thuê chung một phòng trong cả một ngày nữa!",
+            "en": "- Do you know what they do with each other? - No bath, no swimming, no climbing! - Rent a room for a whole day!"
+        },
+        {
+            "id": 147,
+            "vi": "- Sao! Sao nữa?",
+            "en": "So what? so what?"
+        },
+        {
+            "id": 148,
+            "vi": "Nhìn sang bên tay phải không thấy bà vợ yêu quý đâu cả, lại trông lên cái lịch trên tường, ông mới nhớ ra rằng vợ ông đã đến sân quần vì hôm ấy vào ngày thứ năm.",
+            "en": "Looking to the right hand not to see the beloved wife at all, again looking at the calendar on the wall, he just remembered that his wife had come to the pants for that day on Thursday."
+        },
+        {
+            "id": 149,
+            "vi": "Chải đầu xong, ông ăn vội vã những thức ăn rồi trang điểm cái mặt.",
+            "en": "After cleaning his head, he eats fast the food and make up his face."
+        },
+        {
+            "id": 150,
+            "vi": "Nhưng nếu những cái đồ chời mà lại là em gái ông hoặc vợ ông nữa, thì...",
+            "en": "But if these things are your sister or your wife, then..."
+        },
+        {
+            "id": 151,
+            "vi": "Cô ngồi trên ghế, có một quyển sách giở sẳn ở đầu gối.",
+            "en": "She sat on a chair, there was a book on her knees."
+        },
+        {
+            "id": 152,
+            "vi": "Thật là một điềm gở!",
+            "en": "What a sign!"
+        },
+        {
+            "id": 153,
+            "vi": "Bà lo lắng nhìn cậu Phước ngồi tần ngần trên một cái bàn ở giữa nhà, rồi bà ra cửa sổ...",
+            "en": "She was worried to see him sitting on a table in the middle of the house, and then she went out of the window."
+        },
+        {
+            "id": 154,
+            "vi": "Xuân ưỡn ngực lên, dõng dạc nói: - Còn tôi, thì tôi đang giáo dục cái xác thịt cho cậu ấy, và cả bà mẹ cậu ấy!",
+            "en": "Spring and mouth up, dõng dõng said, \"And I, then I am educating the flesh for him, and his mother too!"
+        },
+        {
+            "id": 155,
+            "vi": "Phái phản đối có ông mỹ thuật Typn đứng đầu đã xoa tay sung sướng cho việc Xuân về ở hẳn nhà bà Phó Ðoan.",
+            "en": "Phái opposed that the artist Typn head had choa tay sung pleased for the Spring returning to the house of Mrs. Vice Ðoan."
+        },
+        {
+            "id": 156,
+            "vi": "Ba hôm sau, ông cụ già chết thật.",
+            "en": "The next day, the old man really died."
+        },
+        {
+            "id": 157,
+            "vi": "Ðó là một bài học cho những kẻ nào dám bảo một người như Xuân là con nhà hạ lưu, ma cà bông, vô học, vô lại, nhặt banh quần, vân vân...",
+            "en": "It is a lesson for those who dare to say a man like Spring is con house hạ lưu, ma cà bông, vô học, vô lại, take banh pants, etc."
+        },
+        {
+            "id": 158,
+            "vi": "Cái chết kia đã làm cho nhiều người sung sướng lắm.",
+            "en": "That death has made many people happy."
+        },
+        {
+            "id": 159,
+            "vi": "Ðiều băng khoăn của con cụ, ông Văn Minh, chỉ là mời luật sư đến chứng kiến cái chết của ông nội mà thôi.",
+            "en": "Ðiều băng khoăn of son, Mr. Văn Minh, just invites a lawyer to see the death of his grandfather."
+        },
+        {
+            "id": 160,
+            "vi": "- Hứt!... Hứt!... Hứt!...",
+            "en": "Hirt... Hirt... Hirt... Hirt..."
+        },
+        {
+            "id": 161,
+            "vi": "Nó nắm tay cho khỏi có người nom thấy.",
+            "en": "He holds his hand so that no one sees it."
+        },
+        {
+            "id": 162,
+            "vi": "- Thế ra bây giờ tôi đi với ông đến Tổng cục thể thao?",
+            "en": "So now I am going with you to the General Department of Sports?"
+        },
+        {
+            "id": 163,
+            "vi": "- Ðại khái ngài phải nói rằng tôi là một tay quần vợt tài giỏi hay vọng của Ðông Dương...",
+            "en": "- Ði khái you have to say that I am a tay pants talent hay vọng of Ðông Dương..."
+        },
+        {
+            "id": 164,
+            "vi": "Hai thầy cảnh binh cùng hỏi dồn: - Thế còn chúng tôi?",
+            "en": "He asks me: What about us?"
+        },
+        {
+            "id": 165,
+            "vi": "Lúc ấy mới 8 giờ sáng, Mặt trời chưa kịp xuyên qua những tần mây bạc.",
+            "en": "At eight in the morning, the sun was not able to pass through the clouds of silver."
+        },
+        {
+            "id": 166,
+            "vi": "- Em có biết vì đâu anh đem lòng yêu em không?",
+            "en": "Do you know why I love you?"
+        },
+        {
+            "id": 167,
+            "vi": "Người kia ra vẻ hổ thẹn lắm!",
+            "en": "The guy looks ashamed!"
+        },
+        {
+            "id": 168,
+            "vi": "Lúc ấy, cô muốn viết ngay một cuốn tiểu thuyết về đời mình, để làm gương cho những phụ nữ muốn giãi phóng.",
+            "en": "At that time, she wanted to write a novel about her life, to be an example for those women who want to give birth."
+        },
+        {
+            "id": 169,
+            "vi": "Bà này dậy lúc nào thế?",
+            "en": "When did she wake up?"
+        },
+        {
+            "id": 170,
+            "vi": "Năm phút sau nó ngắn ngủi như một cái tích tắc đồng hồ, chợt thấy có tiếng gõ cửa.",
+            "en": "Five minutes later it was short as a clock, suddenly there was a noise to the door."
+        },
+        {
+            "id": 171,
+            "vi": "Từ đây trở đi, ngần này người trơ mắt ra nhìn nhau.",
+            "en": "From here to here, many people look out to each other."
+        },
+        {
+            "id": 172,
+            "vi": "- Ðể chiều mai tôi dẫn bác đến chỗ sân quần, rồi tôi cho bác nhận mặt để rồi đúng hôm Vua ra thì hành động...",
+            "en": "- To the afternoon of May I will take you to the sân pantalon, then I will give you to accept the face so that then the right day Vua out will act..."
+        },
+        {
+            "id": 173,
+            "vi": "- Thế còn bác?",
+            "en": "What about you?"
+        },
+        {
+            "id": 174,
+            "vi": "- Bẩm thế còn bọn cộng sản?",
+            "en": "What about the communists?"
+        },
+        {
+            "id": 175,
+            "vi": "- Không sợ lắm, vì quốc gia không xung đột với quân chủ.",
+            "en": "Not very afraid, because the country does not conflict with the sovereign."
+        },
+        {
+            "id": 176,
+            "vi": "Bác sĩ Trực Ngôn nói ngay: - Khoa học của tôi chỉ chữa được cái đau đớn thể chất thôi.",
+            "en": "Dr. Trực Ngôn says right now: - My science can only heal the pain physical."
+        },
+        {
+            "id": 177,
+            "vi": "- Tôi xin có lời mừng đấy!",
+            "en": "Please have a congratulation!"
+        },
+        {
+            "id": 178,
+            "vi": "- Cậu ngoan lắm!",
+            "en": "You are very good!"
+        },
+        {
+            "id": 179,
+            "vi": "Bà vội nhìn lên đồng hồ.",
+            "en": "She quickly looked at the clock."
+        },
+        {
+            "id": 180,
+            "vi": "Một thứ biểu tượng của cái nước một triệu con voi.",
+            "en": "It is a symbol of the water of a million elephants."
+        },
+        {
+            "id": 181,
+            "vi": "- Tôi xin thay mặt các ông chủ khách sạn đến chúc mừng...",
+            "en": "I would like to congratulate the hosts on behalf of..."
+        },
+        {
+            "id": 182,
+            "vi": "- Tôi là một hội viên Khai trí Tiến đức, lại đây với cái nguyện vọng được yến kiến quan tài tử Xuân, bậc vĩ nhân của xã hội...",
+            "en": "I am a member of Khai trí Tiến Đức, again here with the desire that is yến kiến quan akt tử Xuân, bậc vĩ nhân of society."
+        },
+        {
+            "id": 183,
+            "vi": "Mối rằng  Đáng giá nghìn vàng",
+            "en": "It is worth a thousand gold"
+        },
+        {
+            "id": 184,
+            "vi": "Một lời đã biết đến ta",
+            "en": "A word known to me"
+        },
+        {
+            "id": 185,
+            "vi": "Anh hùng mới biết anh hùng",
+            "en": "The Hero Knows the Hero"
+        },
+        {
+            "id": 186,
+            "vi": "Mà lòng đã chắc những ngày một hai",
+            "en": "I have been sure that the days one hai"
+        }
+    ]
+}
