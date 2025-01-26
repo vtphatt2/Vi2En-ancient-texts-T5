@@ -1,0 +1,26 @@
+{
+    "file_name": "nam_quoc_son_ha_1.pdf",
+    "data": [
+        {
+            "original_vi": "Nam quốc sơn hà Nam đế cư",
+            "augmented_vi": "Sơn hà Nam vực, Nam đế đô",
+            "style": "Nom",
+            "en": "The mountains and rivers of the South, the Southern Emperor's domain they are.",
+            "score": 0.8215369582176208,
+            "augmented_index": 0,
+            "original_index": 0
+        },
+        {
+            "original_vi": "Nam quốc sơn hà Nam đế cư",
+            "style": "Han",
+            "augmented_vi": "Nam vực sơn hà, Nam đế đô",
+            "en": "The mountains and rivers of the South, the Southern Emperor's domain they are.",
+            "score": 0.8829116821289062,
+            "augmented_index": 1,
+            "original_index": 0
+        }
+    ],
+    "processed_indices": [
+        0
+    ]
+}

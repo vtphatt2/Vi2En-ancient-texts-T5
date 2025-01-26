@@ -1,0 +1,104 @@
+{
+    "file_name": "A song of sorrow inside royal harem",
+    "data": [
+        {
+            "original_vi": "Nguyệt thu kia chưa hé hàn quang.",
+            "augmented_vi": "Thu nguyệt chưa tỏ sắc hàn",
+            "style": "Nom",
+            "en": "The autumn moon has yet to reveal its cold radiance.",
+            "score": 0.7789987921714783,
+            "augmented_index": 0,
+            "original_index": 0
+        },
+        {
+            "original_vi": "Nguyệt thu kia chưa hé hàn quang.",
+            "style": "Han",
+            "augmented_vi": "Thu nguyệt vị xuất hàn quang",
+            "en": "The autumn moon has yet to reveal its cold radiance.",
+            "score": 0.7921061515808105,
+            "augmented_index": 1,
+            "original_index": 0
+        },
+        {
+            "original_vi": "Sóng cồn cửa bể nhấp nhô,",
+            "augmented_vi": "Biển miệng sóng dập dềnh lên xuống",
+            "style": "Nom",
+            "en": "Undulating waves of the ocean's mouth rise and fall,",
+            "score": 0.8156248927116394,
+            "augmented_index": 2,
+            "original_index": 1
+        },
+        {
+            "original_vi": "Sân đào lý mây lồng man mác,",
+            "augmented_vi": "Vườn đào liễu phủ mây mù ảo ảo",
+            "style": "Nom",
+            "en": "The peach and plum garden is veiled in ethereal clouds,",
+            "score": 0.811404824256897,
+            "augmented_index": 3,
+            "original_index": 2
+        },
+        {
+            "original_vi": "Cánh buồm bể hoạn mênh mang,",
+            "augmented_vi": "Buồm biển khổ mênh mông",
+            "style": "Nom",
+            "en": "The sail of the sea of suffering is vast,",
+            "score": 0.8131812810897827,
+            "augmented_index": 4,
+            "original_index": 3
+        },
+        {
+            "original_vi": "Cánh buồm bể hoạn mênh mang,",
+            "style": "Han",
+            "augmented_vi": "Khổ hải buồm bao la",
+            "en": "The sail of the sea of suffering is vast,",
+            "score": 0.7378636598587036,
+            "augmented_index": 5,
+            "original_index": 3
+        },
+        {
+            "original_vi": "Mờ mờ nhân ảnh như người đi đêm.",
+            "augmented_vi": "Mờ ảo, bóng người, tựa bước đêm khuya",
+            "style": "Nom",
+            "en": "Dimly, a human figure, like one walking in the night.",
+            "score": 0.7236063480377197,
+            "augmented_index": 6,
+            "original_index": 4
+        },
+        {
+            "original_vi": "Mờ mờ nhân ảnh như người đi đêm.",
+            "style": "Han",
+            "augmented_vi": "Ám ám, nhân ảnh, như dạ hành",
+            "en": "Dimly, a human figure, like one walking in the night.",
+            "score": 0.704596221446991,
+            "augmented_index": 7,
+            "original_index": 4
+        },
+        {
+            "original_vi": "Kìa điểu thú là loài vạn vật,",
+            "augmented_vi": "Này xem, cầm thú, muôn loài vật sống,",
+            "style": "Nom",
+            "en": "Behold, the birds and beasts, all living creatures,",
+            "score": 0.7758420705795288,
+            "augmented_index": 8,
+            "original_index": 5
+        },
+        {
+            "original_vi": "Kìa điểu thú là loài vạn vật,",
+            "style": "Han",
+            "augmented_vi": "Khứ khán, cầm thú, muôn loại sinh linh,",
+            "en": "Behold, the birds and beasts, all living creatures,",
+            "score": 0.837337076663971,
+            "augmented_index": 9,
+            "original_index": 5
+        },
+        {
+            "original_vi": "Khoảnh làm chi bấy chúa xuân,",
+            "style": "Han",
+            "augmented_vi": "Xuân Vương hà tất trì hoãn",
+            "en": "Why do you linger, oh Lord of Spring,",
+            "score": 0.7140238285064697,
+            "augmented_index": 10,
+            "original_index": 9
+        }
+    ]
+}

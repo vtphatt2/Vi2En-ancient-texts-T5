@@ -1,0 +1,96 @@
+{
+    "file_name": "You cannot lock up the mind",
+    "data": [
+        {
+            "original_vi": "Có lúc ngươi toan đánh bể đầu",
+            "augmented_vi": "Có những lúc người định nát óc ta",
+            "style": "Nom",
+            "en": "There were moments when you intended to shatter my skull.",
+            "score": 0.7988561391830444,
+            "augmented_index": 0,
+            "original_index": 1
+        },
+        {
+            "original_vi": "Có lúc ngươi toan đánh bể đầu",
+            "style": "Han",
+            "augmented_vi": "Từng hữu thời người định nát óc ta",
+            "en": "There were moments when you intended to shatter my skull.",
+            "score": 0.736541211605072,
+            "augmented_index": 1,
+            "original_index": 1
+        },
+        {
+            "original_vi": "Đầu ta chẳng bể, sống càng lâu",
+            "augmented_vi": "Đầu em vẫn vững, kiếp em còn dài",
+            "style": "Nom",
+            "en": "My head remains unbroken, my life extends ever onward.",
+            "score": 0.7388136982917786,
+            "augmented_index": 2,
+            "original_index": 2
+        },
+        {
+            "original_vi": "Đầu ta chẳng bể, sống càng lâu",
+            "style": "Han",
+            "augmented_vi": "Đầu em bất đoạn, mệnh em trường tồn",
+            "en": "My head remains unbroken, my life extends ever onward.",
+            "score": 0.7851455807685852,
+            "augmented_index": 3,
+            "original_index": 2
+        },
+        {
+            "original_vi": "Đời ta đã có một con đường",
+            "augmented_vi": "Đường đời con đã định một lối",
+            "style": "Nom",
+            "en": "My life has found its singular path.",
+            "score": 0.874815821647644,
+            "augmented_index": 4,
+            "original_index": 3
+        },
+        {
+            "original_vi": "Ta nhìn vũ trụ vẫn bao la!",
+            "augmented_vi": "Ta ngắm nhìn một trời sao bao la vô tận",
+            "style": "Nom",
+            "en": "I gaze upon a cosmos vast and boundless.",
+            "score": 0.8186594247817993,
+            "augmented_index": 5,
+            "original_index": 6
+        },
+        {
+            "original_vi": "Ta nhìn vũ trụ vẫn bao la!",
+            "style": "Han",
+            "augmented_vi": "Ngã vọng vũ trụ bao la vô tận",
+            "en": "I gaze upon a cosmos vast and boundless.",
+            "score": 0.7141323685646057,
+            "augmented_index": 6,
+            "original_index": 6
+        },
+        {
+            "original_vi": "Ôi, đẹp vườn xuân những sớm chiều!",
+            "augmented_vi": "Ôi, xuân viên diễm lệ biết bao, suốt buổi sớm chiều!",
+            "style": "Nom",
+            "en": "Oh, how beautiful the spring garden is, throughout the mornings and evenings!",
+            "score": 0.8865883350372314,
+            "augmented_index": 7,
+            "original_index": 7
+        },
+        {
+            "original_vi": "Ôi, đẹp vườn xuân những sớm chiều!",
+            "style": "Han",
+            "augmented_vi": "Ôi, xuân viên diễm lệ biết bao, suốt buổi sớm chiều!",
+            "en": "Oh, how beautiful the spring garden is, throughout the mornings and evenings!",
+            "score": 0.8865883350372314,
+            "augmented_index": 8,
+            "original_index": 7
+        }
+    ],
+    "processed_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+    ]
+}

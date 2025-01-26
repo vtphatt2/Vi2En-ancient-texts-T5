@@ -1,0 +1,23 @@
+{
+    "file_name": "What's my crime?",
+    "data": [
+        {
+            "original_vi": "Hổ tung cũi nhốt còn chờ dịp,",
+            "augmented_vi": "Hổ tuy ở lồng, vẫn đợi thời",
+            "style": "Nom",
+            "en": "The tiger, though caged, still awaits its time.",
+            "score": 0.8328853249549866,
+            "augmented_index": 0,
+            "original_index": 1
+        },
+        {
+            "original_vi": "Hổ tung cũi nhốt còn chờ dịp,",
+            "style": "Han",
+            "augmented_vi": "Hổ tù, vẫn đợi thời lai",
+            "en": "The tiger, though caged, still awaits its time.",
+            "score": 0.8178526759147644,
+            "augmented_index": 1,
+            "original_index": 1
+        }
+    ]
+}

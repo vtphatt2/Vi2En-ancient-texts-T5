@@ -1,0 +1,59 @@
+{
+    "file_name": "hich_tuong_si.pdf",
+    "data": [
+        {
+            "original_vi": "Kỷ Tín dĩ thân đại tử nhi thoát Cao Đế",
+            "augmented_vi": "Tì Xín hi sinh cứu Cao Tổ hoàng đế",
+            "style": "Nom",
+            "en": "Ji Xin Sacrificed Himself to Save the Emperor Gaozu",
+            "score": 0.7289082407951355,
+            "augmented_index": 0,
+            "original_index": 0
+        },
+        {
+            "original_vi": "Kỷ Tín dĩ thân đại tử nhi thoát Cao Đế",
+            "style": "Han",
+            "augmented_vi": "Tì Xín hi sinh cứu Cao Tổ đế",
+            "en": "Ji Xin Sacrificed Himself to Save the Emperor Gaozu",
+            "score": 0.7444659471511841,
+            "augmented_index": 1,
+            "original_index": 0
+        },
+        {
+            "original_vi": "Tự cổ trung thần nghĩa sĩ dĩ thân tử quốc hà đại vô chi",
+            "augmented_vi": "Xưa nay trung thần nghĩa sĩ vì nước mà hy sinh tính mạng, há từng thời nào không có?",
+            "style": "Nom",
+            "en": "Throughout history, loyal ministers and righteous warriors have sacrificed their lives for their country; in which era have they not existed?",
+            "score": 0.7513601183891296,
+            "augmented_index": 2,
+            "original_index": 1
+        },
+        {
+            "original_vi": "Tự cổ trung thần nghĩa sĩ dĩ thân tử quốc hà đại vô chi",
+            "style": "Han",
+            "augmented_vi": "Xưa nay trung liệt vì quốc mà tử, há từng thời bất hữu?",
+            "en": "Throughout history, loyal ministers and righteous warriors have sacrificed their lives for their country; in which era have they not existed?",
+            "score": 0.8413592576980591,
+            "augmented_index": 3,
+            "original_index": 1
+        },
+        {
+            "original_vi": "Kỳ tỳ tướng Xích Tu Tư hựu hà nhân dã",
+            "style": "Han",
+            "augmented_vi": "Xích Tu Tư tướng giả hồ?",
+            "en": "Who is the extraordinary general Xích Tu Tư?",
+            "score": 0.8004313111305237,
+            "augmented_index": 4,
+            "original_index": 2
+        },
+        {
+            "original_vi": "Nhi nhữ đẳng chi tính danh diệc di phương ư thanh sử hĩ",
+            "style": "Han",
+            "augmented_vi": "Danh đức các ngươi giai khắc sử biên",
+            "en": "Your names and virtues shall also be recorded in the annals of history",
+            "score": 0.8141314387321472,
+            "augmented_index": 5,
+            "original_index": 3
+        }
+    ]
+}
