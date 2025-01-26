@@ -1,5 +1,6 @@
 import time
 import logging
+import shutil
 from dataclasses import dataclass
 from enum import Enum
 from datetime import datetime, timedelta
@@ -50,7 +51,7 @@ PHOBERT_THRESHOLD = 0.7
 SCRIPT_PATH = os.path.abspath(__file__)
 SCRIPT_DIR = os.path.dirname(SCRIPT_PATH)
 PROJECT_ROOT = os.path.dirname(SCRIPT_DIR)
-INPUT_FOLDER_DIR = os.path.join(PROJECT_ROOT, "augmented_data_ver02")
+INPUT_FOLDER_DIR = os.path.join(PROJECT_ROOT, "remaining_data_1")
 OUTPUT_FOLDER_DIR = os.path.join(PROJECT_ROOT, "augmented_data_ver03")
 LOAD_FOLDER_DIR = os.path.join(PROJECT_ROOT, "augmented_progress_data_ver03")
 SAVE_MODEL_DIR = os.path.join(PROJECT_ROOT, "vncorenlp")
@@ -441,7 +442,7 @@ def augment_data(input_file: str, output_file: str, load_file: str, api_key: str
     
 def process_all_json_files(input_folder_dir: str, output_folder_dir: str, load_folder_dir: str, api_key: str,
                            instance: VietnameseSentenceSimilarity):
-    excluded_patterns = ['_progress']
+    excluded_patterns = []
     json_files = [
         f for f in os.listdir(input_folder_dir) 
         if f.endswith('.json') and 
@@ -488,6 +489,7 @@ def main():
     # Check if VnCoreNLP model exists
     if not check_model_exists(SAVE_MODEL_DIR):
         py_vncorenlp.download_model(save_dir=SAVE_MODEL_DIR)
+
     instance = VietnameseSentenceSimilarity(SAVE_MODEL_DIR)
     process_all_json_files(INPUT_FOLDER_DIR, OUTPUT_FOLDER_DIR, LOAD_FOLDER_DIR, API_KEY, instance)
 

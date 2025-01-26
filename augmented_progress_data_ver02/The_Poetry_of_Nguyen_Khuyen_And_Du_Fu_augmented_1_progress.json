@@ -1,0 +1,411 @@
+{
+    "file_name": "The Poetry of Nguyen Khuyen and Do Fu",
+    "data": [
+        {
+            "vi": "Một chiếc thuyền câu bé tẻo teo",
+            "en": "A tiny fishing boat, frail and slight.",
+            "augmented_index": 0,
+            "original_index": 1,
+            "scores": {
+                "bleurt": 0.4777,
+                "sacrebleu": 0.2985,
+                "bleu": 0.363
+            }
+        },
+        {
+            "vi": "Ngõ trúc quanh co khách vắng teo",
+            "en": "The bamboo lane, winding, deserted and forlorn.",
+            "augmented_index": 1,
+            "original_index": 5,
+            "scores": {
+                "bleurt": 0.6246,
+                "sacrebleu": 0.0593,
+                "bleu": 0.1323
+            }
+        },
+        {
+            "vi": "Ngõ tối đêm sâu đóm lập lòe",
+            "en": "In the shadowed alley, deep into the night, fireflies glimmered.",
+            "augmented_index": 2,
+            "original_index": 9,
+            "scores": {
+                "bleurt": 0.6025,
+                "sacrebleu": 0.0407,
+                "bleu": 0.1074
+            }
+        },
+        {
+            "vi": "Làn ao lóng lánh bóng trăng loe",
+            "en": "The pond's surface, shimmering with the moon's diffused light.",
+            "augmented_index": 3,
+            "original_index": 11,
+            "scores": {
+                "bleurt": 0.707,
+                "sacrebleu": 0.083,
+                "bleu": 0.1548
+            }
+        },
+        {
+            "vi": "Trời thu xanh ngắt mấy tầng cao",
+            "en": "The autumn sky, a boundless azure, stretches to celestial heights.",
+            "augmented_index": 4,
+            "original_index": 16,
+            "scores": {
+                "bleurt": 0.549,
+                "sacrebleu": 0.115,
+                "bleu": 0.1754
+            }
+        },
+        {
+            "vi": "Mấy chùm trước giậu hoa năm ngoái",
+            "en": "A few clusters of blossoms from last year's hedge.",
+            "augmented_index": 5,
+            "original_index": 20,
+            "scores": {
+                "bleurt": 0.6006,
+                "sacrebleu": 0.0972,
+                "bleu": 0.2197
+            }
+        },
+        {
+            "vi": "Nhân hứng cũng vừa toan cất bút",
+            "en": "Inspired, I was about to take up my pen.",
+            "augmented_index": 6,
+            "original_index": 22,
+            "scores": {
+                "bleurt": 0.6222,
+                "sacrebleu": 0.205,
+                "bleu": 0.2845
+            }
+        },
+        {
+            "vi": "Hảo vũ tri thì tiết",
+            "en": "A fine rain knows its season.",
+            "augmented_index": 7,
+            "original_index": 24,
+            "scores": {
+                "bleurt": 0.5673,
+                "sacrebleu": 0.1313,
+                "bleu": 0.1641
+            }
+        },
+        {
+            "vi": "Bên tường mưa ít, cúc thừa hoa",
+            "en": "By the wall, the rain falls sparingly; chrysanthemums bloom in abundance.",
+            "augmented_index": 8,
+            "original_index": 39,
+            "scores": {
+                "bleurt": 0.6369,
+                "sacrebleu": 0.2197,
+                "bleu": 0.2943
+            }
+        },
+        {
+            "vi": "Mỗi năm hoa đào nở",
+            "en": "Each year the peach blossoms bloom.",
+            "augmented_index": 9,
+            "original_index": 56,
+            "scores": {
+                "bleurt": 0.7195,
+                "sacrebleu": 0.1174,
+                "bleu": 0.1517
+            }
+        },
+        {
+            "vi": "Sống cảnh nhàn, ta chiếm riêng một vùng nhỏ đất trời",
+            "en": "In tranquil seclusion, I possess a small dominion of earth and sky.",
+            "augmented_index": 10,
+            "original_index": 60,
+            "scores": {
+                "bleurt": 0.5658,
+                "sacrebleu": 0.1022,
+                "bleu": 0.1916
+            }
+        },
+        {
+            "vi": "Gió mát từ sông thổi qua chỗ chiếu gối",
+            "en": "A cool breeze from the river stirred the sleeping mat.",
+            "augmented_index": 11,
+            "original_index": 62,
+            "scores": {
+                "bleurt": 0.5673,
+                "sacrebleu": 0.2481,
+                "bleu": 0.3164
+            }
+        },
+        {
+            "vi": "Ánh trăng từ trên núi chiếu vào đàn và chén",
+            "en": "Moonlight from the mountain summit illuminated the zithers and wine cups.",
+            "augmented_index": 12,
+            "original_index": 63,
+            "scores": {
+                "bleurt": 0.5424,
+                "sacrebleu": 0.1432,
+                "bleu": 0.2077
+            }
+        },
+        {
+            "vi": "Thu ăn măng trúc, đông ăn giá",
+            "en": "In autumn, we savor bamboo shoots; in winter, we relish frost-kissed greens.",
+            "augmented_index": 13,
+            "original_index": 80,
+            "scores": {
+                "bleurt": 0.5596,
+                "sacrebleu": 0.091,
+                "bleu": 0.1838
+            }
+        },
+        {
+            "vi": "Xuân tắm hồ sen, hạ tắm ao",
+            "en": "Spring bathes in lotus ponds; summer, in village pools.",
+            "augmented_index": 14,
+            "original_index": 81,
+            "scores": {
+                "bleurt": 0.5828,
+                "sacrebleu": 0.0541,
+                "bleu": 0.1007
+            }
+        },
+        {
+            "vi": "Thiên hạ ai là kẻ sĩ cao khiết",
+            "en": "Who in this world is the truly noble scholar?",
+            "augmented_index": 15,
+            "original_index": 82,
+            "scores": {
+                "bleurt": 0.7661,
+                "sacrebleu": 0.1365,
+                "bleu": 0.2212
+            }
+        },
+        {
+            "vi": "An nhàn, ta là tiên trên trời",
+            "en": "At ease, I am a celestial being in the heavens.",
+            "augmented_index": 16,
+            "original_index": 83,
+            "scores": {
+                "bleurt": 0.471,
+                "sacrebleu": 0.1355,
+                "bleu": 0.1964
+            }
+        },
+        {
+            "vi": "Được thua thấy đã ắt nhiều phen",
+            "en": "Victory and defeat, I have surely known them many times.",
+            "augmented_index": 17,
+            "original_index": 84,
+            "scores": {
+                "bleurt": 0.6352,
+                "sacrebleu": 0.0805,
+                "bleu": 0.1443
+            }
+        },
+        {
+            "vi": "Đêm, áng bóng, xem bóng trúc",
+            "en": "Night, shadows, watching bamboo shadows.",
+            "augmented_index": 18,
+            "original_index": 88,
+            "scores": {
+                "bleurt": 0.7033,
+                "sacrebleu": 0.1458,
+                "bleu": 0.2018
+            }
+        },
+        {
+            "vi": "Muôn dặm gió đông từng đã quen mặt",
+            "en": "Ten thousand leagues of eastern wind, a familiar face.",
+            "augmented_index": 19,
+            "original_index": 90,
+            "scores": {
+                "bleurt": 0.5419,
+                "sacrebleu": 0.1585,
+                "bleu": 0.2213
+            }
+        },
+        {
+            "vi": "Trở về vườn cũ lối không xa",
+            "en": "To the old garden, a path not far removed.",
+            "augmented_index": 20,
+            "original_index": 92,
+            "scores": {
+                "bleurt": 0.6159,
+                "sacrebleu": 0.1754,
+                "bleu": 0.2406
+            }
+        },
+        {
+            "vi": "Hoa rợp bóng khắp viện giữ chân chim đến ngủ",
+            "en": "Blossoms cast shade throughout the courtyard, enticing birds to slumber.",
+            "augmented_index": 21,
+            "original_index": 94,
+            "scores": {
+                "bleurt": 0.6163,
+                "sacrebleu": 0.0805,
+                "bleu": 0.1443
+            }
+        },
+        {
+            "vi": "Mặt trời hồng rọi vào song cửa sổ (thấy) chân trời gần",
+            "en": "The crimson sun, streaming through the window pane, brought the horizon near.",
+            "augmented_index": 22,
+            "original_index": 96,
+            "scores": {
+                "bleurt": 0.589,
+                "sacrebleu": 0.0692,
+                "bleu": 0.146
+            }
+        },
+        {
+            "vi": "Mở cánh cửa chính, sau cơn mưa (thấy) thêm nhiều núi xanh",
+            "en": "Opening the main gate, after the rain, (one sees) yet more verdant mountains.",
+            "augmented_index": 23,
+            "original_index": 97,
+            "scores": {
+                "bleurt": 0.6168,
+                "sacrebleu": 0.2177,
+                "bleu": 0.3035
+            }
+        },
+        {
+            "vi": "Gió mát trăng thanh là bạn của ta",
+            "en": "The cool breeze and bright moon are my companions.",
+            "augmented_index": 24,
+            "original_index": 98,
+            "scores": {
+                "bleurt": 0.7953,
+                "sacrebleu": 0.3799,
+                "bleu": 0.4546
+            }
+        },
+        {
+            "vi": "Hằng ngày khi nấu ấm trà, xem chim hạc bay qua làn khói",
+            "en": "Each day, while brewing a pot of tea, I watch the cranes soar through the rising steam.",
+            "augmented_index": 25,
+            "original_index": 100,
+            "scores": {
+                "bleurt": 0.6974,
+                "sacrebleu": 0.0689,
+                "bleu": 0.1536
+            }
+        },
+        {
+            "vi": "Lúc rửa nghiên xem cá đớp nước mực",
+            "en": "While grinding the ink, I observed the fish darting for the spilled drops.",
+            "augmented_index": 26,
+            "original_index": 101,
+            "scores": {
+                "bleurt": 0.4742,
+                "sacrebleu": 0.123,
+                "bleu": 0.1922
+            }
+        }
+    ],
+    "processed_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        51,
+        52,
+        53,
+        54,
+        55,
+        56,
+        57,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63,
+        64,
+        65,
+        66,
+        67,
+        68,
+        69,
+        70,
+        71,
+        72,
+        73,
+        74,
+        75,
+        76,
+        77,
+        78,
+        79,
+        80,
+        81,
+        82,
+        83,
+        84,
+        85,
+        86,
+        87,
+        88,
+        89,
+        90,
+        91,
+        92,
+        93,
+        94,
+        95,
+        96,
+        97,
+        98,
+        99,
+        100,
+        101,
+        102,
+        103,
+        104,
+        105,
+        106
+    ]
+}

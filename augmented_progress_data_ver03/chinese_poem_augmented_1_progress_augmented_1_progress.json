@@ -1,0 +1,107 @@
+{
+    "file_name": "chinese_poempdf",
+    "data": [
+        {
+            "original_vi": "Cần gì phải đứng trên cao một mình để tỷ với mây với trăng",
+            "augmented_vi": "Cớ gì phải đứng một mình nơi cao, tranh cùng mây cùng nguyệt?",
+            "style": "Nom",
+            "en": "What need is there to stand alone on high, vying with clouds and moon?",
+            "score": 0.8483282923698425,
+            "augmented_index": 0,
+            "original_index": 0
+        },
+        {
+            "original_vi": "Cứ vui ly rượu trước mắt lúc đang sống",
+            "augmented_vi": "Cùng nhau vui chén rượu nồng, khi đời còn ở giữa",
+            "style": "Nom",
+            "en": "Let us rejoice in the wine cup before us, while life yet endures.",
+            "score": 0.776621401309967,
+            "augmented_index": 1,
+            "original_index": 1
+        },
+        {
+            "original_vi": "Nhìn mây nhớ đến xiêm áo, thấy hoa nhớ đến dung nhan,",
+            "augmented_vi": "Nhìn mây, nhớ áo gấm; ngắm hoa, nhớ dung nhan tươi tắn của em",
+            "style": "Nom",
+            "en": "Gazing upon the clouds, I recall silken robes; beholding blossoms, I remember your radiant countenance.",
+            "score": 0.909661591053009,
+            "augmented_index": 2,
+            "original_index": 2
+        },
+        {
+            "original_vi": "Ba hôm nay nằm mộng thấy bạn",
+            "augmented_vi": "Ba đêm nay, mộng thấy người bạn tri kỷ",
+            "style": "Nom",
+            "en": "For three nights now, I have dreamt of you, my friend.",
+            "score": 0.7946731448173523,
+            "augmented_index": 3,
+            "original_index": 3
+        },
+        {
+            "original_vi": "Lưu lạc giữa gió bụi miền Đông Bắc,",
+            "augmented_vi": "Lạc bước giữa phong ba Đông Bắc Việt Nam",
+            "style": "Nom",
+            "en": "Lost and wandering amidst the wind and dust of Northeast Vietnam.",
+            "score": 0.7506534457206726,
+            "augmented_index": 4,
+            "original_index": 4
+        },
+        {
+            "original_vi": "Phiêu dạt trong khoảng trời đất miền tây nam.",
+            "augmented_vi": "Phiêu du vô định giữa trời đất bao la Nam Tây",
+            "style": "Nom",
+            "en": "Adrift in the boundless expanse of the southwestern sky and earth.",
+            "score": 0.8254154920578003,
+            "augmented_index": 5,
+            "original_index": 5
+        },
+        {
+            "original_vi": "Lúc tuổi già, thơ phú cảm động miền sông, ải.",
+            "augmented_vi": "Cận hoàng hôn năm tháng, thơ văn khơi gợi lòng sông núi",
+            "style": "Nom",
+            "en": "In the twilight of years, poetry and prose stirred the emotions of the rivers and passes.",
+            "score": 0.7502126693725586,
+            "augmented_index": 6,
+            "original_index": 7
+        },
+        {
+            "original_vi": "Lúc tuổi già, thơ phú cảm động miền sông, ải.",
+            "style": "Han",
+            "augmented_vi": "Hoàng hôn năm tháng, thơ văn động lòng sơn hà",
+            "en": "In the twilight of years, poetry and prose stirred the emotions of the rivers and passes.",
+            "score": 0.7368561625480652,
+            "augmented_index": 7,
+            "original_index": 7
+        },
+        {
+            "original_vi": "Cung điện ngọc đã không còn chỉ thấy có tự miếu hoang sơ",
+            "augmented_vi": "Cung ngọc đã không còn; chỉ còn lại những điện thờ hoang tàn",
+            "style": "Nom",
+            "en": "The jade palace is no more; only desolate temples remain.",
+            "score": 0.7758664488792419,
+            "augmented_index": 8,
+            "original_index": 8
+        },
+        {
+            "original_vi": "Tại miếu cổ đám tùng thông làm tổ cho bầy chim nước",
+            "augmented_vi": "Tường cổ tự, tùng bách vi tổ, thủy điểu làm ô",
+            "style": "Nom",
+            "en": "Within the ancient temple, the pines and cypresses provided nests for the aquatic birds.",
+            "score": 0.7539123296737671,
+            "augmented_index": 9,
+            "original_index": 9
+        }
+    ],
+    "processed_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+    ]
+}

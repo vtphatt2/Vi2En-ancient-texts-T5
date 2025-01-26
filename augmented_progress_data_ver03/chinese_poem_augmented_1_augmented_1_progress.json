@@ -1,0 +1,166 @@
+{
+    "file_name": "chinese_poem.pdf",
+    "data": [
+        {
+            "original_vi": "Ba hôm nay nằm mộng thấy bạn",
+            "augmented_vi": "Ba đêm nay, mộng thấy người bạn tri kỷ",
+            "style": "Nom",
+            "en": "For three nights now, I have dreamt of you, my friend.",
+            "score": 0.7946731448173523,
+            "augmented_index": 0,
+            "original_index": 0
+        },
+        {
+            "original_vi": "Lưu lạc giữa gió bụi miền Đông Bắc,",
+            "augmented_vi": "Lạc bước phong trần Đông Bắc Việt Nam",
+            "style": "Nom",
+            "en": "Lost and wandering in the wind and dust of Northeast Vietnam.",
+            "score": 0.7154549360275269,
+            "augmented_index": 1,
+            "original_index": 1
+        },
+        {
+            "original_vi": "Phiêu dạt trong khoảng trời đất miền tây nam.",
+            "augmented_vi": "Phiêu du vô định giữa trời đất bao la Nam Tây",
+            "style": "Nom",
+            "en": "Adrift in the boundless expanse of the southwestern sky and earth.",
+            "score": 0.8254154920578003,
+            "augmented_index": 2,
+            "original_index": 2
+        },
+        {
+            "original_vi": "Quần áo của người miền Ngũ Khê xen lẫn cùng mây, núi.",
+            "augmented_vi": "Áo Ngũ Khê mây núi hòa cùng",
+            "style": "Nom",
+            "en": "The garments of Ngũ Khê's people mingled with the clouds and mountains.",
+            "score": 0.823643147945404,
+            "augmented_index": 3,
+            "original_index": 3
+        },
+        {
+            "original_vi": "Lúc tuổi già, thơ phú cảm động miền sông, ải.",
+            "augmented_vi": "Cận hoàng hôn năm tháng, thơ văn gợi sóng núi sông",
+            "style": "Nom",
+            "en": "In the twilight of years, the poems and verses stirred the emotions of the rivers and passes.",
+            "score": 0.7860766649246216,
+            "augmented_index": 4,
+            "original_index": 4
+        },
+        {
+            "original_vi": "Lúc tuổi già, thơ phú cảm động miền sông, ải.",
+            "style": "Han",
+            "augmented_vi": "Hoàng hôn năm tháng, thi văn gợi sơn hà xúc động",
+            "en": "In the twilight of years, the poems and verses stirred the emotions of the rivers and passes.",
+            "score": 0.781051516532898,
+            "augmented_index": 5,
+            "original_index": 4
+        },
+        {
+            "original_vi": "Cung điện ngọc đã không còn chỉ thấy có tự miếu hoang sơ",
+            "augmented_vi": "Cung ngọc đã không; chỉ còn đền hoang",
+            "style": "Nom",
+            "en": "The jade palace is no more; only desolate temples remain.",
+            "score": 0.8339166045188904,
+            "augmented_index": 6,
+            "original_index": 5
+        },
+        {
+            "original_vi": "Tại miếu cổ đám tùng thông làm tổ cho bầy chim nước",
+            "augmented_vi": "Tường cổ tự, tùng bách vi tổ, thủy điểu thành đàn",
+            "style": "Nom",
+            "en": "Within the ancient temple, the pines and cypresses offered nests to flocks of aquatic birds.",
+            "score": 0.7345295548439026,
+            "augmented_index": 7,
+            "original_index": 6
+        },
+        {
+            "original_vi": "Quân thần một thể đều hưởng tế tự như nhau",
+            "style": "Han",
+            "augmented_vi": "Cả quân thần, đồng hưởng phần tế tổ",
+            "en": "Sovereign and subject alike partake of the ancestral rites in equal measure.",
+            "score": 0.7930738925933838,
+            "augmented_index": 8,
+            "original_index": 7
+        },
+        {
+            "original_vi": "Dưới mưa, trăm loài cỏ đều tàn úa,",
+            "augmented_vi": "Dưới mưa tuôn, muôn loài cỏ héo tàn",
+            "style": "Nom",
+            "en": "Beneath the rain, all myriad grasses wither and fade.",
+            "score": 0.9094650149345398,
+            "augmented_index": 9,
+            "original_index": 8
+        },
+        {
+            "original_vi": "Hoa nở ra vô số đồng tiền vàng.",
+            "augmented_vi": "Vàng ròng nở rộ như hoa",
+            "style": "Nom",
+            "en": "Countless golden coins bloomed forth as flowers.",
+            "score": 0.7034828662872314,
+            "augmented_index": 10,
+            "original_index": 9
+        },
+        {
+            "original_vi": "Đón gió, ba lần ngửi mùi thơm mà khóc.",
+            "augmented_vi": "Gặp gió, ta hít hương ba lần mà khóc.",
+            "style": "Nom",
+            "en": "Greeting the wind, thrice I inhaled its fragrance and wept.",
+            "score": 0.9242224097251892,
+            "augmented_index": 11,
+            "original_index": 10
+        },
+        {
+            "original_vi": "Đón gió, ba lần ngửi mùi thơm mà khóc.",
+            "style": "Han",
+            "augmented_vi": "Hương phong tam hít, lệ tuôn ba hồi",
+            "en": "Greeting the wind, thrice I inhaled its fragrance and wept.",
+            "score": 0.7765837907791138,
+            "augmented_index": 12,
+            "original_index": 10
+        },
+        {
+            "original_vi": "Biết bao giờ được cùng nhau uống một chén rượu,",
+            "augmented_vi": "Bao giờ ta lại cùng nhau chén rượu ?",
+            "style": "Nom",
+            "en": "When shall we again share a cup of wine together?",
+            "score": 0.8864995241165161,
+            "augmented_index": 13,
+            "original_index": 12
+        },
+        {
+            "original_vi": "Đại danh của Gia Cát Lượng vang khắp vòm trời",
+            "augmented_vi": "Danh hiệu lẫy lừng của Gia Cát Lượng vang động trời xanh",
+            "style": "Nom",
+            "en": "The illustrious name of Zhuge Liang resounded throughout the heavens.",
+            "score": 0.8779348731040955,
+            "augmented_index": 14,
+            "original_index": 13
+        },
+        {
+            "original_vi": "Cuốn đi ba lớp cỏ tranh trên mái nhà ta.",
+            "augmented_vi": "Ba lớp tranh gió, mái tranh nhà nghèo",
+            "style": "Nom",
+            "en": "Three layers of thatch, windswept, crown our humble dwelling.",
+            "score": 0.817266583442688,
+            "augmented_index": 15,
+            "original_index": 14
+        }
+    ],
+    "processed_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14
+    ]
+}
