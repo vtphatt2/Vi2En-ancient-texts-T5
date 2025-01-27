@@ -97,12 +97,75 @@ class ModelConfig:
             return cls(model, 6, 1_500, 1_000_000)
         else:
             raise ValueError(f"Unsupported model: {model}")
+        
 
 CURRENT_CONFIG = ModelConfig.get_config(GeminiModel.GEMINI_1_5_FLASH)
 MODEL = CURRENT_CONFIG.model.value
 RPM_LIMIT = CURRENT_CONFIG.rpm_limit
 RPD_LIMIT = CURRENT_CONFIG.rpd_limit
 TPM_LIMIT = CURRENT_CONFIG.tpm_limit
+
+
+class CometEvaluator:
+    def __init__(self, device=None):
+        """Initialize COMET evaluator with the latest models"""
+        try:
+            # Download and load the latest COMET models
+            self.device = device or ('cuda' if torch.cuda.is_available() else 'cpu')
+            
+            # Initialize COMET-DA model (Direct Assessment)
+            model_path_da = download_model("Unbabel/wmt22-comet-da")
+            self.comet_da = load_from_checkpoint(model_path_da)
+            
+            # Initialize COMET-QE model (Quality Estimation)
+            model_path_qe = download_model("Unbabel/wmt22-cometkiwi-da")
+            self.comet_qe = load_from_checkpoint(model_path_qe)
+            
+            logging.info("COMET models initialized successfully")
+            
+        except Exception as e:
+            logging.error(f"Error initializing COMET models: {e}")
+            self.comet_da = None
+            self.comet_qe = None
+    
+    def evaluate(self, source: str, hypothesis: str, reference: str) -> dict:
+        """
+        Evaluate translation using both COMET-DA and COMET-QE models
+        
+        Args:
+            source: Source text (original language)
+            hypothesis: Generated translation
+            reference: Reference translation
+            
+        Returns:
+            Dictionary containing COMET scores
+        """
+        scores = {
+            'comet_da': None,
+            'comet_qe': None
+        }
+        
+        try:
+            if self.comet_da:
+                # Prepare data for COMET-DA
+                data = [{"src": source, "mt": hypothesis, "ref": reference}]
+                
+                # Get COMET-DA score
+                da_output = self.comet_da.predict(data, batch_size=8, gpus=1 if self.device == 'cuda' else 0)
+                scores['comet_da'] = float(da_output['scores'][0])
+            
+            if self.comet_qe:
+                # Prepare data for COMET-QE
+                data = [{"src": source, "mt": hypothesis}]
+                
+                # Get COMET-QE score
+                qe_output = self.comet_qe.predict(data, batch_size=8, gpus=1 if self.device == 'cuda' else 0)
+                scores['comet_qe'] = float(qe_output['scores'][0])
+                
+        except Exception as e:
+            logging.error(f"Error during COMET evaluation: {e}")
+            
+        return scores
 
 class TranslationEvaluator:
     def __init__(self):
@@ -111,19 +174,17 @@ class TranslationEvaluator:
         self.sacrebleu = sacrebleu.corpus_bleu
         self.bleurt = BleurtScorer()
         self.bert_scorer = BERTScorer(lang="en", rescale_with_baseline=True)
-        # self.comet_kiwi = load_from_checkpoint(download_model("Unbabel/wmt22-cometkiwi-da"))
-        # self.comet_base = load_from_checkpoint(download_model("Unbabel/wmt22-comet-da"))
-        # try:
-        #     # Initialize COMET with CPU fallback
-        #     model_path = download_model("Unbabel/wmt22-comet-da")
-        #     self.comet_base = load_from_checkpoint(model_path)
-        # except Exception as e:
-        #     logger.error(f"Error initializing COMET: {e}")
-        #     self.comet_base = None
+        self.comet_evaluator = CometEvaluator()
 
-    def evaluate(self, reference: str, candidate: str) -> tuple:
+    def evaluate(self, source: str, reference: str, candidate: str) -> tuple:
         """
         Evaluate translation using multiple metrics
+
+        Args:
+            source: The original text in the source language (e.g., Vietnamese)
+            reference: The human-translated text in the target language (e.g., English)
+            hypothesis or mt or candidate: The machine-generated translation in the target language
+
         Returns: (is_acceptable, scores_dict)
         """
 
@@ -144,13 +205,7 @@ class TranslationEvaluator:
             bert_score = F1.mean().item()
 
             # COMET score
-            # comet_kiwi_score = self.comet_kiwi.predict(
-            #     [{"src": reference, "mt": candidate}]
-            # )["scores"][0]
-
-            # comet_base_score = self.comet_base.predict(
-            #     [{"src": reference, "mt": candidate}]
-            # )["scores"][0]
+            comet_scores = self.comet_evaluator.evaluate(source, candidate, reference)
 
 
             scores = {
@@ -159,8 +214,8 @@ class TranslationEvaluator:
                 'bleu': bleu_score,
 
                 'bert_score': bert_score,
-                # 'comet_kiwi': comet_kiwi_score,
-                # 'comet_base': comet_base_score
+                'comet_da': comet_scores['comet_da'],
+                'comet_qe': comet_scores['comet_qe']
             }
 
             # Check if at least two conditions are satisfied
@@ -170,8 +225,8 @@ class TranslationEvaluator:
                 bleu_score >= BLEU_THRESHOLD,  # BLEU score
 
                 bert_score >= BERTSCORE_THRESHOLD,  # BERTScore
-                # comet_kiwi_score >= COMET_THRESHOLD,  # COMET Kiwi
-                # comet_base_score >= COMET_THRESHOLD  # COMET Base
+                comet_scores['comet_da'] >= COMET_THRESHOLD if comet_scores['comet_da'] is not None else False,
+                comet_scores['comet_qe'] >= COMET_THRESHOLD if comet_scores['comet_qe'] is not None else False
             ]
 
             # is_acceptable = (sum(conditions) >= 3) and (bleurt_scores[0] >= 0.4)
@@ -181,9 +236,14 @@ class TranslationEvaluator:
 
         except Exception as e:
             logging.error(f"Error evaluating translation: {e}")
-            return False, {'bleurt': 0, 'sacrebleu': 0, 'bleu': 0, 'bert_score': 0, 'comet_kiwi': 0, 'comet_base': 0}
-            # return False, {'bleurt': 0, 'sacrebleu': 0, 'bleu': 0}
-
+            return False, {
+                'bleurt': 0, 
+                'sacrebleu': 0, 
+                'bleu': 0, 
+                'bert_score': 0, 
+                'comet_da': None,
+                'comet_qe': None
+            }
 
 class BleurtScorer:
     def __init__(self, model_name: str = 'lucadiliello/BLEURT-20', device: str = None):
@@ -425,15 +485,15 @@ def augment_data(input_file: str, output_file: str, load_file: str, api_key: str
             translated_en = translate_with_gemini(model, corrected_vi, rate_limiter)
             
             if translated_en:
-                acceptable, scores = evaluator.evaluate(item["en"], translated_en)
+                acceptable, scores = evaluator.evaluate(item["vi"], item["en"], translated_en)
 
                 logger.info(f"Item {idx} scores:")
                 logger.info(f"BLEURT: {scores.get('bleurt', 0):.4f}")
                 logger.info(f"SacreBLEU: {scores.get('sacrebleu', 0):.4f}")
                 logger.info(f"BLEU: {scores.get('bleu', 0):.4f}")
                 logger.info(f"BERTScore: {scores.get('bert_score', 0):.4f}")
-                # logger.info(f"COMET Kiwi: {scores.get('comet_kiwi', 0):.4f}")
-                # logger.info(f"COMET Base: {scores.get('comet_base', 0):.4f}")
+                logger.info(f"COMET DA: {scores.get('comet_da', 0):.4f}")
+                logger.info(f"COMET QE: {scores.get('comet_qe', 0):.4f}")
                 
                 if acceptable:
                     augmented_data["data"].append({
@@ -446,6 +506,8 @@ def augment_data(input_file: str, output_file: str, load_file: str, api_key: str
                             "sacrebleu": float(f"{scores.get('sacrebleu', 0):.4f}"),
                             "bleu": float(f"{scores.get('bleu', 0):.4f}"),
                             "bert_score": float(f"{scores.get('bert_score', 0):.4f}"),
+                            "comet_da": float(f"{scores.get('comet_da', 0):.4f}"),
+                            "comet_qe": float(f"{scores.get('comet_qe', 0):.4f}")
                         }
                     })
 
