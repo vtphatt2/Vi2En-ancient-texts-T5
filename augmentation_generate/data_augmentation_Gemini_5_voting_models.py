@@ -22,9 +22,7 @@ from transformers import pipeline
 from tqdm import tqdm
 import torch
 from bleurt_pytorch import BleurtConfig, BleurtForSequenceClassification, BleurtTokenizer
-from nltk.translate.bleu_score import sentence_bleu, SmoothingFunction
 import sacrebleu
-from typing import Tuple
 from bert_score import BERTScorer
 from comet import download_model, load_from_checkpoint
 nltk.download('punkt_tab')
@@ -47,9 +45,9 @@ API_KEY = "AIzaSyClasB_b7S4LbjrcqZvQc74RAdPIazcCM0"
 
 BLEURT_THRESHOLD = 0.55
 SACREBLEU_THRESHOLD = 0.1
-BLEU_THRESHOLD = 0.1
 BERTSCORE_THRESHOLD = 0.3
-COMET_THRESHOLD = 0
+COMET_DA_THRESHOLD = 0.6
+COMET_QE_THRESHOLD = 0.65
 
 SCRIPT_PATH = os.path.abspath(__file__)
 SCRIPT_DIR = os.path.dirname(SCRIPT_PATH)
@@ -169,11 +167,10 @@ class CometEvaluator:
 
 class TranslationEvaluator:
     def __init__(self):
-        self.bleu = pipeline("translation", model="Helsinki-NLP/opus-mt-vi-en")
-        self.smoothing = SmoothingFunction().method7
         self.sacrebleu = sacrebleu.corpus_bleu
         self.bleurt = BleurtScorer()
-        self.bert_scorer = BERTScorer(lang="en", rescale_with_baseline=True)
+        self.bert_scorer = BERTScorer(lang="en", rescale_with_baseline=True,
+                                      model_type = "microsoft/deberta-xlarge-mnli")
         self.comet_evaluator = CometEvaluator()
 
     def evaluate(self, source: str, reference: str, candidate: str) -> tuple:
@@ -195,11 +192,6 @@ class TranslationEvaluator:
             # SacreBLEU score
             sacrebleu_score = self.sacrebleu([candidate], [[reference]]).score/100
 
-            # BLEU score (using tokenized reference)
-            reference_tokens = nltk.word_tokenize(reference)
-            candidate_tokens = nltk.word_tokenize(candidate)
-            bleu_score = sentence_bleu([reference_tokens], candidate_tokens, smoothing_function=self.smoothing)
-
             # BERTScore
             P, R, F1 = self.bert_scorer.score([candidate], [reference])
             bert_score = F1.mean().item()
@@ -211,8 +203,6 @@ class TranslationEvaluator:
             scores = {
                 'bleurt': bleurt_scores[0],
                 'sacrebleu': sacrebleu_score,
-                'bleu': bleu_score,
-
                 'bert_score': bert_score,
                 'comet_da': comet_scores['comet_da'],
                 'comet_qe': comet_scores['comet_qe']
@@ -222,11 +212,9 @@ class TranslationEvaluator:
             conditions = [
                 bleurt_scores[0] >= BLEURT_THRESHOLD,  # BLEURT score
                 sacrebleu_score >= SACREBLEU_THRESHOLD,  # SacreBLEU score
-                bleu_score >= BLEU_THRESHOLD,  # BLEU score
-
                 bert_score >= BERTSCORE_THRESHOLD,  # BERTScore
-                comet_scores['comet_da'] >= COMET_THRESHOLD if comet_scores['comet_da'] is not None else False,
-                comet_scores['comet_qe'] >= COMET_THRESHOLD if comet_scores['comet_qe'] is not None else False
+                comet_scores['comet_da'] >= COMET_DA_THRESHOLD if comet_scores['comet_da'] is not None else False,
+                comet_scores['comet_qe'] >= COMET_QE_THRESHOLD if comet_scores['comet_qe'] is not None else False
             ]
 
             # is_acceptable = (sum(conditions) >= 3) and (bleurt_scores[0] >= 0.4)
@@ -239,10 +227,9 @@ class TranslationEvaluator:
             return False, {
                 'bleurt': 0, 
                 'sacrebleu': 0, 
-                'bleu': 0, 
                 'bert_score': 0, 
-                'comet_da': None,
-                'comet_qe': None
+                'comet_da': 0,
+                'comet_qe': 0
             }
 
 class BleurtScorer:
@@ -490,7 +477,6 @@ def augment_data(input_file: str, output_file: str, load_file: str, api_key: str
                 logger.info(f"Item {idx} scores:")
                 logger.info(f"BLEURT: {scores.get('bleurt', 0):.4f}")
                 logger.info(f"SacreBLEU: {scores.get('sacrebleu', 0):.4f}")
-                logger.info(f"BLEU: {scores.get('bleu', 0):.4f}")
                 logger.info(f"BERTScore: {scores.get('bert_score', 0):.4f}")
                 logger.info(f"COMET DA: {scores.get('comet_da', 0):.4f}")
                 logger.info(f"COMET QE: {scores.get('comet_qe', 0):.4f}")
@@ -504,7 +490,6 @@ def augment_data(input_file: str, output_file: str, load_file: str, api_key: str
                         "scores": {  # Add evaluation scores
                             "bleurt": float(f"{scores.get('bleurt', 0):.4f}"),
                             "sacrebleu": float(f"{scores.get('sacrebleu', 0):.4f}"),
-                            "bleu": float(f"{scores.get('bleu', 0):.4f}"),
                             "bert_score": float(f"{scores.get('bert_score', 0):.4f}"),
                             "comet_da": float(f"{scores.get('comet_da', 0):.4f}"),
                             "comet_qe": float(f"{scores.get('comet_qe', 0):.4f}")

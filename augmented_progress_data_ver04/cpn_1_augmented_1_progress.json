@@ -9,8 +9,7 @@
             "scores": {
                 "bleurt": 0.344,
                 "sacrebleu": 0.0284,
-                "bleu": 0.0861,
-                "bert_score": 0.0485,
+                "bert_score": 0.061,
                 "comet_da": 0.4972,
                 "comet_qe": 0.6656
             }
@@ -23,8 +22,7 @@
             "scores": {
                 "bleurt": 0.3626,
                 "sacrebleu": 0.083,
-                "bleu": 0.1335,
-                "bert_score": 0.2645,
+                "bert_score": 0.3361,
                 "comet_da": 0.4886,
                 "comet_qe": 0.6387
             }
@@ -37,8 +35,7 @@
             "scores": {
                 "bleurt": 0.4644,
                 "sacrebleu": 0.0502,
-                "bleu": 0.1003,
-                "bert_score": 0.105,
+                "bert_score": 0.3585,
                 "comet_da": 0.5675,
                 "comet_qe": 0.5683
             }
@@ -51,24 +48,22 @@
             "scores": {
                 "bleurt": 0.4761,
                 "sacrebleu": 0.058,
-                "bleu": 0.1026,
-                "bert_score": 0.2844,
+                "bert_score": 0.4775,
                 "comet_da": 0.6824,
                 "comet_qe": 0.6149
             }
         },
         {
             "vi": "trống trường thành lung lay bóng nguyệt",
-            "en": "The city walls' drums tremble in the moon's pale light.",
+            "en": "The moon's shadow sways upon the ancient city walls.",
             "augmented_index": 4,
             "original_index": 4,
             "scores": {
-                "bleurt": 0.4618,
-                "sacrebleu": 0.0493,
-                "bleu": 0.1098,
-                "bert_score": 0.1932,
-                "comet_da": 0.4806,
-                "comet_qe": 0.6533
+                "bleurt": 0.3466,
+                "sacrebleu": 0.0499,
+                "bert_score": 0.1236,
+                "comet_da": 0.4923,
+                "comet_qe": 0.546
             }
         },
         {
@@ -79,24 +74,22 @@
             "scores": {
                 "bleurt": 0.3912,
                 "sacrebleu": 0.0403,
-                "bleu": 0.0846,
-                "bert_score": 0.0905,
+                "bert_score": 0.2106,
                 "comet_da": 0.5691,
                 "comet_qe": 0.6838
             }
         },
         {
             "vi": "chín lần gươm báu chóng tay",
-            "en": "Nine times the sacred sword felt the weight of my hand.",
+            "en": "Nine times the sacred sword felt the weight of his hand.",
             "augmented_index": 6,
             "original_index": 6,
             "scores": {
-                "bleurt": 0.3667,
+                "bleurt": 0.3655,
                 "sacrebleu": 0.0403,
-                "bleu": 0.0862,
-                "bert_score": 0.2886,
-                "comet_da": 0.5371,
-                "comet_qe": 0.5047
+                "bert_score": 0.3049,
+                "comet_da": 0.5408,
+                "comet_qe": 0.5002
             }
         },
         {
@@ -107,8 +100,7 @@
             "scores": {
                 "bleurt": 0.4734,
                 "sacrebleu": 0.0338,
-                "bleu": 0.0953,
-                "bert_score": 0.2987,
+                "bert_score": 0.3403,
                 "comet_da": 0.717,
                 "comet_qe": 0.7675
             }
@@ -121,24 +113,22 @@
             "scores": {
                 "bleurt": 0.3713,
                 "sacrebleu": 0.0643,
-                "bleu": 0.0803,
-                "bert_score": 0.2884,
+                "bert_score": 0.441,
                 "comet_da": 0.5258,
                 "comet_qe": 0.7676
             }
         },
         {
             "vi": "áo nhung trao quan vũ từ đây",
-            "en": "From this day forth, I bestow upon you this velvet robe.",
+            "en": "From this moment forth, I bestow upon you this velvet robe.",
             "augmented_index": 9,
             "original_index": 9,
             "scores": {
-                "bleurt": 0.294,
+                "bleurt": 0.2717,
                 "sacrebleu": 0.0,
-                "bleu": 0.0,
-                "bert_score": 0.0582,
-                "comet_da": 0.4558,
-                "comet_qe": 0.59
+                "bert_score": 0.1747,
+                "comet_da": 0.4604,
+                "comet_qe": 0.5932
             }
         },
         {
@@ -149,38 +139,35 @@
             "scores": {
                 "bleurt": 0.3151,
                 "sacrebleu": 0.1159,
-                "bleu": 0.1626,
-                "bert_score": 0.3201,
+                "bert_score": 0.3511,
                 "comet_da": 0.5084,
                 "comet_qe": 0.6268
             }
         },
         {
             "vi": "phép công là trọng niềm tây sá nào",
-            "en": "The imperial decree holds paramount sway; what recourse have we in the West?",
+            "en": "The imperial decree holds paramount sway; what recourse have we, then, in the West?",
             "augmented_index": 11,
             "original_index": 11,
             "scores": {
-                "bleurt": 0.3817,
-                "sacrebleu": 0.0263,
-                "bleu": 0.0848,
-                "bert_score": 0.1148,
-                "comet_da": 0.4867,
-                "comet_qe": 0.4424
+                "bleurt": 0.3498,
+                "sacrebleu": 0.0215,
+                "bert_score": 0.0832,
+                "comet_da": 0.4791,
+                "comet_qe": 0.4192
             }
         },
         {
             "vi": "đường rong ruổi lưng đeo cung tiễn",
-            "en": "The path stretches onward, bow and quiver upon my back.",
+            "en": "The path stretches onward, bow and quiver borne upon the back.",
             "augmented_index": 12,
             "original_index": 12,
             "scores": {
-                "bleurt": 0.4209,
-                "sacrebleu": 0.075,
-                "bleu": 0.1335,
-                "bert_score": 0.3423,
-                "comet_da": 0.4332,
-                "comet_qe": 0.4506
+                "bleurt": 0.4498,
+                "sacrebleu": 0.0684,
+                "bert_score": 0.5275,
+                "comet_da": 0.5223,
+                "comet_qe": 0.4993
             }
         },
         {
@@ -191,8 +178,7 @@
             "scores": {
                 "bleurt": 0.3898,
                 "sacrebleu": 0.0417,
-                "bleu": 0.0489,
-                "bert_score": 0.2134,
+                "bert_score": 0.2618,
                 "comet_da": 0.5131,
                 "comet_qe": 0.6001
             }
@@ -205,500 +191,9 @@
             "scores": {
                 "bleurt": 0.5099,
                 "sacrebleu": 0.0407,
-                "bleu": 0.1074,
-                "bert_score": 0.4019,
+                "bert_score": 0.4346,
                 "comet_da": 0.6199,
                 "comet_qe": 0.6178
-            }
-        },
-        {
-            "vi": "chàng tuổi trẻ vốn dòng hào kiệt",
-            "en": "He, a youth of noble lineage and valiant spirit.",
-            "augmented_index": 15,
-            "original_index": 15,
-            "scores": {
-                "bleurt": 0.5254,
-                "sacrebleu": 0.0446,
-                "bleu": 0.1029,
-                "bert_score": 0.35,
-                "comet_da": 0.6028,
-                "comet_qe": 0.7191
-            }
-        },
-        {
-            "vi": "xếp bút nghiên theo việc đao cung",
-            "en": "I lay aside my pen and ink, attending to the affairs of the imperial court.",
-            "augmented_index": 16,
-            "original_index": 16,
-            "scores": {
-                "bleurt": 0.3976,
-                "sacrebleu": 0.0506,
-                "bleu": 0.1138,
-                "bert_score": 0.402,
-                "comet_da": 0.6249,
-                "comet_qe": 0.5294
-            }
-        },
-        {
-            "vi": "thành liền mong tiến bệ rồng",
-            "en": "I yearn to ascend to the Dragon Throne.",
-            "augmented_index": 17,
-            "original_index": 17,
-            "scores": {
-                "bleurt": 0.3765,
-                "sacrebleu": 0.0567,
-                "bleu": 0.1108,
-                "bert_score": 0.2428,
-                "comet_da": 0.5464,
-                "comet_qe": 0.6146
-            }
-        },
-        {
-            "vi": "thước gươm đã quyết chẳng dung giặc trời",
-            "en": "The sword's decree: no quarter to the celestial foe.",
-            "augmented_index": 18,
-            "original_index": 18,
-            "scores": {
-                "bleurt": 0.4069,
-                "sacrebleu": 0.0375,
-                "bleu": 0.1,
-                "bert_score": 0.2996,
-                "comet_da": 0.5769,
-                "comet_qe": 0.6025
-            }
-        },
-        {
-            "vi": "chí làm trai dặm nghìn da ngựa",
-            "en": "To be a man, one must ride a thousand leagues on horseback.",
-            "augmented_index": 19,
-            "original_index": 19,
-            "scores": {
-                "bleurt": 0.2395,
-                "sacrebleu": 0.0284,
-                "bleu": 0.0861,
-                "bert_score": 0.1837,
-                "comet_da": 0.482,
-                "comet_qe": 0.5214
-            }
-        },
-        {
-            "vi": "gieo thái sơn bằng độ hồng mao",
-            "en": "To level Mount Thái Sơn with a single red hair.",
-            "augmented_index": 20,
-            "original_index": 20,
-            "scores": {
-                "bleurt": 0.3468,
-                "sacrebleu": 0.0375,
-                "bleu": 0.0912,
-                "bert_score": 0.0185,
-                "comet_da": 0.4746,
-                "comet_qe": 0.3987
-            }
-        },
-        {
-            "vi": "giã nhà đeo bức chiến bào",
-            "en": "Departing home, clad in battle armor.",
-            "augmented_index": 21,
-            "original_index": 21,
-            "scores": {
-                "bleurt": 0.6515,
-                "sacrebleu": 0.0727,
-                "bleu": 0.1325,
-                "bert_score": 0.3957,
-                "comet_da": 0.6955,
-                "comet_qe": 0.6808
-            }
-        },
-        {
-            "vi": "tiếng roi cầu vị độn vào gió thu",
-            "en": "The whip's crack resonates, a muted sound swallowed by the autumn wind.",
-            "augmented_index": 22,
-            "original_index": 22,
-            "scores": {
-                "bleurt": 0.3946,
-                "sacrebleu": 0.1057,
-                "bleu": 0.1603,
-                "bert_score": 0.1731,
-                "comet_da": 0.498,
-                "comet_qe": 0.5499
-            }
-        },
-        {
-            "vi": "ngòi đầu cầu nước trong như lọc",
-            "en": "The bridge's end, the water, clear as filtered light.",
-            "augmented_index": 23,
-            "original_index": 23,
-            "scores": {
-                "bleurt": 0.4539,
-                "sacrebleu": 0.075,
-                "bleu": 0.1383,
-                "bert_score": 0.3051,
-                "comet_da": 0.688,
-                "comet_qe": 0.5954
-            }
-        },
-        {
-            "vi": "đường bên cầu cỏ mọc còn non",
-            "en": "The path beside the bridge, the grass still tender.",
-            "augmented_index": 24,
-            "original_index": 24,
-            "scores": {
-                "bleurt": 0.4374,
-                "sacrebleu": 0.1754,
-                "bleu": 0.2406,
-                "bert_score": 0.4105,
-                "comet_da": 0.7043,
-                "comet_qe": 0.631
-            }
-        },
-        {
-            "vi": "đưa chàng lòng dằng dặc buồn",
-            "en": "My heart, for you, is a boundless ocean of sorrow.",
-            "augmented_index": 25,
-            "original_index": 25,
-            "scores": {
-                "bleurt": 0.5613,
-                "sacrebleu": 0.0462,
-                "bleu": 0.1272,
-                "bert_score": 0.3649,
-                "comet_da": 0.635,
-                "comet_qe": 0.5011
-            }
-        },
-        {
-            "vi": "bộ khôn bằng ngựa thủy khôn bằng thuyền",
-            "en": "A clever person is to a horse as a wise person is to a boat.",
-            "augmented_index": 26,
-            "original_index": 26,
-            "scores": {
-                "bleurt": 0.4596,
-                "sacrebleu": 0.0346,
-                "bleu": 0.1079,
-                "bert_score": 0.0811,
-                "comet_da": 0.5053,
-                "comet_qe": 0.4784
-            }
-        },
-        {
-            "vi": "nước trong chảy lòng phiền chẳng rửa",
-            "en": "The limpid stream cannot cleanse a troubled heart.",
-            "augmented_index": 27,
-            "original_index": 27,
-            "scores": {
-                "bleurt": 0.6684,
-                "sacrebleu": 0.0944,
-                "bleu": 0.1601,
-                "bert_score": 0.6474,
-                "comet_da": 0.7797,
-                "comet_qe": 0.6601
-            }
-        },
-        {
-            "vi": "cỏ xanh thơm dạ nhớ không quên",
-            "en": "The fragrant green grass, a memory ever cherished.",
-            "augmented_index": 28,
-            "original_index": 28,
-            "scores": {
-                "bleurt": 0.5818,
-                "sacrebleu": 0.0929,
-                "bleu": 0.147,
-                "bert_score": 0.4056,
-                "comet_da": 0.679,
-                "comet_qe": 0.6484
-            }
-        },
-        {
-            "vi": "nhủ rồi tay lại trao liền",
-            "en": "And thus, the hand relinquished, the gift was instantly bestowed.",
-            "augmented_index": 29,
-            "original_index": 29,
-            "scores": {
-                "bleurt": 0.41,
-                "sacrebleu": 0.0407,
-                "bleu": 0.1074,
-                "bert_score": 0.1526,
-                "comet_da": 0.4485,
-                "comet_qe": 0.4687
-            }
-        },
-        {
-            "vi": "bước đi một bước lại vin áo chàng",
-            "en": "With each step, I gently hold the hem of your garment.",
-            "augmented_index": 30,
-            "original_index": 30,
-            "scores": {
-                "bleurt": 0.5721,
-                "sacrebleu": 0.0735,
-                "bleu": 0.1383,
-                "bert_score": 0.3174,
-                "comet_da": 0.6014,
-                "comet_qe": 0.5803
-            }
-        },
-        {
-            "vi": "lòng thiếp tựa bóng trăng theo dõi",
-            "en": "My heart, like the moon's shadow, follows you.",
-            "augmented_index": 31,
-            "original_index": 31,
-            "scores": {
-                "bleurt": 0.6326,
-                "sacrebleu": 0.1349,
-                "bleu": 0.2129,
-                "bert_score": 0.5952,
-                "comet_da": 0.7954,
-                "comet_qe": 0.7669
-            }
-        },
-        {
-            "vi": "dạ chàng xa muôn cõi nghìn non",
-            "en": "My lord is distant, beyond ten thousand realms and a thousand mountains.",
-            "augmented_index": 32,
-            "original_index": 32,
-            "scores": {
-                "bleurt": 0.2896,
-                "sacrebleu": 0.0,
-                "bleu": 0.0,
-                "bert_score": -0.0127,
-                "comet_da": 0.4822,
-                "comet_qe": 0.5143
-            }
-        },
-        {
-            "vi": "đặt chén tiễn múa long tuyền",
-            "en": "The dragon's dance concludes, the cups are set aside.",
-            "augmented_index": 33,
-            "original_index": 33,
-            "scores": {
-                "bleurt": 0.4288,
-                "sacrebleu": 0.0446,
-                "bleu": 0.1,
-                "bert_score": 0.1477,
-                "comet_da": 0.4911,
-                "comet_qe": 0.4248
-            }
-        },
-        {
-            "vi": "chỉ ngang ngọn giáo vào ngàn hang beo",
-            "en": "The spear-point poised, a challenge to a thousand tiger lairs.",
-            "augmented_index": 34,
-            "original_index": 34,
-            "scores": {
-                "bleurt": 0.3978,
-                "sacrebleu": 0.0,
-                "bleu": 0.0,
-                "bert_score": 0.2957,
-                "comet_da": 0.583,
-                "comet_qe": 0.4508
-            }
-        },
-        {
-            "vi": "săn lâu lan rằng theo giới tử",
-            "en": "The hunt prolonged, the orchid trails the young hunter.",
-            "augmented_index": 35,
-            "original_index": 35,
-            "scores": {
-                "bleurt": 0.2886,
-                "sacrebleu": 0.0375,
-                "bleu": 0.0912,
-                "bert_score": 0.1349,
-                "comet_da": 0.4057,
-                "comet_qe": 0.4493
-            }
-        },
-        {
-            "vi": "tới man khê bàn sự phục ba",
-            "en": "To the Man Khe, to deliberate upon the restoration of the Three.",
-            "augmented_index": 36,
-            "original_index": 36,
-            "scores": {
-                "bleurt": 0.3603,
-                "sacrebleu": 0.0338,
-                "bleu": 0.0953,
-                "bert_score": 0.1965,
-                "comet_da": 0.5021,
-                "comet_qe": 0.5497
-            }
-        },
-        {
-            "vi": "áo chàng đỏ tựa ráng pha",
-            "en": "His garment, crimson as the blending dawn.",
-            "augmented_index": 37,
-            "original_index": 37,
-            "scores": {
-                "bleurt": 0.3895,
-                "sacrebleu": 0.0477,
-                "bleu": 0.0965,
-                "bert_score": 0.1909,
-                "comet_da": 0.5513,
-                "comet_qe": 0.484
-            }
-        },
-        {
-            "vi": "ngựa chàng sắc trắng như là tuyết in",
-            "en": "His steed, a dazzling white, like freshly fallen snow.",
-            "augmented_index": 38,
-            "original_index": 38,
-            "scores": {
-                "bleurt": 0.4422,
-                "sacrebleu": 0.0403,
-                "bleu": 0.1,
-                "bert_score": 0.3814,
-                "comet_da": 0.6702,
-                "comet_qe": 0.749
-            }
-        },
-        {
-            "vi": "tiếng nhạc ngựa lần chen tiếng trống",
-            "en": "The neighing of steeds intermingled with the drum's resonance.",
-            "augmented_index": 39,
-            "original_index": 39,
-            "scores": {
-                "bleurt": 0.3777,
-                "sacrebleu": 0.0929,
-                "bleu": 0.1275,
-                "bert_score": 0.4337,
-                "comet_da": 0.4961,
-                "comet_qe": 0.4756
-            }
-        },
-        {
-            "vi": "giáp mặt rồi phút bỗng chia tay",
-            "en": "We met, and in a fleeting moment, parted.",
-            "augmented_index": 40,
-            "original_index": 40,
-            "scores": {
-                "bleurt": 0.5455,
-                "sacrebleu": 0.0493,
-                "bleu": 0.1147,
-                "bert_score": 0.4126,
-                "comet_da": 0.7519,
-                "comet_qe": 0.7413
-            }
-        },
-        {
-            "vi": "hà lương chia rẽ đường này",
-            "en": "The rivers of Ha Luong diverge on this path.",
-            "augmented_index": 41,
-            "original_index": 41,
-            "scores": {
-                "bleurt": 0.4513,
-                "sacrebleu": 0.0622,
-                "bleu": 0.0812,
-                "bert_score": 0.15,
-                "comet_da": 0.4842,
-                "comet_qe": 0.7315
-            }
-        },
-        {
-            "vi": "bên đường trông bóng cờ bay ngùi ngùi",
-            "en": "By the roadside, I watch the banners flutter, a heart heavy with sorrow.",
-            "augmented_index": 42,
-            "original_index": 42,
-            "scores": {
-                "bleurt": 0.638,
-                "sacrebleu": 0.2633,
-                "bleu": 0.344,
-                "bert_score": 0.6914,
-                "comet_da": 0.7561,
-                "comet_qe": 0.6934
-            }
-        },
-        {
-            "vi": "quân trước đã tới ngoài doanh liễu",
-            "en": "The army had already arrived at the willow-lined encampment.",
-            "augmented_index": 43,
-            "original_index": 43,
-            "scores": {
-                "bleurt": 0.5001,
-                "sacrebleu": 0.0552,
-                "bleu": 0.1194,
-                "bert_score": 0.3729,
-                "comet_da": 0.7497,
-                "comet_qe": 0.6798
-            }
-        },
-        {
-            "vi": "ngựa sau còn ở nẻo tràng dương",
-            "en": "The rear steed remains on the Tràng Dương road.",
-            "augmented_index": 44,
-            "original_index": 44,
-            "scores": {
-                "bleurt": 0.3286,
-                "sacrebleu": 0.042,
-                "bleu": 0.0936,
-                "bert_score": -0.0666,
-                "comet_da": 0.4937,
-                "comet_qe": 0.6351
-            }
-        },
-        {
-            "vi": "quân đưa chàng ruổi lên đường",
-            "en": "The troops escort the young lord on his journey.",
-            "augmented_index": 45,
-            "original_index": 45,
-            "scores": {
-                "bleurt": 0.5107,
-                "sacrebleu": 0.05,
-                "bleu": 0.108,
-                "bert_score": 0.3633,
-                "comet_da": 0.7248,
-                "comet_qe": 0.7668
-            }
-        },
-        {
-            "vi": "liễu dương biết thiếp đoạn trường này chăng",
-            "en": "Does the willow, the sun, know of this heart-rending separation?",
-            "augmented_index": 46,
-            "original_index": 46,
-            "scores": {
-                "bleurt": 0.4297,
-                "sacrebleu": 0.0407,
-                "bleu": 0.1074,
-                "bert_score": 0.2648,
-                "comet_da": 0.6105,
-                "comet_qe": 0.4732
-            }
-        },
-        {
-            "vi": "tiếng địch ruổi xa chừng lăng lắc",
-            "en": "The flute's lament drifted far, a wavering echo.",
-            "augmented_index": 47,
-            "original_index": 47,
-            "scores": {
-                "bleurt": 0.4501,
-                "sacrebleu": 0.0552,
-                "bleu": 0.1147,
-                "bert_score": 0.2995,
-                "comet_da": 0.6166,
-                "comet_qe": 0.4629
-            }
-        },
-        {
-            "vi": "hàng cờ bay bóng ngất mờ mờ",
-            "en": "The banners drift, a hazy, indistinct dance.",
-            "augmented_index": 48,
-            "original_index": 48,
-            "scores": {
-                "bleurt": 0.3926,
-                "sacrebleu": 0.0,
-                "bleu": 0.0,
-                "bert_score": 0.2704,
-                "comet_da": 0.5055,
-                "comet_qe": 0.5084
-            }
-        },
-        {
-            "vi": "dứt tay theo lớp mây đưa",
-            "en": "My hand breaks free, following the drifting clouds.",
-            "augmented_index": 49,
-            "original_index": 49,
-            "scores": {
-                "bleurt": 0.4432,
-                "sacrebleu": 0.0552,
-                "bleu": 0.1194,
-                "bert_score": 0.1957,
-                "comet_da": 0.5359,
-                "comet_qe": 0.5869
             }
         }
     ],
@@ -717,41 +212,6 @@
         11,
         12,
         13,
-        14,
-        15,
-        16,
-        17,
-        18,
-        19,
-        20,
-        21,
-        22,
-        23,
-        24,
-        25,
-        26,
-        27,
-        28,
-        29,
-        30,
-        31,
-        32,
-        33,
-        34,
-        35,
-        36,
-        37,
-        38,
-        39,
-        40,
-        41,
-        42,
-        43,
-        44,
-        45,
-        46,
-        47,
-        48,
-        49
+        14
     ]
 }
