@@ -1,0 +1,710 @@
+{
+    "file_name": "Vietnamese_Anthology_P4",
+    "data": [
+        {
+            "id": 0,
+            "vi": "Vịnh thằng mõ",
+            "en": "The village crier"
+        },
+        {
+            "id": 1,
+            "vi": "Khen cho cả tiếng lại dài hơi,",
+            "en": "His voice rings loud and carries far"
+        },
+        {
+            "id": 2,
+            "vi": "Làng nư­ớc suy bảo chẳng phải chơi",
+            "en": "He dawdles not but swiftly acts"
+        },
+        {
+            "id": 3,
+            "vi": "Mộc đạc lao xao khua mấy tiếng,",
+            "en": "His drum resounds throughout the world"
+        },
+        {
+            "id": 4,
+            "vi": "Kim thanh dấy dức khắp  đòi nơi",
+            "en": "his bell chimes forth to every place"
+        },
+        {
+            "id": 5,
+            "vi": "Gần xa chốn chốn đều nghe lệnh,",
+            "en": "Both young and old heed his appeal"
+        },
+        {
+            "id": 6,
+            "vi": "Già trẻ ai ai cũng cứ lời",
+            "en": "the entire realm obeys his word"
+        },
+        {
+            "id": 7,
+            "vi": "Trên d­ưới quyền hành tay cắt đặt,",
+            "en": "Once duties are assigned to all,"
+        },
+        {
+            "id": 8,
+            "vi": "Một mình một cỗ mặc dầu xơi",
+            "en": "he sits at ease on his own mat"
+        },
+        {
+            "id": 9,
+            "vi": "Con đường làm quan",
+            "en": "Officialdom"
+        },
+        {
+            "id": 10,
+            "vi": "Tuổi tác tuy rằng chửa mấy mươi",
+            "en": "In age I boast not many scores of years,"
+        },
+        {
+            "id": 11,
+            "vi": "Đổi thay mắt đã thấy ba đời",
+            "en": "yet I have witnessed changes through three reigns'"
+        },
+        {
+            "id": 12,
+            "vi": "Ra trường danh lợi, vinh liền nhục",
+            "en": "In life’s arena, fame dwells next to shame:"
+        },
+        {
+            "id": 13,
+            "vi": "Vào cuộc trần ai, khóc trước cười",
+            "en": "born into dust, you cry before you laugh"
+        },
+        {
+            "id": 14,
+            "vi": "Chuyện cũ trải qua đà chán mắt",
+            "en": "With past events I’ve surfeited my eyes:"
+        },
+        {
+            "id": 15,
+            "vi": "Việc sau nghĩ lại chẳng thừa hơi",
+            "en": "on things to come I shall not waste my breath"
+        },
+        {
+            "id": 16,
+            "vi": "Đã hay đường cái thời ra thế",
+            "en": "Such is the high road of the world—I know:"
+        },
+        {
+            "id": 17,
+            "vi": "Sạch nợ tang bồng mới kể ngươi",
+            "en": "a man does what he must, to be a man"
+        },
+        {
+            "id": 18,
+            "vi": "Chạy giặc",
+            "en": "Fleeing from bandits"
+        },
+        {
+            "id": 19,
+            "vi": "Tan chợ vừa nghe tiếng súng Tây,",
+            "en": "The market breaks at sound of Western guns"
+        },
+        {
+            "id": 20,
+            "vi": "Một bàn cờ thế phút sa tay",
+            "en": "Just one false move—the game of chess is lost"
+        },
+        {
+            "id": 21,
+            "vi": "Bỏ nhà lũ trẻ lơ xơ chạy,",
+            "en": "Children flee home to scurry here and there"
+        },
+        {
+            "id": 22,
+            "vi": "Mất ổ bầy chim dáo dác bay",
+            "en": "Birds leave their nests to flutter back and forth"
+        },
+        {
+            "id": 23,
+            "vi": "Bến Nghé của tiền tan bọt nước,",
+            "en": "Calf Haven’s riches wash away like foam'"
+        },
+        {
+            "id": 24,
+            "vi": "Đồng Nai tranh ngói nhuốm màu mây",
+            "en": "Deer Field’s roof thatch and tile go up in smoke"
+        },
+        {
+            "id": 25,
+            "vi": "Hỏi trang dẹp loạn rày đâu vắng,",
+            "en": "O turmoil quellers, are you hiding now?"
+        },
+        {
+            "id": 26,
+            "vi": "Nỡ để dân đen mắc nạn này?",
+            "en": "Why let the little people bear this scourge?"
+        },
+        {
+            "id": 27,
+            "vi": "Trời bão",
+            "en": "The storm"
+        },
+        {
+            "id": 28,
+            "vi": "Phi liêm xe ngựa đóng phương nao?",
+            "en": "Where do you keep your armies, O Wind God?"
+        },
+        {
+            "id": 29,
+            "vi": "Oai gió đưa ra nước bến trào",
+            "en": "Unleash your might, and tumble ocean waves"
+        },
+        {
+            "id": 30,
+            "vi": "Thổi thốc miếu chùa hơi vụt vụt,",
+            "en": "Whip, whip—blow down all temples and all shrines"
+        },
+        {
+            "id": 31,
+            "vi": "Xô nhào cây đá tiếng ào ào",
+            "en": "Roar, roar—bring down all forests and all hills"
+        },
+        {
+            "id": 32,
+            "vi": "Ai rằng đầm Lộc mê Ngu Thuấn?",
+            "en": "Beneath Mount Lu did Shun desert his path?"
+        },
+        {
+            "id": 33,
+            "vi": "Ta nhớ sông Tuy giải Hán Cao",
+            "en": "Upon the Sui, Liu Pang found his escape"
+        },
+        {
+            "id": 34,
+            "vi": "Một trận bão rồi bờ cõi sạch,",
+            "en": "May Heaven storm and sweep our kingdom clean,"
+        },
+        {
+            "id": 35,
+            "vi": "Trời thu như cũ mãi không xao",
+            "en": "then put it back within its rightful bounds"
+        },
+        {
+            "id": 36,
+            "vi": "Điếu Trương Định",
+            "en": "Elegy for Truong Dinh"
+        },
+        {
+            "id": 37,
+            "vi": "Trong Nam tên họ nổi như cồn,",
+            "en": "His fame rose like a billow in the south"
+        },
+        {
+            "id": 38,
+            "vi": "Mấy trận Gò Công nức tiếng đồn",
+            "en": "Go-cong in battles echoed with his feats"
+        },
+        {
+            "id": 39,
+            "vi": "Dấu đạn hỡi rêm tàu bạch quỷ,",
+            "en": "His bullets made white devils’ warships throb"
+        },
+        {
+            "id": 40,
+            "vi": "Hơi gươm thêm rạng thể hoàng môn",
+            "en": "his sword cast glory on the Golden Gate"
+        },
+        {
+            "id": 41,
+            "vi": "Ngọn cờ ứng nghĩa trời chưa bẻ,",
+            "en": "The flag of justice Heaven’s yet to fell"
+        },
+        {
+            "id": 42,
+            "vi": "Cái ấn bình tây đất vội chôn",
+            "en": "the captain’s seal lies buried under earth"
+        },
+        {
+            "id": 43,
+            "vi": "Nỡ khiến anh hùng rơi giọt luỵ,",
+            "en": "Why must brave men break down and shed salt tears?"
+        },
+        {
+            "id": 44,
+            "vi": "Lâm dâm ba chữ điếu linh hồn",
+            "en": "A murmured prayer is offered to his soul"
+        },
+        {
+            "id": 45,
+            "vi": "Cối xay",
+            "en": "The rice mill"
+        },
+        {
+            "id": 46,
+            "vi": "Công linh trong thế mấy ai tày,",
+            "en": "For merit here below, who equals it?"
+        },
+        {
+            "id": 47,
+            "vi": "Có gạo nhờ ơn cái cối xay",
+            "en": "To grind our rice, all call upon the mill"
+        },
+        {
+            "id": 48,
+            "vi": "Ngàn bận chi sờn thân gió bụi,",
+            "en": "Dauntless, it copes with storms of wind and dust"
+        },
+        {
+            "id": 49,
+            "vi": "Trăm vòng nào ngại sức lung lay",
+            "en": "unshaken, it will take a hundred spins"
+        },
+        {
+            "id": 50,
+            "vi": "Mòn răng nợ chúa chưa đền đáp,",
+            "en": "To serve its lord, it must wear out its teeth"
+        },
+        {
+            "id": 51,
+            "vi": "Trật họng hờn ai khéo đặt bày",
+            "en": "Who made it so it chokes within its throat??"
+        },
+        {
+            "id": 52,
+            "vi": "Bao quản thớt trên đè thớt dưới,",
+            "en": "It cares not if its stones have both worn down:"
+        },
+        {
+            "id": 53,
+            "vi": "Chỉn e còn giặt phải ra tay",
+            "en": "because the foe’s still there, it must fight on"
+        },
+        {
+            "id": 54,
+            "vi": "Con muỗi",
+            "en": "The mosquito"
+        },
+        {
+            "id": 55,
+            "vi": "Muỗi hỡi thân ngươi sướng mọi điều,",
+            "en": "Mosquito, you are blessed with all nice things"
+        },
+        {
+            "id": 56,
+            "vi": "Thiếu chi chi nữa hãy còn kêu",
+            "en": "What do you lack? Why buzz still and complain?"
+        },
+        {
+            "id": 57,
+            "vi": "Giường ngà chiếu ngọc từng nương đậu,",
+            "en": "You’ve rested on jade mats and ivory beds"
+        },
+        {
+            "id": 58,
+            "vi": "Má phấn đào non cũng ấm yêu",
+            "en": "you’ve stroked and kissed rouged lips and powdered cheeks"
+        },
+        {
+            "id": 59,
+            "vi": "Béo miệng chẳng thương con trẻ dại,",
+            "en": "You’ve not spared children, you indulge your tastes"
+        },
+        {
+            "id": 60,
+            "vi": "Cảnh hồng nào đoái chúng dân nghèo",
+            "en": "you’ve stung poor people, filling up your paunch"
+        },
+        {
+            "id": 61,
+            "vi": "Ngày sau hẳn gặp nhằm xơ quất,",
+            "en": "When a good swatter someday comes to hand,"
+        },
+        {
+            "id": 62,
+            "vi": "Xử  tội nhà ngươi mắt chẳng nheo",
+            "en": "I'll pay you for your crimes without a blink"
+        },
+        {
+            "id": 63,
+            "vi": "Vịnh hát bội",
+            "en": "Opera actors"
+        },
+        {
+            "id": 64,
+            "vi": "Đứa mắc ghẻ ruồi, đứa lác voi,",
+            "en": "Some rub their shingles, others scratch their mange:"
+        },
+        {
+            "id": 65,
+            "vi": "Bao nhiêu xiêm áo cũng trơ mòi",
+            "en": "a shabby lot, for all their fine array"
+        },
+        {
+            "id": 66,
+            "vi": "Người trung mặt đỏ đôi tròng bạc,",
+            "en": "A loyalist’s red face displays white eyes"
+        },
+        {
+            "id": 67,
+            "vi": "Đứa nịnh râu đen mấy sợi còi",
+            "en": "a sycophant’s black beard sports scraggly hairs"
+        },
+        {
+            "id": 68,
+            "vi": "Trên trính có nhà còn lợp lọng,",
+            "en": "Though under rooftops, they boast parasols"
+        },
+        {
+            "id": 69,
+            "vi": "Dưới chân không ngựa lại giơ roi",
+            "en": "astride no horse, they brandish and crack whips"
+        },
+        {
+            "id": 70,
+            "vi": "Hèn chi chúng nói bội là bạc,",
+            "en": "Thespians, folk say, make up a faithless lot"
+        },
+        {
+            "id": 71,
+            "vi": "Bôi mặt đánh nhau cú lại thoi",
+            "en": "they daub their faces, then trade knocks and thumps"
+        },
+        {
+            "id": 72,
+            "vi": "Hội Tây",
+            "en": "The French national holiday"
+        },
+        {
+            "id": 73,
+            "vi": "Kìa hội thăng bình tiếng pháo reo:",
+            "en": "Hail peace and joy on earth Firecrackers snap"
+        },
+        {
+            "id": 74,
+            "vi": "Bao nhiêu cờ kéo với đèn treo",
+            "en": "They’ve hoisted flags, they’ve hung gay lanterns out"
+        },
+        {
+            "id": 75,
+            "vi": "Bà quan tênh nghếch xem bơi trải,",
+            "en": "Big dames peer down their snoots at some boat race"
+        },
+        {
+            "id": 76,
+            "vi": "Thằng bé lom khom nghé hát chèo",
+            "en": "small boys, hunched up, catch glimpses of a farce"
+        },
+        {
+            "id": 77,
+            "vi": "Cậy sức cây đu nhiều chị nhún,",
+            "en": "Trusting its strength, girls wigway on the swing"
+        },
+        {
+            "id": 78,
+            "vi": "Tham tiền cột mỡ lắm anh leo",
+            "en": "for money, fellows climb the greasy pole"
+        },
+        {
+            "id": 79,
+            "vi": "Khen ai khéo vẽ trò vui thế,",
+            "en": "Praise those who stage this merriest of shows"
+        },
+        {
+            "id": 80,
+            "vi": "Vui thế bao nhiêu nhục bấy nhiêu",
+            "en": "The merrier, the sorrier, alas"
+        },
+        {
+            "id": 81,
+            "vi": "Con tôm",
+            "en": "Shrimp"
+        },
+        {
+            "id": 82,
+            "vi": "Chẳng phải vương công, chẳng phải hầu,",
+            "en": "They are no lords, no marquesses or dukes,"
+        },
+        {
+            "id": 83,
+            "vi": "Học đòi đái kiếm lại mang râu",
+            "en": "yet they all brandish swords and sport long beards"
+        },
+        {
+            "id": 84,
+            "vi": "Khoe khoang mắt đỏ trong dòng bích,",
+            "en": "They splash in water, popping their red eyes,"
+        },
+        {
+            "id": 85,
+            "vi": "Chẳng biết mình va cứt lộn đầu",
+            "en": "quite unaware their heads are full of shit"
+        },
+        {
+            "id": 86,
+            "vi": "Chó chết trôi",
+            "en": "To a dead dog in the river"
+        },
+        {
+            "id": 87,
+            "vi": "Sống thời bắt thỏ, thỏ kêu rêu,",
+            "en": "Alive, you caught the hares and made them cry—"
+        },
+        {
+            "id": 88,
+            "vi": "Thác thả dòng sông xác nổi phều",
+            "en": "now down the river your dead body bobs"
+        },
+        {
+            "id": 89,
+            "vi": "Vằn vện sắc còn phơi lẩn dẩn,",
+            "en": "Some streaks still faintly show upon your coat—"
+        },
+        {
+            "id": 90,
+            "vi": "Thốt tha danh hỡi, nổi lêu bêu",
+            "en": "a stench is all your name has left behind"
+        },
+        {
+            "id": 91,
+            "vi": "Tới lui bịn rịn, bầy tôm tép,",
+            "en": "Lamenting at your wake are fish and shrimp"
+        },
+        {
+            "id": 92,
+            "vi": "Đưa đón lao xao, lũ quạ diều",
+            "en": "escorting your remains are crows and hawks"
+        },
+        {
+            "id": 93,
+            "vi": "Một trận sóng dồi cùng gió dập,",
+            "en": "Wait till a storm comes up and whips the waves:"
+        },
+        {
+            "id": 94,
+            "vi": "Tan tành xương thịt biết bao nhiêu",
+            "en": "your flesh and bones will crumble into bits"
+        },
+        {
+            "id": 95,
+            "vi": "Hễ mai tớ hỏng",
+            "en": "Tomorrow, should I fail"
+        },
+        {
+            "id": 96,
+            "vi": "Ngày mai tớ hỏng, tớ đi ngay",
+            "en": "Tomorrow, should I fail, I'll go away’"
+        },
+        {
+            "id": 97,
+            "vi": "Cúng giỗ từ đây nhớ lấy ngày",
+            "en": "In future, folks, remember our feast days"
+        },
+        {
+            "id": 98,
+            "vi": "Học đã sôi cơm nhưng chửa chín,",
+            "en": "I’ve studied till rice boils yet won’t get cooked—"
+        },
+        {
+            "id": 99,
+            "vi": "Thi không ăn ớt thế mà cay",
+            "en": "exams taste hot like chilies in the mouth"
+        },
+        {
+            "id": 100,
+            "vi": "Sách đèn phó mặc đèn con trẻ,",
+            "en": "To you, my sons, I’ll leave my lamp and books"
+        },
+        {
+            "id": 101,
+            "vi": "Thưng đấu nhờ tay một mẹ mầy",
+            "en": "I’ll count on you, their mom, to fill their pot"
+        },
+        {
+            "id": 102,
+            "vi": "Cống hỉ, mét xì thông mọi tiếng,",
+            "en": "Kung-hsi Merci I know all foreign tongues"
+        },
+        {
+            "id": 103,
+            "vi": "Chẳng sang Tàu, tớ cũng sang Tây",
+            "en": "if not to China, I’ll run off to France"
+        },
+        {
+            "id": 104,
+            "vi": "Nghèo mà vui",
+            "en": "Poor and happy"
+        },
+        {
+            "id": 105,
+            "vi": "Kể suốt thế đố ai bằng anh Mán,",
+            "en": "On this whole earth who can compare with him?"
+        },
+        {
+            "id": 106,
+            "vi": "Trải mùi đời, khôn chán giả làm ngây",
+            "en": "He’s worldly-wise and plays the fool"
+        },
+        {
+            "id": 107,
+            "vi": "Hổ sinh ra lúc thời này,",
+            "en": "Ashamed to live in these foul days,"
+        },
+        {
+            "id": 108,
+            "vi": "An thân mệnh thế, giấu tay anh hùng",
+            "en": "he holds his peace and hides a hero’s hand"
+        },
+        {
+            "id": 109,
+            "vi": "Không danh cho dễ vẫy vùng,",
+            "en": "Obscure, he comes and goes at will"
+        },
+        {
+            "id": 110,
+            "vi": "Mình không phú quí, mắt không vương hầu",
+            "en": "He craves no wealth, he eyes no rank"
+        },
+        {
+            "id": 111,
+            "vi": "Khi để chỏm, lúc cạo đầu,",
+            "en": "Sometimes he sports a tuft of hair, sometimes he shaves his head"
+        },
+        {
+            "id": 112,
+            "vi": "Nghêu ngao câu hát nửa tàu nửa ta",
+            "en": "All by himself he sings wild songs, half in Chinese, half in our tongue"
+        },
+        {
+            "id": 113,
+            "vi": "Không đội nón, chịu màu da dãi nắng,",
+            "en": "He wears no hat, lets sunshine tan his skin"
+        },
+        {
+            "id": 114,
+            "vi": "Chẳng nhuộm răng, để trắng để cười đời",
+            "en": "He leaves his teeth undyed and white to flash them at the world and laugh"
+        },
+        {
+            "id": 115,
+            "vi": "Chốn quyền môn luồn cúi mặc ai ai,",
+            "en": "He lets ‘em bow and scrape through gates of power—"
+        },
+        {
+            "id": 116,
+            "vi": "Ngoài cương toả thảnh thơi ai đã biết?",
+            "en": "who knows that, bridle-shy, he’s free as air?"
+        },
+        {
+            "id": 117,
+            "vi": "Chỉ ấm ớ giả câm giả điếc,",
+            "en": "Hemming and hawing, he acts deaf and dumb"
+        },
+        {
+            "id": 118,
+            "vi": "Cứ vui tràn khi hát khi ngâm",
+            "en": "Joy bubbling up in him escapes as song"
+        },
+        {
+            "id": 119,
+            "vi": "Trên đời mấy mặt tri âm",
+            "en": "How many understand him here below?"
+        },
+        {
+            "id": 120,
+            "vi": "Năm mới chúc nhau",
+            "en": "Best wishes for the New year"
+        },
+        {
+            "id": 121,
+            "vi": "Lẳng lặng mà nghe nó chúc nhau:",
+            "en": "Hear ’em exchange best wishes at New Year’s"
+        },
+        {
+            "id": 122,
+            "vi": "Chúc nhau trăm tuổi bạc đầu râu",
+            "en": "They’ll live to be a hundred, grow white hair"
+        },
+        {
+            "id": 123,
+            "vi": "Phen này ông quyết đi buôn cối,",
+            "en": "I'll sell ’em betel mortars and get rich—"
+        },
+        {
+            "id": 124,
+            "vi": "Thiên hạ bao nhiêu đứa giã trầu",
+            "en": "too old to chew, they all will grind their quids"
+        },
+        {
+            "id": 125,
+            "vi": "Lẳng lặng mà nghe nó chúc giàu:",
+            "en": "Hear ’em They wish each other lofty rank"
+        },
+        {
+            "id": 126,
+            "vi": "Trăm, nghìn, vạn mớ để vào đâu?",
+            "en": "They’ll purchase titles and official posts"
+        },
+        {
+            "id": 127,
+            "vi": "Phen này, ắt hẳn gà ăn bạc,",
+            "en": "This time I’ll go and sell ’em parasols:"
+        },
+        {
+            "id": 128,
+            "vi": "Đồng rụng, đồng rơi, lọ phải cầu",
+            "en": "T’ll curse, and cry my wares, and they will buy"
+        },
+        {
+            "id": 129,
+            "vi": "Lẳng lặng mà nghe nó chúc sang:",
+            "en": "Hear ’em again They wish each other wealth"
+        },
+        {
+            "id": 130,
+            "vi": "Đứa thì mua tước, đứa mua quan",
+            "en": "Where will they hoard their bulging millions, though?"
+        },
+        {
+            "id": 131,
+            "vi": "Phen này ông quyết đi buôn lọng,",
+            "en": "This time, the chickens will be money-fed:"
+        },
+        {
+            "id": 132,
+            "vi": "Vừa bán vừa la cũng đắt hàng",
+            "en": "they’ll peck at silver coins dropped here and there"
+        },
+        {
+            "id": 133,
+            "vi": "Lẳng lặng mà nghe nó chúc con:",
+            "en": "They wish each other many sons and heirs:"
+        },
+        {
+            "id": 134,
+            "vi": "Sinh năm đẻ bảy được vuông tròn",
+            "en": "by fives and sevens children will be born"
+        },
+        {
+            "id": 135,
+            "vi": "Phố phường chật hẹp, người đông đúc,",
+            "en": "More folk and yet more folk will choke the streets:"
+        },
+        {
+            "id": 136,
+            "vi": "Bồng bế nhau lên nó ở non",
+            "en": "with babes in arms they’ll migrate to the hills"
+        },
+        {
+            "id": 137,
+            "vi": "Bắt chước ai ta chúc mấy lời:",
+            "en": "T’ll join well-wishers and convey my wish"
+        },
+        {
+            "id": 138,
+            "vi": "Chúc cho khắp hết ở trong đời",
+            "en": "T’ll wish all people of the world one thing"
+        },
+        {
+            "id": 139,
+            "vi": "Vua, quan, sĩ, thứ, người muôn nước,",
+            "en": "May kings and mandarins, may each and all"
+        },
+        {
+            "id": 140,
+            "vi": "Sao được cho ra cái giống người",
+            "en": "learn how to live such lives as men should live"
+        }
+    ]
+}

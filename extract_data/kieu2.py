@@ -12,7 +12,7 @@ SPECIAL_CHARS_PATTERN = re.compile(r"[^a-zA-ZÀ-ỹ\s\'\’-]")
 LEADING_ARABIC_NUMBERS_PATTERN = re.compile(r"^\s*(\d+)\s+")
 LEADING_ROMAN_NUMERALS_PATTERN = re.compile(r"^\s*[IVXLCDM]+\n")
 CHARACTER_NAMES_PATTERN = re.compile(
-    r"(Kiều|Thúy Kiều|Thúy Vân|Kim Trọng|Thúc Sinh|Tú Bà|Mã Giám Sinh|Từ Hải|Vương|Mã Kiều|Thúc|Bạc Hạnh|Trạc Tuyền|Hồ Tôn Hiến|Giác Duyên|Đạm Tiên|Kỳ Tâm|Tích Việt|Kiều's|Tú|Mã|Bạc|Bạc Tú)"
+    r"(Kiều|Thúy Kiều|Thúy Vân|Kim Trọng|Thúc Sinh|Tú Bà|Mã Giám Sinh|Từ Hải|Vương|Mã Kiều|Thúc|Bạc Hạnh|Trạc Tuyền|Hồ Tôn Hiến|Giác Duyên|Đạm Tiên|Kỳ Tâm|Tích Việt|Kiều's|Tú|Mã|Bạc|Bạc Tú|Kim lang|Hoạn Thư|Hoạn)"
 )
 REMOVE_PATTERNS = {
     "Truyện Kiều",
@@ -129,7 +129,9 @@ def create_json_file(file_name, vietnamese_lines, english_lines, output_file):
 
 if __name__ == "__main__":
     # File path
-    pdf_path = os.path.join("..", "raw_dataset", "kieu2.pdf")
+    PROJECT_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+    
+    pdf_path = os.path.join(PROJECT_DIR, "raw_dataset", "kieu2.pdf")
 
     # Process PDF file
     pdf_file = fitz.open(pdf_path)
@@ -142,10 +144,10 @@ if __name__ == "__main__":
     vie_texts = [re.sub(r'\s*-\s*', ' ', line).strip() for line in vie_texts]
 
     # Save results to files 
-    save_text_to_file("full_poem.txt", all_texts)
-    save_text_to_file("english_poem.txt", eng_texts)
-    save_text_to_file("vietnamese_poem.txt", vie_texts)
-    create_json_file("kieu2.pdf", vie_texts, eng_texts, os.path.join("..", "data", "kieu2.json"))
+    # save_text_to_file("full_poem.txt", all_texts)
+    # save_text_to_file("english_poem.txt", eng_texts)
+    # save_text_to_file("vietnamese_poem.txt", vie_texts)
+    create_json_file("kieu2.pdf", vie_texts, eng_texts, os.path.join(PROJECT_DIR, "data", "kieu2.json"))
 
     # Close the PDF file
     pdf_file.close()

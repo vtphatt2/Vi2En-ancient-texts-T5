@@ -1,0 +1,1390 @@
+{
+    "file_name": "SinoNom_Vietnamese_Dictionary_p7",
+    "data": [
+        {
+            "id": 0,
+            "vi": "TỨC",
+            "en": "daughter in law"
+        },
+        {
+            "id": 1,
+            "vi": "MÔ",
+            "en": "Woman"
+        },
+        {
+            "id": 2,
+            "vi": "NÙNG",
+            "en": "I"
+        },
+        {
+            "id": 3,
+            "vi": "BẠN",
+            "en": "Friend"
+        },
+        {
+            "id": 4,
+            "vi": "DỊ",
+            "en": "Shops"
+        },
+        {
+            "id": 5,
+            "vi": "ĐÀI",
+            "en": "Your Majesty"
+        },
+        {
+            "id": 6,
+            "vi": "KINH",
+            "en": "Buffalo leg tube"
+        },
+        {
+            "id": 7,
+            "vi": "ĐỂ",
+            "en": "Roots"
+        },
+        {
+            "id": 8,
+            "vi": "HÀNG",
+            "en": "Over the sea"
+        },
+        {
+            "id": 9,
+            "vi": "NGHỈ",
+            "en": "anti-ferry"
+        },
+        {
+            "id": 10,
+            "vi": "VU",
+            "en": "Crumple"
+        },
+        {
+            "id": 11,
+            "vi": "ÁNG",
+            "en": "Pot"
+        },
+        {
+            "id": 12,
+            "vi": "TƯ",
+            "en": "Worry"
+        },
+        {
+            "id": 13,
+            "vi": "NGẬT",
+            "en": "Dress dress"
+        },
+        {
+            "id": 14,
+            "vi": "CỦ",
+            "en": "Threatening"
+        },
+        {
+            "id": 15,
+            "vi": "BÂN",
+            "en": "hopper"
+        },
+        {
+            "id": 16,
+            "vi": "TÀI",
+            "en": "Happen"
+        },
+        {
+            "id": 17,
+            "vi": "TÁI",
+            "en": "Two"
+        },
+        {
+            "id": 18,
+            "vi": "MẬU",
+            "en": "Long"
+        },
+        {
+            "id": 19,
+            "vi": "VẶN",
+            "en": "confusion"
+        },
+        {
+            "id": 20,
+            "vi": "NGHÊ",
+            "en": "Termites"
+        },
+        {
+            "id": 21,
+            "vi": "DẬT",
+            "en": "Row"
+        },
+        {
+            "id": 22,
+            "vi": "QUỸ",
+            "en": "Ball"
+        },
+        {
+            "id": 23,
+            "vi": "TRÙ",
+            "en": "Blanket"
+        },
+        {
+            "id": 24,
+            "vi": "TÚ",
+            "en": "Good rice"
+        },
+        {
+            "id": 25,
+            "vi": "NHUNG",
+            "en": "Baby Horn"
+        },
+        {
+            "id": 26,
+            "vi": "ĐỒN",
+            "en": "Piggy"
+        },
+        {
+            "id": 27,
+            "vi": "THUẦN",
+            "en": "Calf"
+        },
+        {
+            "id": 28,
+            "vi": "TRÍ",
+            "en": "To"
+        },
+        {
+            "id": 29,
+            "vi": "ĐẠO",
+            "en": "Speak"
+        },
+        {
+            "id": 30,
+            "vi": "ĐỒ",
+            "en": "Apply"
+        },
+        {
+            "id": 31,
+            "vi": "TỊCH",
+            "en": "Absent"
+        },
+        {
+            "id": 32,
+            "vi": "QUYNH",
+            "en": "Hasp"
+        },
+        {
+            "id": 33,
+            "vi": "VŨ",
+            "en": "Bird of paradise"
+        },
+        {
+            "id": 34,
+            "vi": "PHÁC",
+            "en": "Honest"
+        },
+        {
+            "id": 35,
+            "vi": "KIỆT",
+            "en": "Excruciating"
+        },
+        {
+            "id": 36,
+            "vi": "LIỆT",
+            "en": "dazzling"
+        },
+        {
+            "id": 37,
+            "vi": "HOÀNG",
+            "en": "Clear"
+        },
+        {
+            "id": 38,
+            "vi": "HIỂN",
+            "en": "Glory"
+        },
+        {
+            "id": 39,
+            "vi": "BIẾM",
+            "en": "Cartoon"
+        },
+        {
+            "id": 40,
+            "vi": "KIỆM",
+            "en": "Save"
+        },
+        {
+            "id": 41,
+            "vi": "CẦN",
+            "en": "Need"
+        },
+        {
+            "id": 42,
+            "vi": "CẬT",
+            "en": "Ask flat"
+        },
+        {
+            "id": 43,
+            "vi": "CUỐNG",
+            "en": "Speak up"
+        },
+        {
+            "id": 44,
+            "vi": "HUÂN",
+            "en": "Afternoon sun"
+        },
+        {
+            "id": 45,
+            "vi": "DÂM",
+            "en": "Steady rain"
+        },
+        {
+            "id": 46,
+            "vi": "LÂN",
+            "en": "Roaring"
+        },
+        {
+            "id": 47,
+            "vi": "LỤC",
+            "en": "Green"
+        },
+        {
+            "id": 48,
+            "vi": "HỒN",
+            "en": "Muddy water"
+        },
+        {
+            "id": 49,
+            "vi": "PHỈ",
+            "en": "Glorious"
+        },
+        {
+            "id": 50,
+            "vi": "BẢO",
+            "en": "Blanket"
+        },
+        {
+            "id": 51,
+            "vi": "THIÊN",
+            "en": "Wear heels"
+        },
+        {
+            "id": 52,
+            "vi": "PHẠM",
+            "en": "Buddha's house"
+        },
+        {
+            "id": 53,
+            "vi": "THIỀN",
+            "en": "Temple"
+        },
+        {
+            "id": 54,
+            "vi": "BI",
+            "en": "Love"
+        },
+        {
+            "id": 55,
+            "vi": "CHUẾ",
+            "en": "To the groom"
+        },
+        {
+            "id": 56,
+            "vi": "NHÂN",
+            "en": "Sacrifice"
+        },
+        {
+            "id": 57,
+            "vi": "TIẾN",
+            "en": "Offering rice"
+        },
+        {
+            "id": 58,
+            "vi": "CHỬ",
+            "en": "Rice pestle"
+        },
+        {
+            "id": 59,
+            "vi": "TÍCH",
+            "en": "Drain"
+        },
+        {
+            "id": 60,
+            "vi": "CANG",
+            "en": "Dried"
+        },
+        {
+            "id": 61,
+            "vi": "BỘC",
+            "en": "Oh Oh"
+        },
+        {
+            "id": 62,
+            "vi": "KHANH",
+            "en": "Hole"
+        },
+        {
+            "id": 63,
+            "vi": "THÔNG",
+            "en": "Bright"
+        },
+        {
+            "id": 64,
+            "vi": "ÁM",
+            "en": "Blur"
+        },
+        {
+            "id": 65,
+            "vi": "PHẾ",
+            "en": "Flag"
+        },
+        {
+            "id": 66,
+            "vi": "QUYẾN",
+            "en": "Silk"
+        },
+        {
+            "id": 67,
+            "vi": "TỈNH",
+            "en": "Conscious"
+        },
+        {
+            "id": 68,
+            "vi": "PHA",
+            "en": "Edge"
+        },
+        {
+            "id": 69,
+            "vi": "DŨ",
+            "en": "Already"
+        },
+        {
+            "id": 70,
+            "vi": "PHẪN",
+            "en": "Horse hair"
+        },
+        {
+            "id": 71,
+            "vi": "HOẰNG",
+            "en": "Deep"
+        },
+        {
+            "id": 72,
+            "vi": "VẬT",
+            "en": "Pig"
+        },
+        {
+            "id": 73,
+            "vi": "THIỀU",
+            "en": "Distant"
+        },
+        {
+            "id": 74,
+            "vi": "TẢ",
+            "en": "Diarrhea"
+        },
+        {
+            "id": 75,
+            "vi": "QUÂN",
+            "en": "Even"
+        },
+        {
+            "id": 76,
+            "vi": "BIẾU",
+            "en": "Give"
+        },
+        {
+            "id": 77,
+            "vi": "TIẾU",
+            "en": "make fun"
+        },
+        {
+            "id": 78,
+            "vi": "TRAI",
+            "en": "vegetarian"
+        },
+        {
+            "id": 79,
+            "vi": "MÊ ",
+            "en": "Drunk"
+        },
+        {
+            "id": 80,
+            "vi": "LƯU",
+            "en": "Take it easy"
+        },
+        {
+            "id": 81,
+            "vi": "KHỐNG",
+            "en": "Rush"
+        },
+        {
+            "id": 82,
+            "vi": "GIÀM",
+            "en": "Clear"
+        },
+        {
+            "id": 83,
+            "vi": "TỔNG",
+            "en": "Summary"
+        },
+        {
+            "id": 84,
+            "vi": "ĐỚI",
+            "en": "Knob"
+        },
+        {
+            "id": 85,
+            "vi": "BA",
+            "en": "Flower"
+        },
+        {
+            "id": 86,
+            "vi": "LUYỆN",
+            "en": "Forging"
+        },
+        {
+            "id": 87,
+            "vi": "CƠ",
+            "en": "Green goods"
+        },
+        {
+            "id": 88,
+            "vi": "THỤC",
+            "en": "Good"
+        },
+        {
+            "id": 89,
+            "vi": "KIÊU",
+            "en": "Strong"
+        },
+        {
+            "id": 90,
+            "vi": "XÍ",
+            "en": "Thanh"
+        },
+        {
+            "id": 91,
+            "vi": "HÂN",
+            "en": "Fun"
+        },
+        {
+            "id": 92,
+            "vi": "YỂM",
+            "en": "Mole"
+        },
+        {
+            "id": 93,
+            "vi": "CHI",
+            "en": "Nine years"
+        },
+        {
+            "id": 94,
+            "vi": "PHÁO",
+            "en": "Bullet"
+        },
+        {
+            "id": 95,
+            "vi": "THỈ",
+            "en": "Name"
+        },
+        {
+            "id": 96,
+            "vi": "THỈNH",
+            "en": "Ask for"
+        },
+        {
+            "id": 97,
+            "vi": "NGHỆ",
+            "en": "Again"
+        },
+        {
+            "id": 98,
+            "vi": "HUY",
+            "en": "Sun"
+        },
+        {
+            "id": 99,
+            "vi": "LÂM",
+            "en": "Long rain"
+        },
+        {
+            "id": 100,
+            "vi": "ÂU",
+            "en": "singing"
+        },
+        {
+            "id": 101,
+            "vi": "TẠ",
+            "en": "Dumbbell"
+        },
+        {
+            "id": 102,
+            "vi": "THIỆM",
+            "en": "Full"
+        },
+        {
+            "id": 103,
+            "vi": "TĂNG",
+            "en": "Teacher"
+        },
+        {
+            "id": 104,
+            "vi": "TƯỢNG",
+            "en": "Statue"
+        },
+        {
+            "id": 105,
+            "vi": "TẦN",
+            "en": "Coriander"
+        },
+        {
+            "id": 106,
+            "vi": "TẢO",
+            "en": "Seaweed"
+        },
+        {
+            "id": 107,
+            "vi": "BỒNG",
+            "en": "Reed grass"
+        },
+        {
+            "id": 108,
+            "vi": "HẠNH",
+            "en": "Almond tree"
+        },
+        {
+            "id": 109,
+            "vi": "HÙNG",
+            "en": "Strong"
+        },
+        {
+            "id": 110,
+            "vi": "HÚNG",
+            "en": "Drunk"
+        },
+        {
+            "id": 111,
+            "vi": "KHẢN",
+            "en": "Right"
+        },
+        {
+            "id": 112,
+            "vi": "XANG",
+            "en": "Real"
+        },
+        {
+            "id": 113,
+            "vi": "THÚC",
+            "en": "Bean"
+        },
+        {
+            "id": 114,
+            "vi": "LIÊU",
+            "en": "away"
+        },
+        {
+            "id": 115,
+            "vi": "LƯ",
+            "en": "Home"
+        },
+        {
+            "id": 116,
+            "vi": "LẪM",
+            "en": "Nhon Nhon"
+        },
+        {
+            "id": 117,
+            "vi": "PHẨM",
+            "en": "Product"
+        },
+        {
+            "id": 118,
+            "vi": "BAN",
+            "en": "You"
+        },
+        {
+            "id": 119,
+            "vi": "PHAN",
+            "en": "Minced meat"
+        },
+        {
+            "id": 120,
+            "vi": "THÍCH",
+            "en": "Wart"
+        },
+        {
+            "id": 121,
+            "vi": "CHÂU",
+            "en": "Tree"
+        },
+        {
+            "id": 122,
+            "vi": "LUỴ",
+            "en": "Wire"
+        },
+        {
+            "id": 123,
+            "vi": "LÂU (LŨ)",
+            "en": "Silk"
+        },
+        {
+            "id": 124,
+            "vi": "ĐỘT",
+            "en": "Threat"
+        },
+        {
+            "id": 125,
+            "vi": "ĐÔ",
+            "en": "YES"
+        },
+        {
+            "id": 126,
+            "vi": "ĐẢNG",
+            "en": "Party"
+        },
+        {
+            "id": 127,
+            "vi": "TẢNG",
+            "en": "Cornerstone"
+        },
+        {
+            "id": 128,
+            "vi": "HƯU",
+            "en": "Good"
+        },
+        {
+            "id": 129,
+            "vi": "THỊNH",
+            "en": "Prosperity"
+        },
+        {
+            "id": 130,
+            "vi": "TIẾT",
+            "en": "Tree of life"
+        },
+        {
+            "id": 131,
+            "vi": "TÔ",
+            "en": "Paint tree"
+        },
+        {
+            "id": 132,
+            "vi": "TRẪM",
+            "en": "I"
+        },
+        {
+            "id": 133,
+            "vi": "QUAN",
+            "en": "Widow"
+        },
+        {
+            "id": 134,
+            "vi": "CHẾ",
+            "en": "Magic"
+        },
+        {
+            "id": 135,
+            "vi": "TANG",
+            "en": "Tang"
+        },
+        {
+            "id": 136,
+            "vi": "BIỀN",
+            "en": "Sea hat"
+        },
+        {
+            "id": 137,
+            "vi": "HỐT",
+            "en": "A scoop"
+        },
+        {
+            "id": 138,
+            "vi": "KHIÊN",
+            "en": "Strip"
+        },
+        {
+            "id": 139,
+            "vi": "BỈNH",
+            "en": "Hold"
+        },
+        {
+            "id": 140,
+            "vi": "TRIÊM",
+            "en": "Beam"
+        },
+        {
+            "id": 141,
+            "vi": "CỤ",
+            "en": "Wind"
+        },
+        {
+            "id": 142,
+            "vi": "VIÊM",
+            "en": "Fire"
+        },
+        {
+            "id": 143,
+            "vi": "ĐỒNG",
+            "en": "Together"
+        },
+        {
+            "id": 144,
+            "vi": "NIẾP",
+            "en": "Hold"
+        },
+        {
+            "id": 145,
+            "vi": "THANH",
+            "en": "Grass carp"
+        },
+        {
+            "id": 146,
+            "vi": "LỆ",
+            "en": "Oysters"
+        },
+        {
+            "id": 147,
+            "vi": "BÔ",
+            "en": "Lunch"
+        },
+        {
+            "id": 148,
+            "vi": "VÃN",
+            "en": "Late"
+        },
+        {
+            "id": 149,
+            "vi": "UYỂN",
+            "en": "Curling"
+        },
+        {
+            "id": 150,
+            "vi": "BÀN",
+            "en": "Around"
+        },
+        {
+            "id": 151,
+            "vi": "TRẦN",
+            "en": "Old"
+        },
+        {
+            "id": 152,
+            "vi": "CỔ",
+            "en": "Old"
+        },
+        {
+            "id": 153,
+            "vi": "NGỰ",
+            "en": "Prevention"
+        },
+        {
+            "id": 154,
+            "vi": "THẢO",
+            "en": "Fight"
+        },
+        {
+            "id": 155,
+            "vi": "MÃNH",
+            "en": "Strong"
+        },
+        {
+            "id": 156,
+            "vi": "ĐÁNG",
+            "en": "Compartment"
+        },
+        {
+            "id": 157,
+            "vi": "THẦN",
+            "en": "God"
+        },
+        {
+            "id": 158,
+            "vi": "ỐC",
+            "en": "swelling"
+        },
+        {
+            "id": 159,
+            "vi": "VI",
+            "en": "Picked"
+        },
+        {
+            "id": 160,
+            "vi": "HÀN",
+            "en": "Drilling"
+        },
+        {
+            "id": 161,
+            "vi": "ĐỊNH",
+            "en": "Definition"
+        },
+        {
+            "id": 162,
+            "vi": "DẦN",
+            "en": "Glasses"
+        },
+        {
+            "id": 163,
+            "vi": "NGOẠN",
+            "en": "Ignore"
+        },
+        {
+            "id": 164,
+            "vi": "HIÊU",
+            "en": "bee"
+        },
+        {
+            "id": 165,
+            "vi": "MAI",
+            "en": "Moss"
+        },
+        {
+            "id": 166,
+            "vi": "TIÊU",
+            "en": "Burn"
+        },
+        {
+            "id": 167,
+            "vi": "HỘI",
+            "en": "Draw"
+        },
+        {
+            "id": 168,
+            "vi": "PHÁN",
+            "en": "Turn"
+        },
+        {
+            "id": 169,
+            "vi": "CHƯƠNG",
+            "en": "Clear"
+        },
+        {
+            "id": 170,
+            "vi": "NÃO",
+            "en": "Sadness"
+        },
+        {
+            "id": 171,
+            "vi": "KỲ",
+            "en": "Big"
+        },
+        {
+            "id": 172,
+            "vi": "CẤU",
+            "en": "See"
+        },
+        {
+            "id": 173,
+            "vi": "CÔ",
+            "en": "Wow"
+        },
+        {
+            "id": 174,
+            "vi": "QUYẾT",
+            "en": "Goodbye"
+        },
+        {
+            "id": 175,
+            "vi": "CỰ",
+            "en": "The price"
+        },
+        {
+            "id": 176,
+            "vi": "NAO",
+            "en": "Gong"
+        },
+        {
+            "id": 177,
+            "vi": "DƯ",
+            "en": "Carry"
+        },
+        {
+            "id": 178,
+            "vi": "KHUÔN",
+            "en": "Eyelid"
+        },
+        {
+            "id": 179,
+            "vi": "NGẠC",
+            "en": "Teeth"
+        },
+        {
+            "id": 180,
+            "vi": "NHAI",
+            "en": "hesitate"
+        },
+        {
+            "id": 181,
+            "vi": "NGHỄ",
+            "en": "Wait"
+        },
+        {
+            "id": 182,
+            "vi": "PHI",
+            "en": "King's wife"
+        },
+        {
+            "id": 183,
+            "vi": "OANH",
+            "en": "roaring"
+        },
+        {
+            "id": 184,
+            "vi": "Ế",
+            "en": "Shady"
+        },
+        {
+            "id": 185,
+            "vi": "DƯƠNG",
+            "en": "Sunny"
+        },
+        {
+            "id": 186,
+            "vi": "CẢO",
+            "en": "White"
+        },
+        {
+            "id": 187,
+            "vi": "TƯƠNG",
+            "en": "Should"
+        },
+        {
+            "id": 188,
+            "vi": "ĐỘNG",
+            "en": "Cave"
+        },
+        {
+            "id": 189,
+            "vi": "KHOA",
+            "en": "Nest"
+        },
+        {
+            "id": 190,
+            "vi": "TRÁC",
+            "en": "Wood carving"
+        },
+        {
+            "id": 191,
+            "vi": "THỜI",
+            "en": "plant a tree"
+        },
+        {
+            "id": 192,
+            "vi": "NINH",
+            "en": "Swamp"
+        },
+        {
+            "id": 193,
+            "vi": "VÂN",
+            "en": "Ripple"
+        },
+        {
+            "id": 194,
+            "vi": "KHOẢ",
+            "en": "Much"
+        },
+        {
+            "id": 195,
+            "vi": "THUẾ",
+            "en": "Towel"
+        },
+        {
+            "id": 196,
+            "vi": "SẤM",
+            "en": "Pour"
+        },
+        {
+            "id": 197,
+            "vi": "UYÊN",
+            "en": "Deep"
+        },
+        {
+            "id": 198,
+            "vi": "DU",
+            "en": "Loach"
+        },
+        {
+            "id": 199,
+            "vi": "CÁC",
+            "en": "Armpit"
+        },
+        {
+            "id": 200,
+            "vi": "THI",
+            "en": "dead"
+        },
+        {
+            "id": 201,
+            "vi": "ĐỀ",
+            "en": "Thick silk"
+        },
+        {
+            "id": 202,
+            "vi": "HUỆ",
+            "en": "Small cloth"
+        },
+        {
+            "id": 203,
+            "vi": "GIẢ",
+            "en": "Red"
+        },
+        {
+            "id": 204,
+            "vi": "LÊ",
+            "en": "Black"
+        },
+        {
+            "id": 205,
+            "vi": "ĐOAN",
+            "en": "Doan"
+        },
+        {
+            "id": 206,
+            "vi": "THẦM",
+            "en": "Strawberry"
+        },
+        {
+            "id": 207,
+            "vi": "DỰNG",
+            "en": "The Maid"
+        },
+        {
+            "id": 208,
+            "vi": "TRIỀN",
+            "en": "Market"
+        },
+        {
+            "id": 209,
+            "vi": "TỨ",
+            "en": "Row"
+        },
+        {
+            "id": 210,
+            "vi": "HƯỚNG",
+            "en": "Wage"
+        },
+        {
+            "id": 211,
+            "vi": "BỘT",
+            "en": "Flour"
+        },
+        {
+            "id": 212,
+            "vi": "KIẾT",
+            "en": "Lonely"
+        },
+        {
+            "id": 213,
+            "vi": "SẦU",
+            "en": "Sad"
+        },
+        {
+            "id": 214,
+            "vi": "LÔ",
+            "en": "Reed"
+        },
+        {
+            "id": 215,
+            "vi": "GIỚI",
+            "en": "Pickled onions"
+        },
+        {
+            "id": 216,
+            "vi": "QUÁN",
+            "en": "Crane"
+        },
+        {
+            "id": 217,
+            "vi": "THU",
+            "en": "Autumn Birds"
+        },
+        {
+            "id": 218,
+            "vi": "HOANG",
+            "en": "Deserted"
+        },
+        {
+            "id": 219,
+            "vi": "ĐIỆN",
+            "en": "The Electric Realm"
+        },
+        {
+            "id": 220,
+            "vi": "TOAN",
+            "en": "Lawsuit"
+        },
+        {
+            "id": 221,
+            "vi": "CẠNH",
+            "en": "Racing"
+        },
+        {
+            "id": 222,
+            "vi": "HỐI",
+            "en": "Teach"
+        },
+        {
+            "id": 223,
+            "vi": "KHƯ",
+            "en": "Snoring"
+        },
+        {
+            "id": 224,
+            "vi": "THÁO",
+            "en": "Call"
+        },
+        {
+            "id": 225,
+            "vi": "THIÊM",
+            "en": "Even"
+        },
+        {
+            "id": 226,
+            "vi": "PHÓ",
+            "en": "Photography"
+        },
+        {
+            "id": 227,
+            "vi": "KHAM",
+            "en": "Flat"
+        },
+        {
+            "id": 228,
+            "vi": "TOẢ",
+            "en": "Pot"
+        },
+        {
+            "id": 229,
+            "vi": "DUY",
+            "en": "Private"
+        },
+        {
+            "id": 230,
+            "vi": "CÁNH",
+            "en": "Again"
+        },
+        {
+            "id": 231,
+            "vi": "ĐẠI",
+            "en": "Here"
+        },
+        {
+            "id": 232,
+            "vi": "TINH",
+            "en": "Glass"
+        },
+        {
+            "id": 233,
+            "vi": "SINH",
+            "en": "Three lives"
+        },
+        {
+            "id": 234,
+            "vi": "SÚC",
+            "en": "livestock"
+        },
+        {
+            "id": 235,
+            "vi": "DUNG",
+            "en": "Casting"
+        },
+        {
+            "id": 236,
+            "vi": "HOÁ",
+            "en": "Wake up"
+        },
+        {
+            "id": 237,
+            "vi": "CHIÊM",
+            "en": "See"
+        },
+        {
+            "id": 238,
+            "vi": "DẪN",
+            "en": "Bring"
+        },
+        {
+            "id": 239,
+            "vi": "XÂM",
+            "en": "encroachment"
+        },
+        {
+            "id": 240,
+            "vi": "ĐINH",
+            "en": "Reminder"
+        },
+        {
+            "id": 241,
+            "vi": "HỰU",
+            "en": "Advice"
+        },
+        {
+            "id": 242,
+            "vi": "TÊ",
+            "en": "Go up"
+        },
+        {
+            "id": 243,
+            "vi": "SĨ",
+            "en": "Wait"
+        },
+        {
+            "id": 244,
+            "vi": "TRÁCH",
+            "en": "Hey"
+        },
+        {
+            "id": 245,
+            "vi": "Y",
+            "en": "Oh"
+        },
+        {
+            "id": 246,
+            "vi": "HỘC",
+            "en": "Box"
+        },
+        {
+            "id": 247,
+            "vi": "CHẤT",
+            "en": "Rice flower"
+        },
+        {
+            "id": 248,
+            "vi": "SAO",
+            "en": "Money"
+        },
+        {
+            "id": 249,
+            "vi": "TUẤN",
+            "en": "Gentle"
+        },
+        {
+            "id": 250,
+            "vi": "GIAI",
+            "en": "Good"
+        },
+        {
+            "id": 251,
+            "vi": "THÙ",
+            "en": "An enemy"
+        },
+        {
+            "id": 252,
+            "vi": "MÔNG",
+            "en": "Gloomy"
+        },
+        {
+            "id": 253,
+            "vi": "LÃNG",
+            "en": "Bright"
+        },
+        {
+            "id": 254,
+            "vi": "KIẾN",
+            "en": "Beginning of the month"
+        },
+        {
+            "id": 255,
+            "vi": "TẠP",
+            "en": "Thirty"
+        },
+        {
+            "id": 256,
+            "vi": "HÀ",
+            "en": "Clouds"
+        },
+        {
+            "id": 257,
+            "vi": "TRÁ",
+            "en": "Fish sauce"
+        },
+        {
+            "id": 258,
+            "vi": "ĐƠN",
+            "en": "Tham"
+        },
+        {
+            "id": 259,
+            "vi": "PHẦU",
+            "en": "Blind"
+        },
+        {
+            "id": 260,
+            "vi": "MẠC",
+            "en": "Curtain"
+        },
+        {
+            "id": 261,
+            "vi": "HỒNG",
+            "en": "Rainbow"
+        },
+        {
+            "id": 262,
+            "vi": "ĐÔNG",
+            "en": "Winter"
+        },
+        {
+            "id": 263,
+            "vi": "LÔI",
+            "en": "Thunder"
+        },
+        {
+            "id": 264,
+            "vi": "NHẪM",
+            "en": "Lap"
+        },
+        {
+            "id": 265,
+            "vi": "CÁO",
+            "en": "Teach"
+        },
+        {
+            "id": 266,
+            "vi": "THỆ",
+            "en": "Swear"
+        },
+        {
+            "id": 267,
+            "vi": "BÁNG",
+            "en": "Criticism"
+        },
+        {
+            "id": 268,
+            "vi": "TẠC",
+            "en": "Bad"
+        },
+        {
+            "id": 269,
+            "vi": "UẨN",
+            "en": "Hide"
+        },
+        {
+            "id": 270,
+            "vi": "PHONG",
+            "en": "Rich"
+        },
+        {
+            "id": 271,
+            "vi": "BÍ",
+            "en": "Honey"
+        },
+        {
+            "id": 272,
+            "vi": "TIỆM",
+            "en": "Gradually"
+        },
+        {
+            "id": 273,
+            "vi": "CẢNH",
+            "en": "Warning"
+        },
+        {
+            "id": 274,
+            "vi": "ÁC",
+            "en": "Data"
+        },
+        {
+            "id": 275,
+            "vi": "TỰ",
+            "en": "Letter"
+        },
+        {
+            "id": 276,
+            "vi": "TỪ",
+            "en": "Sheet"
+        }
+    ]
+}

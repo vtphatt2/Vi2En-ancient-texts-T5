@@ -1,0 +1,540 @@
+{
+    "file_name": "The Poetry of Nguyen Khuyen and Do Fu",
+    "data": [
+        {
+            "id": 0,
+            "vi": "Ao thu lạnh lẽo nước trong veo",
+            "en": "The autumn pond is cold and the water is clear"
+        },
+        {
+            "id": 1,
+            "vi": "Một chiếc thuyền câu bé tẻo teo",
+            "en": "A tiny fishing boat is lonely"
+        },
+        {
+            "id": 2,
+            "vi": "Sóng biếc theo làn hơi gợn tí",
+            "en": "The blue waves follow the slight ripples of the breeze"
+        },
+        {
+            "id": 3,
+            "vi": "Lá vàng trước gió khẽ đưa vèo",
+            "en": "The yellow leaves will be blown by the wind"
+        },
+        {
+            "id": 4,
+            "vi": "Tầng mây lơ lửng trời xanh ngắt",
+            "en": "The clouds float in the blue sky"
+        },
+        {
+            "id": 5,
+            "vi": "Ngõ trúc quanh co khách vắng teo",
+            "en": "The winding bamboo path is deserted"
+        },
+        {
+            "id": 6,
+            "vi": "Tựa gối buông cần lâu chẳng được",
+            "en": "Leaning on the pillow, hugging the fishing rod for a long time without success"
+        },
+        {
+            "id": 7,
+            "vi": "Cá đâu đớp động dưới chân bèo",
+            "en": "Some fish are nibbling under the duckweed"
+        },
+        {
+            "id": 8,
+            "vi": "Năm gian nhà cỏ thấp le te",
+            "en": "The house is small and low"
+        },
+        {
+            "id": 9,
+            "vi": "Ngõ tối đêm sâu đóm lập lòe",
+            "en": "The alley is dark and the fireflies are flickering"
+        },
+        {
+            "id": 10,
+            "vi": "Lưng giậu phất phơ màu khói nhạt",
+            "en": "The fence behind is a pale smoke"
+        },
+        {
+            "id": 11,
+            "vi": "Làn ao lóng lánh bóng trăng loe",
+            "en": "The pond is sparkling with the moonlight"
+        },
+        {
+            "id": 12,
+            "vi": "Da trời ai nhuộm mà xanh ngắt",
+            "en": "Who dyed the sky so blue"
+        },
+        {
+            "id": 13,
+            "vi": "Mắt lão không vầy cũng đỏ hoe",
+            "en": "The old man's rimless eyes are also red"
+        },
+        {
+            "id": 14,
+            "vi": "Rượu tiếng rằng hay, hay chả mấy",
+            "en": "The wine is said to be good, but not very good"
+        },
+        {
+            "id": 15,
+            "vi": "Độ năm ba chén đã say nhè",
+            "en": "After five or three cups, he is already drunk"
+        },
+        {
+            "id": 16,
+            "vi": "Trời thu xanh ngắt mấy tầng cao",
+            "en": "The autumn sky is blue in the high layers"
+        },
+        {
+            "id": 17,
+            "vi": "Cần trúc lơ phơ gió hắt hiu",
+            "en": "The bamboo poles are sparsely swaying in the wind"
+        },
+        {
+            "id": 18,
+            "vi": "Nước biếc trông như tầng khói phủ",
+            "en": "The blue water seems to be covered with smoke"
+        },
+        {
+            "id": 19,
+            "vi": "Song thưa để mặc bóng trăng vào",
+            "en": "The thin bars let the moonlight in"
+        },
+        {
+            "id": 20,
+            "vi": "Mấy chùm trước giậu hoa năm ngoái",
+            "en": "The clusters of flowers from last year in front of the fence"
+        },
+        {
+            "id": 21,
+            "vi": "Một tiếng trên không ngỗng nước nào",
+            "en": "A sound in the sky from which country's geese"
+        },
+        {
+            "id": 22,
+            "vi": "Nhân hứng cũng vừa toan cất bút",
+            "en": "I was just about to pick up my pen"
+        },
+        {
+            "id": 23,
+            "vi": "Nghĩ ra lại thẹn với ông Đào",
+            "en": "Thinking of it, I'm afraid of being ashamed in front of Mr.Dao"
+        },
+        {
+            "id": 24,
+            "vi": "Hảo vũ tri thì tiết",
+            "en": "The good rain knows the weather"
+        },
+        {
+            "id": 25,
+            "vi": "Đương xuân nãi phát sinh",
+            "en": "It comes out when spring comes"
+        },
+        {
+            "id": 26,
+            "vi": "Tuỳ phong tiềm nhập dạ",
+            "en": "Following the gentle wind in the dark night"
+        },
+        {
+            "id": 27,
+            "vi": "Nhuận vật tế vô thanh",
+            "en": "Watering all things without a sound"
+        },
+        {
+            "id": 28,
+            "vi": "Dã kính vân câu hắc",
+            "en": "The country road is full of gloomy clouds"
+        },
+        {
+            "id": 29,
+            "vi": "Giang thuyền hoả độc minh",
+            "en": "The boat on the river can only be seen with the bright fire"
+        },
+        {
+            "id": 30,
+            "vi": "Hiểu khan hồng thấp xứ",
+            "en": "Early morning in the red wet region"
+        },
+        {
+            "id": 31,
+            "vi": "Hoa trọng Cẩm Quan thành",
+            "en": "Flowers bloom all over the city of Cam Quan"
+        },
+        {
+            "id": 32,
+            "vi": "Tuổi thêm, thêm được tóc râu phơ",
+            "en": "Age increases, hair and beard grow gray"
+        },
+        {
+            "id": 33,
+            "vi": "Nay đã năm mươi có lẻ ba",
+            "en": "Now I am fifty and three"
+        },
+        {
+            "id": 34,
+            "vi": "Sách vở ích gì cho buổi ấy",
+            "en": "Books are useless for that age"
+        },
+        {
+            "id": 35,
+            "vi": "Áo xiêm nghĩ lại thẹn thân già",
+            "en": "Thinking back on my old clothes, I feel ashamed"
+        },
+        {
+            "id": 36,
+            "vi": "Xuân về ngày loạn càng lò lao",
+            "en": "Spring comes, the chaotic days become more and more careless"
+        },
+        {
+            "id": 37,
+            "vi": "Người gặp khi cùng cũng ngất ngơ",
+            "en": "People meet when they are together, also bewildered"
+        },
+        {
+            "id": 38,
+            "vi": "Trước cửa khói đày, non khuất bóng",
+            "en": "In front of the door, thick smoke, the mountain is hidden"
+        },
+        {
+            "id": 39,
+            "vi": "Bên tường mưa ít, cúc thừa hoa",
+            "en": "By the wall, little rain, few chrysanthemums bloom"
+        },
+        {
+            "id": 40,
+            "vi": "Ngô nhiễn ngô diện bì",
+            "en": "I only see the skin of my face"
+        },
+        {
+            "id": 41,
+            "vi": "Ngô tâm ngô phất trị",
+            "en": "But I don’t know my own heart"
+        },
+        {
+            "id": 42,
+            "vi": "Nhật nguyệt tu thiêm bạch",
+            "en": "My hair greyed over the years"
+        },
+        {
+            "id": 43,
+            "vi": "Phong trần sắc tiệm tuy",
+            "en": "My face dark and weathered in life vagaries"
+        },
+        {
+            "id": 44,
+            "vi": "Bách bôi hình tặng ảnh",
+            "en": "One hundred toasts to my own image"
+        },
+        {
+            "id": 45,
+            "vi": "Thiên tả ngã vị tuỳ",
+            "en": "In a millenium what will become of me"
+        },
+        {
+            "id": 46,
+            "vi": "Ngưỡng phủ phất hà tưởng",
+            "en": "Look high above and deep below"
+        },
+        {
+            "id": 47,
+            "vi": "Yên ba vô tận kỳ",
+            "en": "Waves and clouds into infinity"
+        },
+        {
+            "id": 48,
+            "vi": "Cũng cờ, cũng biển, cũng cân đai",
+            "en": "Pennants, blazon, hat and belt; all included"
+        },
+        {
+            "id": 49,
+            "vi": "Cũng gọi ông nghè có kém ai",
+            "en": "Also called a doctor, as good as any other"
+        },
+        {
+            "id": 50,
+            "vi": "Mảnh giấy làm nên thân giáp bảng",
+            "en": "Paper makes him the highest ranking graduate"
+        },
+        {
+            "id": 51,
+            "vi": "Nét son điểm rõ mặt văn khôi",
+            "en": "Red ink clearly draws his top scholar’s face"
+        },
+        {
+            "id": 52,
+            "vi": "Tấm thân xiêm áo sao mà nhẹ",
+            "en": "This all dressed up body, why is it so light"
+        },
+        {
+            "id": 53,
+            "vi": "Cái giá khoa danh thế mới hời",
+            "en": "Academic glory, so cheap to buy"
+        },
+        {
+            "id": 54,
+            "vi": "Ghế tréo, lọng xanh ngồi bảnh choẹ",
+            "en": "High chair, blue parasol, he sits haughtly"
+        },
+        {
+            "id": 55,
+            "vi": "Nghĩ rằng đồ thật hoá đồ chơi",
+            "en": "Thinking he’s real, but it’s a toy"
+        },
+        {
+            "id": 56,
+            "vi": "Mỗi năm hoa đào nở",
+            "en": "Every year, when peach blossoms were in bloom"
+        },
+        {
+            "id": 57,
+            "vi": "Lại thấy ông đồ già",
+            "en": "The old scholar-scribe was seen again"
+        },
+        {
+            "id": 58,
+            "vi": "Bày mực tàu giấy đỏ",
+            "en": "He displayed India ink and red paper on the sidewalk"
+        },
+        {
+            "id": 59,
+            "vi": "Bên phố đông người qua",
+            "en": "Crowded with passers-by"
+        },
+        {
+            "id": 60,
+            "vi": "Sống cảnh nhàn, ta chiếm riêng một vùng nhỏ đất trời",
+            "en": "Living in leisure, I owned a small area of land and sky"
+        },
+        {
+            "id": 61,
+            "vi": "Quán Trung Tân, am Bạch Vân thuộc xóm ở ngoài con ngòi nhỏ",
+            "en": "Trung Tan Inn, Bach Van hermitage in the neighborhood outside the little canal"
+        },
+        {
+            "id": 62,
+            "vi": "Gió mát từ sông thổi qua chỗ chiếu gối",
+            "en": "Cool breeze from the river blowing through the resting place"
+        },
+        {
+            "id": 63,
+            "vi": "Ánh trăng từ trên núi chiếu vào đàn và chén",
+            "en": "Moonlight from the mountains shined on the herd and the cup"
+        },
+        {
+            "id": 64,
+            "vi": "Thong dong trên đời đã có sẵn thú vui điền viên",
+            "en": "Leisure life was available with the pleasure of country life"
+        },
+        {
+            "id": 65,
+            "vi": "Già ốm, thẹn với sự tôn trọng tuổi cao, đức lớn của người đời",
+            "en": "Old, sick, ashamed with respect for the elderly, great virtue of the people"
+        },
+        {
+            "id": 66,
+            "vi": "Giàu chĩnh chện, khó lai thai",
+            "en": "Rich is happy, poor is miserable"
+        },
+        {
+            "id": 67,
+            "vi": "Vận chuyển lưu thông, há của ai",
+            "en": "Transformation circulation of nobody"
+        },
+        {
+            "id": 68,
+            "vi": "Vũng nọ ghê khi làm bãi cát",
+            "en": "This puddle looked horrible when becoming the sand"
+        },
+        {
+            "id": 69,
+            "vi": "Doi kia có thuở lút hòn thai",
+            "en": "That headland, there was a time the sea flooded islet"
+        },
+        {
+            "id": 70,
+            "vi": "Khôn ngoan mới biết thăng thì giáng",
+            "en": "Wise to know up then down"
+        },
+        {
+            "id": 71,
+            "vi": "Dại dột nào hay tiểu có đài",
+            "en": "Foolish to not know there is the big in the small"
+        },
+        {
+            "id": 72,
+            "vi": "Đã khuất bao nhiêu thì lại duỗi",
+            "en": "How much is hidden, then it stretches out"
+        },
+        {
+            "id": 73,
+            "vi": "Đạo trời lồng lộng chẳng hề sai",
+            "en": "The religion of the magnificent heaven is never wrong"
+        },
+        {
+            "id": 74,
+            "vi": "Chín mươi thì kể xuân đà muộn",
+            "en": "Ninety, this is a late spring"
+        },
+        {
+            "id": 75,
+            "vi": "Xuân ấy qua thì xuân khác còn",
+            "en": "This spring is over; another spring is still left"
+        },
+        {
+            "id": 76,
+            "vi": "Nép mình qua trước chốn xôn xao",
+            "en": "Nestling against a tumultuous place"
+        },
+        {
+            "id": 77,
+            "vi": "Mấy sự bên tai, gió thổi phào",
+            "en": "Incident around the ear, as the wind blows"
+        },
+        {
+            "id": 78,
+            "vi": "Cửa trúc vỗ tay cười khúc khích",
+            "en": "Bamboo doors clapped like a giggle"
+        },
+        {
+            "id": 79,
+            "vi": "Hiên mai vắt cẳng hát nghêu ngao",
+            "en": "On the porch, with the legs crossed, singing to oneself"
+        },
+        {
+            "id": 80,
+            "vi": "Thu ăn măng trúc, đông ăn giá",
+            "en": "In the autumn, eating bamboo shoot; in the winter, eating bean sprouts"
+        },
+        {
+            "id": 81,
+            "vi": "Xuân tắm hồ sen, hạ tắm ao",
+            "en": "In the spring, bathing in a lotus lake; in the summer, bathing in a pond"
+        },
+        {
+            "id": 82,
+            "vi": "Thiên hạ ai là kẻ sĩ cao khiết",
+            "en": "Who is the noble scholar in the world"
+        },
+        {
+            "id": 83,
+            "vi": "An nhàn, ta là tiên trên trời",
+            "en": "leisurely, I am the heavenly fairy"
+        },
+        {
+            "id": 84,
+            "vi": "Được thua thấy đã ắt nhiều phen",
+            "en": "Win and lose have been seen many times"
+        },
+        {
+            "id": 85,
+            "vi": "Để rẻ công danh đổi lấy nhàn",
+            "en": "for cheap fame in exchange for leisure"
+        },
+        {
+            "id": 86,
+            "vi": "Cày mây, cuốc nguyệt, gánh yên hà",
+            "en": "Plowing clouds, hoeing moon, carrying smog and dusk"
+        },
+        {
+            "id": 87,
+            "vi": "Nào của nào, chăng phải của ta",
+            "en": "Which of which, not mine"
+        },
+        {
+            "id": 88,
+            "vi": "Đêm, áng bóng, xem bóng trúc",
+            "en": "Night, shadow, watching the shadow of bamboo"
+        },
+        {
+            "id": 89,
+            "vi": "Ngày, chờ gió thổi tin hoa",
+            "en": "Daytime, waiting for the wind blowing good news"
+        },
+        {
+            "id": 90,
+            "vi": "Muôn dặm gió đông từng đã quen mặt",
+            "en": "A mile of east wind used to be a familiar face"
+        },
+        {
+            "id": 91,
+            "vi": "một dòng sông nước chảy là bạn tri âm",
+            "en": "a flowing river is the soul mate"
+        },
+        {
+            "id": 92,
+            "vi": "Trở về vườn cũ lối không xa",
+            "en": "Back to the old garden not far away"
+        },
+        {
+            "id": 93,
+            "vi": "Dựng riêng một ngôi đình mới bên dòng nước",
+            "en": "Building a new communal house privately by the water"
+        },
+        {
+            "id": 94,
+            "vi": "Hoa rợp bóng khắp viện giữ chân chim đến ngủ",
+            "en": "Flowers were shady throughout the institute to keep the birds sleeping"
+        },
+        {
+            "id": 95,
+            "vi": "Một lầu ngập ánh sáng như treo ráng chiều trong trẻo.",
+            "en": "A floor was flooded with light like hanging the clear afternoon"
+        },
+        {
+            "id": 96,
+            "vi": "Mặt trời hồng rọi vào song cửa sổ (thấy) chân trời gần",
+            "en": "The pink sun shone into the windows (seeing) the horizon is near"
+        },
+        {
+            "id": 97,
+            "vi": "Mở cánh cửa chính, sau cơn mưa (thấy) thêm nhiều núi xanh",
+            "en": "Opening the main door, after the rain (seeing) more green mountains"
+        },
+        {
+            "id": 98,
+            "vi": "Gió mát trăng thanh là bạn của ta",
+            "en": "The cool breeze and the moon are my friends"
+        },
+        {
+            "id": 99,
+            "vi": "Thú sinh nhai, ngoài thứ đó ra không có gì khác",
+            "en": "Living pleasures, other than that there is nothing else"
+        },
+        {
+            "id": 100,
+            "vi": "Hằng ngày khi nấu ấm trà, xem chim hạc bay qua làn khói",
+            "en": "When cooking a teapot every day, watching the cranes fly through the smoke"
+        },
+        {
+            "id": 101,
+            "vi": "Lúc rửa nghiên xem cá đớp nước mực",
+            "en": "When washing the ink, watching the fish bite ink"
+        },
+        {
+            "id": 102,
+            "vi": "Thả thuyền trên suối trăng, cất lời ca êm ả",
+            "en": "Sailing on the moon stream, singing peaceful songs"
+        },
+        {
+            "id": 103,
+            "vi": "Tựa gối gốc tùng gió thổi, nằm trong cảnh thanh thoát",
+            "en": "Putting a knee on the side of the root of the confiner, as the wind blew, laying down in the serene scene"
+        },
+        {
+            "id": 104,
+            "vi": "Nước biếc non xanh vui với riêng mình",
+            "en": "green mountains blue waters are happy with me"
+        },
+        {
+            "id": 105,
+            "vi": "Vô tâm bay khỏi hang núi, mây càng lười nhác",
+            "en": "Heartlessly flying out of the mountain cave, the lazier the cloud"
+        },
+        {
+            "id": 106,
+            "vi": "Có ý chảy về đông, con nước tuôn dài",
+            "en": "The more it flowed to the east, the water streamed out"
+        }
+    ]
+}

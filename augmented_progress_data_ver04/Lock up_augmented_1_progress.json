@@ -1,0 +1,113 @@
+{
+    "file_name": "You cannot lock up the mind",
+    "data": [
+        {
+            "vi": "Ta còn bộ óc, ta không lo",
+            "en": "I retain my intellect; I harbor no anxieties.",
+            "augmented_index": 0,
+            "original_index": 2,
+            "scores": {
+                "bleurt": 0.5478,
+                "sacrebleu": 0.042,
+                "bert_score": 0.3924,
+                "comet_da": 0.7356,
+                "comet_qe": 0.8428
+            }
+        },
+        {
+            "vi": "Giam người, khoá cả chân tay lại",
+            "en": "To bind the person, to lock both hands and feet.",
+            "augmented_index": 1,
+            "original_index": 3,
+            "scores": {
+                "bleurt": 0.5696,
+                "sacrebleu": 0.0403,
+                "bert_score": 0.3286,
+                "comet_da": 0.6712,
+                "comet_qe": 0.7566
+            }
+        },
+        {
+            "vi": "Có lúc ngươi toan đánh bể đầu",
+            "en": "There were moments when you intended to shatter my skull.",
+            "augmented_index": 2,
+            "original_index": 5,
+            "scores": {
+                "bleurt": 0.594,
+                "sacrebleu": 0.0375,
+                "bert_score": 0.4158,
+                "comet_da": 0.7373,
+                "comet_qe": 0.8256
+            }
+        },
+        {
+            "vi": "Sống lâu ta nghĩ trăm ngàn kế",
+            "en": "Through lengthy life, I have conceived myriad strategies.",
+            "augmented_index": 3,
+            "original_index": 7,
+            "scores": {
+                "bleurt": 0.6228,
+                "sacrebleu": 0.042,
+                "bert_score": 0.4553,
+                "comet_da": 0.7632,
+                "comet_qe": 0.7176
+            }
+        },
+        {
+            "vi": "Đời ta đã có một con đường",
+            "en": "My life has found its destined path.",
+            "augmented_index": 4,
+            "original_index": 9,
+            "scores": {
+                "bleurt": 0.5493,
+                "sacrebleu": 0.0552,
+                "bert_score": 0.4096,
+                "comet_da": 0.6573,
+                "comet_qe": 0.7678
+            }
+        },
+        {
+            "vi": "Ý nghĩ ta đi khắp bốn phương",
+            "en": "My thoughts traverse the four directions.",
+            "augmented_index": 5,
+            "original_index": 10,
+            "scores": {
+                "bleurt": 0.5796,
+                "sacrebleu": 0.0563,
+                "bert_score": 0.4642,
+                "comet_da": 0.7034,
+                "comet_qe": 0.7725
+            }
+        },
+        {
+            "vi": "Đi đến hang sâu, vào ngục tối",
+            "en": "To journey into the deepest cavern, to enter the darkest prison.",
+            "augmented_index": 6,
+            "original_index": 11,
+            "scores": {
+                "bleurt": 0.5244,
+                "sacrebleu": 0.0407,
+                "bert_score": 0.3527,
+                "comet_da": 0.7315,
+                "comet_qe": 0.8093
+            }
+        }
+    ],
+    "processed_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14
+    ]
+}

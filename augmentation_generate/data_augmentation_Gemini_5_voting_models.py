@@ -34,7 +34,7 @@ logger = logging.getLogger(__name__)
 # API_KEY = "AIzaSyAISyP5zG-7NIV5F6xesUveTRDmtQ_6eyU"
 # API_KEY = "AIzaSyAlgAWun2JG6ws1ThKqUwYzX8I4aBCmNbk"
 # API_KEY = "AIzaSyCdH1RVi5Rki_cm_ypw3RX8Bgy4YsIBHtI"
-API_KEY = "AIzaSyClasB_b7S4LbjrcqZvQc74RAdPIazcCM0"
+# API_KEY = "AIzaSyClasB_b7S4LbjrcqZvQc74RAdPIazcCM0"
 # API_KEY = "AIzaSyAVYRXQUEZTfaqAPsvwARhZC6vCmjEyQGk"
 # API_KEY = "AIzaSyDEhc7c7LgEppWsV2T7AJgjA1jmAsrXV9o"
 # API_KEY = "AIzaSyAyTYahX2pyJCbtAkVgZXhd56G69yN9TDc"
@@ -42,6 +42,7 @@ API_KEY = "AIzaSyClasB_b7S4LbjrcqZvQc74RAdPIazcCM0"
 # API_KEY = "AIzaSyBZBza9CmKBNYNjfHl2Ai5tWY8hi-PpFVQ"
 # API_KEY = "AIzaSyCn7PvfXQqLlMOq5_Pj3I-B85qsvHt--ZE"
 # API_KEY = "AIzaSyDMUd29MMduSTwhCWbBd8EzId-DmtVsdKo"
+API_KEY = "AIzaSyDYe95W9qGOeRx24KRi8ozLc4yV9uqlG2E"
 
 BLEURT_THRESHOLD = 0.55
 SACREBLEU_THRESHOLD = 0.1
@@ -52,7 +53,7 @@ COMET_QE_THRESHOLD = 0.65
 SCRIPT_PATH = os.path.abspath(__file__)
 SCRIPT_DIR = os.path.dirname(SCRIPT_PATH)
 PROJECT_ROOT = os.path.dirname(SCRIPT_DIR)
-INPUT_FOLDER_DIR = os.path.join(PROJECT_ROOT, "data")
+INPUT_FOLDER_DIR = os.path.join(PROJECT_ROOT, "remaining_data")
 OUTPUT_FOLDER_DIR = os.path.join(PROJECT_ROOT, "augmented_data_ver04")
 LOAD_FOLDER_DIR = os.path.join(PROJECT_ROOT, "augmented_progress_data_ver04")
 
@@ -213,12 +214,11 @@ class TranslationEvaluator:
                 bleurt_scores[0] >= BLEURT_THRESHOLD,  # BLEURT score
                 sacrebleu_score >= SACREBLEU_THRESHOLD,  # SacreBLEU score
                 bert_score >= BERTSCORE_THRESHOLD,  # BERTScore
-                comet_scores['comet_da'] >= COMET_DA_THRESHOLD if comet_scores['comet_da'] is not None else False,
-                comet_scores['comet_qe'] >= COMET_QE_THRESHOLD if comet_scores['comet_qe'] is not None else False
+                comet_scores['comet_da'] >= COMET_DA_THRESHOLD,
+                comet_scores['comet_qe'] >= COMET_QE_THRESHOLD,
             ]
 
-            # is_acceptable = (sum(conditions) >= 3) and (bleurt_scores[0] >= 0.4)
-            is_acceptable = True
+            is_acceptable = (sum(conditions) >= 3)
 
             return is_acceptable, scores
 

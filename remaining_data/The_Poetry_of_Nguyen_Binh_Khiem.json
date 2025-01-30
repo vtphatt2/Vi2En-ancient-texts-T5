@@ -1,0 +1,445 @@
+{
+    "file_name": "The Poetry of Nguyen Binh Khiem",
+    "data": [
+        {
+            "id": 0,
+            "vi": "Tròn là để tượng trưng cho trời,",
+            "en": "Round is to symbolize the heaven,"
+        },
+        {
+            "id": 1,
+            "vi": "Vuông là để tượng trưng cho đất",
+            "en": "Square is to symbolize the land"
+        },
+        {
+            "id": 2,
+            "vi": "Bóng trăng hiện ra ở không trung,",
+            "en": "The moon appears in the air,"
+        },
+        {
+            "id": 3,
+            "vi": "Lòng trời tồn tại trong lúc tĩnh",
+            "en": "The heaven exists in silence"
+        },
+        {
+            "id": 4,
+            "vi": "Tìm được một miếng đất ở cạnh con khe trong làng,",
+            "en": "Found a piece of land next to the slot in the village,"
+        },
+        {
+            "id": 5,
+            "vi": "Khi thanh nhàn, ta cũng vui với tính tự nhiên của ta",
+            "en": "When free, I was also happy with my nature"
+        },
+        {
+            "id": 6,
+            "vi": "Buổi sáng đến vườn rau, sương dính vào dép,",
+            "en": "In the morning to the vegetable garden, dew sticks to the slippers,"
+        },
+        {
+            "id": 7,
+            "vi": "Ban đêm thả thuyền nơi ghềnh câu, trăng đầy thuyền",
+            "en": "At night, releasing a boat in a whirlpool, full of moon"
+        },
+        {
+            "id": 8,
+            "vi": "Làn khói thôn, dòng nước suối đậm rồi lại nhạt,",
+            "en": "The village smoke, the stream water was dark and then pale,"
+        },
+        {
+            "id": 9,
+            "vi": "Trăng sông, mây núi mơ hồ như có lại như không",
+            "en": "Moon, river, clouds, mountain were vague, exist and then not"
+        },
+        {
+            "id": 10,
+            "vi": "Sự việc ở đời và tình người cũng như thế,",
+            "en": "Human life and love were the same"
+        },
+        {
+            "id": 11,
+            "vi": "Trên đường đời, đừng ngạc nhiên vì có lúc cùng, lúc thông",
+            "en": "On the road of life, don't be surprised when meeting dead end or clear one"
+        },
+        {
+            "id": 12,
+            "vi": "Nhà cửa, thành quách cũ đã thành đồng lúa nối tiếp nhau,",
+            "en": "Houses and citadel become rice fields one after another,"
+        },
+        {
+            "id": 13,
+            "vi": "Nhìn phong cảnh, nhân dân, một phần nửa đã khác trước",
+            "en": "Looking at the scenery, the people, half of them are different from before"
+        },
+        {
+            "id": 14,
+            "vi": "Ông chài bên khúc sông mặc ý đậu thuyền các nơi,",
+            "en": "The fishermen on the river arbitrarily parks a boat everywhere,"
+        },
+        {
+            "id": 15,
+            "vi": "Cái én trên lầu đã bay sang nhà ai bên cạnh",
+            "en": "The upstairs swallow flew to the house next door"
+        },
+        {
+            "id": 16,
+            "vi": "Đất Kim Lăng xưa cỏ thu rậm rạp,",
+            "en": "The old Kim Lang land was dense with grass"
+        },
+        {
+            "id": 17,
+            "vi": "Đài Đồng Tước cũng trống không, bao phen nắng chiều soi bóng",
+            "en": "Dong Tuoc estrade is also empty, so many times sunshine in the afternoon"
+        },
+        {
+            "id": 18,
+            "vi": "Chớ lấy làm lạ rằng các bậc thánh hiền không cố ý, cố chấp,",
+            "en": "Do not wonder that sages are not intentional, obstinate,"
+        },
+        {
+            "id": 19,
+            "vi": "Trong cuộc sống con người mười điều mong muốn thì chín điều đã không được như ý",
+            "en": "In human life ten wishes, nine things were not as satisfactory"
+        },
+        {
+            "id": 20,
+            "vi": "Từng lấy làm thẹn vì mình vụng về, chưa hiểu việc dụng binh,",
+            "en": "Used to be ashamed of oneself because of the clumsy, not understanding the use of soldiers,"
+        },
+        {
+            "id": 21,
+            "vi": "Hãy làm theo phụ tá giúp phần nào việc đánh dẹp phương xa",
+            "en": "Please follow aides to help somewhat of pacifying in the distance"
+        },
+        {
+            "id": 22,
+            "vi": "Cờ quạt bay rợp bóng mặt trời bày hàng trong rừng cây,",
+            "en": "Fluttering flags are shady, lined in a forest"
+        },
+        {
+            "id": 23,
+            "vi": "Trống, tù và truyền đi trong gió cùng tiếng thác nước đổ",
+            "en": "Drumbeats and horn sounds are transmitted by the wind with the sound of a waterfall falling"
+        },
+        {
+            "id": 24,
+            "vi": "Màu non, sắc nước vốn không đổi khác,",
+            "en": "The color of mountain and water does not change"
+        },
+        {
+            "id": 25,
+            "vi": "Các cụ già và con trẻ trong làng một nửa đã khác xưa",
+            "en": "The old people and the children in the village, half of them are different"
+        },
+        {
+            "id": 26,
+            "vi": "Mưa xuống hoa bên khe, màu hồng thành nhợt nhạt,",
+            "en": "Rain falls down flowers by the side of the slit, pink to pale,"
+        },
+        {
+            "id": 27,
+            "vi": "Mây vắt tháp chùa, rêu xanh vẫn màu xanh như thế",
+            "en": "Clouds over the pagoda tower, green moss still like that"
+        },
+        {
+            "id": 28,
+            "vi": "Đôi bờ mưa tạnh, núi phô sắc,",
+            "en": "On the banks, the rain stopped, the mountain showed off colors"
+        },
+        {
+            "id": 29,
+            "vi": "Một dòng sông lặng gió, mặt nước sông gợn sóng",
+            "en": "A calm river, there were ripples on the river surface"
+        },
+        {
+            "id": 30,
+            "vi": "Ngồi trên ghế trước cửa sổ hướng nam nghe chim hót,",
+            "en": "Sitting in a chair in the south window listening to the birds singing,"
+        },
+        {
+            "id": 31,
+            "vi": "Chống gậy ra lối vắng nhặt hoa rơi",
+            "en": "Using a stick to the empty path to pick up fallen flowers"
+        },
+        {
+            "id": 32,
+            "vi": "Xưa qua nay lại, cuộc sống tựa như sống gửi,",
+            "en": "Time passes, the life is like temporary living"
+        },
+        {
+            "id": 33,
+            "vi": "Đừng bàn đến chuyện quang cảnh cứ ruổi qua đi",
+            "en": "Don't talk about the scenery going on"
+        },
+        {
+            "id": 34,
+            "vi": "Chìm chìm đắm đắm",
+            "en": "Submerge"
+        },
+        {
+            "id": 35,
+            "vi": "Tất tưởi bon chen",
+            "en": "hurriedly scramble"
+        },
+        {
+            "id": 36,
+            "vi": "Bừa bãi, xiên vạy",
+            "en": "Indiscriminate, trick"
+        },
+        {
+            "id": 37,
+            "vi": "Nào biết mình sai",
+            "en": "don't know wrong"
+        },
+        {
+            "id": 38,
+            "vi": "Sang thì dẫn đến kiêu ngạo",
+            "en": "Wealth leads to arrogant"
+        },
+        {
+            "id": 39,
+            "vi": "Giàu có thì xa xỉ",
+            "en": "rich leads to luxury spending"
+        },
+        {
+            "id": 40,
+            "vi": "Nạm ngọc vẽ màu",
+            "en": "jewel encrusted, colored drawing"
+        },
+        {
+            "id": 41,
+            "vi": "Trang hoàng rèm, nhà",
+            "en": "Decorating curtain, house"
+        },
+        {
+            "id": 42,
+            "vi": "Bếp núc xa xỉ",
+            "en": "Luxurious kitchen"
+        },
+        {
+            "id": 43,
+            "vi": "Đốt sáp thay củi, đồ ăn ngon ngậy",
+            "en": "burning by wax instead of firewood, delicious food"
+        },
+        {
+            "id": 44,
+            "vi": "Mặc áo nhẹ, cưỡi ngựa béo",
+            "en": "wearing light clothes, riding a fat horse"
+        },
+        {
+            "id": 45,
+            "vi": "Say rượu nồng, no đồ tươi",
+            "en": "Drunken wine, full of fresh meals"
+        },
+        {
+            "id": 46,
+            "vi": "Một đồng cũng xẻn tiếc không cho",
+            "en": "too stingy to give a single coin"
+        },
+        {
+            "id": 47,
+            "vi": "Thấy người chết đói lăn xuống rãnh",
+            "en": "Seeing the starving man roll down the ditch"
+        },
+        {
+            "id": 48,
+            "vi": "Một bát gạo cũng chẳng bố thí",
+            "en": "a bowl of rice was not given"
+        },
+        {
+            "id": 49,
+            "vi": "Thấy người đi đường ngủ đêm ngoài sương móc",
+            "en": "Seeing people on the road sleeping in the night dew"
+        },
+        {
+            "id": 50,
+            "vi": "Duy lợi là thấy",
+            "en": "The only benefit is to see"
+        },
+        {
+            "id": 51,
+            "vi": "Như cuồng như si",
+            "en": "like crazy like mad"
+        },
+        {
+            "id": 52,
+            "vi": "Ai nới rộng mà rút ra",
+            "en": "who do extends to draws out"
+        },
+        {
+            "id": 53,
+            "vi": "Đầu mối đức thiện",
+            "en": "Clues of virtue"
+        },
+        {
+            "id": 54,
+            "vi": "Quán lấy tên là Trung Tân",
+            "en": "The inn was named Trung Tan"
+        },
+        {
+            "id": 55,
+            "vi": "Nghĩa ở chỗ này",
+            "en": "the meaning was there"
+        },
+        {
+            "id": 56,
+            "vi": "Tân tức là về",
+            "en": "Tan means back"
+        },
+        {
+            "id": 57,
+            "vi": "Trung túc là thiện",
+            "en": "Trung means good"
+        },
+        {
+            "id": 58,
+            "vi": "Lúc vội vã cũng không lìa điều thiện",
+            "en": "being in a hurry does not leave good"
+        },
+        {
+            "id": 59,
+            "vi": "Biết dựng thì yên định",
+            "en": "Knowing how to stand still"
+        },
+        {
+            "id": 60,
+            "vi": "Thung dung bước trên đường chính",
+            "en": "Leisurely to walk on the main road"
+        },
+        {
+            "id": 61,
+            "vi": "Không nghỉ hoặc bởi ngã rẽ khác",
+            "en": "no rest or by another turn"
+        },
+        {
+            "id": 62,
+            "vi": "Ta vụng mọi người đều khéo,",
+            "en": "I am clumsy everyone is smart,"
+        },
+        {
+            "id": 63,
+            "vi": "Biết đâu kẻ khéo lại là giặc",
+            "en": "Maybe a smart guy is an invader"
+        },
+        {
+            "id": 64,
+            "vi": "Lẽ trời đất, hiểu được từ trong yên lặng,",
+            "en": "Heaven and earth, understanding from the silence,"
+        },
+        {
+            "id": 65,
+            "vi": "Từ xưa đến nay, cảnh nhàn là điều sở đắc",
+            "en": "From past to present, leisurely scenery is the privilege"
+        },
+        {
+            "id": 66,
+            "vi": "Không gì hiểm hóc bằng đường đời,",
+            "en": "Nothing is more dangerous than the path of life,"
+        },
+        {
+            "id": 67,
+            "vi": "Nếu không cắt dọn thì thành gai góc",
+            "en": "If not cut, then thorny"
+        },
+        {
+            "id": 68,
+            "vi": "Không gì chênh vênh bằng lòng người,",
+            "en": "Nothing is more precarious than people's hearts,"
+        },
+        {
+            "id": 69,
+            "vi": "Vua buông thả thành ngay ổ quỷ",
+            "en": "A king looses lifestyle turning into demon lair immediately"
+        },
+        {
+            "id": 70,
+            "vi": "Cùng hay thông đều đã có số mệnh",
+            "en": "Through or end both have fate"
+        },
+        {
+            "id": 71,
+            "vi": "Được hay mất, xem ra đều có số mệnh cả",
+            "en": "Gain or lose, it seems that they all have destiny"
+        },
+        {
+            "id": 72,
+            "vi": "Các bậc thánh hiền theo phận mình, há lo nghèo khó",
+            "en": "The saints are sage according to their destiny, and are worried about poverty"
+        },
+        {
+            "id": 73,
+            "vi": "Thôi đừng bàn chuyện được hay mất đối với những việc trước mắt",
+            "en": "Well, let's not talk about gain or lose for things ahead"
+        },
+        {
+            "id": 74,
+            "vi": "Hãy sống an nhàn như ông tiên giữa cõi trần",
+            "en": "Living peacefully like a fairy in the world"
+        },
+        {
+            "id": 75,
+            "vi": "Ai biết sau cảnh tiêu sơ như mùa thu mùa đông",
+            "en": "Who knows after the desolate scene in the autumn and the winter"
+        },
+        {
+            "id": 76,
+            "vi": "Lại là ánh dương xuân, một thời thái hòa",
+            "en": "then it is a spring sunshine, a peaceful time"
+        },
+        {
+            "id": 77,
+            "vi": "Cùng chuộng mưu mẹo trí xảo, làm nhọc nhằn tinh thần",
+            "en": "Prefer cunning tactics, more mental torment"
+        },
+        {
+            "id": 78,
+            "vi": "Gạt bỏ cho hết ồn ào, nhàn chính là dứt lợi danh",
+            "en": "Get rid of all the noisy, leisure advantage is no fame"
+        },
+        {
+            "id": 79,
+            "vi": "Hãy gửi thân vào cảnh nhàn khắc nuôi dưỡng được sự nhàn",
+            "en": "please send yourself into the scene of leisure nourishing leisure"
+        },
+        {
+            "id": 80,
+            "vi": "Lão phu vẫn vững, giữ nguyên tấm lòng son cũ",
+            "en": "The old man still firmly, keeping the old unshakably loyal heart"
+        },
+        {
+            "id": 81,
+            "vi": "Tuổi về già suy yếu, tóc bạc mọc nhiều",
+            "en": "Old age is weakened, gray hair grows more"
+        },
+        {
+            "id": 82,
+            "vi": "Mọi người đều khéo, riêng ta thì vụng",
+            "en": "Everybody is clever, I am clumsy"
+        },
+        {
+            "id": 83,
+            "vi": "Ai hay kẻ vụng thì có đức",
+            "en": "who know the clumsy guy is virtuous"
+        },
+        {
+            "id": 84,
+            "vi": "Ở Bạch Vân am nuôi dưỡng sự vụng về của mình",
+            "en": "In Bach Van hermitage, I nourish my slumsy"
+        },
+        {
+            "id": 85,
+            "vi": "Nhao nhao chuyện được mất, cái đó ở ngoài thân mình",
+            "en": "kicking up a racket for gain or lost, that is beyond my life"
+        },
+        {
+            "id": 86,
+            "vi": "Gió mát phần phật thổi xua tan những nỗi niềm trần tục",
+            "en": "A flapping cool wind blew to dispel worldly feelings"
+        },
+        {
+            "id": 87,
+            "vi": "Trăng sáng ngời ngời, khiến lĩnh hội được đạo tâm",
+            "en": "The moon shined brightly, making the mind comprehend"
+        }
+    ]
+}
