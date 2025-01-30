@@ -1,0 +1,44 @@
+{
+    "file_name": "HXH_Compilation",
+    "data": [
+        {
+            "vi": "Quả mít",
+            "en": "The Jackfruit",
+            "augmented_index": 0,
+            "original_index": 0,
+            "scores": {
+                "bleurt": 0.6885,
+                "sacrebleu": 0.0,
+                "bert_score": 0.6049,
+                "comet_da": 0.9107,
+                "comet_qe": 0.6655
+            }
+        },
+        {
+            "vi": "Của tôi như quả mít trên cây,",
+            "en": "Mine, like the jackfruit upon the bough,",
+            "augmented_index": 1,
+            "original_index": 1,
+            "scores": {
+                "bleurt": 0.461,
+                "sacrebleu": 0.0627,
+                "bert_score": 0.4483,
+                "comet_da": 0.7049,
+                "comet_qe": 0.7679
+            }
+        },
+        {
+            "vi": "Tự tình",
+            "en": "Self-Reflection",
+            "augmented_index": 2,
+            "original_index": 5,
+            "scores": {
+                "bleurt": 0.4389,
+                "sacrebleu": 0.0,
+                "bert_score": 0.3076,
+                "comet_da": 0.6491,
+                "comet_qe": 0.7584
+            }
+        }
+    ]
+}
