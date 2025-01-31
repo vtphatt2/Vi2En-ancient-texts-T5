@@ -1,9 +1,9 @@
 import json
-vi_file = open("vi.txt", "r", encoding="utf-8")
-en_file = open("en.txt", "r", encoding="utf-8")
+vi_file = open("kieu1_vietnamese.txt", "r", encoding="utf-8")
+en_file = open("kieu1_english.txt", "r", encoding="utf-8")
 vi_lines = vi_file.readlines()
 en_lines = en_file.readlines()
-file_name = "Vietnamese_Anthology_P5"
+file_name = "kieu1"
 if len(vi_lines) != len(en_lines):
     print("The number of lines in the two poems don't match.")
 else:
