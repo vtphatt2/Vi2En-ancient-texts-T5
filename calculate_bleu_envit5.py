@@ -13,8 +13,8 @@ if torch.cuda.is_available():
 else:
     device = 'cpu'
 
-model_name = "./results_envit5_aug"  
-# model_name = "VietAI/envit5-translation"
+# model_name = "./results_envit5_aug"  
+model_name = "VietAI/envit5-translation"
 tokenizer = AutoTokenizer.from_pretrained(model_name)
 model = AutoModelForSeq2SeqLM.from_pretrained(model_name).to(device)
 model.eval()
@@ -29,12 +29,12 @@ def translate(text, model, tokenizer):
     return decoded_text
 
 # Load the test data
-with open("test.json", "r", encoding="utf-8") as f:
+with open("train_test/test.json", "r", encoding="utf-8") as f:
     test_data = json.load(f)
 
 # Extract source and reference translations
-source_texts = [item["vi"] for item in test_data["data"]]
-reference_texts = [item["en"] for item in test_data["data"]]
+source_texts = [item["vi"] for item in test_data]
+reference_texts = [item["en"] for item in test_data]
 
 # clear txt file
 open('save.txt', 'w').close()
@@ -67,3 +67,7 @@ bleurt_scores = bleurt_scorer.score(references=reference_texts, candidates=predi
 # Compute average BLEURT score
 average_bleurt = sum(bleurt_scores) / len(bleurt_scores)
 print(f"Average BLEURT Score: {average_bleurt:.7f}")
+
+# Save the results
+with open("results_envit5_base.json", "w", encoding="utf-8") as f:
+    json.dump({"BLEU": bleu.score, "BLEURT": average_bleurt}, f, indent=4)

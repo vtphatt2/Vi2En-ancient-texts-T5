@@ -21,18 +21,20 @@ for json_file in data_json_files:
 
 print(len(data))
 
-# train_data_path = os.path.join("train_test", "train.json")
-# test_data_path = os.path.join("train_test", "test.json")
+train_data_path = os.path.join("train_test", "train.json")
+test_data_path = os.path.join("train_test", "test.json")
 
-# # set seed for reproducibility
-# random.seed(42)
-# random.shuffle(data)
+# set seed for reproducibility
+random.seed(42)
+random.shuffle(data)
 
-# train_data = data[:int(len(data) * 0.9)]
-# test_data = data[int(len(data) * 0.9):]
+train_data = data[:int(len(data) * 0.9)]
+test_data = data[int(len(data) * 0.9):]
 
-# with open(train_data_path, 'w', encoding='utf-8') as f:
-#     json.dump(train_data, f, ensure_ascii=False, indent=4)
+with open(train_data_path, 'w', encoding='utf-8') as f:
+    json.dump(train_data, f, ensure_ascii=False, indent=4)
 
-# with open(test_data_path, 'w', encoding='utf-8') as f:
-#     json.dump(test_data, f, ensure_ascii=False, indent=4)
+with open(test_data_path, 'w', encoding='utf-8') as f:
+    json.dump(test_data, f, ensure_ascii=False, indent=4)
+
+print(len(test_data))
