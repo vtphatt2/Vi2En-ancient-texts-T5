@@ -168,6 +168,7 @@ model_name = "VietAI/envit5-translation"
 tokenizer = AutoTokenizer.from_pretrained(model_name)
 model = AutoModelForSeq2SeqLM.from_pretrained(model_name)
 model.to(device) 
+model.gradient_checkpointing_enable()
 
 
 
@@ -217,13 +218,14 @@ train_dataset, eval_dataset = train_dataset.train_test_split(test_size=0.0005).v
 
 # Fine-tuning
 training_args = Seq2SeqTrainingArguments(
+    do_eval=False,
     output_dir="./results_envit5",
-    evaluation_strategy="epoch",
+    # evaluation_strategy="epoch",
     learning_rate=1e-4,
     num_train_epochs=100,
     weight_decay=0.01,
- 
-    per_device_eval_batch_size=16,
+    per_device_train_batch_size=64,
+    # per_device_eval_batch_size=1,
     predict_with_generate=True,
     save_strategy="epoch",
     save_total_limit=1,
@@ -237,21 +239,21 @@ def postprocess_text(preds, labels):
 
 metric = evaluate.load("sacrebleu")
 
-def compute_metrics(eval_preds):
-    preds, labels = eval_preds
+# def compute_metrics(eval_preds):
+#     preds, labels = eval_preds
 
-    if isinstance(preds, tuple):
-        preds = preds[0]
-    labels = np.where(labels != -100, labels, tokenizer.pad_token_id)
+#     if isinstance(preds, tuple):
+#         preds = preds[0]
+#     labels = np.where(labels != -100, labels, tokenizer.pad_token_id)
 
-    decoded_preds = tokenizer.batch_decode(preds, skip_special_tokens=True)
-    decoded_labels = tokenizer.batch_decode(labels, skip_special_tokens=True)
-    decoded_preds, decoded_labels = postprocess_text(decoded_preds, decoded_labels)
+#     decoded_preds = tokenizer.batch_decode(preds, skip_special_tokens=True)
+#     decoded_labels = tokenizer.batch_decode(labels, skip_special_tokens=True)
+#     decoded_preds, decoded_labels = postprocess_text(decoded_preds, decoded_labels)
 
-    result = metric.compute(predictions=decoded_preds, references=decoded_labels)
-    result = {"bleu": round(result["score"], 4)}
+#     result = metric.compute(predictions=decoded_preds, references=decoded_labels)
+#     result = {"bleu": round(result["score"], 4)}
 
-    return result
+#     return result
 
 trainer = Seq2SeqTrainer(
     model=model,
@@ -259,7 +261,7 @@ trainer = Seq2SeqTrainer(
     train_dataset=train_dataset,
     eval_dataset=eval_dataset,
     data_collator=data_collator,
-    compute_metrics=compute_metrics
+    # compute_metrics=compute_metrics,
 )
 
 torch.cuda.empty_cache()
