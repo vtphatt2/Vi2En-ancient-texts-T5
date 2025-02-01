@@ -222,7 +222,7 @@ training_args = Seq2SeqTrainingArguments(
     learning_rate=1e-4,
     num_train_epochs=100,
     weight_decay=0.01,
-    per_device_train_batch_size=128,
+ 
     per_device_eval_batch_size=16,
     predict_with_generate=True,
     save_strategy="epoch",
