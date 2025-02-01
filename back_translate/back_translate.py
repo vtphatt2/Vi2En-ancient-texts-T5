@@ -50,9 +50,9 @@ COMET_QE_THRESHOLD = 0.65
 SCRIPT_PATH = os.path.abspath(__file__)
 SCRIPT_DIR = os.path.dirname(SCRIPT_PATH)
 PROJECT_ROOT = os.path.dirname(SCRIPT_DIR)
-INPUT_FOLDER_DIR = os.path.join(PROJECT_ROOT, "remaining_data_2")
-OUTPUT_FOLDER_DIR = os.path.join(PROJECT_ROOT, "augmented_data_ver03")
-LOAD_FOLDER_DIR = os.path.join(PROJECT_ROOT, "augmented_progress_data_ver03")
+INPUT_FOLDER_DIR = os.path.join(PROJECT_ROOT, "augmented_data_ver04")
+OUTPUT_FOLDER_DIR = os.path.join(PROJECT_ROOT, "backtranslate_data")
+LOAD_FOLDER_DIR = os.path.join(PROJECT_ROOT, "backtranslate_progress_data")
 SAVE_MODEL_DIR = os.path.join(PROJECT_ROOT, "vncorenlp")
 
 
@@ -325,8 +325,8 @@ class BackTranslateEvaluator:
             comet_scores['comet_da'] >= COMET_DA_THRESHOLD,
             comet_scores['comet_qe'] >= COMET_QE_THRESHOLD
         ]
-        is_acceptable = (sum(conditions) == 2)
-        return scores, is_acceptable
+        is_acceptable = (sum(conditions) >= 2)
+        return is_acceptable, scores
 def translate_with_gemini(model, text, rate_limiter, source_lang='English', target_lang='Vietnamese'):
     """Translate text using Gemini model with comprehensive rate limiting"""
     try:
@@ -465,42 +465,48 @@ def augment_data(input_file: str, output_file: str, load_file: str, api_key: str
             translation_result = json.loads(translate_with_gemini(model, english_sentence, rate_limiter))
 
             if translation_result: 
-                is_acceptable, scores = scorer.evaluate(english_sentence, translation_result["nom"], english_sentence)
+                is_acceptable, scores = scorer.evaluate(english_sentence, translation_result["nom"], vietnamese_sentence)
+                phobert_score = round(float(scores["phobert"]), 3)
+                comet_da_score = round(float(scores["comet_da"]), 3)
+                comet_qe_score = round(float(scores["comet_qe"]), 3)
                 if is_acceptable:
                     augmented_data["data"].append({
                         "original_vi": vietnamese_sentence,
                         "augmented_vi": translation_result["nom"],
                         "style": "Nom",
                         "en": english_sentence,
-                        "phobert_score": scores["phobert"],
-                        "comet_da_score": scores["comet_da"],
-                        "comet_qe_score": scores["comet_qe"],
+                        "phobert_score": phobert_score,
+                        "comet_da_score": comet_da_score,
+                        "comet_qe_score": comet_qe_score,
                         "augmented_index": current_augmented_index,  # Position in augmented dataset
                         "original_index": idx,  # Add index for alignment
                     })
                     current_augmented_index += 1
                 logger.info(f"Item {idx} scores:")
-                logger.info(f"PhoBERT score on Nom text : {round(scores['phobert'], 3)}")
-                logger.info(f"COMET-DA score on Nom text : {round(scores['comet_da'], 3)}")
-                logger.info(f"COMET-QE score on Nom text : {round(scores['comet_qe'], 3)}")
+                logger.info(f"PhoBERT score on Nom text : {phobert_score}")
+                logger.info(f"COMET-DA score on Nom text : {comet_da_score}")
+                logger.info(f"COMET-QE score on Nom text : {comet_qe_score}")
                 
-                is_acceptable, scores = scorer.evaluate(english_sentence, translation_result["han"], english_sentence)
+                is_acceptable, scores = scorer.evaluate(english_sentence, translation_result["han"], vietnamese_sentence)
+                phobert_score = round(float(scores["phobert"]), 3)
+                comet_da_score = round(float(scores["comet_da"]), 3)
+                comet_qe_score = round(float(scores["comet_qe"]), 3)
                 if is_acceptable:
                     augmented_data["data"].append({
                         "original_vi": vietnamese_sentence,
                         "augmented_vi": translation_result["han"],
                         "style": "Han",
                         "en": english_sentence,
-                        "phobert_score": scores["phobert"],
-                        "comet_da_score": scores["comet_da"],
-                        "comet_qe_score": scores["comet_qe"],
+                        "phobert_score": phobert_score,
+                        "comet_da_score": comet_da_score,
+                        "comet_qe_score": comet_qe_score,
                         "augmented_index": current_augmented_index,  # Position in augmented dataset
                         "original_index": idx,  # Add index for alignment
                     })
                     current_augmented_index += 1
-                logger.info(f"PhoBERT score on Han text : {round(scores['phobert'], 3)}")
-                logger.info(f"COMET-DA score on Han text : {round(scores['comet_da'], 3)}")
-                logger.info(f"COMET-QE score on Han text : {round(scores['comet_qe'], 3)}")
+                logger.info(f"PhoBERT score on Nom text : {phobert_score}")
+                logger.info(f"COMET-DA score on Nom text : {comet_da_score}")
+                logger.info(f"COMET-QE score on Nom text : {comet_qe_score}")
               
             
             # Track this index as processed regardless of success

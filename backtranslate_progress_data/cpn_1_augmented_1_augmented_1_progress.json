@@ -1,0 +1,56 @@
+{
+    "file_name": "chinh_phu_ngampdf",
+    "data": [
+        {
+            "original_vi": "chàng tuổi trẻ vốn dòng hào kiệt",
+            "augmented_vi": "Hắn, một chàng trai dòng dõi quý tộc và tinh thần dũng cảm.",
+            "style": "Nom",
+            "en": "He, a youth of noble lineage and valiant spirit.",
+            "phobert_score": 0.726,
+            "comet_da_score": 0.712,
+            "comet_qe_score": 0.853,
+            "augmented_index": 0,
+            "original_index": 1
+        },
+        {
+            "original_vi": "giã nhà đeo bức chiến bào",
+            "augmented_vi": "Trình chinh, áo giáp trên người",
+            "style": "Nom",
+            "en": "Departing home, clad in battle armor.",
+            "phobert_score": 0.719,
+            "comet_da_score": 0.635,
+            "comet_qe_score": 0.626,
+            "augmented_index": 1,
+            "original_index": 2
+        },
+        {
+            "original_vi": "đường bên cầu cỏ mọc còn non",
+            "augmented_vi": "Đường bên cầu, cỏ mới mơn mởn",
+            "style": "Nom",
+            "en": "The path beside the bridge, the grass still tender.",
+            "phobert_score": 0.859,
+            "comet_da_score": 0.836,
+            "comet_qe_score": 0.72,
+            "augmented_index": 2,
+            "original_index": 3
+        },
+        {
+            "original_vi": "đưa chàng lòng dằng dặc buồn",
+            "augmented_vi": "Tấm lòng ta, vì chàng, là biển khổ mênh mang",
+            "style": "Nom",
+            "en": "My heart, for you, is a boundless ocean of sorrow.",
+            "phobert_score": 0.758,
+            "comet_da_score": 0.652,
+            "comet_qe_score": 0.859,
+            "augmented_index": 3,
+            "original_index": 4
+        }
+    ],
+    "processed_indices": [
+        0,
+        1,
+        2,
+        3,
+        4
+    ]
+}
