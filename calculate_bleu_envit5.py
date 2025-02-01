@@ -5,7 +5,7 @@ import sacrebleu
 from bleurt import score
 import os
 
-os.environ["CUDA_VISIBLE_DEVICES"] = "4"
+# os.environ["CUDA_VISIBLE_DEVICES"] = "4"
 
 # Device
 if torch.cuda.is_available():
