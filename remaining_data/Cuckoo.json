@@ -1,0 +1,60 @@
+{
+    "file_name": "Cuckoo",
+    "data": [
+        {
+            "id": 0,
+            "vi": "Khi con tu hú",
+            "en": "The cuckoo calls its flock"
+        },
+        {
+            "id": 1,
+            "vi": "Khi con tu hú gọi bầy",
+            "en": "The cuckoo calls its flock—it’s when the rice"
+        },
+        {
+            "id": 2,
+            "vi": "Lúa chiêm đang chín, trái cây ngọt dần",
+            "en": "begins to ripen, fruits are growing sweet"
+        },
+        {
+            "id": 3,
+            "vi": "Vườn râm dậy tiếng ve ngân",
+            "en": "The garden’s ringing with cicadas’ hums"
+        },
+        {
+            "id": 4,
+            "vi": "Bắp rây vàng hạt đầy sân nắng đào",
+            "en": "Gold maize aplenty strews the sun-red yard"
+        },
+        {
+            "id": 5,
+            "vi": "Trời xanh càng rộng càng cao",
+            "en": "The sky, so blue, seems vaster, higher yet,"
+        },
+        {
+            "id": 6,
+            "vi": "Đôi con diều sáo lộn nhào từng không",
+            "en": "and whistle-kites turn somersaults in space"
+        },
+        {
+            "id": 7,
+            "vi": "Ta nghe hè dậy bên lòng",
+            "en": "O summer, as you stir within my heart,"
+        },
+        {
+            "id": 8,
+            "vi": "Mà chân muốn đạp tan phòng, hè ôi",
+            "en": "I rage and feel like kicking down these walls"
+        },
+        {
+            "id": 9,
+            "vi": "Ngột làm sao, chết uất thôi",
+            "en": "It’s stifling in here—I will choke and die"
+        },
+        {
+            "id": 10,
+            "vi": "Con chim tu hú ngoài trời cứ kêu",
+            "en": "Meanwhile, outside, the cuckoo’s call still rings"
+        }
+    ]
+}

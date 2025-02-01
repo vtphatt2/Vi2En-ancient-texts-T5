@@ -1,6 +1,5 @@
 import time
 import logging
-import shutil
 from dataclasses import dataclass
 from enum import Enum
 from datetime import datetime, timedelta
@@ -15,19 +14,17 @@ from tenacity import (
 )
 import google.api_core.exceptions
 import json
-from typing import Dict, List
 import google.generativeai as genai
 import nltk
 import os
 from transformers import pipeline
 from tqdm import tqdm
-import requests
 import torch
 from nltk.translate.bleu_score import sentence_bleu, SmoothingFunction
-from typing import Tuple
 import numpy
 import py_vncorenlp
 from transformers import AutoModel, AutoTokenizer
+from comet import download_model, load_from_checkpoint
 nltk.download('punkt_tab')
 
 
@@ -47,6 +44,8 @@ API_KEY = "AIzaSyClasB_b7S4LbjrcqZvQc74RAdPIazcCM0"
 # API_KEY = "AIzaSyDMUd29MMduSTwhCWbBd8EzId-DmtVsdKo"
 
 PHOBERT_THRESHOLD = 0.7
+COMET_DA_THRESHOLD = 0.6
+COMET_QE_THRESHOLD = 0.65
 
 SCRIPT_PATH = os.path.abspath(__file__)
 SCRIPT_DIR = os.path.dirname(SCRIPT_PATH)
@@ -203,7 +202,7 @@ def setup_gemini(api_key):
     after=after_log(logger, logging.INFO)
 )
 
-class VietnameseSentenceSimilarity:
+class PhoBERTEvaluator:
   def __init__(self, path):
     self.model = AutoModel.from_pretrained("vinai/phobert-base-v2")
     self.tokenizer = AutoTokenizer.from_pretrained("vinai/phobert-base-v2")
@@ -227,7 +226,7 @@ class VietnameseSentenceSimilarity:
         embeddings = outputs.last_hidden_state.mean(dim=1)
 
     return embeddings[0].numpy()
-  def cosine_similarity(self, sentence1, sentence2):
+  def score(self, sentence1, sentence2):
     segment1, segment2 = self.segmentation(sentence1, sentence2)
     embedding1 = self.get_sentence_embedding(segment1)
     embedding2 = self.get_sentence_embedding(segment2)
@@ -237,6 +236,97 @@ class VietnameseSentenceSimilarity:
     similarity = dot_product / (norm1 * norm2)
     return similarity
 
+class CometEvaluator:
+    def __init__(self, device=None):
+        """Initialize COMET evaluator with the latest models"""
+        try:
+            # Download and load the latest COMET models
+            self.device = device or ('cuda' if torch.cuda.is_available() else 'cpu')
+            
+            # Initialize COMET-DA model (Direct Assessment)
+            model_path_da = download_model("Unbabel/wmt22-comet-da")
+            self.comet_da = load_from_checkpoint(model_path_da)
+            
+            # Initialize COMET-QE model (Quality Estimation)
+            model_path_qe = download_model("Unbabel/wmt22-cometkiwi-da")
+            self.comet_qe = load_from_checkpoint(model_path_qe)
+            
+            logging.info("COMET models initialized successfully")
+            
+        except Exception as e:
+            logging.error(f"Error initializing COMET models: {e}")
+            self.comet_da = None
+            self.comet_qe = None
+    
+    def evaluate(self, source: str, hypothesis: str, reference: str) -> dict:
+        """
+        Evaluate translation using both COMET-DA and COMET-QE models
+        
+        Args:
+            source: Source text (original language)
+            hypothesis: Generated translation
+            reference: Reference translation
+            
+        Returns:
+            Dictionary containing COMET scores
+        """
+        scores = {
+            'comet_da': None,
+            'comet_qe': None
+        }
+        
+        try:
+            if self.comet_da:
+                # Prepare data for COMET-DA
+                data = [{"src": source, "mt": hypothesis, "ref": reference}]
+                
+                # Get COMET-DA score
+                da_output = self.comet_da.predict(data, batch_size=8, gpus=1 if self.device == 'cuda' else 0)
+                scores['comet_da'] = float(da_output['scores'][0])
+            
+            if self.comet_qe:
+                # Prepare data for COMET-QE
+                data = [{"src": source, "mt": hypothesis}]
+                
+                # Get COMET-QE score
+                qe_output = self.comet_qe.predict(data, batch_size=8, gpus=1 if self.device == 'cuda' else 0)
+                scores['comet_qe'] = float(qe_output['scores'][0])
+                
+        except Exception as e:
+            logging.error(f"Error during COMET evaluation: {e}")
+            
+        return scores
+
+class BackTranslateEvaluator:
+    def __init__(self, save_dir):
+        self.phobert_scorer = PhoBERTEvaluator(save_dir)
+        self.comet_scorer = CometEvaluator()
+    def evaluate(self, source: str, hypothesis: str, reference: str):
+        """
+        Evaluate the back-translation quality using PhoBERT and COMET scores
+
+        Args:
+            source (str): The original English sentence
+            hypothesis (str): The augmented Vietnamese sentence
+            reference (str): The original Vietnamese sentence
+
+        Returns:
+            _type_: _description_
+        """
+        phobert_score = self.phobert_scorer.score(reference, hypothesis)
+        comet_scores = self.comet_scorer.evaluate(source, hypothesis, reference)
+        scores = {
+            "phobert": phobert_score,
+            'comet_da': comet_scores['comet_da'],
+            'comet_qe': comet_scores['comet_qe']
+        }
+        conditions = [ 
+            phobert_score >= PHOBERT_THRESHOLD, 
+            comet_scores['comet_da'] >= COMET_DA_THRESHOLD,
+            comet_scores['comet_qe'] >= COMET_QE_THRESHOLD
+        ]
+        is_acceptable = (sum(conditions) == 2)
+        return scores, is_acceptable
 def translate_with_gemini(model, text, rate_limiter, source_lang='English', target_lang='Vietnamese'):
     """Translate text using Gemini model with comprehensive rate limiting"""
     try:
@@ -326,7 +416,7 @@ def translate_with_gemini(model, text, rate_limiter, source_lang='English', targ
 
 
 def augment_data(input_file: str, output_file: str, load_file: str, api_key: str, 
-                 instance: VietnameseSentenceSimilarity):
+                 scorer: BackTranslateEvaluator):
     """Augment data with proper rate limiting"""
     model = setup_gemini(api_key)
     rate_limiter = GeminiRateLimiter()
@@ -375,33 +465,43 @@ def augment_data(input_file: str, output_file: str, load_file: str, api_key: str
             translation_result = json.loads(translate_with_gemini(model, english_sentence, rate_limiter))
 
             if translation_result: 
-                nom_score = instance.cosine_similarity(vietnamese_sentence, translation_result["nom"])
-                if nom_score >= PHOBERT_THRESHOLD:
+                is_acceptable, scores = scorer.evaluate(english_sentence, translation_result["nom"], english_sentence)
+                if is_acceptable:
                     augmented_data["data"].append({
                         "original_vi": vietnamese_sentence,
                         "augmented_vi": translation_result["nom"],
                         "style": "Nom",
                         "en": english_sentence,
-                        "score": float(nom_score),
-                        "augmented_index": current_augmented_index,  # Position in augmented dataset
-                        "original_index": idx,  # Add index for alignment
-                    })
-                    current_augmented_index += 1
-                han_score = instance.cosine_similarity(vietnamese_sentence, translation_result["han"])
-                if han_score >= PHOBERT_THRESHOLD:
-                    augmented_data["data"].append({
-                        "original_vi": vietnamese_sentence,
-                        "style": "Han",
-                        "augmented_vi": translation_result["han"],
-                        "en": english_sentence,
-                        "score": float(han_score),
+                        "phobert_score": scores["phobert"],
+                        "comet_da_score": scores["comet_da"],
+                        "comet_qe_score": scores["comet_qe"],
                         "augmented_index": current_augmented_index,  # Position in augmented dataset
                         "original_index": idx,  # Add index for alignment
                     })
                     current_augmented_index += 1
                 logger.info(f"Item {idx} scores:")
-                logger.info(f"PhoBERT score on Nom text : {round(nom_score, 3)}")
-                logger.info(f"PhoBERT score on Han text : {round(han_score, 3)}")                
+                logger.info(f"PhoBERT score on Nom text : {round(scores['phobert'], 3)}")
+                logger.info(f"COMET-DA score on Nom text : {round(scores['comet_da'], 3)}")
+                logger.info(f"COMET-QE score on Nom text : {round(scores['comet_qe'], 3)}")
+                
+                is_acceptable, scores = scorer.evaluate(english_sentence, translation_result["han"], english_sentence)
+                if is_acceptable:
+                    augmented_data["data"].append({
+                        "original_vi": vietnamese_sentence,
+                        "augmented_vi": translation_result["han"],
+                        "style": "Han",
+                        "en": english_sentence,
+                        "phobert_score": scores["phobert"],
+                        "comet_da_score": scores["comet_da"],
+                        "comet_qe_score": scores["comet_qe"],
+                        "augmented_index": current_augmented_index,  # Position in augmented dataset
+                        "original_index": idx,  # Add index for alignment
+                    })
+                    current_augmented_index += 1
+                logger.info(f"PhoBERT score on Han text : {round(scores['phobert'], 3)}")
+                logger.info(f"COMET-DA score on Han text : {round(scores['comet_da'], 3)}")
+                logger.info(f"COMET-QE score on Han text : {round(scores['comet_qe'], 3)}")
+              
             
             # Track this index as processed regardless of success
             augmented_data["processed_indices"].append(idx)
@@ -441,7 +541,7 @@ def augment_data(input_file: str, output_file: str, load_file: str, api_key: str
                f"out of {len(augmented_data['processed_indices'])} processed items")
     
 def process_all_json_files(input_folder_dir: str, output_folder_dir: str, load_folder_dir: str, api_key: str,
-                           instance: VietnameseSentenceSimilarity):
+                           scorer: BackTranslateEvaluator):
     excluded_patterns = []
     json_files = [
         f for f in os.listdir(input_folder_dir) 
@@ -462,7 +562,7 @@ def process_all_json_files(input_folder_dir: str, output_folder_dir: str, load_f
             load_path = os.path.join(load_folder_dir, load_file)
             
             logger.info(f"\nProcessing: {input_file}")
-            augment_data(input_path, output_path, load_path, api_key, instance)
+            augment_data(input_path, output_path, load_path, api_key, scorer)
             
         except Exception as e:
             logger.error(f"Error processing {input_file}: {str(e)}")
@@ -490,8 +590,8 @@ def main():
     if not check_model_exists(SAVE_MODEL_DIR):
         py_vncorenlp.download_model(save_dir=SAVE_MODEL_DIR)
 
-    instance = VietnameseSentenceSimilarity(SAVE_MODEL_DIR)
-    process_all_json_files(INPUT_FOLDER_DIR, OUTPUT_FOLDER_DIR, LOAD_FOLDER_DIR, API_KEY, instance)
+    evaluator = BackTranslateEvaluator(SAVE_MODEL_DIR)
+    process_all_json_files(INPUT_FOLDER_DIR, OUTPUT_FOLDER_DIR, LOAD_FOLDER_DIR, API_KEY, evaluator)
 
 if __name__ == "__main__":
     main()
