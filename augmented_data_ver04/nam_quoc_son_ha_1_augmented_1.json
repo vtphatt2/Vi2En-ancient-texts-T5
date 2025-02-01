@@ -1,0 +1,31 @@
+{
+    "file_name": "nam_quoc_son_ha_1.pdf",
+    "data": [
+        {
+            "vi": "Nam quốc sơn hà Nam đế cư",
+            "en": "Our nation's mountains and rivers, our Emperor's domain.",
+            "augmented_index": 0,
+            "original_index": 0,
+            "scores": {
+                "bleurt": 0.559,
+                "sacrebleu": 0.2377,
+                "bert_score": 0.497,
+                "comet_da": 0.6173,
+                "comet_qe": 0.3829
+            }
+        },
+        {
+            "vi": "Như hà Bắc Lỗ lai xâm lược",
+            "en": "How did the northern barbarians dare to invade?",
+            "augmented_index": 1,
+            "original_index": 2,
+            "scores": {
+                "bleurt": 0.7024,
+                "sacrebleu": 0.1134,
+                "bert_score": 0.6167,
+                "comet_da": 0.8105,
+                "comet_qe": 0.5762
+            }
+        }
+    ]
+}

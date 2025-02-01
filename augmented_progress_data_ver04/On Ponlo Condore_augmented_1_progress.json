@@ -1,0 +1,63 @@
+{
+    "file_name": "On Ponlo Condore",
+    "data": [
+        {
+            "vi": "Cớ gì ta lại đến Côn Lôn?",
+            "en": "Why, then, have I journeyed to Con Son?",
+            "augmented_index": 0,
+            "original_index": 1,
+            "scores": {
+                "bleurt": 0.4184,
+                "sacrebleu": 0.0493,
+                "bert_score": 0.4989,
+                "comet_da": 0.6036,
+                "comet_qe": 0.7354
+            }
+        },
+        {
+            "vi": "Khuyên cùng bè bạn đừng ta thán,",
+            "en": "Let us, my companions, eschew lamentations.",
+            "augmented_index": 1,
+            "original_index": 13,
+            "scores": {
+                "bleurt": 0.4585,
+                "sacrebleu": 0.0954,
+                "bert_score": 0.3943,
+                "comet_da": 0.7221,
+                "comet_qe": 0.7723
+            }
+        },
+        {
+            "vi": "Rèn đúc anh hùng đây đã sẵn,",
+            "en": "The forging of heroes is now complete.",
+            "augmented_index": 2,
+            "original_index": 15,
+            "scores": {
+                "bleurt": 0.4652,
+                "sacrebleu": 0.086,
+                "bert_score": 0.3996,
+                "comet_da": 0.6488,
+                "comet_qe": 0.6568
+            }
+        }
+    ],
+    "processed_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+    ]
+}

@@ -1,0 +1,291 @@
+{
+    "file_name": "Vietnamese_Anthology_P4",
+    "data": [
+        {
+            "vi": "Kim thanh dấy dức khắp  đòi nơi",
+            "en": "Golden bells resound throughout the land.",
+            "augmented_index": 0,
+            "original_index": 4,
+            "scores": {
+                "bleurt": 0.5808,
+                "sacrebleu": 0.0,
+                "bert_score": 0.417,
+                "comet_da": 0.639,
+                "comet_qe": 0.461
+            }
+        },
+        {
+            "vi": "Con đường làm quan",
+            "en": "The Path of Officialdom",
+            "augmented_index": 1,
+            "original_index": 9,
+            "scores": {
+                "bleurt": 0.5283,
+                "sacrebleu": 0.1597,
+                "bert_score": -0.8548,
+                "comet_da": 0.8194,
+                "comet_qe": 0.8108
+            }
+        },
+        {
+            "vi": "Chạy giặc",
+            "en": "Fleeing the Enemy",
+            "augmented_index": 2,
+            "original_index": 18,
+            "scores": {
+                "bleurt": 0.5677,
+                "sacrebleu": 0.0,
+                "bert_score": 0.5159,
+                "comet_da": 0.8072,
+                "comet_qe": 0.8193
+            }
+        },
+        {
+            "vi": "Tan chợ vừa nghe tiếng súng Tây,",
+            "en": "As the market closed, the sound of Western gunfire was heard.",
+            "augmented_index": 3,
+            "original_index": 19,
+            "scores": {
+                "bleurt": 0.584,
+                "sacrebleu": 0.1236,
+                "bert_score": 0.4806,
+                "comet_da": 0.7702,
+                "comet_qe": 0.7545
+            }
+        },
+        {
+            "vi": "Bỏ nhà lũ trẻ lơ xơ chạy,",
+            "en": "The children, heedless, fled their homes.",
+            "augmented_index": 4,
+            "original_index": 21,
+            "scores": {
+                "bleurt": 0.4232,
+                "sacrebleu": 0.0,
+                "bert_score": 0.3182,
+                "comet_da": 0.6998,
+                "comet_qe": 0.654
+            }
+        },
+        {
+            "vi": "Bến Nghé của tiền tan bọt nước,",
+            "en": "The Saigon River, where fortunes vanish like foam on the waves.",
+            "augmented_index": 5,
+            "original_index": 23,
+            "scores": {
+                "bleurt": 0.4031,
+                "sacrebleu": 0.0309,
+                "bert_score": 0.3971,
+                "comet_da": 0.6777,
+                "comet_qe": 0.6961
+            }
+        },
+        {
+            "vi": "Nỡ để dân đen mắc nạn này?",
+            "en": "Can we bear to let the common people suffer this plight?",
+            "augmented_index": 6,
+            "original_index": 26,
+            "scores": {
+                "bleurt": 0.6008,
+                "sacrebleu": 0.0891,
+                "bert_score": 0.6518,
+                "comet_da": 0.7855,
+                "comet_qe": 0.8357
+            }
+        },
+        {
+            "vi": "Trời bão",
+            "en": "A tempestuous sky.",
+            "augmented_index": 7,
+            "original_index": 27,
+            "scores": {
+                "bleurt": 0.4057,
+                "sacrebleu": 0.0,
+                "bert_score": 0.3011,
+                "comet_da": 0.6436,
+                "comet_qe": 0.8368
+            }
+        },
+        {
+            "vi": "Điếu Trương Định",
+            "en": "Elegy for Trương Định",
+            "augmented_index": 8,
+            "original_index": 36,
+            "scores": {
+                "bleurt": 0.805,
+                "sacrebleu": 0.3195,
+                "bert_score": 0.4625,
+                "comet_da": 0.8107,
+                "comet_qe": 0.7327
+            }
+        },
+        {
+            "vi": "Nỡ khiến anh hùng rơi giọt luỵ,",
+            "en": "To cause a hero's tears to fall.",
+            "augmented_index": 9,
+            "original_index": 43,
+            "scores": {
+                "bleurt": 0.4472,
+                "sacrebleu": 0.038,
+                "bert_score": 0.3434,
+                "comet_da": 0.6222,
+                "comet_qe": 0.6581
+            }
+        },
+        {
+            "vi": "Cối xay",
+            "en": "The Millstone",
+            "augmented_index": 10,
+            "original_index": 45,
+            "scores": {
+                "bleurt": 0.427,
+                "sacrebleu": 0.0,
+                "bert_score": 0.4409,
+                "comet_da": 0.6304,
+                "comet_qe": 0.8085
+            }
+        },
+        {
+            "vi": "Con muỗi",
+            "en": "The Mosquito",
+            "augmented_index": 11,
+            "original_index": 54,
+            "scores": {
+                "bleurt": 0.8563,
+                "sacrebleu": 0.0,
+                "bert_score": 0.5228,
+                "comet_da": 0.9385,
+                "comet_qe": 0.8449
+            }
+        },
+        {
+            "vi": "Muỗi hỡi thân ngươi sướng mọi điều,",
+            "en": "O mosquito, fortunate in all things,",
+            "augmented_index": 12,
+            "original_index": 55,
+            "scores": {
+                "bleurt": 0.6072,
+                "sacrebleu": 0.0641,
+                "bert_score": 0.2301,
+                "comet_da": 0.6677,
+                "comet_qe": 0.676
+            }
+        },
+        {
+            "vi": "Người trung mặt đỏ đôi tròng bạc,",
+            "en": "A man of integrity, his face flushed, eyes like gleaming silver.",
+            "augmented_index": 13,
+            "original_index": 66,
+            "scores": {
+                "bleurt": 0.437,
+                "sacrebleu": 0.0374,
+                "bert_score": 0.4044,
+                "comet_da": 0.6003,
+                "comet_qe": 0.6968
+            }
+        },
+        {
+            "vi": "Bao nhiêu cờ kéo với đèn treo",
+            "en": "Countless banners unfurl, and lanterns hang aloft.",
+            "augmented_index": 14,
+            "original_index": 74,
+            "scores": {
+                "bleurt": 0.3977,
+                "sacrebleu": 0.0567,
+                "bert_score": 0.4727,
+                "comet_da": 0.6818,
+                "comet_qe": 0.7403
+            }
+        },
+        {
+            "vi": "Con tôm",
+            "en": "The Shrimp",
+            "augmented_index": 15,
+            "original_index": 81,
+            "scores": {
+                "bleurt": 0.7307,
+                "sacrebleu": 0.0,
+                "bert_score": 0.5791,
+                "comet_da": 0.9165,
+                "comet_qe": 0.8491
+            }
+        },
+        {
+            "vi": "Một trận sóng dồi cùng gió dập,",
+            "en": "A tempestuous surge of waves, lashed by a furious wind,",
+            "augmented_index": 16,
+            "original_index": 93,
+            "scores": {
+                "bleurt": 0.4248,
+                "sacrebleu": 0.0403,
+                "bert_score": 0.3203,
+                "comet_da": 0.6415,
+                "comet_qe": 0.7226
+            }
+        },
+        {
+            "vi": "Tan tành xương thịt biết bao nhiêu",
+            "en": "My flesh and bones are utterly shattered.",
+            "augmented_index": 17,
+            "original_index": 94,
+            "scores": {
+                "bleurt": 0.6977,
+                "sacrebleu": 0.2056,
+                "bert_score": 0.6313,
+                "comet_da": 0.7875,
+                "comet_qe": 0.7437
+            }
+        },
+        {
+            "vi": "Hễ mai tớ hỏng",
+            "en": "Should I fail tomorrow.",
+            "augmented_index": 18,
+            "original_index": 95,
+            "scores": {
+                "bleurt": 0.8014,
+                "sacrebleu": 0.2136,
+                "bert_score": 0.682,
+                "comet_da": 0.8626,
+                "comet_qe": 0.7078
+            }
+        },
+        {
+            "vi": "Chẳng nhuộm răng, để trắng để cười đời",
+            "en": "Unstained teeth, a smile to greet the world.",
+            "augmented_index": 19,
+            "original_index": 114,
+            "scores": {
+                "bleurt": 0.467,
+                "sacrebleu": 0.0605,
+                "bert_score": 0.3955,
+                "comet_da": 0.6166,
+                "comet_qe": 0.652
+            }
+        },
+        {
+            "vi": "Năm mới chúc nhau",
+            "en": "New Year's greetings exchanged.",
+            "augmented_index": 20,
+            "original_index": 120,
+            "scores": {
+                "bleurt": 0.5132,
+                "sacrebleu": 0.0875,
+                "bert_score": 0.491,
+                "comet_da": 0.7389,
+                "comet_qe": 0.8184
+            }
+        },
+        {
+            "vi": "Chúc nhau trăm tuổi bạc đầu râu",
+            "en": "May we both live to a hundred years, our hair turned silver, our beards grown long.",
+            "augmented_index": 21,
+            "original_index": 122,
+            "scores": {
+                "bleurt": 0.4907,
+                "sacrebleu": 0.0634,
+                "bert_score": 0.4333,
+                "comet_da": 0.6945,
+                "comet_qe": 0.6505
+            }
+        }
+    ]
+}

@@ -1,0 +1,187 @@
+{
+    "file_name": "The Poetry of Li Bo",
+    "data": [
+        {
+            "vi": "Sàng tiền khán nguyệt quang",
+            "en": "Gazing at the moonlit scene from my bed.",
+            "augmented_index": 0,
+            "original_index": 0,
+            "scores": {
+                "bleurt": 0.5994,
+                "sacrebleu": 0.0954,
+                "bert_score": 0.4638,
+                "comet_da": 0.6961,
+                "comet_qe": 0.5047
+            }
+        },
+        {
+            "vi": "Cử đầu vọng minh nguyệt",
+            "en": "I lift my head to gaze upon the bright moon.",
+            "augmented_index": 1,
+            "original_index": 2,
+            "scores": {
+                "bleurt": 0.7818,
+                "sacrebleu": 0.1836,
+                "bert_score": 0.7922,
+                "comet_da": 0.8614,
+                "comet_qe": 0.7753
+            }
+        },
+        {
+            "vi": "Đầu giường chợt thấy bóng trăng",
+            "en": "By my bedside, the moon's gleam appeared.",
+            "augmented_index": 2,
+            "original_index": 4,
+            "scores": {
+                "bleurt": 0.573,
+                "sacrebleu": 0.0477,
+                "bert_score": 0.5873,
+                "comet_da": 0.7342,
+                "comet_qe": 0.7087
+            }
+        },
+        {
+            "vi": "Ngửng đầu trông vẻ gương nga",
+            "en": "I lift my gaze to behold the celestial mirror.",
+            "augmented_index": 3,
+            "original_index": 6,
+            "scores": {
+                "bleurt": 0.6122,
+                "sacrebleu": 0.0552,
+                "bert_score": 0.5469,
+                "comet_da": 0.7164,
+                "comet_qe": 0.6858
+            }
+        },
+        {
+            "vi": "Hoàng hà chi thủy thiên thượng lai",
+            "en": "From the celestial heights, the Yellow River's waters descend.",
+            "augmented_index": 4,
+            "original_index": 9,
+            "scores": {
+                "bleurt": 0.6202,
+                "sacrebleu": 0.0891,
+                "bert_score": 0.5441,
+                "comet_da": 0.7131,
+                "comet_qe": 0.5592
+            }
+        },
+        {
+            "vi": "Bôn lưu đáo hải bất phục hồi",
+            "en": "Having journeyed far across the boundless sea, there is no return.",
+            "augmented_index": 5,
+            "original_index": 10,
+            "scores": {
+                "bleurt": 0.529,
+                "sacrebleu": 0.0684,
+                "bert_score": 0.3014,
+                "comet_da": 0.6541,
+                "comet_qe": 0.6678
+            }
+        },
+        {
+            "vi": "Nhân sinh đắc ý tu tận hoan",
+            "en": "Life's joys should be savored to their fullest extent.",
+            "augmented_index": 6,
+            "original_index": 14,
+            "scores": {
+                "bleurt": 0.6764,
+                "sacrebleu": 0.042,
+                "bert_score": 0.3637,
+                "comet_da": 0.5951,
+                "comet_qe": 0.7254
+            }
+        },
+        {
+            "vi": "Thanh sơn hoành bắc quách",
+            "en": "Green mountains stretch north of the citadel.",
+            "augmented_index": 7,
+            "original_index": 16,
+            "scores": {
+                "bleurt": 0.6331,
+                "sacrebleu": 0.1216,
+                "bert_score": 0.6872,
+                "comet_da": 0.816,
+                "comet_qe": 0.6822
+            }
+        },
+        {
+            "vi": "Bạch thủy nhiễu đông thành",
+            "en": "The White River encircles the Eastern Citadel.",
+            "augmented_index": 8,
+            "original_index": 17,
+            "scores": {
+                "bleurt": 0.4668,
+                "sacrebleu": 0.0657,
+                "bert_score": 0.3391,
+                "comet_da": 0.682,
+                "comet_qe": 0.7229
+            }
+        },
+        {
+            "vi": "Phù vân du tử ý",
+            "en": "The fleeting thoughts of a wandering soul.",
+            "augmented_index": 9,
+            "original_index": 20,
+            "scores": {
+                "bleurt": 0.5757,
+                "sacrebleu": 0.1104,
+                "bert_score": 0.5067,
+                "comet_da": 0.6178,
+                "comet_qe": 0.5251
+            }
+        },
+        {
+            "vi": "Sơn",
+            "en": "Mountain",
+            "augmented_index": 10,
+            "original_index": 26,
+            "scores": {
+                "bleurt": 0.7609,
+                "sacrebleu": 0.0,
+                "bert_score": 1.0,
+                "comet_da": 0.982,
+                "comet_qe": 0.5192
+            }
+        },
+        {
+            "vi": "Thủy",
+            "en": "Water",
+            "augmented_index": 11,
+            "original_index": 27,
+            "scores": {
+                "bleurt": 0.794,
+                "sacrebleu": 0.0,
+                "bert_score": 1.0,
+                "comet_da": 0.978,
+                "comet_qe": 0.8469
+            }
+        },
+        {
+            "vi": "Ngã ca nguyệt bồi hồi,",
+            "en": "I sing, the moon trembles with emotion.",
+            "augmented_index": 12,
+            "original_index": 39,
+            "scores": {
+                "bleurt": 0.6076,
+                "sacrebleu": 0.1997,
+                "bert_score": 0.5757,
+                "comet_da": 0.7495,
+                "comet_qe": 0.5236
+            }
+        },
+        {
+            "vi": "Tinh thời đồng giao hoan,",
+            "en": "A time of shared joy and camaraderie.",
+            "augmented_index": 13,
+            "original_index": 41,
+            "scores": {
+                "bleurt": 0.4541,
+                "sacrebleu": 0.0487,
+                "bert_score": 0.3317,
+                "comet_da": 0.6076,
+                "comet_qe": 0.7494
+            }
+        }
+    ]
+}
