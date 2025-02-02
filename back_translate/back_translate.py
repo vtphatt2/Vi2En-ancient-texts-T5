@@ -207,11 +207,12 @@ class PhoBERTEvaluator:
     self.model = AutoModel.from_pretrained("vinai/phobert-base-v2")
     self.tokenizer = AutoTokenizer.from_pretrained("vinai/phobert-base-v2")
     self.rdrsegmenter = py_vncorenlp.VnCoreNLP(annotators=["wseg"], save_dir= path)
-  def segmentation(self, sentence1, sentence2):
 
+  def segmentation(self, sentence1, sentence2):
     segment1 = self.rdrsegmenter.word_segment(sentence1)
     segment2 = self.rdrsegmenter.word_segment(sentence2)
     return segment1, segment2
+  
   def get_sentence_embedding(self, segment, pooling="mean"):
     inputs = self.tokenizer(segment, return_tensors="pt", padding=True, truncation=True)
 
@@ -226,6 +227,7 @@ class PhoBERTEvaluator:
         embeddings = outputs.last_hidden_state.mean(dim=1)
 
     return embeddings[0].numpy()
+  
   def score(self, sentence1, sentence2):
     segment1, segment2 = self.segmentation(sentence1, sentence2)
     embedding1 = self.get_sentence_embedding(segment1)
@@ -301,6 +303,7 @@ class BackTranslateEvaluator:
     def __init__(self, save_dir):
         self.phobert_scorer = PhoBERTEvaluator(save_dir)
         self.comet_scorer = CometEvaluator()
+
     def evaluate(self, source: str, hypothesis: str, reference: str):
         """
         Evaluate the back-translation quality using PhoBERT and COMET scores
@@ -327,6 +330,7 @@ class BackTranslateEvaluator:
         ]
         is_acceptable = (sum(conditions) >= 2)
         return is_acceptable, scores
+    
 def translate_with_gemini(model, text, rate_limiter, source_lang='English', target_lang='Vietnamese'):
     """Translate text using Gemini model with comprehensive rate limiting"""
     try:
@@ -413,7 +417,6 @@ def translate_with_gemini(model, text, rate_limiter, source_lang='English', targ
     except Exception as e:
         logger.error(f"Translation error: {str(e)}")
         raise
-
 
 def augment_data(input_file: str, output_file: str, load_file: str, api_key: str, 
                  scorer: BackTranslateEvaluator):
@@ -591,7 +594,6 @@ def main():
     ensure_directory_exists(OUTPUT_FOLDER_DIR)
     ensure_directory_exists(LOAD_FOLDER_DIR)
     ensure_directory_exists(SAVE_MODEL_DIR)
-    # print("Path:", SAVE_MODEL_DIR)
     # Check if VnCoreNLP model exists
     if not check_model_exists(SAVE_MODEL_DIR):
         py_vncorenlp.download_model(save_dir=SAVE_MODEL_DIR)

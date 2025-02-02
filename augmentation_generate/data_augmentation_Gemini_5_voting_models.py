@@ -127,7 +127,7 @@ class CometEvaluator:
             self.comet_da = None
             self.comet_qe = None
     
-    def evaluate(self, source: str, hypothesis: str, reference: str) -> dict:
+    def evaluate(self, source: str, reference: str, hypothesis: str) -> dict:
         """
         Evaluate translation using both COMET-DA and COMET-QE models
         
@@ -198,7 +198,7 @@ class TranslationEvaluator:
             bert_score = F1.mean().item()
 
             # COMET score
-            comet_scores = self.comet_evaluator.evaluate(source, candidate, reference)
+            comet_scores = self.comet_evaluator.evaluate(source, reference, candidate)
 
 
             scores = {
