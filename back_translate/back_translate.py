@@ -25,16 +25,19 @@ import numpy
 import py_vncorenlp
 from transformers import AutoModel, AutoTokenizer
 from comet import download_model, load_from_checkpoint
+from huggingface_hub import login
 nltk.download('punkt_tab')
 
 
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
+HF_TOKEN = "your_hugging_face_token_here"
+
 # API_KEY = "AIzaSyAISyP5zG-7NIV5F6xesUveTRDmtQ_6eyU"
-# API_KEY = "AIzaSyAlgAWun2JG6ws1ThKqUwYzX8I4aBCmNbk"
+API_KEY = "AIzaSyAlgAWun2JG6ws1ThKqUwYzX8I4aBCmNbk"
 # API_KEY = "AIzaSyCdH1RVi5Rki_cm_ypw3RX8Bgy4YsIBHtI"
-API_KEY = "AIzaSyClasB_b7S4LbjrcqZvQc74RAdPIazcCM0"
+# API_KEY = "AIzaSyClasB_b7S4LbjrcqZvQc74RAdPIazcCM0"
 # API_KEY = "AIzaSyAVYRXQUEZTfaqAPsvwARhZC6vCmjEyQGk"
 # API_KEY = "AIzaSyDEhc7c7LgEppWsV2T7AJgjA1jmAsrXV9o"
 # API_KEY = "AIzaSyAyTYahX2pyJCbtAkVgZXhd56G69yN9TDc"
@@ -42,6 +45,8 @@ API_KEY = "AIzaSyClasB_b7S4LbjrcqZvQc74RAdPIazcCM0"
 # API_KEY = "AIzaSyBZBza9CmKBNYNjfHl2Ai5tWY8hi-PpFVQ"
 # API_KEY = "AIzaSyCn7PvfXQqLlMOq5_Pj3I-B85qsvHt--ZE"
 # API_KEY = "AIzaSyDMUd29MMduSTwhCWbBd8EzId-DmtVsdKo"
+# API_KEY = "AIzaSyDYe95W9qGOeRx24KRi8ozLc4yV9uqlG2E"
+# API_KEY = "AIzaSyAiU9uCy6aJlucDIEpaguB3bFeUA1VZjCY"
 
 PHOBERT_THRESHOLD = 0.7
 COMET_DA_THRESHOLD = 0.6
@@ -588,7 +593,11 @@ def ensure_vncorenlp_setup():
         os.makedirs(vncorenlp_dir)
     return vncorenlp_dir
 
+def login_huggingface(token):
+    login(token=token)
+
 def main():
+    login_huggingface(HF_TOKEN)
     # Create required directories
     ensure_directory_exists(INPUT_FOLDER_DIR)
     ensure_directory_exists(OUTPUT_FOLDER_DIR)

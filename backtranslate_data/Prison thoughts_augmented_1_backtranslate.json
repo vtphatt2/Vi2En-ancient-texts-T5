@@ -1,0 +1,203 @@
+{
+    "file_name": "Prison thoughts",
+    "data": [
+        {
+            "original_vi": "Tai mở rộng và lòng sôi rạo rực",
+            "augmented_vi": "Tai ta mở rộng, lòng ta đập rộn ràng.",
+            "style": "Nom",
+            "en": "My ears were opened wide, and my heart throbbed with fervent excitement.",
+            "phobert_score": 0.83,
+            "comet_da_score": 0.799,
+            "comet_qe_score": 0.78,
+            "augmented_index": 0,
+            "original_index": 0
+        },
+        {
+            "original_vi": "Tai mở rộng và lòng sôi rạo rực",
+            "augmented_vi": "Tai ta mở rộng, lòng ta rộn rạo thiết tha.",
+            "style": "Nom",
+            "en": "My ears were opened wide, and my heart throbbed with fervent excitement.",
+            "phobert_score": 0.808,
+            "comet_da_score": 0.819,
+            "comet_qe_score": 0.788,
+            "augmented_index": 1,
+            "original_index": 1
+        },
+        {
+            "original_vi": "Nghe vội vã tiếng dơi chiều đập cánh",
+            "augmented_vi": "Tiếng cánh dơi chiều vội vã bay",
+            "style": "Nom",
+            "en": "The hurried flutter of twilight bats' wings was heard.",
+            "phobert_score": 0.917,
+            "comet_da_score": 0.892,
+            "comet_qe_score": 0.745,
+            "augmented_index": 2,
+            "original_index": 2
+        },
+        {
+            "original_vi": "Nghe gió xối trên cành cây ngọn lá",
+            "augmented_vi": "Nghe gió ào ào trên cành lá cao",
+            "style": "Nom",
+            "en": "I hear the wind rush through the highest branches and leaves.",
+            "phobert_score": 0.913,
+            "comet_da_score": 0.875,
+            "comet_qe_score": 0.758,
+            "augmented_index": 3,
+            "original_index": 3
+        },
+        {
+            "original_vi": "Nghe mênh mang sức khoẻ của trăm loài",
+            "augmented_vi": "Ngàn loài muôn vật, khí lực vô biên, ta nghe thấy",
+            "style": "Nom",
+            "en": "I hear the boundless vitality of myriad beings.",
+            "phobert_score": 0.716,
+            "comet_da_score": 0.554,
+            "comet_qe_score": 0.707,
+            "augmented_index": 4,
+            "original_index": 4
+        },
+        {
+            "original_vi": "Đang hút mật của đời sây hoa trái",
+            "augmented_vi": "Nay ta thấm hưởng vị ngọt mật hoa trái đời đang nở rộ",
+            "style": "Nom",
+            "en": "Now I imbibe the honeyed essence of life's blossoming fruit.",
+            "phobert_score": 0.792,
+            "comet_da_score": 0.795,
+            "comet_qe_score": 0.751,
+            "augmented_index": 5,
+            "original_index": 5
+        },
+        {
+            "original_vi": "Đang hút mật của đời sây hoa trái",
+            "augmented_vi": "Kim nhật ta vịnh vị ngọt mật hoa trái nhân sinh đương thịnh khai",
+            "style": "Han",
+            "en": "Now I imbibe the honeyed essence of life's blossoming fruit.",
+            "phobert_score": 0.751,
+            "comet_da_score": 0.631,
+            "comet_qe_score": 0.528,
+            "augmented_index": 6,
+            "original_index": 5
+        },
+        {
+            "original_vi": "Hương tự do thơm ngát cả ngàn ngày",
+            "augmented_vi": "Hương thơm tự do, ngàn ngày vẫn ngọt",
+            "style": "Nom",
+            "en": "The fragrance of liberty, a thousand days sweet.",
+            "phobert_score": 0.882,
+            "comet_da_score": 0.891,
+            "comet_qe_score": 0.803,
+            "augmented_index": 7,
+            "original_index": 6
+        },
+        {
+            "original_vi": "Ở ngoài kia biết bao thân tù hãm",
+            "augmented_vi": "Vô số tâm hồn đắm chìm trong xiềng xích ngoài những bức tường này",
+            "style": "Nom",
+            "en": "Beyond these walls, countless souls languish in confinement.",
+            "phobert_score": 0.666,
+            "comet_da_score": 0.655,
+            "comet_qe_score": 0.79,
+            "augmented_index": 8,
+            "original_index": 7
+        },
+        {
+            "original_vi": "Ở ngoài kia biết bao thân tù hãm",
+            "augmented_vi": "Vô số linh hồn đọa đày giam cầm ngoại tường",
+            "style": "Han",
+            "en": "Beyond these walls, countless souls languish in confinement.",
+            "phobert_score": 0.669,
+            "comet_da_score": 0.683,
+            "comet_qe_score": 0.754,
+            "augmented_index": 9,
+            "original_index": 7
+        },
+        {
+            "original_vi": "Tôi chiều nay giam cấm hận trong lòng",
+            "augmented_vi": "Hôm nay, lòng ta giam mối sầu",
+            "style": "Nom",
+            "en": "This afternoon, I confine resentment within my heart.",
+            "phobert_score": 0.839,
+            "comet_da_score": 0.812,
+            "comet_qe_score": 0.756,
+            "augmented_index": 10,
+            "original_index": 8
+        },
+        {
+            "original_vi": "Tôi chiều nay giam cấm hận trong lòng",
+            "augmented_vi": "Kim nhật, tâm ta giam oán hận",
+            "style": "Han",
+            "en": "This afternoon, I confine resentment within my heart.",
+            "phobert_score": 0.751,
+            "comet_da_score": 0.674,
+            "comet_qe_score": 0.619,
+            "augmented_index": 11,
+            "original_index": 8
+        },
+        {
+            "original_vi": "Tôi chỉ một con chim bé nhỏ",
+            "augmented_vi": "Ta chỉ là con chim non",
+            "style": "Nom",
+            "en": "I am but a fledgling bird.",
+            "phobert_score": 0.847,
+            "comet_da_score": 0.873,
+            "comet_qe_score": 0.875,
+            "augmented_index": 12,
+            "original_index": 9
+        },
+        {
+            "original_vi": "Tôi chỉ một giữa muôn người chiến đấu",
+            "augmented_vi": "Ta đứng một mình giữa muôn vàn binh hùng",
+            "style": "Nom",
+            "en": "I stand alone amidst a myriad of warriors.",
+            "phobert_score": 0.735,
+            "comet_da_score": 0.816,
+            "comet_qe_score": 0.86,
+            "augmented_index": 13,
+            "original_index": 11
+        },
+        {
+            "original_vi": "Vẫn đứng thẳng trên đường đầy lửa máu",
+            "augmented_vi": "Ta đứng vững trên đường máu lửa",
+            "style": "Nom",
+            "en": "I stand resolute upon the path ablaze with blood.",
+            "phobert_score": 0.811,
+            "comet_da_score": 0.805,
+            "comet_qe_score": 0.704,
+            "augmented_index": 14,
+            "original_index": 12
+        },
+        {
+            "original_vi": "Chân kiêu căng không thoái bộ bao giờ",
+            "augmented_vi": "Tự hào không lùi bước",
+            "style": "Nom",
+            "en": "His pride knows no retreat.",
+            "phobert_score": 0.628,
+            "comet_da_score": 0.71,
+            "comet_qe_score": 0.839,
+            "augmented_index": 15,
+            "original_index": 13
+        },
+        {
+            "original_vi": "Chân kiêu căng không thoái bộ bao giờ",
+            "augmented_vi": "Ngạo khí bất thoái chuyển",
+            "style": "Han",
+            "en": "His pride knows no retreat.",
+            "phobert_score": 0.555,
+            "comet_da_score": 0.786,
+            "comet_qe_score": 0.833,
+            "augmented_index": 16,
+            "original_index": 13
+        },
+        {
+            "original_vi": "Tôi sẽ cười như kẻ sẵn lòng tin",
+            "augmented_vi": "Ta sẽ mỉm cười với vẻ mặt của người dễ tin",
+            "style": "Nom",
+            "en": "I shall smile with the countenance of one readily believing.",
+            "phobert_score": 0.856,
+            "comet_da_score": 0.827,
+            "comet_qe_score": 0.787,
+            "augmented_index": 17,
+            "original_index": 14
+        }
+    ]
+}
