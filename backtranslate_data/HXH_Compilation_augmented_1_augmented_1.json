@@ -1,0 +1,38 @@
+{
+    "file_name": "HXH_Compilation",
+    "data": [
+        {
+            "original_vi": "Của tôi như quả mít trên cây,",
+            "augmented_vi": "Ta như quả mít trên cành",
+            "style": "Nom",
+            "en": "Mine, like the jackfruit upon the bough,",
+            "phobert_score": 0.86,
+            "comet_da_score": 0.863,
+            "comet_qe_score": 0.651,
+            "augmented_index": 0,
+            "original_index": 1
+        },
+        {
+            "original_vi": "Tự tình",
+            "augmented_vi": "Tự vấn tâm tư",
+            "style": "Nom",
+            "en": "Self-Reflection",
+            "phobert_score": 0.579,
+            "comet_da_score": 0.729,
+            "comet_qe_score": 0.666,
+            "augmented_index": 1,
+            "original_index": 2
+        },
+        {
+            "original_vi": "Tự tình",
+            "augmented_vi": "Tự vấn tâm tư",
+            "style": "Han",
+            "en": "Self-Reflection",
+            "phobert_score": 0.579,
+            "comet_da_score": 0.729,
+            "comet_qe_score": 0.666,
+            "augmented_index": 2,
+            "original_index": 2
+        }
+    ]
+}

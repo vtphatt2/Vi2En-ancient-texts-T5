@@ -1,0 +1,101 @@
+{
+    "file_name": "You cannot lock up the mind",
+    "data": [
+        {
+            "original_vi": "Ta còn bộ óc, ta không lo",
+            "augmented_vi": "Ta còn trí, ta chẳng lo chi",
+            "style": "Nom",
+            "en": "I retain my intellect; I harbor no anxieties.",
+            "phobert_score": 0.885,
+            "comet_da_score": 0.933,
+            "comet_qe_score": 0.858,
+            "augmented_index": 0,
+            "original_index": 0
+        },
+        {
+            "original_vi": "Ta còn bộ óc, ta không lo",
+            "augmented_vi": "Ta hữu trí, ta vô ưu tư",
+            "style": "Han",
+            "en": "I retain my intellect; I harbor no anxieties.",
+            "phobert_score": 0.776,
+            "comet_da_score": 0.754,
+            "comet_qe_score": 0.813,
+            "augmented_index": 1,
+            "original_index": 0
+        },
+        {
+            "original_vi": "Giam người, khoá cả chân tay lại",
+            "augmented_vi": "Buộc người, khóa cả tay chân",
+            "style": "Nom",
+            "en": "To bind the person, to lock both hands and feet.",
+            "phobert_score": 0.833,
+            "comet_da_score": 0.88,
+            "comet_qe_score": 0.813,
+            "augmented_index": 2,
+            "original_index": 1
+        },
+        {
+            "original_vi": "Có lúc ngươi toan đánh bể đầu",
+            "augmented_vi": "Có những lúc người định nát óc ta",
+            "style": "Nom",
+            "en": "There were moments when you intended to shatter my skull.",
+            "phobert_score": 0.799,
+            "comet_da_score": 0.709,
+            "comet_qe_score": 0.708,
+            "augmented_index": 3,
+            "original_index": 2
+        },
+        {
+            "original_vi": "Có lúc ngươi toan đánh bể đầu",
+            "augmented_vi": "Từng hữu thời người định nát óc ta",
+            "style": "Han",
+            "en": "There were moments when you intended to shatter my skull.",
+            "phobert_score": 0.737,
+            "comet_da_score": 0.575,
+            "comet_qe_score": 0.71,
+            "augmented_index": 4,
+            "original_index": 2
+        },
+        {
+            "original_vi": "Sống lâu ta nghĩ trăm ngàn kế",
+            "augmented_vi": "Trải qua bao năm, ta đã mưu tính muôn kế",
+            "style": "Nom",
+            "en": "Through lengthy life, I have conceived myriad strategies.",
+            "phobert_score": 0.759,
+            "comet_da_score": 0.781,
+            "comet_qe_score": 0.835,
+            "augmented_index": 5,
+            "original_index": 3
+        },
+        {
+            "original_vi": "Sống lâu ta nghĩ trăm ngàn kế",
+            "augmented_vi": "Đời dài mưu lược vô cùng",
+            "style": "Han",
+            "en": "Through lengthy life, I have conceived myriad strategies.",
+            "phobert_score": 0.643,
+            "comet_da_score": 0.619,
+            "comet_qe_score": 0.651,
+            "augmented_index": 6,
+            "original_index": 3
+        },
+        {
+            "original_vi": "Đời ta đã có một con đường",
+            "augmented_vi": "Đường đời tôi đã định sẵn",
+            "style": "Nom",
+            "en": "My life has found its destined path.",
+            "phobert_score": 0.817,
+            "comet_da_score": 0.86,
+            "comet_qe_score": 0.842,
+            "augmented_index": 7,
+            "original_index": 4
+        }
+    ],
+    "processed_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+    ]
+}

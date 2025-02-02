@@ -1,0 +1,65 @@
+{
+    "file_name": "On Ponlo Condore",
+    "data": [
+        {
+            "original_vi": "Cớ gì ta lại đến Côn Lôn?",
+            "augmented_vi": "Cớ sao ta lại đến Côn Sơn?",
+            "style": "Nom",
+            "en": "Why, then, have I journeyed to Con Son?",
+            "phobert_score": 0.861,
+            "comet_da_score": 0.965,
+            "comet_qe_score": 0.851,
+            "augmented_index": 0,
+            "original_index": 0
+        },
+        {
+            "original_vi": "Cớ gì ta lại đến Côn Lôn?",
+            "augmented_vi": "Cớ hà ta lai chí Côn Sơn?",
+            "style": "Han",
+            "en": "Why, then, have I journeyed to Con Son?",
+            "phobert_score": 0.707,
+            "comet_da_score": 0.794,
+            "comet_qe_score": 0.735,
+            "augmented_index": 1,
+            "original_index": 0
+        },
+        {
+            "original_vi": "Khuyên cùng bè bạn đừng ta thán,",
+            "augmented_vi": "Hỡi bạn hiền, chớ nên than thở",
+            "style": "Nom",
+            "en": "Let us, my companions, eschew lamentations.",
+            "phobert_score": 0.698,
+            "comet_da_score": 0.71,
+            "comet_qe_score": 0.837,
+            "augmented_index": 2,
+            "original_index": 1
+        },
+        {
+            "original_vi": "Khuyên cùng bè bạn đừng ta thán,",
+            "augmented_vi": "Hỡi bằng hữu, chớ nên ai oán",
+            "style": "Han",
+            "en": "Let us, my companions, eschew lamentations.",
+            "phobert_score": 0.777,
+            "comet_da_score": 0.669,
+            "comet_qe_score": 0.819,
+            "augmented_index": 3,
+            "original_index": 1
+        },
+        {
+            "original_vi": "Rèn đúc anh hùng đây đã sẵn,",
+            "augmented_vi": "Việc rèn luyện anh hùng nay đã hoàn tất",
+            "style": "Nom",
+            "en": "The forging of heroes is now complete.",
+            "phobert_score": 0.676,
+            "comet_da_score": 0.864,
+            "comet_qe_score": 0.805,
+            "augmented_index": 4,
+            "original_index": 2
+        }
+    ],
+    "processed_indices": [
+        0,
+        1,
+        2
+    ]
+}

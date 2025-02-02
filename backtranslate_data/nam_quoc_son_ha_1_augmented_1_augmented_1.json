@@ -1,0 +1,49 @@
+{
+    "file_name": "nam_quoc_son_ha_1.pdf",
+    "data": [
+        {
+            "original_vi": "Nam quốc sơn hà Nam đế cư",
+            "augmented_vi": "Sơn hà cõi Việt, đế đô nhà vua",
+            "style": "Nom",
+            "en": "Our nation's mountains and rivers, our Emperor's domain.",
+            "phobert_score": 0.709,
+            "comet_da_score": 0.768,
+            "comet_qe_score": 0.75,
+            "augmented_index": 0,
+            "original_index": 0
+        },
+        {
+            "original_vi": "Nam quốc sơn hà Nam đế cư",
+            "augmented_vi": "Việt quốc sơn hà, đế đô ngự trị",
+            "style": "Han",
+            "en": "Our nation's mountains and rivers, our Emperor's domain.",
+            "phobert_score": 0.835,
+            "comet_da_score": 0.846,
+            "comet_qe_score": 0.653,
+            "augmented_index": 1,
+            "original_index": 0
+        },
+        {
+            "original_vi": "Như hà Bắc Lỗ lai xâm lược",
+            "augmented_vi": "Hán nhân phương Bắc dám xâm phạm?",
+            "style": "Nom",
+            "en": "How did the northern barbarians dare to invade?",
+            "phobert_score": 0.745,
+            "comet_da_score": 0.707,
+            "comet_qe_score": 0.756,
+            "augmented_index": 2,
+            "original_index": 1
+        },
+        {
+            "original_vi": "Như hà Bắc Lỗ lai xâm lược",
+            "augmented_vi": "Bắc Di như thế nào dám xâm lược?",
+            "style": "Han",
+            "en": "How did the northern barbarians dare to invade?",
+            "phobert_score": 0.684,
+            "comet_da_score": 0.822,
+            "comet_qe_score": 0.731,
+            "augmented_index": 3,
+            "original_index": 1
+        }
+    ]
+}
