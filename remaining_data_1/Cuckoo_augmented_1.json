@@ -1,0 +1,96 @@
+{
+    "file_name": "Cuckoo",
+    "data": [
+        {
+            "vi": "Khi con tu hú",
+            "en": "When the cicada calls",
+            "augmented_index": 0,
+            "original_index": 0,
+            "scores": {
+                "bleurt": 0.2498,
+                "sacrebleu": 0.1244,
+                "bert_score": 0.3324,
+                "comet_da": 0.6774,
+                "comet_qe": 0.8228
+            }
+        },
+        {
+            "vi": "Lúa chiêm đang chín, trái cây ngọt dần",
+            "en": "The rice of the spring harvest ripens, and the fruits grow ever sweeter.",
+            "augmented_index": 1,
+            "original_index": 2,
+            "scores": {
+                "bleurt": 0.5735,
+                "sacrebleu": 0.0313,
+                "bert_score": 0.2849,
+                "comet_da": 0.7883,
+                "comet_qe": 0.8138
+            }
+        },
+        {
+            "vi": "Vườn râm dậy tiếng ve ngân",
+            "en": "The garden hums with the cicadas' resonant song.",
+            "augmented_index": 2,
+            "original_index": 3,
+            "scores": {
+                "bleurt": 0.6424,
+                "sacrebleu": 0.0627,
+                "bert_score": 0.7449,
+                "comet_da": 0.8948,
+                "comet_qe": 0.6524
+            }
+        },
+        {
+            "vi": "Bắp rây vàng hạt đầy sân nắng đào",
+            "en": "Golden maize, its kernels abundant, spill across the peach-hued sunlit yard.",
+            "augmented_index": 3,
+            "original_index": 4,
+            "scores": {
+                "bleurt": 0.6085,
+                "sacrebleu": 0.0374,
+                "bert_score": 0.5805,
+                "comet_da": 0.7458,
+                "comet_qe": 0.5547
+            }
+        },
+        {
+            "vi": "Trời xanh càng rộng càng cao",
+            "en": "The azure heavens expand, ever higher still.",
+            "augmented_index": 4,
+            "original_index": 5,
+            "scores": {
+                "bleurt": 0.5327,
+                "sacrebleu": 0.045,
+                "bert_score": 0.5254,
+                "comet_da": 0.6895,
+                "comet_qe": 0.7518
+            }
+        },
+        {
+            "vi": "Ta nghe hè dậy bên lòng",
+            "en": "I hear the summer stirring within my heart.",
+            "augmented_index": 5,
+            "original_index": 7,
+            "scores": {
+                "bleurt": 0.6686,
+                "sacrebleu": 0.1707,
+                "bert_score": 0.4486,
+                "comet_da": 0.7445,
+                "comet_qe": 0.7745
+            }
+        },
+        {
+            "vi": "Con chim tu hú ngoài trời cứ kêu",
+            "en": "The cuckoo bird outside ceaselessly calls.",
+            "augmented_index": 6,
+            "original_index": 10,
+            "scores": {
+                "bleurt": 0.6491,
+                "sacrebleu": 0.0494,
+                "bert_score": 0.5215,
+                "comet_da": 0.7706,
+                "comet_qe": 0.798
+            }
+        }
+    ]
+}

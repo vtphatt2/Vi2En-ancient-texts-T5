@@ -1,0 +1,148 @@
+{
+    "file_name": "Vietnamese_Anthology_P5",
+    "data": [
+        {
+            "vi": "Gặp gỡ nhau đây mới biết nhau,",
+            "en": "Here, in this encounter, we come to know one another.",
+            "augmented_index": 0,
+            "original_index": 8,
+            "scores": {
+                "bleurt": 0.7359,
+                "sacrebleu": 0.0367,
+                "bert_score": 0.42,
+                "comet_da": 0.716,
+                "comet_qe": 0.7975
+            }
+        },
+        {
+            "vi": "Trời đương xoay tít, người đương ngủ",
+            "en": "The heavens whirl ceaselessly, while mortals slumber.",
+            "augmented_index": 1,
+            "original_index": 14,
+            "scores": {
+                "bleurt": 0.6102,
+                "sacrebleu": 0.0477,
+                "bert_score": 0.4869,
+                "comet_da": 0.7179,
+                "comet_qe": 0.7593
+            }
+        },
+        {
+            "vi": "Tù hai ba lượt còn ham sống",
+            "en": "Twice or thrice imprisoned, yet still clinging to life.",
+            "augmented_index": 2,
+            "original_index": 18,
+            "scores": {
+                "bleurt": 0.5119,
+                "sacrebleu": 0.083,
+                "bert_score": 0.3578,
+                "comet_da": 0.6186,
+                "comet_qe": 0.674
+            }
+        },
+        {
+            "vi": "Cô khóc cậu",
+            "en": "She wept for him.",
+            "augmented_index": 3,
+            "original_index": 25,
+            "scores": {
+                "bleurt": 0.6067,
+                "sacrebleu": 0.127,
+                "bert_score": 0.5907,
+                "comet_da": 0.8257,
+                "comet_qe": 0.6704
+            }
+        },
+        {
+            "vi": "Thình lình một tiếng sét ngang lưng,",
+            "en": "Suddenly, a bolt of lightning struck, a thunderclap at my back.",
+            "augmented_index": 4,
+            "original_index": 26,
+            "scores": {
+                "bleurt": 0.478,
+                "sacrebleu": 0.1778,
+                "bert_score": 0.4812,
+                "comet_da": 0.701,
+                "comet_qe": 0.7013
+            }
+        },
+        {
+            "vi": "May nữa duyên sau còn gặp gỡ,",
+            "en": "Perhaps in a future life, our paths may cross again.",
+            "augmented_index": 5,
+            "original_index": 32,
+            "scores": {
+                "bleurt": 0.7103,
+                "sacrebleu": 0.0403,
+                "bert_score": 0.6153,
+                "comet_da": 0.7967,
+                "comet_qe": 0.7225
+            }
+        },
+        {
+            "vi": "Hồn cậu trả lời",
+            "en": "The Spirit's Reply",
+            "augmented_index": 6,
+            "original_index": 34,
+            "scores": {
+                "bleurt": 0.7333,
+                "sacrebleu": 0.0,
+                "bert_score": 0.1756,
+                "comet_da": 0.7211,
+                "comet_qe": 0.7348
+            }
+        },
+        {
+            "vi": "Quyết dẹp cho yên sóng bất bình",
+            "en": "To quell the turbulent waves and secure lasting peace.",
+            "augmented_index": 7,
+            "original_index": 44,
+            "scores": {
+                "bleurt": 0.5494,
+                "sacrebleu": 0.0499,
+                "bert_score": 0.3158,
+                "comet_da": 0.6292,
+                "comet_qe": 0.6968
+            }
+        },
+        {
+            "vi": "Nợ đời anh chửa trắng tay tanh",
+            "en": "My debt to the world remains unrequited.",
+            "augmented_index": 8,
+            "original_index": 46,
+            "scores": {
+                "bleurt": 0.4488,
+                "sacrebleu": 0.0487,
+                "bert_score": 0.3178,
+                "comet_da": 0.6166,
+                "comet_qe": 0.662
+            }
+        },
+        {
+            "vi": "Mình hỡi Mình đừng buồn bã quá,",
+            "en": "My dearest, do not despair so deeply.",
+            "augmented_index": 9,
+            "original_index": 49,
+            "scores": {
+                "bleurt": 0.6995,
+                "sacrebleu": 0.0627,
+                "bert_score": 0.3166,
+                "comet_da": 0.6674,
+                "comet_qe": 0.802
+            }
+        },
+        {
+            "vi": "Hồn còn mạnh khoẻ, phách còn linh",
+            "en": "Spirit remains robust, soul remains vibrant.",
+            "augmented_index": 10,
+            "original_index": 50,
+            "scores": {
+                "bleurt": 0.6537,
+                "sacrebleu": 0.043,
+                "bert_score": 0.4276,
+                "comet_da": 0.8107,
+                "comet_qe": 0.8193
+            }
+        }
+    ]
+}

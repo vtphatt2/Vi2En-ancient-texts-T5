@@ -50,7 +50,7 @@ COMET_QE_THRESHOLD = 0.65
 SCRIPT_PATH = os.path.abspath(__file__)
 SCRIPT_DIR = os.path.dirname(SCRIPT_PATH)
 PROJECT_ROOT = os.path.dirname(SCRIPT_DIR)
-INPUT_FOLDER_DIR = os.path.join(PROJECT_ROOT, "augmented_data_ver04")
+INPUT_FOLDER_DIR = os.path.join(PROJECT_ROOT, "remaining_data_2")
 OUTPUT_FOLDER_DIR = os.path.join(PROJECT_ROOT, "backtranslate_data")
 LOAD_FOLDER_DIR = os.path.join(PROJECT_ROOT, "backtranslate_progress_data")
 SAVE_MODEL_DIR = os.path.join(PROJECT_ROOT, "vncorenlp")
@@ -565,7 +565,7 @@ def process_all_json_files(input_folder_dir: str, output_folder_dir: str, load_f
     for input_file in json_files:
         try:
             input_path = os.path.join(input_folder_dir, input_file)
-            output_file = input_file.replace('.json', '_augmented_1.json')
+            output_file = input_file.replace('.json', '_backtranslate.json')
             output_path = os.path.join(output_folder_dir, output_file)
             load_file = output_file.replace('.json', '_progress.json')
             load_path = os.path.join(load_folder_dir, load_file)

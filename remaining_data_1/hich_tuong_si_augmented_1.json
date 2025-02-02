@@ -1,0 +1,174 @@
+{
+    "file_name": "hich_tuong_si.pdf",
+    "data": [
+        {
+            "vi": "Kỷ Tín dĩ thân đại tử nhi thoát Cao Đế",
+            "en": "Kỷ Tín, through his great sacrifice, escaped the wrath of the Cao Emperor.",
+            "augmented_index": 0,
+            "original_index": 1,
+            "scores": {
+                "bleurt": 0.6846,
+                "sacrebleu": 0.0615,
+                "bert_score": 0.578,
+                "comet_da": 0.7816,
+                "comet_qe": 0.6471
+            }
+        },
+        {
+            "vi": "Tự cổ trung thần nghĩa sĩ dĩ thân tử quốc hà đại vô chi",
+            "en": "Since antiquity, loyal ministers and righteous men have given their lives for their country; how could there be a lack of such devotion?",
+            "augmented_index": 1,
+            "original_index": 7,
+            "scores": {
+                "bleurt": 0.5832,
+                "sacrebleu": 0.1521,
+                "bert_score": 0.4335,
+                "comet_da": 0.7185,
+                "comet_qe": 0.4567
+            }
+        },
+        {
+            "vi": "Vương Công Kiên hà nhân dã",
+            "en": "Who, pray tell, was Vương Công Kiên?",
+            "augmented_index": 2,
+            "original_index": 15,
+            "scores": {
+                "bleurt": 0.6395,
+                "sacrebleu": 0.2778,
+                "bert_score": 0.7612,
+                "comet_da": 0.7607,
+                "comet_qe": 0.4016
+            }
+        },
+        {
+            "vi": "Kỳ tỳ tướng Nguyễn Văn Lập hựu hà nhân dã",
+            "en": "General Nguyễn Văn Lập, who else could it be?",
+            "augmented_index": 3,
+            "original_index": 16,
+            "scores": {
+                "bleurt": 0.4495,
+                "sacrebleu": 0.1395,
+                "bert_score": 0.5516,
+                "comet_da": 0.6168,
+                "comet_qe": 0.4281
+            }
+        },
+        {
+            "vi": "Hùng kê chi cự bất túc dĩ xuyên lỗ giáp",
+            "en": "The heroic rooster's might proved insufficient to pierce the armor's aperture.",
+            "augmented_index": 4,
+            "original_index": 62,
+            "scores": {
+                "bleurt": 0.5775,
+                "sacrebleu": 0.116,
+                "bert_score": 0.5262,
+                "comet_da": 0.6085,
+                "comet_qe": 0.5345
+            }
+        },
+        {
+            "vi": "Nhi nhữ đẳng chi phụ mẫu phần mộ diệc vi tha nhân chi sở phát quật",
+            "en": "Even the graves of your parents are subject to the depredations of others.",
+            "augmented_index": 5,
+            "original_index": 76,
+            "scores": {
+                "bleurt": 0.6373,
+                "sacrebleu": 0.1778,
+                "bert_score": 0.4555,
+                "comet_da": 0.671,
+                "comet_qe": 0.4817
+            }
+        },
+        {
+            "vi": "Bất duy dư chi kim sinh thụ nhục tuy bách thế chi hạ xú danh nan tẩy ác thụy trường tồn",
+            "en": "Not only does my present life bear the shame, but this ignominious reputation shall endure through countless generations, a stain upon my lineage.",
+            "augmented_index": 6,
+            "original_index": 77,
+            "scores": {
+                "bleurt": 0.6355,
+                "sacrebleu": 0.0363,
+                "bert_score": 0.3593,
+                "comet_da": 0.6849,
+                "comet_qe": 0.619
+            }
+        },
+        {
+            "vi": "Nhi nhữ đẳng chi bổng lộc diệc chung thân chi thụ tứ",
+            "en": "May your shared bounty and blessings endure throughout your lives.",
+            "augmented_index": 7,
+            "original_index": 89,
+            "scores": {
+                "bleurt": 0.6237,
+                "sacrebleu": 0.0446,
+                "bert_score": 0.4172,
+                "comet_da": 0.6569,
+                "comet_qe": 0.4537
+            }
+        },
+        {
+            "vi": "Bất duy dư chi kim sinh đắc chí",
+            "en": "Not only in this life have I attained my heart's desire.",
+            "augmented_index": 8,
+            "original_index": 94,
+            "scores": {
+                "bleurt": 0.7231,
+                "sacrebleu": 0.1724,
+                "bert_score": 0.5039,
+                "comet_da": 0.6332,
+                "comet_qe": 0.4104
+            }
+        },
+        {
+            "vi": "Nhi nhữ đẳng bách thế chi hạ phương danh bất hủ",
+            "en": "May your names endure through countless generations.",
+            "augmented_index": 9,
+            "original_index": 95,
+            "scores": {
+                "bleurt": 0.5602,
+                "sacrebleu": 0.038,
+                "bert_score": 0.3517,
+                "comet_da": 0.6246,
+                "comet_qe": 0.4803
+            }
+        },
+        {
+            "vi": "Nhi nhữ đẳng chi tính danh diệc di phương ư thanh sử hĩ",
+            "en": "Do your names and deeds merit inscription in the annals of history?",
+            "augmented_index": 10,
+            "original_index": 97,
+            "scores": {
+                "bleurt": 0.6151,
+                "sacrebleu": 0.0924,
+                "bert_score": 0.3993,
+                "comet_da": 0.6754,
+                "comet_qe": 0.5304
+            }
+        },
+        {
+            "vi": "Đắc hồ",
+            "en": "Thus it is.",
+            "augmented_index": 11,
+            "original_index": 99,
+            "scores": {
+                "bleurt": 0.6312,
+                "sacrebleu": 0.1597,
+                "bert_score": -0.193,
+                "comet_da": 0.6191,
+                "comet_qe": 0.3674
+            }
+        },
+        {
+            "vi": "Kim dư lịch tuyển chư gia binh pháp vi nhất thư danh viết Binh thư yếu lược",
+            "en": "The esteemed scholar, Kim, selected from various military treatises a single, preeminent text, which he titled *Essentials of Military Strategy*.",
+            "augmented_index": 12,
+            "original_index": 100,
+            "scores": {
+                "bleurt": 0.5824,
+                "sacrebleu": 0.0307,
+                "bert_score": 0.3754,
+                "comet_da": 0.7064,
+                "comet_qe": 0.6404
+            }
+        }
+    ]
+}

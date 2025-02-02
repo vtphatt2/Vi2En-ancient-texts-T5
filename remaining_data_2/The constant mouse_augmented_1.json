@@ -1,0 +1,837 @@
+{
+    "file_name": "The constant mouse",
+    "data": [
+        {
+            "vi": "Muôn phương triều cống mười phân thái bình",
+            "en": "Ten thousand tributaries offered tribute, a realm of perfect peace.",
+            "augmented_index": 0,
+            "original_index": 2,
+            "scores": {
+                "bleurt": 0.5624,
+                "sacrebleu": 0.0446,
+                "bert_score": 0.3246,
+                "comet_da": 0.623,
+                "comet_qe": 0.5861
+            }
+        },
+        {
+            "vi": "Chẳng là chuột bạch bên tường,",
+            "en": "Not a white mouse by the wall,",
+            "augmented_index": 1,
+            "original_index": 13,
+            "scores": {
+                "bleurt": 0.4773,
+                "sacrebleu": 0.2013,
+                "bert_score": 0.2984,
+                "comet_da": 0.7095,
+                "comet_qe": 0.7359
+            }
+        },
+        {
+            "vi": "Trong hang dường tiếng nam nhi hỏi rằng:",
+            "en": "From within the cavern, a man's voice inquired:",
+            "augmented_index": 2,
+            "original_index": 18,
+            "scores": {
+                "bleurt": 0.6525,
+                "sacrebleu": 0.0593,
+                "bert_score": 0.431,
+                "comet_da": 0.7085,
+                "comet_qe": 0.8114
+            }
+        },
+        {
+            "vi": "Đến bên tường, ghé mắt vào dòm chơi",
+            "en": "Approaching the wall, I peered within, a playful glance.",
+            "augmented_index": 3,
+            "original_index": 22,
+            "scores": {
+                "bleurt": 0.4706,
+                "sacrebleu": 0.075,
+                "bert_score": 0.483,
+                "comet_da": 0.698,
+                "comet_qe": 0.7817
+            }
+        },
+        {
+            "vi": "Bây giờ Chuột bạch còn run như cầy",
+            "en": "Even now, the white mouse trembles like a civet cat.",
+            "augmented_index": 4,
+            "original_index": 26,
+            "scores": {
+                "bleurt": 0.4381,
+                "sacrebleu": 0.1013,
+                "bert_score": 0.5091,
+                "comet_da": 0.6307,
+                "comet_qe": 0.7036
+            }
+        },
+        {
+            "vi": "Một giây tỉnh lại mới hay:",
+            "en": "A moment's awakening revealed the truth:",
+            "augmented_index": 5,
+            "original_index": 27,
+            "scores": {
+                "bleurt": 0.5857,
+                "sacrebleu": 0.0494,
+                "bert_score": 0.4415,
+                "comet_da": 0.6531,
+                "comet_qe": 0.8365
+            }
+        },
+        {
+            "vi": "Rằng: Tôi nhà cũng quanh co miền này",
+            "en": "Thus, my dwelling, too, lies nestled within this region.",
+            "augmented_index": 6,
+            "original_index": 32,
+            "scores": {
+                "bleurt": 0.5988,
+                "sacrebleu": 0.0309,
+                "bert_score": 0.3413,
+                "comet_da": 0.613,
+                "comet_qe": 0.6007
+            }
+        },
+        {
+            "vi": "Chẳng may bỗng gặp muông cầy bất nhân",
+            "en": "Unluckily, I encountered beasts of the field, devoid of compassion.",
+            "augmented_index": 7,
+            "original_index": 34,
+            "scores": {
+                "bleurt": 0.3967,
+                "sacrebleu": 0.0,
+                "bert_score": 0.3666,
+                "comet_da": 0.6532,
+                "comet_qe": 0.6669
+            }
+        },
+        {
+            "vi": "Rộng cho nương náu ở đây,",
+            "en": "Ample space for refuge here.",
+            "augmented_index": 8,
+            "original_index": 37,
+            "scores": {
+                "bleurt": 0.6095,
+                "sacrebleu": 0.0985,
+                "bert_score": 0.1755,
+                "comet_da": 0.6204,
+                "comet_qe": 0.8085
+            }
+        },
+        {
+            "vi": "Một mình khuya khoắt ra đi,",
+            "en": "Alone, I journey forth in the dead of night.",
+            "augmented_index": 9,
+            "original_index": 43,
+            "scores": {
+                "bleurt": 0.4601,
+                "sacrebleu": 0.083,
+                "bert_score": 0.3079,
+                "comet_da": 0.68,
+                "comet_qe": 0.7907
+            }
+        },
+        {
+            "vi": "Đêm xuân đón gió đi tìm mùi hương?",
+            "en": "Upon this spring night, do we seek fragrance borne on the gentle breeze?",
+            "augmented_index": 10,
+            "original_index": 46,
+            "scores": {
+                "bleurt": 0.5626,
+                "sacrebleu": 0.0823,
+                "bert_score": 0.4802,
+                "comet_da": 0.6988,
+                "comet_qe": 0.6046
+            }
+        },
+        {
+            "vi": "Phỏng như gặp kẻ phũ phàng thì sao",
+            "en": "Should one encounter a callous individual, what then?",
+            "augmented_index": 11,
+            "original_index": 48,
+            "scores": {
+                "bleurt": 0.4652,
+                "sacrebleu": 0.05,
+                "bert_score": 0.4783,
+                "comet_da": 0.7077,
+                "comet_qe": 0.7729
+            }
+        },
+        {
+            "vi": "Thương chồng lại xót một đàn con thơ",
+            "en": "My heart aches for my husband, and I grieve for my helpless babes.",
+            "augmented_index": 12,
+            "original_index": 54,
+            "scores": {
+                "bleurt": 0.513,
+                "sacrebleu": 0.0346,
+                "bert_score": 0.4741,
+                "comet_da": 0.6764,
+                "comet_qe": 0.7618
+            }
+        },
+        {
+            "vi": "Đêm hôm cũng dấn mình đi,",
+            "en": "Even in the darkest night, I venture forth.",
+            "augmented_index": 13,
+            "original_index": 63,
+            "scores": {
+                "bleurt": 0.7118,
+                "sacrebleu": 0.1678,
+                "bert_score": 0.4777,
+                "comet_da": 0.8041,
+                "comet_qe": 0.6555
+            }
+        },
+        {
+            "vi": "Chàng nghe nông nỗi giãi bày,",
+            "en": "He heard the heartfelt lament.",
+            "augmented_index": 14,
+            "original_index": 67,
+            "scores": {
+                "bleurt": 0.3471,
+                "sacrebleu": 0.2165,
+                "bert_score": 0.4458,
+                "comet_da": 0.588,
+                "comet_qe": 0.6549
+            }
+        },
+        {
+            "vi": "Rằng: Nàng giải hết chân tình,",
+            "en": "Thus: She revealed her innermost heart.",
+            "augmented_index": 15,
+            "original_index": 69,
+            "scores": {
+                "bleurt": 0.4606,
+                "sacrebleu": 0.043,
+                "bert_score": 0.3817,
+                "comet_da": 0.6116,
+                "comet_qe": 0.6811
+            }
+        },
+        {
+            "vi": "Thiếp như phận liễu gặp cơn gió đoài",
+            "en": "I am as a willow, caught in the western gale.",
+            "augmented_index": 16,
+            "original_index": 86,
+            "scores": {
+                "bleurt": 0.5039,
+                "sacrebleu": 0.0403,
+                "bert_score": 0.4941,
+                "comet_da": 0.636,
+                "comet_qe": 0.6671
+            }
+        },
+        {
+            "vi": "Gái hiền thờ chỉ một chồng chẳng hai",
+            "en": "A virtuous woman reveres but one husband, never two.",
+            "augmented_index": 17,
+            "original_index": 90,
+            "scores": {
+                "bleurt": 0.6712,
+                "sacrebleu": 0.053,
+                "bert_score": 0.501,
+                "comet_da": 0.7389,
+                "comet_qe": 0.8252
+            }
+        },
+        {
+            "vi": "Mặc ai ong bướm xôn xao,",
+            "en": "Let others be consumed by the flutter of bees and butterflies.",
+            "augmented_index": 18,
+            "original_index": 95,
+            "scores": {
+                "bleurt": 0.4234,
+                "sacrebleu": 0.1355,
+                "bert_score": 0.4296,
+                "comet_da": 0.6488,
+                "comet_qe": 0.4497
+            }
+        },
+        {
+            "vi": "Chàng rằng: Nàng vẫn chấp mê,",
+            "en": "He said:  You persist in your delusion.",
+            "augmented_index": 19,
+            "original_index": 111,
+            "scores": {
+                "bleurt": 0.5356,
+                "sacrebleu": 0.1134,
+                "bert_score": 0.4952,
+                "comet_da": 0.788,
+                "comet_qe": 0.79
+            }
+        },
+        {
+            "vi": "Chẳng hay lo trước ắt thì luỵ sau",
+            "en": "Failure to anticipate hardship inevitably leads to regret.",
+            "augmented_index": 20,
+            "original_index": 112,
+            "scores": {
+                "bleurt": 0.5619,
+                "sacrebleu": 0.0427,
+                "bert_score": 0.3313,
+                "comet_da": 0.6981,
+                "comet_qe": 0.7442
+            }
+        },
+        {
+            "vi": "Hãy suy cho thấu cơ mầu,",
+            "en": "Let us ponder the profound mystery.",
+            "augmented_index": 21,
+            "original_index": 113,
+            "scores": {
+                "bleurt": 0.6191,
+                "sacrebleu": 0.0509,
+                "bert_score": 0.3065,
+                "comet_da": 0.7297,
+                "comet_qe": 0.7327
+            }
+        },
+        {
+            "vi": "Chữ rằng: ‘xuân bất tái lai’,",
+            "en": "Thus it is written: 'Spring doth not return.'",
+            "augmented_index": 22,
+            "original_index": 115,
+            "scores": {
+                "bleurt": 0.716,
+                "sacrebleu": 0.083,
+                "bert_score": 0.6516,
+                "comet_da": 0.8337,
+                "comet_qe": 0.7323
+            }
+        },
+        {
+            "vi": "Một ngày là mấy sớm mai hỡi nàng",
+            "en": "How many dawns comprise a single day, my lady?",
+            "augmented_index": 23,
+            "original_index": 116,
+            "scores": {
+                "bleurt": 0.5362,
+                "sacrebleu": 0.0891,
+                "bert_score": 0.5579,
+                "comet_da": 0.7011,
+                "comet_qe": 0.7776
+            }
+        },
+        {
+            "vi": "Chẳng nghe câu ví phương ngôn thường lề:",
+            "en": "Have you not heard the adage, the common saying?",
+            "augmented_index": 24,
+            "original_index": 122,
+            "scores": {
+                "bleurt": 0.6341,
+                "sacrebleu": 0.0943,
+                "bert_score": 0.3886,
+                "comet_da": 0.7931,
+                "comet_qe": 0.7085
+            }
+        },
+        {
+            "vi": "Hoa tàn nhị rữa thì thôi,",
+            "en": "When the blossoms fall and the stamens decay, then it ends.",
+            "augmented_index": 25,
+            "original_index": 127,
+            "scores": {
+                "bleurt": 0.5566,
+                "sacrebleu": 0.0407,
+                "bert_score": 0.3883,
+                "comet_da": 0.729,
+                "comet_qe": 0.7544
+            }
+        },
+        {
+            "vi": "Song song như đũa có đôi,",
+            "en": "Parallel as chopsticks, a matched pair.",
+            "augmented_index": 26,
+            "original_index": 133,
+            "scores": {
+                "bleurt": 0.4669,
+                "sacrebleu": 0.1023,
+                "bert_score": 0.4002,
+                "comet_da": 0.6096,
+                "comet_qe": 0.5722
+            }
+        },
+        {
+            "vi": "Kể từ thủa mới thiên khai,",
+            "en": "Since the dawn of creation,",
+            "augmented_index": 27,
+            "original_index": 147,
+            "scores": {
+                "bleurt": 0.566,
+                "sacrebleu": 0.0692,
+                "bert_score": 0.0422,
+                "comet_da": 0.6508,
+                "comet_qe": 0.7455
+            }
+        },
+        {
+            "vi": "Đời xưa mấy gái tiết hiền,",
+            "en": "In ages past, how few were women of virtuous integrity.",
+            "augmented_index": 28,
+            "original_index": 155,
+            "scores": {
+                "bleurt": 0.5669,
+                "sacrebleu": 0.0403,
+                "bert_score": 0.3521,
+                "comet_da": 0.6115,
+                "comet_qe": 0.5532
+            }
+        },
+        {
+            "vi": "Chàng nghe lại nói lời này:",
+            "en": "He then heard these words spoken:",
+            "augmented_index": 29,
+            "original_index": 167,
+            "scores": {
+                "bleurt": 0.7191,
+                "sacrebleu": 0.0524,
+                "bert_score": 0.3062,
+                "comet_da": 0.8007,
+                "comet_qe": 0.7796
+            }
+        },
+        {
+            "vi": "Nàng tuy biết một chưa hay biết mười",
+            "en": "Though she possessed a modicum of knowledge, her understanding remained profoundly incomplete.",
+            "augmented_index": 30,
+            "original_index": 168,
+            "scores": {
+                "bleurt": 0.3389,
+                "sacrebleu": 0.0338,
+                "bert_score": 0.3653,
+                "comet_da": 0.6773,
+                "comet_qe": 0.7716
+            }
+        },
+        {
+            "vi": "Cứ mình, chớ bắt chước người vụ danh",
+            "en": "Be true to thyself, and eschew the vain pursuit of reputation.",
+            "augmented_index": 31,
+            "original_index": 170,
+            "scores": {
+                "bleurt": 0.3611,
+                "sacrebleu": 0.0309,
+                "bert_score": 0.3325,
+                "comet_da": 0.6013,
+                "comet_qe": 0.7368
+            }
+        },
+        {
+            "vi": "Gặp ai thời nấy là chồng,",
+            "en": "Whomsoever I meet, that one shall be my husband.",
+            "augmented_index": 32,
+            "original_index": 187,
+            "scores": {
+                "bleurt": 0.5925,
+                "sacrebleu": 0.0375,
+                "bert_score": 0.3875,
+                "comet_da": 0.6653,
+                "comet_qe": 0.7231
+            }
+        },
+        {
+            "vi": "Người thời đắc thế sang giàu,",
+            "en": "Those in the height of power and affluence,",
+            "augmented_index": 33,
+            "original_index": 191,
+            "scores": {
+                "bleurt": 0.609,
+                "sacrebleu": 0.0502,
+                "bert_score": 0.3533,
+                "comet_da": 0.6174,
+                "comet_qe": 0.7713
+            }
+        },
+        {
+            "vi": "Lâu lâu lại ngoảnh mặt đi thở dài",
+            "en": "From time to time, a sigh escapes, and the gaze is turned away.",
+            "augmented_index": 34,
+            "original_index": 196,
+            "scores": {
+                "bleurt": 0.621,
+                "sacrebleu": 0.0582,
+                "bert_score": 0.4914,
+                "comet_da": 0.7495,
+                "comet_qe": 0.6184
+            }
+        },
+        {
+            "vi": "Chàng nghĩ đàn đã êm tai",
+            "en": "He deemed the music exquisitely pleasing to the ear.",
+            "augmented_index": 35,
+            "original_index": 197,
+            "scores": {
+                "bleurt": 0.5807,
+                "sacrebleu": 0.0499,
+                "bert_score": 0.4032,
+                "comet_da": 0.7685,
+                "comet_qe": 0.7188
+            }
+        },
+        {
+            "vi": "Gà về bới nát cỏ sân,",
+            "en": "The chickens returned, scratching the courtyard grass to ruin.",
+            "augmented_index": 36,
+            "original_index": 205,
+            "scores": {
+                "bleurt": 0.6068,
+                "sacrebleu": 0.0891,
+                "bert_score": 0.6177,
+                "comet_da": 0.8101,
+                "comet_qe": 0.6555
+            }
+        },
+        {
+            "vi": "Mèo buồn lại chạy kiếm ăn ngõ ngoài",
+            "en": "The melancholy cat once more sought sustenance in the alleyways.",
+            "augmented_index": 37,
+            "original_index": 206,
+            "scores": {
+                "bleurt": 0.4629,
+                "sacrebleu": 0.0375,
+                "bert_score": 0.3897,
+                "comet_da": 0.6807,
+                "comet_qe": 0.805
+            }
+        },
+        {
+            "vi": "Thấy nàng lòng dạ xót xa,",
+            "en": "My heart ached at the sight of her.",
+            "augmented_index": 38,
+            "original_index": 223,
+            "scores": {
+                "bleurt": 0.4394,
+                "sacrebleu": 0.0477,
+                "bert_score": 0.4106,
+                "comet_da": 0.7057,
+                "comet_qe": 0.7749
+            }
+        },
+        {
+            "vi": "Ngôi cao nhất phẩm, lộc dày thiên chung",
+            "en": "Exalted to the highest rank, blessed with boundless fortune.",
+            "augmented_index": 39,
+            "original_index": 236,
+            "scores": {
+                "bleurt": 0.5606,
+                "sacrebleu": 0.0446,
+                "bert_score": 0.3847,
+                "comet_da": 0.6748,
+                "comet_qe": 0.6771
+            }
+        },
+        {
+            "vi": "Của thời núi bạc non vàng,",
+            "en": "Of an age of silver mountains and golden hills,",
+            "augmented_index": 40,
+            "original_index": 239,
+            "scores": {
+                "bleurt": 0.3893,
+                "sacrebleu": 0.1055,
+                "bert_score": 0.3142,
+                "comet_da": 0.7246,
+                "comet_qe": 0.767
+            }
+        },
+        {
+            "vi": "Đã từng xem quẻ bói rùa,",
+            "en": "I have consulted the tortoise shell divination.",
+            "augmented_index": 41,
+            "original_index": 253,
+            "scores": {
+                "bleurt": 0.5074,
+                "sacrebleu": 0.2209,
+                "bert_score": 0.366,
+                "comet_da": 0.7058,
+                "comet_qe": 0.7
+            }
+        },
+        {
+            "vi": "Bây giờ mới kể sự Hồ Quí Ly:",
+            "en": "Now shall the tale of Hồ Quý Ly be recounted.",
+            "augmented_index": 42,
+            "original_index": 296,
+            "scores": {
+                "bleurt": 0.646,
+                "sacrebleu": 0.1499,
+                "bert_score": 0.5161,
+                "comet_da": 0.7704,
+                "comet_qe": 0.7874
+            }
+        },
+        {
+            "vi": "Rồi ra động đất chuyển trời,",
+            "en": "Then earth did quake and heaven shift.",
+            "augmented_index": 43,
+            "original_index": 305,
+            "scores": {
+                "bleurt": 0.5579,
+                "sacrebleu": 0.0727,
+                "bert_score": 0.3101,
+                "comet_da": 0.7109,
+                "comet_qe": 0.6691
+            }
+        },
+        {
+            "vi": "Rồng còn uốn khúc ở ao đợi thì",
+            "en": "The dragon still coils, awaiting in the pond.",
+            "augmented_index": 44,
+            "original_index": 312,
+            "scores": {
+                "bleurt": 0.7367,
+                "sacrebleu": 0.0998,
+                "bert_score": 0.6874,
+                "comet_da": 0.6901,
+                "comet_qe": 0.5805
+            }
+        },
+        {
+            "vi": "Cớ chi mà phải nghe ai bây giờ",
+            "en": "Why, then, should I heed any voice now?",
+            "augmented_index": 45,
+            "original_index": 324,
+            "scores": {
+                "bleurt": 0.5425,
+                "sacrebleu": 0.1585,
+                "bert_score": 0.4386,
+                "comet_da": 0.6918,
+                "comet_qe": 0.7808
+            }
+        },
+        {
+            "vi": "Vội chi mà bỏ chốn này đi đâu",
+            "en": "Why the haste to forsake this place and journey elsewhere?",
+            "augmented_index": 46,
+            "original_index": 328,
+            "scores": {
+                "bleurt": 0.5855,
+                "sacrebleu": 0.0375,
+                "bert_score": 0.2817,
+                "comet_da": 0.6755,
+                "comet_qe": 0.7923
+            }
+        },
+        {
+            "vi": "Chước nào ước được như lời,",
+            "en": "Would that my wish might find fulfillment.",
+            "augmented_index": 47,
+            "original_index": 333,
+            "scores": {
+                "bleurt": 0.6224,
+                "sacrebleu": 0.0487,
+                "bert_score": 0.5108,
+                "comet_da": 0.6916,
+                "comet_qe": 0.5526
+            }
+        },
+        {
+            "vi": "Dám đâu lỗi đạo cương thường,",
+            "en": "How dare I transgress the established moral order?",
+            "augmented_index": 48,
+            "original_index": 349,
+            "scores": {
+                "bleurt": 0.672,
+                "sacrebleu": 0.0627,
+                "bert_score": 0.5413,
+                "comet_da": 0.8104,
+                "comet_qe": 0.8064
+            }
+        },
+        {
+            "vi": "Nghe lời chàng mới chau mày,",
+            "en": "Upon hearing his words, her brow furrowed.",
+            "augmented_index": 49,
+            "original_index": 357,
+            "scores": {
+                "bleurt": 0.5313,
+                "sacrebleu": 0.0845,
+                "bert_score": 0.543,
+                "comet_da": 0.7358,
+                "comet_qe": 0.7811
+            }
+        },
+        {
+            "vi": "Xiết bao bướm lũ ong bầy,",
+            "en": "Countless butterflies and swarms of bees,",
+            "augmented_index": 50,
+            "original_index": 387,
+            "scores": {
+                "bleurt": 0.4646,
+                "sacrebleu": 0.0864,
+                "bert_score": 0.3645,
+                "comet_da": 0.6563,
+                "comet_qe": 0.6622
+            }
+        },
+        {
+            "vi": "Gìn trong danh tiết lánh đường phiền hoa",
+            "en": "To safeguard honor, one must shun the allure of worldly distractions.",
+            "augmented_index": 51,
+            "original_index": 390,
+            "scores": {
+                "bleurt": 0.6216,
+                "sacrebleu": 0.0309,
+                "bert_score": 0.333,
+                "comet_da": 0.6699,
+                "comet_qe": 0.6816
+            }
+        },
+        {
+            "vi": "Vầng trăng đã ngả về tây,",
+            "en": "The moon has descended towards the west.",
+            "augmented_index": 52,
+            "original_index": 413,
+            "scores": {
+                "bleurt": 0.7321,
+                "sacrebleu": 0.0727,
+                "bert_score": 0.7203,
+                "comet_da": 0.8407,
+                "comet_qe": 0.8473
+            }
+        },
+        {
+            "vi": "Để cho thiếp trở về rày với con",
+            "en": "Permit me, then, to return this day unto my child.",
+            "augmented_index": 53,
+            "original_index": 414,
+            "scores": {
+                "bleurt": 0.4836,
+                "sacrebleu": 0.0367,
+                "bert_score": 0.3903,
+                "comet_da": 0.6035,
+                "comet_qe": 0.7163
+            }
+        },
+        {
+            "vi": "Đường trường trở cách nước non,",
+            "en": "The long road stretches far, across mountains and streams.",
+            "augmented_index": 54,
+            "original_index": 415,
+            "scores": {
+                "bleurt": 0.5613,
+                "sacrebleu": 0.053,
+                "bert_score": 0.4054,
+                "comet_da": 0.7852,
+                "comet_qe": 0.6308
+            }
+        },
+        {
+            "vi": "Cùng ăn, cùng ở chẳng hiềm giận chi",
+            "en": "Sharing sustenance and dwelling, without a trace of discord.",
+            "augmented_index": 55,
+            "original_index": 440,
+            "scores": {
+                "bleurt": 0.6117,
+                "sacrebleu": 0.0375,
+                "bert_score": 0.4047,
+                "comet_da": 0.6168,
+                "comet_qe": 0.7357
+            }
+        },
+        {
+            "vi": "Nhường cơm nhường áo dễ ai nhường chồng?",
+            "en": "To share one's rice and clothes is easy; but to share one's husband, who can bear it?",
+            "augmented_index": 56,
+            "original_index": 444,
+            "scores": {
+                "bleurt": 0.57,
+                "sacrebleu": 0.0271,
+                "bert_score": 0.4241,
+                "comet_da": 0.6012,
+                "comet_qe": 0.616
+            }
+        },
+        {
+            "vi": "Lẽ nào dám để thường tình cười chê",
+            "en": "How could I bear the scorn of common judgment?",
+            "augmented_index": 57,
+            "original_index": 468,
+            "scores": {
+                "bleurt": 0.4388,
+                "sacrebleu": 0.0499,
+                "bert_score": 0.3016,
+                "comet_da": 0.6069,
+                "comet_qe": 0.6989
+            }
+        },
+        {
+            "vi": "Cũng nên ơn nặng muôn đời chớ sao",
+            "en": "Let gratitude endure eternally.",
+            "augmented_index": 58,
+            "original_index": 480,
+            "scores": {
+                "bleurt": 0.6003,
+                "sacrebleu": 0.0875,
+                "bert_score": 0.2991,
+                "comet_da": 0.612,
+                "comet_qe": 0.6552
+            }
+        },
+        {
+            "vi": "Khuyên rằng mau trở lại nhà với con",
+            "en": "I implore you, hasten your return home to your child.",
+            "augmented_index": 59,
+            "original_index": 500,
+            "scores": {
+                "bleurt": 0.5495,
+                "sacrebleu": 0.0677,
+                "bert_score": 0.4731,
+                "comet_da": 0.7153,
+                "comet_qe": 0.7415
+            }
+        },
+        {
+            "vi": "Có trời hẳn biết cho mình mà thôi",
+            "en": "Heaven alone, it seems, holds knowledge of my fate.",
+            "augmented_index": 60,
+            "original_index": 504,
+            "scores": {
+                "bleurt": 0.6458,
+                "sacrebleu": 0.075,
+                "bert_score": 0.586,
+                "comet_da": 0.6876,
+                "comet_qe": 0.6916
+            }
+        },
+        {
+            "vi": "Khen cho một dạ kiên trinh,",
+            "en": "I commend unwavering devotion.",
+            "augmented_index": 61,
+            "original_index": 509,
+            "scores": {
+                "bleurt": 0.533,
+                "sacrebleu": 0.048,
+                "bert_score": 0.5274,
+                "comet_da": 0.6249,
+                "comet_qe": 0.6726
+            }
+        },
+        {
+            "vi": "Xin chàng nghĩ lại chớ phiền,",
+            "en": "I pray you reconsider, and cease this troubling.",
+            "augmented_index": 62,
+            "original_index": 519,
+            "scores": {
+                "bleurt": 0.5205,
+                "sacrebleu": 0.042,
+                "bert_score": 0.3047,
+                "comet_da": 0.6054,
+                "comet_qe": 0.6832
+            }
+        },
+        {
+            "vi": "Đừng hồ nghi nữa thiếp xin trở về",
+            "en": "Doubt me no longer, I beseech you, I shall return.",
+            "augmented_index": 63,
+            "original_index": 520,
+            "scores": {
+                "bleurt": 0.5632,
+                "sacrebleu": 0.115,
+                "bert_score": 0.481,
+                "comet_da": 0.7899,
+                "comet_qe": 0.769
+            }
+        }
+    ]
+}
