@@ -25,16 +25,15 @@ from bleurt_pytorch import BleurtConfig, BleurtForSequenceClassification, Bleurt
 # from bleurt_pytorch.tokenization import BleurtSPTokenizer
 from typing import Tuple
 nltk.download('punkt_tab')
-
+from dotenv import load_dotenv
+load_dotenv()
 
 # Configure logging
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
-API_KEY = "AIzaSyAISyP5zG-7NIV5F6xesUveTRDmtQ_6eyU"
-# API_KEY = "AIzaSyAlgAWun2JG6ws1ThKqUwYzX8I4aBCmNbk"
-# API_KEY = "AIzaSyCdH1RVi5Rki_cm_ypw3RX8Bgy4YsIBHtI"
-# API_KEY = "AIzaSyClasB_b7S4LbjrcqZvQc74RAdPIazcCM0"
+HF_TOKEN = os.getenv("HUGGINGFACE_TOKEN")
+API_KEY = os.getenv("GEMINI_API_KEY")
 
 THRESHOLD = 0.1
 SCRIPT_PATH = os.path.abspath(__file__)

@@ -26,23 +26,15 @@ import sacrebleu
 from bert_score import BERTScorer
 from comet import download_model, load_from_checkpoint
 nltk.download('punkt_tab')
+from dotenv import load_dotenv
+load_dotenv()
 
 
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
-# API_KEY = "AIzaSyAISyP5zG-7NIV5F6xesUveTRDmtQ_6eyU"
-# API_KEY = "AIzaSyAlgAWun2JG6ws1ThKqUwYzX8I4aBCmNbk"
-# API_KEY = "AIzaSyCdH1RVi5Rki_cm_ypw3RX8Bgy4YsIBHtI"
-# API_KEY = "AIzaSyClasB_b7S4LbjrcqZvQc74RAdPIazcCM0"
-# API_KEY = "AIzaSyAVYRXQUEZTfaqAPsvwARhZC6vCmjEyQGk"
-# API_KEY = "AIzaSyDEhc7c7LgEppWsV2T7AJgjA1jmAsrXV9o"
-# API_KEY = "AIzaSyAyTYahX2pyJCbtAkVgZXhd56G69yN9TDc"
-# API_KEY = "AIzaSyBc4l4JTyS03cGnulk_I-Ak-GvVnMDKHEo"
-# API_KEY = "AIzaSyBZBza9CmKBNYNjfHl2Ai5tWY8hi-PpFVQ"
-# API_KEY = "AIzaSyCn7PvfXQqLlMOq5_Pj3I-B85qsvHt--ZE"
-# API_KEY = "AIzaSyDMUd29MMduSTwhCWbBd8EzId-DmtVsdKo"
-API_KEY = "AIzaSyDYe95W9qGOeRx24KRi8ozLc4yV9uqlG2E"
+HF_TOKEN = os.getenv("HUGGINGFACE_TOKEN")
+API_KEY = os.getenv("GEMINI_API_KEY")
 
 BLEURT_THRESHOLD = 0.55
 SACREBLEU_THRESHOLD = 0.1

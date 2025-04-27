@@ -27,26 +27,16 @@ from transformers import AutoModel, AutoTokenizer
 from comet import download_model, load_from_checkpoint
 from huggingface_hub import login
 nltk.download('punkt_tab')
+from dotenv import load_dotenv
+load_dotenv()
 
 
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
-HF_TOKEN = "your_hugging_face_token_here"
+HF_TOKEN = os.getenv("HUGGINGFACE_TOKEN")
+API_KEY = os.getenv("GEMINI_API_KEY")
 
-# API_KEY = "AIzaSyAISyP5zG-7NIV5F6xesUveTRDmtQ_6eyU"
-API_KEY = "AIzaSyAlgAWun2JG6ws1ThKqUwYzX8I4aBCmNbk"
-# API_KEY = "AIzaSyCdH1RVi5Rki_cm_ypw3RX8Bgy4YsIBHtI"
-# API_KEY = "AIzaSyClasB_b7S4LbjrcqZvQc74RAdPIazcCM0"
-# API_KEY = "AIzaSyAVYRXQUEZTfaqAPsvwARhZC6vCmjEyQGk"
-# API_KEY = "AIzaSyDEhc7c7LgEppWsV2T7AJgjA1jmAsrXV9o"
-# API_KEY = "AIzaSyAyTYahX2pyJCbtAkVgZXhd56G69yN9TDc"
-# API_KEY = "AIzaSyBc4l4JTyS03cGnulk_I-Ak-GvVnMDKHEo"
-# API_KEY = "AIzaSyBZBza9CmKBNYNjfHl2Ai5tWY8hi-PpFVQ"
-# API_KEY = "AIzaSyCn7PvfXQqLlMOq5_Pj3I-B85qsvHt--ZE"
-# API_KEY = "AIzaSyDMUd29MMduSTwhCWbBd8EzId-DmtVsdKo"
-# API_KEY = "AIzaSyDYe95W9qGOeRx24KRi8ozLc4yV9uqlG2E"
-# API_KEY = "AIzaSyAiU9uCy6aJlucDIEpaguB3bFeUA1VZjCY"
 
 PHOBERT_THRESHOLD = 0.7
 COMET_DA_THRESHOLD = 0.6
