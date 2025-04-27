@@ -1,3 +1,5 @@
+.env
+
 # Model weight
 t5_vi_en_translation/
 vit5_vi_en_translation/
